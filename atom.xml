@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
-  <link href="http://erikrw.github.io/atom.xml" rel="self"/>
-  <link href="http://erikrw.github.io/"/>
-  <updated>2014-10-19T20:09:55+02:00</updated>
-  <id>http://erikrw.github.io/</id>
+  <link href="http://blog.erw.dk/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2014-10-19T20:28:06+02:00</updated>
+  <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
     

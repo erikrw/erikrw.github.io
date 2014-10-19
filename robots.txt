@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://erikrw.github.io/sitemap.xml 
+Sitemap: http://blog.erw.dk/sitemap.xml 

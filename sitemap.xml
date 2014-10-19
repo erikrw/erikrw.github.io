@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://erikrw.github.io/404.html</loc>
-    <lastmod>2014-10-19T20:09:55+02:00</lastmod>
+    <loc>http://blog.erw.dk/404.html</loc>
+    <lastmod>2014-10-19T20:28:06+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://erikrw.github.io/</loc>
-    <lastmod>2014-10-19T20:09:55+02:00</lastmod>
+    <loc>http://blog.erw.dk/</loc>
+    <lastmod>2014-10-19T20:28:06+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://erikrw.github.io/archives/</loc>
-    <lastmod>2014-10-19T20:09:55+02:00</lastmod>
+    <loc>http://blog.erw.dk/archives/</loc>
+    <lastmod>2014-10-19T20:28:06+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
