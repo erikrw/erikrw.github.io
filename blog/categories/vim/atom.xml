@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
-  <link href="http://blog.erw.dk/atom.xml" rel="self"/>
+  <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
   <updated>2014-10-31T10:11:28+01:00</updated>
   <id>http://blog.erw.dk/</id>
@@ -25,6 +25,8 @@ with your OS.  If you tried Vim and found it too strange to use, or if you use
 it but still harbor the idea that it was made by (or for!) aliens, you&rsquo;ve come
 to the right place!</p>
 
+<p></p>
+
 <p>Vim is a very powerful tool, but often misunderstood.  There are plenty of
 tutorials that go through the basics, but they usually fail to paint the big
 picture.  <em>Why</em> the weird keyboard shortcuts, and the modes?  Why is it
@@ -37,6 +39,8 @@ introduction, that uncovers to the <em>essence of vi</em> and the almost poetic
 language you use to speak to Vim and vi.  It is my hope that reading it will
 make your time with Vim both more useful and more enjoyable.  I have myself
 enjoyed Vim since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
+
+<p></p>
 
 <!-- more -->
 
@@ -58,9 +62,11 @@ enjoyed Vim since 2007, and I also <a href="https://code.google.com/p/vim/source
   </ul>
   </li>
   <li><a href="#Expand.your.Vocabulary">Expand your Vocabulary</a></li>
+  <li><a href="#Vim.vs..vi">Vim vs. vi</a></li>
   <li><a href="#Real.Keyboard.Shortcuts">Real Keyboard Shortcuts</a></li>
   <li><a href="#What.about.Usability.">What about Usability?</a></li>
   <li><a href="#Conclusion">Conclusion</a></li>
+  <li><a href="#Afterword">Afterword</a></li>
  </ul>
  </li>
 </ul>
@@ -81,6 +87,8 @@ prime keyboard real estate is not used to its fullest.  50+ easy-to-press
 shortcuts &mdash; upper and lower case letters &mdash; are only used for a single
 purpose.</p>
 
+<p></p>
+
 <p>A different approach to text editing is <em>modal editing</em>.  Here the &ldquo;typing
 mode&rdquo; is just one of several modes of using the editor (and thus the keyboard).
 It is distinct from the mode(s) wherein you move the cursor, copy, paste, etc.
@@ -98,6 +106,8 @@ you naturally to the mode changes.  Think about finding content on a web page
 in your browser: You press <code>ctrl-f</code> which opens a text field.  Here you write
 you search string, press <code>&lt;enter&gt;</code> a few times, then <code>&lt;esc&gt;</code> when you&rsquo;re done.
 You just used FIND MODE!  (It was super effective!)</p>
+
+<p></p>
 
 <p>Modal editing simply gives you more buttons for actions.  As
 <a href="http://www.viemu.com/a-why-vi-vim.html">Jon Beltran de Heredia wrote</a>:</p>
@@ -122,6 +132,8 @@ it one letter at a time, and pay attention to case.  What does it mean?  The
 <code>gg</code> part moves the cursor to the first line, <code>y</code> then <em>yanks</em> (copies) every
 line until (and including) <code>G</code>, the last line.  vi is older than the
 standardized cut, copy, and paste, hence the name &ldquo;yank&rdquo;.</p>
+
+<p></p>
 
 <p>Now, if you would think <code>ggyG</code> is no faster than <code>&lt;c-a&gt;&lt;c-c&gt;</code> (select all,
 copy) in a regular editor, you&rsquo;d be right.  But say you wanted to copy just
@@ -214,6 +226,8 @@ includes commands such as</p>
 operator, the editor awaits the object or region that the operator should
 affect.  This role is played by nouns and prepositional phrases.</p>
 
+<p></p>
+
 <p>There are many more verbs, and you indeed need more to use vi (and therefore
 Vim) efficiently, but this selection will do fine in explaining the language
 metaphor.  It&rsquo;s expected and normal that you find the commands hard to remember
@@ -241,6 +255,8 @@ opposed to immediate changes) in fact always incur mode a change: After typing
 the operator, the editor will be in <em>operator pending mode</em>, awaiting the
 choice of the text to operate on.  We will see how to choose that text in the
 next two sections.</p>
+
+<p></p>
 
 <a name="Nouns.Objects"></a>
 <h3>Nouns/Objects</h3>
@@ -331,6 +347,8 @@ fact that the cursor is always on the first character of a word.  For example,
 like <code>b</code> and <code>w</code> but for sentences.  The motions <code>{</code> and <code>}</code> go to the
 previous/next paragraph boundary.</p>
 
+<p></p>
+
 <p>Another powerful type of motion is the &ldquo;till&rdquo;/&ldquo;find&rdquo; motion. Till <code>t</code> moves to
 the next character you specify.  For example, <code>t"</code> moves to right before the
 next <code>"</code> in the line.  Find <code>f</code> is similar, except it moves onto the specified
@@ -375,6 +393,10 @@ mile on first.</p></blockquote>
 <li>&ldquo;to the matching parenthesis/brace/comment marker/HTML tag/if/else-stmt/etc. <code>%</code></li>
 <li>&ldquo;to the next/previous misspelled word&rdquo; <code>]s</code> <code>[s</code></li>
 <li>&ldquo;to the next/previous start/end of a method (Java/C# style) <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code></li>
+</ul>
+
+
+<p></li>
 </ul>
 
 
@@ -430,6 +452,8 @@ ordinals.</p>
 <p>All motions and operators in fact take a count, but it usually defaults to 1.
 This is another example of orthogonality in vi.</p>
 
+<p></p>
+
 <a name="Expand.your.Vocabulary"></a>
 <h2>Expand your Vocabulary</h2>
 
@@ -467,8 +491,14 @@ plugin to get three new verbs:
 </ul>
 
 
+<p></p>
+
+<p></p>
+
 <a name="Real.Keyboard.Shortcuts"></a>
 <h2>Real Keyboard Shortcuts</h2>
+
+<p></p>
 
 <p>The key <code>y</code> is not a shortcut for yank, it <em>is</em> the yank operator.  But vi
 still has shortcuts (in the traditional sense of the word) for those actions
@@ -512,6 +542,8 @@ inserting at the right indentation level, aware of nesting and control
 structures. For example, if the previous line is an &ldquo;if&rdquo; statement or the start
 of a new block, the next line&rsquo;s indentation level should be one higher.</p>
 
+<p></p>
+
 <a name="What.about.Usability."></a>
 <h2>What about Usability?</h2>
 
@@ -545,6 +577,8 @@ plain cursor movement.  Some of the actions involve mode switching, some don&rsq
 The actions drive the editing process while the modes help put a large
 vocabulary right under your fingertips.</p>
 
+<p></p>
+
 <p>I have only covered basic text manipulation, though Vim does much more.  Any
 user would need to know how to open/close/save files, and maybe
 open/close/switch buffers, windows, and tabs (Vim has them all).  Fancier
@@ -559,6 +593,8 @@ one you enter when you type <code>:w&lt;enter&gt;</code> to save and <code>:q&lt
 
 <p>Is command-line mode essential?
 Maybe <a href="http://blog.sanctum.geek.nz/vim-koans/">the Vim Koan &ldquo;The superior editor&rdquo;</a> will enlighten you.</p>
+
+<p></p>
 ]]></content>
   </entry>
   
