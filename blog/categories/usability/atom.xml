@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: usability | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/usability/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2014-11-21T04:38:57+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Design of Everyday Things]]></title>
+    <link href="http://blog.erw.dk/2014/11/21/the-design-of-everyday-things/"/>
+    <updated>2014-11-21T04:15:21+01:00</updated>
+    <id>http://blog.erw.dk/2014/11/21/the-design-of-everyday-things</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/posts/IC3_tray_table.jpg" width="300" title="&lsquo;A tray table in a Danish IC3 train&rsquo; &lsquo;A tray table in a Danish IC3 train&rsquo;" ></p>
+
+<p>The woman in the seat next to me on the train had trouble folding down her tray table.
+I showed her how to do it, and she said &ldquo;Oh, I&rsquo;ve never been good at that sort of thing.&rdquo;
+I said &ldquo;It&rsquo;s not you, it&rsquo;s just bad design.&rdquo;
+She didn&rsquo;t follow.
+&ldquo;See, it <em>looks like</em> you&rsquo;re supposed to turn the knob, but in fact you have to slide it. You just tried to turn it like the design told you to do, but the design was wrong.&rdquo;</p>
+
+<p>She never seemed to accept my interpretation of the situation.
+But the fact is that design subconsciously guides us and affects our behavior, for better and for worse.
+I hope to do a better job here of convincing you than I did with the woman in the train!</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p>The concept of <em>affordance</em> is about what things <em>are for</em>.
+For example, a hammer <em>affords</em> hitting.
+James J. Gibson introduced the concept as the <em>possibilities for action</em> that are possible between an object and a user.
+<a href="http://en.wikipedia.org/wiki/Don_Norman">Don Norman</a> later popularized the idea with a focus on what actions seem obvious (hitting with a hammer), rather that which ones are theoretically possible (say, stirring a pot with it).
+He did this in his famous &mdash; and recommendable &mdash; 1988 book <a href="http://en.wikipedia.org/wiki/The_Design_of_Everyday_Things">The Design of Everyday Things</a>, from which I lifted the title as well as this quote:</p>
+
+<blockquote><p>Affordances provide strong clues to the operations of things. Plates are for
+pushing. Knobs are for turning. Slots are for inserting things into. Balls
+are for throwing or bouncing. When affordances are taken advantage of, the
+user knows what to do just by looking: no picture, label, or instruction
+is required.</p></blockquote>
+
+<p>When affordances and operations match, then the things we interact with work intuitively:
+We flip the switch, and the light comes on.
+When things <em>just work</em>, we might not even notice that affordance and operation are two separate things.
+How could it be otherwise?
+Well, for example, sometimes we pull a door handle, but the door doesn&rsquo;t open.
+The handle affords pulling, but the door opens the other way.
+It&rsquo;s when affordances and operations don&rsquo;t match that we get confused.</p>
+
+<p></p>
+
+<p><img class="right" src="/images/posts/tray_table_locks.png" title="&lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo; &lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo;" ></p>
+
+<p>The tray table lock in the train had a mismatch between affordance and operation.
+The round hole surrounding the small plastic handle made the whole thing look like things we normally <em>turn</em>, like the knob on a stove, or a volume knob.
+But it was actually meant to slide up to release the lock and let the table unfold.
+Since the small handle is not as wide as the inner diameter of the circle, it is also possible to push the handle up/down.
+Most users figure this out after a while.
+But a rectangular shape would likely have given this association from the beginning, without the detour of trying to turn it.</p>
+
+<p>As an example of well-matched affordance, here&rsquo;s a nice feature on my Braun shaver:
+Grooves in the plastic make it look compressible, like an accordion.
+The plastic isn&rsquo;t in fact compressible, but the supporting springs underneath are.
+But independently of the mechanical implementation, the design speaks it&rsquo;s clear language: I&rsquo;m flexible.</p>
+
+<p><img src="/images/posts/shaver.jpg" title="&lsquo;My groovy Braun shaver&rsquo; &lsquo;My groovy Braun shaver&rsquo;" ></p>
+
+<p>James J. Gibson has some <a href="http://www.trincoll.edu/depts/ecopsyc/perils/folder5/prelim.html">more examples of affordances</a>.</p>
+
+<a name="Why.Usability.Matters"></a>
+<h2>Why Usability Matters</h2>
+
+<p></p>
+
+<p>Affordance is related to <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/">usability</a>, or, how easy and efficient things are to use.
+Good use of affordance makes it easy to learn how to use something and less likely to make mistakes.
+Mismatched or hidden affordances do the opposite.
+We always make mistakes, but if the design is bad, we make lots more.</p>
+
+<p>Tray tables and shavers are pretty harmless, but human perception works the same way in serious situations.
+Another example of mismatched affordances comes from the 2000 United States presidential election.
+The unlucky design of a ballot meant that <a href="http://en.wikipedia.org/wiki/United_States_presidential_election_in_Florida,_2000#Palm_Beach_County.27s_butterfly_ballots">Al Gore lost some votes</a> he could really have used.
+Danish ballots also used to have an affordance problem, although it did not favor one candidate over another.
+The problem was lack of affordance:
+Ticking a box is just not very satisfying <a href="http://commons.wikimedia.org/wiki/File:Stemmesedler_2005.JPG#mediaviewer/File:Stemmesedler_2005.JPG">when there&rsquo;s no box</a>.
+In addition, inattentive voters might have marked their vote with a ring around a name, thus invalidating their vote because only a cross is allowed.</p>
+
+<p></p>
+
+<p></p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='/images/posts/cockpit.jpg' width='320' height='240' alt='<a href="http://pixabay.com/en/cockpit-kontrolpanel-466157/">Picture</a> by <a href="http://pixabay.com/en/users/gepardowa-320124/">gepardowa</a> is licenced under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>&#8217;><span class='caption-text'><a href="http://pixabay.com/en/cockpit-kontrolpanel-466157/">Picture</a> by <a href="http://pixabay.com/en/users/gepardowa-320124/">gepardowa</a> is licenced under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a></span></span></p>
+
+<p>You may wonder if this isn&rsquo;t just a question of paying attention.
+Or put more bluntly: A question of not being <a href="http://www.nngroup.com/articles/are-users-stupid/">stupid</a>.
+To some extent, yes.
+While doing something important, such as voting or controlling a nuclear power plant, it would indeed be sensible to double-check and confirm you did the right thing.
+But that doesn&rsquo;t legitimize making a confusing design in the first place.
+A confusing design can be a waste of time in daily life.
+This is in itself annoying, but sometimes time is more critical.
+For example, while controlling an airplane or that nuclear power plant, there can be stressful situations with short time to do the right thing, and no time for double-checking.
+Even though pilots and operators are trained, it doesn&rsquo;t mean that they are infallible.
+Humans will always make mistakes, so the tools we use should not increase the risk of errors.</p>
+
+<p></p>
+
+<p>When human life is not at stake, money is.
+Usability is also part of designing an attractive product that users want to buy.
+I say &ldquo;part of&rdquo; because, as Don Norman details in his later book <a href="http://en.wikipedia.org/wiki/Emotional_Design">Emotional Design</a>, usability relates to our brains&#8217; behavioral thinking, but there are two more &ldquo;brain levels&rdquo; to satisfy to make a truly successful product.
+Once the product itself is good enough, its website must also have good usability and be a good overall user experience.
+Jakob Nielsen, a colleague of Don Norman, is known to say that &ldquo;a bad website is like a grumpy salesperson&rdquo;.
+Web usability and user experience design are fields of their own, but they are based on human cognition, just like <em>the design of everyday things</em>.</p>
+
+<p></p>
+
+<p>Once you are aware of the concept of affordance, you might start looking for it in your surroundings.
+I suspect Danish people reading this might remember a more obvious usability problem in the Danish IC3 trains, besides the tray table:
+The doors between compartments are sliding doors, with no handles or buttons.
+This is not uncommon; automatic sliding doors typically open when we approach them.
+But these don&rsquo;t do that either.
+So, what do you do with products that are not self-explanatory?
+Of course you <strike>fix them</strike> provide instructions!</p>
+
+<a name="Don.t.Make.Me.Think"></a>
+<h2>Don&rsquo;t Make Me Think</h2>
+
+<p>(I noticed that Don&rsquo;t Make Me Think is also <a href="http://www.sensible.com/dmmt.html">a book about web usability</a>. I have not read it, but I fully agree with the message of its title! And it doesn&rsquo;t apply only to web usability.)</p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='/images/posts/pushpull.jpg' width='450' height='338' alt='<a href="https://www.flickr.com/photos/russmorris/481397004/">Push Pull</a> by <a href="https://www.flickr.com/photos/russmorris/">Russ Morris</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>&#8217;><span class='caption-text'><a href="https://www.flickr.com/photos/russmorris/481397004/">Push Pull</a> by <a href="https://www.flickr.com/photos/russmorris/">Russ Morris</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a></span></span></p>
+
+<p>A classic example of usage instructions is push/pull signs on doors.
+Using affordance properly, it is wholly possible to design a door where the shape and position of the handles and the design of the frame subconsciously guide us to push when and where we should push, and pull when and where we should pull.
+One way is to use a handle that is easy to pull on one side, and on the other side a handle that is easier to push &mdash; possibly a plate or bar that can only be pushed.
+But while it is possible, that doesn&rsquo;t mean it is always done in practice.
+Maybe nobody knew.
+Or maybe it was just cheaper to put the same handle on both sides.
+But probably the first.
+So when it is discovered that the door works poorly and people want to improve it, they add the instructions.
+However, Norman writes:</p>
+
+<blockquote><p>Complex things may require explanation, but simple things should not. When
+simple things need pictures, labels, or instructions, the design has failed.</p></blockquote>
+
+<p>But why are instructions so bad?
+Or at least potentially unnecessary instructions such as push/pull signs?
+One problem is that when a task requires us to read and think more than what is necessary, it distracts us from thinking about more important or urgent matters.
+This is especially important in those stressed situations, I have already mentioned.
+But reading is also harder than picking up clues from physical shapes.
+Our brains have evolved and adapted to a tangible environment, and reading is relatively new, and not as &ldquo;efficiently implemented&rdquo;.</p>
+
+<p>But it turns out all instructions are not equally bad.
+Here&rsquo;s a door I came across in the Gromada Airport Hotel in Warsaw:</p>
+
+<p><img src="/images/posts/gromada.jpg" title="&lsquo;Hotel Gromada push&#47;pull doors signs&rsquo; &lsquo;Hotel Gromada push&#47;pull doors signs&rsquo;" ></p>
+
+<p>I think the 3D effect of the arrows can actually help speak directly to our spatial intelligence, bypassing the need for reading and language processing.
+(Of course it helps that I don&rsquo;t read Polish!)
+I think if the text was removed, the arrows might work as well as well placed door handles, if not as elegantly.
+But I&rsquo;m probably too conscious about these subconscious things to be a good judge.
+It would be up to user testing to tell.</p>
+
+<p>While instructions are typically employed to meet the lack of affordance, they can also be used when there&rsquo;s <em>unwanted</em> affordance:</p>
+
+<p><img src="/images/posts/dont_push.jpg" title="&lsquo;A don&#39;t push sign on a revolving door&rsquo; &lsquo;A don&#39;t push sign on a revolving door&rsquo;" ></p>
+
+<p>(This particular revolving door at the NH Utrecht hotel was however spinning so fast I had a hard time seeing why anyone would feel the need to push it.
+I think it shows in my blurry picture.)</p>
+
+<p>Of course, most rule signs follow from some action being afforded by the environment, but deemed unwanted.
+Some rules are perhaps better enforced by removing the affordance.
+For example, a <a href="http://www.citylab.com/design/2014/10/why-12-foot-traffic-lanes-are-disastrous-for-safety-and-must-be-replaced-now/381117/">narrow</a> or curvy road does not afford driving at high speed.
+(Neither do roads with speed bumps, because the bumps afford unpleasant bouncing and perhaps damaging the car.)</p>
+
+<p></p>
+
+<p><img class="right" src="/images/posts/microfridge.jpg" width="350" title="&lsquo;A usable microwave oven&rsquo; &lsquo;A usable microwave oven&rsquo;" ></p>
+
+<p>We already established that it&rsquo;s better to guide the user with affordance than with instructions, but some things may be too complex to rely solely on affordance.
+In those cases we might be asked to read instruction manuals instead of a single pictogram or sentence.
+However, that doesn&rsquo;t remove the problems with instruction: They stand between us and what we want to do.</p>
+
+<p>So the less the text, the better.
+Cases in point, to the right is a microwave oven that I think most people could use without a manual.
+(It&rsquo;s just a pity that the brand name MicroFridge could suggest the device is a fridge!
+Alas, it probably doesn&rsquo;t matter anyway, because&hellip;)</p>
+
+<p>The biggest problem with instructions is that, most of the time, <em>people don&rsquo;t read instructions</em>!</p>
+
+<p>This is why affordance was important in the first place, along with many other concepts related to usability such as <a href="http://www.nngroup.com/articles/mental-models/">mental models</a> and feedback to the user about the state of the system.</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><img class="left" src="/images/posts/hisf.jpg" title="&lsquo;An empathetic elevator sign&rsquo; &lsquo;An empathetic elevator sign&rsquo;" ></p>
+
+<p>Finally, an example that you can even have bad usability and still make your users (at least the ones who read!) walk away with a smile.
+I found it next to the elevator in the HI-San Francisco Downtown hostel.
+(The quality of the signage in that place <em>almost</em> made up for the quality of the breakfast!)</p>
+
+<p></p>
+
+<p>In conclusion, products that are compatible with our brains&#8217; autopilots work really well.
+Part of achieving that is matching affordance to the functionality of the product.
+This attention to detail is the difference between something that simply functions and something that really <em>works</em>.</p>
+
+<p>I have presupposed that the products do function correctly.
+This is of course far from always the case, especially in complex systems.
+In fact, the field I do my PhD in, <a href="http://en.wikipedia.org/wiki/Formal_methods">formal methods</a>, is exactly about proving that complex computer controlled systems function as they are supposed to.
+This in itself can require an enormous effort, but as we have seen in this post, correct functioning should be matched by good usability.</p>
+
+<p></p>
+
+<p></p>
+
+<p><em>Except where it says otherwise, the
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">images on this post</span> are by me, <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Erik Ramsgaard Wognsen</span>, and you may reuse them under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</em></p>
+
+<p></p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+</feed>

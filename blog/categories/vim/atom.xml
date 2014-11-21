@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2014-10-31T10:11:28+01:00</updated>
+  <updated>2014-11-21T04:38:57+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -18,7 +18,9 @@
     <link href="http://blog.erw.dk/2014/10/31/the-essence-of-vi/"/>
     <updated>2014-10-31T09:49:46+01:00</updated>
     <id>http://blog.erw.dk/2014/10/31/the-essence-of-vi</id>
-    <content type="html"><![CDATA[<p><a href="http://www.vim.org/about.php">Vim</a> is a popular and widely distributed text editor improving on the
+    <content type="html"><![CDATA[<p></p>
+
+<p><a href="http://www.vim.org/about.php">Vim</a> is a popular and widely distributed text editor improving on the
 legendary <a href="http://en.wikipedia.org/wiki/Vi">vi</a> from the late 1970s.  If you are reading this on Mac or
 Linux, chances are that Vim is already installed on your computer, included
 with your OS.  If you tried Vim and found it too strange to use, or if you use
@@ -551,7 +553,7 @@ of a new block, the next line&rsquo;s indentation level should be one higher.</p
 between these two facts: (1) I care about usability, and (2) vi is definitely
 not known to be user friendly. How can I reconcile this?  The thing to remember
 is that usability is about more than user friendliness.  Using the first two
-components of <a href="http://www.nngroup.com/articles/usability-100-introduction-to-usability/">Jakob Nielsen&rsquo;s definition of usability</a>:</p>
+components of <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/">Jakob Nielsen&rsquo;s definition of usability</a>:</p>
 
 <ul>
 <li><em><strong>Learnability</strong>: How easy is it for users to accomplish basic tasks the first time they encounter the design?</em></li>
