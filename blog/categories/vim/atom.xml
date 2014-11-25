@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2014-11-21T12:43:19+01:00</updated>
+  <updated>2014-11-25T03:08:02+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,340 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Language of vi, Improved]]></title>
+    <link href="http://blog.erw.dk/2014/11/25/the-language-of-vi-improved/"/>
+    <updated>2014-11-25T02:50:20+01:00</updated>
+    <id>http://blog.erw.dk/2014/11/25/the-language-of-vi-improved</id>
+    <content type="html"><![CDATA[<p>In <a href="/2014/10/31/the-essence-of-vi/">a previous post</a> I described the &ldquo;language&rdquo; metaphor of the text
+editor <a href="http://en.wikipedia.org/wiki/Vi">vi</a>. To recap,</p>
+
+<ul>
+<li>Verbs are commands such as change <code>c</code>, delete <code>d</code>, yank <code>y</code>, and put <code>p</code></li>
+<li>Nouns (text objects): a paragraph <code>ap</code>, a string <code>a"</code>, etc.</li>
+<li>Prepositional phrases (motions):
+&ldquo;to the next word&rdquo; <code>w</code>,
+&ldquo;to the next regex&rdquo; <code>/</code></li>
+<li>Numerals (counts) as seen in
+&ldquo;indent ten lines&rdquo; <code>10&gt;&gt;</code> and
+&ldquo;to the 27th line&rdquo; <code>27gg</code>.</li>
+</ul>
+
+
+<p>This time around, we&rsquo;ll see how <a href="http://www.vim.org/about.php">Vim</a> (vi improved) adds a new word order
+to make you speak more clearly, and <em>meta-verbs</em> to blow your mind!</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<a name="Speak.Before.You.Think"></a>
+<h2>Speak Before You Think</h2>
+
+<p>Near the end of my previous post we got to the numerals, or counts as they&rsquo;re
+officially called. Counts are useful, especially when large numbers are
+involved, but sometimes it pays off to use Vim without thinking too much ahead.
+Just start speaking:</p>
+
+<blockquote><p>Delete &hellip; a bit more &hellip; a bit more &hellip; bit more &hellip; ok, stop.</p></blockquote>
+
+<p>While this is the way many people delete text on their computer, Vim makes it
+a lot more efficient than the typical awkward bursts of holding down the delete
+key until you delete enough (and probably too much). For example, <code>dw....</code>
+deletes one word, then the next, and so on, five in total. (Remember,<code>dw</code>
+deletes one word, and the dot <code>.</code> command repeats this action.) This can be
+faster than the equivalent <code>d5w</code> because you don&rsquo;t need to count the words
+before you start deleting . The running feedback you get by seeing the words
+disappear one by one is very helpful and avoids the mistakes that could have
+happened due to miscounting. It is especially useful for objects that vary
+considerably in size (sentences, paragraphs), because they are harder to count
+quickly.</p>
+
+<p>But this approach doesn&rsquo;t work for common operations such as change <code>c</code> or yank
+<code>y</code>. When you yank (copy), you most likely want all the text in the clipboard
+at the same time; not one word replacing the next until you are left with only
+the last word in the clipboard. Probably for the same reason, the repeat <code>.</code>
+command doesn&rsquo;t consider yanking a repeatable action. (By the way, I say &lsquo;the
+clipboard&rsquo; because it is a familiar term to many, but in Vim, they&rsquo;re called
+registers, and there&rsquo;s a whole lot more than one of them!) Instead of repeat,
+we can use <em>visual mode</em>, which gives both pleasant feedback and works with all
+actions.</p>
+
+<p></p>
+
+<p></p>
+
+<a name="L....or.Speak.Like.Yoda"></a>
+<h2>&hellip; or Speak Like Yoda</h2>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg">http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg</a>&#8217; width=&#8217;382&#8217; height=&#8217;346&#8217; alt=&#8217;<a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>&#8217;><span class='caption-text'><a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span></p>
+
+<p>To explain visual mode, we will first pay the 1970s
+a brief visit.  In vi, &ldquo;visual mode&rdquo; was a mode that was &ldquo;more visual&rdquo; than the
+<a href="http://en.wikipedia.org/wiki/Teleprinter">Teletype</a> oriented editors vi
+superseded and subsumed
+(<a href="http://en.wikipedia.org/wiki/Ed_%28text_editor%29">ed</a> and
+<a href="http://en.wikipedia.org/wiki/Ex_%28text_editor%29">ex</a>, respectively).  It
+meant simply that you could see the file <em>while you edited it</em>.  However, this
+form of visual feedback was soon considered normal.  Case in point, vi&rsquo;s visual
+mode is Vim&rsquo;s normal mode.</p>
+
+<p></p>
+
+<p>The way to be more visual than Vim&rsquo;s normal mode is to highlight the text that
+will be changed before the change is executed. This is similar to selecting
+text in mainstream editors with the mouse or by using the arrow keys with the
+shift key held down. In these, typing while text is selected replaces the
+selected text with the typed text. Vim&rsquo;s visual mode however retains the
+keyboard&rsquo;s &ldquo;gamepad role&rdquo; (see <a href="/2014/10/31/the-essence-of-vi/">my previous post</a>). (Vim also has
+a &ldquo;mainstream&rdquo; <em>select mode</em> but it is mainly used to imitate
+<strike>lesser</strike> other editors.)</p>
+
+<p>You enter visual mode using <code>v</code>, then use text objects and motions to highlight
+the text you want to affect. This reverses the word order in the vi language,
+effectively making you command Vim like Yoda:  &ldquo;These lines delete (you must!)&rdquo;
+Compare:</p>
+
+<ul>
+<li><code>das</code>: &ldquo;Delete a sentence.&rdquo;</li>
+<li><code>vasd</code>: &ldquo;A sentence delete.&rdquo;</li>
+<li><code>dasdw</code>: &ldquo;Delete a sentence. Delete the next word.&rdquo;</li>
+<li><code>vased</code>: &ldquo;A sentence and the next word delete.&rdquo;</li>
+</ul>
+
+
+<p></p>
+
+<p></li>
+</ul>
+
+
+<p>So, visual mode is nice because it gives visual feedback on the area you are
+going to operate on before you commit to it and type the operator. But it
+doesn&rsquo;t stop there.</p>
+
+<p></p>
+
+<a name="Visual.Basics"></a>
+<h2>Visual Basics</h2>
+
+<p>What would you do if you had a lot of gamepad real estate to go along with
+visual mode?</p>
+
+<p>First of all, visual mode actually comes in three flavors: Character <code>v</code>, line
+<code>V</code>, and block <code>&lt;c-v&gt;</code>. Here I switch around between them a bit:</p>
+
+<p>
+<video controls>
+<source src='http://blog.erw.dk/videos/posts/vimvisual.webm' type='video/webm; codecs=vp8' />
+</video></p>
+
+<p>(The numbers in the margin show the line number for the line the
+cursor is on, and the distance to the other lines. This <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#%27relativenumber%27">feature</a> makes is easy to use counts with line-based operators.)</p>
+
+<p>Visual character mode is the one you will find most familiar: The selection
+starts somewhere, continues along the direction of the text, wraps at the ends
+of lines, and ends somewhere. In visual <em>line</em> mode, every whole line from the
+one the selection starts in to the one it ends in, is selected. This makes it
+easy to select whole lines without moving the cursor to the start and end of
+a line. Especially useful in programming, where line is often synonymous with
+<em>statement</em>. Finally, visual block mode selects a rectangle of text. Applying
+operators to blocks is very powerful and enables things that would take a long
+time without block mode.</p>
+
+<p></p>
+
+<p><video class='right' controls>
+<source src='http://blog.erw.dk/videos/posts/vimblock.webm' type='video/webm; codecs=vp8' />
+</video></p>
+
+<p>Block mode can also be used to insert text at several lines simultaneously.
+From block mode, insert <code>I</code> and append <code>A</code> start insert mode, and when the
+insertion is done, that text is then inserted in every line along the left or
+right edge of the block, respectively.
+Also, the <code>$</code> motion can be used to extend the selection to the ends of
+lines. If the lines have different lengths, the result is a jagged block.
+Appending <code>A</code> to this inserts text at the end of each line, wherever the end of
+that line is. In the video I demonstrate both <code>I</code> and <code>A</code>. Here&rsquo;s a breakdown:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;c-v&gt;</span>jj$Ifoo(<span class="nt">&lt;esc&gt;</span>gvA)<span class="nt">&lt;esc&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;c-v&gt;</span>                         Ctrl-v to start visual block mode
+</span><span class='line'>     jj$                      Move cursor two down and to the end of line
+</span><span class='line'>        I                     Start block insert mode
+</span><span class='line'>         foo(                 Write <span class="ni">&amp;ldquo;</span>foo(<span class="ni">&amp;rdquo;</span>
+</span><span class='line'>             <span class="nt">&lt;esc&gt;</span>            Escape to normal mode (completes the other lines)
+</span><span class='line'>                  gv          Start visual mode with previous selection
+</span><span class='line'>                    A         Start appending in block insert mode
+</span><span class='line'>                     )<span class="nt">&lt;esc&gt;</span>   Write <span class="ni">&amp;ldquo;</span>)<span class="ni">&amp;rdquo;</span> and escape to normal mode
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p></p>
+
+<p>All this might look scary, but that&rsquo;s of course part of what makes it so cool!</p>
+
+<p>In the end of the video I do the same thing in one step using Tim Pope&rsquo;s
+<a href="https://github.com/tpope/vim-surround">surround.vim</a> plugin. With the same selection active, I use
+<code>Sf</code> to &ldquo;surround with function-call&rdquo;, type &ldquo;foo&rdquo; and enter.</p>
+
+<a name="Neat.Tricks"></a>
+<h3>Neat Tricks</h3>
+
+<p>Have you tried selecting text in a mainstream editor and finding out you
+started the selection in the wrong place? So you do the selection again, and do
+it right this time. Well, Vim is all about efficiency: In visual mode, <code>o</code>
+moves the cursor to the other end of the selection, so you can adjust it
+without starting over. As amazing as it is simple! A soft, smiling kitten is
+born every time you use this feature.</p>
+
+<p></p>
+
+<p>Also, with visual mode, you can crawl up the DOM tree: <code>at</code> extends the
+selection to the enclosing tag-block (Vim-speak for an HTML/XML element).
+Applied repeatedly, a bigger and bigger block of markup is selected,
+corresponding to nodes further up the DOM tree.</p>
+
+<p></p>
+
+<p>Both visual mode and repeat <code>.</code> can be used in the &ldquo;speak before you think&rdquo;
+manner, but visual mode works with all operators. It also has another advantage
+over repeat: The operation is &ldquo;committed&rdquo; in one step, so it can be <em>undone</em> in
+one step. This brings us to &hellip;</p>
+
+<a name="Meta-Verbs"></a>
+<h2>Meta-Verbs</h2>
+
+<p><em>Undo</em> is a verb. It&rsquo;s a verb for a command that reverts the latest change, no
+surprises there. But what happens when you undo two times in a row?</p>
+
+<p>In vi, undo is a change like any other. Thus, if the latest change is an undo,
+undo will revert that undo action. In other words, typing <code>uu</code> is a no-op! Vim,
+being &ldquo;vi improved&rdquo;, can <a href="http://vimdoc.sourceforge.net/htmldoc/undo.html#undo-two-ways">emulate vi</a> or use its own improved undo,
+which could be called a <em>meta-verb</em>: Verbs change text, but meta-verbs change
+changes. So undo <code>u</code> and redo <code>&lt;c-r&gt;</code> go back and forth in the change history,
+as is common in most modern programs.  But there&rsquo;s more:</p>
+
+<p>Let&rsquo;s say you are writing a blog post.  Well into the process you remember an
+earlier phrasing that you changed, but now you want it back.  You take numerous
+steps back in history (perhaps employing a count: <code>25u</code>) until you find it. You
+copy it, and you&rsquo;re ready to continue.  But before you remember that you should
+redo to return to the newest version of the document, you make a new change.
+If you used a simpler editor that version would now be lost forever.</p>
+
+<p></p>
+
+<p>Vim knows that undo/redo is not a linear history, it is a tree. Normal,
+sequential changes extend a single branch of the tree. But when you go back and
+make a new change as in the example above, that change sprouts another
+branch. Vim <a href="http://vimdoc.sourceforge.net/htmldoc/usr_32.html">stores this tree</a> and let&rsquo;s you recover your work.</p>
+
+<p><video class='right' controls>
+<source src='http://blog.erw.dk/videos/posts/vimundotree.webm' type='video/webm; codecs=vp8' />
+</video>
+</p>
+
+<p>In this video, I demonstrate the undo tree with all changes being adding small
+bits of text, and the layout of the text representing the branches of the tree.
+Undo <code>u</code> and redo <code>&lt;c-r&gt;</code> always go up and down the current branch (in this
+video literally up and down). The commands <code>g-</code> and <code>g+</code> go through older and
+newer <em>changes</em> to the text, which can be spread around the tree. I go
+backwards with <code>g-</code> (watch for the &lsquo;g&rsquo; in the lower right corner) through the
+events of entering &ldquo;six&rdquo; and &ldquo;five&rdquo; to the state after entering &ldquo;four&rdquo;, which
+is in the original branch, before undoing &ldquo;three&rdquo; and &ldquo;four&rdquo;. Using <code>g+</code> brings
+me forward again to the changes in the new branch.</p>
+
+<p>Because all changes are ordered chronologically (no matter the undos and redos
+done between them and the sprouting of new branches), they can be accessed
+in a linear history with <code>g-</code> and <code>g+</code>. You can even travel in time explicitly:
+<code>:earlier 3m</code> (minutes), <code>:later 2h</code> (hours). But in practice all you might
+need is a few <code>g-</code>es once in a blue moon.</p>
+
+<p></p>
+
+<p>On top of that we have <a href="http://vimdoc.sourceforge.net/htmldoc/undo.html#undo-persistence">persistent undo</a> between sessions, which
+I think makes Vim&rsquo;s undo the most powerful undo functionality I have seen in
+a program. If you know of any contenders, please leave a comment!</p>
+
+<p></p>
+
+<p>Vim itself never actually shows you the tree directly, but <a href="http://stevelosh.com/">Steve Losh</a>&rsquo;s
+graphical undo a.k.a. <a href="http://sjl.bitbucket.org/gundo.vim/">Gundo</a> plugin looks nice for that purpose
+(<a href="http://www.screenr.com/M9l">screencast here</a>).</p>
+
+<p>Now you have seen two powerful features that are in Vim but not vi: visual mode
+and the undo system. Here&rsquo;s one more before we end:</p>
+
+<a name="Record.and.Replay.Changes"></a>
+<h3>Record and Replay Changes</h3>
+
+<p></p>
+
+<p>Another meta-verb is <em>record</em> <code>q</code> &mdash; it doesn&rsquo;t change the text by itself, but
+it records the use of other verbs. The recording can then be played back by
+(regular verb) <em>execute</em> <code>@</code> to use the same changes in a new context.</p>
+
+<p>The xkcd forums user EvanED once <a href="http://forums.xkcd.com/viewtopic.php?f=40&amp;t=15855#p577619">demonstrated</a> how he used emacs to
+efficiently</p>
+
+<pre><code class="C">// turn this ...
+void stateDoOperation1(state* state, int param1);
+int stateDoOperation2(state* state, int param1);
+int stateDoOperation3(state* state, int param1, double param2);
+
+// ... into this:
+doOperation1(int param1);
+doOperation2(int param1);
+doOperation3(int param1, double param2);
+</code></pre>
+
+<p>I <a href="http://en.wikipedia.org/wiki/Editor_war">defended the honor</a> of Vim with this salvo:</p>
+
+<pre><code class="html">    qqdfe~fsdf,x&lt;enter&gt;q2@q
+
+    qq                        start recording to register 'q'
+      dfe                     delete to next 'e' (the end of "state")
+         ~                    invert case of letter under cursor (the 'D' in "Do")
+          fs                  move cursor to next 's' (the beginning of "state")
+            df,               delete to next ','
+               x              delete (the space after the ',')
+                &lt;enter&gt;       move to beginning of next line
+                       q      stop recording
+                        2@q   replay 'q' two times
+</code></pre>
+
+<p>Here I will do the same using visual mode so you can better see what&rsquo;s going
+on:</p>
+
+<p><video controls>
+<source src='http://blog.erw.dk/videos/posts/vimmacro.webm' type='video/webm; codecs=vp8' />
+</video></p>
+
+<p>He and I parted ways amicably! As he said</p>
+
+<blockquote><p>vi does seem faster in the hands of someone who&rsquo;s skilled. But it also seems
+that emacs is faster in the hands of someone who isn&rsquo;t particularly skilled</p></blockquote>
+
+<p>And that&rsquo;s probably true!</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Essence of vi]]></title>
@@ -126,8 +460,9 @@ text?&rdquo; After all, in most editors, this is a simple <code>&lt;c-a&gt;</cod
 way of writing <code>ctrl-a</code>).  I could tell you how to do it in Vim (one way is
 <code>ggVG</code>), but it is not in the spirit of vi.  In fact, it&rsquo;s not even possible in
 vi.  And <em>to master Vim, you must understand vi</em>.  (In a later post I will
-cover some &ldquo;philosophical&rdquo; differences between Vim and vi.)  Instead, realize
-that selecting text is a means, but to what end?  <em>Why</em> you want to select all?</p>
+cover some &ldquo;philosophical&rdquo; differences between Vim and vi. <em>Update 2014-11-25:
+<a href="/2014/11/25/the-language-of-vi-improved/">Here it is!</a></em>) Instead, realize that
+selecting text is a means, but to what end?  <em>Why</em> you want to select all?</p>
 
 <p>Do you want to copy everything?  Then copy, don&rsquo;t select.  It&rsquo;s &ldquo;<code>ggyG</code>&rdquo;. Type
 it one letter at a time, and pay attention to case.  What does it mean?  The
