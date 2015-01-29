@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2014-11-30T09:38:42+01:00</updated>
+  <updated>2015-01-29T13:17:17+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,110 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Samba!]]></title>
+    <link href="http://blog.erw.dk/2015/01/29/samba/"/>
+    <updated>2015-01-29T10:42:32+01:00</updated>
+    <id>http://blog.erw.dk/2015/01/29/samba</id>
+    <content type="html"><![CDATA[<p>After spending the fall of 2014 doing research in the Netherlands, I have moved
+home to Aalborg, Denmark and returned to the samba group <a href="https://www.facebook.com/SambaskolenPocoLoco">Poco Loco</a>.
+The group has dancers and percussionists; I&rsquo;m one of the latter. Starting again
+after my half-year break reminded me of how it was when I first started playing
+samba. While you enjoy the video of the group here, I&rsquo;ll geek out on the
+drumming below.</p>
+
+<div class="video-container">
+<iframe src="//www.youtube.com/embed/ogQt9G1zEN8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+<!-- more -->
+
+
+<p>In my gymnasium (high school) years, I played the drum kit, mostly rock music.
+On the drum kit, you play with both hands and both feet simultaneously, so
+coming from this background, I thought playing a single drum at a time should
+be fairly easy. It turns out it&rsquo;s not!</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG' width='320' height='240' alt='[Tamborim](https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG) by [Alno](//commons.wikimedia.org/wiki/User:Alno) / [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)'><span class='caption-text'><a href="https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG">Tamborim</a> by <a href="//commons.wikimedia.org/wiki/User:Alno">Alno</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span></p>
+
+<p>For example, there&rsquo;s the tiny <em>tamborim</em> which, despite its modest size (6&#8221;
+&approx; 15 cm), contributes a lot to the character of the sound of a samba
+<em>bateria</em>. Its basic pattern plays every 16th note, indefinitely, with one
+hand. That requires good technique, first to be able to play at high speed at
+all, then to keep going. (I hope I&rsquo;ll be able to do it some day!)</p>
+
+<p>The <em>caixa</em> (<a href="https://en.wikipedia.org/wiki/Snare_drum">snare drum</a>) also plays every 16th note in the basic
+pattern. Unlike with the tamborim, you can alternate the hands. But like the
+tamborim, the rhythm is played with &ldquo;samba swing&rdquo; which gives an eager,
+energetic feeling. It takes a lot of time readjust when your musical background
+is rock-based. (You can hear the difference <a href="https://www.youtube.com/watch?v=FhiID-40EkY">in this video</a>, where
+he switches between exaggerated, medium, and no swing.)</p>
+
+<p>The <em>repinique</em> is a drum that can make different sounds depending on how it&rsquo;s
+struck. Below is a video of a guy showing how it&rsquo;s played. The drum is used
+by the leader to cue the breaks and perform calls that the rest of the bateria
+answers. So it has a very important role. But playing it involves slapping your
+hand into its metal rim 100-150 times per minute. And it sports tuning rods
+that are always available for said hand to impale itself on. As one of my
+bandmates said: You are not initiated until you have bled on your drum!</p>
+
+<div class="video-container">
+<iframe src="//www.youtube.com/embed/xwxyskWxoWU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+<!--
+I usually play the *surdo*
+
+The rhythms must be played with "swing" to get the right, energetic feeling. 
+
+surdos, chocalho
+This is the reason I joined the group in the first place
+-->
+
+
+<p>Samba is hard, but it&rsquo;s great. Both when we practice and when we perform on the
+street or on a stage. The driving, unending rhythm and the feeling of unity in
+a group of people or a whole carnival are just awe-inspiring.</p>
+
+<p>The atmosphere is also happy and relaxed. Mistakes are made, but you just play
+on. It&rsquo;s more important to keep going than to play perfectly (there&rsquo;s an
+important life lesson in that!)</p>
+
+<p>I was also surprised when I returned from my half year break. I could no longer
+consciously remember the many breaks and call/response sequences. But when the
+leader played the calls, my hands automatically responded. It&rsquo;s like riding
+a bike &ndash; you can do it, but you can&rsquo;t explain how.</p>
+
+<p>Fun facts:</p>
+
+<ul>
+<li><p>Samba swing is in a way the opposite of jazz swing. Jazz swing/shuffle is
+&ldquo;lazy&rdquo; and delays off-beat notes. Samba swing is &ldquo;eager&rdquo; and plays some of
+the notes between the main beats too early.</p></li>
+<li><p>You cannot keep time with your feet because you will be walking in a parade
+at speeds that are likely independent of the music.</p></li>
+<li><p>I still geek out and write down <a href="http://en.wikipedia.org/wiki/Drum_tablature">drum tabs</a> to learn and understand
+new sequences, but after that the automated learning quickly takes over. Most
+people in our group just learn by repetition, without writing it down.</p></li>
+<li><p>Earlier in my life, the primary meaning of &ldquo;samba&rdquo; was a piece of
+<a href="https://en.wikipedia.org/wiki/Samba_%28software%29">networking software</a>.</p></li>
+<li><p>I have no idea why our group is called Poco Loco (a bit crazy) in Spanish,
+when samba is Brazilian. I guess even the name is a bit crazy!</p></li>
+</ul>
+
+
+<p>If you live near Aalborg, and find this all interesting, we could sure use
+a few more drummers (also dancers!). All you need is the interest (and at least
+a hint of a sense of rhythm). See the <a href="https://www.facebook.com/SambaskolenPocoLoco">facebook page</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[User Experiences on a Train Trip]]></title>
