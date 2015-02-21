@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-01-29T13:32:37+01:00</updated>
+  <updated>2015-02-21T13:34:55+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,210 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Sound of R]]></title>
+    <link href="http://blog.erw.dk/2015/02/21/the-sound-of-r/"/>
+    <updated>2015-02-21T13:27:20+01:00</updated>
+    <id>http://blog.erw.dk/2015/02/21/the-sound-of-r</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Voiced_uvular_fricative_%28vector%29.svg/300px-Voiced_uvular_fricative_%28vector%29.svg.png" title="R" alt="R"></p>
+
+<p>R is a common letter in many languages, but it represents vastly different
+sounds. Sometimes even within the same language.
+As <a href="https://en.wikipedia.org/wiki/Rhotic_consonant">Wikipedia says</a>:
+<em>Being &ldquo;R-like&rdquo; is an elusive and ambiguous concept phonetically</em>.
+In fact, we might not even consider the R-sound used in, say, Spain, related to
+the R-sound used in France/Germany/Denmark, if they were not spelled the same.
+However, it was the will of history that they are, and in this post, I will
+present the three main families of R-sounds in European languages: English,
+Spanish, and French.</p>
+
+<p>I am trying to keep it jargon free; hence the names above. They are
+a simplification, and in fact many languages use the three types. For example,
+the &ldquo;Spanish&rdquo; type is also Italian, Finnish, Icelandic, Lithuanian, Polish,
+Czech, etc. Some languages, such as <a href="http://youtu.be/iIWmTglqUzY">Dutch</a> and Portuguese also use
+more than one type, even within a single dialect. In this post I will cover the
+three &ldquo;mainstream&rdquo; R families plus a lot of other interesting R-facts,
+including that R is sometimes a vowel!</p>
+
+<p>(R is incidentally also a very nice <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">statistics program</a>, but that is
+not the topic of this post!)</p>
+
+<!-- more -->
+
+
+<a name="English"></a>
+<h2>English</h2>
+
+<p>Since you are reading this in English, I think you are familiar with this type
+of R:</p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Alveolar_approximant.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+<a href="https://en.wikipedia.org/wiki/File:Alveolar_approximant.ogg">Alveolar approximant</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<p>Consonants do not usually stand alone, so what you hear is the R mixed with
+vowels: [ra ara].</p>
+
+<p>There is some variation in where the English type R is used.
+In <a href="https://en.wikipedia.org/wiki/Rhotic_and_non-rhotic_accents">non-rhotic</a> dialects, Rs that are not immediately followed by
+a vowel disappear. A famous example is the sentence &ldquo;Park the car in Harvard
+Yard&rdquo;. In a non-rhotic dialect, in Boston for example, it would be pronounced
+&ldquo;Pahk the car in Hahvahd Yahd&rdquo;.
+Dialects with <a href="https://en.wikipedia.org/wiki/Linking_and_intrusive_R#Intrusive_R">intrusive R</a> on the other hand
+insert them where they didn&rsquo;t appear originally: &ldquo;I saw a film&rdquo; becomes &ldquo;I sawr
+a film&rdquo; (<a href="https://www.youtube.com/watch?v=P-Q9D4dcYng#t=72">oh boy</a>).</p>
+
+<a name="Spanish"></a>
+<h2>Spanish</h2>
+
+<p>The &ldquo;Spanish&rdquo; R covers two types, depending on whether you tap the tongue
+<em>once</em> <a href="https://en.wikipedia.org/wiki/Alveolar_ridge">behind your upper front teeth</a> or roll it multiple
+times:</p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Alveolar_tap.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+<a href="https://en.wikipedia.org/wiki/File:Alveolar_tap.ogg">Alveolar tap</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alveolar_trill.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+<a href="https://en.wikipedia.org/wiki/File:Alveolar_trill.ogg">Alveolar trill</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<p>Some languages use only one of these two. In (standard) Spanish, they are both
+used: For single R (as in &ldquo;pero&rdquo;, meaning &ldquo;but&rdquo;) and double R (&ldquo;perro&rdquo;, &ldquo;dog&rdquo;),
+respectively. (However, I once met a <em>Carmen</em> who told me she liked her name
+pronounced with a roll consisting of three taps.)</p>
+
+<p>This type of R is also where &ldquo;R-ness&rdquo; becomes strange: The single tap has
+a D-like quality to it. For example, the <em>tt</em> in &ldquo;better&rdquo; in English is also
+made by tapping the tongue on the gum ridge behind the front teeth!</p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/4/45/En-us-better.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+&ldquo;<a href="https://en.wikipedia.org/wiki/File:En-us-better.ogg">Better</a>&rdquo; by <a href="https://commons.wikimedia.org/wiki/User:Dvortygirl">Dvortygirl</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<a name="French"></a>
+<h2>French</h2>
+
+<p>French R, German R, Danish R. Also known as
+<a href="https://en.wikipedia.org/wiki/Guttural_R">guttural (throaty) R</a>.
+Like the Spanish R, it can also be done with or without a trill:</p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/a/af/Voiced_uvular_fricative.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+<a href="https://en.wikipedia.org/wiki/File:Voiced_uvular_fricative.ogg">Voiced uvular fricative</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<p><audio controls>
+<source src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Uvular_trill.ogg" type='audio/ogg; codecs=vorbis' />
+</audio>&nbsp;&nbsp;
+<span style="vertical-align: top;">
+<small>
+<a href="https://en.wikipedia.org/wiki/File:Uvular_trill.ogg">Uvular trill</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
+</small>
+</span></p>
+
+<p>These sounds are produced while touching the back of the tongue to the <a href="https://en.wikipedia.org/wiki/Palatine_uvula">uvula</a>
+&mdash; the dangly thing at the back of the throat. (Danes are in fact lazy and
+only <em><a href="https://en.wikipedia.org/wiki/Approximant_consonant">approach</a></em> the back of the tongue to the uvula, but the
+sound is almost the same.)</p>
+
+<p>In the southern parts of Norway and Sweden, close to Denmark, this type of R is
+also used.</p>
+
+<a name="Portuguese"></a>
+<h2>Portuguese</h2>
+
+<p>I have not included Portuguese as a type of R, because this beautiful language
+in fact uses a large array of sounds to pronounce the letter R, depending on
+dialect and context. As <a href="https://en.wikipedia.org/wiki/Portuguese_language#Consonants">Wikipedia says</a>:</p>
+
+<blockquote><p>The actual uvular pronunciation [χ ʁ ʀ] is common in Portugal, although the
+older trill [r] is also heard. In Brazil, the total inventory of /ʁ/
+allophones is rather long, or up to [r ç x ɣ χ ʁ ʀ ħ h ɦ]</p></blockquote>
+
+<p>The pronunciation of an R at the beginning of a word in Brazil can be
+especially counter-intuitive (at least if you&rsquo;re not from Brazil!). As
+I learned from my Portuguese teacher (from <a href="https://en.wikipedia.org/wiki/Bras%C3%ADlia">Brasília</a>), the word
+<em><a href="http://en.wiktionary.org/wiki/real#Portuguese">real</a></em> (meaning both real and royal, and being the Brazilian
+currency), is pronounced <em><a href="http://www.forvo.com/word/real/#pt">heau</a></em>(!) An initial R is a breathy
+H-sound, and a final L is a U-like sound.</p>
+
+<a name="R.as.Vowel"></a>
+<h2>R as Vowel</h2>
+
+<p>In the section on the English R, I mentioned non-rhotic dialects (typical of
+England) where Rs that are not immediately followed by a vowel disappear. But
+it might be more correct to say that they are vowels. Sometimes they prolong
+existing vowels, as in &ldquo;park the car&rdquo;, where the R prolongs the existing
+A-sound: &ldquo;paak the caa&rdquo;. Other times, you can hear the R as a separate A-like
+sound: beer [bia], your [yua/yoa], poor [pua/poa]. It also merges with E:
+reader [reeda], bother [botha]. Technically, the sound is a
+<em><a href="https://en.wikipedia.org/wiki/Schwa">schwa</a></em>, a &ldquo;lazy&rdquo;, neutral vowel made while relaxing the mouth.
+I guess whoever invented the word &ldquo;gangsta&rdquo; also spoke a non-rhotic dialect.</p>
+
+<p>I think this phenomenon is especially interesting because everybody knows that
+R is a consonant, but in practice non-rhotic speakers pronounce something like
+half of all Rs as a vowel!</p>
+
+<p>The phenomenon is also part of Danish. For example, in &ldquo;stor&rdquo; [stoa], meaning
+&ldquo;big&rdquo;, or &ldquo;biler&rdquo; [bila], meaning &ldquo;cars&rdquo;. The length of this vowel even
+distinguishes meanings: svar [svaa], svare [svaaa], svarer [svaaaa], svarere
+[svaaaaa]. These four words mean &ldquo;(an) answer&rdquo;, &ldquo;(to) answer&rdquo;, &ldquo;(an) answerer&rdquo;,
+and &ldquo;(some) answerers&rdquo;. Even natives have trouble distinguishing these&hellip;</p>
+
+<a name="Lojban"></a>
+<h2>Lojban</h2>
+
+<p>I will round off with the constructed language <a href="http://www.lojban.org/tiki/Lojban">Lojban</a> because it has
+an interesting approach to the letter R.</p>
+
+<p>You may have heard of the constructed language Esperanto. Unlike Lojban, the
+older, and relatively successful Esperanto is Eurocentric (and uses the Spanish
+type R). Lojban is made to make sense in <a href="http://en.wikipedia.org/wiki/Worldlang">the whole world</a>. Its
+vocabulary is based on the most spoken languages worldwide: Mandarin, English,
+Hindi, Spanish, Russian, and Arabic. Its inventory of sounds is also sparse,
+which means that (small) variations in pronunciation of letters between
+cultures do not disturb the meaning. Especially for R, any of the rhotic
+(R-like) consonant sounds are allowed, so you can just choose the one that is
+already in your native language, or the one that is the easiest to learn!</p>
+
+<p>Its grammar is also fascinating. For example, it can use any
+subject-verb-object order: SVO, SOV, OVS, OSV, VSO, VOS. It also has a complete
+<a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">BNF</a>! (For those who know what that is.) But I will save that for some
+other time!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Samba!]]></title>
