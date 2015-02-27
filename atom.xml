@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-02-21T13:38:01+01:00</updated>
+  <updated>2015-02-27T13:38:39+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,245 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[4 Years with Colemak]]></title>
+    <link href="http://blog.erw.dk/2015/02/27/4-years-with-colemak/"/>
+    <updated>2015-02-27T13:38:30+01:00</updated>
+    <id>http://blog.erw.dk/2015/02/27/4-years-with-colemak</id>
+    <content type="html"><![CDATA[<p>As a young computer user I felt that something was wrong with the keyboard.
+Like Morpheus says to Neo when they first meet:</p>
+
+<blockquote><p>What you know you can&rsquo;t explain. But you feel it. You&rsquo;ve felt it your entire
+life. That there&rsquo;s something wrong with the world. You don&rsquo;t know what it is
+but it&rsquo;s there, like a splinter in your mind driving you mad. It is this
+feeling that has brought you to me. Do you know what I&rsquo;m talking about?</p></blockquote>
+
+<p>QWERTY.</p>
+
+<p>Touch typing on the QWERTY keyboard layout is wrong. You can do it every day,
+all day, but there&rsquo;s something wrong with it. Today, four years ago, I took the
+red pill: I started using the <a href="http://colemak.com/">Colemak</a> keyboard layout.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/colemak_qwerty_3d.png' width='' height='' alt='Comparison of QWERTY and Colemak keyboard layouts with letter frequencies. Graphics by Pavel Pavlov.'><span class='caption-text'>Comparison of QWERTY and Colemak keyboard layouts with letter frequencies. Graphics by Pavel Pavlov.</span></span></p>
+
+<!-- more -->
+
+
+<p>In the image above, the QWERTY and Colemak keyboard layouts are shown with the
+height of each key set to the <a href="http://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language">frequency</a> with which it is
+used. With this view, a pattern becomes obvious: The most often used keys are
+scattered in QWERTY and collected on the home row in Colemak (pronounced
+Coal-Mac). This means that you have to move your fingers much less in Colemak.
+In fact, the home row has only around ⅓ of keystrokes in QWERTY while in
+Colemak it has ¾ in English. The backspace key that is also used fairly often
+is also changed from an awkward pinky stretch to a prime location on the home
+row: where the caps lock key used to be.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/CmkNew_IBM-DIY_90d-erw.png' width='' height='' alt='Colemak Keyboard Figure (IBM style) by [Øystein Bech Gadmar] [DreymaR], [CC BY-NC 4.0] [cc-by-nc4], caps lock key retouched, colors adjusted.'><span class='caption-text'>Colemak Keyboard Figure (IBM style) by <a href="http://forum.colemak.com/profile.php?id=125">Øystein Bech Gadmar</a>, <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>, caps lock key retouched, colors adjusted.</span></span></p>
+
+<p>Typing on Colemak is very smooth. Besides reducing the distance your fingers
+have to travel, it also makes transitions from one letter to the next pleasant.
+This is for example done by reducing repeated use of the same finger. QWERTY
+repeats the same finger in some frequent <a href="http://en.wikipedia.org/wiki/Bigram">bigrams</a> (sequences of two
+letters) such as <em>ed</em>, <em>de</em>, <em>ce</em>, <em>my</em>, and <em>un</em>. They might seem
+inconspicuous, but they disrupt the flow of typing, and the latter two also
+jump two rows. To type out
+<em><a href="http://www.gutenberg.org/ebooks/1661">The Adventures of Sherlock Holmes</a></em> you would type 21782
+same-finger bigrams on QWERTY and 5503 on Colemak. (On both layouts you would
+in addition type 10095 same <em>letter</em> bigrams (<em>ll</em>, <em>ee</em>, etc.), but those are
+not easily avoided.)</p>
+
+<p>Longer sequences also flow smoothly. This is partly because they consist of the
+shorter sequences mentioned above, which are themselves pleasant, and partly
+because of <em>rolls</em>. These are sequences that just &ldquo;roll&rdquo; off your fingers. For
+example, the common <a href="https://en.wikipedia.org/wiki/Trigram">trigrams</a> <em>ing</em>, <em>the</em>, <em>ent</em>, and <em>tio</em> flow
+in one direction over the keyboard, left-to-right or right-to-left, making them
+easy to type. Rolls on the same hand are even better: T<strong>hey</strong>, c<strong>oul</strong>d,
+sh<strong>oul</strong>d, l<strong>ast</strong>, fi<strong>rst</strong>, med<strong>ium</strong>, cl<strong>ien</strong>t, ar<strong>oun</strong>d, sh<strong>arp</strong>,
+<strong>arg</strong>ument. These (common) sequences almost makes typing fun!</p>
+
+<p>But in the end, Colemak is a good balance of many desirable properties: Minimal
+finger movement, smooth transitions, less work for the weaker fingers, a good
+balance between hand alternation and rolls, and a good balance between right
+and left hand.</p>
+
+<p>As someone who works with computers all day, these past four years have been
+much more comfortable due to Colemak. Therefore I would like to say thank you
+to Shai Coleman for creating Colemak, and the Colemak <a href="http://forum.colemak.com/">community</a>
+for encouragement and many discussions!</p>
+
+<p>Below, some frequently asked questions, and my answers to them.</p>
+
+<a name="Frequently.Asked.Questions"></a>
+<h2>Frequently Asked Questions</h2>
+
+<a name="Does.it.work.on.my.computer."></a>
+<h3>Does it work on my computer?</h3>
+
+<p>Yes. It&rsquo;s built into Mac OS X, Linux (X.org), *BSD, ChromeOS, Android, iOS
+(for external keyboards), etc. Basically all the cool kids. You can also get
+and customize it on Windows (even without admin privileges) with <a href="http://www.autohotkey.com/">AutoHotKey</a>
+or <a href="http://pkl.sourceforge.net/">Portable Keyboard Layout</a>, OS X with <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=ukelele">Ukelele</a>, and Linux
+with X.org xkb (built in). See <a href="http://colemak.com/Download">Colemak downloads</a>.</p>
+
+<a name="Do.I.need.a.new..physical..keyboard."></a>
+<h3>Do I need a new (physical) keyboard?</h3>
+
+<p>No. Key labels are not good for touch typing on any layout. And only frequently
+used keys change in Colemak compared to QWERTY, so the rare ones even keep
+their correct labels if you need a peek for those.</p>
+
+<a name="But.wait..why.touch.type.at.all."></a>
+<h3>But wait, why touch type at all?</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/Touch_typing">Touch typing</a> means that you type without looking at the
+keyboard or your hands. This means you can keep your focus on your work, which
+avoids the overhead of switching your attention.</p>
+
+<p>If you do not currently touch type, you can
+kill two stones with one bird
+by
+learning touch typing on Colemak. It&rsquo;s also more fun because you start typing
+real words instead of permutations of <em>fjdksl</em>!</p>
+
+<a name="How.much.time.does.it.take.to.learn."></a>
+<h3>How much time does it take to learn?</h3>
+
+<p>Check out <a href="http://forum.colemak.com/viewforum.php?id=6">users&#8217; experiences</a> on the forum! For me
+it took a couple of weeks to reach a workable level, and a couple of months to
+become proficient.</p>
+
+<p>Since then, a new and probably more comfortable method has paved the way for
+learning Colemak: the <a href="http://forum.colemak.com/viewtopic.php?id=1858">Tarmak transitional layouts</a>.
+Instead of switching all keys at once and being generally confused, you change
+a few keys, adapt, change a few more, adapt again. This way, you can stay
+fairly productive during the whole transition period. It&rsquo;s really quite clever.</p>
+
+<a name="What.about.other.people.using.your.computer."></a>
+<h3>What about other people using your computer?</h3>
+
+<p>If you want to share the computer with others, all major OSes allow some quick
+keyboard shortcut to switch layouts. If not, consider your alternative layout
+a deterrent ;-)</p>
+
+<a name="What.about.using.other.people.s.computers."></a>
+<h3>What about using other people&rsquo;s computers?</h3>
+
+<p>While primarily using an alternative layout, some people retain their ability
+to type QWERTY, and others do not. <a href="http://www.ryanheise.com/colemak/">Here</a> are some tips on
+retaining proficiency in both layouts.</p>
+
+<p>Personally I lost interest in QWERTY after a few weeks of using Colemak. Now
+I hunt and peck when I use other people&rsquo;s computers and enjoy the comfortable
+99% of the time on my own computers.</p>
+
+<a name="What.about.other.alternative.layouts."></a>
+<h3>What about other alternative layouts?</h3>
+
+<p>Colemak is neither the first nor the last attempt at a better keyboard layout.
+It is however one of the better ones so far. You can see a comparison of
+keyboard layouts at <a href="http://mkweb.bcgsc.ca/carpalx/?popular_alternatives">carpalx</a>.</p>
+
+<a name="Does.it.work.for.my.language."></a>
+<h3>Does it work for my language?</h3>
+
+<p>Yes, probably. Colemak is made for English, but it supports <a href="http://colemak.com/Multilingual">many languages</a>
+in the sense that you can type the necessary special characters and accents. It
+is also likely that the letters that are most common in English (and therefore
+easy to type on Colemak), are also frequent in your own language. It might not
+be a perfect match, but it&rsquo;s probably a lot better than QWERTY and its cousins
+(QWERTZ, AZERTY).</p>
+
+<p>The special characters are inserted using the AltGr key. If you type 90%
+English and 10% something else, AltGr will probably do fine. If your balance is
+closer to 50/50, you could make a localized version of Colemak, or find an
+existing one. There are no official Colemak versions available for languages
+other than English (but there are some unofficial ones by the community).</p>
+
+<p>The official approach is to use the standard Colemak including US style
+punctuation symbol locations and use some punctuation keys for the most common
+extra characters in your language (the less-than/greater-than key found between
+Shift and Z on most non-US keyboards is a good first choice). For example, in
+<a href="http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/french-letter-frequencies/">French</a>, &lsquo;é&rsquo; is frequent (2.4%) and a good
+candidate for a dedicated key, while &lsquo;ê&rsquo; (0.1%) is not and can be typed using
+the standard Colemak AltGr layer.</p>
+
+<p>Another approach is to start with your native keyboard layout and drop in the
+Colemak letter block. I will show that below because that is my own approach.
+The reason to do this is the same reasoning that is behind Colemak proper:
+Avoid moving low frequency keys (such as punctuation and rare letters). They
+take longer to relearn because you practice them less often.</p>
+
+<p>As a side note, if you don&rsquo;t type so much English but still want a better
+layout, you could look for something made for your own language, for example
+German (de-ergo, NEO, ADNW), French (Bépo, Dvorak-fr, bvofrak), Dutch (De
+Correspondent), or Portuguese (pt-Nativo).</p>
+
+<a name="Does.it.work.for.Danish."></a>
+<h3>Does it work for Danish?</h3>
+
+<p>Yes, see the section above. The main difference between Danish and English is
+the addition of Æ, Ø, and Å. At 0.87%, 0.94%, and 1.19% respectively, they are
+not extremely <a href="http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/danish-letter-frequencies/">frequent</a>. But on the other hand,
+their sum is 3.0%, and having to reach for AltGr 2-3 times per sentence is more
+than I want. (However, this can be made much easier by putting AltGr on the
+Caps Lock location.)</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/colemak_dk.png' width='' height='' alt='Danish Colemak. The shaded keys have moved compared to Danish QWERTY.'><span class='caption-text'>Danish Colemak. The shaded keys have moved compared to Danish QWERTY.</span></span></p>
+
+<p>My solution keeps Ø and Å in their regular locations, while Æ only moves one
+position up &mdash; like the semicolon key in English.</p>
+
+<p>On top of that I have made some <a href="https://bitbucket.org/erw/colemak/src/default/dk">changes</a> to facilitate programming,
+such as putting the brackets {[]} on AltGr-neio, putting backslash on the
+½ key. These types of modifications are personal and you will probably want
+something else. If you are a programmer, you can also use the &ldquo;standard&rdquo;
+solution which is to use the US English layout (whether QWERTY or Colemak).</p>
+
+<a name="What.about..Vim...vim_category.."></a>
+<h3>What about <a href="http://blog.erw.dk/blog/categories/vim/">Vim</a>?</h3>
+
+<p>The first difference you notice is that <em>j</em> and <em>k</em> have moved away from the
+home row &mdash; and rightly so, because in typing, they are very rare: 0.22% and
+0.81%. There are many options. Some people use vim as-is. Either because they
+don&rsquo;t feel the need for any changes, or because they use the arrow keys anyway
+(in which case I would recommend learning <em>hjkl</em>).</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/colemak_vim_erw.png' width='' height='' alt='Vim remapping for Colemak'><span class='caption-text'>Vim remapping for Colemak</span></span></p>
+
+<p>Some people make only minimal changes to Vim (see for example the end of
+<a href="http://www.ryanheise.com/colemak/">this page</a>) while others use the opportunity to do a
+<a href="http://forum.colemak.com/viewtopic.php?id=50">major refurnishing</a>.
+My own approach is in between but conceptually simple. Keys are shifted around
+two loops: <em>k</em>-<em>n</em>-<em>j</em>-<em>e</em> and <em>i</em>-<em>l</em>. This restores the normal <em>hjkl</em>
+navigation cluster and puts next match <em>n</em> back on its previous location.
+Insert <em>i</em> and end <em>e</em> are now on L and J. (You can memorize it as &lsquo;linsert&rsquo;
+and &lsquo;jend&rsquo; until muscle memory takes over.) You can source <a href="https://bitbucket.org/erw/colemak/src/default/colemak.vim">my mappings</a>
+from your .vimrc to try it out.</p>
+
+<a name="Should.I.use.it.on.my.smartphone."></a>
+<h3>Should I use it on my smartphone?</h3>
+
+<p>If you like, but I would say no. Colemak collects the most frequent keys on the
+home row. That makes it really good for a full size keyboard, but on
+a smartphone it means all the important stuff goes on in a fairly small area
+and your fingers will step on each other. For an optimized touch screen layout,
+<a href="http://www.exideas.com/ME/index.php">MessagEase</a> is an option (though I just use a QWERTY layout with
+SwiftKey).</p>
+
+<a name="What.about.using.an.Ergonomic.keyboard.instead."></a>
+<h3>What about using an Ergonomic keyboard instead?</h3>
+
+<p>That is a good idea.
+Especially if it has a <a href="http://deskthority.net/wiki/Staggering#Matrix_layout">columnar or matrix</a> key layout.
+Then it might even be better for comfort than switching layout.
+The two approaches can also be combined.
+That&rsquo;s what I do, but more on that later.</p>
+
+<p>Thanks for reading!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Sound of R]]></title>
