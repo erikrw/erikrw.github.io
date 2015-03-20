@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Debugging Complex Numbers - Erik Ramsgaard Wognsen</title>
+  <meta name="author" content="Erik Ramsgaard Wognsen">
+
+  
+  <meta name="description" content="For my research I needed to implement a discrete Fourier transform in
+the C-like programming language of the UPPAAL model checker. One
+option would &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.erw.dk/2015/03/20/debugging-complex-numbers">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55985488-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
+  
+    <h2>Thoughts & technology</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.erw.dk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Debugging Complex Numbers</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-20T20:34:38+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>For my research I needed to implement a <a href="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">discrete Fourier transform</a> in
+the C-like programming language of the <a href="http://www.uppaal.org/">UPPAAL</a> model checker. One
+option would be to port an existing C library such as <a href="http://www.fftw.org">FFTW</a>, but for
+a proof of concept, porting a large, powerful library would be much slower
+and less instructive than implementing a simpler algorithm myself.
+Programming rant coming up.</p>
+
+<!-- more -->
+
+
+<p>I went with the <a href="http://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#The_radix-2_DIT_case">Cooley-Tukey radix-2 decimation-in-time fast Fourier transform</a>,
+which, despite the name, is one of the simpler choices.
+Pseudocode adapted from Wikipedia:</p>
+
+<pre><code>X[0,...,N−1] ← ditfft2(x, N, s):             DFT of (x[0], x[s], x[2s], ..., x[(N-1)s]):
+    if N = 1 then
+        X[0] ← x[0]                                  trivial size-1 DFT base case
+    else
+        X[0,...,N/2−1] ← ditfft2(x, N/2, 2s)         DFT of (x[0], x[2s], x[4s], ...)
+        X[N/2,...,N−1] ← ditfft2(x+s, N/2, 2s)       DFT of (x[s], x[s+2s], x[s+4s], ...)
+        for k = 0 to N/2−1                           combine DFTs of two halves into full DFT:
+            t ← X[k]
+            X[k] ← t + exp(−2πi k/N) X[k+N/2]
+            X[k+N/2] ← t − exp(−2πi k/N) X[k+N/2]
+        endfor
+    endif
+
+Here, ditfft2(x,N,1), computes X=DFT(x) out-of-place by a radix-2 DIT FFT,
+where N is an integer power of 2 and s=1 is the stride of the input
+x array. x+s denotes the array starting with xs.
+</code></pre>
+
+<p>I decided to handle the problem in two stages: 1) Implement the algorithm in
+a high-level language (Python) to make sure I get the algorithm itself right,
+and 2) reduce the use of high-level features until it is trivial to port to
+a C-like language.</p>
+
+<p>List handling in Python is always a charm, but the main high-level feature
+I wanted was the handling of <a href="http://en.wikipedia.org/wiki/Complex_number">complex numbers</a> (notice the <code>−2πi</code>s
+above). My first high-level version worked nicely &mdash; at least as compared with
+the <code>fft</code> function of <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">R</a> with a few sample inputs. Code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="kn">import</span> <span class="nn">math</span>
+</span><span class='line'><span class="n">EVEN</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'><span class="n">ODD</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">fft1</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">a</span>
+</span><span class='line'>    <span class="n">c</span> <span class="o">=</span> <span class="n">fft1</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="n">fft1</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">t</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="o">-</span><span class="mi">2j</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span> <span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="o">-</span><span class="mi">2j</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">c</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next step was to handle the complex numbers manually, so they can be
+represented by two doubles. At first I tried to handle the general case of
+raising a real to a complex, but that was harder than I thought it would be.
+Luckily my colleague Louise could derive it for me:</p>
+
+<pre><code> a + bi      a                   a
+x        =  x  cos(b ln(x)) + i x  sin(b ln(x))
+</code></pre>
+
+<p>(and I wish adding MathJax (LaTeX) to Octopress was a one-minute job, but it isn&rsquo;t.)</p>
+
+<p>However, if I had remembered that in my case <em>x</em> = <em>e</em> and <em>a</em> = 0, it would
+have been simpler. It even has a name, <a href="http://en.wikipedia.org/wiki/Euler%27s_formula">Euler&rsquo;s formula</a>, and it is
+mindboggling in all its simple beauty:</p>
+
+<pre><code> bi
+e    =  cos(b) + i sin(b)
+</code></pre>
+
+<p>At least we both learned something about complex numbers!</p>
+
+<p>The next (buggy) version of my code was this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="k">def</span> <span class="nf">fft2</span><span class="p">(</span><span class="n">a_re</span><span class="p">,</span> <span class="n">a_im</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_re</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">assert</span> <span class="n">n</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_im</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="p">(</span><span class="n">a_re</span><span class="p">,</span> <span class="n">a_im</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">c_re</span><span class="p">,</span> <span class="n">c_im</span> <span class="o">=</span> <span class="n">fft2</span><span class="p">(</span><span class="n">a_re</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_im</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</span><span class='line'>    <span class="n">c_re2</span><span class="p">,</span> <span class="n">c_im2</span> <span class="o">=</span> <span class="n">fft2</span><span class="p">(</span><span class="n">a_re</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_im</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</span><span class='line'>    <span class="n">c_re</span> <span class="o">+=</span> <span class="n">c_re2</span>
+</span><span class='line'>    <span class="n">c_im</span> <span class="o">+=</span> <span class="n">c_im2</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">t_re</span><span class="p">,</span> <span class="n">t_im</span> <span class="o">=</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="p">(</span><span class="n">c_re</span><span class="p">,</span> <span class="n">c_im</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It didn&rsquo;t give the same output as the first one, and I couldn&rsquo;t see why, so
+I put both versions in one to debug them in lockstep:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="k">def</span> <span class="nf">fft3</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">a_re</span><span class="p">,</span> <span class="n">a_im</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">assert</span> <span class="n">n</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_re</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_im</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">a_re</span><span class="p">,</span> <span class="n">a_im</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">c</span><span class="p">,</span> <span class="n">c_re</span><span class="p">,</span> <span class="n">c_im</span> <span class="o">=</span> <span class="n">fft3</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_re</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_im</span><span class="p">[</span><span class="n">EVEN</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</span><span class='line'>    <span class="n">c2</span><span class="p">,</span> <span class="n">c_re2</span><span class="p">,</span> <span class="n">c_im2</span> <span class="o">=</span> <span class="n">fft3</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_re</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">],</span> <span class="n">a_im</span><span class="p">[</span><span class="n">ODD</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</span><span class='line'>    <span class="n">c</span> <span class="o">+=</span> <span class="n">c2</span>
+</span><span class='line'>    <span class="k">del</span> <span class="n">c2</span>
+</span><span class='line'>    <span class="n">c_re</span> <span class="o">+=</span> <span class="n">c_re2</span>
+</span><span class='line'>    <span class="k">del</span> <span class="n">c_re2</span>
+</span><span class='line'>    <span class="n">c_im</span> <span class="o">+=</span> <span class="n">c_im2</span>
+</span><span class='line'>    <span class="k">del</span> <span class="n">c_im2</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">t</span><span class="p">,</span> <span class="n">t_re</span><span class="p">,</span> <span class="n">t_im</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">c</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="o">-</span><span class="mi">2j</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span> <span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="o">-</span><span class="mi">2j</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_re</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_im</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>        <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">c_re</span><span class="p">,</span> <span class="n">c_im</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Testing still showed that the approaches disagreed:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</span><span class='line'><span class="n">x1</span><span class="p">,</span> <span class="n">x2_re</span><span class="p">,</span> <span class="n">x2_im</span> <span class="o">=</span> <span class="n">fft3</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">complex</span><span class="p">,</span> <span class="n">a</span><span class="p">),</span> <span class="n">a</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</span><span class='line'><span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="nb">complex</span><span class="p">(</span><span class="n">re</span><span class="p">,</span> <span class="n">im</span><span class="p">)</span> <span class="k">for</span> <span class="n">re</span><span class="p">,</span> <span class="n">im</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x2_re</span><span class="p">,</span> <span class="n">x2_im</span><span class="p">)]</span>
+</span><span class='line'><span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;!&#39;</span> <span class="o">*</span> <span class="mi">10</span> <span class="k">if</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s">&#39;&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="p">(</span><span class="mi">4</span><span class="o">+</span><span class="mi">0j</span><span class="p">)</span> <span class="p">(</span><span class="mi">4</span><span class="o">+</span><span class="mi">0j</span><span class="p">)</span> <span class="mi">0j</span>
+</span><span class='line'><span class="p">(</span><span class="mf">1.22464679915e-16</span><span class="o">-</span><span class="mi">2j</span><span class="p">)</span> <span class="p">(</span><span class="mf">1.22464679915e-16</span><span class="o">+</span><span class="mi">0j</span><span class="p">)</span> <span class="o">-</span><span class="mi">2j</span> <span class="err">!!!!!!!!!!</span>
+</span><span class='line'><span class="mi">0j</span> <span class="mi">0j</span> <span class="mi">0j</span>
+</span><span class='line'><span class="p">(</span><span class="o">-</span><span class="mf">1.22464679915e-16</span><span class="o">+</span><span class="mi">2j</span><span class="p">)</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.22464679915e-16</span><span class="o">+</span><span class="mi">0j</span><span class="p">)</span> <span class="mi">2j</span> <span class="err">!!!!!!!!!!</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Stepping through the code in Winpdb, I found three things:</p>
+
+<ul>
+<li>Debugging is easier if you clean up temp variables in the namespace, hence
+the <code>del</code> statements in <code>fft3</code>.</li>
+<li>Debugging is easier if the complex numbers are represented as complex numbers
+all the time, hence the test code giving <code>map(complex, a)</code> as the first
+argument to <code>fft3</code> (rather than simply giving <code>a</code>).</li>
+<li>Line 21 was the first to show the bug (for the given input): I had been so
+focused on complex exponentiation that I had forgot all about
+<a href="http://en.wikipedia.org/wiki/Complex_number#Multiplication_and_division">complex multiplication</a>! Which is btw
+
+<ul>
+<li>(a + bi) (c + di) = (ac - bd) + (bc + ad) i</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Now I (naively hoped I) was done. Replacing</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_re</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_im</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>by</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="n">p_re</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="n">p_im</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_re</span> <span class="o">+</span>  <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_im</span> <span class="o">+</span>  <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+</span><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">-</span> <span class="p">((</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]))</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">-</span> <span class="p">((</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>still didn&rsquo;t work. But that is just a silly bug: Reading <code>c_re[k + n / 2]</code> in
+line 6 after it was overwritten in line 5. Python has a really nice solution
+for problems like this: Do both <a href="https://docs.python.org/2/reference/simple_stmts.html#assignment-statements">assignments</a> at once!
+Instead of lines 5 and 6:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">],</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+</span><span class='line'>    <span class="n">t_re</span> <span class="o">-</span> <span class="p">((</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])),</span>
+</span><span class='line'>    <span class="n">t_im</span> <span class="o">-</span> <span class="p">((</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])),</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>However, the goal was using fewer high-level features, so my final solution
+factors out the reused parts of the computation, which probably makes the code
+simpler in this case anyway:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="n">p_re</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="n">p_im</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'><span class="n">mult_re</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+</span><span class='line'><span class="n">mult_im</span> <span class="o">=</span> <span class="p">(</span><span class="n">p_im</span> <span class="o">*</span> <span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">p_re</span> <span class="o">*</span> <span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+</span><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_re</span> <span class="o">+</span> <span class="n">mult_re</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>         <span class="o">=</span> <span class="n">t_im</span> <span class="o">+</span> <span class="n">mult_im</span>
+</span><span class='line'><span class="n">c_re</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_re</span> <span class="o">-</span> <span class="n">mult_re</span>
+</span><span class='line'><span class="n">c_im</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">t_im</span> <span class="o">-</span> <span class="n">mult_im</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So, after a few detours I got my &ldquo;manually&rdquo; computed complex numbers, and
+learned a bit more about how complex numbers and FFTs work. Also, debugging
+with a debugger (rather than print statements) doesn&rsquo;t mean you don&rsquo;t need to
+modify your code &ndash; in my case, merging both functions made the debugging a lot
+easier.</p>
+
+<p>Finally, the Python <a href="https://docs.python.org/2/library/math.html"><code>math</code> library</a> doesn&rsquo;t support complex numbers!
+But there is a good reason for that, as explained in the
+<a href="https://docs.python.org/2/library/cmath.html"><code>cmath</code> (complex math) library</a>:</p>
+
+<blockquote><p>The reason for having two modules is that some users aren’t interested in
+complex numbers, and perhaps don’t even know what they are. They would rather
+have <code>math.sqrt(-1)</code> raise an exception than return a complex number.</p></blockquote>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-03-20T20:34:38+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'></span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2015/02/27/4-years-with-colemak/" title="Previous Post: 4 Years with Colemak">&laquo; 4 Years with Colemak</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+  Hello! I&#8217;m Erik, software engineer and researcher from Denmark.
+  Technology, usability, languages, drumming, and dancing are some of my interests.
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2015/03/20/debugging-complex-numbers/">Debugging Complex Numbers</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2015/02/27/4-years-with-colemak/">4 Years with Colemak</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2015/02/21/the-sound-of-r/">The Sound of R</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2015/01/29/samba/">Samba!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/11/30/user-experiences-on-a-train-trip/">User Experiences on a Train Trip</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/drumming/'>drumming (1)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (1)</a></li><li><a href='/blog/categories/language/'>language (1)</a></li><li><a href='/blog/categories/programming/'>programming (1)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (2)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  &copy; 2015 - Erik Ramsgaard Wognsen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'erwdk';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2015/03/20/debugging-complex-numbers/';
+        var disqus_url = 'http://blog.erw.dk/2015/03/20/debugging-complex-numbers/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

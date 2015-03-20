@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2015-03-20T20:36:16+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Debugging Complex Numbers]]></title>
+    <link href="http://blog.erw.dk/2015/03/20/debugging-complex-numbers/"/>
+    <updated>2015-03-20T20:34:38+01:00</updated>
+    <id>http://blog.erw.dk/2015/03/20/debugging-complex-numbers</id>
+    <content type="html"><![CDATA[<p>For my research I needed to implement a <a href="http://en.wikipedia.org/wiki/Discrete_Fourier_transform">discrete Fourier transform</a> in
+the C-like programming language of the <a href="http://www.uppaal.org/">UPPAAL</a> model checker. One
+option would be to port an existing C library such as <a href="http://www.fftw.org">FFTW</a>, but for
+a proof of concept, porting a large, powerful library would be much slower
+and less instructive than implementing a simpler algorithm myself.
+Programming rant coming up.</p>
+
+<!-- more -->
+
+
+<p>I went with the <a href="http://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#The_radix-2_DIT_case">Cooley-Tukey radix-2 decimation-in-time fast Fourier transform</a>,
+which, despite the name, is one of the simpler choices.
+Pseudocode adapted from Wikipedia:</p>
+
+<p></p>
+
+<pre><code>X[0,...,N−1] ← ditfft2(x, N, s):             DFT of (x[0], x[s], x[2s], ..., x[(N-1)s]):
+    if N = 1 then
+        X[0] ← x[0]                                  trivial size-1 DFT base case
+    else
+        X[0,...,N/2−1] ← ditfft2(x, N/2, 2s)         DFT of (x[0], x[2s], x[4s], ...)
+        X[N/2,...,N−1] ← ditfft2(x+s, N/2, 2s)       DFT of (x[s], x[s+2s], x[s+4s], ...)
+        for k = 0 to N/2−1                           combine DFTs of two halves into full DFT:
+            t ← X[k]
+            X[k] ← t + exp(−2πi k/N) X[k+N/2]
+            X[k+N/2] ← t − exp(−2πi k/N) X[k+N/2]
+        endfor
+    endif
+
+Here, ditfft2(x,N,1), computes X=DFT(x) out-of-place by a radix-2 DIT FFT,
+where N is an integer power of 2 and s=1 is the stride of the input
+x array. x+s denotes the array starting with xs.
+</code></pre>
+
+<p>I decided to handle the problem in two stages: 1) Implement the algorithm in
+a high-level language (Python) to make sure I get the algorithm itself right,
+and 2) reduce the use of high-level features until it is trivial to port to
+a C-like language.</p>
+
+<p>List handling in Python is always a charm, but the main high-level feature
+I wanted was the handling of <a href="http://en.wikipedia.org/wiki/Complex_number">complex numbers</a> (notice the <code>−2πi</code>s
+above). My first high-level version worked nicely &mdash; at least as compared with
+the <code>fft</code> function of <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">R</a> with a few sample inputs. Code:</p>
+
+<pre><code class="Python">import math
+EVEN = 0
+ODD = 1
+
+def fft1(a):
+    n = len(a)
+    if n == 1:
+        return a
+    c = fft1(a[EVEN::2]) + fft1(a[ODD::2])
+    for k in range(n / 2):
+        t = c[k]
+        c[k]         = t + pow(math.e, -2j * math.pi * k / n) * c[k + n / 2]
+        c[k + n / 2] = t - pow(math.e, -2j * math.pi * k / n) * c[k + n / 2]
+    return c
+</code></pre>
+
+<p>Next step was to handle the complex numbers manually, so they can be
+represented by two doubles. At first I tried to handle the general case of
+raising a real to a complex, but that was harder than I thought it would be.
+Luckily my colleague Louise could derive it for me:</p>
+
+<pre><code> a + bi      a                   a
+x        =  x  cos(b ln(x)) + i x  sin(b ln(x))
+</code></pre>
+
+<p>(and I wish adding MathJax (LaTeX) to Octopress was a one-minute job, but it isn&rsquo;t.)</p>
+
+<p>However, if I had remembered that in my case <em>x</em> = <em>e</em> and <em>a</em> = 0, it would
+have been simpler. It even has a name, <a href="http://en.wikipedia.org/wiki/Euler%27s_formula">Euler&rsquo;s formula</a>, and it is
+mindboggling in all its simple beauty:</p>
+
+<pre><code> bi
+e    =  cos(b) + i sin(b)
+</code></pre>
+
+<p>At least we both learned something about complex numbers!</p>
+
+<p>The next (buggy) version of my code was this:</p>
+
+<pre><code class="Python">def fft2(a_re, a_im):
+    n = len(a_re)
+    assert n == len(a_im)
+    if n == 1:
+        return (a_re, a_im)
+    c_re, c_im = fft2(a_re[EVEN::2], a_im[EVEN::2])
+    c_re2, c_im2 = fft2(a_re[ODD::2], a_im[ODD::2])
+    c_re += c_re2
+    c_im += c_im2
+    for k in range(n / 2):
+        t_re, t_im = c_re[k], c_im[k]
+
+        c_re[k] = t_re + math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+        c_im[k] = t_im + math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+        c_re[k + n / 2] = t_re - math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+        c_im[k + n / 2] = t_im - math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+
+    return (c_re, c_im)
+</code></pre>
+
+<p>It didn&rsquo;t give the same output as the first one, and I couldn&rsquo;t see why, so
+I put both versions in one to debug them in lockstep:</p>
+
+<pre><code class="Python">def fft3(a, a_re, a_im):
+    n = len(a)
+    assert n == len(a_re) == len(a_im)
+    if n == 1:
+        return (a, a_re, a_im)
+    c, c_re, c_im = fft3(a[EVEN::2], a_re[EVEN::2], a_im[EVEN::2])
+    c2, c_re2, c_im2 = fft3(a[ODD::2], a_re[ODD::2], a_im[ODD::2])
+    c += c2
+    del c2
+    c_re += c_re2
+    del c_re2
+    c_im += c_im2
+    del c_im2
+    for k in range(n / 2):
+        t, t_re, t_im = c[k], c_re[k], c_im[k]
+
+        c[k]         = t + pow(math.e, -2j * math.pi * k / n) * c[k + n / 2]
+        c[k + n / 2] = t - pow(math.e, -2j * math.pi * k / n) * c[k + n / 2]
+
+        c_re[k]         = t_re + math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+        c_im[k]         = t_im + math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+        c_re[k + n / 2] = t_re - math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+        c_im[k + n / 2] = t_im - math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+
+    return (c, c_re, c_im)
+</code></pre>
+
+<p>Testing still showed that the approaches disagreed:</p>
+
+<pre><code class="Python">a = [1, 2, 1, 0]
+x1, x2_re, x2_im = fft3(map(complex, a), a, [0] * len(a))
+x2 = [complex(re, im) for re, im in zip(x2_re, x2_im)]
+for x, y in zip(x1, x2):
+    print x, y, x - y, '!' * 10 if x - y != 0 else ''
+</code></pre>
+
+<pre><code>(4+0j) (4+0j) 0j 
+(1.22464679915e-16-2j) (1.22464679915e-16+0j) -2j !!!!!!!!!!
+0j 0j 0j 
+(-1.22464679915e-16+2j) (-1.22464679915e-16+0j) 2j !!!!!!!!!!
+</code></pre>
+
+<p>Stepping through the code in Winpdb, I found three things:</p>
+
+<ul>
+<li>Debugging is easier if you clean up temp variables in the namespace, hence
+the <code>del</code> statements in <code>fft3</code>.</li>
+<li>Debugging is easier if the complex numbers are represented as complex numbers
+all the time, hence the test code giving <code>map(complex, a)</code> as the first
+argument to <code>fft3</code> (rather than simply giving <code>a</code>).</li>
+<li>Line 21 was the first to show the bug (for the given input): I had been so
+focused on complex exponentiation that I had forgot all about
+<a href="http://en.wikipedia.org/wiki/Complex_number#Multiplication_and_division">complex multiplication</a>! Which is btw
+
+<ul>
+<li>(a + bi) (c + di) = (ac - bd) + (bc + ad) i</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Now I (naively hoped I) was done. Replacing</p>
+
+<pre><code class="Python">c_re[k]         = t_re + math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+c_im[k]         = t_im + math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+c_re[k + n / 2] = t_re - math.cos(-2 * math.pi * k / n) * c_re[k + n / 2]
+c_im[k + n / 2] = t_im - math.sin(-2 * math.pi * k / n) * c_im[k + n / 2]
+</code></pre>
+
+<p>by</p>
+
+<pre><code class="Python">p_re = math.cos(-2 * math.pi * k / n)
+p_im = math.sin(-2 * math.pi * k / n)
+c_re[k]         = t_re +  (p_re * c_re[k + n / 2]) - (p_im * c_im[k + n / 2])
+c_im[k]         = t_im +  (p_im * c_re[k + n / 2]) + (p_re * c_im[k + n / 2])
+c_re[k + n / 2] = t_re - ((p_re * c_re[k + n / 2]) - (p_im * c_im[k + n / 2]))
+c_im[k + n / 2] = t_im - ((p_im * c_re[k + n / 2]) + (p_re * c_im[k + n / 2]))
+</code></pre>
+
+<p>still didn&rsquo;t work. But that is just a silly bug: Reading <code>c_re[k + n / 2]</code> in
+line 6 after it was overwritten in line 5. Python has a really nice solution
+for problems like this: Do both <a href="https://docs.python.org/2/reference/simple_stmts.html#assignment-statements">assignments</a> at once!
+Instead of lines 5 and 6:</p>
+
+<pre><code class="Python">c_re[k + n / 2], c_im[k + n / 2] = (
+    t_re - ((p_re * c_re[k + n / 2]) - (p_im * c_im[k + n / 2])),
+    t_im - ((p_im * c_re[k + n / 2]) + (p_re * c_im[k + n / 2])),
+)
+</code></pre>
+
+<p>However, the goal was using fewer high-level features, so my final solution
+factors out the reused parts of the computation, which probably makes the code
+simpler in this case anyway:</p>
+
+<pre><code class="Python">p_re = math.cos(-2 * math.pi * k / n)
+p_im = math.sin(-2 * math.pi * k / n)
+mult_re = (p_re * c_re[k + n / 2]) - (p_im * c_im[k + n / 2])
+mult_im = (p_im * c_re[k + n / 2]) + (p_re * c_im[k + n / 2])
+c_re[k]         = t_re + mult_re
+c_im[k]         = t_im + mult_im
+c_re[k + n / 2] = t_re - mult_re
+c_im[k + n / 2] = t_im - mult_im
+</code></pre>
+
+<p>So, after a few detours I got my &ldquo;manually&rdquo; computed complex numbers, and
+learned a bit more about how complex numbers and FFTs work. Also, debugging
+with a debugger (rather than print statements) doesn&rsquo;t mean you don&rsquo;t need to
+modify your code &ndash; in my case, merging both functions made the debugging a lot
+easier.</p>
+
+<p>Finally, the Python <a href="https://docs.python.org/2/library/math.html"><code>math</code> library</a> doesn&rsquo;t support complex numbers!
+But there is a good reason for that, as explained in the
+<a href="https://docs.python.org/2/library/cmath.html"><code>cmath</code> (complex math) library</a>:</p>
+
+<blockquote><p>The reason for having two modules is that some users aren’t interested in
+complex numbers, and perhaps don’t even know what they are. They would rather
+have <code>math.sqrt(-1)</code> raise an exception than return a complex number.</p></blockquote>
+
+<p></p>
+]]></content>
+  </entry>
+  
+</feed>
