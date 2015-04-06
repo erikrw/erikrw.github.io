@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-03-27T11:24:15+01:00</updated>
+  <updated>2015-04-06T12:18:30+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,192 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Sound of E]]></title>
+    <link href="http://blog.erw.dk/2015/04/06/the-sound-of-e/"/>
+    <updated>2015-04-06T12:16:44+02:00</updated>
+    <id>http://blog.erw.dk/2015/04/06/the-sound-of-e</id>
+    <content type="html"><![CDATA[<p>E is the most common letter in many European languages. In English it makes up
+12&ndash;13% of all letters written depending on source (see for example
+<a href="http://en.wikipedia.org/wiki/Letter_frequency">Wikipedia</a> or
+<a href="http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/">Practical Cryptography</a>). The second place is T with
+around 9%. In Dutch, Danish, and German, &lsquo;E&rsquo; goes as high as 15&ndash;17%. But
+should it really be this common?</p>
+
+<!-- more -->
+
+
+<p>That is a perhaps a difficult question to answer. Another question is: Is
+E always E? And here, the answer is a clear no, at least if we think of writing
+primarily as a representation of the spoken language. I will look at the sound
+of E in the two languages I know the best: Danish and English.</p>
+
+<a name="English"></a>
+<h2>English</h2>
+
+<p>In English, the two most well-known versions are the short and long Es:</p>
+
+<ul>
+<li>h<strong>e</strong>llo, <strong>e</strong>legant &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a> &mdash; Short e</li>
+<li><strong>e</strong>vil, h<strong>e</strong>, sc<strong>e</strong>ne &mdash; <a href="http://en.wikipedia.org/wiki/Close_front_unrounded_vowel">i:</a> &mdash; Long e</li>
+</ul>
+
+
+<p>These are however not the most <em>common</em> realizations of E. Those are instead
+the following two, even though you probably don&rsquo;t give them much thought:</p>
+
+<ul>
+<li>en<strong>e</strong>my, elev<strong>e</strong>n &mdash; <a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a> &mdash; <a href="http://en.wikipedia.org/wiki/Schwa">Schwa</a>, a short, &ldquo;lazy&rdquo;
+vowel made while relaxing the mouth. In many accents, the first e of
+<strong>e</strong>leven is also a schwa.</li>
+<li>slat<strong>e</strong>, grip<strong>e</strong>, don<strong>e</strong> &mdash; Silent!</li>
+</ul>
+
+
+<p>The schwa is the most common vowel sound in English, and every vowel can be
+pronounced that way if unstressed (<strong>a</strong>bout, penc<strong>i</strong>l, el<strong>o</strong>quent,
+s<strong>u</strong>pply, vin<strong>y</strong>l).
+The silent E is also called <a href="http://en.wikipedia.org/wiki/Silent_e">magic E</a> if its presence in spelling
+modifies the pronunciation of other vowels. Compare for example <em>slat</em> and
+<em>slate</em>, <em>grip</em> and <em>gripe</em>. On the other hand, the e in <em>done</em> is truly
+silent; <em>don</em> and <em>done</em> are pronounced the same.
+But here are still more ways to pronounce E:</p>
+
+<ul>
+<li>d<strong>e</strong>ter, d<strong>e</strong>test &mdash; <a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a> &mdash; Same as th<strong>i</strong>ng</li>
+<li><strong>e</strong>nvelope &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a>, <a href="http://en.wikipedia.org/wiki/Open_back_rounded_vowel">ɒ</a>, or <a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a> &mdash; (&ldquo;en-&rdquo;, &ldquo;on-&rdquo;, &ldquo;arn-&rdquo;)</li>
+</ul>
+
+
+<p>&ldquo;Envelope&rdquo; comes from French, but none of the three English pronunciations of
+its E match the French nasal <em>en</em> <a href="http://en.wikipedia.org/wiki/Nasal_vowel">ɑ̃</a>. They do however appear in other
+English words such as <strong>e</strong>nd and the UK and US versions of
+<a href="http://en.wiktionary.org/wiki/swan#Pronunciation">sw<strong>a</strong>n</a>, respectively. From French we also have</p>
+
+<ul>
+<li>resum<strong>e</strong>, fianc<strong>e</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a><a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a> &mdash; Also written é</li>
+</ul>
+
+
+<p>This is a <a href="http://en.wikipedia.org/wiki/Diphthong">diphthong</a>, or glide between two vowels, rather than
+a pure vowel. It is again different from French, where é is simply pronounced
+<a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a>. But the eɪ diphthong also appears in for example the English
+pronunciation of Santa Fe from Spanish, and original English words such as
+l<strong>a</strong>ne. (Though I always see this diphthong transcribed /eɪ/, I think many
+dialects pronounce it [ɛɪ], i.e., with the sound <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a> from b<strong>e</strong>d, and
+f<strong>a</strong>ce (which is, ironically, transcribed /feɪs/ on <a href="http://en.wiktionary.org/wiki/face#Pronunciation">Wiktionary</a>).)</p>
+
+<p>There are also letter sequences that have special sounds:</p>
+
+<ul>
+<li>read<strong>er</strong>, play<strong>er</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a> (typical UK) or <a href="http://en.wikipedia.org/wiki/R-colored_vowel">ɝ</a> (typical US)</li>
+<li>t<strong>er</strong>m, G<strong>er</strong>man &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_central_unrounded_vowel">ɜ</a> (typical UK) or <a href="http://en.wikipedia.org/wiki/R-colored_vowel">ɝ</a> (typical US)</li>
+<li>Fr<strong>eu</strong>dian &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_back_rounded_vowel">ɔ</a><a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a></li>
+<li>f<strong>eu</strong>d, c<strong>ue</strong>, n<strong>ew</strong>, <strong>eu</strong>phemism &mdash; <a href="http://en.wikipedia.org/wiki/Palatal_approximant">j</a><a href="http://en.wikipedia.org/wiki/Close_back_rounded_vowel">u:</a> &mdash; Here,
+E only represents a <a href="http://en.wikipedia.org/wiki/Semivowel">semivowel</a>, or glide.</li>
+</ul>
+
+
+<p>I <a href="http://blog.erw.dk/2015/02/21/the-sound-of-r/">wrote about R</a> previously, and how it can influence vowels, which is
+what happens in the two first cases above. I always see suffix <em>-er</em>
+transcribed as schwa (<a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a>) for <a href="https://en.wikipedia.org/wiki/Rhotic_and_non-rhotic_accents">non-rhotic</a> accents (typical
+of the UK), but I suspect some accents pronounce it with a slightly more
+A-like&nbsp;<a href="http://en.wikipedia.org/wiki/Near-open_central_vowel">ɐ</a>, from where we get slang spellings such as <em>playa</em> and
+<em>gangsta</em>.</p>
+
+<p>So far we have eight pure vowel sounds (<a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a>, <a href="http://en.wikipedia.org/wiki/Close_front_unrounded_vowel">i</a>, <a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a>,
+<a href="http://en.wikipedia.org/wiki/Open_back_rounded_vowel">ɒ</a>, <a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a>, <a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a>, <a href="http://en.wikipedia.org/wiki/Open-mid_central_unrounded_vowel">ɜ</a>, <a href="http://en.wikipedia.org/wiki/R-colored_vowel">ɝ</a>) and three diphthongs
+(<a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a><a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a>, <a href="http://en.wikipedia.org/wiki/Open-mid_back_rounded_vowel">ɔ</a><a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a>, <a href="http://en.wikipedia.org/wiki/Palatal_approximant">j</a><a href="http://en.wikipedia.org/wiki/Close_back_rounded_vowel">u</a>). I have not included E&rsquo;s
+function in the words <em>awe</em> and <em>eau</em> (as in <em>eau de toilette</em>), and
+<em>rheumatism</em>, because it could be argued that it is silent. Especially, <em>au</em>
+(as in <em>coq au vin</em>), is also pronounced [<a href="http://en.wikipedia.org/wiki/Close-mid_back_rounded_vowel">o</a>] (at least in French).
+The Danish inventory is similarly large:</p>
+
+<a name="Danish"></a>
+<h2>Danish</h2>
+
+<ul>
+<li>d<strong>e</strong>n &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a> &mdash; h<strong>e</strong>llo</li>
+<li>d<strong>e</strong>t &mdash; <a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a> &mdash; Close to r<strong>e</strong>port</li>
+<li>d<strong>e</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Close_front_unrounded_vowel">i</a> &mdash; Like h<strong>e</strong>, but short: happ<strong>y</strong></li>
+<li>s<strong>e</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a><a href="http://en.wikipedia.org/wiki/St%C3%B8d">ˀ</a> &mdash; With <a href="http://en.wikipedia.org/wiki/St%C3%B8d"><em>stød</em></a>; Like the e of
+fianc<strong>e</strong> said very quickly</li>
+<li>j<strong>e</strong>g &mdash; <a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a> &mdash; f<strong>a</strong>ther. Actually part of the diphthong [ɑj], but
+can be pronounced alone here.</li>
+<li>spis<strong>e</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a> in emphatic speech &mdash; en<strong>e</strong>my</li>
+<li>spis<strong>e</strong> &mdash; Silent in normal speech (<a href="http://en.wikipedia.org/wiki/Syllabic_consonant#Germanic_languages">assimilated schwa</a>)</li>
+<li>spis<strong>er</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Near-open_central_vowel">ɐ</a> &mdash; e and r merge. Close to <a href="https://en.wikipedia.org/wiki/Rhotic_and_non-rhotic_accents">non-rhotic</a>
+both<strong>er</strong>, but distinct from <a href="http://en.wikipedia.org/wiki/Schwa">schwa</a>.</li>
+<li><strong>e</strong>r &mdash; <a href="http://en.wikipedia.org/wiki/Near-open_front_unrounded_vowel">æ</a> &mdash; Influence from R, but not merged with it. Tr<strong>a</strong>p.</li>
+</ul>
+
+
+<p>With the above words being first two genders of <em>it</em>/<em>that</em>/<em>the</em>, then <em>they</em>,
+<em>see</em>, <em>I</em>, 2x <em>eat</em>, <em>eats</em>, and <em>is</em>, these realizations of E are all part of
+the core of the language and not due to any loanword; not any recent ones at
+least. If we add those, we get for example:</p>
+
+<ul>
+<li>r<strong>eu</strong>matisme &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_back_unrounded_vowel">ʌ</a><a href="http://en.wikipedia.org/wiki/Palatal_approximant">j</a> &mdash; Close to t<strong>oy</strong></li>
+<li>voy<strong>eu</strong>r &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_rounded_vowel">œ</a> &mdash; (New Zealand b<strong>ir</strong>d)</li>
+<li>mili<strong>eu</strong> &mdash; <a href="http://en.wikipedia.org/wiki/Close-mid_front_rounded_vowel">ø</a> &mdash; (South African b<strong>ir</strong>d)</li>
+</ul>
+
+
+<p>The last one is cheating a bit because it is no longer an accepted spelling in
+Danish, where we instead use the logical &ldquo;miljø&rdquo;. But this decision is rather
+arbitrary. For example, 30 years ago, the Danish language board tried to
+change, among other things, the spelling of <em>mayonnaise</em> to the more logical
+<em>majonæse</em>. And <a href="http://sproget.dk/raad-og-regler/artikler-mv/sproget-jyllands-postens-sprogklumme/majonesekrigen-25-ar-efter">people hated it</a> (link in Danish), even though
+French words like <em>liqueur</em>, <em>portrait</em>, and <em>capitaine</em> were already spelled
+<em>likør</em>, <em>portræt</em>, and <em>kaptajn</em> at the time!</p>
+
+<a name="The.Sound.of.E"></a>
+<h2>The Sound of E</h2>
+
+<p>I have found the sounds above by looking at and pronouncing many words, and
+also by looking through lists of vowel sounds, and looking for English and
+Danish words with those sounds. Though somewhat systematic, I may have missed
+some sounds of E. But what is interesting is that my list alone spans most of
+our vowel capabilities! It goes from <a href="http://en.wikipedia.org/wiki/Close_vowel">high</a> and
+<a href="http://en.wikipedia.org/wiki/Front_vowel">front</a> to <a href="http://en.wikipedia.org/wiki/Open_vowel">low</a> and <a href="http://en.wikipedia.org/wiki/Back_vowel">back</a>. An
+example of the first is f<strong>ee</strong>t/d<strong>e</strong> [i], with the tongue high in the mouth
+and the sound made near the front. The other end is f<strong>a</strong>ther/j<strong>e</strong>g [ɑ] with
+the tongue low in the mouth and the sound made at the back.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/IPA_vowel_chart_2005_erw.png' width='' height='' alt='This work, English/Danish Es, [CC&nbsp;BY-SA&nbsp;4.0] [cc-by-sa4] by Erik R. Wognsen, is derived from [IPA vowel chart 2005] [wf_vowel_chart], [CC&nbsp;BY-SA&nbsp;3.0] [cc-by-sa3]'><span class='caption-text'>This work, English/Danish Es, <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC&nbsp;BY-SA&nbsp;4.0</a> by Erik R. Wognsen, is derived from <a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a></span></span></p>
+
+<p>I have illustrated this above. Purple vowels are common to English and Danish,
+blue vowels are English, and red are Danish. The blob sizes represent my rough
+guess to how often these sounds are represented by the letter E, graduated in
+three levels. For the common vowel sounds, e and ɑ are used more often in
+Danish than in English, while i is used more in English. ɛ is used often in
+both, and ə even more. For diphthongs, only the first component is shown to
+keep it simple.</p>
+
+<a name="Does.it.have.to.be.like.this."></a>
+<h2>Does it have to be like this?</h2>
+
+<p>As we can see from the picture, the letter E is perhaps so full of meaning that
+it is almost meaningless. So we could ask ourselves whether it has to be like
+this? Or, could have a more <a href="http://en.wikipedia.org/wiki/Phonemic_orthography">regular spelling</a>, so kids
+could learn to read in <a href="http://www.theatlantic.com/education/archive/2015/02/how-the-english-language-is-holding-kids-back/385291/">months rather than years</a>?
+This will be a future topic!</p>
+
+<a name="E.on.the.Keyboard"></a>
+<h2>E on the Keyboard</h2>
+
+<p>In the meantime, E is still the most common letter in many languages. So how
+easy should it be to type on a computer keyboard? Very easy, preferably.</p>
+
+<p>The ergonomic, three-dimensional <a href="http://upload.wikimedia.org/wikipedia/commons/4/45/Maltron_Dual_Hand_keyboard_with_Malt_Key_distribution.jpg">Maltron keyboard</a> goes as far as to
+put the letter E on the strongest finger: the thumb! Most other &ldquo;normal&rdquo;
+layouts that improve on QWERTY put E on the home row, where you rest your hands
+when <a href="http://en.wikipedia.org/wiki/Touch_typing">touch typing</a>. A good example is the Colemak keyboard
+layout which I <a href="http://blog.erw.dk/2015/02/27/4-years-with-colemak/">wrote about recently</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Lithuanian]]></title>
