@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-04-06T12:18:30+02:00</updated>
+  <updated>2015-06-06T13:50:07+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,281 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Checks for Your Django Project]]></title>
+    <link href="http://blog.erw.dk/2015/06/06/checks-for-your-django-project/"/>
+    <updated>2015-06-06T13:42:14+02:00</updated>
+    <id>http://blog.erw.dk/2015/06/06/checks-for-your-django-project</id>
+    <content type="html"><![CDATA[<p>The <a href="https://www.djangoproject.com/">Django web framework</a> has a management
+command to <a href="https://docs.djangoproject.com/en/1.8/ref/checks/">check</a> your code for various problems. For
+example, it checks that your database <code>CharFields</code> define the <code>max_length</code>
+attribute, and that you have not set <code>DEBUG = True</code> in deployment. This is good
+for catching various mistakes in using the framework before the problem shows
+up in production. And for your own business logic, you have unit tests. But
+there are still many things to not mess up, and they are easy to forget if they
+are not incredibly easy to check. So I wrote a script to check every problem
+I could think of in one go.</p>
+
+<!-- more -->
+
+
+<p>First up is the unit tests. For this script I only want it to tell me anything
+if there is a problem, as is customary for unix programs. With verbosity 0 and
+<code>head -n -4</code> cutting off the last four lines with the test summary, only failed
+test cases are shown:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>./manage.py <span class="nb">test</span> -v <span class="m">0</span> --noinput 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Alternatively, you can run them with a code coverage check. Here, failed tests
+are shown and the total code coverage is shown if it is below 50%:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>coverage run --branch --source<span class="o">=</span><span class="s1">&#39;.&#39;</span> --omit<span class="o">=</span><span class="s1">&#39;*/migrations/*,*test*,*settings*&#39;</span> <span class="se">\</span>
+</span><span class='line'>    manage.py <span class="nb">test</span> -v <span class="m">0</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
+</span><span class='line'>coverage report --fail-under<span class="o">=</span><span class="m">50</span> &gt;/dev/null <span class="o">||</span> coverage report <span class="p">|</span> sed -n <span class="s1">&#39;1p;$p&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The first of the &ldquo;hidden&rdquo; things that is easy to forget is changes to the data
+model that need to be migrated in the database. Unfortunately, the
+<code>makemigrations</code> management command doesn&rsquo;t have a usable exit status, but
+I work around that to only output text in case of problems:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span> <span class="s2">&quot;$(./manage.py makemigrations --dry-run)&quot;</span> !<span class="o">=</span> <span class="s2">&quot;No changes detected&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    ./manage.py makemigrations --dry-run <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I also run <a href="https://flake8.readthedocs.org/">flake8</a> which wraps the code style checker <a href="http://pep8.readthedocs.org/en/latest/intro.html">pep8</a>,
+the static error checker <a href="https://pypi.python.org/pypi/pyflakes">Pyflakes</a>, and, optionally,
+the <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity">code complexity</a> checker <a href="https://pypi.python.org/pypi/mccabe">mccabe</a>, if
+you give the flag <code>--max-complexity=10</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>flake8 . <span class="o">||</span> <span class="nb">echo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="Translation"></a>
+<h2>Translation</h2>
+
+<p>For a multilingual project, you must remember to scan for changes to
+translatable strings and also to translate them. The <code>makemessages</code> management
+command goes over the source and finds all strings marked for translation and
+makes or updates the translation &ldquo;portable object&rdquo;/PO file. So ideally, I could
+just run that command and see if there are any changes to the PO file.</p>
+
+<p>However, <code>makemessages</code> includes a timestamp for the generation of the file, so
+it is always different each time the command is run. On top of that, it can
+happen that the command finds the translatable strings in a different order
+even when the content of the strings didn&rsquo;t change (I think this happens
+between different version of Django).</p>
+
+<p>So, I compare the before and after versions of the PO file with the timestamps
+stripped out, and sorted such that ordering doesn&rsquo;t matter. This sorting trick
+will cause false negatives if two strings are swapped in the source code, but
+this seems unlikely and therefore preferable to getting false positives from
+<code>makemessages</code>&#x2019; inability to search the source in a consistent order.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po1
+</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>,_orig<span class="o">}</span>
+</span><span class='line'>cp locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
+</span><span class='line'>./manage.py makemessages -v <span class="m">0</span> -a --no-location --no-obsolete
+</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po2
+</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
+</span><span class='line'>diff &lt;<span class="o">(</span>sort __po1<span class="o">)</span> &lt;<span class="o">(</span>sort __po2<span class="o">)</span> &gt;/dev/null <span class="o">||</span> <span class="se">\</span>
+</span><span class='line'>    <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;=== Translation not up to date:&quot;</span> <span class="o">&amp;&amp;</span> diff __po1 __po2 <span class="o">||</span> <span class="nb">echo</span><span class="p">;</span> <span class="o">}</span>
+</span><span class='line'>rm __po1 __po2
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Before and after running <code>makemessages</code>, I backup the PO file and restore it,
+respectively. By doing this as <code>mv A B; cp B A; mv B A</code>, rather than just <code>cp
+A B; mv B A</code>, the file retains its inode. Thus, editors will not falsely see
+the file as changed outside the editor.</p>
+
+<p>Even if you had already run <code>makemessages</code>, you also had to translate the newly
+found strings. I check for both untranslated strings and unverified automatic
+translations. The former appear as <code>msgstr ""</code>, but not every <code>msgstr ""</code> means
+you forgot a translation; some of them just mark the beginning of a string
+spanning multiple lines. So I do some <code>sed</code> magic to find the real culprits:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sed <span class="s1">&#39;$a\\&#39;</span> locale/da/LC_MESSAGES/django.po <span class="p">|</span> tac <span class="p">|</span> <span class="se">\</span>
+</span><span class='line'>    sed <span class="s1">&#39;/^$/N;/\nmsgstr &quot;&quot;$/,/^msgid/!d&#39;</span> <span class="p">|</span> tac
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>While scanning, if <code>makemessages</code> finds a string that is close to something you
+already translated, it will insert the existing translation and mark it as
+a &ldquo;fuzzy&rdquo; match, so you can check it and remove the fuzzy label when the
+translation is done. I find such unremoved &ldquo;fuzzy&rdquo; labels:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span> <span class="k">$(</span>grep -c <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po<span class="k">)</span> -gt <span class="m">1</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    <span class="nb">echo</span> <span class="s2">&quot;=== Fuzzy translation:&quot;</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    grep <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po -A2 <span class="p">|</span> tail -n +5 <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="The.Full.Script"></a>
+<h2>The Full Script</h2>
+
+<p>With all the components of the script done, the whole script looks like this.
+I call it <code>ok.sh</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'>coverage run --branch --source<span class="o">=</span><span class="s1">&#39;.&#39;</span> --omit<span class="o">=</span><span class="s1">&#39;*/migrations/*,*test*,*settings*&#39;</span> <span class="se">\</span>
+</span><span class='line'>    manage.py <span class="nb">test</span> -v <span class="m">0</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
+</span><span class='line'>coverage report --fail-under<span class="o">=</span><span class="m">50</span> &gt;/dev/null <span class="o">||</span> coverage report <span class="p">|</span> sed -n <span class="s1">&#39;1p;$p&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span> <span class="s2">&quot;$(./manage.py makemigrations --dry-run)&quot;</span> !<span class="o">=</span> <span class="s2">&quot;No changes detected&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    ./manage.py makemigrations --dry-run <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span><span class='line'>
+</span><span class='line'>flake8 . <span class="o">||</span> <span class="nb">echo</span>
+</span><span class='line'>
+</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po1
+</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>,_orig<span class="o">}</span>
+</span><span class='line'>cp locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
+</span><span class='line'>./manage.py makemessages -v <span class="m">0</span> -a --no-location --no-obsolete
+</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po2
+</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
+</span><span class='line'>diff &lt;<span class="o">(</span>sort __po1<span class="o">)</span> &lt;<span class="o">(</span>sort __po2<span class="o">)</span> &gt;/dev/null <span class="o">||</span> <span class="se">\</span>
+</span><span class='line'>    <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;=== Translation not up to date:&quot;</span> <span class="o">&amp;&amp;</span> diff __po1 __po2 <span class="o">||</span> <span class="nb">echo</span><span class="p">;</span> <span class="o">}</span>
+</span><span class='line'>rm __po1 __po2
+</span><span class='line'>
+</span><span class='line'>sed <span class="s1">&#39;$a\\&#39;</span> locale/da/LC_MESSAGES/django.po <span class="p">|</span> tac <span class="p">|</span> <span class="se">\</span>
+</span><span class='line'>    sed <span class="s1">&#39;/^$/N;/\nmsgstr &quot;&quot;$/,/^msgid/!d&#39;</span> <span class="p">|</span> tac
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span> <span class="k">$(</span>grep -c <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po<span class="k">)</span> -gt <span class="m">1</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    <span class="nb">echo</span> <span class="s2">&quot;=== Fuzzy translation:&quot;</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+</span><span class='line'>    grep <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po -A2 <span class="p">|</span> tail -n +5 <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There is no explicit call to <code>./manage.py check</code> because it is called
+implicitly by the other management commands. An ideal run of the script
+produces no output, but if you made a lot of errors, it could look like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./ok.sh 
+</span><span class='line'>======================================================================
+</span><span class='line'>FAIL: test_basic_addition (docs.tests.SimpleTest)
+</span><span class='line'>----------------------------------------------------------------------
+</span><span class='line'>Traceback (most recent call last):
+</span><span class='line'>  File "/home/erw/hstareal/docs/tests.py", line 16, in test_basic_addition
+</span><span class='line'>    self.assertEqual(1 + 1, 3)
+</span><span class='line'>AssertionError: 2 != 3
+</span><span class='line'>
+</span><span class='line'>Migrations for 'requisitions':
+</span><span class='line'>  0002_auto_20150605_1757.py:
+</span><span class='line'>    - Alter field supplier_postcode on requisition
+</span><span class='line'>
+</span><span class='line'>./requisitions/models.py:123:80: E501 line too long (108 &gt; 79 characters)
+</span><span class='line'>./requisitions/admin.py:194:25: F821 undefined name 'messages'
+</span><span class='line'>./requisitions/admin.py:441:25: F821 undefined name 'messages'
+</span><span class='line'>
+</span><span class='line'>=== Translation not up to date:
+</span><span class='line'>1541c1541,1543
+</span><span class='line'>&lt; msgid "postcode"
+</span><span class='line'>---
+</span><span class='line'>&gt; #, fuzzy
+</span><span class='line'>&gt; #| msgid "postcode"
+</span><span class='line'>&gt; msgid "postal code"
+</span><span class='line'>
+</span><span class='line'>=== Fuzzy translation:
+</span><span class='line'>#, fuzzy
+</span><span class='line'>msgid "internal account type"
+</span><span class='line'>msgstr "interne kontotyper"
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, all that is required is to run this one script before committing. A CI
+server could of course be nice, but for a small project, this might be fine,
+and cheaper.</p>
+
+<p>One thing that is missing is to make the check in lines 18&ndash;19 of the script
+aware of untranslated strings that you don&rsquo;t need to translate in your own
+project, because they are covered in Django&rsquo;s own translation. For example, my
+404 page says &ldquo;Page not found&rdquo; which Django already knows how to translate into
+70+ languages. The script could also be generalized to process all locales &mdash;
+right now it is hardcoded for Danish.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Sound of E]]></title>
