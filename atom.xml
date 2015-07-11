@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-06-06T13:50:07+02:00</updated>
+  <updated>2015-07-11T14:08:56+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,149 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ode to my Casio]]></title>
+    <link href="http://blog.erw.dk/2015/07/11/ode-to-my-casio/"/>
+    <updated>2015-07-11T13:57:20+02:00</updated>
+    <id>http://blog.erw.dk/2015/07/11/ode-to-my-casio</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://blog.erw.dk/images/posts/casio.jpg" width="345"></p>
+
+<p>The year was 2002 and I had started gymnasium (≈high school). My parents had
+bought me the graphic calculator required for our maths classes: Casio fx-9750G
+PLUS. It was white and green and curvy and Casio &mdash; not dark and rectangular
+and from Texas Instruments, as a calculator was expected to be. Soon, however,
+this happy-looking thing became my companion on my journey into the world of
+programming.</p>
+
+<!-- more -->
+
+
+<p>Compared with a personal computer, this calculator was weak, to say the least.
+The display resolution was 128×64 pixels in black and white. (However, I did
+for a long time dream of the color LCD version CFX-9850GC PLUS, which could
+show <em>three</em> colors:
+<span style="color:orange">orange</span>,
+<span style="color:green">green</span>, and
+<span style="color:blue">blue</span>.)
+The processor was slow. Graphing <em>y = x<sup>2</sup></em> took a good five seconds. Sinusoidal
+regression on 150 data points took 75 seconds, plus another 8 seconds to draw
+the sine curve.
+Memory was limited as well: 32K, of which only 28568 bytes were available to
+the user. And of which every list and matrix entry took up 10 bytes! Plus, any
+time something was graphed, 4K was reserved for that.</p>
+
+<p>Yet for all these complaints, this machine was a fantastic place to start
+programming. Having a fixed set of features challenges you to do what you can
+with what you have. On this fixed platform, there was no getting lost in
+debates about which programming language to use, because there was only one
+choice. There was no trouble with installation or incompatible software
+libraries. There was no web browsing or multitasking. No distraction. And zero
+boot time and a year of battery life.</p>
+
+<p><img class="right" src="http://blog.erw.dk/images/posts/casio-fact.jpg"></p>
+
+<p>The basic calculator part is a REPL: That is to say it <em>reads</em> your input,
+<em>evaluates</em> it, <em>prints</em> the result, and it <em>loops</em>, doing this indefinitely.
+In this interactive environment, you can familiarize yourself with expressions
+before slowly, step by step, automating small parts of your calculations. You
+could, for example, make a small program that asks the user for input and uses
+a loop to do a calculation.</p>
+
+<p>And there were enough features to do really cool things: Plotting, lists and
+list operations (sorting, summation, product, mean, median, etc.), matrices and
+matrix operations, statistics, regression, etc.</p>
+
+<a name="Programming.on.the.Bus"></a>
+<h2>Programming on the Bus</h2>
+
+<p>During the bus trips to school I spent as much time with my Casio as people
+today spend with their smartphones. And I suppose this puzzled the other
+students: How much time can you really spend calculating?</p>
+
+<p>I made programs for all sorts of tasks. One type was the programs that helped
+my maths and science classes. In maths it was nice to be able to enter the
+information you had about a triangle, and then calculate the rest
+automatically. Or calculate the greatest common divisor. In physics,
+I calculated and visualized refraction. In chemistry, I calculated molar
+masses.</p>
+
+<p><img class="right" src="http://blog.erw.dk/images/posts/casio-guitar.jpg"></p>
+
+<p>But it was also fun and games: I made programs that drew nice geometric shapes
+for their beauty. I calculated poker odds. During some boring classes I made
+a program in which you entered the time of day (the calculator didn&rsquo;t have
+a clock), and it drew a 3d pie chart showing how close the current lecture was
+to completion. And I factored out the pie chart so other programs could use it
+as a subroutine.</p>
+
+<p>I made programs for sound and music. I translated between notes (such as A) and
+frequencies (such as 440 Hz). I visualized harmonics. I made a program that
+showed all the ways a chosen note could be played on a guitar. (And
+I didn&rsquo;t even play the guitar!)</p>
+
+<p>And I made games. Guess which number I&rsquo;m thinking of, where the program tells
+you whether your guess was too high or too low. I made a game in which you had
+to remember random numbers that were shown in progressively shorter glimpses.
+Each level made the number one digit longer. I made Snake. It grew linearly
+slower with the length of the snake, and the game was too slow to be fun to
+play. But that didn&rsquo;t affect my pride in making it. Near the end of gymnasium,
+I was planning a strategy game inspired by Command &amp; Conquer Tiberian Sun,
+which I loved. I had a cool animation for the cyborgs&#8217; machine guns, but other
+than that, I never got very far. But to be fair, it is a rather big step from
+Snake to that.</p>
+
+<a name="Much.Learnage"></a>
+<h2>Much Learnage</h2>
+
+<p>This primitive programming taught me some lessons about &ldquo;real&rdquo; programming:</p>
+
+<ul>
+<li>Understanding a program you wrote months ago is tricky, when all variable
+names are a single character. I learned the value of descriptive variable
+names.</li>
+<li>The slow processor gave me a tangible sense of execution time and complexity.</li>
+<li>With an editor window of 6x21 chars, I soon learned that sketching your
+algorithm or architecture before implementing is useful for big programs.
+That would probably take more time to learn on a big screen.</li>
+<li>I learned to prioritize what to do with the limited memory.</li>
+<li>I learned debugging the hard way: There were almost no meaningful error
+messages (but at least you could be taken to the location in the code that
+caused the error).</li>
+<li>I learned that all programs and subroutines sharing a global address space
+sucks!</li>
+</ul>
+
+
+<a name="Interacting.with.the.World"></a>
+<h2>Interacting with the World</h2>
+
+<p>After some time, interacting with a program through a (tiny) screen and (tiny)
+keyboard was not enough. I wanted to interact with the world. Thankfully, my
+parents got me the Casio EA-200 data logger. This device was even clunkier than
+the calculator, but it was a window to the physical world: Now I could measure
+voltage, light, temperature, and sound.</p>
+
+<p>I measured the fluctuation of the temperature in the fridge. Since I could hear
+the compressor swiching on and off I knew the temperature couldn&rsquo;t be constant,
+so I wanted to know the extent of the lie that &ldquo;a fridge is 5&#x00b0;C&rdquo;. (As
+I recall, it went between 4 and 8&#x00b0;C). Knowledge is power, even in the
+small.</p>
+
+<p>With the microphone and speaker, I made a dictaphone. As with Snake, the idea
+of making it was more important than its usefulness. It did work, but the
+memory was somewhat limited.</p>
+
+<p>I also measured the fluctuation of the intensity of light from lightbulbs. Even
+when they appear constantly on, they heat and cool with the alternating current
+of the electric grid. And I learned about another &ldquo;truth&rdquo;: Our electric grid
+runs at 50 Hz. Yes, when it&rsquo;s not 49 and 52 and 50.2 Hz. This is also where
+I got to appreciate the Fourier transform that I recently <a href="http://blog.erw.dk/2015/03/20/debugging-complex-numbers/">implemented</a>
+myself.</p>
+
+<p>My dear Casio, thanks for the ride.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Checks for Your Django Project]]></title>
