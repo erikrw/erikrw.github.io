@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2015-12-06T19:45:41+01:00</updated>
+  <updated>2016-01-10T19:37:23+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Keep Track With a Year at a Glance]]></title>
+    <link href="http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance/"/>
+    <updated>2016-01-10T19:32:58+01:00</updated>
+    <id>http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/floss.jpg' width='' height='' alt='The calendar helped me floss (more or less) daily.'><span class='caption-text'>The calendar helped me floss (more or less) daily.</span></span></p>
+
+<p>If you are already starting to forget about your New Year&rsquo;s resolutions, here&rsquo;s
+a tip to keep going: Visualize your progress: Put X&rsquo;s on a calendar on every
+day you do what whatever you want to do more of. Stick the calendar on the wall
+or wherever it would remind you of your goal.</p>
+
+<p>Some years back, each time I visited my dentist, she recommended that I floss.
+And I would decide that <em>this time</em> I would start doing it. But some days
+later, I started slipping and forgetting about it. It wasn&rsquo;t until I put
+a year-at-a-glance calendar on the bathroom cabinet door that the habit stuck.</p>
+
+<p>Putting a mark on a calendar is not rocket science, but the satisfaction of
+marking a completed task and of seeing your progress is a mental reward that
+can make a big difference. If you want to try, I made a one page 2016 calendar
+you can print (<a href="http://blog.erw.dk/files/cal2016.odt">LibreOffice/odt</a>,
+<a href="http://blog.erw.dk/files/cal2016.docx">Word/docx</a>). (It was easily made with the open source
+ncal utility, invoked as <code>ncal -bh 2016</code>.)</p>
+
+<!-- more -->
+
+
+<a name="Don.t.Break.the.Chain"></a>
+<h2>Don&rsquo;t Break the Chain</h2>
+
+<p>For goals that can practically be done every day, it&rsquo;s not just having many
+marks on the calendar that is important. A further motivation is to keep the
+chain of successful days unbroken. (This method is widely known as the
+<a href="https://www.google.com/search?q=seinfeld+strategy">Seinfeld Strategy</a>, even though Jerry Seinfeld says
+<a href="https://www.reddit.com/r/IAmA/comments/1ujvrg/jerry_seinfeld_here_i_will_give_you_an_answer/ceitfxh">it wasn&rsquo;t his idea</a>.)
+For workouts or other things that you might not have time to do every day, you
+could still use the chain method by using a list of weeks of the year, and
+checking off each week that met your goal, say, doing at least two workouts. Or
+maybe drinking at most three bottles of soda that week.</p>
+
+<p>The chain method is also used in games and apps. For example, the app
+<a href="http://www.memrise.com/">Memrise</a> shows me my learning streak, or unbroken chain of days that
+I learn/memorize words or images in my chosen topic. Showing the streak has
+helped me to learn <a href="http://www.memrise.com/course/42769/country-mapping/">the world map</a> for five minutes a day, 234
+days in a row today. (The streak trick worked better than even the designers
+anticipated &ndash; the app crashed when trying to award me a 200-day badge.)</p>
+
+<a name="Not.Just.for.Resolutions"></a>
+<h2>Not Just for Resolutions</h2>
+
+<p>The fine art of putting marks on a calendar is not just for New Year&rsquo;s
+resolutions. I find it useful for anything I want to track. For example, I use
+one to remember when I last watered my chili plant. Or put a mark when you
+vacuum clean. Then you can see both when it would be a good idea to do it
+again, and in the long run, how often you do it &ndash; if you&rsquo;re interested in that
+sort of thing. Happy tracking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fun with Declarative Programming]]></title>
