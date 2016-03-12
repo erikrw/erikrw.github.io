@@ -312,7 +312,7 @@ expressions. And that leads us to another criterion.</p>
 <p>Doing a quick benchmark on an input with two million strings and warmed-up
 caches, the uncompiled Regex version completes in 6.6 seconds, the LINQ version
 in 4.4 seconds, and my naive imperative version in 2.4 seconds. So much for
-readability.</p>
+readability. (This was using Mono, btw.)</p>
 
 <p>But, the declarative style has a trick up its sleeve: Parallelism for free!</p>
 
@@ -378,6 +378,8 @@ fashion by summing over a generator expression:</p>
 
 <p>At 5.3 seconds for the two million strings, this stacks up pretty well against
 C#, considering that Python is interpreted.</p>
+
+<p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
 </div>
 
 
@@ -436,13 +438,16 @@ C#, considering that Python is interpreted.</p>
     <section>
   <h1>About Me</h1>
   <p>
-  Hello! I&#8217;m Erik, software engineer and researcher from Denmark.
-  Technology, usability, languages, drumming, and dancing are some of my interests.
+  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
   </p>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/03/12/remote-desktop-white-screen-solved/">Remote Desktop White Screen - Solved</a>
+      </li>
     
       <li class="post">
         <a href="/2016/01/10/keep-track-with-a-year-at-a-glance/">Keep Track With a Year at a Glance</a>
@@ -458,10 +463,6 @@ C#, considering that Python is interpreted.</p>
     
       <li class="post">
         <a href="/2015/06/06/checks-for-your-django-project/">Checks for Your Django Project</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2015/04/06/the-sound-of-e/">The Sound of E</a>
       </li>
     
   </ul>

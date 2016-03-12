@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: keyboards - Erik Ramsgaard Wognsen</title>
+  <title>Remote Desktop White Screen - Solved - Erik Ramsgaard Wognsen</title>
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="Category: keyboards">
+  <meta name="description" content="At work, I often connect to Windows servers over Remote Desktop Protocol (RDP).
+A few times, I have been met with a blank white screen, typically &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.erw.dk/blog/categories/keyboards">
+  <link rel="canonical" href="http://blog.erw.dk/2016/03/12/remote-desktop-white-screen-solved">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
@@ -76,36 +77,87 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: keyboards</h1>
+    
+      <h1 class="entry-title">Remote Desktop White Screen - Solved</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-12T13:54:10+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p><img class="right" src="/images/posts/rdp.png" width="450"></p>
 
-  
-  <h2>2015</h2>
+<p>At work, I often connect to Windows servers over Remote Desktop Protocol (RDP).
+A few times, I have been met with a blank white screen, typically after
+changing screen resolution in the Remote Desktop Connection options.</p>
 
-<article>
-  
-<h1><a href="/2015/02/27/4-years-with-colemak/">4 Years with Colemak</a></h1>
-<time datetime="2015-02-27T13:38:30+01:00" pubdate><span class='month'>Feb</span> <span class='day'>27</span> <span class='year'>2015</span></time>
+<p>The first time this happened I spent a lot of time googling to no avail, so now
+I will put the solution I found by chance here in case it might help someone
+else. And note that encountering a blank <em>black</em> screen is a different and more
+frequent problem, the solutions to which didn&rsquo;t help me with my white screen in
+the time that I spent on it.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/keyboards/'>keyboards</a></span>
-</footer>
+<a name="Solution:.Alt-F4"></a>
+<h3>Solution: Alt-F4</h3>
 
-
-</article>
-
+<p>An <strong>Alt-F4</strong> was all it took to get rid of the white screen. However, if that
+does not work, you can also try a <strong>Ctrl-Alt-End</strong> (the remote desktop
+equivalent of Ctrl-Alt-Del), and see if you can work anything out from there.
+Good luck!</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-03-12T13:54:10+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2016/01/10/keep-track-with-a-year-at-a-glance/" title="Previous Post: Keep Track With a Year at a Glance">&laquo; Keep Track With a Year at a Glance</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -167,7 +219,10 @@
       var disqus_shortname = 'erwdk';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2016/03/12/remote-desktop-white-screen-solved/';
+        var disqus_url = 'http://blog.erw.dk/2016/03/12/remote-desktop-white-screen-solved/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

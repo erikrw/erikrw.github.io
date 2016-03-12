@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-01-10T19:37:23+01:00</updated>
+  <updated>2016-03-12T14:11:13+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -175,7 +175,7 @@ expressions. And that leads us to another criterion.</p>
 <p>Doing a quick benchmark on an input with two million strings and warmed-up
 caches, the uncompiled Regex version completes in 6.6 seconds, the LINQ version
 in 4.4 seconds, and my naive imperative version in 2.4 seconds. So much for
-readability.</p>
+readability. (This was using Mono, btw.)</p>
 
 <p>But, the declarative style has a trick up its sleeve: Parallelism for free!</p>
 
@@ -231,6 +231,8 @@ print sum(1 for line in open("input").readlines()
 
 <p>At 5.3 seconds for the two million strings, this stacks up pretty well against
 C#, considering that Python is interpreted.</p>
+
+<p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
 ]]></content>
   </entry>
   
