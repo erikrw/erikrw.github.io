@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-03-12T14:11:13+01:00</updated>
+  <updated>2016-04-19T07:56:40+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,102 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Entering Dates and Times in Vim]]></title>
+    <link href="http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim/"/>
+    <updated>2016-04-19T07:55:20+02:00</updated>
+    <id>http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
+of a text file, then each time you open it in Notepad, it appends the current
+time and date to the file. That was pretty cool. And useful for logging things,
+as <code>.LOG</code> implies. Later I became a <a href="http://www.vim.org/about.php">Vim</a> user and started enjoying all
+the customization I can do to my editor. Or perhaps I became a Vim user because
+I enjoy customizing! Either way, I like my date and time shortcuts in Vim. For
+example:</p>
+
+<pre><code class="C">noremap! &lt;expr&gt; ,t strftime("%H:%M")
+</code></pre>
+
+<p>This means: Map the key sequence <code>,t</code> (comma followed by &rsquo;t&#8217;) to the result of
+the expression <code>strftime("%H:%M")</code> in the insert and command line modes. So if
+I write &ldquo;The package arrived ,t&rdquo;, what I will see is &ldquo;The package arrived
+13:43&rdquo;, or whatever the time was. I use capital T for further precision
+(seconds), <code>,d</code> to insert the date (of course in ISO 8601 format), and <code>,l</code> to
+insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code>):</p>
+
+<pre><code class="C">noremap! &lt;expr&gt; ,T strftime("%H:%M:%S")
+noremap! &lt;expr&gt; ,d strftime("%Y-%m-%d")
+noremap! &lt;expr&gt; ,l strftime("%Y-%m-%d %H:%M")
+</code></pre>
+
+<!-- more -->
+
+
+<p>There are only so many shortcuts you can make with the Control and Alt keys,
+but if you use key sequences, you have many more. I have chosen comma as
+a &ldquo;leader&rdquo; key because I rarely write it without following it by a space. In
+case I do want to write literally &ldquo;,t&rdquo; without a space, I have to type &ldquo;,,t&rdquo;,
+where the double comma is a command to insert a single comma:</p>
+
+<pre><code class="C">noremap! ,, ,
+</code></pre>
+
+<p>The &ldquo;nore&rdquo; part of &ldquo;noremap&rdquo; means &ldquo;no remapping&rdquo;, i.e., don&rsquo;t use the output
+of this mapping as input to another mapping. If it <em>did</em> remap, the one comma
+produced here would be interpreted as the start of one of the mappings starting
+with comma, including itself.</p>
+
+<p></p>
+
+<p>I use these functions daily, for example at work, where I keep a log of which
+tasks I start when. I also use it a lot with <a href="http://todotxt.com/">todotxt</a> when writing
+due dates or threshold dates. Finally, I added a mapping to insert the first of
+the next month.</p>
+
+<pre><code class="C">noremap! &lt;expr&gt; ,D
+            \ strftime("%Y") + strftime("%m") / 12 . "-" .
+            \ repeat('0', 2-len((strftime("%m") + 1) % 12)) .
+            \ (strftime("%m") + 1) % 12 .
+            \ "-01"
+</code></pre>
+
+<p>Typing &ldquo;,D&rdquo; today would yield 2016-05-01, for example.</p>
+
+<p>Entered times and dates can also be manipulated with Vim&rsquo;s Ctrl-A and Ctrl-X
+increment and decrement commands. Want to add two weeks? Type 14 followed by
+Ctrl-X to add 14 days.</p>
+
+<p>My duplicate increment line mappings also come in handy:</p>
+
+<pre><code class="C">nnoremap &lt;silent&gt;       &lt;F2&gt;  @='yyp&lt;c-v&gt;&lt;c-a&gt;'&lt;cr&gt;
+nnoremap &lt;silent&gt;       &lt;F3&gt;  @='yypE&lt;c-v&gt;&lt;c-x&gt;'&lt;cr&gt;
+</code></pre>
+
+<p>If I write &ldquo;2016-04-20 Plan:&rdquo; followed by 10 and then the F3 key, I immediately
+have:</p>
+
+<pre><code>2016-04-20 Plan:
+2016-04-21 Plan:
+2016-04-22 Plan:
+2016-04-23 Plan:
+2016-04-24 Plan:
+2016-04-25 Plan:
+2016-04-26 Plan:
+2016-04-27 Plan:
+2016-04-28 Plan:
+2016-04-29 Plan:
+2016-04-30 Plan:
+</code></pre>
+
+<p>Actually, Vim just thinks it&rsquo;s decrementing the integer -19 to -20 and so on,
+but Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-speeddating">speeddating.vim</a> plugin adds date and time
+awareness, so typing Ctrl-A on 2016-04-30 would result in 2016-05-01 and not
+2016-04-31. Happy Vimming!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Language of vi, Improved]]></title>

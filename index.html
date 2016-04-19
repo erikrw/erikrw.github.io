@@ -9,8 +9,8 @@
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="At work, I often connect to Windows servers over Remote Desktop Protocol (RDP).
-A few times, I have been met with a blank white screen, typically &hellip;">
+  <meta name="description" content="As a young Windows user, I learned that if you write .LOG as the first line
+of a text file, then each time you open it in Notepad, it appends the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,69 @@ A few times, I have been met with a blank white screen, typically &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2016/04/19/entering-dates-and-times-in-vim/">Entering Dates and Times in Vim</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-19T07:55:20+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
+of a text file, then each time you open it in Notepad, it appends the current
+time and date to the file. That was pretty cool. And useful for logging things,
+as <code>.LOG</code> implies. Later I became a <a href="http://www.vim.org/about.php">Vim</a> user and started enjoying all
+the customization I can do to my editor. Or perhaps I became a Vim user because
+I enjoy customizing! Either way, I like my date and time shortcuts in Vim. For
+example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">t</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This means: Map the key sequence <code>,t</code> (comma followed by &rsquo;t&#8217;) to the result of
+the expression <code>strftime("%H:%M")</code> in the insert and command line modes. So if
+I write &ldquo;The package arrived ,t&rdquo;, what I will see is &ldquo;The package arrived
+13:43&rdquo;, or whatever the time was. I use capital T for further precision
+(seconds), <code>,d</code> to insert the date (of course in ISO 8601 format), and <code>,l</code> to
+insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code>):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">T</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">d</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">l</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d %H:%M&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2016/04/19/entering-dates-and-times-in-vim/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -484,61 +547,6 @@ red pill: I started using the <a href="http://colemak.com/">Colemak</a> keyboard
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2015/02/21/the-sound-of-r/">The Sound of R</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-21T13:27:20+01:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Voiced_uvular_fricative_%28vector%29.svg/300px-Voiced_uvular_fricative_%28vector%29.svg.png" title="R" alt="R"></p>
-
-<p>R is a common letter in many languages, but it represents vastly different
-sounds. Sometimes even within the same language.
-As <a href="https://en.wikipedia.org/wiki/Rhotic_consonant">Wikipedia says</a>:
-<em>Being &ldquo;R-like&rdquo; is an elusive and ambiguous concept phonetically</em>.
-In fact, we might not even consider the R-sound used in, say, Spain, related to
-the R-sound used in France/Germany/Denmark, if they were not spelled the same.
-However, it was the will of history that they are, and in this post, I will
-present the three main families of R-sounds in European languages: English,
-Spanish, and French.</p>
-
-<p>I am trying to keep it jargon free; hence the names above. They are
-a simplification, and in fact many languages use the three types. For example,
-the &ldquo;Spanish&rdquo; type is also Italian, Finnish, Icelandic, Lithuanian, Polish,
-Czech, etc. Some languages, such as <a href="http://youtu.be/iIWmTglqUzY">Dutch</a> and Portuguese also use
-more than one type, even within a single dialect. In this post I will cover the
-three &ldquo;mainstream&rdquo; R families plus a lot of other interesting R-facts,
-including that R is sometimes a vowel!</p>
-
-<p>(R is incidentally also a very nice <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">statistics program</a>, but that is
-not the topic of this post!)</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2015/02/21/the-sound-of-r/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -560,6 +568,10 @@ not the topic of this post!)</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2016/04/19/entering-dates-and-times-in-vim/">Entering Dates and Times in Vim</a>
+      </li>
+    
+      <li class="post">
         <a href="/2016/03/12/remote-desktop-white-screen-solved/">Remote Desktop White Screen - Solved</a>
       </li>
     
@@ -575,16 +587,12 @@ not the topic of this post!)</p>
         <a href="/2015/07/11/ode-to-my-casio/">Ode to my Casio</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/06/06/checks-for-your-django-project/">Checks for Your Django Project</a>
-      </li>
-    
   </ul>
 </section>
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/drumming/'>drumming (1)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (1)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/programming/'>programming (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (2)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/drumming/'>drumming (1)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (1)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/programming/'>programming (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (3)</a></li></ul>
 </section>
 
   

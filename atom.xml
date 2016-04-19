@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-03-12T14:11:13+01:00</updated>
+  <updated>2016-04-19T07:56:40+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Entering Dates and Times in Vim]]></title>
+    <link href="http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim/"/>
+    <updated>2016-04-19T07:55:20+02:00</updated>
+    <id>http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim</id>
+    <content type="html"><![CDATA[<p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
+of a text file, then each time you open it in Notepad, it appends the current
+time and date to the file. That was pretty cool. And useful for logging things,
+as <code>.LOG</code> implies. Later I became a <a href="http://www.vim.org/about.php">Vim</a> user and started enjoying all
+the customization I can do to my editor. Or perhaps I became a Vim user because
+I enjoy customizing! Either way, I like my date and time shortcuts in Vim. For
+example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">t</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This means: Map the key sequence <code>,t</code> (comma followed by &rsquo;t&#8217;) to the result of
+the expression <code>strftime("%H:%M")</code> in the insert and command line modes. So if
+I write &ldquo;The package arrived ,t&rdquo;, what I will see is &ldquo;The package arrived
+13:43&rdquo;, or whatever the time was. I use capital T for further precision
+(seconds), <code>,d</code> to insert the date (of course in ISO 8601 format), and <code>,l</code> to
+insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code>):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">T</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">d</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">l</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d %H:%M&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
+
+
+<p>There are only so many shortcuts you can make with the Control and Alt keys,
+but if you use key sequences, you have many more. I have chosen comma as
+a &ldquo;leader&rdquo; key because I rarely write it without following it by a space. In
+case I do want to write literally &ldquo;,t&rdquo; without a space, I have to type &ldquo;,,t&rdquo;,
+where the double comma is a command to insert a single comma:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="p">,,</span> <span class="p">,</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The &ldquo;nore&rdquo; part of &ldquo;noremap&rdquo; means &ldquo;no remapping&rdquo;, i.e., don&rsquo;t use the output
+of this mapping as input to another mapping. If it <em>did</em> remap, the one comma
+produced here would be interpreted as the start of one of the mappings starting
+with comma, including itself.</p>
+
+<p>I use these functions daily, for example at work, where I keep a log of which
+tasks I start when. I also use it a lot with <a href="http://todotxt.com/">todotxt</a> when writing
+due dates or threshold dates. Finally, I added a mapping to insert the first of
+the next month.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">D</span>
+</span><span class='line'>          <span class="err">\</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span> <span class="p">.</span> <span class="s">&quot;-&quot;</span> <span class="p">.</span>
+</span><span class='line'>          <span class="err">\</span> <span class="n">repeat</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="n">len</span><span class="p">((</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">12</span><span class="p">))</span> <span class="p">.</span>
+</span><span class='line'>          <span class="err">\</span> <span class="p">(</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">12</span> <span class="p">.</span>
+</span><span class='line'>          <span class="err">\</span> <span class="s">&quot;-01&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Typing &ldquo;,D&rdquo; today would yield 2016-05-01, for example.</p>
+
+<p>Entered times and dates can also be manipulated with Vim&rsquo;s Ctrl-A and Ctrl-X
+increment and decrement commands. Want to add two weeks? Type 14 followed by
+Ctrl-X to add 14 days.</p>
+
+<p>My duplicate increment line mappings also come in handy:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">nnoremap</span> <span class="o">&lt;</span><span class="n">silent</span><span class="o">&gt;</span>       <span class="o">&lt;</span><span class="n">F2</span><span class="o">&gt;</span>  <span class="err">@</span><span class="o">=</span><span class="err">&#39;</span><span class="n">yyp</span><span class="o">&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">v</span><span class="o">&gt;&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">a</span><span class="o">&gt;</span><span class="err">&#39;</span><span class="o">&lt;</span><span class="n">cr</span><span class="o">&gt;</span>
+</span><span class='line'><span class="n">nnoremap</span> <span class="o">&lt;</span><span class="n">silent</span><span class="o">&gt;</span>       <span class="o">&lt;</span><span class="n">F3</span><span class="o">&gt;</span>  <span class="err">@</span><span class="o">=</span><span class="err">&#39;</span><span class="n">yypE</span><span class="o">&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">v</span><span class="o">&gt;&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">x</span><span class="o">&gt;</span><span class="err">&#39;</span><span class="o">&lt;</span><span class="n">cr</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If I write &ldquo;2016-04-20 Plan:&rdquo; followed by 10 and then the F3 key, I immediately
+have:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">20</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">21</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">22</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">23</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">24</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">25</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">26</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">27</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">28</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">29</span> <span class="nl">Plan</span><span class="p">:</span>
+</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">30</span> <span class="nl">Plan</span><span class="p">:</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Actually, Vim just thinks it&rsquo;s decrementing the integer -19 to -20 and so on,
+but Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-speeddating">speeddating.vim</a> plugin adds date and time
+awareness, so typing Ctrl-A on 2016-04-30 would result in 2016-05-01 and not
+2016-04-31. Happy Vimming!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Remote Desktop White Screen - Solved]]></title>
