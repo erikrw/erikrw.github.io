@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-04-19T07:56:40+02:00</updated>
+  <updated>2016-04-27T22:01:06+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -2858,10 +2858,10 @@ I am pleased to say that the answer doesn&rsquo;t start with <em>h</em>, <em>j</
 <em>i</em>.</p>
 
 <p>Instead of the traditional bottom-up tutorial, this will be a top-down
-introduction, that uncovers to the <em>essence of vi</em> and the almost poetic
-language you use to speak to Vim and vi.  It is my hope that reading it will
-make your time with Vim both more useful and more enjoyable.  I have myself
-enjoyed Vim since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
+introduction, that uncovers the <em>essence of vi</em> and the almost poetic language
+you use to speak to Vim and vi.  It is my hope that reading it will make your
+time with Vim both more useful and more enjoyable.  I have myself enjoyed Vim
+since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
 
 <!-- more -->
 
@@ -2921,7 +2921,7 @@ switch between them, but I&rsquo;m not going to.  Because when you use Vim natur
 you don&rsquo;t think about modes, you think about <em>actions</em>.  And the actions lead
 you naturally to the mode changes.  Think about finding content on a web page
 in your browser: You press <code>ctrl-f</code> which opens a text field.  Here you write
-you search string, press <code>&lt;enter&gt;</code> a few times, then <code>&lt;esc&gt;</code> when you&rsquo;re done.
+your search string, press <code>&lt;enter&gt;</code> a few times, then <code>&lt;esc&gt;</code> when you&rsquo;re done.
 You just used FIND MODE!  (It was super effective!)</p>
 
 <p>Modal editing simply gives you more buttons for actions.  As
@@ -2941,7 +2941,7 @@ way of writing <code>ctrl-a</code>).  I could tell you how to do it in Vim (one 
 vi.  And <em>to master Vim, you must understand vi</em>.  (In a later post I will
 cover some &ldquo;philosophical&rdquo; differences between Vim and vi. <em>Update 2014-11-25:
 <a href="http://blog.erw.dk/2014/11/25/the-language-of-vi-improved/">Here it is!</a></em>) Instead, realize that
-selecting text is a means, but to what end?  <em>Why</em> you want to select all?</p>
+selecting text is a means, but to what end?  <em>Why</em> do you want to select all?</p>
 
 <p>Do you want to copy everything?  Then copy, don&rsquo;t select.  It&rsquo;s &ldquo;<code>ggyG</code>&rdquo;. Type
 it one letter at a time, and pay attention to case.  What does it mean?  The
@@ -3200,7 +3200,7 @@ mile on first.</p></blockquote>
 <ul>
 <li>&ldquo;to the matching parenthesis/brace/comment marker/HTML tag/if/else-stmt/etc. <code>%</code></li>
 <li>&ldquo;to the next/previous misspelled word&rdquo; <code>]s</code> <code>[s</code></li>
-<li>&ldquo;to the next/previous start/end of a method (Java/C# style) <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code></li>
+<li>&ldquo;to the next/previous start/end of a method (Java style) <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code></li>
 </ul>
 
 
@@ -3385,6 +3385,9 @@ one you enter when you type <code>:w&lt;enter&gt;</code> to save and <code>:q&lt
 
 <p>Is command-line mode essential?
 Maybe <a href="http://blog.sanctum.geek.nz/vim-koans/">the Vim Koan &ldquo;The superior editor&rdquo;</a> will enlighten you.</p>
+
+<p><em>Update 2016-04-27: Motions <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code> do unfortunately not work for
+C# out of the box. Also, grammar fixes.</em></p>
 ]]></content>
   </entry>
   
