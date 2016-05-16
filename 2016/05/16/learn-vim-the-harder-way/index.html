@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Learn Vim the Harder Way - Erik Ramsgaard Wognsen</title>
+  <meta name="author" content="Erik Ramsgaard Wognsen">
+
+  
+  <meta name="description" content="The first lesson of the official Vim tutorial (&ldquo;vimtutor&rdquo;) introduces
+the navigation keys h, j, k, l. This is where the user might go
+& &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+<script>
+if (document.location.hostname != "127.0.0.1") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55985488-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
+  
+    <h2>Thoughts & technology</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.erw.dk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Learn Vim the Harder Way</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-05-16T14:59:23+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>The first lesson of the official <a href="http://en.wikipedia.org/wiki/Vim_%28text_editor%29">Vim</a> tutorial (&ldquo;vimtutor&rdquo;) introduces
+the navigation keys <em>h</em>, <em>j</em>, <em>k</em>, <em>l</em>. This is where the user might go
+&ldquo;What?&rdquo;, followed perhaps by &ldquo;What&rsquo;s wrong with the arrow keys?&rdquo; The tutorial
+has this answer: &ldquo;The cursor keys should also work. But using hjkl you will be
+able to move around much faster, once you get used to it. Really!&rdquo;</p>
+
+<p><img class="center" src="/images/posts/vimtutor.png"></p>
+
+<p>From here, I think most people continue using Vim with the arrow keys and
+perhaps mouse because that&rsquo;s what they&rsquo;re used to, and why change something
+that works? Users who actually use hjkl from this point onwards (either by
+sheer willpower or by disabling the mouse and arrow keys) are learning Vim &ldquo;the
+hard way&rdquo;.</p>
+
+<p>Let me say from the beginning that I agree with the tutorial: Using hjkl <em>is</em>
+better. But for most people the hard way is not the right way. Learning Vim
+<a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/">progressively</a> is more fun and will allow you to switch to Vim
+while still <a href="http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/">getting work done</a>. In addition to the official
+vimtutor, you can also try an <a href="http://www.openvim.com/tutorial.html">interactive tutorial</a>, or even an
+<a href="http://vim-adventures.com/">adventure game</a>.</p>
+
+<p>If, however, you are going for the hard way, let me propose learning Vim the
+<em>harder</em> way!</p>
+
+<!-- more -->
+
+
+<a name="Learning.Vim.the.Harder.Way"></a>
+<h2>Learning Vim the Harder Way</h2>
+
+<p>The harder way is to use neither arrow keys <em>nor</em> hjkl.</p>
+
+<p>So what do you do instead? Finding out is exactly the point of this exercise.
+Vim has a very rich set of motion commands (see <code>:help motion.txt</code> in Vim or
+<a href="https://raw.githubusercontent.com/vim/vim/master/runtime/doc/motion.txt">here</a>) that you might never come across if you can get by with hjkl
+&mdash; just like you wouldn&rsquo;t learn hjkl if you kept using the arrow keys.</p>
+
+<p>While writing this article, I experimented with various variations on this.
+After disabling hjkl, it took some time before I noticed that the sideways
+motions <em>h</em> and <em>l</em> were missing (i.e., I use other, more direct motions more).
+On the other hand, the up-down motions <em>j</em> and <em>k</em> in many cases <em>are</em> the most
+efficient motions when combined with counts (see <code>:help count</code>) and relative
+line numbers. Therefore, I do not recommend disabling <em>j</em> and
+<em>k</em> completely. But to nudge you into using them intelligently, I suggest
+disabling the &ldquo;repeat keys&rdquo; feature in your OS keyboard settings:</p>
+
+<p><img class="center" src="/images/posts/repeat_keys.png"></p>
+
+<p>When this is done, disable the mouse and <em>h</em> and <em>l</em> as well as the arrow keys
+in both normal mode and insert mode:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>set nocompatible
+</span><span class='line'>set mouse=
+</span><span class='line'>map h <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>map l <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>map <span class="nt">&lt;left&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>map <span class="nt">&lt;down&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>map <span class="nt">&lt;up&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>map <span class="nt">&lt;right&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>imap <span class="nt">&lt;left&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>imap <span class="nt">&lt;down&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>imap <span class="nt">&lt;up&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span><span class='line'>imap <span class="nt">&lt;right&gt;</span> <span class="nt">&lt;nop&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The first command, <code>set nocompatible</code>, changes many options from vi compatible
+to sane.</p>
+
+<p>You can try these commands in Vim by typing &lsquo;:&rsquo; to go command line mode, typing
+the command, and then pressing Enter. For example: <code>:map h &lt;nop&gt;</code> followed by
+Enter. This lasts until you close Vim or undo it with <code>:unmap h</code>. To make it
+stick, put the commands in your vimrc configuration file (see <code>:help vimrc</code>),
+and they will be loaded each time you start Vim, until you remove them from
+your vimrc again.</p>
+
+<a name="Start.Learning"></a>
+<h2>Start Learning</h2>
+
+<p>At first, the above settings are a pain in the gluteus maximus.</p>
+
+<p>Fire up <a href="https://raw.githubusercontent.com/vim/vim/master/runtime/doc/motion.txt"><code>:help motion.txt</code></a> and look around. (If you&rsquo;re tired of
+moving down one <em>j</em> at a time, use CTRL-f and CTRL-b to go forward and backward
+one page at a time. Or put the cursor on a <code>|keyword|</code> and press CTRL-] to jump
+to that subject.)</p>
+
+<p>To use <em>j</em> and <em>k</em> efficiently for editing, enable relative line numbers:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>set number
+</span><span class='line'>set relativenumber
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>They look like this:</p>
+
+<p><img class="center" src="/images/posts/vim_relativenumber.png"></p>
+
+<p>As shown in the margin, the cursor is on line 124. To go to the line &ldquo;To
+use&hellip;&rdquo;, just look to the left, read the 9, and go nine lines up with <em>9k</em>.
+Without relative line numbers (i.e. <code>:set norelativenumber</code>, or <code>:set nornu</code>
+for short), you could also see that this line is line 115 and go to it with
+<em>115G</em>, but that&rsquo;s twice the typing.</p>
+
+<p>While getting by with <em>j</em> and <em>k</em>, missing <em>h</em> and <em>l</em> is probably really bad
+at first. Take a look at <code>:help word-motions</code> and <code>:help left-right-motions</code>
+(which are sections of motion.txt). The six motions <em>f</em>, <em>F</em>, <em>t</em>, <em>T</em>,
+<em>(comma)</em>, and <em>;</em> (where <em>(comma)</em> is the comma key itself), will come in
+especially handy. To give an example, with the cursor at X on this line and an
+&lsquo;x&rsquo; somewhere later, typing <em>fx</em> will go to that x. (Go try it in Vim!) For
+letters more common than x, these find commands are less useful. But uppercase
+letters and punctuation are easy targets, and help you navigate very quickly.</p>
+
+<p>Playing around with <em>f</em> and family, you will notice that while they are very
+fast to type, they only move within the current line, and of course they only
+find one symbol at a time. Read <code>:help search-commands</code> to get into the big
+league search commands.</p>
+
+<p>At this point I&rsquo;ll remark that the search default settings are a bit lame.
+I prefer these settings regarding search:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">set</span> <span class="nb">incsearch</span>   <span class="c">&quot; Search while you type</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">hlsearch</span>    <span class="c">&quot; Highlight all matches</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">ignorecase</span>  <span class="c">&quot; Ignore case while searching...</span>
+</span><span class='line'><span class="k">set</span> <span class="nb">smartcase</span>   <span class="c">&quot; ...unless you use uppercase letters in the search pattern.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Especially search <span style="background-color: yellow;">highlight</span> can
+be useful, but after finding what you were looking for, you might want to get
+rid of the <span style="background-color: yellow;">highlight</span>ing. Rather
+than disabling it completely (<code>:set nohlsearch</code>), just turn it off until your
+next search with <code>:nohlsearch</code>, or <code>:noh</code> for short.</p>
+
+<p>In addition, when there are many highlighted matches close to each other,
+Damian Conway&rsquo;s <a href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/hlnext.vim">hlnext</a> plugin helps you see where you&rsquo;re at by
+blinking the next hit reached with <em>n</em> or <em>N</em>.</p>
+
+<a name="Conclusion"></a>
+<h2>Conclusion</h2>
+
+<p>As I mentioned in the beginning, learning Vim incrementally is the most useful.
+So the harder way is not the best for most beginners. But I think it is very
+useful for people who use Vim frequently but would like to unlock more of its
+potential.</p>
+
+<p>Also, we have just scratched the surface of what you can do in Vim. For any
+learner, new or experienced, I&rsquo;d recommend reading <code>:help user-manual</code> from
+start to end. This is in fact how I learned Vim.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-05-16T14:59:23+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/vim/'>vim</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2016/05/09/leaving-academia/" title="Previous Post: Leaving Academia">&laquo; Leaving Academia</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2016/05/16/learn-vim-the-harder-way/">Learn Vim the Harder Way</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/05/09/leaving-academia/">Leaving Academia</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/04/19/entering-dates-and-times-in-vim/">Entering Dates and Times in Vim</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/03/12/remote-desktop-white-screen-solved/">Remote Desktop White Screen - Solved</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2016/01/10/keep-track-with-a-year-at-a-glance/">Keep Track With a Year at a Glance</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/drumming/'>drumming (1)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (1)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/programming/'>programming (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (4)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  &copy; 2016 - Erik Ramsgaard Wognsen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'erwdk';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way/';
+        var disqus_url = 'http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
