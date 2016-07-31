@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-05-16T15:01:33+02:00</updated>
+  <updated>2016-07-31T20:24:58+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[INSIDE]]></title>
+    <link href="http://blog.erw.dk/2016/07/31/inside/"/>
+    <updated>2016-07-31T19:53:27+02:00</updated>
+    <id>http://blog.erw.dk/2016/07/31/inside</id>
+    <content type="html"><![CDATA[<p>I don&rsquo;t game a lot, but after seeing rave reviews, I knew I had to try
+Playdead&rsquo;s <a href="http://www.playdead.com/games/inside/">INSIDE</a>.</p>
+
+<div class="video-container">
+<iframe src="//www.youtube.com/embed/op4G1--kb-g?rel=0&showinfo=0&feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>And, like many others, I was blown away.</p>
+
+<!-- more -->
+
+
+<p>Above all stands the eerie, mesmerizing, spine-chilling atmosphere. It&rsquo;s
+a combination of the visuals, the sounds, the story. All three are tightly
+integrated as well as dark, minimalist, mysterious, foreboding and
+awe-inspiring.</p>
+
+<p><img src="http://www.playdead.com/css/img/inside/screenshots/INSIDE_05.jpg"></p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/2.5D">two-and-a-half dimensions</a> are amazing. The game uses 2D controls in
+a 3D world. The third dimension is an integral part of the game even though the
+protagonist cannot enter it. First of all, it tells the most of the story.
+Second, while the boy is stuck in 2D, antagonists can move in 3D which is used
+in puzzles or to introduce them before they interact with you. When a dog
+chases you, you can hear it barking as it appears in the distance and races
+towards you. If it catches you, it does not feel unfair &mdash; only terrifying.</p>
+
+<p>The camera is also used to great effect. While the camera always follows the
+protagonist, it subtly, gradually changes perspective to draw attention to
+puzzle elements and places you are going. The camera also zooms in and out
+depending on the scene. I vividly remember the zoomed-in view of trying to fend
+off a pack of dogs with a torch, or the zoom-out of an underwater expanse
+making me feel small and vulnerable while also coaxing me into exploring.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://www.playdead.com/css/img/inside/screenshots/INSIDE_06.jpg' width='' height='' alt='The camera perspective reveals a drainpipe that will become relevant in the near future.'><span class='caption-text'>The camera perspective reveals a drainpipe that will become relevant in the near future.</span></span></p>
+
+<p>The realism of movements is also amazing. The physically unrealistic platformer
+classic of changing direction in mid-air does not work here. But it&rsquo;s also in
+details such as running in mud slowing the boy down. He can stumble and fall.
+When climbing a ladder, his hands and feet will touch each individual rung.
+Climbing and swinging a rope looks realistic. While underwater, it takes time
+to change direction.</p>
+
+<p>In general, I just loved the attention to detail. His breathing chest movements
+match the sound of his breathing. And his breathing matches the tension of the
+situation. In this regard, I think that coming up short of breath from a deep
+dive should also affect his breathing, but it doesn&rsquo;t. This seems like a minor
+oversight in what is otherwise a parade of perfection.</p>
+
+<p><img src="http://www.playdead.com/css/img/inside/screenshots/INSIDE_04.jpg"></p>
+
+<p>The details are not just about the boy&rsquo;s movements. There are many subtleties
+that you only find by chance. For example, while swinging from a lamp cord,
+sparks will fly from the lamp on the off chance that it hits the wall. A blast
+of air will throw zombies off their feet in the rare case they are standing
+nearby. Some details are even hidden on purpose. There is a cord you can climb,
+but when you stand under it, it (and the boy) is obscured by a pillar in the
+foreground.</p>
+
+<p>Finally, I love the complete lack of words in the game, both spoken and
+written. The gameplay needs no explanation because the whole thing is just
+a beautifully crafted progression of elements. The story is very open to
+interpretation. I think you should play the game and see for yourself!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learn Vim the Harder Way]]></title>
@@ -143,6 +215,10 @@ especially handy. To give an example, with the cursor at X on this line and an
 &lsquo;x&rsquo; somewhere later, typing <em>fx</em> will go to that x. (Go try it in Vim!) For
 letters more common than x, these find commands are less useful. But uppercase
 letters and punctuation are easy targets, and help you navigate very quickly.</p>
+
+<p>Sometimes, one or two <em>h</em>&lsquo;es or <em>l</em>&rsquo;s <em>are</em> the fastest way to get somewhere,
+but until your muscle memory learns the other commands, it&rsquo;s better to keep
+them disabled, or the temptation to use them all the time will be too great.</p>
 
 <p>Playing around with <em>f</em> and family, you will notice that while they are very
 fast to type, they only move within the current line, and of course they only

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-05-16T15:01:33+02:00</updated>
+  <updated>2016-07-31T20:24:58+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -129,6 +129,10 @@ especially handy. To give an example, with the cursor at X on this line and an
 &lsquo;x&rsquo; somewhere later, typing <em>fx</em> will go to that x. (Go try it in Vim!) For
 letters more common than x, these find commands are less useful. But uppercase
 letters and punctuation are easy targets, and help you navigate very quickly.</p>
+
+<p>Sometimes, one or two <em>h</em>&lsquo;es or <em>l</em>&rsquo;s <em>are</em> the fastest way to get somewhere,
+but until your muscle memory learns the other commands, it&rsquo;s better to keep
+them disabled, or the temptation to use them all the time will be too great.</p>
 
 <p>Playing around with <em>f</em> and family, you will notice that while they are very
 fast to type, they only move within the current line, and of course they only
