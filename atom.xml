@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-07-31T20:24:58+02:00</updated>
+  <updated>2016-08-28T13:35:22+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,149 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learn Vim the Harder Way, Part II]]></title>
+    <link href="http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii/"/>
+    <updated>2016-08-28T13:29:00+02:00</updated>
+    <id>http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii</id>
+    <content type="html"><![CDATA[<p>In a <a href="http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way/">previous post</a> I introduced learning <a href="http://en.wikipedia.org/wiki/Vim_%28text_editor%29">Vim</a> the harder way. To summarize:</p>
+
+<ul>
+<li><strong>The easy way</strong>: Use the arrow keys for cursor movement</li>
+<li><strong>The hard way</strong>: Don&rsquo;t use arrow keys; use <em>hjkl</em> in <em>normal mode</em></li>
+<li><strong>The harder way</strong>: Don&rsquo;t use <em>hjkl</em>; learn Vim&rsquo;s multitude of other motion
+commands</li>
+</ul>
+
+
+<p>Now, there&rsquo;s nothing wrong with using the arrow keys per se, but it very often
+leads to staying in <em>insert mode</em> most of the time and thus missing out on all
+the stuff you can do from <em>normal mode</em>. As someone <a href="http://www.viemu.com/a-why-vi-vim.html">wrote</a> about vi/Vim:</p>
+
+<blockquote><p>your keyboard becomes a huge specialized text-editing gamepad with almost
+a hundred buttons.</p></blockquote>
+
+<p>There&rsquo;s nothing wrong with using <em>hjkl</em> either, in fact they&rsquo;re very good
+because they force you to use <em>normal mode</em> as your, well, normal mode.
+However, normal mode only really provides an advantage if you harness its power
+and go beyond the basics. For motions, that involves reducing your use of
+<em>hjkl</em>. In this part we see how to do that for inserting and deleting text.</p>
+
+<!-- more -->
+
+
+<a name="Insert.Without..em.i..em."></a>
+<h2>Insert Without <em>i</em></h2>
+
+<p>One of the first things Vim users learn is that you type <em>i</em> to go to insert
+mode (where you can write text). Just like <em>hjkl</em>, <em>i</em> is a basic command. And
+just like there are many other motions beyond <em>hjkl</em>, there are more commands
+that bring you to insert mode:</p>
+
+<ul>
+<li><em>a</em> appends text after the current character (like <em>i</em> inserts before it).</li>
+<li><em>I</em> and <em>A</em> insert text at the beginning and end of the line, respectively,
+no matter where on the line your cursor is.</li>
+<li><em>o</em> and <em>O</em> &ldquo;open&rdquo; a new blank line for writing immediately after and before
+the current line, respectively (no matter where on the line your cursor is).
+When used for programming (for example with <code>:set autoindent</code>), &ldquo;open&rdquo; also
+does intelligent indentation.</li>
+<li><em>gi</em> inserts text where you last stopped inserting text, no matter where in
+the buffer the cursor now is.</li>
+</ul>
+
+
+<p>Try disabling <em>i</em> with <code>:nmap i &lt;nop&gt;</code>, or perhaps with a reminder of what to
+do instead: <code>:nnoremap i :echoerr "Try a/I/A/o/O/gi instead!"&lt;cr&gt;</code>. It&rsquo;s really
+annoying, but that&rsquo;s the point. Once you have a basic grasp of the other insert
+mode commands, you can remove the mapping again with <code>:nunmap i</code>.</p>
+
+<p>By the way, I lied a bit earlier. The command <em>I</em> doesn&rsquo;t insert at the
+beginning of the line. It inserts immediately before the first non-whitespace
+character of the line, which is often convenient, not least in programming. But
+you can still tell Vim to <em>really</em> insert at the beginning of the line with the
+command <em>gI</em>. Vim is thorough like that.</p>
+
+<a name="Delete.Without.Backspace"></a>
+<h2>Delete Without Backspace</h2>
+
+<p>Now you know a flexible set of commands to go to insert mode. Once you&rsquo;re
+there, there&rsquo;s one thing you should not to too much (beside use the arrow
+keys), and that is: backspace. Like many other commands, it is a basic
+operation good in some cases and inefficient in others. It&rsquo;s good for
+correcting a typo, but deleting words and anything bigger is like digging with
+a teaspoon. So I&rsquo;d recommend removing the temptation to use the teaspoon by
+disallowing backspacing past the position where you started insert mode:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>set backspace-=start</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can still correct typos while you type. In normal mode you can also delete
+a few chars with the <em>x</em> and <em>X</em> commands which work like delete and backspace
+do in insert mode.</p>
+
+<p>For anything bigger, use the delete command <em>d</em>. It takes a motion or text
+object. For example, <code>dw</code> deletes from the cursor position until the start of
+the next word, <code>dt'</code> deletes until the next apostrophe, and <code>dap</code> deletes
+a paragraph (the one the cursor is currently in). All in one step.</p>
+
+<p>Besides being more efficient, doing it as a single command has the advantage
+that it can be undone as a single command (<em>u</em>), and, perhaps more importantly,
+that you get the whole thing copied so you can insert it later (in Vim, delete
+and cut are the same thing).</p>
+
+<a name="Delete.and.Insert.at.the.Same.Time"></a>
+<h2>Delete and Insert at the Same Time</h2>
+
+<p>In the previous section I suggest staying in normal mode when removing text.
+But what if you want to both delete <em>and</em> insert text? Just like Vim provides
+many commands than combine moving the cursor and inserting text (<em>a</em>, <em>I</em>, <em>A</em>,
+etc.), it also provides commands that combine deleting and inserting:</p>
+
+<ul>
+<li><em>r</em> replaces the character under the cursor with another character of your
+choosing</li>
+<li><em>R</em> drops you into replace mode where you overwrite/replace text until you
+return to normal mode with Esc.</li>
+<li><em>s</em>/<em>S</em> substitute the character/line under the cursor with any text (insert
+mode)</li>
+<li><em>c</em> changes text into other text: It first awaits your choice of motion or
+text object to delete and then drops you into insert mode. For example, <code>c)</code>
+changes from the cursor position until the end of the sentence and <code>ci"</code>
+changes the whole content of the double quote delimited string the cursor is
+in.</li>
+<li><em>C</em> changes from the cursor position to the end of the line (similarly to how
+<em>D</em> deletes from the cursor position to the EOL while <em>d</em> takes a motion or
+text object)</li>
+</ul>
+
+
+<p>If you&rsquo;re comfortable with <em>x</em>/<em>X</em>/<em>d</em>, but not the replace/substitute/change
+commands, I&rsquo;d recommend something crazy: Disable <em>x</em>, <em>X</em>, and <em>d</em>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nmap x &lt;nop&gt;
+</span><span class='line'>nmap X &lt;nop&gt;
+</span><span class='line'>nmap d &lt;nop&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instead, the stuff you want to delete, you can substitute/change into nothing
+until the substitute/change commands comes naturally to you.</p>
+
+<a name="Learn"></a>
+<h2>Learn</h2>
+
+<p>The point of temporarily disabling commands is not to say they&rsquo;re bad, because
+they&rsquo;re not. They are strictly necessary parts of Vim. The point is to <em>also</em>
+learn the more powerful and flexible commands. I have only covered the basics
+of normal mode, but read <code>:help</code>, <code>:help user-manual</code>, and <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">this</a> to
+uncover all the cool stuff you can do.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[INSIDE]]></title>
@@ -216,10 +359,6 @@ especially handy. To give an example, with the cursor at X on this line and an
 letters more common than x, these find commands are less useful. But uppercase
 letters and punctuation are easy targets, and help you navigate very quickly.</p>
 
-<p>Sometimes, one or two <em>h</em>&lsquo;es or <em>l</em>&rsquo;s <em>are</em> the fastest way to get somewhere,
-but until your muscle memory learns the other commands, it&rsquo;s better to keep
-them disabled, or the temptation to use them all the time will be too great.</p>
-
 <p>Playing around with <em>f</em> and family, you will notice that while they are very
 fast to type, they only move within the current line, and of course they only
 find one symbol at a time. Read <code>:help search-commands</code> to get into the big
@@ -260,6 +399,8 @@ potential.</p>
 <p>Also, we have just scratched the surface of what you can do in Vim. For any
 learner, new or experienced, I&rsquo;d recommend reading <code>:help user-manual</code> from
 start to end. This is in fact how I learned Vim.</p>
+
+<p>Update: See also <a href="http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii/">part II</a>.</p>
 ]]></content>
   </entry>
   
