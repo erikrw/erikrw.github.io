@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: productivity | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/productivity/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2017-01-22T17:44:02+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Work Helps Me Beat Procrastination]]></title>
+    <link href="http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination/"/>
+    <updated>2017-01-22T17:23:59+01:00</updated>
+    <id>http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p>Back in school, I put off essay writing until the night before the due date. In
+gymnasium/high school, I put off assignments until the <em>morning</em> of the due
+date. In my first years of university it went so far that a student counsellor
+suggested that maybe university wasn&rsquo;t for me.</p>
+
+<p>Despite&mdash;or perhaps because of&mdash;that, I pulled myself together. After passing
+some courses that especially triggered my procrastination, I did much better,
+and eventually emerged with a master&rsquo;s degree in software engineering and a PhD
+in computer science.</p>
+
+<p>But that does not mean I had completely overcome procrastination, especially
+not during the PhD study. It was not until <a href="/2016/05/09/leaving-academia/">leaving academia</a> for the
+IT business that I experienced what it is like to get control of my
+procrastination. (It&rsquo;s amazing, by the way.)</p>
+
+<!-- more -->
+
+
+<p></li>
+</ul>
+
+
+<a name="My.Job"></a>
+<h2>My Job</h2>
+
+<p>It&rsquo;s ironic that procrastination means postponing work, but my job actually
+helps me avoid procrastination. I&rsquo;ll try to figure out why that is. To that
+end, I&rsquo;ll first describe my job. It includes:</p>
+
+<ul>
+<li>Designing software solutions meeting the clients&#8217; requirements.</li>
+<li>Implementing (programming) software solutions according to designs approved
+by the clients.</li>
+<li>Registering the time spent on all tasks in our time tracking system.</li>
+</ul>
+
+
+<a name="Doing.It.for.Others"></a>
+<h2>Doing It for Others</h2>
+
+<p>There are many aspects of the above that contribute to procrastinating less.
+One of them, I think, is that this is the first time in my education and work
+life that people who ask me to do something want me to do it for <em>their</em> sake.</p>
+
+<p>Beating procrastination often requires external deadlines and reasons. In
+education of all levels, teachers ask us to do exercises, homework,
+assignments, semester projects, theses. But while they ask you, and systems may
+be in place to punish those who do not comply, the requests are not truly
+external. The purpose is that <em>you</em> learn, not (necessarily) that <em>they want</em>
+to read your work.</p>
+
+<p>Compulsory education contains more external pressure to learn than higher
+education (which is probably why procrastination gets worse the higher you get
+in the education system). In a job, you get back some external pressure, and
+this time they care more about what they get out of it than what you get out of
+it.</p>
+
+<p></p>
+
+<p>Although external reasons (and payment!) are good reasons to work, they are
+unfortunately not enough to fight procrastination.</p>
+
+<a name="Implementation.Tasks.are.Well-Defined"></a>
+<h2>Implementation Tasks are Well-Defined</h2>
+
+<p>One of the causes for procrastination is perfectionism. Often the desire to
+find the perfect solution to a problem puts so much pressure on you that you do
+not even succeed in finding a good-enough solution. Simply taking a step
+towards finding the perfect solution feels like a futile step towards
+a possibly unachievable goal, so let&rsquo;s just look a cat videos on YouTube
+instead.</p>
+
+<p>Working to implement a preapproved design means that the biggest decisions have
+already been made, whether by yourself or by others, and locked in by the
+client. Now your task is not to solve the original business problem, but simply
+to implement the designed solution in the alotted time.</p>
+
+<p>&ldquo;Simply&rdquo; does not mean to imply that it&rsquo;s easy. A high level of expertise is
+required to write correct, robust, efficient, and maintainable code. But with
+well-defined goals for the programming, the task is constrained enough that
+a skilled procrastinator (skilled at programming, that is) can attack the task
+head-on rather than postpone it.</p>
+
+<p>I do still get ideas to change the design while working to implement it, but
+the bureaucracy involved in changing it is actually a good thing here because
+it keeps me from trying, unless I&rsquo;m convinced it&rsquo;s necessary. It&rsquo;s better to
+have a good solution done on time than a perfect solution that isn&rsquo;t.</p>
+
+<p></p>
+
+<a name="Implementation.Tasks.are.Divisible"></a>
+<h2>Implementation Tasks are Divisible</h2>
+
+<p>It&rsquo;s not just that implementation tasks are easier when the design is fixed.
+It&rsquo;s also that the they can be broken into smaller parts that are even easier
+to do.</p>
+
+<p>The first subtask is to understand the design and hold a mental model of it.
+Depending on the level of detail in the design description, this can itself
+turn into clarifying discussions with the author, but that is also fairly
+well-defined.</p>
+
+<p>Many of the remaining subtasks are taken from a repertoire that includes:</p>
+
+<ul>
+<li>Adding required tables and fields to the database</li>
+<li>Identifying required data and writing queries to retrieve it</li>
+<li>Adding the business logic</li>
+<li>Testing the solution, and adding error handling and logging</li>
+</ul>
+
+
+<p></p>
+
+<a name="Time.Tracking"></a>
+<h2>Time Tracking</h2>
+
+<p>Next up is the time tracking we are required to do. While working a task, any
+task, we register the time spent in an issue tracker. Our issue trackers are
+then connected to the time tracking system, and in the time tracking system
+each week has to sum up to the number of hours our contract states before we
+can &ldquo;close&rdquo; that week. It&rsquo;s cold, mechanical, and unsympathetic, and it works
+wonders in beating procrastination.</p>
+
+<a name="Design.Tasks.Can.Make.You.Proud"></a>
+<h2>Design Tasks Can Make You Proud</h2>
+
+<p></p>
+
+<p>Design is the process of turning the client&rsquo;s requirements into a consistent
+and implementable description in terms of the business domain. Sometimes this
+requires several iterations with client feedback and further changes before the
+design is approved. A design can also be a change to a previously implemented
+module or feature.</p>
+
+<p>If it&rsquo;s a change request, it&rsquo;s fairly simple: read up on documentation and code
+until you hold a good-enough mental model of the existing functionality. From
+there, seeing where changes are required, is often obvious.</p>
+
+<p>If it&rsquo;s a new module or feature, it may be harder to get started. That&rsquo;s where
+one of the risks of procrastination hide. However, two things can mitigate
+this. The first is <em>structured procrastination</em>: While putting off the daunting
+design task, work on something else productive like a straightforward
+implementation task (as opposed to watching cat videos on YouTube). At least
+you&rsquo;re doing something productive.</p>
+
+<p>The second thing is that once you do get it cracked and have your initial idea
+for the general direction of the design, a feeling of ownership and pride
+starts to grow. This will make it much easier to keep the focus.</p>
+
+<p></p>
+
+<p>All in all, my job helps me keep my procrastination in check, which I&rsquo;m very
+happy about. I hope all you other procrastinators out there can see that your
+circumstances can help you beat procrastination, if you haven&rsquo;t cracked the
+code yet.</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keep Track With a Year at a Glance]]></title>
+    <link href="http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance/"/>
+    <updated>2016-01-10T19:32:58+01:00</updated>
+    <id>http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/floss.jpg' width='' height='' alt='The calendar helped me floss (more or less) daily.'><span class='caption-text'>The calendar helped me floss (more or less) daily.</span></span></p>
+
+<p>If you are already starting to forget about your New Year&rsquo;s resolutions, here&rsquo;s
+a tip to keep going: Visualize your progress: Put X&rsquo;s on a calendar on every
+day you do what whatever you want to do more of. Stick the calendar on the wall
+or wherever it would remind you of your goal.</p>
+
+<p></p>
+
+<p>Some years back, each time I visited my dentist, she recommended that I floss.
+And I would decide that <em>this time</em> I would start doing it. But some days
+later, I started slipping and forgetting about it. It wasn&rsquo;t until I put
+a year-at-a-glance calendar on the bathroom cabinet door that the habit stuck.</p>
+
+<p>Putting a mark on a calendar is not rocket science, but the satisfaction of
+marking a completed task and of seeing your progress is a mental reward that
+can make a big difference. If you want to try, I made a one page 2016 calendar
+you can print (<a href="/files/cal2016.odt">LibreOffice/odt</a>,
+<a href="/files/cal2016.docx">Word/docx</a>). (It was easily made with the open source
+ncal utility, invoked as <code>ncal -bh 2016</code>.)</p>
+
+<!-- more -->
+
+
+<a name="Don.t.Break.the.Chain"></a>
+<h2>Don&rsquo;t Break the Chain</h2>
+
+<p>For goals that can practically be done every day, it&rsquo;s not just having many
+marks on the calendar that is important. A further motivation is to keep the
+chain of successful days unbroken. (This method is widely known as the
+<a href="https://www.google.com/search?q=seinfeld+strategy">Seinfeld Strategy</a>, even though Jerry Seinfeld says
+<a href="https://www.reddit.com/r/IAmA/comments/1ujvrg/jerry_seinfeld_here_i_will_give_you_an_answer/ceitfxh">it wasn&rsquo;t his idea</a>.)
+For workouts or other things that you might not have time to do every day, you
+could still use the chain method by using a list of weeks of the year, and
+checking off each week that met your goal, say, doing at least two workouts. Or
+maybe drinking at most three bottles of soda that week.</p>
+
+<p>The chain method is also used in games and apps. For example, the app
+<a href="http://www.memrise.com/">Memrise</a> shows me my learning streak, or unbroken chain of days that
+I learn/memorize words or images in my chosen topic. Showing the streak has
+helped me to learn <a href="http://www.memrise.com/course/42769/country-mapping/">the world map</a> for five minutes a day, 234
+days in a row today. (The streak trick worked better than even the designers
+anticipated &ndash; the app crashed when trying to award me a 200-day badge.)</p>
+
+<p></p>
+
+<a name="Not.Just.for.Resolutions"></a>
+<h2>Not Just for Resolutions</h2>
+
+<p>The fine art of putting marks on a calendar is not just for New Year&rsquo;s
+resolutions. I find it useful for anything I want to track. For example, I use
+one to remember when I last watered my chili plant. Or put a mark when you
+vacuum clean. Then you can see both when it would be a good idea to do it
+again, and in the long run, how often you do it &ndash; if you&rsquo;re interested in that
+sort of thing. Happy tracking!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: work life | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/work-life/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2017-01-22T17:44:02+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Work Helps Me Beat Procrastination]]></title>
+    <link href="http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination/"/>
+    <updated>2017-01-22T17:23:59+01:00</updated>
+    <id>http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p>Back in school, I put off essay writing until the night before the due date. In
+gymnasium/high school, I put off assignments until the <em>morning</em> of the due
+date. In my first years of university it went so far that a student counsellor
+suggested that maybe university wasn&rsquo;t for me.</p>
+
+<p>Despite&mdash;or perhaps because of&mdash;that, I pulled myself together. After passing
+some courses that especially triggered my procrastination, I did much better,
+and eventually emerged with a master&rsquo;s degree in software engineering and a PhD
+in computer science.</p>
+
+<p>But that does not mean I had completely overcome procrastination, especially
+not during the PhD study. It was not until <a href="/2016/05/09/leaving-academia/">leaving academia</a> for the
+IT business that I experienced what it is like to get control of my
+procrastination. (It&rsquo;s amazing, by the way.)</p>
+
+<!-- more -->
+
+
+<p></li>
+</ul>
+
+
+<a name="My.Job"></a>
+<h2>My Job</h2>
+
+<p>It&rsquo;s ironic that procrastination means postponing work, but my job actually
+helps me avoid procrastination. I&rsquo;ll try to figure out why that is. To that
+end, I&rsquo;ll first describe my job. It includes:</p>
+
+<ul>
+<li>Designing software solutions meeting the clients&#8217; requirements.</li>
+<li>Implementing (programming) software solutions according to designs approved
+by the clients.</li>
+<li>Registering the time spent on all tasks in our time tracking system.</li>
+</ul>
+
+
+<a name="Doing.It.for.Others"></a>
+<h2>Doing It for Others</h2>
+
+<p>There are many aspects of the above that contribute to procrastinating less.
+One of them, I think, is that this is the first time in my education and work
+life that people who ask me to do something want me to do it for <em>their</em> sake.</p>
+
+<p>Beating procrastination often requires external deadlines and reasons. In
+education of all levels, teachers ask us to do exercises, homework,
+assignments, semester projects, theses. But while they ask you, and systems may
+be in place to punish those who do not comply, the requests are not truly
+external. The purpose is that <em>you</em> learn, not (necessarily) that <em>they want</em>
+to read your work.</p>
+
+<p>Compulsory education contains more external pressure to learn than higher
+education (which is probably why procrastination gets worse the higher you get
+in the education system). In a job, you get back some external pressure, and
+this time they care more about what they get out of it than what you get out of
+it.</p>
+
+<p></p>
+
+<p>Although external reasons (and payment!) are good reasons to work, they are
+unfortunately not enough to fight procrastination.</p>
+
+<a name="Implementation.Tasks.are.Well-Defined"></a>
+<h2>Implementation Tasks are Well-Defined</h2>
+
+<p>One of the causes for procrastination is perfectionism. Often the desire to
+find the perfect solution to a problem puts so much pressure on you that you do
+not even succeed in finding a good-enough solution. Simply taking a step
+towards finding the perfect solution feels like a futile step towards
+a possibly unachievable goal, so let&rsquo;s just look a cat videos on YouTube
+instead.</p>
+
+<p>Working to implement a preapproved design means that the biggest decisions have
+already been made, whether by yourself or by others, and locked in by the
+client. Now your task is not to solve the original business problem, but simply
+to implement the designed solution in the alotted time.</p>
+
+<p>&ldquo;Simply&rdquo; does not mean to imply that it&rsquo;s easy. A high level of expertise is
+required to write correct, robust, efficient, and maintainable code. But with
+well-defined goals for the programming, the task is constrained enough that
+a skilled procrastinator (skilled at programming, that is) can attack the task
+head-on rather than postpone it.</p>
+
+<p>I do still get ideas to change the design while working to implement it, but
+the bureaucracy involved in changing it is actually a good thing here because
+it keeps me from trying, unless I&rsquo;m convinced it&rsquo;s necessary. It&rsquo;s better to
+have a good solution done on time than a perfect solution that isn&rsquo;t.</p>
+
+<p></p>
+
+<a name="Implementation.Tasks.are.Divisible"></a>
+<h2>Implementation Tasks are Divisible</h2>
+
+<p>It&rsquo;s not just that implementation tasks are easier when the design is fixed.
+It&rsquo;s also that the they can be broken into smaller parts that are even easier
+to do.</p>
+
+<p>The first subtask is to understand the design and hold a mental model of it.
+Depending on the level of detail in the design description, this can itself
+turn into clarifying discussions with the author, but that is also fairly
+well-defined.</p>
+
+<p>Many of the remaining subtasks are taken from a repertoire that includes:</p>
+
+<ul>
+<li>Adding required tables and fields to the database</li>
+<li>Identifying required data and writing queries to retrieve it</li>
+<li>Adding the business logic</li>
+<li>Testing the solution, and adding error handling and logging</li>
+</ul>
+
+
+<p></p>
+
+<a name="Time.Tracking"></a>
+<h2>Time Tracking</h2>
+
+<p>Next up is the time tracking we are required to do. While working a task, any
+task, we register the time spent in an issue tracker. Our issue trackers are
+then connected to the time tracking system, and in the time tracking system
+each week has to sum up to the number of hours our contract states before we
+can &ldquo;close&rdquo; that week. It&rsquo;s cold, mechanical, and unsympathetic, and it works
+wonders in beating procrastination.</p>
+
+<a name="Design.Tasks.Can.Make.You.Proud"></a>
+<h2>Design Tasks Can Make You Proud</h2>
+
+<p></p>
+
+<p>Design is the process of turning the client&rsquo;s requirements into a consistent
+and implementable description in terms of the business domain. Sometimes this
+requires several iterations with client feedback and further changes before the
+design is approved. A design can also be a change to a previously implemented
+module or feature.</p>
+
+<p>If it&rsquo;s a change request, it&rsquo;s fairly simple: read up on documentation and code
+until you hold a good-enough mental model of the existing functionality. From
+there, seeing where changes are required, is often obvious.</p>
+
+<p>If it&rsquo;s a new module or feature, it may be harder to get started. That&rsquo;s where
+one of the risks of procrastination hide. However, two things can mitigate
+this. The first is <em>structured procrastination</em>: While putting off the daunting
+design task, work on something else productive like a straightforward
+implementation task (as opposed to watching cat videos on YouTube). At least
+you&rsquo;re doing something productive.</p>
+
+<p>The second thing is that once you do get it cracked and have your initial idea
+for the general direction of the design, a feeling of ownership and pride
+starts to grow. This will make it much easier to keep the focus.</p>
+
+<p></p>
+
+<p>All in all, my job helps me keep my procrastination in check, which I&rsquo;m very
+happy about. I hope all you other procrastinators out there can see that your
+circumstances can help you beat procrastination, if you haven&rsquo;t cracked the
+code yet.</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Leaving Academia]]></title>
+    <link href="http://blog.erw.dk/2016/05/09/leaving-academia/"/>
+    <updated>2016-05-09T06:35:59+02:00</updated>
+    <id>http://blog.erw.dk/2016/05/09/leaving-academia</id>
+    <content type="html"><![CDATA[<p>Last fall, I had been at Aalborg University for nine years: One year in
+electronic engineering, five years studying software engineering, and three
+years doing a PhD in computer science. The first six years as a bachelor and
+master&rsquo;s student were relatively straightforward and satisfying. The last three
+years formed my introduction to the academic world.</p>
+
+<p>Being a PhD student in computer science does not mean you are a student of
+computer science at a high level. Well, you are that, but first and foremost,
+you are an apprentice of academia. The distinction is important because, while
+I love computer science, academia is, it turned out for me, not great.</p>
+
+<p>I left the university before having finished my PhD, to work at a private
+company as an IT consultant. I managed to finish my thesis concurrently with my
+new job, and I have now defended it successfully. But the last half year has
+also helped me see more clearly my motivation for switching jobs. It can be
+summed up like this: Now, I go home from work most days feeling a sense of
+accomplishment. Before, I came home from work many days with the feeling of
+having failed.</p>
+
+<!-- more -->
+
+
+<p>Research is hard. It&rsquo;s hard because you are trying to do something that has not
+been done before. There is no recipe that guarantees success, because if
+someone could tell you what to do, you wouldn&rsquo;t be doing research anymore.
+Research is hard because a lot of the time you feel lost and stupid. This is
+normal, I was told. But knowing that it is normal does not magically make it
+feel good.</p>
+
+<a name="Purpose"></a>
+<h2>Purpose</h2>
+
+<p>The question then is if there is something else in the job that makes it
+worthwhile and keeps you motivated. According to behavioral economist Dan
+Ariely, two of the key motivating factors at work are the feelings of
+<a href="http://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work">progress and purpose</a>. Progress is generally slow in research due to
+its nature. You will fail a lot before stumbling upon something important. So
+what about purpose?</p>
+
+<p>Ideally, research should be about the noble goal of adding to the pool of human
+knowledge. Cure the proverbial cancer. But doing something significant in
+research takes decades and even then is not guaranteed to happen. And that
+leaves us back at the slow progress. So how about the feeling of purpose in the
+shorter term?</p>
+
+<p>This is where my new job really became a contrast to research. On the grand
+scale of things, my work as an IT consultant is fairly insignificant. But on
+a smaller scale, it <em>is</em> significant: Someone (the client) is actually going to
+use what I am building for them. This is in contrast to academia, where I feel
+that very few people read my work, let alone <em>use it</em> for anything. Making
+something that others use, want, and care about feels great. Submitting
+a research paper for publication and getting grumpy reviews back months later
+does not.</p>
+
+<p>Of course, the work I do as an IT consultant is not guaranteed to be used. The
+client may change their mind and drop whatever project you are working on. But
+since they ordered it and are paying good money for it, they are likely to want
+it. In academia, conferences and journals are more important and prestigious,
+the more submissions they reject.</p>
+
+<a name="Feedback"></a>
+<h2>Feedback</h2>
+
+<p>So what if you instead look for purpose in the very short short term &ndash; hours
+and days? In presenting a small new idea, or new section in a draft, and having
+your collaborators see it and comment on it? Here, academia also disappointed
+me. Getting feedback on my work was not always easy. Meetings could be fitted
+into busy schedules a few times a month, and you would be lucky to get an email
+reply without sending several reminders.</p>
+
+<p>Unlike the inherent hardness of research, feedback in the short term is
+somewhat within your own control because you can influence who you collaborate
+with. But I still think my experience is fairly common.</p>
+
+<p>In my new job, feedback is not something I get a few times per week &ndash; it is
+something I get a few times per <em>hour</em>. Everybody&rsquo;s busy, but we take time to
+help each other. In general I liked my colleagues at the university, but I feel
+more like part of a team now than I have ever done as a PhD student.</p>
+
+<p></p>
+
+<p>To top it off, I also feel much more valued now because my time is treated with
+respect. And of course it is: Every hour I am not doing billable work is missed
+income for the company. And so, getting equipment, booking travels, getting
+expenses refunded &mdash; everything is laughably easy compared to the university.</p>
+
+<a name="Just.a.Job."></a>
+<h2>Just a Job?</h2>
+
+<p>One might object and say that travel booking and emails are irrelevant; that
+work in academia is about grander things. Indeed, a faculty member who joined
+the research group I was in complained that the PhD students were not dedicated
+enough; that we just treated research as &ldquo;a job&rdquo;.</p>
+
+<p>I think if you work on a topic that you care deeply about, then indeed you can
+push on in spite of the slow progress. The feeling of ownership is a strong
+motivator.</p>
+
+<p>I was not strongly dedicated to my PhD research. When I couldn&rsquo;t get a PhD
+position within my favored topic, I settled for what I could get right here,
+right now, rather than looking for other options. In hindsight this was
+a mistake. But I&rsquo;m not the only one who made the mistake. And perhaps academia
+as an increasingly competitive institution could benefit from having work done
+by &ldquo;research <a href="http://academia.stackexchange.com/a/35003">technicians</a>&rdquo; following the lead of a principal
+investigator. At least, that could solve the current situation where far more
+PhDs are produced than there are permanent positions available for.</p>
+
+<p>But to keep us technicians happy doing what is partially someone elses
+research, we need to be treated exactly as a employees doing a regular &ldquo;job&rdquo;.
+And to be motivated to do this job where real successes are occasional at best,
+the working conditions should provide the day-to-day work satisfaction. And of
+course no matter your motivation to tackle long-term research problems, dealing
+with bureaucracy is no fun.</p>
+
+<p></p>
+
+<p></p>
+
+<a name="How.to.Succeed"></a>
+<h2>How to Succeed</h2>
+
+<p>I do hope that the work I have done during my time working in research has made
+a <a href="http://matt.might.net/articles/phd-school-in-pictures/">dent</a>, and I am thankful for the good experiences I have had. But
+I would also like others considering doing a PhD to think about why they want
+to do it. I thought that because I was a good bachelor and master&rsquo;s student,
+I would be a good PhD student. And perhaps I was good for my co-authors, at
+least I have been told that. But being a PhD student wasn&rsquo;t good for <em>me</em>.</p>
+
+<p>I think, for academia to be good for you, three things are crucial:</p>
+
+<ul>
+<li>You should have a clear goal that is enough yours that you feel ownership of
+it and therefore motivation. If your research project is too much somebody
+else&rsquo;s idea, you may lose this important source of motivation.</li>
+<li>When that is said, you should also work with people who agree with your goal,
+and who you enjoy working with. If you collaborate with people you do not
+strongly enjoy working with, you will miss regular morale boosts that help keep
+you going in spite of the many failures you encounter.</li>
+<li>You need to be either highly confident or <a href="http://jcs.biologists.org/content/121/11/1771">productively stupid</a>.</li>
+</ul>
+
+
+<p>Perhaps someday I will get an idea for a research project of my own and find
+the right place to pursue it, but for now I&rsquo;ll happily develop &ldquo;mundane&rdquo;
+business software that people use in the &ldquo;real world&rdquo;, as we used to say at the
+university.</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></li>
+</ul>
+
+
+<p></p>
+]]></content>
+  </entry>
+  
+</feed>

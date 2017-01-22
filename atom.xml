@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2016-08-28T13:35:22+02:00</updated>
+  <updated>2017-01-22T17:44:02+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,156 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Work Helps Me Beat Procrastination]]></title>
+    <link href="http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination/"/>
+    <updated>2017-01-22T17:23:59+01:00</updated>
+    <id>http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination</id>
+    <content type="html"><![CDATA[<p>Back in school, I put off essay writing until the night before the due date. In
+gymnasium/high school, I put off assignments until the <em>morning</em> of the due
+date. In my first years of university it went so far that a student counsellor
+suggested that maybe university wasn&rsquo;t for me.</p>
+
+<p>Despite&mdash;or perhaps because of&mdash;that, I pulled myself together. After passing
+some courses that especially triggered my procrastination, I did much better,
+and eventually emerged with a master&rsquo;s degree in software engineering and a PhD
+in computer science.</p>
+
+<p>But that does not mean I had completely overcome procrastination, especially
+not during the PhD study. It was not until <a href="http://blog.erw.dk/2016/05/09/leaving-academia/">leaving academia</a> for the
+IT business that I experienced what it is like to get control of my
+procrastination. (It&rsquo;s amazing, by the way.)</p>
+
+<!-- more -->
+
+
+<a name="My.Job"></a>
+<h2>My Job</h2>
+
+<p>It&rsquo;s ironic that procrastination means postponing work, but my job actually
+helps me avoid procrastination. I&rsquo;ll try to figure out why that is. To that
+end, I&rsquo;ll first describe my job. It includes:</p>
+
+<ul>
+<li>Designing software solutions meeting the clients&#8217; requirements.</li>
+<li>Implementing (programming) software solutions according to designs approved
+by the clients.</li>
+<li>Registering the time spent on all tasks in our time tracking system.</li>
+</ul>
+
+
+<a name="Doing.It.for.Others"></a>
+<h2>Doing It for Others</h2>
+
+<p>There are many aspects of the above that contribute to procrastinating less.
+One of them, I think, is that this is the first time in my education and work
+life that people who ask me to do something want me to do it for <em>their</em> sake.</p>
+
+<p>Beating procrastination often requires external deadlines and reasons. In
+education of all levels, teachers ask us to do exercises, homework,
+assignments, semester projects, theses. But while they ask you, and systems may
+be in place to punish those who do not comply, the requests are not truly
+external. The purpose is that <em>you</em> learn, not (necessarily) that <em>they want</em>
+to read your work.</p>
+
+<p>Compulsory education contains more external pressure to learn than higher
+education (which is probably why procrastination gets worse the higher you get
+in the education system). In a job, you get back some external pressure, and
+this time they care more about what they get out of it than what you get out of
+it.</p>
+
+<p>Although external reasons (and payment!) are good reasons to work, they are
+unfortunately not enough to fight procrastination.</p>
+
+<a name="Implementation.Tasks.are.Well-Defined"></a>
+<h2>Implementation Tasks are Well-Defined</h2>
+
+<p>One of the causes for procrastination is perfectionism. Often the desire to
+find the perfect solution to a problem puts so much pressure on you that you do
+not even succeed in finding a good-enough solution. Simply taking a step
+towards finding the perfect solution feels like a futile step towards
+a possibly unachievable goal, so let&rsquo;s just look a cat videos on YouTube
+instead.</p>
+
+<p>Working to implement a preapproved design means that the biggest decisions have
+already been made, whether by yourself or by others, and locked in by the
+client. Now your task is not to solve the original business problem, but simply
+to implement the designed solution in the alotted time.</p>
+
+<p>&ldquo;Simply&rdquo; does not mean to imply that it&rsquo;s easy. A high level of expertise is
+required to write correct, robust, efficient, and maintainable code. But with
+well-defined goals for the programming, the task is constrained enough that
+a skilled procrastinator (skilled at programming, that is) can attack the task
+head-on rather than postpone it.</p>
+
+<p>I do still get ideas to change the design while working to implement it, but
+the bureaucracy involved in changing it is actually a good thing here because
+it keeps me from trying, unless I&rsquo;m convinced it&rsquo;s necessary. It&rsquo;s better to
+have a good solution done on time than a perfect solution that isn&rsquo;t.</p>
+
+<a name="Implementation.Tasks.are.Divisible"></a>
+<h2>Implementation Tasks are Divisible</h2>
+
+<p>It&rsquo;s not just that implementation tasks are easier when the design is fixed.
+It&rsquo;s also that the they can be broken into smaller parts that are even easier
+to do.</p>
+
+<p>The first subtask is to understand the design and hold a mental model of it.
+Depending on the level of detail in the design description, this can itself
+turn into clarifying discussions with the author, but that is also fairly
+well-defined.</p>
+
+<p>Many of the remaining subtasks are taken from a repertoire that includes:</p>
+
+<ul>
+<li>Adding required tables and fields to the database</li>
+<li>Identifying required data and writing queries to retrieve it</li>
+<li>Adding the business logic</li>
+<li>Testing the solution, and adding error handling and logging</li>
+</ul>
+
+
+<a name="Time.Tracking"></a>
+<h2>Time Tracking</h2>
+
+<p>Next up is the time tracking we are required to do. While working a task, any
+task, we register the time spent in an issue tracker. Our issue trackers are
+then connected to the time tracking system, and in the time tracking system
+each week has to sum up to the number of hours our contract states before we
+can &ldquo;close&rdquo; that week. It&rsquo;s cold, mechanical, and unsympathetic, and it works
+wonders in beating procrastination.</p>
+
+<a name="Design.Tasks.Can.Make.You.Proud"></a>
+<h2>Design Tasks Can Make You Proud</h2>
+
+<p>Design is the process of turning the client&rsquo;s requirements into a consistent
+and implementable description in terms of the business domain. Sometimes this
+requires several iterations with client feedback and further changes before the
+design is approved. A design can also be a change to a previously implemented
+module or feature.</p>
+
+<p>If it&rsquo;s a change request, it&rsquo;s fairly simple: read up on documentation and code
+until you hold a good-enough mental model of the existing functionality. From
+there, seeing where changes are required, is often obvious.</p>
+
+<p>If it&rsquo;s a new module or feature, it may be harder to get started. That&rsquo;s where
+one of the risks of procrastination hide. However, two things can mitigate
+this. The first is <em>structured procrastination</em>: While putting off the daunting
+design task, work on something else productive like a straightforward
+implementation task (as opposed to watching cat videos on YouTube). At least
+you&rsquo;re doing something productive.</p>
+
+<p>The second thing is that once you do get it cracked and have your initial idea
+for the general direction of the design, a feeling of ownership and pride
+starts to grow. This will make it much easier to keep the focus.</p>
+
+<p>All in all, my job helps me keep my procrastination in check, which I&rsquo;m very
+happy about. I hope all you other procrastinators out there can see that your
+circumstances can help you beat procrastination, if you haven&rsquo;t cracked the
+code yet.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learn Vim the Harder Way, Part II]]></title>
@@ -3374,559 +3524,6 @@ This in itself can require an enormous effort, but as we have seen in this post,
 
 <p><em>Except where it says otherwise, the
 <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">images on this post</span> are by me, <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Erik Ramsgaard Wognsen</span>, and you may reuse them under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Essence of vi]]></title>
-    <link href="http://blog.erw.dk/2014/10/31/the-essence-of-vi/"/>
-    <updated>2014-10-31T09:49:46+01:00</updated>
-    <id>http://blog.erw.dk/2014/10/31/the-essence-of-vi</id>
-    <content type="html"><![CDATA[<p><a href="http://www.vim.org/about.php">Vim</a> is a popular and widely distributed text editor improving on the
-legendary <a href="http://en.wikipedia.org/wiki/Vi">vi</a> from the late 1970s.  If you are reading this on Mac or
-Linux, chances are that Vim is already installed on your computer, included
-with your OS.  If you tried Vim and found it too strange to use, or if you use
-it but still harbor the idea that it was made by (or for!) aliens, you&rsquo;ve come
-to the right place!</p>
-
-<p>Vim is a very powerful tool, but often misunderstood.  There are plenty of
-tutorials that go through the basics, but they usually fail to paint the big
-picture.  <em>Why</em> the weird keyboard shortcuts, and the modes?  Why is it
-worthwhile to learn?  In this post I will try to answer these questions.  And
-I am pleased to say that the answer doesn&rsquo;t start with <em>h</em>, <em>j</em>, <em>k</em>, <em>l</em>, or
-<em>i</em>.</p>
-
-<p>Instead of the traditional bottom-up tutorial, this will be a top-down
-introduction, that uncovers the <em>essence of vi</em> and the almost poetic language
-you use to speak to Vim and vi.  It is my hope that reading it will make your
-time with Vim both more useful and more enjoyable.  I have myself enjoyed Vim
-since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
-
-<!-- more -->
-
-
-
-
-<div id="toc">
-<ul>
- <li>
- <ul>
-  <li><a href="#Don.t.Worry.About.Modes">Don&#8217;t Worry About Modes</a></li>
-  <li><a href="#Play.with.the.Gamepad">Play with the Gamepad</a></li>
-  <li><a href="#The.Language.of.vi">The Language of vi</a>
-  <ul>
-   <li><a href="#Verbs">Verbs</a></li>
-   <li><a href="#Nouns.Objects">Nouns/Objects</a></li>
-   <li><a href="#Prepositional.Phrases.Motions">Prepositional Phrases/Motions</a></li>
-   <li><a href="#Numerals">Numerals</a></li>
-  </ul>
-  </li>
-  <li><a href="#Expand.your.Vocabulary">Expand your Vocabulary</a></li>
-  <li><a href="#Real.Keyboard.Shortcuts">Real Keyboard Shortcuts</a></li>
-  <li><a href="#What.about.Usability.">What about Usability?</a></li>
-  <li><a href="#Conclusion">Conclusion</a></li>
- </ul>
- </li>
-</ul>
-
-
-</div>
-
-
-<a name="Don.t.Worry.About.Modes"></a>
-<h2>Don&rsquo;t Worry About Modes</h2>
-
-<p>In Adobe Photoshop, pressing <code>L</code> selects the lasso tool, and <code>M</code> the marquee
-tool.  Photoshop has many tools and functions, and there are many letters on
-the keyboard &mdash; good.  But for most writing applications and text editors, the
-letter keys are used for typing.  In these programs (and Photoshop), keyboard
-shortcuts use modifiers, for example <code>ctrl-s</code> to save changes.  This means that
-prime keyboard real estate is not used to its fullest.  50+ easy-to-press
-shortcuts &mdash; upper and lower case letters &mdash; are only used for a single
-purpose.</p>
-
-<p>A different approach to text editing is <em>modal editing</em>.  Here the &ldquo;typing
-mode&rdquo; is just one of several modes of using the editor (and thus the keyboard).
-It is distinct from the mode(s) wherein you move the cursor, copy, paste, etc.
-Notably, it often makes sense that the typing mode, or insert mode as it is
-commonly called, is <em>not the default mode</em>.  The reason is that it is far more
-common to edit, write, and program incrementally, than it is to write a piece
-from start to finish.  You navigate around the text to read, think, make small
-adjustments, and enter a few words, sentences, or statements at a time.</p>
-
-<p>Vim has many modes, with <em>normal</em> (&ldquo;command&rdquo;) mode and <em>insert</em> mode being the
-two main modes.  Now, I could enumerate all the modes, their roles, and how to
-switch between them, but I&rsquo;m not going to.  Because when you use Vim naturally,
-you don&rsquo;t think about modes, you think about <em>actions</em>.  And the actions lead
-you naturally to the mode changes.  Think about finding content on a web page
-in your browser: You press <code>ctrl-f</code> which opens a text field.  Here you write
-your search string, press <code>&lt;enter&gt;</code> a few times, then <code>&lt;esc&gt;</code> when you&rsquo;re done.
-You just used FIND MODE!  (It was super effective!)</p>
-
-<p>Modal editing simply gives you more buttons for actions.  As
-<a href="http://www.viemu.com/a-why-vi-vim.html">Jon Beltran de Heredia wrote</a>:</p>
-
-<blockquote><p>with vi, your keyboard becomes a huge specialized text-editing gamepad with
-almost a hundred buttons.</p></blockquote>
-
-<a name="Play.with.the.Gamepad"></a>
-<h2>Play with the Gamepad</h2>
-
-<p>It can be hard to separate what you usually do with a text editor from what you
-want to do with <em>the text</em>.  Learning Vim, you might ask &ldquo;How do I select all
-text?&rdquo; After all, in most editors, this is a simple <code>&lt;c-a&gt;</code> (this is another
-way of writing <code>ctrl-a</code>).  I could tell you how to do it in Vim (one way is
-<code>ggVG</code>), but it is not in the spirit of vi.  In fact, it&rsquo;s not even possible in
-vi.  And <em>to master Vim, you must understand vi</em>.  (In a later post I will
-cover some &ldquo;philosophical&rdquo; differences between Vim and vi. <em>Update 2014-11-25:
-<a href="http://blog.erw.dk/2014/11/25/the-language-of-vi-improved/">Here it is!</a></em>) Instead, realize that
-selecting text is a means, but to what end?  <em>Why</em> do you want to select all?</p>
-
-<p>Do you want to copy everything?  Then copy, don&rsquo;t select.  It&rsquo;s &ldquo;<code>ggyG</code>&rdquo;. Type
-it one letter at a time, and pay attention to case.  What does it mean?  The
-<code>gg</code> part moves the cursor to the first line, <code>y</code> then <em>yanks</em> (copies) every
-line until (and including) <code>G</code>, the last line.  vi is older than the
-standardized cut, copy, and paste, hence the name &ldquo;yank&rdquo;.</p>
-
-<p>Now, if you would think <code>ggyG</code> is no faster than <code>&lt;c-a&gt;&lt;c-c&gt;</code> (select all,
-copy) in a regular editor, you&rsquo;d be right.  But say you wanted to copy just
-a paragraph?  Type <code>yap</code> to &ldquo;yank a paragraph&rdquo;, with the cursor anywhere in
-that paragraph.  Or copy an HTML/XML element? Go ahead and &ldquo;yank a tag-block&rdquo;,
-<code>yat</code>.  Then <em>put</em> (paste) three copies of it: <code>3P</code>.  And change the content
-(of whichever one you put the cursor on): <code>cit</code> (&ldquo;change inner tag-block&rdquo;).</p>
-
-<p>This last command is slightly different from the others.  It deletes the
-content of the element, then drops you to insert mode with the cursor inside
-the element, i.e. <code>&lt;foo bar="baz"&gt;</code>between the tags<code>&lt;/foo&gt;</code>.  Then you type
-your new content, followed by <code>&lt;esc&gt;</code>, which returns you to normal mode,
-simultaneously completing the action.  It might go like this, from start to
-finish:  <code>citMy new content&lt;esc&gt;</code>.</p>
-
-<p>Then move to another element and type <code>.</code> to repeat the action!</p>
-
-<p>In
-<a href="http://jeetworks.org/grokking-the-zen-of-the-vim-wu-wei/">the words of Jeet Sukumaran</a>:</p>
-
-<blockquote><p>It seemed that, without my hands leaving the keyboard, just a few strokes
-here and a few taps there, I was capable of dancing all over the document,
-and perform everything from extremely precise [targeted] micro-surgery to
-massive document-wide renovations.</p></blockquote>
-
-<a name="The.Language.of.vi"></a>
-<h2>The Language of vi</h2>
-
-<p>Mode changes take time to get accustomed to.  They are very visible and
-&ldquo;demanding&rdquo; the first many times you use a modal editor.  Hence, they get a lot
-of attention.  But too often they steal the attention from the more important
-concept of actions.</p>
-
-<p><a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">People</a>
-<a href="http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/">have</a>
-<a href="http://stevelosh.com/blog/2010/09/coming-home-to-vim/#a-language-of-text-editing">described</a>
-Vim/vi as having a language of editing.  Perhaps you already got the feeling
-from the mnemonics above such as &ldquo;yank a paragraph&rdquo;.  The language of vi is how
-you instruct the editor to perform actions.  One action is one sentence, and
-a sentence consists of verbs, nouns, etc.  Here I will pursue the idea with
-a bit more systematically than the aforementioned sources.</p>
-
-<p>There are four possible sentences types/word orders:</p>
-
-<ul>
-<li>Verb</li>
-<li>Verb Object</li>
-<li>Verb [Prepositional Phrase]</li>
-<li>[Prepositional Phrase]</li>
-</ul>
-
-
-<p>We shall explore the components of these sentences below, along with what it
-means for a
-<a href="http://en.wikipedia.org/wiki/Adpositional_phrase#Prepositional_phrases">prepositional phrase</a>
-(e.g., &ldquo;to &hellip;&rdquo;, &ldquo;until &hellip;&rdquo;) to stand alone.  The subject is always the
-implied &ldquo;you&rdquo; in the imperative.  We are commanding the editor, after all!</p>
-
-<a name="Verbs"></a>
-<h3>Verbs</h3>
-
-<p>We have already seen verbs like yank <code>y</code>, change <code>c</code>, put <code>P</code>, and repeat <code>.</code>.
-Verbs fall into two categories:  The first type has its &ldquo;area of effect&rdquo;
-implied and the change will occur immediately:</p>
-
-<ul>
-<li><em>put</em> previously yanked or deleted text <code>P</code></li>
-<li><em>repeat</em> last action in a new context <code>.</code></li>
-<li><em>delete</em> a single character backwards <code>X</code></li>
-<li><em>swap</em> case of a single character <code>~</code></li>
-<li><em>insert</em> text <code>i</code></li>
-<li><em>replace</em> text <code>R</code></li>
-</ul>
-
-
-<p>The second type is the
-<a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#operator"><em>operator</em></a> which
-includes commands such as</p>
-
-<ul>
-<li>yank <code>y</code></li>
-<li>change <code>c</code></li>
-<li>delete <code>d</code></li>
-<li>increase/decrease indentation <code>&gt;</code> <code>&lt;</code></li>
-<li>make UPPER/lower/opposite case <code>gU</code> <code>gu</code> <code>g~</code></li>
-</ul>
-
-
-<p>The difference between &ldquo;immediate changes&rdquo; and operators is that when you type an
-operator, the editor awaits the object or region that the operator should
-affect.  This role is played by nouns and prepositional phrases.</p>
-
-<p>There are many more verbs, and you indeed need more to use vi (and therefore
-Vim) efficiently, but this selection will do fine in explaining the language
-metaphor.  It&rsquo;s expected and normal that you find the commands hard to remember
-at first.  But if you are curious and/or adamant enough to learn them, they
-grow into muscle memory, and you reap the full benefits of the compactness and
-efficiency.
-<a href="http://pascalprecht.github.io/2014/03/18/why-i-use-vim/">Paraphrasing Pascal Precht</a>:</p>
-
-<blockquote><p>Vim&rsquo;s learning curve is not a curve at all. It&rsquo;s a wall. But once you climb
-that wall, you can lean back and slide down on the other side.  Once I was
-able to do some basic operations in Vi, I made almost as twice as much
-progress at work in about half the time.</p></blockquote>
-
-<p>(If you want some tips on how to edit text better (not just in Vim) and do more
-in the same amount of time, Bram Moolenaar, the creator of Vim, has
-<a href="https://www.youtube.com/watch?v=p6K4iIMlouI">7 Habits For Effective Text Editing</a>.)</p>
-
-<p>Verbs from both categories (immediate and operators) can involve a mode change.
-The insert <code>i</code> and change <code>c</code> commands both switch to insert mode where you can
-enter the new text.  The replace <code>R</code> command uses <em>replace mode</em>, which is
-similar to insert mode, except you replace (overwrite) text as you type.  (This
-is maybe another mode you already knew &ndash; in Microsoft Word and other
-<a href="http://en.wikipedia.org/wiki/Word_processor">word processors</a>, it&rsquo;s toggled by the <code>&lt;insert&gt;</code> key.) Operators (as
-opposed to immediate changes) in fact always incur mode a change: After typing
-the operator, the editor will be in <em>operator pending mode</em>, awaiting the
-choice of the text to operate on.  We will see how to choose that text in the
-next two sections.</p>
-
-<a name="Nouns.Objects"></a>
-<h3>Nouns/Objects</h3>
-
-<p>We have seen nouns such as a paragraph <code>ap</code> and a tag block <code>at</code>.  There are
-others such as a word <code>aw</code>, a sentence <code>as</code>, and various blocks (delimited by
- <span class="nobreak"><code>{}</code>,</span>
- <span class="nobreak"><code>()</code>,</span>
- <span class="nobreak"><code>&lt;&gt;</code>,</span>
- <span class="nobreak"><code>[]</code>,</span>
- <span class="nobreak"><code>""</code>,</span>
- <span class="nobreak"><code>''</code>,</span>
- <span class="nobreak">and <code>``</code></span>).
-Nouns, or <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#text-objects">text objects</a> as they are called in Vim, must be prefixed
-with an <code>a</code> or <code>i</code>.  Above I showed them with <code>a</code> to help as a mnemonic (&ldquo;a
-paragraph&rdquo; ~ <code>ap</code>).  The &ldquo;article&rdquo; serves two purposes: First, it distinguishes
-the nouns from <em>prepositional phrases</em> that are bound to the same letter (&ldquo;a
-word&rdquo; <code>aw</code>, for example, is not the same as <code>w</code> which means &ldquo;<em>to/until the
-next</em> word&rdquo;, as we shall see in the next section).  Second, it marks whether
-the whole object (<code>a</code>) or only its &ldquo;insides&rdquo; (<code>i</code>) are meant.  For example, we
-have seen <code>yat</code> yank a whole tag block, while <code>cit</code> changes its contents (i.e.,
-not the enclosing tags).  For objects that do not have an obvious crunchy shell
-surrounding a soft, chewy center, the <code>a</code> version includes the trailing
-whitespace while <code>i</code> doesn&rsquo;t.  Thus, <code>a</code> is useful for transplanting words and
-sentences without having to clean up the whitespace afterwards.</p>
-
-<p>Text objects are &ldquo;intelligent&rdquo;.  First, they are insensitive to the cursor
-position within the text object: The whole object (or its inside) is used as
-long as the cursor is somewhere inside it.  Second, they can depend on context:
-The meaning of &ldquo;a word&rdquo; depends on the file type.  In C-style programming
-languages, dashes are not part of a word, but in Lisps, they are.  For prose
-writing, I have set Vim up to see apostrophes as parts of words such that
-&ldquo;can&rsquo;t&rdquo; is seen as a single word (which would not be so useful in programming).
-Paragraph boundaries can similarly be specified.  Strings are aware of escaped
-quote characters.  For example, <code>"This is one \"string\""</code>.</p>
-
-<p>I didn&rsquo;t mention &ldquo;line&rdquo; as a noun.  This is not because operating on lines is
-uncommon, in fact it&rsquo;s the opposite.  Repeating an operator symbol makes the
-operator work on the current line:
- <span class="nobreak"><code>yy</code>,</span>
- <span class="nobreak"><code>cc</code>,</span>
- <span class="nobreak"><code>dd</code>,</span>
- <span class="nobreak"><code>&gt;&gt;</code>,</span>
- <span class="nobreak"><code>&lt;&lt;</code>,</span>
- <span class="nobreak"><code>gUU</code>,</span>
- <span class="nobreak"><code>guu</code>,</span>
- <span class="nobreak"><code>g~~</code>,</span>
-&hellip;</p>
-
-<a name="Prepositional.Phrases.Motions"></a>
-<h3>Prepositional Phrases/Motions</h3>
-
-<p>There are also
-<a href="http://en.wikipedia.org/wiki/Adpositional_phrase#Prepositional_phrases">prepositional phrases</a>,
-which is the grammatical term I use for what Vim calls
-<a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#cursor-motions">cursor motions</a>.
-We have already seen &ldquo;to the first line&rdquo; and &ldquo;to the last line&rdquo;, <code>gg</code> and <code>G</code>,
-respectively.  The sequence <code>ggyG</code> we saw earlier reads as two sentences:
-&ldquo;(First,) (go) to the first line of the buffer.  (Then) yank until the last
-line.&rdquo;  This demonstrates an important point:
-There is no need for punctuation in the &ldquo;vi language&rdquo; (at least figuratively
-speaking!) because the word order is enough: A prepositional phrase without
-a verb is taken to be a cursor movement command.  A prepositional phrase
-following an operator verb means that the operator should act on the text
-<em>from</em> the current cursor position and <em>to</em> wherever the motion leads.
-(Here you can see that this is really a top-down introduction to Vim.
-A tutorial would probably have told you first thing how to move the cursor!)</p>
-
-<p>First, let&rsquo;s see some word motions:</p>
-
-<ul>
-<li>&ldquo;to the next beginning-of-a-word&rdquo; <code>w</code></li>
-<li>&ldquo;(backwards) to the previous beginning-of-a-word&rdquo; <code>b</code></li>
-<li>&ldquo;to the next/previous end-of-a-word&rdquo; <code>e</code> and <code>ge</code></li>
-</ul>
-
-
-<p>Unlike text objects such as &ldquo;a word&rdquo; <code>aw</code>, motions use your exact cursor
-position as the point of origin.  Therefore, <code>b</code> and <code>e</code> will find the
-beginning/end of the word the cursor is inside, unless you are already on the
-beginning/end.  If you <em>are</em> on the beginning or end, they will move to the
-previous or next word, respectively.  Notice that I say <em>on</em>.  In Vim/vi, the
-cursor moves <em>on</em> characters, not between them as in many other editors.</p>
-
-<p>If you move back and forth in a sentence using <code>b</code> and <code>w</code> you can exploit the
-fact that the cursor is always on the first character of a word.  For example,
-<code>dw</code> deletes a word without the need for <code>daw</code>.  The motions <code>(</code> and <code>)</code> work
-like <code>b</code> and <code>w</code> but for sentences.  The motions <code>{</code> and <code>}</code> go to the
-previous/next paragraph boundary.</p>
-
-<p>Another powerful type of motion is the &ldquo;till&rdquo;/&ldquo;find&rdquo; motion. Till <code>t</code> moves to
-the next character you specify.  For example, <code>t"</code> moves to right before the
-next <code>"</code> in the line.  Find <code>f</code> is similar, except it moves onto the specified
-character.  The motion <code>;</code> repeats the last <code>t</code> or <code>f</code> motion.  All three
-motions have equivalents going to the left instead of right: <code>T</code>, <code>F</code> and <code>,</code>.</p>
-
-<p>The till/find motions are for quick and simple jumps within the same line.
-<a href="http://en.wikipedia.org/wiki/Regular_expression">Regex</a> search finds anything, anywhere in the file.  The commands <code>/</code>
-and <code>?</code> open up a search field for forward and backward regex search,
-respectively.  It even highlights the first match while you type to give you
-live feedback on your search pattern.  After confirming the entered pattern
-with <code>&lt;enter&gt;</code>, keys <code>n</code> and <code>N</code> jump in the same/opposite direction of the
-current regex search.</p>
-
-<p>Coming from other text editors, it&rsquo;s easy to think that <code>/</code> is &ldquo;just&rdquo; how you
-search for text.  And it is.  But the four commands <span class="nobreak"><code>/</code>
-<code>?</code> <code>n</code> <code>N</code></span> are all motions, and like any motion they can be used alone
-or with an operator.  The design of vi is <a href="http://en.wikipedia.org/wiki/Orthogonality#Computer_science">orthogonal</a>:  You can learn
-it piece by piece, and combine the new motion you just learned with the verbs
-you already knew and vice versa.  This is extremely powerful and part of what
-makes vi/Vim so special.  The idea may be almost 40 years old, but
-<a href="https://medium.com/@mkozlows/why-atom-cant-replace-vim-433852f4b4d1">it&rsquo;s still relevant today and in the future</a>!</p>
-
-<p>You may have noticed I didn&rsquo;t mention the most basic motions you already know
-from your arrow keys.  Many Vim introductions (including the official
-&ldquo;vimtutor&rdquo;) mention very early on that <span class="nobreak"><code>h</code> <code>j</code> <code>k</code> <code>l</code>
-</span> work as <span class="nobreak">&#8592; &#8595; &#8593; &#8594;</span>,
-respectively.  And people wonder why they can&rsquo;t just use the normal arrow keys.
-But either kind of arrow keys are beside the point!  There&rsquo;s almost always
-a smarter way &mdash; a more precise motion &mdash; to go somewhere than to hold down
-arrow keys.  <a href="http://jeetworks.org/vim-making-those-arrow-keys-work-for-you-or-why-the-anti-arrow-key-propoganda-is-wrong/">Jeet Sukumaran tells it</a> again:</p>
-
-<blockquote><p>being forced to use the rich suite of powerful normal mode movement commands
-to get to exactly where I needed to be [&hellip;] was like
-suddenly beginning to use the fifth and other gears while driving on an open
-highway, whereas before I had been grinding along for mile after laborious
-mile on first.</p></blockquote>
-
-<p>Here are some more motions just to illustrate:</p>
-
-<ul>
-<li>&ldquo;to the matching parenthesis/brace/comment marker/HTML tag/if/else-stmt/etc. <code>%</code></li>
-<li>&ldquo;to the next/previous misspelled word&rdquo; <code>]s</code> <code>[s</code></li>
-<li>&ldquo;to the next/previous start/end of a method (Java style) <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code></li>
-</ul>
-
-
-<a name="Numerals"></a>
-<h3>Numerals</h3>
-
-<p>So far we have covered verbs, nouns, and prepositional phrases. Let&rsquo;s look at
-numerals, of which vi uses three types:</p>
-
-<ul>
-<li>Cardinal numbers, e.g., 1, 2, 7</li>
-<li>Adverbial numbers, e.g., once, twice, sevenfold</li>
-<li>Ordinal numbers, e.g. 1st, 2nd, 7th</li>
-</ul>
-
-
-<p>The grammatical distinction is mine; in vi they&rsquo;re all known as <em>counts</em>.  But
-it helps to show the different roles counts have.
-Cardinal numbers (1, 2, 7) can choose the number of lines to apply an operator
-to, or the number of text objects (nouns) to apply an operator to:</p>
-
-<ul>
-<li>&ldquo;Indent ten lines&rdquo; <code>10&gt;&gt;</code></li>
-<li>&ldquo;Uppercase two sentences&rdquo; <code>gU2as</code></li>
-</ul>
-
-
-<p>Adverbial numbers (once, twice, sevenfold) can decide the number of times to
-do something:</p>
-
-<ul>
-<li>&ldquo;Twentyfold insert a blank line&rdquo; <code>20i&lt;enter&gt;&lt;esc&gt;</code> (-> &ldquo;Insert 20 blank
-lines&rdquo;)</li>
-<li>&ldquo;Delete until you have moved twice to the next word&rdquo; <code>d2w</code> (-> &ldquo;Delete two
-words&rdquo;)</li>
-</ul>
-
-
-<p>Ordinal numbers (1st, 2nd, 7th) can choose where to go:</p>
-
-<ul>
-<li>&ldquo;To the 27th line&rdquo; <code>27gg</code></li>
-<li>&ldquo;To the 20000th byte&rdquo; <code>20000go</code></li>
-<li>&ldquo;To the 80&#8217;th column&rdquo; <code>80|</code></li>
-<li>&ldquo;To the 70%&lsquo;th line&rdquo; <code>70%</code></li>
-</ul>
-
-
-<p>The ordinal numbers can also be though of just as cardinals (line 27 = 27th
-line), but since they access ordered items, it makes sense to see them as
-ordinals.</p>
-
-<p>All motions and operators in fact take a count, but it usually defaults to 1.
-This is another example of orthogonality in vi.</p>
-
-<a name="Expand.your.Vocabulary"></a>
-<h2>Expand your Vocabulary</h2>
-
-<p>For even more orthogonality, you can even add verbs and nouns, as
-<a href="http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/">mentioned by Yan Pritzker</a>:</p>
-
-<ul>
-<li>Install Drew Niel&rsquo;s
-<a href="https://github.com/nelstrom/vim-textobj-rubyblock">textobj-rubyblock</a>
-plugin to get the new noun &ldquo;Ruby block&rdquo; <code>r</code>.</li>
-<li>Install Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-surround">surround.vim</a>
-plugin to get three new verbs:
-
-<ul>
-<li>&ldquo;Surround with&rdquo;, which is even HTML aware (closes tags). Example:
-
-<ul>
-<li>&ldquo;(you) surround a word with em-tags <code>ysaw&lt;em&gt;</code></li>
-</ul>
-</li>
-<li>&ldquo;Change surroundings&rdquo;, example:
-
-<ul>
-<li>&ldquo;change the nearest surrounding single quotes to double quotes&rdquo; <code>cs'"</code></li>
-</ul>
-</li>
-<li>&ldquo;Delete surroundings&rdquo;, e.g.
-
-<ul>
-<li>&ldquo;delete the nearest surrounding asterisks&rdquo; <code>ds*</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<a name="Real.Keyboard.Shortcuts"></a>
-<h2>Real Keyboard Shortcuts</h2>
-
-<p>The key <code>y</code> is not a shortcut for yank, it <em>is</em> the yank operator.  But vi
-still has shortcuts (in the traditional sense of the word) for those actions
-that are so common that having a shorter ways to get to them is useful:</p>
-
-<ul>
-<li>&ldquo;Delete left/right&rdquo; <code>dh</code> and <code>dl</code> are <code>X</code> and <code>x</code> (think backspace and
-delete)</li>
-<li>&ldquo;Change to the end of the line&rdquo; <code>c$</code> is <code>C</code></li>
-<li>&ldquo;Delete to the end of the line&rdquo; <code>d$</code> is <code>D</code></li>
-</ul>
-
-
-<p>Recall that <code>$</code> means &ldquo;to the end of the line&rdquo;.  Similarly, <code>0</code> means &ldquo;to the
-beginning of the line&rdquo; and <code>^</code> means &ldquo;to the first non-blank character on the
-line&rdquo;. With these we get:</p>
-
-<ul>
-<li>&ldquo;Insert at the &#8220;beginning&rdquo; of the line&#8221; <code>^i</code> is <code>I</code></li>
-<li>&ldquo;Really insert at the beginning of the line!&rdquo; <code>0i</code> is <code>gI</code></li>
-<li>&ldquo;Append to the line&rdquo; <code>$a</code> is <code>A</code>  (append <code>a</code> is like insert <code>i</code>
-except it inserts <em>after</em> the cursor position)</li>
-</ul>
-
-
-<p>The idea that &ldquo;vi is about pressing <code>i</code> to insert text&rdquo; is wrong.  We have
-already seen that it takes focus away from what vi is really about, namely
-actions.  But it&rsquo;s also wrong because it takes focus away from the above
-insertion commands which are just as common as <code>i</code> for the effective user.  For
-programmers, one type of action is even more common:</p>
-
-<ul>
-<li>&ldquo;Open a new line below&rdquo; <code>o</code></li>
-<li>&ldquo;Open a new line above&rdquo; <code>O</code></li>
-</ul>
-
-
-<p>It inserts a blank line and leaves you in insert mode, ready to type a new
-statement in your program.  With Vim&rsquo;s indentation features this even starts
-inserting at the right indentation level, aware of nesting and control
-structures. For example, if the previous line is an &ldquo;if&rdquo; statement or the start
-of a new block, the next line&rsquo;s indentation level should be one higher.</p>
-
-<a name="What.about.Usability."></a>
-<h2>What about Usability?</h2>
-
-<p>I figure I should mention usability because there could seem to be a conflict
-between these two facts: (1) I care about usability, and (2) vi is definitely
-not known to be user friendly. How can I reconcile this?  The thing to remember
-is that usability is about more than user friendliness.  Using the first two
-components of <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/">Jakob Nielsen&rsquo;s definition of usability</a>:</p>
-
-<ul>
-<li><em><strong>Learnability</strong>: How easy is it for users to accomplish basic tasks the first time they encounter the design?</em></li>
-<li><em><strong>Efficiency</strong>: Once users have learned the design, how quickly can they perform tasks?</em></li>
-</ul>
-
-
-<p>This is the fundamental trade-off with Vim/vi: Very hard to master and very
-efficient when mastered.  The question then quickly arises: Can learnability be
-improved without harming efficiency?  And what other options exist on the
-learnability/efficiency plane?  (And what about the other aspects of
-usability?)  These are all interesting topics for another time!  In the
-meantime I hope the <a href="http://www.nngroup.com/articles/mental-models/">mental model</a> of vi explained in this post will
-make, if not your first, then your next encounter with Vim more meaningful.</p>
-
-<a name="Conclusion"></a>
-<h2>Conclusion</h2>
-
-<p>The essence of vi is not modality.  The essence of vi is performing actions on
-text.  Actions are specified using an extensible and orthogonally composable
-&ldquo;language&rdquo;, where the same motions that are part of actions are also used for
-plain cursor movement.  Some of the actions involve mode switching, some don&rsquo;t.
-The actions drive the editing process while the modes help put a large
-vocabulary right under your fingertips.</p>
-
-<p>I have only covered basic text manipulation, though Vim does much more.  Any
-user would need to know how to open/close/save files, and maybe
-open/close/switch buffers, windows, and tabs (Vim has them all).  Fancier
-features include regex substitution, autocompletion, diff mode, scripting, key
-remapping, (mutually recursive) macros, persistent undo, and encryption.</p>
-
-<p>These features add tremendously to the usefulness of Vim.  And regex
-substitution predates even vi.  But in my opinion they are not part of its
-essence, action based editing.  In fact, I barely touched upon the
-command-line/Ex mode.  Most people who have tried Vim know it because it is the
-one you enter when you type <code>:w&lt;enter&gt;</code> to save and <code>:q&lt;enter&gt;</code> to quit.</p>
-
-<p>Is command-line mode essential?
-Maybe <a href="http://blog.sanctum.geek.nz/vim-koans/">the Vim Koan &ldquo;The superior editor&rdquo;</a> will enlighten you.</p>
-
-<p><em>Update 2016-04-27: Motions <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code> do unfortunately not work for
-C# out of the box. Also, grammar fixes.</em></p>
 ]]></content>
   </entry>
   
