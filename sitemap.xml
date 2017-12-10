@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.erw.dk/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall/</loc>
+    <lastmod>2017-12-10T20:43:47+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions/</loc>
     <lastmod>2017-11-19T15:58:03+01:00</lastmod>
     <priority>0.8</priority>
@@ -117,31 +122,31 @@
   </url>
   <url>
     <loc>http://blog.erw.dk/404.html</loc>
-    <lastmod>2017-11-19T16:01:54+01:00</lastmod>
+    <lastmod>2017-12-10T20:47:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/archives/</loc>
-    <lastmod>2017-11-19T16:01:54+01:00</lastmod>
+    <lastmod>2017-12-10T20:47:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/</loc>
-    <lastmod>2017-11-19T16:01:54+01:00</lastmod>
+    <lastmod>2017-12-10T20:47:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/colemakdk/</loc>
-    <lastmod>2017-11-19T16:01:54+01:00</lastmod>
+    <lastmod>2017-12-10T20:47:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/contact/</loc>
-    <lastmod>2017-11-19T16:01:54+01:00</lastmod>
+    <lastmod>2017-12-10T20:47:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2017-11-19T16:01:54+01:00</updated>
+  <updated>2017-12-10T20:47:59+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,250 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AoC 2017 Day 8: Fell Into a Python Pitfall]]></title>
+    <link href="http://blog.erw.dk/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall/"/>
+    <updated>2017-12-10T20:43:47+01:00</updated>
+    <id>http://blog.erw.dk/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been using and enjoying <a href="https://www.python.org/">Python</a> since 2009, but while doing
+<a href="http://adventofcode.com">Advent of Code</a> again this year, I stumbled upon a Python feature that
+led to a subtle bug. Advent of Code spoiler ahead.</p>
+
+<!-- more -->
+
+
+<a name="The.Puzzle"></a>
+<h2>The Puzzle</h2>
+
+<p>In AoC 2017 you travel inside Santa&rsquo;s computer, fixing and computing things so
+the Naughty or Nice List can be printed on time for Santa to deliver the
+presents on time.</p>
+
+<p>The puzzle for <a href="http://adventofcode.com/2017/day/8">Day 8</a> gives you a textual input such as</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Pascal'><span class='line'><span class="n">b</span> <span class="nb">inc</span> <span class="mi">5</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">1</span>
+</span><span class='line'><span class="n">a</span> <span class="nb">inc</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="mi">5</span>
+</span><span class='line'><span class="n">c</span> <span class="nb">dec</span> <span class="o">-</span><span class="mi">10</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">1</span>
+</span><span class='line'><span class="n">c</span> <span class="nb">inc</span> <span class="o">-</span><span class="mi">20</span> <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">10</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and asks you to find the largest value in any register after executing the
+given instructions (on some imagined CPU). The registers (which are <code>a</code>, <code>b</code>,
+and <code>c</code> in the above), are all initialized to zero. The largest value in the
+example is 1, which is in the <code>a</code> register at the end.</p>
+
+<p>The real puzzle input is much larger and requires an automated solution. My
+approach was to build a register valuation dictionary, update it according to
+the instructions, and then find the largest value.</p>
+
+<a name="My.Solution"></a>
+<h2>My Solution</h2>
+
+<p>I wrote this code (refactored):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">lt</span><span class="p">,</span> <span class="n">gt</span><span class="p">,</span> <span class="n">le</span><span class="p">,</span> <span class="n">ge</span><span class="p">,</span> <span class="n">eq</span><span class="p">,</span> <span class="n">ne</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">day8</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">instructions</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()]</span>
+</span><span class='line'>    <span class="n">register_names</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">instruction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">instruction</span> <span class="ow">in</span> <span class="n">instructions</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">registers</span> <span class="o">=</span> <span class="p">{</span><span class="n">register_name</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">register_name</span> <span class="ow">in</span> <span class="n">register_names</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="n">mod_reg</span><span class="p">,</span> <span class="n">mod_op</span><span class="p">,</span> <span class="n">mod_amt</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">cond_reg</span><span class="p">,</span> <span class="n">cond_op</span><span class="p">,</span> <span class="n">cond_const</span> <span class="ow">in</span> <span class="n">instructions</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">eval_cond</span><span class="p">(</span><span class="n">registers</span><span class="p">[</span><span class="n">cond_reg</span><span class="p">],</span> <span class="n">cond_op</span><span class="p">,</span> <span class="n">cond_const</span><span class="p">):</span>
+</span><span class='line'>            <span class="n">registers</span><span class="p">[</span><span class="n">mod_reg</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">1</span> <span class="k">if</span> <span class="n">mod_op</span> <span class="o">==</span> <span class="s">&#39;inc&#39;</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">mod_amt</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">registers</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">eval_cond</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">cond_op</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">{</span><span class="s">&#39;&lt;&#39;</span><span class="p">:</span> <span class="n">lt</span><span class="p">,</span> <span class="s">&#39;&gt;&#39;</span><span class="p">:</span> <span class="n">gt</span><span class="p">,</span> <span class="s">&#39;&lt;=&#39;</span><span class="p">:</span> <span class="n">le</span><span class="p">,</span> <span class="s">&#39;&gt;=&#39;</span><span class="p">:</span> <span class="n">ge</span><span class="p">,</span> <span class="s">&#39;==&#39;</span><span class="p">:</span> <span class="n">eq</span><span class="p">,</span> <span class="s">&#39;!=&#39;</span><span class="p">:</span> <span class="n">ne</span><span class="p">}[</span><span class="n">cond_op</span><span class="p">](</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I ran it on the test input, and the test passed. Good! Then I ran it on the
+main puzzle input, got a nice looking number, and submitted my result.</p>
+
+<p>Incorrect&hellip; Huh.</p>
+
+<p>Can you spot the mistake?</p>
+
+<p>I later fixed it in line 10, and it relates to types.</p>
+
+<a name="Strong.and.Weak.Typing"></a>
+<h2>Strong and Weak Typing</h2>
+
+<p>One of the things I like about Python compared with other dynamically typed
+languages is that Python is also strongly typed.</p>
+
+<p>JavaScript &mdash; which is dynamically and weakly typed &mdash; implicitly converts
+types, such as from number to string:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="s">&#39;2&#39;</span>
+</span><span class='line'><span class="s">&#39;22&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Python doesn&rsquo;t &mdash; it forces you to choose:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="s">&#39;2&#39;</span>
+</span><span class='line'><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">File</span> <span class="s">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+</span><span class='line'><span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s">&#39;int&#39;</span> <span class="ow">and</span> <span class="s">&#39;str&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="s">&#39;2&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="mi">4</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;2&#39;</span>
+</span><span class='line'><span class="s">&#39;22&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But ok, let&rsquo;s try mixed type comparison in JavaScript:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="s">&#39;5&#39;</span>
+</span><span class='line'><span class="n">true</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;</span> <span class="mi">30</span> <span class="o">&lt;</span> <span class="s">&#39;5&#39;</span>
+</span><span class='line'><span class="n">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And Python:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="s">&#39;5&#39;</span>
+</span><span class='line'><span class="bp">True</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="mi">30</span> <span class="o">&lt;</span> <span class="s">&#39;5&#39;</span>
+</span><span class='line'><span class="bp">True</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(!)</p>
+
+<p>In fact, any integer compares less than any string in CPython 2.</p>
+
+<p>This was the reason for my bug &mdash; I kept comparing integer register values to
+unparsed text strings:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'>    <span class="k">if</span> <span class="n">eval_cond</span><span class="p">(</span><span class="n">registers</span><span class="p">[</span><span class="n">cond_reg</span><span class="p">],</span> <span class="n">cond_op</span><span class="p">,</span> <span class="n">cond_const</span><span class="p">):</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After adding the integer parsing, it worked as expected:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'>    <span class="k">if</span> <span class="n">eval_cond</span><span class="p">(</span><span class="n">registers</span><span class="p">[</span><span class="n">cond_reg</span><span class="p">],</span> <span class="n">cond_op</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">cond_const</span><span class="p">)):</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="Why.Does.It.Work.Like.This."></a>
+<h2>Why Does It Work Like This?</h2>
+
+<p>It&rsquo;s not that I had expected Python to suddenly do implicit type conversion for
+comparison &mdash; I had just forgot the call to <code>int</code> &mdash; even though I had
+remembered it while parsing the modification amount <code>mod_amt</code>.</p>
+
+<p>What I would have hoped for was a loud error rather than a subtle bug. It turns
+out there is both a reason for the subtle behavior in Python 2 and the option
+to get a loud error &mdash; by using Python 3.</p>
+
+<p>From the <a href="https://docs.python.org/2/library/stdtypes.html#comparisons">Python 2 docs</a>:</p>
+
+<blockquote><p>Objects of different types [&hellip;] are ordered consistently but arbitrarily (so
+that sorting a heterogeneous array yields a consistent result).</p></blockquote>
+
+<p>From the <a href="https://docs.python.org/3/library/stdtypes.html#comparisons">Python 3 docs</a>:</p>
+
+<blockquote><p>The &lt;, &lt;=, > and >= operators will raise a TypeError exception [&hellip;] when the
+objects are of different types that cannot be compared [&hellip;].</p></blockquote>
+
+<a name="Mixed-Type.Operators.Can.Be.Good"></a>
+<h2>Mixed-Type Operators Can Be Good</h2>
+
+<p>A little <a href="https://stackoverflow.com/a/2384139">history lesson</a> on stackoverflow.com explains why
+heterogeneous lists are not cool anymore, and I&rsquo;m happy about the change in
+comparison from Python 2 to 3.</p>
+
+<p>But that does not mean that different types should never be combined with
+operators.</p>
+
+<p>Let&rsquo;s take another look at JavaScript:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;</span> <span class="s">&#39;3&#39;</span> <span class="o">*</span> <span class="mi">4</span>
+</span><span class='line'><span class="mi">12</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And Python:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;3&#39;</span> <span class="o">*</span> <span class="mi">4</span>
+</span><span class='line'><span class="s">&#39;3333&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you were expecting this to evaluate to 12 &mdash; either because you came from
+a weakly typed language, or because you simply forgot to parse the string as an
+integer &mdash; you might also be confused. But I really like this Python behavior.</p>
+
+<p>&ldquo;String multiplication&rdquo;, or rather <em>sequence replication</em>, is much more useful
+than heterogeneous list sorting &mdash; so useful that it is acceptable for it to
+risk being confusing to newcomers.</p>
+
+<p>And as opposed to string/integer comparison, it&rsquo;s also less likely to lead to
+subtle bugs. While the string/integer comparison returned a boolean just like
+integer/integer comparison, string/integer multiplication returns a string, and
+not the integer a novice might be expecting.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google Pixel 2 - First Impressions]]></title>
@@ -1259,7 +1503,7 @@ sort of thing. Happy tracking!</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Fun with Declarative Programming]]></title>
+    <title type="html"><![CDATA[AoC 2015 Day 5: Fun with Declarative Programming]]></title>
     <link href="http://blog.erw.dk/2015/12/06/fun-with-declarative-programming/"/>
     <updated>2015-12-06T19:36:41+01:00</updated>
     <id>http://blog.erw.dk/2015/12/06/fun-with-declarative-programming</id>
@@ -1546,6 +1790,8 @@ fashion by summing over a generator expression:</p>
 C#, considering that Python is interpreted.</p>
 
 <p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
+
+<p><em>Update 2017-12-09: Changed the post title.</em></p>
 ]]></content>
   </entry>
   
@@ -3249,124 +3495,6 @@ when samba is Brazilian. I guess even the name is a bit crazy!</p></li>
 <p>If you live near Aalborg, and find this all interesting, we could sure use
 a few more drummers (also dancers!). All you need is the interest (and at least
 a hint of a sense of rhythm). See the <a href="https://www.facebook.com/SambaskolenPocoLoco">facebook page</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[User Experiences on a Train Trip]]></title>
-    <link href="http://blog.erw.dk/2014/11/30/user-experiences-on-a-train-trip/"/>
-    <updated>2014-11-30T09:36:40+01:00</updated>
-    <id>http://blog.erw.dk/2014/11/30/user-experiences-on-a-train-trip</id>
-    <content type="html"><![CDATA[<p>This week I travelled from Enschede in the Netherlands to Saarbrücken in
-Germany for a research meeting. On the way I made some observations of
-usability and user experience in the trains and on the train stations.
-First we&rsquo;ll see some examples of bad design, then some good ones!</p>
-
-<!-- more -->
-
-
-<p><img class="right" src="http://blog.erw.dk/images/posts/hengelo_wachtruimte.jpg" title="TODO" alt="TODO"></p>
-
-<p>First, a usability classic: Door handles. The waiting rooms at the Hengelo
-train station had door handles with both horizontal and vertical bars on both
-sides of the door. With this abundance of handles, I somehow assumed the door
-would open both in and out. I was wrong, and there was no indication of which
-way it really openend. Most people will probably just try something random and
-be right about 50% of the time.</p>
-
-<p>This might seem like complaining over an insignificant problem, but the point
-is simply to demonstrate principles of building products that people like,
-whether it&rsquo;s a door or an iPhone. One part of doing this is to make simple
-operations (such as opening a door) self-explanatory by design, and not make
-the user feel stupid &mdash; such as when you open a door the wrong way.</p>
-
-<p>Next up was my ticket, which was a print-at-home e-ticket. My Dutch is not so
-good, but the ticket had a nice illustrated instruction of how I was supposed
-to scan the ticket at the station:</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/ns_e-ticket.jpg" title="TODO" alt="TODO"></p>
-
-<p>Only there was no scanner in sight on the station. I had plenty of time, so
-I went to the ticket office to ask what to do. There I learned that this
-station had no scanners, so I should just board the train without scanning. And
-this is probably what many people would do. But I didn&rsquo;t want
-a misunderstanding to cost me a fine on the train, so I asked. And I was not
-the first one to worry about it because they had put a piece of paper on the
-ticket stall window saying the same thing: At this station it is not necessary
-to scan the e-tickets. I recommended them to put that sign on the platforms
-where people actually look for the scanners and therefore need the information.</p>
-
-<p>On the train they had a nice info screen. But here I got momentarily confused
-as well. This was a bit of Dutch I could understand: &ldquo;Aankomsttijd eindpunt&rdquo;:
-Arrival time at the final destination.</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/syntus_train.jpg" title="TODO" alt="TODO"></p>
-
-<p>The only problem was that this final arrival time, 7:17, was <em>now</em>. I had
-entered a train that was already at its destination and not going further. And
-thereby possibly missed the correct train. Panic! Well, I soon found my
-misunderstanding: 7:17 was indeed the current time because it was a clock, and
-the real final arrival time was 7:53.</p>
-
-<p>Besides, why would there be more stops on the list if we were already at the
-final station? But the point here is not that logical thinking can lead me to
-the correct interpretation of the information (which is indeed what happened).
-The point is that before I had read enough from the screen to draw the right
-conclusion, I had already been startled.
-The problem comes from our perception that things that are close together
-belong together. After reading &ldquo;Aankomsttijd eindpunt&rdquo;, my eyes were simply
-drawn to left because the clock was both closer and bigger than the correct
-arrival time.</p>
-
-<p><img class="right" src="http://blog.erw.dk/images/posts/ns_speaking_zone.jpg" title="TODO" alt="TODO"></p>
-
-<p>Only 20 minutes passed and I already misunderstood three things. How stupid
-I must be! Well, it&rsquo;s easy to blame yourself for these things, when in fact the
-design is to blame. Think about that next time you feel stupid because of your
-microwave oven.</p>
-
-<p>After I switched trains, I found something nice. Instead of just marking the
-silent zone of the train as such, the normal zone was also marked as a speaking
-zone. It&rsquo;s nice to not only have negative signs with bans, but also positive
-signs. Who knows, it might even inspire someone to talk to a stranger!</p>
-
-<p>Next up was Arnhem train station. Newly renovated and a good example that
-a pleasant environment can give you a better experience than a functionally
-equivalent but ugly environment. Arnhem station was both spacious and elegant
-(and functional):</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/arnhem.jpg" title="TODO" alt="TODO"></p>
-
-<p>Another aspect of train usability is door opening buttons.
-On the return trip I found two types.
-The left is from the inside of a Dutch train; the right is from the outside of
-a German ICE train:</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/train_door_buttons.jpg" title="TODO" alt="TODO"></p>
-
-<p>Train doors cannot be opened by passengers while the train is in motion, so the
-buttons are only active at stations. The left set of buttons leaves the user to
-guess when they become enabled, while the right set lights up when active, thus
-displaying their state to the user, including which button is relevant to press
-(&lsquo;close&rsquo; when the door is open and vice versa).</p>
-
-<p>Finally, tables. In <a href="http://blog.erw.dk/2014/11/21/the-design-of-everyday-things/">my previous post</a> I explain how the of table locks
-in the Danish IC3 trains suck. The Dutch and German ones are better. Dutch on
-the left, German ICE on the right:</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/tray_tables.jpg" title="TODO" alt="TODO"></p>
-
-<p>This time I&rsquo;ll give the first price to the Dutch train. The table has no lock;
-friction holds the table in place. The edge can be grabbed by either hand, and
-it is self-explanatory. It can also be folded back up with one hand. The ICE
-train table is also easy to <em>understand</em> how to use, but physically sliding the
-lock is slightly awkward. In addition it requires two hands to close; one
-holding the table, and one operating the lock. (Alternatively, you can slam it
-shut and make a loud noise!)</p>
-
-<p>Thanks for reading.</p>
-
-<p><em>The <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">images on this post</span> are by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Erik Ramsgaard Wognsen</span> and you may reuse them under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. Contact me for higher resolutions.</em></p>
 ]]></content>
   </entry>
   

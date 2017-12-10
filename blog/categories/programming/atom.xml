@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2017-11-19T16:01:54+01:00</updated>
+  <updated>2017-12-10T20:47:59+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -14,7 +14,195 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Fun with Declarative Programming]]></title>
+    <title type="html"><![CDATA[AoC 2017 Day 8: Fell Into a Python Pitfall]]></title>
+    <link href="http://blog.erw.dk/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall/"/>
+    <updated>2017-12-10T20:43:47+01:00</updated>
+    <id>http://blog.erw.dk/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been using and enjoying <a href="https://www.python.org/">Python</a> since 2009, but while doing
+<a href="http://adventofcode.com">Advent of Code</a> again this year, I stumbled upon a Python feature that
+led to a subtle bug. Advent of Code spoiler ahead.</p>
+
+<!-- more -->
+
+
+<a name="The.Puzzle"></a>
+<h2>The Puzzle</h2>
+
+<p>In AoC 2017 you travel inside Santa&rsquo;s computer, fixing and computing things so
+the Naughty or Nice List can be printed on time for Santa to deliver the
+presents on time.</p>
+
+<p>The puzzle for <a href="http://adventofcode.com/2017/day/8">Day 8</a> gives you a textual input such as</p>
+
+<pre><code class="Pascal">b inc 5 if a &gt; 1
+a inc 1 if b &lt; 5
+c dec -10 if a &gt;= 1
+c inc -20 if c == 10
+</code></pre>
+
+<p>and asks you to find the largest value in any register after executing the
+given instructions (on some imagined CPU). The registers (which are <code>a</code>, <code>b</code>,
+and <code>c</code> in the above), are all initialized to zero. The largest value in the
+example is 1, which is in the <code>a</code> register at the end.</p>
+
+<p>The real puzzle input is much larger and requires an automated solution. My
+approach was to build a register valuation dictionary, update it according to
+the instructions, and then find the largest value.</p>
+
+<a name="My.Solution"></a>
+<h2>My Solution</h2>
+
+<p>I wrote this code (refactored):</p>
+
+<pre><code class="Python">from operator import lt, gt, le, ge, eq, ne
+
+def day8(input):
+
+    instructions = [line.split() for line in input.splitlines()]
+    register_names = set(instruction[0] for instruction in instructions)
+    registers = {register_name: 0 for register_name in register_names}
+
+    for mod_reg, mod_op, mod_amt, _, cond_reg, cond_op, cond_const in instructions:
+        if eval_cond(registers[cond_reg], cond_op, cond_const):
+            registers[mod_reg] += (1 if mod_op == 'inc' else -1) * int(mod_amt)
+
+    return max(registers.values())
+
+def eval_cond(a, cond_op, b):
+    return {'&lt;': lt, '&gt;': gt, '&lt;=': le, '&gt;=': ge, '==': eq, '!=': ne}[cond_op](a, b)
+</code></pre>
+
+<p>I ran it on the test input, and the test passed. Good! Then I ran it on the
+main puzzle input, got a nice looking number, and submitted my result.</p>
+
+<p>Incorrect&hellip; Huh.</p>
+
+<p>Can you spot the mistake?</p>
+
+<p>I later fixed it in line 10, and it relates to types.</p>
+
+<a name="Strong.and.Weak.Typing"></a>
+<h2>Strong and Weak Typing</h2>
+
+<p>One of the things I like about Python compared with other dynamically typed
+languages is that Python is also strongly typed.</p>
+
+<p>JavaScript &mdash; which is dynamically and weakly typed &mdash; implicitly converts
+types, such as from number to string:</p>
+
+<pre><code>&gt; 2 + '2'
+'22'
+</code></pre>
+
+<p>Python doesn&rsquo;t &mdash; it forces you to choose:</p>
+
+<pre><code>&gt;&gt;&gt; 2 + '2'
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+&gt;&gt;&gt; 2 + int('2')
+4
+
+&gt;&gt;&gt; str(2) + '2'
+'22'
+</code></pre>
+
+<p>But ok, let&rsquo;s try mixed type comparison in JavaScript:</p>
+
+<pre><code>&gt; 3 &lt; '5'
+true
+
+&gt; 30 &lt; '5'
+false
+</code></pre>
+
+<p>And Python:</p>
+
+<pre><code>&gt;&gt;&gt; 3 &lt; '5'
+True
+
+&gt;&gt;&gt; 30 &lt; '5'
+True
+</code></pre>
+
+<p>(!)</p>
+
+<p>In fact, any integer compares less than any string in CPython 2.</p>
+
+<p>This was the reason for my bug &mdash; I kept comparing integer register values to
+unparsed text strings:</p>
+
+<pre><code>        if eval_cond(registers[cond_reg], cond_op, cond_const):
+</code></pre>
+
+<p>After adding the integer parsing, it worked as expected:</p>
+
+<pre><code>        if eval_cond(registers[cond_reg], cond_op, int(cond_const)):
+</code></pre>
+
+<a name="Why.Does.It.Work.Like.This."></a>
+<h2>Why Does It Work Like This?</h2>
+
+<p>It&rsquo;s not that I had expected Python to suddenly do implicit type conversion for
+comparison &mdash; I had just forgot the call to <code>int</code> &mdash; even though I had
+remembered it while parsing the modification amount <code>mod_amt</code>.</p>
+
+<p>What I would have hoped for was a loud error rather than a subtle bug. It turns
+out there is both a reason for the subtle behavior in Python 2 and the option
+to get a loud error &mdash; by using Python 3.</p>
+
+<p>From the <a href="https://docs.python.org/2/library/stdtypes.html#comparisons">Python 2 docs</a>:</p>
+
+<blockquote><p>Objects of different types [&hellip;] are ordered consistently but arbitrarily (so
+that sorting a heterogeneous array yields a consistent result).</p></blockquote>
+
+<p>From the <a href="https://docs.python.org/3/library/stdtypes.html#comparisons">Python 3 docs</a>:</p>
+
+<blockquote><p>The &lt;, &lt;=, > and >= operators will raise a TypeError exception [&hellip;] when the
+objects are of different types that cannot be compared [&hellip;].</p></blockquote>
+
+<a name="Mixed-Type.Operators.Can.Be.Good"></a>
+<h2>Mixed-Type Operators Can Be Good</h2>
+
+<p>A little <a href="https://stackoverflow.com/a/2384139">history lesson</a> on stackoverflow.com explains why
+heterogeneous lists are not cool anymore, and I&rsquo;m happy about the change in
+comparison from Python 2 to 3.</p>
+
+<p>But that does not mean that different types should never be combined with
+operators.</p>
+
+<p>Let&rsquo;s take another look at JavaScript:</p>
+
+<pre><code>&gt; '3' * 4
+12
+</code></pre>
+
+<p>And Python:</p>
+
+<pre><code>&gt;&gt;&gt; '3' * 4
+'3333'
+</code></pre>
+
+<p>If you were expecting this to evaluate to 12 &mdash; either because you came from
+a weakly typed language, or because you simply forgot to parse the string as an
+integer &mdash; you might also be confused. But I really like this Python behavior.</p>
+
+<p>&ldquo;String multiplication&rdquo;, or rather <em>sequence replication</em>, is much more useful
+than heterogeneous list sorting &mdash; so useful that it is acceptable for it to
+risk being confusing to newcomers.</p>
+
+<p>And as opposed to string/integer comparison, it&rsquo;s also less likely to lead to
+subtle bugs. While the string/integer comparison returned a boolean just like
+integer/integer comparison, string/integer multiplication returns a string, and
+not the integer a novice might be expecting.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[AoC 2015 Day 5: Fun with Declarative Programming]]></title>
     <link href="http://blog.erw.dk/2015/12/06/fun-with-declarative-programming/"/>
     <updated>2015-12-06T19:36:41+01:00</updated>
     <id>http://blog.erw.dk/2015/12/06/fun-with-declarative-programming</id>
@@ -233,6 +421,8 @@ print sum(1 for line in open("input").readlines()
 C#, considering that Python is interpreted.</p>
 
 <p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
+
+<p><em>Update 2017-12-09: Changed the post title.</em></p>
 ]]></content>
   </entry>
   
