@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-01-01T17:13:14+01:00</updated>
+  <updated>2018-02-25T16:51:52+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,114 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What Roland Boutique Needs]]></title>
+    <link href="http://blog.erw.dk/2018/02/25/what-roland-boutique-needs/"/>
+    <updated>2018-02-25T16:46:09+01:00</updated>
+    <id>http://blog.erw.dk/2018/02/25/what-roland-boutique-needs</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p></p>
+
+<p>Roland Boutique is a series of small form factor electronic music instruments.
+The line debuted in 2015 with recreations of three iconic Roland 1980s synths.
+I got the JP-08 which I wrote about <a href="/2017/06/25/roland-jp-08-review/">here</a>. Since then I&rsquo;ve been
+watching the series grow with interest.</p>
+
+<p>By now, the <a href="https://www.roland.com/us/promos/roland_boutique/">Boutique line</a> includes nine products recreating
+Roland&rsquo;s back catalog: Five subtractive synths (JP-08, JU-06, JX-03, TB-03,
+SH-01A), the VP-03 vocoder, the TR-08 and TR-09 drum machines, and finally the
+D-05 &ldquo;linear synthesizer&rdquo; mixing sampling and synthesis.</p>
+
+<p><img src="/images/posts/boutique_hero.png"></p>
+
+<!-- more -->
+
+
+<p>In 2017, Roland ventured outside their own history. Teaming up with Studio
+Electronics, they released the Minimoog-inspired analog monosynth SE-02. Having
+started down this path, they might make an FM (frequency modulation) synth.
+Missing from the lineup is also perhaps a sampler/sample player/sample mangler?</p>
+
+<p></p>
+
+<p>That would at least match miniatures produced by other manufacturers in the
+last few years. The very small and affordable Korg Volca series has the
+straightforwardly named Beats, Bass, Keys, Sample, and FM. The first four
+predated the original Boutique trio by 1-2 years, while the FM was released in
+2016.</p>
+
+<p>Swedish manufacturer Elektron also recently went small with the less toylike
+&mdash; and less affordable &mdash; Digitakt sampler and Digitone FM-synth, with the
+latter being announced just one month ago.</p>
+
+<p>The 2015 Yamaha Reface series also has CS, DX, YC, and CP, doing synth, FM,
+electric organ, and electric piano, respectively. And this leads me toward what
+I would most like to see in the Roland Boutique series.</p>
+
+<a name="Give.Me.a.Piano."></a>
+<h2>Give Me a Piano!</h2>
+
+<p></p>
+
+<p>When you think of a digital piano, you are more likely to think of 88 weighted
+keys than 25 non-weighted &ldquo;synth action&rdquo; minikeys. But one of the advantages of
+the Boutiques is that they can both slot into the K-25m keyboard module and
+perform as a sound module/desktop synth.</p>
+
+<p>I would love to have a Roland Boutique piano with high-quality, natural,
+acoustic piano sounds as well as high-quality electric pianos, organs, strings,
+etc. I guess the model number would be in the form of FP-0x or RD-0x. I would
+use such a Boutique piano module both as a sound module plugged into a MIDI
+keyboard, and in the sofa as a plaything and/or compositional tool with the
+K-25m keyboard attached.</p>
+
+<p>The D-05 unfortunately does not fill this role. When the D-50 was launched in
+1987 it certainly came closer than any analog synth to sounding like acoustic
+instruments, but that doesn&rsquo;t mean it could actually pass for one. I went to my
+local music store to try out the D-05, and while it does have a dozen patches
+with &ldquo;piano&rdquo; in their name, none of them sound like an acoustic piano. It can
+do electric pianos and organs, but overall I think the D-50/D-05 has a certain
+80s/90s &ldquo;lo-fi&rdquo; sound. It excels at some things, but not acoustic piano.</p>
+
+<p></p>
+
+<a name="The.Panel"></a>
+<h2>The Panel</h2>
+
+<p>Some of the Boutiques have too many buttons crammed into the limited space on
+the panel. The includes the <a href="/2017/06/25/roland-jp-08-review/">JP-08</a>, and judging from pictures, also
+the TR-08, TR-09 and SE-02. Some have a more reasonable amount, such as the
+JU-06, SH-01A, and VP-03. The D-05 doesn&rsquo;t have too many buttons per se, but it
+faithfully recreates the dreary menu diving experience of the &ldquo;digital age&rdquo; (to
+achieve more hands-on programming of the D-50/D-550/D-05, you need the enormous
+PG-1000 programmer). But, digital pianos typically do not have a lot of
+buttons. So what do I want on the Boutique piano panel?</p>
+
+<p>I can think of a lot!</p>
+
+<p></p>
+
+<ul>
+<li>Better speaker(s), perhaps even front facing</li>
+<li>Dedicated octave up/down buttons</li>
+<li>A good pitch/modulation stick (yes, electric organs can <a href="http://www.organforum.com/forums/showthread.php?22171-Pitch-bending-on-a-Hammond-A-mystery">pitch bend</a>)</li>
+<li>Effects! Reverb, Leslie, Overdrive, Chorus, you name it.</li>
+<li>Loop machine</li>
+<li>Tape recorder</li>
+<li>Sequencer</li>
+<li>Arpeggiator</li>
+<li>Chord memory</li>
+<li>Scale/chord library (like a <a href="https://www.islainstruments.com/product/kordbot/">KordBot</a>?)</li>
+</ul>
+
+
+<p>Finally, such a module shouldn&rsquo;t be expensive. Unless it would have several of
+the above features, it should be closer to 150 €/$ than to 400 €/$. It&rsquo;s
+a ripoff that the K-25m keyboard is already 100 €/$.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Roland JP-08 Review]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-01-01T17:13:14+01:00</updated>
+  <updated>2018-02-25T16:51:52+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,102 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What Roland Boutique Needs]]></title>
+    <link href="http://blog.erw.dk/2018/02/25/what-roland-boutique-needs/"/>
+    <updated>2018-02-25T16:46:09+01:00</updated>
+    <id>http://blog.erw.dk/2018/02/25/what-roland-boutique-needs</id>
+    <content type="html"><![CDATA[<p>Roland Boutique is a series of small form factor electronic music instruments.
+The line debuted in 2015 with recreations of three iconic Roland 1980s synths.
+I got the JP-08 which I wrote about <a href="http://blog.erw.dk/2017/06/25/roland-jp-08-review/">here</a>. Since then I&rsquo;ve been
+watching the series grow with interest.</p>
+
+<p>By now, the <a href="https://www.roland.com/us/promos/roland_boutique/">Boutique line</a> includes nine products recreating
+Roland&rsquo;s back catalog: Five subtractive synths (JP-08, JU-06, JX-03, TB-03,
+SH-01A), the VP-03 vocoder, the TR-08 and TR-09 drum machines, and finally the
+D-05 &ldquo;linear synthesizer&rdquo; mixing sampling and synthesis.</p>
+
+<p><img src="http://blog.erw.dk/images/posts/boutique_hero.png"></p>
+
+<!-- more -->
+
+
+<p>In 2017, Roland ventured outside their own history. Teaming up with Studio
+Electronics, they released the Minimoog-inspired analog monosynth SE-02. Having
+started down this path, they might make an FM (frequency modulation) synth.
+Missing from the lineup is also perhaps a sampler/sample player/sample mangler?</p>
+
+<p>That would at least match miniatures produced by other manufacturers in the
+last few years. The very small and affordable Korg Volca series has the
+straightforwardly named Beats, Bass, Keys, Sample, and FM. The first four
+predated the original Boutique trio by 1-2 years, while the FM was released in
+2016.</p>
+
+<p>Swedish manufacturer Elektron also recently went small with the less toylike
+&mdash; and less affordable &mdash; Digitakt sampler and Digitone FM-synth, with the
+latter being announced just one month ago.</p>
+
+<p>The 2015 Yamaha Reface series also has CS, DX, YC, and CP, doing synth, FM,
+electric organ, and electric piano, respectively. And this leads me toward what
+I would most like to see in the Roland Boutique series.</p>
+
+<a name="Give.Me.a.Piano."></a>
+<h2>Give Me a Piano!</h2>
+
+<p>When you think of a digital piano, you are more likely to think of 88 weighted
+keys than 25 non-weighted &ldquo;synth action&rdquo; minikeys. But one of the advantages of
+the Boutiques is that they can both slot into the K-25m keyboard module and
+perform as a sound module/desktop synth.</p>
+
+<p>I would love to have a Roland Boutique piano with high-quality, natural,
+acoustic piano sounds as well as high-quality electric pianos, organs, strings,
+etc. I guess the model number would be in the form of FP-0x or RD-0x. I would
+use such a Boutique piano module both as a sound module plugged into a MIDI
+keyboard, and in the sofa as a plaything and/or compositional tool with the
+K-25m keyboard attached.</p>
+
+<p>The D-05 unfortunately does not fill this role. When the D-50 was launched in
+1987 it certainly came closer than any analog synth to sounding like acoustic
+instruments, but that doesn&rsquo;t mean it could actually pass for one. I went to my
+local music store to try out the D-05, and while it does have a dozen patches
+with &ldquo;piano&rdquo; in their name, none of them sound like an acoustic piano. It can
+do electric pianos and organs, but overall I think the D-50/D-05 has a certain
+80s/90s &ldquo;lo-fi&rdquo; sound. It excels at some things, but not acoustic piano.</p>
+
+<a name="The.Panel"></a>
+<h2>The Panel</h2>
+
+<p>Some of the Boutiques have too many buttons crammed into the limited space on
+the panel. The includes the <a href="http://blog.erw.dk/2017/06/25/roland-jp-08-review/">JP-08</a>, and judging from pictures, also
+the TR-08, TR-09 and SE-02. Some have a more reasonable amount, such as the
+JU-06, SH-01A, and VP-03. The D-05 doesn&rsquo;t have too many buttons per se, but it
+faithfully recreates the dreary menu diving experience of the &ldquo;digital age&rdquo; (to
+achieve more hands-on programming of the D-50/D-550/D-05, you need the enormous
+PG-1000 programmer). But, digital pianos typically do not have a lot of
+buttons. So what do I want on the Boutique piano panel?</p>
+
+<p>I can think of a lot!</p>
+
+<ul>
+<li>Better speaker(s), perhaps even front facing</li>
+<li>Dedicated octave up/down buttons</li>
+<li>A good pitch/modulation stick (yes, electric organs can <a href="http://www.organforum.com/forums/showthread.php?22171-Pitch-bending-on-a-Hammond-A-mystery">pitch bend</a>)</li>
+<li>Effects! Reverb, Leslie, Overdrive, Chorus, you name it.</li>
+<li>Loop machine</li>
+<li>Tape recorder</li>
+<li>Sequencer</li>
+<li>Arpeggiator</li>
+<li>Chord memory</li>
+<li>Scale/chord library (like a <a href="https://www.islainstruments.com/product/kordbot/">KordBot</a>?)</li>
+</ul>
+
+
+<p>Finally, such a module shouldn&rsquo;t be expensive. Unless it would have several of
+the above features, it should be closer to 150 €/$ than to 400 €/$. It&rsquo;s
+a ripoff that the K-25m keyboard is already 100 €/$.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AoC 2017 Day 8: Fell Into a Python Pitfall]]></title>
@@ -3395,110 +3491,6 @@ already in your native language, or the one that is the easiest to learn!</p>
 subject-verb-object order: SVO, SOV, OVS, OSV, VSO, VOS. It also has a complete
 <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">BNF</a>! (For those who know what that is.) But I will save that for some
 other time!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Samba!]]></title>
-    <link href="http://blog.erw.dk/2015/01/29/samba/"/>
-    <updated>2015-01-29T10:42:32+01:00</updated>
-    <id>http://blog.erw.dk/2015/01/29/samba</id>
-    <content type="html"><![CDATA[<p>After spending the fall of 2014 doing research in the Netherlands, I have moved
-home to Aalborg, Denmark and returned to the samba group <a href="https://www.facebook.com/SambaskolenPocoLoco">Poco Loco</a>.
-The group has dancers and percussionists; I&rsquo;m one of the latter. Starting again
-after my half-year break reminded me of how it was when I first started playing
-samba. While you enjoy the video of the group here, I&rsquo;ll geek out on the
-drumming below.</p>
-
-<div class="video-container">
-<iframe src="//www.youtube.com/embed/ogQt9G1zEN8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-
-
-<!-- more -->
-
-
-<p>In my gymnasium (high school) years, I played the drum kit, mostly rock music.
-On the drum kit, you play with both hands and both feet simultaneously, so
-coming from this background, I thought playing a single drum at a time should
-be fairly easy. It turns out it&rsquo;s not!</p>
-
-<p><span class='caption-wrapper right'><img class='caption' src='https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG' width='320' height='240' alt='[Tamborim](https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG) by [Alno](//commons.wikimedia.org/wiki/User:Alno) / [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)'><span class='caption-text'><a href="https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG">Tamborim</a> by <a href="//commons.wikimedia.org/wiki/User:Alno">Alno</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span></p>
-
-<p>For example, there&rsquo;s the tiny <em>tamborim</em> which, despite its modest size (6&#8221;
-&approx; 15 cm), contributes a lot to the character of the sound of a samba
-<em>bateria</em>. Its basic pattern plays every 16th note, indefinitely, with one
-hand. That requires good technique, first to be able to play at high speed at
-all, then to keep going. (I hope I&rsquo;ll be able to do it some day!)</p>
-
-<p>The <em>caixa</em> (<a href="https://en.wikipedia.org/wiki/Snare_drum">snare drum</a>) also plays every 16th note in the basic
-pattern. Unlike with the tamborim, you can alternate the hands. But like the
-tamborim, the rhythm is played with &ldquo;samba swing&rdquo; which gives an eager,
-energetic feeling. It takes a lot of time readjust when your musical background
-is rock-based. (You can hear the difference <a href="https://www.youtube.com/watch?v=FhiID-40EkY">in this video</a>, where
-he switches between exaggerated, medium, and no swing.)</p>
-
-<p>The <em>repinique</em> is a drum that can make different sounds depending on how it&rsquo;s
-struck. Below is a video of a guy showing how it&rsquo;s played. The drum is used
-by the leader to cue the breaks and perform calls that the rest of the bateria
-answers. So it has a very important role. But playing it involves slapping your
-hand into its metal rim 100-150 times per minute. And it sports tuning rods
-that are always available for said hand to impale itself on. As one of my
-bandmates said: You are not initiated until you have bled on your drum!</p>
-
-<div class="video-container">
-<iframe src="//www.youtube.com/embed/xwxyskWxoWU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-
-
-<!--
-I usually play the *surdo*
-
-The rhythms must be played with "swing" to get the right, energetic feeling. 
-
-surdos, chocalho
-This is the reason I joined the group in the first place
--->
-
-
-<p>Samba is hard, but it&rsquo;s great. Both when we practice and when we perform on the
-street or on a stage. The driving, unending rhythm and the feeling of unity in
-a group of people or a whole carnival are just awe-inspiring.</p>
-
-<p>The atmosphere is also happy and relaxed. Mistakes are made, but you just play
-on. It&rsquo;s more important to keep going than to play perfectly (there&rsquo;s an
-important life lesson in that!)</p>
-
-<p>I was also surprised when I returned from my half year break. I could no longer
-consciously remember the many breaks and call/response sequences. But when the
-leader played the calls, my hands automatically responded. It&rsquo;s like riding
-a bike &ndash; you can do it, but you can&rsquo;t explain how.</p>
-
-<p>Fun facts:</p>
-
-<ul>
-<li><p>Samba swing is in a way the opposite of jazz swing. Jazz swing/shuffle is
-&ldquo;lazy&rdquo; and delays off-beat notes. Samba swing is &ldquo;eager&rdquo; and plays some of
-the notes between the main beats too early.</p></li>
-<li><p>You cannot keep time with your feet because you will be walking in a parade
-at speeds that are likely independent of the music.</p></li>
-<li><p>I still geek out and write down <a href="http://en.wikipedia.org/wiki/Drum_tablature">drum tabs</a> to learn and understand
-new sequences, but after that the automated learning quickly takes over. Most
-people in our group just learn by repetition, without writing it down.</p></li>
-<li><p>Earlier in my life, the primary meaning of &ldquo;samba&rdquo; was a piece of
-<a href="https://en.wikipedia.org/wiki/Samba_%28software%29">networking software</a>.</p></li>
-<li><p>I have no idea why our group is called Poco Loco (a bit crazy) in Spanish,
-when samba is Brazilian. I guess even the name is a bit crazy!</p></li>
-</ul>
-
-
-<p>If you live near Aalborg, and find this all interesting, we could sure use
-a few more drummers (also dancers!). All you need is the interest (and at least
-a hint of a sense of rhythm). See the <a href="https://www.facebook.com/SambaskolenPocoLoco">facebook page</a>.</p>
 ]]></content>
   </entry>
   
