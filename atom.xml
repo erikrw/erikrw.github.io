@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-02-25T16:51:52+01:00</updated>
+  <updated>2018-04-14T16:59:39+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,164 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Weird Keyboard]]></title>
+    <link href="http://blog.erw.dk/2018/04/14/my-weird-keyboard/"/>
+    <updated>2018-04-14T16:57:10+02:00</updated>
+    <id>http://blog.erw.dk/2018/04/14/my-weird-keyboard</id>
+    <content type="html"><![CDATA[<p>I use a weird computer keyboard: The <a href="https://www.kinesis-ergo.com/shop/advantage2/">Kinesis Advantage</a>.
+It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb keys.
+It&rsquo;s very comfortable and much better than anything Logitech or Microsoft have
+ever labeled ergonomic.</p>
+
+<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage2.jpg"></p>
+
+<!-- more -->
+
+
+<a name="Ergonomic.Features"></a>
+<h2>Ergonomic Features</h2>
+
+<p><strong>Columnar</strong> means that the keys are laid out in straight columns, so you don&rsquo;t
+have to bend your fingers sideways as you curl and extend them &mdash; unlike on
+a standard, staggered keyboard, where especially the left hand fingers need to
+move unnaturally. The <strong>split</strong> also helps avoiding sideways bends for the
+wrists. For more details, see the illustration of the <a href="https://www.trulyergonomic.com/store/unique-symmetric-columnar-key-arrangement--truly-ergonomic-mechanical-keyboard--orthogonal-matrix-non-staggered">Truly Ergonomic
+keyboard</a> (which I haven&rsquo;t tried (yet)).</p>
+
+<p><strong>Tented</strong> means that the thumb side of each hand sits higher than the pinky
+side. This gives the wrists a more natural rotation. The Advantage only tilts
+20 degrees &mdash; other keyboards such as the
+<a href="https://www.kinesis-ergo.com/shop/freestyle2-for-pc-us/">Kinesis Freestyle</a> and the <a href="http://safetype.com">SafeType</a> can tent
+(up to) 90 degrees (while <a href="https://www.kinesis-ergo.com/wp-content/uploads/2013/08/frreestyle2-ascent-90-1.jpg">looking</a> even less
+conventional than the Advantage).</p>
+
+<p>The <strong>thumb key</strong> clusters make more keys reachable without moving the hand
+away from its home position, and it offloads Backspace and Enter from the
+overworked right pinky and onto the stronger thumbs.</p>
+
+<p>The <strong>mechanical</strong> keyswitches (Cherry MX brown or red) register the keypress
+when the key is halfway depressed (2 out of 4 millimeters). This is opposed to
+standard rubber dome keyboards that require you to bottom out &mdash; fully depress
+the key until the finger is jolted to a stop.</p>
+
+<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage2_side.jpg"></p>
+
+<p>The best feature of the Advantage is the <strong>concave</strong> keywells: The scooped-out
+parts of the keyboard where the alphanumeric keys reside. They serve several
+purposes:</p>
+
+<ul>
+<li>As you curl and extend your fingers, the keys remain at the same distance
+from your fingertips, so you don&rsquo;t need to stretch your fingers much to
+reach. This also makes it easy to access all five (!) rows of keys.</li>
+<li>The same happens when you move your index finger to the side (like T, G, B),
+reducing sideways-twisting finger motions.</li>
+<li>The depths of the columns are matched with the corresponding fingers, so they
+all rest naturally in the home position.</li>
+</ul>
+
+
+<a name="Switching"></a>
+<h2>Switching</h2>
+
+<p>I got my first Kinesis Advantage in 2011. As I recall, it only took a few days
+to adapt to this weird keyboard. The best part is that I can still switch
+effortlessly between the Advantage and standard, flat, staggered keyboards. Not
+that I particularly enjoy it, but I can do it, which is very practical for
+traveling. The Advantage is actually narrower than a standard 104/105-key
+keyboard, but it&rsquo;s bigger in the two other dimensions and therefore not easy to
+transport.</p>
+
+<p>However, the physical shape of my keyboard is not the only weird thing about my
+typing. The <em>logical</em> layout I use &mdash; <a href="http://blog.erw.dk/2015/02/27/4-years-with-colemak/">Colemak</a> &mdash; is weird too.</p>
+
+<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage_custom_keycaps_right.jpg"></p>
+
+<p>Switching logical layout is much harder for me than switching physical layout.
+Even though the Advantage is firmware remappable, I set my logical layout in
+the computer OS, so I will keep the logical layout for all keyboards, including
+the laptop keyboard.</p>
+
+<p>Some people retain their QWERTY touch typing skills while learning an
+alternative layout by associating logical layout with physical keyboard, e.g.,
+typing Colemak on the Advantage and QWERTY on standard keyboards. And I did
+actually get the Advantage the same year I switched to Colemak, but I much
+prefer typing Colemak on my laptop while traveling to maintaining my QWERTY
+skills.</p>
+
+<a name="Legends"></a>
+<h2>Legends</h2>
+
+<p>It&rsquo;s not really necessary have Colemak legends on the keys, but I did get a set
+of custom keycaps made by <a href="http://www.wasdkeyboards.com/">WASD keyboards</a> for one of my two Advantages
+&mdash; complete with my Danish variation of Colemak &mdash; as shown in the images
+above and below. It&rsquo;s mostly for show, because the legends are not necessary
+for touch typing, and the Advantage is not so good anyway for one-handed use
+where the legends might be relevant.</p>
+
+<p>In fact, hunt-and-peck typing is for some reason easier for me with QWERTY
+legends, even while I type Colemak. My eyes are more used to the common QWERTY
+layout, I guess. I just know that pressing the QWERTY &rsquo;T&#8217; key produces a &lsquo;G&rsquo; in
+Colemak. If I look down and the key shows a &lsquo;G&rsquo;, my eyes get confused, even
+though my fingers knows exactly where to press to get the &lsquo;G&rsquo; while touch
+typing.</p>
+
+<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage_custom_keycaps_left.jpg"></p>
+
+<a name="Downsides"></a>
+<h2>Downsides</h2>
+
+<p>The Advantage is not great for everything. Split keyboards are not good for the
+occational one-handed use (e.g., while holding a drink, phone, piece of paper).</p>
+
+<p>The Advantage is not the best for gaming either. The arrow keys are spread on
+both sides of the split which is fine for two-handed office and programming
+use, but not ideal for gaming. The key positions are matched to finger lengths,
+so the WASD keys will not work well with the normal WASD-fingers. ESDF should
+be perfect, though.</p>
+
+<p>For a long time, the typical complaint of the Advantage was the low quality of
+the rubber F-keys. In 2016, the Advantage2 was launched, with Cherry ML
+switches instead of rubber dome F-keys, and more programming options. (This is
+the product I link to in the top of the post because the product page for the
+old version seems to be gone.)</p>
+
+<p>Another problem partially solved by time is the built-in combined USB hub and
+PS/2-to-USB converter. It &mdash; and the whole keyboard with it &mdash; didn&rsquo;t work
+with Windows 7. Kinesis did sell a cable conversion kit to work around this,
+but I went DIY and installed a PS/2-to-USB adapter myself, bypassing the
+problematic USB hub, on my &ldquo;work&rdquo; board.</p>
+
+<p>My &ldquo;home&rdquo; board always worked fine with Linux (and Windows 10), but it&rsquo;s also
+not recognized by the BIOS of my desktop computer&rsquo;s motherboard. A smaller
+problem but I&rsquo;m considering giving this board a USB hubectomy as well. The
+Advantage2 has supposedly also solved this problem.</p>
+
+<p>There are a few problems with the Advantage, but they are minor compared to the
+Advantage (heh) of using an extremely comfortable keyboard for my 10+ daily
+hours of computer usage.</p>
+
+<a name="Key.Remapping"></a>
+<h2>Key Remapping</h2>
+
+<p>My remaining complaints were solved with easy firmware remapping, which is in
+fact just a testament of the Advantage&rsquo;s flexibility:</p>
+
+<ul>
+<li>I swapped Space and Backspace because I have for some reason always used my
+left hand&rsquo;s thumb for Space.</li>
+<li>I use the Alt+Tab shortcut all the time, so I moved the Alt key closer to my
+thumb in the left thumb cluster.</li>
+<li>I made the key above Tab work as an Escape key.</li>
+<li>I made the key below Tab work as a Control key because that&rsquo;s how control
+freaks control.</li>
+<li>I put Down to the left of Up because that&rsquo;s how Vim users roll.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What Roland Boutique Needs]]></title>
@@ -3284,213 +3442,11 @@ from your .vimrc to try it out.</p>
 Especially if it has a <a href="http://deskthority.net/wiki/Staggering#Matrix_layout">columnar or matrix</a> key layout.
 Then it might even be better for comfort than switching layout.
 The two approaches can also be combined.
-That&rsquo;s what I do, but more on that later.</p>
+That&rsquo;s what I do, but more on that later. (<a href="http://blog.erw.dk/2018/04/14/my-weird-keyboard/">Link!</a>)</p>
 
 <p>Thanks for reading!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Sound of R]]></title>
-    <link href="http://blog.erw.dk/2015/02/21/the-sound-of-r/"/>
-    <updated>2015-02-21T13:27:20+01:00</updated>
-    <id>http://blog.erw.dk/2015/02/21/the-sound-of-r</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Voiced_uvular_fricative_%28vector%29.svg/300px-Voiced_uvular_fricative_%28vector%29.svg.png" title="R" alt="R"></p>
 
-<p>R is a common letter in many languages, but it represents vastly different
-sounds. Sometimes even within the same language.
-As <a href="https://en.wikipedia.org/wiki/Rhotic_consonant">Wikipedia says</a>:
-<em>Being &ldquo;R-like&rdquo; is an elusive and ambiguous concept phonetically</em>.
-In fact, we might not even consider the R-sound used in, say, Spain, related to
-the R-sound used in France/Germany/Denmark, if they were not spelled the same.
-However, it was the will of history that they are, and in this post, I will
-present the three main families of R-sounds in European languages: English,
-Spanish, and French.</p>
-
-<p>I am trying to keep it jargon free; hence the names above. They are
-a simplification, and in fact many languages use the three types. For example,
-the &ldquo;Spanish&rdquo; type is also Italian, Finnish, Icelandic, Lithuanian, Polish,
-Czech, etc. Some languages, such as <a href="http://youtu.be/iIWmTglqUzY">Dutch</a> and Portuguese also use
-more than one type, even within a single dialect. In this post I will cover the
-three &ldquo;mainstream&rdquo; R families plus a lot of other interesting R-facts,
-including that R is sometimes a vowel!</p>
-
-<p>(R is incidentally also a very nice <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">statistics program</a>, but that is
-not the topic of this post!)</p>
-
-<!-- more -->
-
-
-<a name="English"></a>
-<h2>English</h2>
-
-<p>Since you are reading this in English, I think you are familiar with this type
-of R:</p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Alveolar_approximant.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-<a href="https://en.wikipedia.org/wiki/File:Alveolar_approximant.ogg">Alveolar approximant</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<p>Consonants do not usually stand alone, so what you hear is the R mixed with
-vowels: [ra ara].</p>
-
-<p>There is some variation in where the English type R is used.
-In <a href="https://en.wikipedia.org/wiki/Rhotic_and_non-rhotic_accents">non-rhotic</a> dialects, Rs that are not immediately followed by
-a vowel disappear. A famous example is the sentence &ldquo;Park the car in Harvard
-Yard&rdquo;. In a non-rhotic dialect, in Boston for example, it would be pronounced
-&ldquo;Pahk the car in Hahvahd Yahd&rdquo;.
-Dialects with <a href="https://en.wikipedia.org/wiki/Linking_and_intrusive_R#Intrusive_R">intrusive R</a> on the other hand
-insert them where they didn&rsquo;t appear originally: &ldquo;I saw a film&rdquo; becomes &ldquo;I sawr
-a film&rdquo; (<a href="https://www.youtube.com/watch?v=P-Q9D4dcYng#t=72">oh boy</a>).</p>
-
-<a name="Spanish"></a>
-<h2>Spanish</h2>
-
-<p>The &ldquo;Spanish&rdquo; R covers two types, depending on whether you tap the tongue
-<em>once</em> <a href="https://en.wikipedia.org/wiki/Alveolar_ridge">behind your upper front teeth</a> or roll it multiple
-times:</p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Alveolar_tap.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-<a href="https://en.wikipedia.org/wiki/File:Alveolar_tap.ogg">Alveolar tap</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alveolar_trill.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-<a href="https://en.wikipedia.org/wiki/File:Alveolar_trill.ogg">Alveolar trill</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<p>Some languages use only one of these two. In (standard) Spanish, they are both
-used: For single R (as in &ldquo;pero&rdquo;, meaning &ldquo;but&rdquo;) and double R (&ldquo;perro&rdquo;, &ldquo;dog&rdquo;),
-respectively. (However, I once met a <em>Carmen</em> who told me she liked her name
-pronounced with a roll consisting of three taps.)</p>
-
-<p>This type of R is also where &ldquo;R-ness&rdquo; becomes strange: The single tap has
-a D-like quality to it. For example, the <em>tt</em> in &ldquo;better&rdquo; in English is also
-made by tapping the tongue on the gum ridge behind the front teeth!</p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/4/45/En-us-better.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-&ldquo;<a href="https://en.wikipedia.org/wiki/File:En-us-better.ogg">Better</a>&rdquo; by <a href="https://commons.wikimedia.org/wiki/User:Dvortygirl">Dvortygirl</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<a name="French"></a>
-<h2>French</h2>
-
-<p>French R, German R, Danish R. Also known as
-<a href="https://en.wikipedia.org/wiki/Guttural_R">guttural (throaty) R</a>.
-Like the Spanish R, it can also be done with or without a trill:</p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/a/af/Voiced_uvular_fricative.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-<a href="https://en.wikipedia.org/wiki/File:Voiced_uvular_fricative.ogg">Voiced uvular fricative</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<p><audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Uvular_trill.ogg" type='audio/ogg; codecs=vorbis' />
-</audio>&nbsp;&nbsp;
-<span style="vertical-align: top;">
-<small>
-<a href="https://en.wikipedia.org/wiki/File:Uvular_trill.ogg">Uvular trill</a> by <a href="https://commons.wikimedia.org/wiki/User:Peter_Isotalo">Peter Isotalo</a>,
-<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
-</small>
-</span></p>
-
-<p>These sounds are produced while touching the back of the tongue to the <a href="https://en.wikipedia.org/wiki/Palatine_uvula">uvula</a>
-&mdash; the dangly thing at the back of the throat. (Danes are in fact lazy and
-only <em><a href="https://en.wikipedia.org/wiki/Approximant_consonant">approach</a></em> the back of the tongue to the uvula, but the
-sound is almost the same.)</p>
-
-<p>In the southern parts of Norway and Sweden, close to Denmark, this type of R is
-also used.</p>
-
-<a name="Portuguese"></a>
-<h2>Portuguese</h2>
-
-<p>I have not included Portuguese as a type of R, because this beautiful language
-in fact uses a large array of sounds to pronounce the letter R, depending on
-dialect and context. As <a href="https://en.wikipedia.org/wiki/Portuguese_language#Consonants">Wikipedia says</a>:</p>
-
-<blockquote><p>The actual uvular pronunciation [χ ʁ ʀ] is common in Portugal, although the
-older trill [r] is also heard. In Brazil, the total inventory of /ʁ/
-allophones is rather long, or up to [r ç x ɣ χ ʁ ʀ ħ h ɦ]</p></blockquote>
-
-<p>The pronunciation of an R at the beginning of a word in Brazil can be
-especially counter-intuitive (at least if you&rsquo;re not from Brazil!). As
-I learned from my Portuguese teacher (from <a href="https://en.wikipedia.org/wiki/Bras%C3%ADlia">Brasília</a>), the word
-<em><a href="http://en.wiktionary.org/wiki/real#Portuguese">real</a></em> (meaning both real and royal, and being the Brazilian
-currency), is pronounced <em><a href="http://www.forvo.com/word/real/#pt">heau</a></em>(!) An initial R is a breathy
-H-sound, and a final L is a U-like sound.</p>
-
-<a name="R.as.Vowel"></a>
-<h2>R as Vowel</h2>
-
-<p>In the section on the English R, I mentioned non-rhotic dialects (typical of
-England) where Rs that are not immediately followed by a vowel disappear. But
-it might be more correct to say that they are vowels. Sometimes they prolong
-existing vowels, as in &ldquo;park the car&rdquo;, where the R prolongs the existing
-A-sound: &ldquo;paak the caa&rdquo;. Other times, you can hear the R as a separate A-like
-sound: beer [bia], your [yua/yoa], poor [pua/poa]. It also merges with E:
-reader [reeda], bother [botha]. Technically, the sound is a
-<em><a href="https://en.wikipedia.org/wiki/Schwa">schwa</a></em>, a &ldquo;lazy&rdquo;, neutral vowel made while relaxing the mouth.
-I guess whoever invented the word &ldquo;gangsta&rdquo; also spoke a non-rhotic dialect.</p>
-
-<p>I think this phenomenon is especially interesting because everybody knows that
-R is a consonant, but in practice non-rhotic speakers pronounce something like
-half of all Rs as a vowel!</p>
-
-<p>The phenomenon is also part of Danish. For example, in &ldquo;stor&rdquo; [stoa], meaning
-&ldquo;big&rdquo;, or &ldquo;biler&rdquo; [bila], meaning &ldquo;cars&rdquo;. The length of this vowel even
-distinguishes meanings: svar [svaa], svare [svaaa], svarer [svaaaa], svarere
-[svaaaaa]. These four words mean &ldquo;(an) answer&rdquo;, &ldquo;(to) answer&rdquo;, &ldquo;(an) answerer&rdquo;,
-and &ldquo;(some) answerers&rdquo;. Even natives have trouble distinguishing these&hellip;</p>
-
-<a name="Lojban"></a>
-<h2>Lojban</h2>
-
-<p>I will round off with the constructed language <a href="http://www.lojban.org/tiki/Lojban">Lojban</a> because it has
-an interesting approach to the letter R.</p>
-
-<p>You may have heard of the constructed language Esperanto. Unlike Lojban, the
-older, and relatively successful Esperanto is Eurocentric (and uses the Spanish
-type R). Lojban is made to make sense in <a href="http://en.wikipedia.org/wiki/Worldlang">the whole world</a>. Its
-vocabulary is based on the most spoken languages worldwide: Mandarin, English,
-Hindi, Spanish, Russian, and Arabic. Its inventory of sounds is also sparse,
-which means that (small) variations in pronunciation of letters between
-cultures do not disturb the meaning. Especially for R, any of the rhotic
-(R-like) consonant sounds are allowed, so you can just choose the one that is
-already in your native language, or the one that is the easiest to learn!</p>
-
-<p>Its grammar is also fascinating. For example, it can use any
-subject-verb-object order: SVO, SOV, OVS, OSV, VSO, VOS. It also has a complete
-<a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">BNF</a>! (For those who know what that is.) But I will save that for some
-other time!</p>
+<p><em>Update 2018-04-14: Added link to my Kinesis Advantage post.</em></p>
 ]]></content>
   </entry>
   

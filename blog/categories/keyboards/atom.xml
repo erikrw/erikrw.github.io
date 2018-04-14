@@ -4,7 +4,7 @@
   <title><![CDATA[Category: keyboards | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/keyboards/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-02-25T16:51:52+01:00</updated>
+  <updated>2018-04-14T16:59:39+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,166 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Weird Keyboard]]></title>
+    <link href="http://blog.erw.dk/2018/04/14/my-weird-keyboard/"/>
+    <updated>2018-04-14T16:57:10+02:00</updated>
+    <id>http://blog.erw.dk/2018/04/14/my-weird-keyboard</id>
+    <content type="html"><![CDATA[<p>I use a weird computer keyboard: The <a href="https://www.kinesis-ergo.com/shop/advantage2/">Kinesis Advantage</a>.
+It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb keys.
+It&rsquo;s very comfortable and much better than anything Logitech or Microsoft have
+ever labeled ergonomic.</p>
+
+<p></p>
+
+<p><img src="/images/posts/kinesis_advantage2.jpg"></p>
+
+<!-- more -->
+
+
+<a name="Ergonomic.Features"></a>
+<h2>Ergonomic Features</h2>
+
+<p><strong>Columnar</strong> means that the keys are laid out in straight columns, so you don&rsquo;t
+have to bend your fingers sideways as you curl and extend them &mdash; unlike on
+a standard, staggered keyboard, where especially the left hand fingers need to
+move unnaturally. The <strong>split</strong> also helps avoiding sideways bends for the
+wrists. For more details, see the illustration of the <a href="https://www.trulyergonomic.com/store/unique-symmetric-columnar-key-arrangement--truly-ergonomic-mechanical-keyboard--orthogonal-matrix-non-staggered">Truly Ergonomic
+keyboard</a> (which I haven&rsquo;t tried (yet)).</p>
+
+<p><strong>Tented</strong> means that the thumb side of each hand sits higher than the pinky
+side. This gives the wrists a more natural rotation. The Advantage only tilts
+20 degrees &mdash; other keyboards such as the
+<a href="https://www.kinesis-ergo.com/shop/freestyle2-for-pc-us/">Kinesis Freestyle</a> and the <a href="http://safetype.com">SafeType</a> can tent
+(up to) 90 degrees (while <a href="https://www.kinesis-ergo.com/wp-content/uploads/2013/08/frreestyle2-ascent-90-1.jpg">looking</a> even less
+conventional than the Advantage).</p>
+
+<p>The <strong>thumb key</strong> clusters make more keys reachable without moving the hand
+away from its home position, and it offloads Backspace and Enter from the
+overworked right pinky and onto the stronger thumbs.</p>
+
+<p>The <strong>mechanical</strong> keyswitches (Cherry MX brown or red) register the keypress
+when the key is halfway depressed (2 out of 4 millimeters). This is opposed to
+standard rubber dome keyboards that require you to bottom out &mdash; fully depress
+the key until the finger is jolted to a stop.</p>
+
+<p><img src="/images/posts/kinesis_advantage2_side.jpg"></p>
+
+<p>The best feature of the Advantage is the <strong>concave</strong> keywells: The scooped-out
+parts of the keyboard where the alphanumeric keys reside. They serve several
+purposes:</p>
+
+<ul>
+<li>As you curl and extend your fingers, the keys remain at the same distance
+from your fingertips, so you don&rsquo;t need to stretch your fingers much to
+reach. This also makes it easy to access all five (!) rows of keys.</li>
+<li>The same happens when you move your index finger to the side (like T, G, B),
+reducing sideways-twisting finger motions.</li>
+<li>The depths of the columns are matched with the corresponding fingers, so they
+all rest naturally in the home position.</li>
+</ul>
+
+
+<a name="Switching"></a>
+<h2>Switching</h2>
+
+<p>I got my first Kinesis Advantage in 2011. As I recall, it only took a few days
+to adapt to this weird keyboard. The best part is that I can still switch
+effortlessly between the Advantage and standard, flat, staggered keyboards. Not
+that I particularly enjoy it, but I can do it, which is very practical for
+traveling. The Advantage is actually narrower than a standard 104/105-key
+keyboard, but it&rsquo;s bigger in the two other dimensions and therefore not easy to
+transport.</p>
+
+<p>However, the physical shape of my keyboard is not the only weird thing about my
+typing. The <em>logical</em> layout I use &mdash; <a href="/2015/02/27/4-years-with-colemak/">Colemak</a> &mdash; is weird too.</p>
+
+<p><img src="/images/posts/kinesis_advantage_custom_keycaps_right.jpg"></p>
+
+<p>Switching logical layout is much harder for me than switching physical layout.
+Even though the Advantage is firmware remappable, I set my logical layout in
+the computer OS, so I will keep the logical layout for all keyboards, including
+the laptop keyboard.</p>
+
+<p>Some people retain their QWERTY touch typing skills while learning an
+alternative layout by associating logical layout with physical keyboard, e.g.,
+typing Colemak on the Advantage and QWERTY on standard keyboards. And I did
+actually get the Advantage the same year I switched to Colemak, but I much
+prefer typing Colemak on my laptop while traveling to maintaining my QWERTY
+skills.</p>
+
+<a name="Legends"></a>
+<h2>Legends</h2>
+
+<p>It&rsquo;s not really necessary have Colemak legends on the keys, but I did get a set
+of custom keycaps made by <a href="http://www.wasdkeyboards.com/">WASD keyboards</a> for one of my two Advantages
+&mdash; complete with my Danish variation of Colemak &mdash; as shown in the images
+above and below. It&rsquo;s mostly for show, because the legends are not necessary
+for touch typing, and the Advantage is not so good anyway for one-handed use
+where the legends might be relevant.</p>
+
+<p>In fact, hunt-and-peck typing is for some reason easier for me with QWERTY
+legends, even while I type Colemak. My eyes are more used to the common QWERTY
+layout, I guess. I just know that pressing the QWERTY &rsquo;T&#8217; key produces a &lsquo;G&rsquo; in
+Colemak. If I look down and the key shows a &lsquo;G&rsquo;, my eyes get confused, even
+though my fingers knows exactly where to press to get the &lsquo;G&rsquo; while touch
+typing.</p>
+
+<p><img src="/images/posts/kinesis_advantage_custom_keycaps_left.jpg"></p>
+
+<a name="Downsides"></a>
+<h2>Downsides</h2>
+
+<p>The Advantage is not great for everything. Split keyboards are not good for the
+occational one-handed use (e.g., while holding a drink, phone, piece of paper).</p>
+
+<p>The Advantage is not the best for gaming either. The arrow keys are spread on
+both sides of the split which is fine for two-handed office and programming
+use, but not ideal for gaming. The key positions are matched to finger lengths,
+so the WASD keys will not work well with the normal WASD-fingers. ESDF should
+be perfect, though.</p>
+
+<p>For a long time, the typical complaint of the Advantage was the low quality of
+the rubber F-keys. In 2016, the Advantage2 was launched, with Cherry ML
+switches instead of rubber dome F-keys, and more programming options. (This is
+the product I link to in the top of the post because the product page for the
+old version seems to be gone.)</p>
+
+<p>Another problem partially solved by time is the built-in combined USB hub and
+PS/2-to-USB converter. It &mdash; and the whole keyboard with it &mdash; didn&rsquo;t work
+with Windows 7. Kinesis did sell a cable conversion kit to work around this,
+but I went DIY and installed a PS/2-to-USB adapter myself, bypassing the
+problematic USB hub, on my &ldquo;work&rdquo; board.</p>
+
+<p>My &ldquo;home&rdquo; board always worked fine with Linux (and Windows 10), but it&rsquo;s also
+not recognized by the BIOS of my desktop computer&rsquo;s motherboard. A smaller
+problem but I&rsquo;m considering giving this board a USB hubectomy as well. The
+Advantage2 has supposedly also solved this problem.</p>
+
+<p>There are a few problems with the Advantage, but they are minor compared to the
+Advantage (heh) of using an extremely comfortable keyboard for my 10+ daily
+hours of computer usage.</p>
+
+<a name="Key.Remapping"></a>
+<h2>Key Remapping</h2>
+
+<p>My remaining complaints were solved with easy firmware remapping, which is in
+fact just a testament of the Advantage&rsquo;s flexibility:</p>
+
+<ul>
+<li>I swapped Space and Backspace because I have for some reason always used my
+left hand&rsquo;s thumb for Space.</li>
+<li>I use the Alt+Tab shortcut all the time, so I moved the Alt key closer to my
+thumb in the left thumb cluster.</li>
+<li>I made the key above Tab work as an Escape key.</li>
+<li>I made the key below Tab work as a Control key because that&rsquo;s how control
+freaks control.</li>
+<li>I put Down to the left of Up because that&rsquo;s how Vim users roll.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[4 Years with Colemak]]></title>
@@ -258,9 +418,11 @@ from your .vimrc to try it out.</p>
 Especially if it has a <a href="http://deskthority.net/wiki/Staggering#Matrix_layout">columnar or matrix</a> key layout.
 Then it might even be better for comfort than switching layout.
 The two approaches can also be combined.
-That&rsquo;s what I do, but more on that later.</p>
+That&rsquo;s what I do, but more on that later. (<a href="/2018/04/14/my-weird-keyboard/">Link!</a>)</p>
 
 <p>Thanks for reading!</p>
+
+<p><em>Update 2018-04-14: Added link to my Kinesis Advantage post.</em></p>
 
 <p></p>
 
