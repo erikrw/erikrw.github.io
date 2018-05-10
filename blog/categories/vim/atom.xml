@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-04-14T16:59:39+02:00</updated>
+  <updated>2018-05-10T17:14:04+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -480,7 +480,8 @@ actions.</p>
 <a name="L....or.Speak.Like.Yoda"></a>
 <h2>&hellip; or Speak Like Yoda</h2>
 
-<p><span class='caption-wrapper'><img class='caption' src='http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg">http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg</a>&#8217; width=&#8217;382&#8217; height=&#8217;346&#8217; alt=&#8217;<a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>&#8217;><span class='caption-text'><a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span></p>
+<p><span class='caption-wrapper'><img class='caption' src='http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg">http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg</a>&#8217; width=&#8217;382&#8217; height=&#8217;346&#8217; alt=&#8217;<a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>&#8217;><span class='caption-text'><a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span>
+</p>
 
 <p>To explain visual mode, we will first pay the 1970s
 a brief visit.  In vi, &ldquo;visual mode&rdquo; was a mode that was &ldquo;more visual&rdquo; than the
