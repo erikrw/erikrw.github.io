@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ubiquitous Language Problems - Erik Ramsgaard Wognsen</title>
+  <meta name="author" content="Erik Ramsgaard Wognsen">
+
+  
+  <meta name="description" content="Language is tricky. Take the this post, for instance. It&rsquo;s not about language
+problems that are ubiquitous. It&rsquo;s about problems related &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.erw.dk/2018/06/17/ubiquitous-language-problems">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+<script>
+if (document.location.hostname != "127.0.0.1") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55985488-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
+  
+    <h2>Thoughts & technology</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.erw.dk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ubiquitous Language Problems</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-06-17T12:38:16+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Language is tricky. Take the this post, for instance. It&rsquo;s not about language
+problems that are ubiquitous. It&rsquo;s about problems related to <em>Ubiquitous
+Language</em> &mdash; whether the problems themselves are ubiquitous or not.</p>
+
+<p>Ubiquitous Language is a term from the <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design</a> software
+development practice. It refers to a set of well-defined project terms shared
+by all participants: <a href="https://en.wikipedia.org/wiki/Subject-matter_expert">Domain experts</a>, business analysts, developers,
+users. The term was coined by Eric Evans in his <a href="http://dddcommunity.org/book/evans_2003/">DDD book</a>. I haven&rsquo;t
+actually read it, but the idea seems sensible: If developers live and breathe
+the domain by speaking its language, their output is more likely to fit the
+business needs, and developers and domain experts are more likely to understand
+one another.</p>
+
+<p>As a business analyst and developer, your task is to adopt the language of the
+domain experts, <em>not</em> the other way around. But that doesn&rsquo;t mean that the
+domain experts are home free. Changes are probably required to turn their
+jargon into a well-defined set of terms that will ensure precise and
+unambiguous communication in the project and to the users. Here are some of the
+challenges I&rsquo;ve encountered in this process.</p>
+
+<!-- more -->
+
+
+<a name="Two.Words..One.Concept"></a>
+<h2>Two Words, One Concept</h2>
+
+<p>One problem is that people may use different words for the same concept. It is
+preferable to use one word per concept, because it will simplify design
+discussions and remove confusion arising from the possibility that the words
+<em>could</em> have different meanings. The code and the user interface will also be
+much easier to understand for developers and users, respectively, if a concept
+always has the same name.</p>
+
+<p>As an example, different project participants use the terms User and Employee.
+If the business or system has only employees as users, either word is fine.
+Picking one over the other risks having a winner and a loser in the process.
+Sometimes finding a third term can be a good move, politically or socially.
+Perhaps the term Account can cover the concept and satisfy both parties.</p>
+
+<p>Other times, it turns out that the terms actually have different meanings.
+Maybe not all users are employees or not all employees are users. In this case,
+both terms can stay in the vocabulary, and their exact relationship will have
+to be uncovered.</p>
+
+<a name="One.Word..Two.Concepts"></a>
+<h2>One Word, Two Concepts</h2>
+
+<p>Another problem is that the same word may be used for different concepts.
+Sometimes by different people, sometimes even by the same people. Take the term
+Account from the previous section. There, it was taken to mean a user account.
+But Account could also mean a bank account, or a even a client (one managed by
+an account manager).</p>
+
+<p>If the main business domain (such as banking, accounting, customer relationship
+management) already has a specific interpretation of the term, the other
+meanings should probably find other names (such as Client, User Account, or
+Bank Account). I prefer avoiding partially overlapping terms, so if Account is
+already taken, User is better than User Account &mdash; unless User also has
+a meaning distinct from User Account.</p>
+
+<a name="Types.and.Instances"></a>
+<h2>Types and Instances</h2>
+
+<p>A specific version of the One Word, Two Concepts problem is when the same word
+is used about both instances and types. Perhaps the word Service is used about
+a service provided to a customer on a specific date and time (such as
+a haircut), but also about the type of service the company provides (such as
+a haircut). Or Product can mean both a product from the product catalog and
+a product in the context of a specific Order.</p>
+
+<p>For these examples, possible concept names could be Service and Service Type as
+well as Product and Order Product. It&rsquo;s a first step, but as easy as it is to
+add a prefix or suffix, as easy it drop it again in conversation. A better
+option is to choose names that don&rsquo;t have anything in common. An Order Product
+could be an Order Line (which is actually a well-known concept). A Service
+could be an Appointment, while the term Service refers to the type. Or perhaps
+Service stays in the appointment interpretation, and Service Type could be
+named Function.</p>
+
+<a name="Software.Development.as.Domain"></a>
+<h2>Software Development as Domain</h2>
+
+<p>Service and Function are not to be confused with what a software developer
+might understand by these terms. Software is a business domain on its own
+right, but unless the <em>project&rsquo;s</em> domain is software, developers should let the
+business domain take precedence.</p>
+
+<p>It might be necessary for developers to discuss technical design involving
+software terms that clash with the domain model (such as Class, Strategy,
+Factory, Visitor). It doesn&rsquo;t make sense to rename well-known concepts from the
+software domain, but unless the domain experts need to know about them, they
+shouldn&rsquo;t be part of the domain model, and so they should only be used
+internally between technical designers and developers.</p>
+
+<p>But even inside the software domain, I have observed the One Word, Two Concepts
+problem at work. The term Entity, itself used in DDD, can refer to both a type
+and an instance. Peter Chen, who introduced the
+<a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship Model</a>, used the term Entity to mean an instance of
+some <em>Entity Type</em>. What I mentioned earlier about dropping suffixes also
+applies here, and many people, myself included, use Entity in the type meaning.
+Ideally, the instance meaning is then referred to by a different word, such as
+Object.</p>
+
+<a name="Microsoft.Dynamics.CRM"></a>
+<h2>Microsoft Dynamics CRM</h2>
+
+<p>The Microsoft Dynamics Customer Relationship Management (CRM) software
+interests me in two ways in relation to DDD and ubiquitous language.
+Superficially, Microsoft CRM uses the terms Entity and Record in the above
+mentioned type and instance meanings, respectively. But then in the Danish
+translation of the software, they use the Danish word <em>objekt</em> &mdash; not
+<em>entitet</em> &mdash; as the translation of Entity. (In fact my colleague recently
+found out the whole system is translated by Bing!)</p>
+
+<p>Second, Microsoft CRM is somewhat anti-DDD in the sense that the built-in
+customer relationship management domain model can conflict with that of the
+user organization. It&rsquo;s possible to adapt the built-in data model with new
+entities, attributes, and relationships, and by renaming existing items. But
+the renaming only applies to the user interface, not the code and database.
+This forces developers to think in terms of the built-in model and to translate
+back and forth between that and the organization&rsquo;s domain, which is exactly the
+thing ubiquitous language tells you to avoid.</p>
+
+<a name="Multiple.Contexts"></a>
+<h2>Multiple Contexts</h2>
+
+<p>In this post I have been touching on the matching of words and concepts, both
+in general and in software development. In this, I have been simplifying by
+focusing on building a single ubiquitous language and domain model for
+a project. Part of DDD is acknowledging that a project can be too large for
+a single unified model, and instead of trying to make such a model, you should
+allow for multiple <a href="https://martinfowler.com/bliki/BoundedContext.html">bounded contexts</a> and instead make sure to define
+their boundaries and relationships. But inside each single context, make sure
+to use one word per concept.</p>
+
+<p>The more I think about it, the more I see that software development is itself
+far too large to be a single context. Words such as <em>prototype</em> or
+<em>implementation</em> have multiple meanings. A prototype can be a
+<a href="https://en.wikipedia.org/wiki/Software_prototyping">software product</a>, <a href="https://en.wikipedia.org/wiki/Function_prototype">function declaration</a>, or
+<a href="https://en.wikipedia.org/wiki/Prototype_pattern">cloneable object</a>. Programmers will understand <em>implementation</em> as the
+process of and result of turning the human readable design description into
+executable computer code. But implementation can also mean taking that same
+executable computer code &mdash; the software product &mdash; and embedding it
+successfully in the organization that is going to use it.</p>
+
+<p>So two things are important in achieving clear communication. First, make each
+context internally sound, and second, be aware of the existence of multiple
+contexts, especially when you are speaking with someone who normally thinks and
+works in another context from you.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2018-06-17T12:38:16+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'></span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2018/05/10/flying-in-the-front-row/" title="Previous Post: Flying in the Front Row">&laquo; Flying in the Front Row</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2018/06/17/ubiquitous-language-problems/">Ubiquitous Language Problems</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/05/10/flying-in-the-front-row/">Flying in the Front Row</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/04/14/my-weird-keyboard/">My Weird Keyboard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/02/25/what-roland-boutique-needs/">What Roland Boutique Needs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall/">AoC 2017 Day 8: Fell Into a Python Pitfall</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/gear/'>gear (4)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/music/'>music (3)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (2)</a></li><li><a href='/blog/categories/programming/'>programming (5)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  &copy; 2018 - Erik Ramsgaard Wognsen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'erwdk';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2018/06/17/ubiquitous-language-problems/';
+        var disqus_url = 'http://blog.erw.dk/2018/06/17/ubiquitous-language-problems/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
