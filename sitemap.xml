@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/</loc>
+    <lastmod>2018-07-28T12:23:29+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://blog.erw.dk/2018/06/17/ubiquitous-language-problems/</loc>
     <lastmod>2018-06-17T12:38:16+02:00</lastmod>
     <priority>0.8</priority>
@@ -142,31 +147,31 @@
   </url>
   <url>
     <loc>http://blog.erw.dk/404.html</loc>
-    <lastmod>2018-06-17T12:40:59+02:00</lastmod>
+    <lastmod>2018-07-28T12:27:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/archives/</loc>
-    <lastmod>2018-06-17T12:40:59+02:00</lastmod>
+    <lastmod>2018-07-28T12:27:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/</loc>
-    <lastmod>2018-06-17T12:40:59+02:00</lastmod>
+    <lastmod>2018-07-28T12:27:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/colemakdk/</loc>
-    <lastmod>2018-06-17T12:40:59+02:00</lastmod>
+    <lastmod>2018-07-28T12:27:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/contact/</loc>
-    <lastmod>2018-06-17T12:40:59+02:00</lastmod>
+    <lastmod>2018-07-28T12:27:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

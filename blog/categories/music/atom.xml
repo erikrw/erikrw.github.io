@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-06-17T12:40:59+02:00</updated>
+  <updated>2018-07-28T12:27:14+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Yousician "No tempo definitions found"]]></title>
+    <link href="http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/"/>
+    <updated>2018-07-28T12:23:29+02:00</updated>
+    <id>http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p><img class="right" src="/images/posts/yousician_no_tempo_definitions.png"></p>
+
+<p>This summer my girlfriend and I started practicing piano with <a href="https://yousician.com">Yousician</a>,
+which is a kind of gamified music tutor, that listens to your playing and gives
+instant feedback. It contains songs of gradually increasing difficulty, plus
+you can upload your own songs in the <a href="https://www.musicxml.com/">MusicXML</a> format.</p>
+
+<p>&ldquo;Adding songs is very easy&rdquo;, claims <a href="https://yousician.zendesk.com/hc/en-us/articles/207247365-What-is-MusicXML-file-and-how-to-upload-it">the documentation</a>, but at our
+first attempt we were met with this error message: <strong>&ldquo;No tempo definitions
+found. Please specify tempo in the file.&rdquo;</strong> Googling the error message gave no
+results at all, so hopefully this post will change that.</p>
+
+<!-- more -->
+
+
+<p><img class="left" src="/images/posts/musicxml_hello_world.gif"></p>
+
+<p>MusicXML is an interchange format with files typically generated or exported
+from <a href="https://en.wikipedia.org/wiki/Scorewriter">scorewriter programs</a>. But us being programmers, we looked
+to the XML itself to fix the problem. To find a
+<a href="https://en.wikipedia.org/wiki/Minimal_Working_Example">minimal working example</a>, we tried the
+<a href="https://www.musicxml.com/tutorial/hello-world/">MusicXML &ldquo;Hello World&rdquo;</a> example. Uploaded to Yousician, it gave the
+same error message about the tempo missing.</p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p>If you control the scorewriter generating the MusicXML file and it allows
+including tempo when you export, that should be the simple solution. Otherwise,
+in the first <code>&lt;measure&gt;</code> element, add <code>&lt;sound tempo="120"/&gt;</code> with your desired
+tempo in BPM:</p>
+
+<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!DOCTYPE score-partwise PUBLIC
+    "-//Recordare//DTD MusicXML 3.1 Partwise//EN"
+    "http://www.musicxml.org/dtds/partwise.dtd"&gt;
+&lt;score-partwise version="3.1"&gt;
+  &lt;part-list&gt; ... &lt;/part-list&gt;
+  &lt;part id="P1"&gt;
+    &lt;measure number="1"&gt;
+      &lt;sound tempo="120"/&gt;  &lt;!-- ADD THIS ELEMENT --&gt;
+      &lt;attributes&gt; ... &lt;/attributes&gt;
+      &lt;note&gt; ... &lt;/note&gt;
+      ...
+</code></pre>
+
+<a name="Details"></a>
+<h2>Details</h2>
+
+<p>I don&rsquo;t think Yousician complies completely with the MusicXML standard.
+Two things from the documentation of the <a href="https://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-sound.htm">sound element</a>:</p>
+
+<ul>
+<li>The sound element [&hellip;] can stand alone within a part/measure [&hellip;]</li>
+<li>If [the tempo is] 0, the sound-generating program should prompt the user at
+the time of compiling a sound (MIDI) file.</li>
+</ul>
+
+
+<p>Yousician doesn&rsquo;t recognize a sound element in a part, only in a measure.
+Second, if we see Yousician as a &ldquo;sound-generating program&rdquo; (it can play the
+uploaded piece as a practice help, as well as play accompaniments), then it
+doesn&rsquo;t satisfy the second part either. Tempo 0 will result in the message
+&ldquo;Unfortunately something went wrong with file import.&rdquo; It would be better if it
+prompted the user for a tempo, in case of both 0 and missing tempo.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What Roland Boutique Needs]]></title>

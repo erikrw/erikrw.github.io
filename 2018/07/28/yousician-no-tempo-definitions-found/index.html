@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Yousician &#8220;No tempo definitions found&#8221; - Erik Ramsgaard Wognsen</title>
+  <meta name="author" content="Erik Ramsgaard Wognsen">
+
+  
+  <meta name="description" content="This summer my girlfriend and I started practicing piano with Yousician,
+which is a kind of gamified music tutor, that listens to your playing and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+<script>
+if (document.location.hostname != "127.0.0.1") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55985488-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
+  
+    <h2>Thoughts & technology</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.erw.dk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Yousician &#8220;No tempo definitions found&#8221;</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-07-28T12:23:29+02:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="right" src="/images/posts/yousician_no_tempo_definitions.png"></p>
+
+<p>This summer my girlfriend and I started practicing piano with <a href="https://yousician.com">Yousician</a>,
+which is a kind of gamified music tutor, that listens to your playing and gives
+instant feedback. It contains songs of gradually increasing difficulty, plus
+you can upload your own songs in the <a href="https://www.musicxml.com/">MusicXML</a> format.</p>
+
+<p>&ldquo;Adding songs is very easy&rdquo;, claims <a href="https://yousician.zendesk.com/hc/en-us/articles/207247365-What-is-MusicXML-file-and-how-to-upload-it">the documentation</a>, but at our
+first attempt we were met with this error message: <strong>&ldquo;No tempo definitions
+found. Please specify tempo in the file.&rdquo;</strong> Googling the error message gave no
+results at all, so hopefully this post will change that.</p>
+
+<!-- more -->
+
+
+<p><img class="left" src="/images/posts/musicxml_hello_world.gif"></p>
+
+<p>MusicXML is an interchange format with files typically generated or exported
+from <a href="https://en.wikipedia.org/wiki/Scorewriter">scorewriter programs</a>. But us being programmers, we looked
+to the XML itself to fix the problem. To find a
+<a href="https://en.wikipedia.org/wiki/Minimal_Working_Example">minimal working example</a>, we tried the
+<a href="https://www.musicxml.com/tutorial/hello-world/">MusicXML &ldquo;Hello World&rdquo;</a> example. Uploaded to Yousician, it gave the
+same error message about the tempo missing.</p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p>If you control the scorewriter generating the MusicXML file and it allows
+including tempo when you export, that should be the simple solution. Otherwise,
+in the first <code>&lt;measure&gt;</code> element, add <code>&lt;sound tempo="120"/&gt;</code> with your desired
+tempo in BPM:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;</span>
+</span><span class='line'><span class="cp">&lt;!DOCTYPE score-partwise PUBLIC</span>
+</span><span class='line'><span class="cp">    &quot;-//Recordare//DTD MusicXML 3.1 Partwise//EN&quot;</span>
+</span><span class='line'><span class="cp">    &quot;http://www.musicxml.org/dtds/partwise.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;score-partwise</span> <span class="na">version=</span><span class="s">&quot;3.1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;part-list&gt;</span> ... <span class="nt">&lt;/part-list&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;part</span> <span class="na">id=</span><span class="s">&quot;P1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;measure</span> <span class="na">number=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;sound</span> <span class="na">tempo=</span><span class="s">&quot;120&quot;</span><span class="nt">/&gt;</span>  <span class="c">&lt;!-- ADD THIS ELEMENT --&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;attributes&gt;</span> ... <span class="nt">&lt;/attributes&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;note&gt;</span> ... <span class="nt">&lt;/note&gt;</span>
+</span><span class='line'>      ...
+</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="Details"></a>
+<h2>Details</h2>
+
+<p>I don&rsquo;t think Yousician complies completely with the MusicXML standard.
+Two things from the documentation of the <a href="https://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-sound.htm">sound element</a>:</p>
+
+<ul>
+<li>The sound element [&hellip;] can stand alone within a part/measure [&hellip;]</li>
+<li>If [the tempo is] 0, the sound-generating program should prompt the user at
+the time of compiling a sound (MIDI) file.</li>
+</ul>
+
+
+<p>Yousician doesn&rsquo;t recognize a sound element in a part, only in a measure.
+Second, if we see Yousician as a &ldquo;sound-generating program&rdquo; (it can play the
+uploaded piece as a practice help, as well as play accompaniments), then it
+doesn&rsquo;t satisfy the second part either. Tempo 0 will result in the message
+&ldquo;Unfortunately something went wrong with file import.&rdquo; It would be better if it
+prompted the user for a tempo, in case of both 0 and missing tempo.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2018-07-28T12:23:29+02:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'></span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/music/'>music</a>, <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2018/06/17/ubiquitous-language-problems/" title="Previous Post: Ubiquitous Language Problems">&laquo; Ubiquitous Language Problems</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2018/07/28/yousician-no-tempo-definitions-found/">Yousician &#8220;No tempo definitions found&#8221;</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/06/17/ubiquitous-language-problems/">Ubiquitous Language Problems</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/05/10/flying-in-the-front-row/">Flying in the Front Row</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/04/14/my-weird-keyboard/">My Weird Keyboard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/02/25/what-roland-boutique-needs/">What Roland Boutique Needs</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/gear/'>gear (4)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/music/'>music (4)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (2)</a></li><li><a href='/blog/categories/programming/'>programming (6)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  &copy; 2018 - Erik Ramsgaard Wognsen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'erwdk';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/';
+        var disqus_url = 'http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
