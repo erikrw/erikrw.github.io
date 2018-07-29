@@ -4,7 +4,7 @@
   <title><![CDATA[Category: productivity | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/productivity/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-07-28T12:35:07+02:00</updated>
+  <updated>2018-07-29T11:46:33+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,153 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using a Calendar as a To-Do List]]></title>
+    <link href="http://blog.erw.dk/2018/07/29/using-a-calendar-as-a-to-do-list/"/>
+    <updated>2018-07-29T11:45:42+02:00</updated>
+    <id>http://blog.erw.dk/2018/07/29/using-a-calendar-as-a-to-do-list</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper'><img class='caption' src='https://c1.staticflickr.com/9/8679/16294164331_ea66ce297d_b.jpg">https://c1.staticflickr.com/9/8679/16294164331_ea66ce297d_b.jpg</a>&#8217; width=&#8217;450&#8217; height=&#8217;0&#8217; alt=&#8217;<a href="https://www.flickr.com/photos/billward/16294164331">Improved LEGO Calendar Front</a> by <a href="https://www.flickr.com/photos/billward/">Bill Ward</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY 2.0</a>&#8217;><span class='caption-text'><a href="https://www.flickr.com/photos/billward/16294164331">Improved LEGO Calendar Front</a> by <a href="https://www.flickr.com/photos/billward/">Bill Ward</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY 2.0</a></span></span>
+</p>
+
+<p>Writing a to-do list is a useful way to create an overview of your tasks at
+work, school, or home. But to-do lists sometimes grow faster than you check the
+items off, and a long to-do list can drain your motivation rather than focus
+it. I found a practical way to keep my to-do list short and useful: Use
+a calendar.</p>
+
+<!-- more -->
+
+
+<a name="The.Problem.With.To-Do.Lists"></a>
+<h2>The Problem With To-Do Lists</h2>
+
+<p></p>
+
+<p>Often, there&rsquo;s simply not enough time to do all the stuff we want to do. If you
+keep a list of your tasks, checking off and adding items over time, then you
+will probably have seen your list grow longer and longer, unless you are very
+realistic about the kinds of tasks you plan to do.</p>
+
+<p>As the list grows longer, it becomes less useful. The many items distract you
+from what is actually important, and checking off items feels like emptying the
+ocean with a spoon. After some time you are more likely to start a new list
+than to keep using the old one. And this is okay if it helps you get things
+done that you care about. But it won&rsquo;t be long before the new list is also long
+and &ldquo;icky&rdquo;.</p>
+
+<p>I think it&rsquo;s normal to wish to get more stuff done than what you have time for,
+but the cycle of starting and discarding to-do lists is not very productive.
+It&rsquo;s mainly useful at the start of each cycle when the list is short. I found
+that a practical way to <em>keep</em> my to-do list short (apart from having more
+hours in a day) is to put it in my calendar.</p>
+
+<a name="Using.a.Calendar"></a>
+<h2>Using a Calendar</h2>
+
+<p></p>
+
+<p>By using a calendar, I mean that each task you write down should have
+a specific date, time, and duration, and live among your &ldquo;normal&rdquo; appointments
+and events. This helps you move from the abstract to-do list world where you
+have all the time you need, to the real world where you have to be at least
+a bit realistic about when you can start a task, and how much time you can
+allot to it.</p>
+
+<p>Considering the time something takes also forces you to be more specific about
+what you are actually planning to do &mdash; which is the part you should write
+down in the calendar! A concrete task description is much more likely to spur
+you into action later. Vague, abstract goals are a major cause of
+procrastination &mdash; whether you use a calendar or not.</p>
+
+<p>Interruptions and a base level of unscheduled activities are likely both at
+work and at home, so I leave time for these when I set the event duration.
+I especially use the system at home where I also want to relax after work in
+the evenings and weekends, so there my time estimation is very loose. I might
+fill a small ten minute task into a one- or two-hour slot. My goal is not to do
+focused work in all of the calendar event&rsquo;s duration. Instead, the goal is to
+fill my calendar with no more tasks than I will realistically do in a day or
+evening. Each day thus contains a <em>short to-do list</em>.</p>
+
+<p></p>
+
+<a name="The.Passage.of.Time"></a>
+<h2>The Passage of Time</h2>
+
+<p></p>
+
+<p>If you overestimate your own capacity to perform tasks stuffing too much into
+a single day, there will be undone tasks. This is another critical point where
+a calendar separates itself from a regular old to-do list. An undone item in
+a to-do list stays there, as a future activity. An undone item in a calendar
+lies in the past where you will probably forget about it. This is a feature,
+not a bug!</p>
+
+<p>If you did not have time to perform a task, you can reschedule it to a less
+burdened day. If the task is important to you, you are also likely to remember
+to reschedule it immediately.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/google_calendar_todo.png' width='' height='' alt='Google Calendar trying to be helpful.'><span class='caption-text'>Google Calendar trying to be helpful.</span></span></p>
+
+<p>But often, &ldquo;not having time&rdquo; simply means not caring enough, and in that case,
+it&rsquo;s also likely that you will even forget to reschedule the task, which is
+good because it prevents that unimportant task from clogging up your future
+to-do lists/days.</p>
+
+<p>While tasks may be unimportant from their inception, others become obsolete
+because an alternate solution to the problem was found or because of changing
+priorities. Sometimes you will reschedule a task multiple times before
+realizing that it is not important enough to keep. Or perhaps you will finally
+do the task after seven reschedulings, because you eventually had more time or
+willpower. The system adapts to your capacity over time.</p>
+
+<p>The way that a regular to-do list keeps all undone tasks is the cause of long,
+icky lists. Requiring a manual action to keep an undone task highlights the
+absurdity of indefinite postponement. (Indefinitely rescheduling a few tasks is
+certainly possible, but as you try to do it with more and more tasks, the extra
+work of rescheduling should remind you that this is not a sustainable
+solution.)</p>
+
+<p>Any calendar should do the trick; I use Google Calendar. But sometimes when
+I add a new event that sounds like a to-do, it suggests converting it to one
+instead of creating an event. This is a disservice. I <em>do</em> want the passage of
+time to clean up the stuff I&rsquo;m never going to get done anyway.</p>
+
+<p></p>
+
+<a name="What.is.Important."></a>
+<h2>What is Important?</h2>
+
+<p>In the previous section I say that importance influences what you get done and
+what you should reschedule. What is important is of course up to you. But why
+do we even have unimportant tasks? I don&rsquo;t think it should be seen as an
+either-or. Instead, it depends on how much time and energy we have available.</p>
+
+<p>In my case, I have many ideas for small home improvements and hobby projects
+that the dreaming part of me wants to do but the actual me doesn&rsquo;t feel like
+doing. It&rsquo;s not that I strictly don&rsquo;t have time, it&rsquo;s just that I would rather
+be doing something else. So they are not actually important. Buying someone
+a birthday present or doing my taxes would be important.</p>
+
+<p>Some tasks are given to you by other people, perhaps especially at work. Does
+that mean that they are important? Some of them of course, but not necessarily
+all of them. Just like the tasks you set for yourself, tasks given by someone
+else can also fall in the nice-to-have category. Or they are &ldquo;important&rdquo; to
+your boss, but there are fifty things that are even more important. Other
+times, the important thing is the goal, and reaching the goal through steps
+X-Y-Z can make steps A-B-C obsolete. (Remember, a to-do list should contain
+<em>doable</em> tasks, not goals.)</p>
+
+<p>A classic distinction in time management and productivity is between
+<a href="http://observer.com/2017/03/urgent-vs-important-the-simplest-way-to-stay-productive-and-do-the-right-work/">urgent and important</a> tasks. By using the calendar I do not mean
+you should focus on time and urgency over importance. The only goal is to keep
+your daily to-do list short enough as to boost motivation rather than drain it.
+As with a regular to-do list, it&rsquo;s up to you to figure out what is important in
+your life.</p>
+
+<p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Work Helps Me Beat Procrastination]]></title>
