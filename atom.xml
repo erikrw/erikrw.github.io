@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-07-29T11:46:33+02:00</updated>
+  <updated>2018-11-06T08:48:02+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,178 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android 9 Impressions]]></title>
+    <link href="http://blog.erw.dk/2018/11/06/android-9-impressions/"/>
+    <updated>2018-11-06T08:43:18+01:00</updated>
+    <id>http://blog.erw.dk/2018/11/06/android-9-impressions</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://blog.erw.dk/images/posts/android9_homescreen.png"></p>
+
+<p>Last year I got the <a href="http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions/">Google Pixel 2</a> smartphone to try the pure Android
+experience. It took a bit of time to get used to but I have come to appreciate
+its simplicity and cleanness. But the main purpose was getting OS updates
+directly from Google, without waiting for the OEMs. Besides monthly security
+updates, the new Android 9 came in August. Here are my impressions after two
+months, including Gesture Navigation, the Overview, Adaptive Battery, and
+Digital Wellbeing, as well as my thoughts on the Pixel 2 after a year.</p>
+
+<!-- more -->
+
+
+<a name="Pixel.2.a.Year.Later"></a>
+<h2>Pixel 2 a Year Later</h2>
+
+<p>The two things I initially liked best about the Pixel 2 are still the best: The
+speed and the screen. The speed and responsiveness of the device is still
+amazing one year and OS update later. This is what using a computer &mdash; because
+a smartphone is a computer &mdash; in 2018 should feel like. (Running Windows 10
+a laptop does, incidentally, not feel like 2018.)</p>
+
+<p>The brightness range of the screen is also still great. Not perfect, but
+I certainly find myself needing <a href="https://play.google.com/store/apps/details?id=com.haxor">Screen Filter</a> less often than
+before I got an OLED screen. The always-on screen feature that shows the time
+and notifications when the screen is &ldquo;off&rdquo; was also neat at first, but I&rsquo;ve
+since grown so accustomed to it that a device that doesn&rsquo;t have it now feels
+antiquated. Similarly, the fingerprint sensor on the back was ok at first but
+now makes the phone feel like a natural extension of my hand
+(<a href="https://www.theguardian.com/society/shortcuts/2018/oct/30/get-a-grip-are-smartphones-ruining-our-manual-dexterity">for better or worse</a>).
+And unlike the <a href="https://youtu.be/hrHf6XQpmk0?t=94">in-screen fingerprint sensor</a> of the new OnePlus 6T, the
+traditional sensor does not blind you with its bright light at night.</p>
+
+<p>The camera and speakers are still great, and I can still get through the day
+with battery left to spare. To mention a few negatives, the volume rocker is
+still too stiff, and I&rsquo;ve disabled the Active Edge squeeze feature completely
+as it was more likely to be activated accidentally than when I actually needed
+it.</p>
+
+<a name="Android.9"></a>
+<h2>Android 9</h2>
+
+<p>Android 9 was released in August. Installing the update was extremely fast,
+just like booting up the Pixel 2 was when I first turned it on a year ago.
+Again, this feels like 2018. Other improvements made me wonder why they weren&rsquo;t
+made sooner. The sound volume control now defaults to controlling media volume
+instead of ringer volume, also when no media is playing. Now you can lower the
+volume <em>before</em> your embarrassing video starts playing. Simple yet great.</p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='http://blog.erw.dk/images/posts/android9_rotate_button.png' width='497' height='138' alt='The rotate button works with and without gesture navigation enabled.'><span class='caption-text'>The rotate button works with and without gesture navigation enabled.</span></span></p>
+
+<p>Another such feature is the screen rotation button. I prefer having screen
+auto-rotate disabled so I can keep reading while lying on my side in bed or in
+the sofa. But for the few times I did want the screen to rotate, it was
+annoying to have to enable the auto-rotate feature and then disable it later
+after use. Now in Android 9, if auto-rotate is disabled but the phone senses
+it&rsquo;s been rotated, a little rotate button appears that let&rsquo;s you rotate the
+screen, once, without messing with the general auto-rotate setting. If you
+ignore it, the button goes away after some seconds. Made me wonder why this
+wasn&rsquo;t built in many years ago.</p>
+
+<a name="App.Switching.and.Overview"></a>
+<h2>App Switching and Overview</h2>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/android9_overview.png' width='' height='' alt='The Overview/app switching screen of Android 9'><span class='caption-text'>The Overview/app switching screen of Android 9</span></span></p>
+
+<p>As seen in the picture with the rotate button above, there are now two
+different ways to navigate around Android 9. The new gesture navigation with
+the &ldquo;pill&rdquo; button, as well as the traditional navigation bar.</p>
+
+<p>In the traditional mode, the &ldquo;Overview button&rdquo; (the square) opens the Overview
+where you can see recently used apps and switch to them. A second press of the
+Overview button switches to the next most recently used app. This can be done
+quickly, i.e., double tapping the Overview button to switch to the next most
+recently used app.</p>
+
+<p>Using gesture navigation, swiping up from the pill (or in fact anywhere on the
+bottom of the screen) opens the Overview, while instead dragging the pill to
+the right scrolls through recently used apps until you release it.</p>
+
+<p>The Overview mode, besides app switching, lets you select and copy text, even
+from apps that don&rsquo;t allow this during normal usage, which is a great feature.
+It&rsquo;s also from the Overview that apps can be sent to split screen mode.</p>
+
+<a name="To.Gesture.or.Not.to.Gesture"></a>
+<h2>To Gesture or Not to Gesture</h2>
+
+<p>Since I got the Pixel 2 last year, I have loved double tapping the Overview
+button, so it was not like I desperately wanted a different way of navigating.
+Happily, upgrading to Android 9 didn&rsquo;t force the switch to the new gesture
+navigation. In fact, I had to enable it myself, by activating the &ldquo;Swipe up on
+Home button&rdquo; gesture.</p>
+
+<p>Swiping up is very smooth, and while you do it, the active app shrinks down to
+the rectangle/preview shown in the Overview. If you continue swiping up, the
+app drawer opens. In the Overview you can scroll sideways between the previews,
+and to select one, you can tap it, or swipe it back down and out to full
+screen. This part works well.</p>
+
+<p>The sideways drag feature is a mixed bag. It&rsquo;s good for switching to the
+previous app with a short, quick sideways swipe &mdash; even simpler than the old
+double tap. If you hold and drag further, the sideways scroll snaps to each app
+with satisfying haptic feedback, which is even better than the regular
+Overview. But. The problem with the sideways drag is that in one-handed
+operation, it invariably leads your thumb into an uncomfortable position.</p>
+
+<p>This is why I prefer the short sideways swipe for the previous app and swiping
+up to the Overview if I want to go further back. But this leads to a mental
+overhead: Now I stop and think before gesturing. The old Overview button didn&rsquo;t
+have this problem: Every switch starts with a press of the button. Gesture
+navigation <em>looks</em> fancy, but I have to say my thumb prefers the old way.</p>
+
+<a name="Adaptive.Battery"></a>
+<h2>Adaptive Battery</h2>
+
+<p><img class="left" src="http://blog.erw.dk/images/posts/android9_adaptive_battery.png"></p>
+
+<p>According to android.com, &ldquo;Adaptive Battery learns how you like to use your
+phone, so the apps and services you don&rsquo;t use as much aren&rsquo;t a battery drain&rdquo;.
+Unlike gesture navigation, this feature was enabled automatically when
+I upgraded.</p>
+
+<p>When I travel for work, I book a taxi to the airport ahead of time, and in the
+early morning on my travel day, the app notifies me when the taxi is ready to
+pick me up. Except this didn&rsquo;t happen after I had upgraded to Android 9. In the
+same vein, the airline app notifies me when the online check-in opens. Didn&rsquo;t
+happen either. So mine and Android&rsquo;s ideas of &ldquo;using an app&rdquo; are not the same.
+I also use the Dropbox app to upload my photos in the background &mdash; also
+delayed from the &ldquo;optimization&rdquo;. Luckily, you can stop individual apps from
+being optimized. On the other hand, I guess this feature also optimizes tons of
+apps that I don&rsquo;t need to run in the background. So it&rsquo;s probably fine after
+you have set up your exclusions.</p>
+
+<a name="Digital.Wellbeing"></a>
+<h2>Digital Wellbeing</h2>
+
+<p><img class="right" src="http://blog.erw.dk/images/posts/android9_digital_wellbeing.png"></p>
+
+<p>Finally, Android 9 brings the <a href="https://wellbeing.google/">Digital Wellbeing</a> feature which shows you
+how much you use your smartphone, and offers you ways to reduce interruptions
+and screen time.</p>
+
+<p>It&rsquo;s interesting to see how much I use my smartphone. The picture to the right
+is from one of the aforementioned travel days, which brings my usage a bit
+higher than usual. But besides the statistics I don&rsquo;t feel that the feature
+brings me much. It helps reduce the number of notifications, but I have already
+disabled the most nagging notifications myself, including all email
+notifications (try it, it&rsquo;s great for your sanity).</p>
+
+<p>It allows you to set time limits for app use, but I have already uninstalled my
+time wasters such as the Facebook app. The &ldquo;Wind Down&rdquo; feature helps you go to
+bed by enabling Do Not Disturb mode and turning the screen grayscale. I already
+have DND and Night Light on a schedule. The grayscale mode is kinda cool, but
+I often end up disabling it to see what I&rsquo;m doing.</p>
+
+<p>I think Digital Wellbeing is a good idea, but I already knew that, it seems.
+But I could see how many people could benefit from easy access to all these
+settings to nudge them into reclaiming a bit of non-phone time.</p>
+
+<p>All in all, Android 9 feels like evolution rather than revolution, but that&rsquo;s
+fair. Smartphones themselves were a revolution that started only around ten
+years ago, even though they have now invaded our lives. But we might start
+seeing some bigger changes to the smartphone market already when next years
+<a href="https://www.gsmarena.com/samsung_teases_galaxy_f_foldable_phone_days_before_its_developers_conference-news-34061.php">folds around</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using a Calendar as a To-Do List]]></title>
@@ -556,7 +728,7 @@ the laptop keyboard.</p>
 alternative layout by associating logical layout with physical keyboard, e.g.,
 typing Colemak on the Advantage and QWERTY on standard keyboards. And I did
 actually get the Advantage the same year I switched to Colemak, but I much
-prefer typing Colemak on my laptop while traveling to maintaining my QWERTY
+prefer typing Colemak on my laptop while traveling over maintaining my QWERTY
 skills.</p>
 
 <a name="Legends"></a>
@@ -592,9 +764,10 @@ be perfect, though.</p>
 
 <p>For a long time, the typical complaint of the Advantage was the low quality of
 the rubber F-keys. In 2016, the Advantage2 was launched, with Cherry ML
-switches instead of rubber dome F-keys, and more programming options. (This is
+switches instead of rubber dome F-keys, and more programming options. This is
 the product I link to in the top of the post because the product page for the
-old version seems to be gone.)</p>
+old version seems to be gone. I haven&rsquo;t tried it, but I can only imagine it&rsquo;s
+an improvement.</p>
 
 <p>Another problem partially solved by time is the built-in combined USB hub and
 PS/2-to-USB converter. It &mdash; and the whole keyboard with it &mdash; didn&rsquo;t work
@@ -615,7 +788,7 @@ hours of computer usage.</p>
 <h2>Key Remapping</h2>
 
 <p>My remaining complaints were solved with easy firmware remapping, which is in
-fact just a testament of the Advantage&rsquo;s flexibility:</p>
+fact just a testament to the Advantage&rsquo;s flexibility:</p>
 
 <ul>
 <li>I swapped Space and Backspace because I have for some reason always used my
@@ -628,6 +801,8 @@ freaks control.</li>
 <li>I put Down to the left of Up because that&rsquo;s how Vim users roll.</li>
 </ul>
 
+
+<p><em>Update 2018-11-06: Minor clarifications.</em></p>
 ]]></content>
   </entry>
   
@@ -2653,281 +2828,6 @@ I got to appreciate the Fourier transform that I recently <a href="http://blog.e
 myself.</p>
 
 <p>My dear Casio, thanks for the ride.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Checks for Your Django Project]]></title>
-    <link href="http://blog.erw.dk/2015/06/06/checks-for-your-django-project/"/>
-    <updated>2015-06-06T13:42:14+02:00</updated>
-    <id>http://blog.erw.dk/2015/06/06/checks-for-your-django-project</id>
-    <content type="html"><![CDATA[<p>The <a href="https://www.djangoproject.com/">Django web framework</a> has a management
-command to <a href="https://docs.djangoproject.com/en/1.8/ref/checks/">check</a> your code for various problems. For
-example, it checks that your database <code>CharFields</code> define the <code>max_length</code>
-attribute, and that you have not set <code>DEBUG = True</code> in deployment. This is good
-for catching various mistakes in using the framework before the problem shows
-up in production. And for your own business logic, you have unit tests. But
-there are still many things to not mess up, and they are easy to forget if they
-are not incredibly easy to check. So I wrote a script to check every problem
-I could think of in one go.</p>
-
-<!-- more -->
-
-
-<p>First up is the unit tests. For this script I only want it to tell me anything
-if there is a problem, as is customary for unix programs. With verbosity 0 and
-<code>head -n -4</code> cutting off the last four lines with the test summary, only failed
-test cases are shown:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>./manage.py <span class="nb">test</span> -v <span class="m">0</span> --noinput 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Alternatively, you can run them with a code coverage check. Here, failed tests
-are shown and the total code coverage is shown if it is below 50%:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>coverage run --branch --source<span class="o">=</span><span class="s1">&#39;.&#39;</span> --omit<span class="o">=</span><span class="s1">&#39;*/migrations/*,*test*,*settings*&#39;</span> <span class="se">\</span>
-</span><span class='line'>    manage.py <span class="nb">test</span> -v <span class="m">0</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
-</span><span class='line'>coverage report --fail-under<span class="o">=</span><span class="m">50</span> &gt;/dev/null <span class="o">||</span> coverage report <span class="p">|</span> sed -n <span class="s1">&#39;1p;$p&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The first of the &ldquo;hidden&rdquo; things that is easy to forget is changes to the data
-model that need to be migrated in the database. Unfortunately, the
-<code>makemigrations</code> management command doesn&rsquo;t have a usable exit status, but
-I work around that to only output text in case of problems:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span> <span class="s2">&quot;$(./manage.py makemigrations --dry-run)&quot;</span> !<span class="o">=</span> <span class="s2">&quot;No changes detected&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    ./manage.py makemigrations --dry-run <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I also run <a href="https://flake8.readthedocs.org/">flake8</a> which wraps the code style checker <a href="http://pep8.readthedocs.org/en/latest/intro.html">pep8</a>,
-the static error checker <a href="https://pypi.python.org/pypi/pyflakes">Pyflakes</a>, and, optionally,
-the <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity">code complexity</a> checker <a href="https://pypi.python.org/pypi/mccabe">mccabe</a>, if
-you give the flag <code>--max-complexity=10</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>flake8 . <span class="o">||</span> <span class="nb">echo</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<a name="Translation"></a>
-<h2>Translation</h2>
-
-<p>For a multilingual project, you must remember to scan for changes to
-translatable strings and also to translate them. The <code>makemessages</code> management
-command goes over the source and finds all strings marked for translation and
-makes or updates the translation &ldquo;portable object&rdquo;/PO file. So ideally, I could
-just run that command and see if there are any changes to the PO file.</p>
-
-<p>However, <code>makemessages</code> includes a timestamp for the generation of the file, so
-it is always different each time the command is run. On top of that, it can
-happen that the command finds the translatable strings in a different order
-even when the content of the strings didn&rsquo;t change (I think this happens
-between different version of Django).</p>
-
-<p>So, I compare the before and after versions of the PO file with the timestamps
-stripped out, and sorted such that ordering doesn&rsquo;t matter. This sorting trick
-will cause false negatives if two strings are swapped in the source code, but
-this seems unlikely and therefore preferable to getting false positives from
-<code>makemessages</code>&#x2019; inability to search the source in a consistent order.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po1
-</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>,_orig<span class="o">}</span>
-</span><span class='line'>cp locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
-</span><span class='line'>./manage.py makemessages -v <span class="m">0</span> -a --no-location --no-obsolete
-</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po2
-</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
-</span><span class='line'>diff &lt;<span class="o">(</span>sort __po1<span class="o">)</span> &lt;<span class="o">(</span>sort __po2<span class="o">)</span> &gt;/dev/null <span class="o">||</span> <span class="se">\</span>
-</span><span class='line'>    <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;=== Translation not up to date:&quot;</span> <span class="o">&amp;&amp;</span> diff __po1 __po2 <span class="o">||</span> <span class="nb">echo</span><span class="p">;</span> <span class="o">}</span>
-</span><span class='line'>rm __po1 __po2
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Before and after running <code>makemessages</code>, I backup the PO file and restore it,
-respectively. By doing this as <code>mv A B; cp B A; mv B A</code>, rather than just <code>cp
-A B; mv B A</code>, the file retains its inode. Thus, editors will not falsely see
-the file as changed outside the editor.</p>
-
-<p>Even if you had already run <code>makemessages</code>, you also had to translate the newly
-found strings. I check for both untranslated strings and unverified automatic
-translations. The former appear as <code>msgstr ""</code>, but not every <code>msgstr ""</code> means
-you forgot a translation; some of them just mark the beginning of a string
-spanning multiple lines. So I do some <code>sed</code> magic to find the real culprits:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>sed <span class="s1">&#39;$a\\&#39;</span> locale/da/LC_MESSAGES/django.po <span class="p">|</span> tac <span class="p">|</span> <span class="se">\</span>
-</span><span class='line'>    sed <span class="s1">&#39;/^$/N;/\nmsgstr &quot;&quot;$/,/^msgid/!d&#39;</span> <span class="p">|</span> tac
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>While scanning, if <code>makemessages</code> finds a string that is close to something you
-already translated, it will insert the existing translation and mark it as
-a &ldquo;fuzzy&rdquo; match, so you can check it and remove the fuzzy label when the
-translation is done. I find such unremoved &ldquo;fuzzy&rdquo; labels:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span> <span class="k">$(</span>grep -c <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po<span class="k">)</span> -gt <span class="m">1</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    <span class="nb">echo</span> <span class="s2">&quot;=== Fuzzy translation:&quot;</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    grep <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po -A2 <span class="p">|</span> tail -n +5 <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<a name="The.Full.Script"></a>
-<h2>The Full Script</h2>
-
-<p>With all the components of the script done, the whole script looks like this.
-I call it <code>ok.sh</code>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
-</span><span class='line'>coverage run --branch --source<span class="o">=</span><span class="s1">&#39;.&#39;</span> --omit<span class="o">=</span><span class="s1">&#39;*/migrations/*,*test*,*settings*&#39;</span> <span class="se">\</span>
-</span><span class='line'>    manage.py <span class="nb">test</span> -v <span class="m">0</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> head -n -4
-</span><span class='line'>coverage report --fail-under<span class="o">=</span><span class="m">50</span> &gt;/dev/null <span class="o">||</span> coverage report <span class="p">|</span> sed -n <span class="s1">&#39;1p;$p&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">[</span> <span class="s2">&quot;$(./manage.py makemigrations --dry-run)&quot;</span> !<span class="o">=</span> <span class="s2">&quot;No changes detected&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    ./manage.py makemigrations --dry-run <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span><span class='line'>
-</span><span class='line'>flake8 . <span class="o">||</span> <span class="nb">echo</span>
-</span><span class='line'>
-</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po1
-</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>,_orig<span class="o">}</span>
-</span><span class='line'>cp locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
-</span><span class='line'>./manage.py makemessages -v <span class="m">0</span> -a --no-location --no-obsolete
-</span><span class='line'>sed <span class="s1">&#39;/POT-Creation-Date/d&#39;</span> locale/da/LC_MESSAGES/django.po &gt; __po2
-</span><span class='line'>mv locale/da/LC_MESSAGES/django.po<span class="o">{</span>_orig,<span class="o">}</span>
-</span><span class='line'>diff &lt;<span class="o">(</span>sort __po1<span class="o">)</span> &lt;<span class="o">(</span>sort __po2<span class="o">)</span> &gt;/dev/null <span class="o">||</span> <span class="se">\</span>
-</span><span class='line'>    <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;=== Translation not up to date:&quot;</span> <span class="o">&amp;&amp;</span> diff __po1 __po2 <span class="o">||</span> <span class="nb">echo</span><span class="p">;</span> <span class="o">}</span>
-</span><span class='line'>rm __po1 __po2
-</span><span class='line'>
-</span><span class='line'>sed <span class="s1">&#39;$a\\&#39;</span> locale/da/LC_MESSAGES/django.po <span class="p">|</span> tac <span class="p">|</span> <span class="se">\</span>
-</span><span class='line'>    sed <span class="s1">&#39;/^$/N;/\nmsgstr &quot;&quot;$/,/^msgid/!d&#39;</span> <span class="p">|</span> tac
-</span><span class='line'>
-</span><span class='line'><span class="o">[</span> <span class="k">$(</span>grep -c <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po<span class="k">)</span> -gt <span class="m">1</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    <span class="nb">echo</span> <span class="s2">&quot;=== Fuzzy translation:&quot;</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>    grep <span class="s1">&#39;, fuzzy&#39;</span> locale/da/LC_MESSAGES/django.po -A2 <span class="p">|</span> tail -n +5 <span class="o">&amp;&amp;</span> <span class="nb">echo</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There is no explicit call to <code>./manage.py check</code> because it is called
-implicitly by the other management commands. An ideal run of the script
-produces no output, but if you made a lot of errors, it could look like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./ok.sh 
-</span><span class='line'>======================================================================
-</span><span class='line'>FAIL: test_basic_addition (docs.tests.SimpleTest)
-</span><span class='line'>----------------------------------------------------------------------
-</span><span class='line'>Traceback (most recent call last):
-</span><span class='line'>  File "/home/erw/hstareal/docs/tests.py", line 16, in test_basic_addition
-</span><span class='line'>    self.assertEqual(1 + 1, 3)
-</span><span class='line'>AssertionError: 2 != 3
-</span><span class='line'>
-</span><span class='line'>Migrations for 'requisitions':
-</span><span class='line'>  0002_auto_20150605_1757.py:
-</span><span class='line'>    - Alter field supplier_postcode on requisition
-</span><span class='line'>
-</span><span class='line'>./requisitions/models.py:123:80: E501 line too long (108 &gt; 79 characters)
-</span><span class='line'>./requisitions/admin.py:194:25: F821 undefined name 'messages'
-</span><span class='line'>./requisitions/admin.py:441:25: F821 undefined name 'messages'
-</span><span class='line'>
-</span><span class='line'>=== Translation not up to date:
-</span><span class='line'>1541c1541,1543
-</span><span class='line'>&lt; msgid "postcode"
-</span><span class='line'>---
-</span><span class='line'>&gt; #, fuzzy
-</span><span class='line'>&gt; #| msgid "postcode"
-</span><span class='line'>&gt; msgid "postal code"
-</span><span class='line'>
-</span><span class='line'>=== Fuzzy translation:
-</span><span class='line'>#, fuzzy
-</span><span class='line'>msgid "internal account type"
-</span><span class='line'>msgstr "interne kontotyper"
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, all that is required is to run this one script before committing. A CI
-server could of course be nice, but for a small project, this might be fine,
-and cheaper.</p>
-
-<p>One thing that is missing is to make the check in lines 18&ndash;19 of the script
-aware of untranslated strings that you don&rsquo;t need to translate in your own
-project, because they are covered in Django&rsquo;s own translation. For example, my
-404 page says &ldquo;Page not found&rdquo; which Django already knows how to translate into
-70+ languages. The script could also be generalized to process all locales &mdash;
-right now it is hardcoded for Danish.</p>
 ]]></content>
   </entry>
   

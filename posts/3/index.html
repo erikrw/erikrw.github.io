@@ -9,8 +9,9 @@
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="E is the most common letter in many European languages. In English it makes up
-12&ndash;13% of all letters written depending on source (see for &hellip;">
+  <meta name="description" content="The Django web framework has a management
+command to check your code for various problems. For
+example, it checks that your database CharFields &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +80,48 @@ if (document.location.hostname != "127.0.0.1") {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2015/06/06/checks-for-your-django-project/">Checks for Your Django Project</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-06-06T13:42:14+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="https://www.djangoproject.com/">Django web framework</a> has a management
+command to <a href="https://docs.djangoproject.com/en/1.8/ref/checks/">check</a> your code for various problems. For
+example, it checks that your database <code>CharFields</code> define the <code>max_length</code>
+attribute, and that you have not set <code>DEBUG = True</code> in deployment. This is good
+for catching various mistakes in using the framework before the problem shows
+up in production. And for your own business logic, you have unit tests. But
+there are still many things to not mess up, and they are easy to forget if they
+are not incredibly easy to check. So I wrote a script to check every problem
+I could think of in one go.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2015/06/06/checks-for-your-django-project/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -498,59 +541,9 @@ I hope to do a better job here of convincing you than I did with the woman in th
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2014/10/31/the-essence-of-vi/">The Essence of vi</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-31T09:49:46+01:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.vim.org/about.php">Vim</a> is a popular and widely distributed text editor improving on the
-legendary <a href="http://en.wikipedia.org/wiki/Vi">vi</a> from the late 1970s.  If you are reading this on Mac or
-Linux, chances are that Vim is already installed on your computer, included
-with your OS.  If you tried Vim and found it too strange to use, or if you use
-it but still harbor the idea that it was made by (or for!) aliens, you&rsquo;ve come
-to the right place!</p>
-
-<p>Vim is a very powerful tool, but often misunderstood.  There are plenty of
-tutorials that go through the basics, but they usually fail to paint the big
-picture.  <em>Why</em> the weird keyboard shortcuts, and the modes?  Why is it
-worthwhile to learn?  In this post I will try to answer these questions.  And
-I am pleased to say that the answer doesn&rsquo;t start with <em>h</em>, <em>j</em>, <em>k</em>, <em>l</em>, or
-<em>i</em>.</p>
-
-<p>Instead of the traditional bottom-up tutorial, this will be a top-down
-introduction, that uncovers the <em>essence of vi</em> and the almost poetic language
-you use to speak to Vim and vi.  It is my hope that reading it will make your
-time with Vim both more useful and more enjoyable.  I have myself enjoyed Vim
-since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2014/10/31/the-essence-of-vi/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/posts/4">&larr; Older</a>
     
     <a href="/archives">Blog Archives</a>
     
@@ -571,6 +564,10 @@ since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runt
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2018/11/06/android-9-impressions/">Android 9 Impressions</a>
+      </li>
+    
+      <li class="post">
         <a href="/2018/07/29/using-a-calendar-as-a-to-do-list/">Using a Calendar as a To-Do List</a>
       </li>
     
@@ -584,10 +581,6 @@ since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runt
     
       <li class="post">
         <a href="/2018/05/10/flying-in-the-front-row/">Flying in the Front Row</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2018/04/14/my-weird-keyboard/">My Weird Keyboard</a>
       </li>
     
   </ul>

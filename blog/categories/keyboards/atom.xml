@@ -4,7 +4,7 @@
   <title><![CDATA[Category: keyboards | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/keyboards/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-07-29T11:46:33+02:00</updated>
+  <updated>2018-11-06T08:48:02+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -98,7 +98,7 @@ the laptop keyboard.</p>
 alternative layout by associating logical layout with physical keyboard, e.g.,
 typing Colemak on the Advantage and QWERTY on standard keyboards. And I did
 actually get the Advantage the same year I switched to Colemak, but I much
-prefer typing Colemak on my laptop while traveling to maintaining my QWERTY
+prefer typing Colemak on my laptop while traveling over maintaining my QWERTY
 skills.</p>
 
 <a name="Legends"></a>
@@ -134,9 +134,10 @@ be perfect, though.</p>
 
 <p>For a long time, the typical complaint of the Advantage was the low quality of
 the rubber F-keys. In 2016, the Advantage2 was launched, with Cherry ML
-switches instead of rubber dome F-keys, and more programming options. (This is
+switches instead of rubber dome F-keys, and more programming options. This is
 the product I link to in the top of the post because the product page for the
-old version seems to be gone.)</p>
+old version seems to be gone. I haven&rsquo;t tried it, but I can only imagine it&rsquo;s
+an improvement.</p>
 
 <p>Another problem partially solved by time is the built-in combined USB hub and
 PS/2-to-USB converter. It &mdash; and the whole keyboard with it &mdash; didn&rsquo;t work
@@ -157,7 +158,7 @@ hours of computer usage.</p>
 <h2>Key Remapping</h2>
 
 <p>My remaining complaints were solved with easy firmware remapping, which is in
-fact just a testament of the Advantage&rsquo;s flexibility:</p>
+fact just a testament to the Advantage&rsquo;s flexibility:</p>
 
 <ul>
 <li>I swapped Space and Backspace because I have for some reason always used my
@@ -170,6 +171,8 @@ freaks control.</li>
 <li>I put Down to the left of Up because that&rsquo;s how Vim users roll.</li>
 </ul>
 
+
+<p><em>Update 2018-11-06: Minor clarifications.</em></p>
 ]]></content>
   </entry>
   
