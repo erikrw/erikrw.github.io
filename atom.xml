@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2018-11-06T08:48:02+01:00</updated>
+  <updated>2019-01-17T08:03:36+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,199 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spar penge med Rejsekortets mængderabat]]></title>
+    <link href="http://blog.erw.dk/2019/01/17/spar-penge-med-rejsekortets-maengderabat/"/>
+    <updated>2019-01-17T07:52:10+01:00</updated>
+    <id>http://blog.erw.dk/2019/01/17/spar-penge-med-rejsekortets-maengderabat</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://blog.erw.dk/images/posts/rejsekort.jpg"></p>
+
+<p>Jeg prøver noget nyt og skriver på dansk. Jeg startede med at skrive denne
+artikel på engelsk, men nu hvor jeg har skiftet til dansk føler jeg ikke vores
+allesammens <a href="https://www.rejsekort.dk/">Rejsekort</a> behøver nogen introduktion. Det er normalt
+for tech-bloggere at komme ind på it-sikkerhed eller brugervenlighed når det
+gælder til Rejsekortet, men i dag vil jeg snakke om noget lidt andet, nemlig
+hvordan man undgår at snyde sig selv i Rejsekortets indviklede rabatsystem.
+Vest for Storebælt kan man nemlig i flere tilfælde spare penge ved at rejse
+<em>mere</em> hver måned.</p>
+
+<!-- more -->
+
+
+<p>(Men først lige én kommentar om grafisk design: Sort tekst på en blå baggrund,
+som på billedet af mit rejsekort herover, er dårligt design. Min
+billedbehandling overdriver lidt her, men illustrerer faktisk fint hvor svært
+det er at læse sort på blåt under dårlige lysforhold. Nå, tilbage til
+rabatten.)</p>
+
+<a name="Rejsekortets.Rabatter"></a>
+<h2>Rejsekortets Rabatter</h2>
+
+<p>Rejsekortet giver <a href="https://www.rejsekort.dk/brug-rejsekort/priser-for-rejser/">to typer rabat</a> på rejser: tidsrabat og
+mængderabat. Tidsrabat gives når rejsen starter uden for myldretiden, mens
+mængderabat afhænger af hvor mange rejser man har haft i de foregående tre
+måneder. Rabatterne afhænger desuden af typen af rejsekort, transportmidlet,
+samt både udgangspunktet og destinationen.</p>
+
+<p>Tidsrabatten er nem at få &mdash; man skal lægge sin rejse uden for myldretiden
+(som kan være kl. 7&ndash;11 og 13&ndash;18 på hverdage, men det afhænger af region,
+transportmiddel og type af rejsekort, naturligvis) &mdash; men derudover afhænger
+den ikke af noget. Derfor fokuserer jeg på mængderabatten, som på mere
+indviklet vis påvirkes af fortiden. Jeg antager desuden at man benytter et
+personligt rejsekort for voksne &mdash; I modsætning til flex, anonym, barn, ung,
+pensionist, handicappet, hund/cykel, pendler, pendler kombi,
+erhverv/institution, glemte jeg nogen?</p>
+
+<a name="Rejsekortets.m..ngderabat"></a>
+<h2>Rejsekortets mængderabat</h2>
+
+<p>Mængderabatten afhænger af både udgangspunkt og destination, og forudsætter at
+mindst én af disse to ligger vest for Storebælt (sorry, sjællændere). Rejser
+<em>over</em> Storebælt har én rabatskala, mens rejser udelukkende vest for Storebælt
+har en anden, som jeg her vil arbejde videre med. Rejsekortet har teknisk set
+otte forskellige rabattrin, men vest for Storebælt giver flere af dem samme
+rabatsats, så jeg arbejder blot med fire rabattrin.</p>
+
+<p>Mængderabatsatserne i procent er ens mellem regionerne, men rejsens grundpris
+varierer mellem regionerne, og kan også afhænge af transportmidlet. Jeg
+benytter priserne fra Nordjylland gældende fra 20. januar 2019 i det følgende,
+men grundprincippet er det samme uanset gamle og nye priser samt region. Det
+fulde prisblad findes <a href="https://www.rejseplanen.dk/bin/help.exe/mn?L=vs_rkfc&amp;tpl=prisblad">her</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Rejser/måned</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Rabat</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Pris for 2 zoner</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;"> 0&ndash;3             </td>
+<td style="text-align:right;"> 0%                                </td>
+<td style="text-align:right;"> 16,90 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 4&ndash;15            </td>
+<td style="text-align:right;"> 10%                               </td>
+<td style="text-align:right;"> 15,21 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 16&ndash;33           </td>
+<td style="text-align:right;"> 25%                               </td>
+<td style="text-align:right;"> 12,67 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 34&ndash;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td style="text-align:right;"> 40%                               </td>
+<td style="text-align:right;"> 10,14 kr.                                    </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+Rabattrinnet i en given måned sættes ud fra den af de tre sidste måneder med
+flest rejser. Måned skal dog ikke nødvendigvis forstås som kalendermåned.
+I stedet har man en <em>rabatskiftedato</em> (fx den 5. i hver måned) som afhænger af
+hvornår ens rejsekort blev taget i brug. For at det ikke skal blive for nemt
+kan man ikke aflæse sin rabatskiftedato på Rejsekortets
+<a href="https://selvbetjening.rejsekort.dk/">selvbetjening</a>, men skal i stedet ringe til kundeservice for at
+få den oplyst.</p>
+
+<a name="Beregning.med.m..ngderabat"></a>
+<h2>Beregning med mængderabat</h2>
+
+<p>Hvis vi forudsætter at man rejser det samme antal ture hver måned, så betaler
+man i alt følgende pr. måned afhængig af antallet af rejser:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat1.png"></p>
+
+<p>Rejser man 14, 15 eller 28&ndash;33 rejser pr. måned, betaler man mere pr. måned end
+hvis man rejste lidt mere. Man kan altså spare penge, fra og med næste måned,
+ved at rejse lidt mere. Så hvis man har flere steder, man skal hen, kan man
+blot nyde turen og de 10&ndash;72 kr. man sparer hver måned.</p>
+
+<p>Men har man ikke behov for at rejse mere, er der stadig penge at spare ved at
+foretage nogle få ekstra rejser. Så længe man har opnået et højere rabattrin
+end normalt gælder det nemlig i tre måneder, hvori ens normale antal rejser
+også bliver billigere, og man dermed opnår en besparelse:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat2.png"></p>
+
+<p>Prisen for at opnå denne besparelse er at rejse nogle ekstra rejser for at nå
+op på det næste rabattrin, dvs. nå op på 4, 16 eller 34 rejser i én måned.
+Dette kan være så lidt som én ekstra rejse eller så meget som 18 rejser for at
+nå fra 16 til 34. Omkostningen ved disse skal lægges i én måned, men fordelen
+gælder i tre, så derfor viser jeg her omkostningen pr. måned, dvs. delt med
+tre:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat3.png"></p>
+
+<p>Jo færre ekstrarejser der er behov for, jo lavere er den samlede ekstrapris.
+Befinder man sig i de store spænd 11&ndash;15 eller 22&ndash;33 rejser pr. måned, er
+besparelsen større end omkostningen. I den laveste del af disse spænd er den
+samlede besparelse mindst og tidsforbruget ved at rejse de ekstra rejser
+størst, så man må selv vurdere om man synes besparelsen er indsatsen værd. Mest
+får man ud af de ekstra rejser hvis man normalt ligger på 30&ndash;33 rejser, da man
+her kan spare 60&ndash;80 kr. om måneden vha. nogle få ekstra rejser.</p>
+
+<p>Omkostningen kan bringes yderligere ned: De ekstra rejser kan foretages uden
+for myldretiden, dvs. med 20% tidsrabat, hvorved de fordelagtige spænd udvides
+til 3, 10&ndash;15 og 20&ndash;33. Hvis man tre måneder senere vil gentage manøvren,
+gøres det denne gang ud fra det højere rabattrin, man har opnået, og spændene
+er nu, inkl. tidsrabat, 3, 10&ndash;15 og 18&ndash;33. Med andre ord er det kun hvis man
+rejser 0&ndash;2, 4&ndash;9, 16 eller 17 gange om måneden at det <em>ikke</em> kan betale sig at
+opnå et højere rabattrin.</p>
+
+<a name="L..ngere.rejser"></a>
+<h2>Længere rejser</h2>
+
+<p>Jeg vil også nævne muligheden for pendlerkort. I Nordjylland koster 2 zoner
+i 30 dage 380 kr., dvs. ca. 385 kr. for en gennemsnitlig måned, hvilket er
+billigere end 31&ndash;33 rejser pr. måned på næsthøjeste rabattrin og 39+ rejser på
+højeste rabattrin med det almindelige rejsekort:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat4.png"></p>
+
+<p>Jeg foretrækker dog det almindelige rejsekort over pendlerkortet, herunder
+pendler kombi, da den rabat jeg opsparer på mine daglige, korte rejser også
+gælder på længere rejser vest for Storebælt med det almindelige rejsekort. Med
+40% mængderabat sparer jeg 150 kr. på én tur/retur Aalborg&ndash;Aarhus, og 290 kr.
+for Aalborg&ndash;Odense.</p>
+
+<p>Hvis man dagligt eller ofte rejser længere end 2 zoner kan man også spare penge
+i dagligdagen med metoden med ekstrarejser. Her er fordelen at de ekstra rejser
+er billigere end de normale, da man kan nøjes med at rejse 2 zoner på
+ekstrarejserne, da det udelukkende er antallet af rejser &mdash; ikke længden &mdash;
+der afgør rabattrinnet. Dermed bliver omkostningen mindre i forhold til
+besparelsen. Som eksempel ser vi her på 8 zoner, som er afstanden fra Aalborg
+til Hjørring eller Hobro:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat5.png"></p>
+
+<p>Allerede fra seks månedlige rejser på 8 zoner er det en fordel at opnå det
+næste rabattrin. Ved 30&ndash;33 rejser er der 250&ndash;300 kr. at hente hver måned
+i gennemsnit (besparelse fraregnet omkostning). Ved 26 zoner sparer man <em>altid</em>
+penge ved at opnå det næste rabattrin, op til 837 kr./måned! Det har jeg
+illustreret i følgende diagram.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat6.png"></p>
+
+<p>Hvis man lige som før gentager de ekstra rejser efter tre måneder med tidsrabat
+og det opnåede næste rabattrin, er der endda lidt mere at spare:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/rejsekort_rabat7.png"></p>
+
+<p>Det er nok de færreste der kan klemme sig op i højre hjørne, specielt uden at
+investere i et pendlerkort hvis man pendler langt, men det er vildt at
+muligheden er der. Man skal dog huske at det kun hjælper hvis man i forvejen
+rejser færre end 34 rejser pr. måned. Er man først deroppe, er der ikke flere
+rabatniveauer at opnå &mdash; man kan blot kigge på om et pendlerkort er billigere.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Android 9 Impressions]]></title>
@@ -2685,149 +2878,6 @@ C#, considering that Python is interpreted.</p>
 <p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
 
 <p><em>Update 2017-12-09: Changed the post title.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ode to my Casio]]></title>
-    <link href="http://blog.erw.dk/2015/07/11/ode-to-my-casio/"/>
-    <updated>2015-07-11T13:57:20+02:00</updated>
-    <id>http://blog.erw.dk/2015/07/11/ode-to-my-casio</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://blog.erw.dk/images/posts/casio.jpg" width="345"></p>
-
-<p>The year was 2002 and I had started gymnasium (≈high school). My parents had
-bought me the graphic calculator required for our maths classes: Casio fx-9750G
-PLUS. It was white and green and curvy and Casio &mdash; not dark and rectangular
-and from Texas Instruments, as a calculator was expected to be. Soon, however,
-this happy-looking thing became my companion on my journey into the world of
-programming.</p>
-
-<!-- more -->
-
-
-<p>Compared with a personal computer, this calculator was weak, to say the least.
-The display resolution was 128×64 pixels in black and white. (However, I did
-for a long time dream of the color LCD version CFX-9850GC PLUS, which could
-show <em>three</em> colors:
-<span style="color:orange">orange</span>,
-<span style="color:green">green</span>, and
-<span style="color:blue">blue</span>.)
-The processor was slow. Graphing <em>y = x<sup>2</sup></em> took a good five seconds. Sinusoidal
-regression on 150 data points took 75 seconds, plus another 8 seconds to draw
-the sine curve.
-Memory was limited as well: 32K, of which only 28568 bytes were available to
-the user. And of which every list and matrix entry took up 10 bytes! Plus, any
-time something was graphed, 4K was reserved for that.</p>
-
-<p>Yet for all these complaints, this machine was a fantastic place to start
-programming. Having a fixed set of features challenges you to do what you can
-with what you have. On this fixed platform, there was no getting lost in
-debates about which programming language to use, because there was only one
-choice. There was no trouble with installation or incompatible software
-libraries. There was no web browsing or multitasking. No distraction. And zero
-boot time and a year of battery life.</p>
-
-<p><img class="right" src="http://blog.erw.dk/images/posts/casio-fact.jpg"></p>
-
-<p>The basic calculator part is a REPL: That is to say it <em>reads</em> your input,
-<em>evaluates</em> it, <em>prints</em> the result, and it <em>loops</em>, doing this indefinitely.
-In this interactive environment, you can familiarize yourself with expressions
-before slowly, step by step, automating small parts of your calculations. You
-could, for example, make a small program that asks the user for input and uses
-a loop to do a calculation.</p>
-
-<p>And there were enough features to do really cool things: Plotting, lists and
-list operations (sorting, summation, product, mean, median, etc.), matrices and
-matrix operations, statistics, regression, etc.</p>
-
-<a name="Programming.on.the.Bus"></a>
-<h2>Programming on the Bus</h2>
-
-<p>During the bus trips to school I spent as much time with my Casio as people
-today spend with their smartphones. And I suppose this puzzled the other
-students: How much time can you really spend calculating?</p>
-
-<p>I made programs for all sorts of tasks. One type was the programs that helped
-my maths and science classes. In maths it was nice to be able to enter the
-information you had about a triangle, and then calculate the rest
-automatically. Or calculate the greatest common divisor. In physics,
-I calculated and visualized refraction. In chemistry, I calculated molar
-masses.</p>
-
-<p><img class="right" src="http://blog.erw.dk/images/posts/casio-guitar.jpg"></p>
-
-<p>But it was also fun and games: I made programs that drew nice geometric shapes
-for their beauty. I calculated poker odds. During some boring classes I made
-a program in which you entered the time of day (the calculator didn&rsquo;t have
-a clock), and it drew a 3d pie chart showing how close the current lecture was
-to completion. And I factored out the pie chart so other programs could use it
-as a subroutine.</p>
-
-<p>I made programs for sound and music. I translated between notes (such as A) and
-frequencies (such as 440 Hz). I visualized harmonics. I made a program that
-showed all the ways a chosen note could be played on a guitar. (And
-I didn&rsquo;t even play the guitar!)</p>
-
-<p>And I made games. Guess which number I&rsquo;m thinking of, where the program tells
-you whether your guess was too high or too low. I made a game in which you had
-to remember random numbers that were shown in progressively shorter glimpses.
-Each level made the number one digit longer. I made Snake. It grew linearly
-slower with the length of the snake, and the game was too slow to be fun to
-play. But that didn&rsquo;t affect my pride in making it. Near the end of gymnasium,
-I was planning a strategy game inspired by Command &amp; Conquer Tiberian Sun,
-which I loved. I had a cool animation for the cyborgs&#8217; machine guns, but other
-than that, I never got very far. But to be fair, it is a rather big step from
-Snake to that.</p>
-
-<a name="Much.Learnage"></a>
-<h2>Much Learnage</h2>
-
-<p>This primitive programming taught me some lessons about &ldquo;real&rdquo; programming:</p>
-
-<ul>
-<li>Understanding a program you wrote months ago is tricky, when all variable
-names are a single character. I learned the value of descriptive variable
-names.</li>
-<li>The slow processor gave me a tangible sense of execution time and complexity.</li>
-<li>With an editor window of 6x21 chars, I soon learned that sketching your
-algorithm or architecture before implementing is useful for big programs.
-That would probably take more time to learn on a big screen.</li>
-<li>I learned to prioritize what to do with the limited memory.</li>
-<li>I learned debugging the hard way: There were almost no meaningful error
-messages (but at least you could be taken to the location in the code that
-caused the error).</li>
-<li>I learned that all programs and subroutines sharing a global address space
-sucks!</li>
-</ul>
-
-
-<a name="Interacting.with.the.World"></a>
-<h2>Interacting with the World</h2>
-
-<p>After some time, interacting with a program through a (tiny) screen and (tiny)
-keyboard was not enough. I wanted to interact with the world. Thankfully, my
-parents got me the Casio EA-200 data logger. This device was even clunkier than
-the calculator, but it was a window to the physical world: Now I could measure
-voltage, light, temperature, and sound.</p>
-
-<p>I measured the fluctuation of the temperature in the fridge. Since I could hear
-the compressor swiching on and off I knew the temperature couldn&rsquo;t be constant,
-so I wanted to know the extent of the lie that &ldquo;a fridge is 5&#x00b0;C&rdquo;. (As
-I recall, it went between 4 and 8&#x00b0;C). Knowledge is power, even in the
-small.</p>
-
-<p>With the microphone and speaker, I made a dictaphone. As with Snake, the idea
-of making it was more important than its usefulness. It did work, but the
-memory was somewhat limited.</p>
-
-<p>I also measured the fluctuation of the intensity of light from lightbulbs. Even
-when they appear constantly on, they heat and cool with the alternating current
-of the electric grid. And I learned about another &ldquo;truth&rdquo;: Our electric grid
-runs at 50 Hz. Yes, when it&rsquo;s not 49 and 52 and 50.2 Hz. This is also where
-I got to appreciate the Fourier transform that I recently <a href="http://blog.erw.dk/2015/03/20/debugging-complex-numbers/">implemented</a>
-myself.</p>
-
-<p>My dear Casio, thanks for the ride.</p>
 ]]></content>
   </entry>
   
