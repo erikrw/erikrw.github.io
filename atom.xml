@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-01-17T16:53:12+01:00</updated>
+  <updated>2019-04-24T00:11:09+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Pin RemoteApps to the Taskbar]]></title>
+    <link href="http://blog.erw.dk/2019/04/24/how-to-pin-remoteapps-to-the-taskbar/"/>
+    <updated>2019-04-24T00:09:57+02:00</updated>
+    <id>http://blog.erw.dk/2019/04/24/how-to-pin-remoteapps-to-the-taskbar</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/pin_remoteapps_pin_start.png"></p>
+
+<p>In Microsoft Windows you can &ldquo;pin&rdquo; apps to the taskbar so you can launch them
+with a single click. You can right click and pin an app when it is running in
+the taskbar, or anytime through the start menu. But some apps, such as
+<a href="https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-RemoteApp-and-Desktop-Connections/ba-p/246803">RemoteApps and Desktop Connections</a>, cannot be pinned.</p>
+
+<!-- more -->
+
+
+<p><span class='caption-wrapper center' style='width: 568px'><img class='caption' src='http://blog.erw.dk/images/posts/pin_remoteapps_remoteapp_no_pin_running.png' width='550' height='131' alt='No "Pin to taskbar" option from running RemoteApp'><span class='caption-text'>No &ldquo;Pin to taskbar&rdquo; option from running RemoteApp</span></span></p>
+
+<p><span class='caption-wrapper center' style='width: 678px'><img class='caption' src='http://blog.erw.dk/images/posts/pin_remoteapps_remoteapp_no_pin_start.png' width='660' height='365' alt='No "Pin to taskbar" option from the start menu'><span class='caption-text'>No &ldquo;Pin to taskbar&rdquo; option from the start menu</span></span></p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p><img class="right" src="http://blog.erw.dk/images/posts/pin_remoteapps_remoteapp_props.png"></p>
+
+<p>Here&rsquo;s how I pin RemoteApps to the taskbar for easy access:</p>
+
+<ol>
+<li>Open the file location of the RemoteApp from the start menu (see image
+above)</li>
+<li>Open the Properties dialog for the RemoteApp shortcut and copy the Target</li>
+<li>Pin a random app to the taskbar, e.g. Command Prompt, to be a temporary
+placeholder.</li>
+<li>In File Explorer, go to the folder <div><em>%appdata%\Microsoft\Internet
+Explorer\Quick Launch\User Pinned\TaskBar</em></div></li>
+<li>Open the Properties dialog for the placeholder app shortcut</li>
+<li>Overwrite the Target by pasting from the clipboard, and click OK</li>
+<li><strong>In the start menu, the RemoteApp can now be pinned</strong></li>
+<li>Unpin the placeholder from the taskbar</li>
+</ol>
+
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/pin_remoteapps_remoteapp_pin_start.png"></p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/pin_remoteapps_remoteapp_pinned.png"></p>
+
+<a name="Details"></a>
+<h2>Details</h2>
+
+<p>It might seem like a roundabout way to deal with multiple shortcuts instead of
+simply adding the desired shortcut to <em>%appdata%\Microsoft\Internet
+Explorer\Quick Launch\User Pinned\TaskBar</em>. Unfortunately, simply adding
+a shortcut in the TaskBar folder will not make it show up in the taskbar. This
+is because the registry decides what is displayed. (The relevant information is
+at <em>HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband</em> but it is
+not easy to edit by hand.) The recipe above tricks Windows into letting the
+RemoteApp be added the normal way so the registry gets the correct info. Tested
+on Windows 10 Enterprise, version 1803.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spar penge med Rejsekortets mængderabat [Danish]]]></title>
@@ -2585,299 +2645,6 @@ one to remember when I last watered my chili plant. Or put a mark when you
 vacuum clean. Then you can see both when it would be a good idea to do it
 again, and in the long run, how often you do it &ndash; if you&rsquo;re interested in that
 sort of thing. Happy tracking!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[AoC 2015 Day 5: Fun with Declarative Programming]]></title>
-    <link href="http://blog.erw.dk/2015/12/06/fun-with-declarative-programming/"/>
-    <updated>2015-12-06T19:36:41+01:00</updated>
-    <id>http://blog.erw.dk/2015/12/06/fun-with-declarative-programming</id>
-    <content type="html"><![CDATA[<p>My <a href="http://www.bachata-geek.me">girlfriend</a> introduced me to Eric Wastl&rsquo;s <a href="http://adventofcode.com">Advent of Code</a>,
-a programming puzzle Advent calendar. The best advent calendar I&rsquo;ve had in my
-adult life! (If you&rsquo;re planning on playing it, this article is one big spoiler
-for Day 5.) I compare declarative programming puzzle solutions on readability
-and speed.</p>
-
-<!-- more -->
-
-
-<p>The puzzle for Day 5 is:</p>
-
-<blockquote><p>Santa needs help figuring out which strings in his text file are naughty or nice.</p>
-
-<p>A nice string is one with all of the following properties:</p>
-
-<ul>
-<li>It contains at least three vowels (<code>aeiou</code> only), like <code>aei</code>, <code>xazegov</code>, or <code>aeiouaeiouaeiou</code>.</li>
-<li>It contains at least one letter that appears twice in a row, like <code>xx</code>, <code>abcdde</code> (<code>dd</code>), or <code>aabbccdd</code> (<code>aa</code>, <code>bb</code>, <code>cc</code>, or <code>dd</code>).</li>
-<li>It does not contain the strings <code>ab</code>, <code>cd</code>, <code>pq</code>, or <code>xy</code>, even if they are part of one of the other requirements.</li>
-</ul>
-
-
-<p>How many strings are nice?</p></blockquote>
-
-<p>On the <a href="http://adventofcode.com">page</a> you get more explanation and an input to use for your
-code, but this is the basic challenge.</p>
-
-<p>I&rsquo;d normally do this in Python, but I&rsquo;m brushing up on my C#-fu, so that&rsquo;s what
-I went with. I first wrote it in classic, imperative style:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.IO</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">namespace</span> <span class="nn">Day5</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="k">class</span> <span class="nc">MainClass</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">()</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>      <span class="kt">var</span> <span class="n">nNice</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">line</span> <span class="k">in</span> <span class="n">File</span><span class="p">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="s">&quot;../../input&quot;</span><span class="p">))</span>
-</span><span class='line'>      <span class="p">{</span>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;ab&quot;</span><span class="p">)</span> <span class="p">||</span>
-</span><span class='line'>            <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;cd&quot;</span><span class="p">)</span> <span class="p">||</span>
-</span><span class='line'>            <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;pq&quot;</span><span class="p">)</span> <span class="p">||</span>
-</span><span class='line'>            <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;xy&quot;</span><span class="p">))</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>          <span class="k">continue</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="kt">var</span> <span class="n">vowels</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">character</span> <span class="k">in</span> <span class="n">line</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="s">&quot;aeiou&quot;</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">character</span><span class="p">))</span>
-</span><span class='line'>          <span class="p">{</span>
-</span><span class='line'>            <span class="n">vowels</span><span class="p">++;</span>
-</span><span class='line'>          <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">vowels</span> <span class="p">&lt;</span> <span class="m">3</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>          <span class="k">continue</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">character</span> <span class="k">in</span> <span class="n">line</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="m">2</span><span class="p">)))</span>
-</span><span class='line'>          <span class="p">{</span>
-</span><span class='line'>            <span class="n">nNice</span><span class="p">++;</span>
-</span><span class='line'>            <span class="k">break</span><span class="p">;</span>
-</span><span class='line'>          <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">nNice</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>One of the reasons I love Python is <a href="https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions">comprehensions</a>. But
-.NET has <a href="https://msdn.microsoft.com/en-us/library/bb397926.aspx">LINQ</a> (Language Integrated Query), which I one of the reasons
-I love C# too. By <code>using System.Linq</code> I can turn the <code>Main()</code> body into
-a single, declarative statement:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
-</span><span class='line'>    <span class="n">File</span><span class="p">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="s">&quot;../../input&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">line</span> <span class="p">=&gt;</span>
-</span><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="s">&quot;aeiou&quot;</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">character</span><span class="p">))</span> <span class="p">&gt;=</span> <span class="m">3</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="m">2</span><span class="p">)))</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="p">!(</span><span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&quot;ab&quot;</span><span class="p">,</span> <span class="s">&quot;cd&quot;</span><span class="p">,</span> <span class="s">&quot;pq&quot;</span><span class="p">,</span> <span class="s">&quot;xy&quot;</span> <span class="p">}.</span><span class="n">Any</span><span class="p">(</span><span class="n">naughty</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">naughty</span><span class="p">)))));</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>It sure feels good to write compact code, but is it better than the imperative
-version?
-It depends on how you evaluate it.</p>
-
-<a name="Readability"></a>
-<h2>Readability</h2>
-
-<p>Imperative code always requires detailed inspection and/or non-outdated
-comments to understand. On the other hand, I think the gist of the declarative
-version is very quick to read: &ldquo;Count the number of lines in the input file
-which satisfy &hellip; some criteria&rdquo;. Compared to the imperative version, the
-overall purpose is much clearer. But the individual criteria still take time to
-read.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="s">&quot;aeiou&quot;</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">character</span><span class="p">))</span> <span class="p">&gt;=</span> <span class="m">3</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="m">2</span><span class="p">)))</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="p">!(</span><span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&quot;ab&quot;</span><span class="p">,</span> <span class="s">&quot;cd&quot;</span><span class="p">,</span> <span class="s">&quot;pq&quot;</span><span class="p">,</span> <span class="s">&quot;xy&quot;</span> <span class="p">}.</span><span class="n">Any</span><span class="p">(</span><span class="n">naughty</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">naughty</span><span class="p">)))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>At least three vowels, a repeated character, and no naughty substrings.</p>
-
-<p>The keen reader may have noticed that the first criterion could be written more
-compactly as <code>line.Count("aeiou".Contains) &gt;= 3</code> (similarly with the third).
-I think this is less readable, and compactness is not a goal in itself, unless
-you are playing code golf. Incidentally, the method group (compact) version
-also performs slightly slower.</p>
-
-<p>Variable names are a form of built-in documentation. Along the same lines, it
-might help to introduce variables:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'>  <span class="kt">var</span> <span class="n">vowels</span> <span class="p">=</span> <span class="s">&quot;aeiou&quot;</span><span class="p">;</span>
-</span><span class='line'>  <span class="kt">var</span> <span class="n">naughtySubstrings</span> <span class="p">=</span> <span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&quot;ab&quot;</span><span class="p">,</span> <span class="s">&quot;cd&quot;</span><span class="p">,</span> <span class="s">&quot;pq&quot;</span><span class="p">,</span> <span class="s">&quot;xy&quot;</span> <span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>But readability also depends on what you know.
-For the uninitiated, <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> are complete gibberish. But
-for the experienced, <code>using System.Text.RegularExpressions</code> can actually state
-the criteria more clearly. Instead of fussing over the individual characters of
-the line and naughty patterns, it is easier to compare the whole, undivided
-line to a pattern:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'>      <span class="n">Regex</span><span class="p">.</span><span class="n">Matches</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s">&quot;[aeiou]&quot;</span><span class="p">).</span><span class="n">Count</span> <span class="p">&gt;=</span> <span class="m">3</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="n">Regex</span><span class="p">.</span><span class="n">IsMatch</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s">@&quot;(.)\1&quot;</span><span class="p">)</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="p">!</span><span class="n">Regex</span><span class="p">.</span><span class="n">IsMatch</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s">&quot;ab|cd|pq|xy&quot;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Regular expressions are declarative on an even higher level.</p>
-
-<p>But they might not perform that well, especially when using uncompiled regular
-expressions. And that leads us to another criterion.</p>
-
-<a name="Performance"></a>
-<h2>Performance</h2>
-
-<p>Doing a quick benchmark on an input with two million strings and warmed-up
-caches, the uncompiled Regex version completes in 6.6 seconds, the LINQ version
-in 4.4 seconds, and my naive imperative version in 2.4 seconds. So much for
-readability. (This was using Mono, btw.)</p>
-
-<p>But, the declarative style has a trick up its sleeve: Parallelism for free!</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='CSharp'><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
-</span><span class='line'>    <span class="n">File</span><span class="p">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="s">&quot;../../input&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">.</span><span class="n">AsParallel</span><span class="p">()</span>  <span class="c1">///////////////////////////////// Parallelism for free!</span>
-</span><span class='line'>    <span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">line</span> <span class="p">=&gt;</span>
-</span><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Count</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="s">&quot;aeiou&quot;</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">character</span><span class="p">))</span> <span class="p">&gt;=</span> <span class="m">3</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="n">line</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">character</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="m">2</span><span class="p">)))</span> <span class="p">&amp;&amp;</span>
-</span><span class='line'>      <span class="p">!(</span><span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&quot;ab&quot;</span><span class="p">,</span> <span class="s">&quot;cd&quot;</span><span class="p">,</span> <span class="s">&quot;pq&quot;</span><span class="p">,</span> <span class="s">&quot;xy&quot;</span> <span class="p">}.</span><span class="n">Any</span><span class="p">(</span><span class="n">naughty</span> <span class="p">=&gt;</span> <span class="n">line</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">naughty</span><span class="p">)))));</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1.8 seconds on my quadcore!</p>
-
-<p>Now, I have not optimized any of these three versions for performance, and it
-could of course be done faster in C# (with or without explicit threads), and
-most likely even faster in C or C++.</p>
-
-<p>So I think the conclusion so far is what it is nothing new:
-Readability and performance are conflicting goals.</p>
-
-<a name="Debuggability"></a>
-<h2>Debuggability</h2>
-
-<p>One final criterion is debuggability. I have loved declarative style for a long
-time, but always found it harder to debug than imperative style. However, an
-advantage of Python and C# compared to, say, Haskell, is that they are
-basically imperative languages with other paradigms on top. Thus, you can
-gradually learn declarative and functional style in the safe context of
-imperative programming. And cut down on the declarative-ness when you want to.</p>
-
-<p>However, next up on my reading list is <a href="https://www.simple-talk.com/dotnet/.net-framework/linq-secrets-revealed-chaining-and-debugging/">LINQ Secrets Revealed: Chaining and Debugging</a>.</p>
-
-<a name="Python.Postscript"></a>
-<h2>Python Postscript</h2>
-
-<p>I did the puzzle in Python just to see how it compared. Rather than reading
-then length of a list made with a list comprehension, I do it in a streaming
-fashion by summing over a generator expression:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="kn">import</span> <span class="nn">re</span>
-</span><span class='line'><span class="k">print</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;input&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-</span><span class='line'>          <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s">&#39;[aeiou]&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span>
-</span><span class='line'>              <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r&#39;(.)\1&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="ow">and</span>
-</span><span class='line'>              <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">&#39;ab|cd|pq|xy&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(This is the whole program, not just the body of some main function!)</p>
-
-<p>At 5.3 seconds for the two million strings, this stacks up pretty well against
-C#, considering that Python is interpreted.</p>
-
-<p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
-
-<p><em>Update 2017-12-09: Changed the post title.</em></p>
 ]]></content>
   </entry>
   

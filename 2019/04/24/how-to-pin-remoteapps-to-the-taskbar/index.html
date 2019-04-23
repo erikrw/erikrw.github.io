@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: programming - Erik Ramsgaard Wognsen</title>
+  <title>How to Pin RemoteApps to the Taskbar - Erik Ramsgaard Wognsen</title>
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="Category: programming">
+  <meta name="description" content="In Microsoft Windows you can &ldquo;pin&rdquo; apps to the taskbar so you can launch them
+with a single click. You can right click and pin an app &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.erw.dk/blog/categories/programming">
+  <link rel="canonical" href="http://blog.erw.dk/2019/04/24/how-to-pin-remoteapps-to-the-taskbar">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
@@ -77,112 +78,120 @@ if (document.location.hostname != "127.0.0.1") {
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: programming</h1>
+    
+      <h1 class="entry-title">How to Pin RemoteApps to the Taskbar</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2019-04-24T00:09:57+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2019</span></span> <span class='time'></span></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p><img class="center" src="/images/posts/pin_remoteapps_pin_start.png"></p>
 
-  
-  <h2>2018</h2>
+<p>In Microsoft Windows you can &ldquo;pin&rdquo; apps to the taskbar so you can launch them
+with a single click. You can right click and pin an app when it is running in
+the taskbar, or anytime through the start menu. But some apps, such as
+<a href="https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-RemoteApp-and-Desktop-Connections/ba-p/246803">RemoteApps and Desktop Connections</a>, cannot be pinned.</p>
 
-<article>
-  
-<h1><a href="/2018/07/28/yousician-no-tempo-definitions-found/">Yousician &#8220;No tempo definitions found&#8221;</a></h1>
-<time datetime="2018-07-28T12:23:29+02:00" pubdate><span class='month'>Jul</span> <span class='day'>28</span> <span class='year'>2018</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/music/'>music</a>, <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
+<!-- more -->
 
 
-</article>
+<p><span class='caption-wrapper center' style='width: 568px'><img class='caption' src='/images/posts/pin_remoteapps_remoteapp_no_pin_running.png' width='550' height='131' alt='No "Pin to taskbar" option from running RemoteApp'><span class='caption-text'>No &ldquo;Pin to taskbar&rdquo; option from running RemoteApp</span></span></p>
+
+<p><span class='caption-wrapper center' style='width: 678px'><img class='caption' src='/images/posts/pin_remoteapps_remoteapp_no_pin_start.png' width='660' height='365' alt='No "Pin to taskbar" option from the start menu'><span class='caption-text'>No &ldquo;Pin to taskbar&rdquo; option from the start menu</span></span></p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p><img class="right" src="/images/posts/pin_remoteapps_remoteapp_props.png"></p>
+
+<p>Here&rsquo;s how I pin RemoteApps to the taskbar for easy access:</p>
+
+<ol>
+<li>Open the file location of the RemoteApp from the start menu (see image
+above)</li>
+<li>Open the Properties dialog for the RemoteApp shortcut and copy the Target</li>
+<li>Pin a random app to the taskbar, e.g. Command Prompt, to be a temporary
+placeholder.</li>
+<li>In File Explorer, go to the folder <div><em>%appdata%\Microsoft\Internet
+Explorer\Quick Launch\User Pinned\TaskBar</em></div></li>
+<li>Open the Properties dialog for the placeholder app shortcut</li>
+<li>Overwrite the Target by pasting from the clipboard, and click OK</li>
+<li><strong>In the start menu, the RemoteApp can now be pinned</strong></li>
+<li>Unpin the placeholder from the taskbar</li>
+</ol>
 
 
+<p><img class="center" src="/images/posts/pin_remoteapps_remoteapp_pin_start.png"></p>
 
-  
-  <h2>2017</h2>
+<p><img class="center" src="/images/posts/pin_remoteapps_remoteapp_pinned.png"></p>
 
-<article>
-  
-<h1><a href="/2017/12/10/aoc-2017-day-8-fell-into-a-python-pitfall/">AoC 2017 Day 8: Fell Into a Python Pitfall</a></h1>
-<time datetime="2017-12-10T20:43:47+01:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2017</span></time>
+<a name="Details"></a>
+<h2>Details</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2015</h2>
-
-<article>
-  
-<h1><a href="/2015/12/06/fun-with-declarative-programming/">AoC 2015 Day 5: Fun with Declarative Programming</a></h1>
-<time datetime="2015-12-06T19:36:41+01:00" pubdate><span class='month'>Dec</span> <span class='day'>06</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2015/07/11/ode-to-my-casio/">Ode to my Casio</a></h1>
-<time datetime="2015-07-11T13:57:20+02:00" pubdate><span class='month'>Jul</span> <span class='day'>11</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2015/06/06/checks-for-your-django-project/">Checks for Your Django Project</a></h1>
-<time datetime="2015-06-06T13:42:14+02:00" pubdate><span class='month'>Jun</span> <span class='day'>06</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2015/03/20/debugging-complex-numbers/">Debugging Complex Numbers</a></h1>
-<time datetime="2015-03-20T20:34:38+01:00" pubdate><span class='month'>Mar</span> <span class='day'>20</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a></span>
-</footer>
-
-
-</article>
-
+<p>It might seem like a roundabout way to deal with multiple shortcuts instead of
+simply adding the desired shortcut to <em>%appdata%\Microsoft\Internet
+Explorer\Quick Launch\User Pinned\TaskBar</em>. Unfortunately, simply adding
+a shortcut in the TaskBar folder will not make it show up in the taskbar. This
+is because the registry decides what is displayed. (The relevant information is
+at <em>HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband</em> but it is
+not easy to edit by hand.) The recipe above tricks Windows into letting the
+RemoteApp be added the normal way so the registry gets the correct info. Tested
+on Windows 10 Enterprise, version 1803.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2019-04-24T00:09:57+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2019</span></span> <span class='time'></span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2019/01/17/spar-penge-med-rejsekortets-maengderabat/" title="Previous Post: Spar penge med Rejsekortets mængderabat [Danish]">&laquo; Spar penge med Rejsekortets mængderabat [Danish]</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -244,7 +253,10 @@ if (document.location.hostname != "127.0.0.1") {
       var disqus_shortname = 'erwdk';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2019/04/24/how-to-pin-remoteapps-to-the-taskbar/';
+        var disqus_url = 'http://blog.erw.dk/2019/04/24/how-to-pin-remoteapps-to-the-taskbar/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
