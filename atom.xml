@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-04-24T00:11:09+02:00</updated>
+  <updated>2019-05-31T11:46:24+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,95 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Assistant Currently Unavailable for This Language]]></title>
+    <link href="http://blog.erw.dk/2019/05/31/google-assistant-currently-unavailable-for-this-language/"/>
+    <updated>2019-05-31T11:28:46+02:00</updated>
+    <id>http://blog.erw.dk/2019/05/31/google-assistant-currently-unavailable-for-this-language</id>
+    <content type="html"><![CDATA[<p>One day I said &ldquo;Hey Google&rdquo; and my <a href="http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions/">Pixel</a> didn&rsquo;t respond. After a few
+more unsuccessful tries I went into the settings and saw that Voice Match &mdash;
+the feature that lets you activate Google Assistant by voice &mdash; &ldquo;is currently
+unavailable for this language&rdquo;. I found this strange since the language was set
+to <strong>English</strong>, and it used to work. Now, neither US nor UK English, nor
+Danish, could make it work.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/google_assistant_voice_match_unavailable.png"></p>
+
+<p>I googled the problem and found lots of tips, but none of them worked. Later
+I found a solution, that I&rsquo;ll post here in the hopes of helping someone else.</p>
+
+<!-- more -->
+
+
+<a name="Toward.The.Solution"></a>
+<h2>Toward The Solution</h2>
+
+<p>Before I found the solution I checked several things after googling the
+problem. I confirmed that the microphone did work in other apps. In fact, it
+even worked in the Google app itself when activated by touch instead of voice.
+I didn&rsquo;t have other voice assistants installed that could somehow conflict with
+Google Assistant. I couldn&rsquo;t retrain the voice model as some recommended since
+the whole Voice Match feature was unavailable. I tried rebooting, uninstalling
+Google app updates, clearing its cache, reinstalling the updates, rebooting
+some more, all to no avail.</p>
+
+<p><img class="right" src="http://blog.erw.dk/images/posts/google_assistant_android_language_preferences.png"></p>
+
+<p>Besides the system Voice settings&#8217; language preferences, the Google app&rsquo;s
+Assistant settings also have language preferences. Here, I also had English
+(tried both US and UK), so that couldn&rsquo;t be the unsupported language either.
+Finally I went to the system settings&#8217; main language preferences, which are
+a <em>third</em> language setting in the same Google/Android ecosystem. My main
+language was set to &ldquo;English (Denmark)&rdquo;.</p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p>It&rsquo;s not enough to use a supported language, the regional variant also has to
+be supported and set in the correct one out of three sets of language
+preferences. &ldquo;English (Denmark)&rdquo; doesn&rsquo;t work, but setting the main system
+language preferences&#8217; top or only language to &ldquo;English (United States)&rdquo; does.
+Presumably English from other primarily English-speaking regions works as well.</p>
+
+<p><strong>After changing my <em>main</em> system language to &ldquo;English (United States)&rdquo;
+I could now activate Voice Match a.k.a. &ldquo;OK Google&rdquo;/&ldquo;Hey Google&rdquo;.</strong></p>
+
+<a name="Problems"></a>
+<h2>Problems</h2>
+
+<p>The above is more of a hack than an actual solution, because it prevents me
+from using Danish regional (time, date, number, etc.) formats on Android while
+using Voice Match.</p>
+
+<p>When I got my Pixel 2 I had set it myself to &ldquo;English (United States)&rdquo;. This
+worked fine until I later installed Google Fit and wanted its calendar view to
+use Monday as the first day of the week, rather than Sunday. The app didn&rsquo;t
+have it&rsquo;s own setting for this, but it worked after I changed the main system
+language to &ldquo;English (Denmark)&rdquo;. I don&rsquo;t use Google Assistant every day, so
+when &ldquo;Hey Google&rdquo; later didn&rsquo;t work, I didn&rsquo;t immediately make the connection
+to the region change.</p>
+
+<p>If the original error message had been &ldquo;This feature is currently unavailable
+for <em>English (Denmark)</em>&rdquo;, rather than the generic &ldquo;this language&rdquo;, it would
+have been much easier to fix. Even better, Android should use the Voice
+settings&#8217; language as the voice language. Or the Assistant settings&#8217; language
+as the assistant language. Or stop having so many language settings! Or let
+Voice Match fall back to a supported language variant if the chosen one is
+unsupported.</p>
+
+<a name="More.Problems"></a>
+<h2>More Problems</h2>
+
+<p>Speaking of Google Assistant problems, I just <a href="https://www.theguardian.com/technology/2019/may/28/a-white-collar-sweatshop-google-assistant-contractors-allege-wage-theft">read</a> that many of the
+linguists that helped create Google Assistant were treated with mistrust and
+being paid less than 20% of what permanent staff makes, while also expected to
+do unlogged overtime. I appreciate that not all skills are in equal demand, and
+therefore pay, but that&rsquo;s no excuse to treat people with a lack of respect <em>on
+top of</em> low pay and inferior health insurance. I think Google should choose to
+treat <em>all</em> its workers with dignity. #DontBeEvil</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Pin RemoteApps to the Taskbar]]></title>
@@ -2586,65 +2675,6 @@ the time that I spent on it.</p>
 does not work, you can also try a <strong>Ctrl-Alt-End</strong> (the remote desktop
 equivalent of Ctrl-Alt-Del), and see if you can work anything out from there.
 Good luck!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Keep Track With a Year at a Glance]]></title>
-    <link href="http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance/"/>
-    <updated>2016-01-10T19:32:58+01:00</updated>
-    <id>http://blog.erw.dk/2016/01/10/keep-track-with-a-year-at-a-glance</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/floss.jpg' width='' height='' alt='The calendar helped me floss (more or less) daily.'><span class='caption-text'>The calendar helped me floss (more or less) daily.</span></span></p>
-
-<p>If you are already starting to forget about your New Year&rsquo;s resolutions, here&rsquo;s
-a tip to keep going: Visualize your progress: Put X&rsquo;s on a calendar on every
-day you do what whatever you want to do more of. Stick the calendar on the wall
-or wherever it would remind you of your goal.</p>
-
-<p>Some years back, each time I visited my dentist, she recommended that I floss.
-And I would decide that <em>this time</em> I would start doing it. But some days
-later, I started slipping and forgetting about it. It wasn&rsquo;t until I put
-a year-at-a-glance calendar on the bathroom cabinet door that the habit stuck.</p>
-
-<p>Putting a mark on a calendar is not rocket science, but the satisfaction of
-marking a completed task and of seeing your progress is a mental reward that
-can make a big difference. If you want to try, I made a one page 2016 calendar
-you can print (<a href="http://blog.erw.dk/files/cal2016.odt">LibreOffice/odt</a>,
-<a href="http://blog.erw.dk/files/cal2016.docx">Word/docx</a>). (It was easily made with the open source
-ncal utility, invoked as <code>ncal -bh 2016</code>.)</p>
-
-<!-- more -->
-
-
-<a name="Don.t.Break.the.Chain"></a>
-<h2>Don&rsquo;t Break the Chain</h2>
-
-<p>For goals that can practically be done every day, it&rsquo;s not just having many
-marks on the calendar that is important. A further motivation is to keep the
-chain of successful days unbroken. (This method is widely known as the
-<a href="https://www.google.com/search?q=seinfeld+strategy">Seinfeld Strategy</a>, even though Jerry Seinfeld says
-<a href="https://www.reddit.com/r/IAmA/comments/1ujvrg/jerry_seinfeld_here_i_will_give_you_an_answer/ceitfxh">it wasn&rsquo;t his idea</a>.)
-For workouts or other things that you might not have time to do every day, you
-could still use the chain method by using a list of weeks of the year, and
-checking off each week that met your goal, say, doing at least two workouts. Or
-maybe drinking at most three bottles of soda that week.</p>
-
-<p>The chain method is also used in games and apps. For example, the app
-<a href="http://www.memrise.com/">Memrise</a> shows me my learning streak, or unbroken chain of days that
-I learn/memorize words or images in my chosen topic. Showing the streak has
-helped me to learn <a href="http://www.memrise.com/course/42769/country-mapping/">the world map</a> for five minutes a day, 234
-days in a row today. (The streak trick worked better than even the designers
-anticipated &ndash; the app crashed when trying to award me a 200-day badge.)</p>
-
-<a name="Not.Just.for.Resolutions"></a>
-<h2>Not Just for Resolutions</h2>
-
-<p>The fine art of putting marks on a calendar is not just for New Year&rsquo;s
-resolutions. I find it useful for anything I want to track. For example, I use
-one to remember when I last watered my chili plant. Or put a mark when you
-vacuum clean. Then you can see both when it would be a good idea to do it
-again, and in the long run, how often you do it &ndash; if you&rsquo;re interested in that
-sort of thing. Happy tracking!</p>
 ]]></content>
   </entry>
   

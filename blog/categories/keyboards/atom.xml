@@ -4,7 +4,7 @@
   <title><![CDATA[Category: keyboards | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/keyboards/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-04-24T00:11:09+02:00</updated>
+  <updated>2019-05-31T11:46:31+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -23,9 +23,22 @@ It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb ke
 It&rsquo;s very comfortable and much better than anything Logitech or Microsoft have
 ever labeled ergonomic.</p>
 
-<p></p>
+<p>{% comment %}
+<a href="https://www.kinesis-ergo.com/about-us/product-images/advantage2-keyboards/">https://www.kinesis-ergo.com/about-us/product-images/advantage2-keyboards/</a>
+<a href="http://www.ergovancouver.net/ergonomics_keyboard_fixed_split.htm">http://www.ergovancouver.net/ergonomics_keyboard_fixed_split.htm</a>
+<a href="https://www.techrepublic.com/blog/10-things/10-ergonomic-keyboards-that-actually-do-their-job/">https://www.techrepublic.com/blog/10-things/10-ergonomic-keyboards-that-actually-do-their-job/</a></p>
 
-<p><img src="/images/posts/kinesis_advantage2.jpg"></p>
+<p>Most of the advantages of ergonomic keyboards are only relevant to touch typists.</p>
+
+<p>Some ergonomic keyboards are slightly split, slightly tented, perhaps even
+negatively tilted, but they are staggered and non-concave with crappy key
+switches and no thumb keys.</p>
+
+<p>ErgoDox is free-split, columnar, mechanical and has thumb keys. ErgoDox EZ can
+be tented. But it&rsquo;s non-concave.
+{% endcomment %}</p>
+
+<p>{% img /images/posts/kinesis_advantage2.jpg %}</p>
 
 <!-- more -->
 
@@ -56,7 +69,7 @@ when the key is halfway depressed (2 out of 4 millimeters). This is opposed to
 standard rubber dome keyboards that require you to bottom out &mdash; fully depress
 the key until the finger is jolted to a stop.</p>
 
-<p><img src="/images/posts/kinesis_advantage2_side.jpg"></p>
+<p>{% img /images/posts/kinesis_advantage2_side.jpg %}</p>
 
 <p>The best feature of the Advantage is the <strong>concave</strong> keywells: The scooped-out
 parts of the keyboard where the alphanumeric keys reside. They serve several
@@ -87,7 +100,7 @@ transport.</p>
 <p>However, the physical shape of my keyboard is not the only weird thing about my
 typing. The <em>logical</em> layout I use &mdash; <a href="/2015/02/27/4-years-with-colemak/">Colemak</a> &mdash; is weird too.</p>
 
-<p><img src="/images/posts/kinesis_advantage_custom_keycaps_right.jpg"></p>
+<p>{% img /images/posts/kinesis_advantage_custom_keycaps_right.jpg %}</p>
 
 <p>Switching logical layout is much harder for me than switching physical layout.
 Even though the Advantage is firmware remappable, I set my logical layout in
@@ -118,7 +131,7 @@ Colemak. If I look down and the key shows a &lsquo;G&rsquo;, my eyes get confuse
 though my fingers knows exactly where to press to get the &lsquo;G&rsquo; while touch
 typing.</p>
 
-<p><img src="/images/posts/kinesis_advantage_custom_keycaps_left.jpg"></p>
+<p>{% img /images/posts/kinesis_advantage_custom_keycaps_left.jpg %}</p>
 
 <a name="Downsides"></a>
 <h2>Downsides</h2>
@@ -181,7 +194,40 @@ freaks control.</li>
     <link href="http://blog.erw.dk/2015/02/27/4-years-with-colemak/"/>
     <updated>2015-02-27T13:38:30+01:00</updated>
     <id>http://blog.erw.dk/2015/02/27/4-years-with-colemak</id>
-    <content type="html"><![CDATA[<p></p></blockquote>
+    <content type="html"><![CDATA[<p>{% comment %}
+My post after two years:
+<a href="https://www.facebook.com/photo.php?fbid=10152212582793797&amp;set=a.113201318796.99450.738668796&amp;type=1">https://www.facebook.com/photo.php?fbid=10152212582793797&amp;set=a.113201318796.99450.738668796&amp;type=1</a></p>
+
+<p>Input to analyses:
+<a href="http://www.gutenberg.org/browse/scores/top">http://www.gutenberg.org/browse/scores/top</a></p>
+
+<p>Topics:</p>
+
+<ul>
+<li>The colemak idea</li>
+<li>Complications:
+
+<ul>
+<li>non-US</li>
+<li>Dvorak</li>
+<li>Keyboard shape also has a lot to say (staggered vs matrix/grid vs 3d)</li>
+<li>non-letters (backspace, shift, enter, tab, control, &hellip;)</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Qwerty similarly is frowned upon by some, but it is extremely important for
+migration from qwerty!</p>
+
+<p><a href="http://xahlee.info/kbd/dvorak_and_all_keyboard_layouts.html">http://xahlee.info/kbd/dvorak_and_all_keyboard_layouts.html</a>
+<a href="http://xahlee.info/kbd/dvorak_vs_colemak.html">http://xahlee.info/kbd/dvorak_vs_colemak.html</a>
+<a href="http://xahlee.info/kbd/dvorak_vs_colemak_vs_workman.html">http://xahlee.info/kbd/dvorak_vs_colemak_vs_workman.html</a></p>
+
+<p><a href="http://thematrixtruth.remoteviewinglight.com/html/transcript-of-the-matrix-3.html">http://thematrixtruth.remoteviewinglight.com/html/transcript-of-the-matrix-3.html</a></p>
+
+<blockquote><p>You&rsquo;re here because you know something. What you know you can&rsquo;t explain. But
+{% endcomment %}</p></blockquote>
 
 <p>As a young computer user I felt that something was wrong with the keyboard.
 Like Morpheus says to Neo when they first meet:</p>
@@ -197,9 +243,12 @@ feeling that has brought you to me. Do you know what I&rsquo;m talking about?</p
 all day, but there&rsquo;s something wrong with it. Today, four years ago, I took the
 red pill: I started using the <a href="http://colemak.com/">Colemak</a> keyboard layout.</p>
 
-<p></p>
+<p>{% comment %}
+, and I have used it ever since.
+](/images/posts/colemak_qwerty_3d.png)
+{% endcomment %}</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/posts/colemak_qwerty_3d.png' width='' height='' alt='Comparison of QWERTY and Colemak keyboard layouts with letter frequencies. Graphics by Pavel Pavlov.'><span class='caption-text'>Comparison of QWERTY and Colemak keyboard layouts with letter frequencies. Graphics by Pavel Pavlov.</span></span></p>
+<p>{% imgcap /images/posts/colemak_qwerty_3d.png Comparison of QWERTY and Colemak keyboard layouts with letter frequencies. Graphics by Pavel Pavlov. %}</p>
 
 <!-- more -->
 
@@ -214,11 +263,102 @@ Colemak it has ¾ in English. The backspace key that is also used fairly often
 is also changed from an awkward pinky stretch to a prime location on the home
 row: where the caps lock key used to be.</p>
 
-<p></p>
+<p>{% comment %}
+ ⅓¾
+  3&#47;4
+{% endcomment %}</p>
 
-<p></p>
+<p>{% comment %}
+move your fingers (about half as much)</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/posts/CmkNew_IBM-DIY_90d-erw.png' width='' height='' alt='Colemak Keyboard Figure (IBM style) by <a href="https://github.com/DreymaR">Øystein Bech Gadmar</a>, <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>, caps lock key retouched, colors adjusted.&#8217;><span class='caption-text'>Colemak Keyboard Figure (IBM style) by <a href="https://github.com/DreymaR">Øystein Bech Gadmar</a>, <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>, caps lock key retouched, colors adjusted.</span></span></p>
+<p>In [2]: 8.55 + 6.33 + 6.73 + 8.94 + 3.87 + 4.96 + 7.17 + 12.10 + 7.33 + 7.47  # English arstdhneio
+Out[2]: 73.45
+In [3]: 8.55 + 6.73 + 3.87 + 2.18 + 2.09 + 4.96 + 0.22 + 0.81 + 4.21   # English asdfghjkl
+Out[3]: 33.62
+In [4]: 6.03 + 8.96 + 5.81 + 6.86 + 5.86 + 1.62 + 7.24 + 15.45 + 6.00 + 4.64  # Danish arstdhneio
+Out[4]: 68.47
+In [5]: 6.03 + 5.81 + 5.86 + 2.41 + 4.08 + 1.62 + 0.73 + 3.39 + 5.23 + 0.87  # Danish asdfghjklæ
+Out[5]: 36.029999999999994</p>
+
+<p>Besides placing the most frequently used
+letters where you keep your fingers, it also makes transitions from one letter
+to the next pleasant. This is done by reducing row jumping and repeated use of
+the same finger.</p>
+
+<p>On QWERTY, many common bigrams (sequences of two letters) jump between the top
+and bottom row using the same hand, which places stress on the fingers: <em>in</em>,
+<em>on</em>, <em>ve</em>, <em>be</em>, <em>no</em>, <em>my</em>. With Colemak, most two row jumps are avoided, and
+single row jumps are also reduced, simply because &frac34; of all letters are typed
+on the home row.</p>
+
+<p>(notice that some of these also jump between the top and bottom row!)</p>
+
+<p>{% imgcap /images/posts/CmkNew_IBM-DIY_90d-erw.png Image by <a href="https://github.com/DreymaR">Øystein Bech Gadmar</a> CC, colors adjusted. %}</p>
+
+<p>(try typing &ldquo;he ceded&rdquo; on QWERTY).</p>
+
+<p>Danish
+E : 15.45
+R :  8.96
+N :  7.24
+T :  6.86
+A :  6.03
+I :  6.00
+D :  5.86
+S :  5.81
+L :  5.23
+O :  4.64
+G :  4.08
+K :  3.39
+M :  3.24
+F :  2.41
+V :  2.33
+B :  2.00
+U :  1.98
+P :  1.76
+H :  1.62
+Å :  1.19
+Ø :  0.94
+Æ :  0.87
+J :  0.73
+Y :  0.70
+C :  0.56
+X :  0.03
+W :  0.07
+Z :  0.03
+Q :  0.01</p>
+
+<p>English
+E : 12.10
+T :  8.94
+A :  8.55
+O :  7.47
+I :  7.33
+N :  7.17
+S :  6.73
+R :  6.33
+H :  4.96
+L :  4.21
+D :  3.87
+C :  3.16
+U :  2.68
+M :  2.53
+F :  2.18
+G :  2.09
+P :  2.07
+W :  1.83
+Y :  1.72
+B :  1.60
+V :  1.06
+K :  0.81
+J :  0.22
+X :  0.19
+Z :  0.11
+Q :  0.10</p>
+
+<p>{% endcomment %}</p>
+
+<p>{% imgcap /images/posts/CmkNew_IBM-DIY_90d-erw.png Colemak Keyboard Figure (IBM style) by <a href="https://github.com/DreymaR">Øystein Bech Gadmar</a>, <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>, caps lock key retouched, colors adjusted. %}</p>
 
 <p>Typing on Colemak is very smooth. Besides reducing the distance your fingers
 have to travel, it also makes transitions from one letter to the next pleasant.
@@ -251,7 +391,10 @@ much more comfortable due to Colemak. Therefore I would like to say thank you
 to Shai Coleman for creating Colemak, and the Colemak <a href="http://forum.colemak.com/">community</a>
 for encouragement and many discussions!</p>
 
-<p></p>
+<p>{% comment %}
+(Even a four-finger roll is possible, albeit in slightly rarer
+words: b<em>arst</em>ool, st<em>arst</em>ruck, C<em>arst</em>en.)
+{% endcomment %}</p>
 
 <p>Below, some frequently asked questions, and my answers to them.</p>
 
@@ -287,7 +430,9 @@ by
 learning touch typing on Colemak. It&rsquo;s also more fun because you start typing
 real words instead of permutations of <em>fjdksl</em>!</p>
 
-<p></p>
+<p>{% comment %}
+win two friends with one cupcake
+{% endcomment %}</p>
 
 <a name="How.much.time.does.it.take.to.learn."></a>
 <h3>How much time does it take to learn?</h3>
@@ -302,7 +447,10 @@ Instead of switching all keys at once and being generally confused, you change
 a few keys, adapt, change a few more, adapt again. This way, you can stay
 fairly productive during the whole transition period. It&rsquo;s really quite clever.</p>
 
-<p></p>
+<p>{% comment %}
+Also, the fact that Colemak has some similarity to QWERTY (10 letters plus
+numbers and punctuation stay the same) makes it easier
+{% endcomment %}</p>
 
 <a name="What.about.other.people.using.your.computer."></a>
 <h3>What about other people using your computer?</h3>
@@ -322,7 +470,18 @@ retaining proficiency in both layouts.</p>
 I hunt and peck when I use other people&rsquo;s computers and enjoy the comfortable
 99% of the time on my own computers.</p>
 
-<p></p>
+<p>{% comment %}
+But also consider if it is worth the effort to keep QWERTY</p>
+
+<p>how much you use computers where setting up another layout is
+inconvenient. If it is all the time, an alternative layout is perhaps not for you.
+But if you primarily use your &ldquo;own&rdquo; computer at work and/or at home, I think the benefits</p>
+
+<p>Jeg kigger på tastaturet mens jeg skriver. To uger efter jeg startede på
+Colemak blev jeg for træt af QWERTY og stoppede helt med at bruge det på mine
+egne computere. Mange, der bruger alternative tastaturlayouts, skriver dog
+stadig blindskrift på QWERTY.
+{% endcomment %}</p>
 
 <a name="What.about.other.alternative.layouts."></a>
 <h3>What about other alternative layouts?</h3>
@@ -376,7 +535,7 @@ their sum is 3.0%, and having to reach for AltGr 2-3 times per sentence is more
 than I want. (However, this can be made much easier by putting AltGr on the
 Caps Lock location.)</p>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/colemak_dk.png' width='' height='' alt='Danish Colemak. The shaded keys have moved compared to Danish QWERTY.'><span class='caption-text'>Danish Colemak. The shaded keys have moved compared to Danish QWERTY.</span></span></p>
+<p>{% imgcap right /images/posts/colemak_dk.png Danish Colemak. The shaded keys have moved compared to Danish QWERTY. %}</p>
 
 <p>My solution keeps Ø and Å in their regular locations, while Æ only moves one
 position up &mdash; like the semicolon key in English.</p>
@@ -387,7 +546,21 @@ such as putting the brackets {[]} on AltGr-neio, putting backslash on the
 something else. If you are a programmer, you can also use the &ldquo;standard&rdquo;
 solution which is to use the US English layout (whether QWERTY or Colemak).</p>
 
-<p></p>
+<p>{% comment %}
+Danish Colemak <a href="http://forum.colemak.com/viewtopic.php?id=1050">http://forum.colemak.com/viewtopic.php?id=1050</a></p>
+
+<p>In Danish, it is even worse: <em>de</em> is the second most common of all two-letter</p>
+
+<p> ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┲━━━━━━┓
+ │ ½ │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ + │ ` ┃BackSp┃
+ ┢━━━┷━┱─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┺━┳━━━━┫
+ ┃Tab  ┃ Q │ W │ F │ P │ G │ J │ L │ U │ Y │ Æ │ Å │ ~ ┃Entr┃
+ ┣━━━━━┻┱──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┺┓   ┃
+ ┃BackSp┃ A │ R │ S │ T │ D │ H │ N │ E │ I │ O │ Ø │ &lsquo; ┃   ┃
+ ┣━━━━┳━┹─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┲━┷━━━┻━━━┫
+ ┃Shft┃ &lt; │ Z │ X │ C │ V │ B │ K │ M │ , │ . │ - ┃Shift    ┃
+ ┗━━━━┹───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┺━━━━━━━━━┛
+{% endcomment %}</p>
 
 <a name="What.about..Vim...vim_category.."></a>
 <h3>What about <a href="/blog/categories/vim/">Vim</a>?</h3>
@@ -398,9 +571,12 @@ home row &mdash; and rightly so, because in typing, they are very rare: 0.22% an
 don&rsquo;t feel the need for any changes, or because they use the arrow keys anyway
 (in which case I would recommend learning <em>hjkl</em>).</p>
 
-<p></p>
+<p>{% comment %}
+in which case I have some <a href="/2014/10/31/the-essence-of-vi/">recommended reading</a> for getting
+the most out of Vim.
+{% endcomment %}</p>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/colemak_vim_erw.png' width='' height='' alt='Vim remapping for Colemak'><span class='caption-text'>Vim remapping for Colemak</span></span></p>
+<p>{% imgcap right /images/posts/colemak_vim_erw.png Vim remapping for Colemak %}</p>
 
 <p>Some people make only minimal changes to Vim (see for example the end of
 <a href="http://www.ryanheise.com/colemak/">this page</a>) while others use the opportunity to do a
@@ -412,7 +588,19 @@ Insert <em>i</em> and end <em>e</em> are now on L and J. (You can memorize it as
 and &lsquo;jend&rsquo; until muscle memory takes over.) You can source <a href="https://bitbucket.org/erw/colemak/src/default/colemak.vim">my mappings</a>
 from your .vimrc to try it out.</p>
 
-<p></p>
+<p>{% comment %}</p>
+
+<a name="Should.I.use.it.on.my.smartphone."></a>
+<h3>Should I use it on my smartphone?</h3>
+
+<p>If you like, but I would say no. Colemak collects the most frequent keys on the
+home row. That makes it really good for a full size keyboard, but on
+a smartphone it means all the important stuff goes on in a fairly small area
+and your fingers will step on each other. For an optimized touch screen layout,
+<a href="http://www.exideas.com/ME/index.php">MessagEase</a> is an option (though I just use a QWERTY layout with
+SwiftKey).</p>
+
+<p>{% endcomment %}</p>
 
 <a name="What.about.using.an.Ergonomic.keyboard.instead."></a>
 <h3>What about using an Ergonomic keyboard instead?</h3>
@@ -427,9 +615,75 @@ That&rsquo;s what I do, but more on that later. (<a href="/2018/04/14/my-weird-k
 
 <p><em>Update 2018-04-14: Added link to my Kinesis Advantage post.</em></p>
 
-<p></p>
+<p>{% comment %}</p>
 
-<p></p>
+<a name="How.fast.is.it."></a>
+<h3>How fast is it?</h3>
+
+<p>Alternative layouts are about comfort and ergonomics. Despite the optimizations
+done in alternative layouts, they are not likely to help much with speed,
+because speed comes from knowing a layout extremely well.
+{% endcomment %}</p>
+
+<p>{% comment %}</p>
+
+<a name="Stuff"></a>
+<h2>Stuff</h2>
+
+<ul>
+<li>Gaming</li>
+<li>Virtual machines</li>
+<li>{See also <a href="http://www.minimak.org/caveats/">http://www.minimak.org/caveats/</a> }</li>
+<li>Dvorak? Hand alternation: “mommy you ok” in QWERTY (Xah Lee)</li>
+<li>Something better than Colemak (and Dvorak)?</li>
+<li>My ktouch Danish lesson</li>
+<li>Tools for learning</li>
+<li>Blindskrift, touch typing</li>
+<li>Not especially better than Dvorak (Dvorak has higher alteration (good), is
+maybe easier to keep separate from QWERTY in your head)</li>
+</ul>
+
+
+<p>Unidir  the ent ing tio (edt) sth
+2-roll  ion has oft men
+        and tha for nde nce tis</p>
+
+<pre><code>    Rolls: ars rst arst
+
+    oie ien
+
+    start
+</code></pre>
+
+<p>Combos:
+        (! means trip roll)
+        (!! means trip roll on one hand)
+1 roll:   this! tion! are! have! has not they!! first!!! could!! should!! last!!
+2 rolls:  that people from qwerty spell</p>
+
+<p><a href="http://hi-games.net/typing-test/watch?u=4610">http://hi-games.net/typing-test/watch?u=4610</a></p>
+
+<ul>
+<li>Comfort, not speed (consider not mentioning WPM at all!)</li>
+</ul>
+
+
+<p>Workman is good for flat keyboards, but on the Kinesis, the center columns are
+just closer to your fingertips.</p>
+
+<p>Dvorak maximized alternation.</p>
+
+<p>Bonus feature F U</p>
+
+<p>To uger efter jeg startede på at lære Colemak, skrev jeg med en brugbar
+hastighed på 25 WPM (ord i minuttet). Efter yderligere en uge havde jeg nået 40
+WPM, og to måneder efter jeg startede, havde jeg passeret min tidligere
+QWERTY-hastighed på godt 60 WPM, som vel at mærke var resultatet af flere års
+blindskrift. Det tager lidt tid at lære et nyt layout, men I betragtning af,
+hvor meget man skriver på computer, er det en investering, jeg aldrig har
+fortrudt. Nu skriver jeg 80-90 WPM. Men det bedste ved det er nu, at det er
+mageligt at skrive.
+{% endcomment %}</p>
 ]]></content>
   </entry>
   

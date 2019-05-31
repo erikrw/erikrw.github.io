@@ -4,7 +4,7 @@
   <title><![CDATA[Category: usability | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/usability/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-04-24T00:11:09+02:00</updated>
+  <updated>2019-05-31T11:46:31+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -26,9 +26,13 @@ First we&rsquo;ll see some examples of bad design, then some good ones!</p>
 <!-- more -->
 
 
-<p></p>
+<p>{% comment %}
+These things often take place on a subconscious level, but if you try to listen
+to the small sensations you get when something is confusing (or pleasant), you
+can hear them.
+{% endcomment %}</p>
 
-<p><img class="right" src="/images/posts/hengelo_wachtruimte.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img right /images/posts/hengelo_wachtruimte.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>First, a usability classic: Door handles. The waiting rooms at the Hengelo
 train station had door handles with both horizontal and vertical bars on both
@@ -43,13 +47,16 @@ whether it&rsquo;s a door or an iPhone. One part of doing this is to make simple
 operations (such as opening a door) self-explanatory by design, and not make
 the user feel stupid &mdash; such as when you open a door the wrong way.</p>
 
-<p></p>
+<p>{% comment %}
+(And for potentially dangerous tools and machinery, usability principles can be
+used to improve safety.)
+{% endcomment %}</p>
 
 <p>Next up was my ticket, which was a print-at-home e-ticket. My Dutch is not so
 good, but the ticket had a nice illustrated instruction of how I was supposed
 to scan the ticket at the station:</p>
 
-<p><img class="center" src="/images/posts/ns_e-ticket.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img center /images/posts/ns_e-ticket.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>Only there was no scanner in sight on the station. I had plenty of time, so
 I went to the ticket office to ask what to do. There I learned that this
@@ -61,13 +68,19 @@ ticket stall window saying the same thing: At this station it is not necessary
 to scan the e-tickets. I recommended them to put that sign on the platforms
 where people actually look for the scanners and therefore need the information.</p>
 
-<p></p>
+<p>{% comment %}
+And that might be no problem, except for the fear that I could get a fine for
+not scanning the ticket. If the ticket had a bar code but no instructions
+I would probably have assumed it was for the conductor, or simply not thought
+about it at all. But then people would probably have more problems at the
+stations that do have barriers and scanners. Oh well.
+{% endcomment %}</p>
 
 <p>On the train they had a nice info screen. But here I got momentarily confused
 as well. This was a bit of Dutch I could understand: &ldquo;Aankomsttijd eindpunt&rdquo;:
 Arrival time at the final destination.</p>
 
-<p><img class="center" src="/images/posts/syntus_train.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img center /images/posts/syntus_train.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>The only problem was that this final arrival time, 7:17, was <em>now</em>. I had
 entered a train that was already at its destination and not going further. And
@@ -85,9 +98,25 @@ belong together. After reading &ldquo;Aankomsttijd eindpunt&rdquo;, my eyes were
 drawn to left because the clock was both closer and bigger than the correct
 arrival time.</p>
 
-<p></p>
+<p>{% comment %}
+It&rsquo;s kind of obvious, really &mdash; except maybe to the designer
+who put the Arrival time label closer to the clock than to the actual final
+arrival time.</p>
 
-<p><img class="right" src="/images/posts/ns_speaking_zone.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>Logic is a tool our brains can sometimes use, but it&rsquo;s not really the
+default. Especially not at seven in the morning!
+If I had read the <em>all</em> the text, or done something else &ldquo;logical&rdquo;, I would
+have found the right meaning.
+But that&rsquo;s beside the point.</p>
+
+<p>Well, this is very easy to think. Both when you are the one doing
+the misunderstanding, but also now that I&rsquo;m exposing myself!</p>
+
+<p>(if they even enter your conscious thought)
+Human error? No, design error.
+{% endcomment %}</p>
+
+<p>{% img right /images/posts/ns_speaking_zone.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>Only 20 minutes passed and I already misunderstood three things. How stupid
 I must be! Well, it&rsquo;s easy to blame yourself for these things, when in fact the
@@ -104,14 +133,14 @@ a pleasant environment can give you a better experience than a functionally
 equivalent but ugly environment. Arnhem station was both spacious and elegant
 (and functional):</p>
 
-<p><img class="center" src="/images/posts/arnhem.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img center /images/posts/arnhem.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>Another aspect of train usability is door opening buttons.
 On the return trip I found two types.
 The left is from the inside of a Dutch train; the right is from the outside of
 a German ICE train:</p>
 
-<p><img class="center" src="/images/posts/train_door_buttons.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img center /images/posts/train_door_buttons.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>Train doors cannot be opened by passengers while the train is in motion, so the
 buttons are only active at stations. The left set of buttons leaves the user to
@@ -123,7 +152,7 @@ displaying their state to the user, including which button is relevant to press
 in the Danish IC3 trains suck. The Dutch and German ones are better. Dutch on
 the left, German ICE on the right:</p>
 
-<p><img class="center" src="/images/posts/tray_tables.jpg" title="&lsquo;TODO&rsquo; &lsquo;TODO&rsquo;" ></p>
+<p>{% img center /images/posts/tray_tables.jpg &lsquo;TODO&rsquo; &lsquo;TODO&rsquo; %}</p>
 
 <p>This time I&rsquo;ll give the first price to the Dutch train. The table has no lock;
 friction holds the table in place. The edge can be grabbed by either hand, and
@@ -133,7 +162,10 @@ lock is slightly awkward. In addition it requires two hands to close; one
 holding the table, and one operating the lock. (Alternatively, you can slam it
 shut and make a loud noise!)</p>
 
-<p></p>
+<p>{% comment %}
+No biggie, but when you are making a product
+anyway, you might as well make it pleasant to use.
+{% endcomment %}</p>
 
 <p>Thanks for reading.</p>
 
@@ -146,9 +178,14 @@ shut and make a loud noise!)</p>
     <link href="http://blog.erw.dk/2014/11/21/the-design-of-everyday-things/"/>
     <updated>2014-11-21T04:15:21+01:00</updated>
     <id>http://blog.erw.dk/2014/11/21/the-design-of-everyday-things</id>
-    <content type="html"><![CDATA[<p></p>
+    <content type="html"><![CDATA[<p>{% comment %}
+Revision notes:</p>
 
-<p><img class="right" src="/images/posts/IC3_tray_table.jpg" width="300" title="&lsquo;A tray table in a Danish IC3 train&rsquo; &lsquo;A tray table in a Danish IC3 train&rsquo;" ></p>
+<p>2014-11-21  Add photo of IC3 doors and pictogram.</p>
+
+<p>{% endcomment %}</p>
+
+<p>{% img right /images/posts/IC3_tray_table.jpg 300 &lsquo;A tray table in a Danish IC3 train&rsquo; &lsquo;A tray table in a Danish IC3 train&rsquo;  %}</p>
 
 <p>The woman in the seat next to me on the train had trouble folding down her tray table.
 I showed her how to do it, and she said &ldquo;Oh, I&rsquo;ve never been good at that sort of thing.&rdquo;
@@ -163,7 +200,13 @@ I hope to do a better job here of convincing you than I did with the woman in th
 <!-- more -->
 
 
-<p></p>
+<p>{% comment %}</p>
+
+<p>Technology users are fond of blaming themselves for others&#8217; mistakes!</p>
+
+<p>Maybe I was wrong in doubting her lack of aptitude!
+    ## Affordance
+{% endcomment %}</p>
 
 <p>The concept of <em>affordance</em> is about what things <em>are for</em>.
 For example, a hammer <em>affords</em> hitting.
@@ -185,9 +228,13 @@ Well, for example, sometimes we pull a door handle, but the door doesn&rsquo;t o
 The handle affords pulling, but the door opens the other way.
 It&rsquo;s when affordances and operations don&rsquo;t match that we get confused.</p>
 
-<p></p>
+<p>{% comment %}
+We pull the handle, and the door opens.
+We push the &ldquo;play&rdquo; button and the music starts playing.
+, or the (possibly considerable) effort put into designing them.
+{% endcomment %}</p>
 
-<p><img class="right" src="/images/posts/tray_table_locks.png" title="&lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo; &lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo;" ></p>
+<p>{% img right /images/posts/tray_table_locks.png &lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo; &lsquo;Drawing of the IC3 tray lock design and a better alternative&rsquo; %}</p>
 
 <p>The tray table lock in the train had a mismatch between affordance and operation.
 The round hole surrounding the small plastic handle made the whole thing look like things we normally <em>turn</em>, like the knob on a stove, or a volume knob.
@@ -201,14 +248,17 @@ Grooves in the plastic make it look compressible, like an accordion.
 The plastic isn&rsquo;t in fact compressible, but the supporting springs underneath are.
 But independently of the mechanical implementation, the design speaks it&rsquo;s clear language: I&rsquo;m flexible.</p>
 
-<p><img src="/images/posts/shaver.jpg" title="&lsquo;My groovy Braun shaver&rsquo; &lsquo;My groovy Braun shaver&rsquo;" ></p>
+<p>{% img /images/posts/shaver.jpg &lsquo;My groovy Braun shaver&rsquo; &lsquo;My groovy Braun shaver&rsquo;  %}</p>
 
 <p>James J. Gibson has some <a href="http://www.trincoll.edu/depts/ecopsyc/perils/folder5/prelim.html">more examples of affordances</a>.</p>
 
 <a name="Why.Usability.Matters"></a>
 <h2>Why Usability Matters</h2>
 
-<p></p>
+<p>{% comment %}
+So actually &mdash; instructions or not &mdash; it&rsquo;s just really important to guide the user with affordance.
+And to match affordances to the <em>correct</em> functions.
+{% endcomment %}</p>
 
 <p>Affordance is related to <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/">usability</a>, or, how easy and efficient things are to use.
 Good use of affordance makes it easy to learn how to use something and less likely to make mistakes.
@@ -223,11 +273,56 @@ The problem was lack of affordance:
 Ticking a box is just not very satisfying <a href="http://commons.wikimedia.org/wiki/File:Stemmesedler_2005.JPG#mediaviewer/File:Stemmesedler_2005.JPG">when there&rsquo;s no box</a>.
 In addition, inattentive voters might have marked their vote with a ring around a name, thus invalidating their vote because only a cross is allowed.</p>
 
-<p></p>
+<p>{% comment %}
+{% imgcap left <a href="http://upload.wikimedia.org/wikipedia/commons/6/66/Butterfly_large.jpg">http://upload.wikimedia.org/wikipedia/commons/6/66/Butterfly_large.jpg</a> <a href="http://commons.wikimedia.org/wiki/File%3AButterfly_large.jpg">Photo</a> by User:Anthony [Public domain],  %}
+{% endcomment %}</p>
 
-<p></p>
+<p>{% comment %}</p>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/posts/cockpit.jpg' width='320' height='240' alt='<a href="http://pixabay.com/en/cockpit-kontrolpanel-466157/">Picture</a> by <a href="http://pixabay.com/en/users/gepardowa-320124/">gepardowa</a> is licenced under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>&#8217;><span class='caption-text'><a href="http://pixabay.com/en/cockpit-kontrolpanel-466157/">Picture</a> by <a href="http://pixabay.com/en/users/gepardowa-320124/">gepardowa</a> is licenced under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a></span></span></p>
+<p>Affordances are learned, and later used in understanding how things are used.
+Fire is for getting burned, but also for heating things.</p>
+
+<p>This shows us two things:
+Affordances can be learned by interaction and later recognized.
+For example</p>
+
+<p>TODO: Physical and association/learnable (once they are learned, they can be recognized in other places)</p>
+
+<p>Affordances relate to physical interaction.
+For example, a push plate on a door for pushing, because that&rsquo;s the only thing we as humans can do with it.
+A gecko, for example, might have more interaction possibilities with a vertical smooth surface.
+A fence that affords obstructing sheep may allow (grown) humans to pass.</p>
+
+<p>TODO: Familiarity.</p>
+
+<p>TODO: It&rsquo;s not <em>only</em> about culture, it&rsquo;s also about our physical bodies.</p>
+
+<p>At least this is what I think.
+There is no exhaustive or final list of affordances &mdash; they depend on the observer and what he or she has learned and is familiar with.
+For this reason, some prefer the word <em>familiar</em> over intuitive.</p>
+
+<pre><code>, but for now I will use "intuitive", since it is, well, more *intuitive* to many people!
+</code></pre>
+
+<p>As a business, you don&rsquo;t want your users to make mistakes on your webshop, because mistakes lead to frustrated users.
+And whether frustrated users blame themselves or you for their problems, they are less likely to want to interact (=buy) from you.</p>
+
+<p>You may wonder if this isn&rsquo;t just a question of paying attention.
+Or put bluntly: A question of not being stupid.
+To some extent, yes.
+But even very smart people</p>
+
+<p>basically that&rsquo;s just how human</p>
+
+<p>There are two parts to this question:</p>
+
+<p><a href="http://www.nngroup.com/articles/are-users-stupid/">no</a>
+Able vs. willing</p>
+
+<p>, and also to relearn it after a period of disuse.
+{% endcomment %}</p>
+
+<p>{% imgcap left /images/posts/cockpit.jpg 320 240 <a href="http://pixabay.com/en/cockpit-kontrolpanel-466157/">Picture</a> by <a href="http://pixabay.com/en/users/gepardowa-320124/">gepardowa</a> is licenced under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> %}</p>
 
 <p>You may wonder if this isn&rsquo;t just a question of paying attention.
 Or put more bluntly: A question of not being <a href="http://www.nngroup.com/articles/are-users-stupid/">stupid</a>.
@@ -240,7 +335,10 @@ For example, while controlling an airplane or that nuclear power plant, there ca
 Even though pilots and operators are trained, it doesn&rsquo;t mean that they are infallible.
 Humans will always make mistakes, so the tools we use should not increase the risk of errors.</p>
 
-<p></p>
+<p>{% comment %}
+In stressful situations, the brain focuses on <em>doing</em> rather than reflecting and learning.
+With respect to usability, being clever is not about having &ldquo;better&rdquo; perception, but rather to know that both your own mind and others&#8217; designs are fallible.
+{% endcomment %}</p>
 
 <p>When human life is not at stake, money is.
 Usability is also part of designing an attractive product that users want to buy.
@@ -249,7 +347,15 @@ Once the product itself is good enough, its website must also have good usabilit
 Jakob Nielsen, a colleague of Don Norman, is known to say that &ldquo;a bad website is like a grumpy salesperson&rdquo;.
 Web usability and user experience design are fields of their own, but they are based on human cognition, just like <em>the design of everyday things</em>.</p>
 
-<p></p>
+<p>{% comment %}
+After writing about usability in The Design of Everyday Things, Don Norman learned that usability is not the only thing relevant to our interactions with products and design.
+It must also speak to our emotions.
+This is the topic of his book <a href="http://en.wikipedia.org/wiki/Emotional_Design">Emotional Design</a>.</p>
+
+<a name="Don.t.Make.Me.Think"></a>
+<h2>Don&rsquo;t Make Me Think</h2>
+
+<p>{% endcomment %}</p>
 
 <p>Once you are aware of the concept of affordance, you might start looking for it in your surroundings.
 I suspect Danish people reading this might remember a more obvious usability problem in the Danish IC3 trains, besides the tray table:
@@ -264,7 +370,7 @@ Of course you <strike>fix them</strike> provide instructions!</p>
 
 <p>(I noticed that Don&rsquo;t Make Me Think is also <a href="http://www.sensible.com/dmmt.html">a book about web usability</a>. I have not read it, but I fully agree with the message of its title! And it doesn&rsquo;t apply only to web usability.)</p>
 
-<p><span class='caption-wrapper left'><img class='caption' src='/images/posts/pushpull.jpg' width='450' height='338' alt='<a href="https://www.flickr.com/photos/russmorris/481397004/">Push Pull</a> by <a href="https://www.flickr.com/photos/russmorris/">Russ Morris</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>&#8217;><span class='caption-text'><a href="https://www.flickr.com/photos/russmorris/481397004/">Push Pull</a> by <a href="https://www.flickr.com/photos/russmorris/">Russ Morris</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a></span></span></p>
+<p>{% imgcap left /images/posts/pushpull.jpg 450 338 <a href="https://www.flickr.com/photos/russmorris/481397004/">Push Pull</a> by <a href="https://www.flickr.com/photos/russmorris/">Russ Morris</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a> %}</p>
 
 <p>A classic example of usage instructions is push/pull signs on doors.
 Using affordance properly, it is wholly possible to design a door where the shape and position of the handles and the design of the frame subconsciously guide us to push when and where we should push, and pull when and where we should pull.
@@ -289,7 +395,7 @@ Our brains have evolved and adapted to a tangible environment, and reading is re
 <p>But it turns out all instructions are not equally bad.
 Here&rsquo;s a door I came across in the Gromada Airport Hotel in Warsaw:</p>
 
-<p><img src="/images/posts/gromada.jpg" title="&lsquo;Hotel Gromada push&#47;pull doors signs&rsquo; &lsquo;Hotel Gromada push&#47;pull doors signs&rsquo;" ></p>
+<p>{% img /images/posts/gromada.jpg &lsquo;Hotel Gromada push&#47;pull doors signs&rsquo; &lsquo;Hotel Gromada push&#47;pull doors signs&rsquo; %}</p>
 
 <p>I think the 3D effect of the arrows can actually help speak directly to our spatial intelligence, bypassing the need for reading and language processing.
 (Of course it helps that I don&rsquo;t read Polish!)
@@ -299,7 +405,7 @@ It would be up to user testing to tell.</p>
 
 <p>While instructions are typically employed to meet the lack of affordance, they can also be used when there&rsquo;s <em>unwanted</em> affordance:</p>
 
-<p><img src="/images/posts/dont_push.jpg" title="&lsquo;A don&#39;t push sign on a revolving door&rsquo; &lsquo;A don&#39;t push sign on a revolving door&rsquo;" ></p>
+<p>{% img /images/posts/dont_push.jpg &lsquo;A don&#39;t push sign on a revolving door&rsquo; &lsquo;A don&#39;t push sign on a revolving door&rsquo; %}</p>
 
 <p>(This particular revolving door at the NH Utrecht hotel was however spinning so fast I had a hard time seeing why anyone would feel the need to push it.
 I think it shows in my blurry picture.)</p>
@@ -309,9 +415,13 @@ Some rules are perhaps better enforced by removing the affordance.
 For example, a <a href="http://www.citylab.com/design/2014/10/why-12-foot-traffic-lanes-are-disastrous-for-safety-and-must-be-replaced-now/381117/">narrow</a> or curvy road does not afford driving at high speed.
 (Neither do roads with speed bumps, because the bumps afford unpleasant bouncing and perhaps damaging the car.)</p>
 
-<p></p>
+<p>{% comment %}
+To make it worse, the words &ldquo;push&rdquo; and &ldquo;pull&rdquo; are so similar in shape that they require deliberate reading, not just scanning, to distinguish.
+In Danish, it&rsquo;s even worse: &ldquo;tryk&rdquo; vs. &ldquo;træk&rdquo;; only one letter is different.
+Or maybe an English speaker visits Brazil or Portugal, where &ldquo;puxar&rdquo; (pronounced &ldquo;pushar&rdquo;) means &hellip; that&rsquo;s right: Pull.
+{% endcomment %}</p>
 
-<p><img class="right" src="/images/posts/microfridge.jpg" width="350" title="&lsquo;A usable microwave oven&rsquo; &lsquo;A usable microwave oven&rsquo;" ></p>
+<p>{% img right /images/posts/microfridge.jpg 350 &lsquo;A usable microwave oven&rsquo; &lsquo;A usable microwave oven&rsquo;  %}</p>
 
 <p>We already established that it&rsquo;s better to guide the user with affordance than with instructions, but some things may be too complex to rely solely on affordance.
 In those cases we might be asked to read instruction manuals instead of a single pictogram or sentence.
@@ -326,19 +436,91 @@ Alas, it probably doesn&rsquo;t matter anyway, because&hellip;)</p>
 
 <p>This is why affordance was important in the first place, along with many other concepts related to usability such as <a href="http://www.nngroup.com/articles/mental-models/">mental models</a> and feedback to the user about the state of the system.</p>
 
-<p></p>
+<p>{% comment %}
+But with that said, some advanced tools cannot be learned all through intuition, and they may really be worth reading a manual to learn.
+<a href="/2014/10/31/the-essence-of-vi/">I wrote about one recently</a>!</p>
 
-<p></p>
+<p>When a simple task requires reading a manual, it is a waste of time.</p>
 
-<p></p>
+<p>Sometimes people even add <a href="https://www.flickr.com/photos/cennydd/3191424928/">too many signs</a>.</p>
 
-<p><img class="left" src="/images/posts/hisf.jpg" title="&lsquo;An empathetic elevator sign&rsquo; &lsquo;An empathetic elevator sign&rsquo;" ></p>
+<p>Or maybe the designer went purely for aesthetics &mdash; Norman mentions his friend getting temporarily trapped between two rows of glass doors with no visible pillars or hinges (and presumably no handles either).</p>
+
+<a name="Don.t.Ask.Your.Users.to.Think"></a>
+<h2>Don&rsquo;t Ask Your Users to Think</h2>
+
+<p>The brain can be said to work at different levels.
+It can perform learned behavior automatically, efficiently, and also subconsciously.
+It can also contemplate, learn, and reflect, but this happens consciously and with limited capacity.
+We can also say there&rsquo;s a more primal level below both of those, but that&rsquo;s not needed now.
+The brain is a very complex machine to which we just apply some level of generalization.</p>
+
+<p>Tasks that the brain can handle subconsciously come &ldquo;for free&rdquo;.
+That&rsquo;s why you can walk down the street, thinking about what to make for dinner.
+Walking is very complex, but it&rsquo;s automated.</p>
+
+<p>TODO: Norman doesn&rsquo;t go here in the introduction, he just says that if you need a label, you failed.</p>
+
+<p>What happens when we come across a door with instructions?
+Perhaps we don&rsquo;t notice the sign and the subconscious chooses push or pull depending on what seems more likely from the make-up of the door and past experiences.
+If the choice was right, good.
+If the door doesn&rsquo;t budge, we experience a jarring sensation (consciously or not, depending on your awareness), try the other choice and move on.
+Or maybe you become aware of the instructions.</p>
+
+<p>TODO: Fix you vs. we</p>
+
+<p>Doors typically only have two options &mdash; push or pull &mdash; unless they&rsquo;re locked.
+But many processes are not so simple.  So you scare your customers away.</p>
+
+<p>In a later book, Emo Design, we learn how successful product appeal to all levels of thinking.</p>
+
+<p>{% endcomment %}</p>
+
+<p>{% comment %}</p>
+
+<p>On a deeper level, mistakes reduced the users&#8217; trust in your webshop.
+If a button unexpectedly clears the shopping basket, that&rsquo;s</p>
+
+<p>and nuclear power plant control rooms.
+Toilet doors can be trickier!</p>
+
+<p>But there are two underlying problems: Errors and emotions.</p>
+
+<p>TODO: It&rsquo;s not just about thinking, it&rsquo;s also about attention, memory, <a href="http://www.nngroup.com/courses/human-mind/">http://www.nngroup.com/courses/human-mind/</a></p>
+
+<p>Usab. is not just about using right now, it&rsquo;s also about trusting the system
+(for example concurrent edits in a wiki)</p>
+
+<p>United States presidential election, the race between Bush and Al Gore was very close.
+But the design of a ballot in Palm Beach County could
+{% endcomment %}</p>
+
+<p>{% comment %}
+Possible orders:</p>
+
+<p>Blocks:
+- door (instructions)
+- HISF (instructions, leads into emotions?)
+- shaver (can be used to lead into emotions)
+- wavy lines (affordance, signifier, emotions)</p>
+
+<p>Philip mentioned that a delay on a conference call made it awkward. (The &ldquo;no speech&rdquo; weapon is even similar)</p>
+
+<p>TODO: What else is relevant in usability? feedback, knowing the state, conceptual models
+{% endcomment %}</p>
+
+<p>{% img left /images/posts/hisf.jpg &lsquo;An empathetic elevator sign&rsquo; &lsquo;An empathetic elevator sign&rsquo; %}</p>
 
 <p>Finally, an example that you can even have bad usability and still make your users (at least the ones who read!) walk away with a smile.
 I found it next to the elevator in the HI-San Francisco Downtown hostel.
 (The quality of the signage in that place <em>almost</em> made up for the quality of the breakfast!)</p>
 
-<p></p>
+<p>{% comment %}</p>
+
+<a name="Conclusion"></a>
+<h2>Conclusion</h2>
+
+<p>{% endcomment %}</p>
 
 <p>In conclusion, products that are compatible with our brains&#8217; autopilots work really well.
 Part of achieving that is matching affordance to the functionality of the product.
@@ -349,16 +531,104 @@ This is of course far from always the case, especially in complex systems.
 In fact, the field I do my PhD in, <a href="http://en.wikipedia.org/wiki/Formal_methods">formal methods</a>, is exactly about proving that complex computer controlled systems function as they are supposed to.
 This in itself can require an enormous effort, but as we have seen in this post, correct functioning should be matched by good usability.</p>
 
-<p></p>
+<p>{% comment %}
+Sometimes the lines are even blurred: Video playback with lag and jitter can technically show all the frames, but from a human perspective it doesn&rsquo;t really work.
+Therefore time-constraints can be seen as first-class functional requirements when designing a system.
+This is the topic of <a href="http://en.wikipedia.org/wiki/Real-time_computing">real time systems</a>.
+{% endcomment %}</p>
 
-<p></p>
+<p>{% comment %}</p>
+
+<p>TODO: Make a &ldquo;map&rdquo; of usability, HCI, and interaction design. Maybe that could help with a title for this blog post.</p>
+
+<p>TODO: Read my own comments and see if I should add something.</p>
+
+<p>I have presupposed that the <em>functions</em> of the products work as intended, and that they just need to be conveyed efficiently to us using affordance.
+I never mentioned that a door can get stuck and that all software has bugs.
+Making correct software is a huge endeavor of separate interest (it is indeed the field I do my PhD studies in).
+But for the user, all problems &mdash; usability and functionality alike &mdash; can be contained within the two phrases &ldquo;I&rsquo;m just stupid&rdquo; and &ldquo;It doesn&rsquo;t work&rdquo;.
+I hope after reading this, you will use the former less and the latter more.</p>
+
+<p>TODO: Fjern software.</p>
+
+<p>TODO: Is usability part of functionality, or is functionality part of usability?</p>
+
+<p>And here, I have even supposed that the functionality is desired.</p>
+
+<p>I&rsquo;ll let the final example speak for itself. TODO: Or will I?</p>
+
+<p>know that often the former should be replaced by the latter.</p>
+
+<p>If the checkout process simply cannot pass a certain step &mdash; as I recently tried while ordering a book from a major global science publisher &mdash; users also leave.)</p>
+
+<a name="More"></a>
+<h2>More</h2>
+
+<p>Norman&rsquo;s book is about much more</p>
+
+<p>Affordance can also explain work of vandals (glass, wood)</p>
+
+<p>Conceptual models, design principles, feedback</p>
+
+<a name="Why.Don.t.Programmers.Care."></a>
+<h2>Why Don&rsquo;t Programmers Care?</h2>
+
+<p>No ownership
+{% endcomment %}</p>
 
 <p><em>Except where it says otherwise, the
 <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">images on this post</span> are by me, <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Erik Ramsgaard Wognsen</span>, and you may reuse them under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</em></p>
 
-<p></p>
+<p>{% comment %}
+<a href="https://www.flickr.com/groups/uxerrors/pool/tags/door/">https://www.flickr.com/groups/uxerrors/pool/tags/door/</a>
+<a href="http://upload.wikimedia.org/wikipedia/commons/0/0f/DSB_IC3_interior.JPG">http://upload.wikimedia.org/wikipedia/commons/0/0f/DSB_IC3_interior.JPG</a>
+<a href="http://www.bahnbilder.de/bild/daenemark~triebzuege~ic-3-2000er-elektro-er-20xx-fr22xx-fr23xx-er21xx/707673/der-1klassedsb-1bereich-in-eines-ir4.html">http://www.bahnbilder.de/bild/daenemark~triebzuege~ic-3-2000er-elektro-er-20xx-fr22xx-fr23xx-er21xx/707673/der-1klassedsb-1bereich-in-eines-ir4.html</a>
+{% endcomment %}</p>
 
-<p></p>
+<p>{% comment %}</p>
+
+<p>TODO: the doors in Frb 7G are retarded.</p>
+
+<p>Plus, most people don&rsquo;t read them anyway.</p>
+
+<p>Some things are so complicated that they cannot be made without a manual.</p>
+
+<a name="RRH"></a>
+<h3>RRH</h3>
+
+<p>In the fall semester of 2012 I taught a mini course on smartphone programming for business IT students.
+When I told my university advisor <a href="http://people.cs.aau.dk/~rrh/">René</a> that I had made usability part of the course, he said:</p>
+
+<blockquote><p>What?!</p></blockquote>
+
+<p>After shaking his head for a while, he continued:</p>
+
+<blockquote><p>You use Vim and you want to teach usability?</p></blockquote>
+
+<p>If you don&rsquo;t know what Vim is all about, <a href="/2014/10/31/the-essence-of-vi/">I wrote about it</a>.</p>
+
+<a name="Justification"></a>
+<h3>Justification</h3>
+
+<p>2014-10-11: It may seem silly to care about small misundestandings in user
+interfaces, when the products work perfectly well. But attention to detail is
+the difference between a product that works and one that works really well. It
+would for example be ironic if a happy Apple user thought this attention to
+detail a waste of time.</p>
+
+<p>Goal: make you, readers, the general public aware of usability issues to help
+you choose better products and to help companies 2014-01-02: And just to get my
+obsessions out of my system. Well, both good and bad things.</p>
+
+<p>Business perspectives:
+    uklarhed og modsigelser giver dårlig oplevelse, mistrust. Kan fx skyldes manglende opdateringer eller vedligehold af info.
+    kvalitetsforbedring
+    logisk opbygning
+    forståelse, læring
+    adskil dig positivt fra konkurrenterne &ndash; mange firmaer har dårlig kommunikation, også selvom de &ldquo;engang har betalt et firma for at gøre det rigtigt&rdquo;
+    kvalitetsforbedring, konsistens</p>
+
+<p>{% endcomment %}</p>
 ]]></content>
   </entry>
   
