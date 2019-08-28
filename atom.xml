@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:24+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,200 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RIP Mercurial (on Bitbucket)]]></title>
+    <link href="http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket/"/>
+    <updated>2019-08-28T07:39:28+02:00</updated>
+    <id>http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket</id>
+    <content type="html"><![CDATA[<p><a href="https://bitbucket.org/">Bitbucket</a> is going to <a href="https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket">drop support</a> for the
+<a href="https://www.mercurial-scm.org/">Mercurial</a> version control system, due to most people using
+<a href="https://git-scm.com/">Git</a> instead. I use both Mercurial (hg) and Git, and while Git has become
+the de facto standard today, Mercurial was my first love in the world of
+version control systems, and I&rsquo;m sad to see it go.</p>
+
+<p>Of course, Mercurial is not dead, but being removed from Bitbucket is a big
+deal (at least to me). But this news also gave me an occasion to reconsider Git
+vs. Mercurial, and writing this post has actually given me a newfound, if not
+appreciation, then at least understanding of Git.</p>
+
+<!-- more -->
+
+
+<a name="Init"></a>
+<h2>Init</h2>
+
+<p>When I started university in 2006, <a href="https://en.wikipedia.org/wiki/Apache_Subversion">SVN</a> had recently replaced <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>
+as the cool thing. So for group work we used SVN and it worked fine. Well,
+except for all the file conflicts we got. And the awful tree conflicts. Come to
+think of it, it didn&rsquo;t work that great. Luckily
+<a href="https://en.wikipedia.org/wiki/Distributed_version_control">distributed version control systems</a> had been maturing in the meantime.</p>
+
+<p>In 2009 we started using Mercurial. It was like SVN, except it was actually
+good for collaboration! Now you could store a safe snapshot of your own work
+before trying to merge other people&rsquo;s changes in. Also merging generally worked
+well. Also it was fast.</p>
+
+<p>All was good, but there was also this Git thing people on the internet were
+talking about. Coming from SVN, Mercurial made sense and Git didn&rsquo;t. (Linus
+Torvalds, being Linus Torvalds, made Git purposely different from the CVS/SVN
+family.) Git did seem to be more flexible at the expense of being less elegant.
+As was written back then:
+<a href="https://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">Git is MacGyver, Mercurial is James Bond</a>.</p>
+
+<p>My group mates and I kept using Mercurial, but as I started my PhD,
+collaboration with new people, not least my supervisor René, made me spend more
+time with Git. It got better when I began to understand that the differences
+between Mercurial and Git start at fundamental concepts such as branches and
+merges.</p>
+
+<a name="Different.Concepts"></a>
+<h2>Different Concepts</h2>
+
+<p>&ldquo;Branch&rdquo; doesn&rsquo;t have the same interpretation in Mercurial and Git. In
+Mercurial, a branch is a sequence of commits all sharing a (permanent) name. In
+Git, a branch is temporary and is represented by a reference to the current
+commit at the tip of the branch. Once gone, you can&rsquo;t tell which branch(es)
+a commit used to be part of.</p>
+
+<p>In Mercurial branches are also shared between clones of the same repository.
+Everybody works on the same branch, and you can <a href="https://www.mercurial-scm.org/repo/hg/help/pull"><code>hg pull</code></a> to get the
+newest version of the branch, and then <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> your working
+copy. In Git nobody works on the same branch &mdash; there&rsquo;s just people working on
+different branches that might or might not have the same name. You can&rsquo;t
+&ldquo;update&rdquo; to the newest version because you already have the newest version of
+your own branch by definition. But you can <em>merge</em> another branch, possibly
+with the same name, into your own.</p>
+
+<p>In Mercurial, merges are used for merging divergent branches or heads. In Git,
+everything is a merge, even if only one branch has changed. But at the same
+time, a Git merge might or might not create a merge commit. By default, a new
+commit will only be created if the two branches had diverged, i.e., work had
+been done on both. Otherwise, the current branch will just be updated to point
+to the same commit as the branch being merged in. It makes a lot of sense once
+you get used to Git, but before that it&rsquo;s just confusing.</p>
+
+<a name="Different.Commands"></a>
+<h2>Different Commands</h2>
+
+<p>Learning Git from an SVN/Mercurial background meant relearning a few words.
+&ldquo;Revert&rdquo; means something new in Git and &ldquo;shelve&rdquo; is called &ldquo;stash&rdquo;, but that&rsquo;s
+not bad. Instead, what is annoying is that many simple Mercurial commands don&rsquo;t
+have simple, memorable equivalents in Git:</p>
+
+<p>Show the hash of the current commit:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg id
+</span><span class='line'>git rev-parse HEAD</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Show which commits would be pulled or pushed:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg in
+</span><span class='line'>git fetch && git log ..@{u}
+</span><span class='line'>
+</span><span class='line'>hg out
+</span><span class='line'>git fetch && git log @{u}..</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Mark a file to stop tracking, but don&rsquo;t delete the file. This one is especially
+weird in Git because you don&rsquo;t remove something <em>-&#8203;-cached</em>, you cache
+(stage) the removal of something:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg forget
+</span><span class='line'>git rm --cached</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Print the root directory of the repository and the URL of the remote repository:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg root
+</span><span class='line'>hg path
+</span><span class='line'>
+</span><span class='line'>git rev-parse --show-toplevel
+</span><span class='line'>git config --get remote.origin.url</span></code></pre></td></tr></table></div></figure>
+
+
+<p>List the version controlled files:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg manifest
+</span><span class='line'>git ls-tree -r --name-only --full-tree HEAD</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="Git.is.Git"></a>
+<h2>Git is Git</h2>
+
+<p>I have been using the above commands as aliases in Git, but I have wondered if
+doing that somehow prevented me from learning the &ldquo;true spirit&rdquo; of Git. I have
+now come to the conclusion that the essence of Git is its architecture and data
+model, and not its incoherent command line interface. Learning the user
+interface is just a chore, and using aliases to smooth it out is fine.</p>
+
+<p>I&rsquo;m not bashing Git because it&rsquo;s different from Mercurial, but because it is
+internally inconsistent and, as another blogger puts it:
+<a href="https://stevebennett.me/2012/02/24/10-things-i-hate-about-git/">Git doesn’t so much have a leaky abstraction as no abstraction.</a>
+Here are some of the inconsistencies and lacking abstractions:</p>
+
+<ul>
+<li>Concepts can have multiple names, like the index a.k.a. the cache a.k.a. the
+staging area (which would be okay if Git didn&rsquo;t already have so many
+concepts)</li>
+<li>The branch <code>origin/master</code> is your (local) remote tracking branch, but
+<code>master</code> alone can refer to your local master branch or to the remote&rsquo;s
+master branch depending on context</li>
+<li>The <a href="https://git-scm.com/docs/git-checkout"><code>git checkout</code></a> command famously does too much: It can
+check out a branch (merging in uncommitted changes in the process if you
+want, or creating a new branch manually or automatically if you want), and it
+can restore or overwrites individual files in the working copy
+
+<ul>
+<li>However, the new Git 2.23 released this month has started experimenting
+with the new, more specific, and subject to change
+<a href="https://git-scm.com/docs/git-switch"><code>git switch</code></a> and <a href="https://git-scm.com/docs/git-restore"><code>git restore</code></a> commands
+(similar to <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> and <a href="https://www.mercurial-scm.org/repo/hg/help/revert"><code>hg revert</code></a>!)</li>
+</ul>
+</li>
+<li>The notation <code>A:B</code> sometimes means <code>&lt;src&gt;:&lt;dst&gt;</code> (a refspec) and sometimes
+<code>&lt;rev&gt;:&lt;path&gt;</code> (path in a revision &mdash; to be distinguished from a pathspec
+which is a third concept that can use the colon in a third way)</li>
+<li>The notations <code>A B</code> and <code>A..B</code> mean the same thing to <a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a>
+but not to <a href="https://git-scm.com/docs/git-log"><code>git log</code></a></li>
+<li>The notations <code>A..B</code> and <code>A...B</code> mean somewhat opposite things to
+<a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a> and <a href="https://git-scm.com/docs/git-log"><code>git log</code></a>
+
+<ul>
+<li>To specify branches A and B symmetrically you need <code>git diff A..B</code> but <code>git
+log A...B</code></li>
+<li><code>git diff A...B</code> and <code>git log A..B</code> mean &ldquo;from the common ancestor of A and
+B, to B&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In the end, I think Git is a good tool despite its command line interface. But
+if you&rsquo;re the type of person who needs to understand something in depth to feel
+comfortable with it, you have a lot of reading to do. If you already know the
+basics, <a href="https://git-scm.com/docs/gitglossary"><code>git help gitglossary</code></a> will get you started on 80+
+underlying concepts that will help you on your way to master the world&rsquo;s
+favored VCS!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google Assistant Currently Unavailable for This Language]]></title>
@@ -2648,33 +2842,6 @@ have:</p>
 but Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-speeddating">speeddating.vim</a> plugin adds date and time
 awareness, so typing Ctrl-A on 2016-04-30 would result in 2016-05-01 and not
 2016-04-31. Happy Vimming!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Remote Desktop White Screen - Solved]]></title>
-    <link href="http://blog.erw.dk/2016/03/12/remote-desktop-white-screen-solved/"/>
-    <updated>2016-03-12T13:54:10+01:00</updated>
-    <id>http://blog.erw.dk/2016/03/12/remote-desktop-white-screen-solved</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://blog.erw.dk/images/posts/rdp.png" width="450"></p>
-
-<p>At work, I often connect to Windows servers over Remote Desktop Protocol (RDP).
-A few times, I have been met with a blank white screen, typically after
-changing screen resolution in the Remote Desktop Connection options.</p>
-
-<p>The first time this happened I spent a lot of time googling to no avail, so now
-I will put the solution I found by chance here in case it might help someone
-else. And note that encountering a blank <em>black</em> screen is a different and more
-frequent problem, the solutions to which didn&rsquo;t help me with my white screen in
-the time that I spent on it.</p>
-
-<a name="Solution:.Alt-F4"></a>
-<h3>Solution: Alt-F4</h3>
-
-<p>An <strong>Alt-F4</strong> was all it took to get rid of the white screen. However, if that
-does not work, you can also try a <strong>Ctrl-Alt-End</strong> (the remote desktop
-equivalent of Ctrl-Alt-Del), and see if you can work anything out from there.
-Good luck!</p>
 ]]></content>
   </entry>
   

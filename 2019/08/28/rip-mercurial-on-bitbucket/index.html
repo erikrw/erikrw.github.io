@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>RIP Mercurial (on Bitbucket) - Erik Ramsgaard Wognsen</title>
+  <meta name="author" content="Erik Ramsgaard Wognsen">
+
+  
+  <meta name="description" content="Bitbucket is going to drop support for the
+Mercurial version control system, due to most people using
+Git instead. I use both Mercurial (hg) and Git &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+<script>
+if (document.location.hostname != "127.0.0.1") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55985488-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
+  
+    <h2>Thoughts & technology</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.erw.dk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">RIP Mercurial (on Bitbucket)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2019-08-28T07:39:28+02:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2019</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="https://bitbucket.org/">Bitbucket</a> is going to <a href="https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket">drop support</a> for the
+<a href="https://www.mercurial-scm.org/">Mercurial</a> version control system, due to most people using
+<a href="https://git-scm.com/">Git</a> instead. I use both Mercurial (hg) and Git, and while Git has become
+the de facto standard today, Mercurial was my first love in the world of
+version control systems, and I&rsquo;m sad to see it go.</p>
+
+<p>Of course, Mercurial is not dead, but being removed from Bitbucket is a big
+deal (at least to me). But this news also gave me an occasion to reconsider Git
+vs. Mercurial, and writing this post has actually given me a newfound, if not
+appreciation, then at least understanding of Git.</p>
+
+<!-- more -->
+
+
+<a name="Init"></a>
+<h2>Init</h2>
+
+<p>When I started university in 2006, <a href="https://en.wikipedia.org/wiki/Apache_Subversion">SVN</a> had recently replaced <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>
+as the cool thing. So for group work we used SVN and it worked fine. Well,
+except for all the file conflicts we got. And the awful tree conflicts. Come to
+think of it, it didn&rsquo;t work that great. Luckily
+<a href="https://en.wikipedia.org/wiki/Distributed_version_control">distributed version control systems</a> had been maturing in the meantime.</p>
+
+<p>In 2009 we started using Mercurial. It was like SVN, except it was actually
+good for collaboration! Now you could store a safe snapshot of your own work
+before trying to merge other people&rsquo;s changes in. Also merging generally worked
+well. Also it was fast.</p>
+
+<p>All was good, but there was also this Git thing people on the internet were
+talking about. Coming from SVN, Mercurial made sense and Git didn&rsquo;t. (Linus
+Torvalds, being Linus Torvalds, made Git purposely different from the CVS/SVN
+family.) Git did seem to be more flexible at the expense of being less elegant.
+As was written back then:
+<a href="https://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">Git is MacGyver, Mercurial is James Bond</a>.</p>
+
+<p>My group mates and I kept using Mercurial, but as I started my PhD,
+collaboration with new people, not least my supervisor René, made me spend more
+time with Git. It got better when I began to understand that the differences
+between Mercurial and Git start at fundamental concepts such as branches and
+merges.</p>
+
+<a name="Different.Concepts"></a>
+<h2>Different Concepts</h2>
+
+<p>&ldquo;Branch&rdquo; doesn&rsquo;t have the same interpretation in Mercurial and Git. In
+Mercurial, a branch is a sequence of commits all sharing a (permanent) name. In
+Git, a branch is temporary and is represented by a reference to the current
+commit at the tip of the branch. Once gone, you can&rsquo;t tell which branch(es)
+a commit used to be part of.</p>
+
+<p>In Mercurial branches are also shared between clones of the same repository.
+Everybody works on the same branch, and you can <a href="https://www.mercurial-scm.org/repo/hg/help/pull"><code>hg pull</code></a> to get the
+newest version of the branch, and then <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> your working
+copy. In Git nobody works on the same branch &mdash; there&rsquo;s just people working on
+different branches that might or might not have the same name. You can&rsquo;t
+&ldquo;update&rdquo; to the newest version because you already have the newest version of
+your own branch by definition. But you can <em>merge</em> another branch, possibly
+with the same name, into your own.</p>
+
+<p>In Mercurial, merges are used for merging divergent branches or heads. In Git,
+everything is a merge, even if only one branch has changed. But at the same
+time, a Git merge might or might not create a merge commit. By default, a new
+commit will only be created if the two branches had diverged, i.e., work had
+been done on both. Otherwise, the current branch will just be updated to point
+to the same commit as the branch being merged in. It makes a lot of sense once
+you get used to Git, but before that it&rsquo;s just confusing.</p>
+
+<a name="Different.Commands"></a>
+<h2>Different Commands</h2>
+
+<p>Learning Git from an SVN/Mercurial background meant relearning a few words.
+&ldquo;Revert&rdquo; means something new in Git and &ldquo;shelve&rdquo; is called &ldquo;stash&rdquo;, but that&rsquo;s
+not bad. Instead, what is annoying is that many simple Mercurial commands don&rsquo;t
+have simple, memorable equivalents in Git:</p>
+
+<p>Show the hash of the current commit:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg id
+</span><span class='line'>git rev-parse HEAD</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Show which commits would be pulled or pushed:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg in
+</span><span class='line'>git fetch && git log ..@{u}
+</span><span class='line'>
+</span><span class='line'>hg out
+</span><span class='line'>git fetch && git log @{u}..</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Mark a file to stop tracking, but don&rsquo;t delete the file. This one is especially
+weird in Git because you don&rsquo;t remove something <em>-&#8203;-cached</em>, you cache
+(stage) the removal of something:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg forget
+</span><span class='line'>git rm --cached</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Print the root directory of the repository and the URL of the remote repository:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg root
+</span><span class='line'>hg path
+</span><span class='line'>
+</span><span class='line'>git rev-parse --show-toplevel
+</span><span class='line'>git config --get remote.origin.url</span></code></pre></td></tr></table></div></figure>
+
+
+<p>List the version controlled files:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg manifest
+</span><span class='line'>git ls-tree -r --name-only --full-tree HEAD</span></code></pre></td></tr></table></div></figure>
+
+
+<a name="Git.is.Git"></a>
+<h2>Git is Git</h2>
+
+<p>I have been using the above commands as aliases in Git, but I have wondered if
+doing that somehow prevented me from learning the &ldquo;true spirit&rdquo; of Git. I have
+now come to the conclusion that the essence of Git is its architecture and data
+model, and not its incoherent command line interface. Learning the user
+interface is just a chore, and using aliases to smooth it out is fine.</p>
+
+<p>I&rsquo;m not bashing Git because it&rsquo;s different from Mercurial, but because it is
+internally inconsistent and, as another blogger puts it:
+<a href="https://stevebennett.me/2012/02/24/10-things-i-hate-about-git/">Git doesn’t so much have a leaky abstraction as no abstraction.</a>
+Here are some of the inconsistencies and lacking abstractions:</p>
+
+<ul>
+<li>Concepts can have multiple names, like the index a.k.a. the cache a.k.a. the
+staging area (which would be okay if Git didn&rsquo;t already have so many
+concepts)</li>
+<li>The branch <code>origin/master</code> is your (local) remote tracking branch, but
+<code>master</code> alone can refer to your local master branch or to the remote&rsquo;s
+master branch depending on context</li>
+<li>The <a href="https://git-scm.com/docs/git-checkout"><code>git checkout</code></a> command famously does too much: It can
+check out a branch (merging in uncommitted changes in the process if you
+want, or creating a new branch manually or automatically if you want), and it
+can restore or overwrites individual files in the working copy
+
+<ul>
+<li>However, the new Git 2.23 released this month has started experimenting
+with the new, more specific, and subject to change
+<a href="https://git-scm.com/docs/git-switch"><code>git switch</code></a> and <a href="https://git-scm.com/docs/git-restore"><code>git restore</code></a> commands
+(similar to <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> and <a href="https://www.mercurial-scm.org/repo/hg/help/revert"><code>hg revert</code></a>!)</li>
+</ul>
+</li>
+<li>The notation <code>A:B</code> sometimes means <code>&lt;src&gt;:&lt;dst&gt;</code> (a refspec) and sometimes
+<code>&lt;rev&gt;:&lt;path&gt;</code> (path in a revision &mdash; to be distinguished from a pathspec
+which is a third concept that can use the colon in a third way)</li>
+<li>The notations <code>A B</code> and <code>A..B</code> mean the same thing to <a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a>
+but not to <a href="https://git-scm.com/docs/git-log"><code>git log</code></a></li>
+<li>The notations <code>A..B</code> and <code>A...B</code> mean somewhat opposite things to
+<a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a> and <a href="https://git-scm.com/docs/git-log"><code>git log</code></a>
+
+<ul>
+<li>To specify branches A and B symmetrically you need <code>git diff A..B</code> but <code>git
+log A...B</code></li>
+<li><code>git diff A...B</code> and <code>git log A..B</code> mean &ldquo;from the common ancestor of A and
+B, to B&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In the end, I think Git is a good tool despite its command line interface. But
+if you&rsquo;re the type of person who needs to understand something in depth to feel
+comfortable with it, you have a lot of reading to do. If you already know the
+basics, <a href="https://git-scm.com/docs/gitglossary"><code>git help gitglossary</code></a> will get you started on 80+
+underlying concepts that will help you on your way to master the world&rsquo;s
+favored VCS!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2019-08-28T07:39:28+02:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2019</span></span> <span class='time'></span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2019/05/31/google-assistant-currently-unavailable-for-this-language/" title="Previous Post: Google Assistant Currently Unavailable for This Language">&laquo; Google Assistant Currently Unavailable for This Language</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2019/08/28/rip-mercurial-on-bitbucket/">RIP Mercurial (on Bitbucket)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2019/05/31/google-assistant-currently-unavailable-for-this-language/">Google Assistant Currently Unavailable for This Language</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2019/04/24/how-to-pin-remoteapps-to-the-taskbar/">How to Pin RemoteApps to the Taskbar</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2019/01/17/spar-penge-med-rejsekortets-maengderabat/">Spar penge med Rejsekortets mængderabat [Danish]</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2018/11/06/android-9-impressions/">Android 9 Impressions</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/gear/'>gear (4)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/music/'>music (4)</a></li><li><a href='/blog/categories/phonetics/'>phonetics (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (3)</a></li><li><a href='/blog/categories/programming/'>programming (6)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  &copy; 2019 - Erik Ramsgaard Wognsen -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'erwdk';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket/';
+        var disqus_url = 'http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

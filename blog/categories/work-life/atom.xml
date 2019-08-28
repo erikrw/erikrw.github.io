@@ -4,7 +4,7 @@
   <title><![CDATA[Category: work life | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/work-life/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:31+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -18,17 +18,7 @@
     <link href="http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination/"/>
     <updated>2017-01-22T17:23:59+01:00</updated>
     <id>http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-I wonder, if people will see me in a negative light after this?
-Maybe they&rsquo;ll think I can&rsquo;t work independently?</p>
-
-<p>It&rsquo;s sad to limit my creative output by what (I think) others will think.</p>
-
-<p>2017-01-13 I haven&rsquo;t beaten procrastination, just temporarily suspended it.</p>
-
-<p>Wording: you vs I
-Could I angle the whole thing towards motivation rather than procrastination?
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
 <p>Back in school, I put off essay writing until the night before the due date. In
 gymnasium/high school, I put off assignments until the <em>morning</em> of the due
@@ -48,36 +38,7 @@ procrastination. (It&rsquo;s amazing, by the way.)</p>
 <!-- more -->
 
 
-<p>{% comment %}</p>
-
-<p>Outline:
-- Define procrastination</p>
-
-<ul>
-<li><p>Defeating procrastination at work</p>
-
-<ul>
-<li>Implementation</li>
-<li>Fixed design (also a valuable tool against perfectionism)</li>
-</ul>
-</li>
-<li><p>Procrastination risks</p>
-
-<ul>
-<li>Difficult/icky/non-welldefined tasks</li>
-<li>Medium delays 20-60 seconds (compilation)</li>
-</ul>
-</li>
-<li><p>Handling (the remaining) procrastination</p>
-
-<ul>
-<li>Structured procrastination</li>
-</ul>
-</li>
-<li><p>Estimate the number of hours required to implement (program) a design.</p></li>
-<li>Implement a software solution according to a design and estimate approved by
-the client.
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
@@ -116,11 +77,7 @@ in the education system). In a job, you get back some external pressure, and
 this time they care more about what they get out of it than what you get out of
 it.</p>
 
-<p>{% comment %}
-it&rsquo;s more direct this time because : In school, the external motivation is that
-&ldquo;society&rdquo; wants you to go to school. At work, the client herself wants the
-fruits of your labor.
-{% endcomment %}</p>
+<p></p>
 
 <p>Although external reasons (and payment!) are good reasons to work, they are
 unfortunately not enough to fight procrastination.</p>
@@ -151,10 +108,7 @@ the bureaucracy involved in changing it is actually a good thing here because
 it keeps me from trying, unless I&rsquo;m convinced it&rsquo;s necessary. It&rsquo;s better to
 have a good solution done on time than a perfect solution that isn&rsquo;t.</p>
 
-<p>{% comment %}
-This is ironically where it helps to work with a big, heavy enterprise system.
-You just want to pick the simplest design, so implementing it is not a pita.
-{% endcomment %}</p>
+<p></p>
 
 <a name="Implementation.Tasks.are.Divisible"></a>
 <h2>Implementation Tasks are Divisible</h2>
@@ -178,17 +132,7 @@ well-defined.</p>
 </ul>
 
 
-<p>{% comment %}
-- Identify and add the required tables and fields to the database
-- Identify and add stubs for public methods, controllers, forms,
-plugins, etc.
-- Identify required data and write queries to retrieve it
-- Choose data structures
-- Fill in the business logic
-- Test the business logic
-- Add error handling and logging
-- Test integration with other components
-{% endcomment %}</p>
+<p></p>
 
 <a name="Time.Tracking"></a>
 <h2>Time Tracking</h2>
@@ -203,10 +147,7 @@ wonders in beating procrastination.</p>
 <a name="Design.Tasks.Can.Make.You.Proud"></a>
 <h2>Design Tasks Can Make You Proud</h2>
 
-<p>{% comment %}
-This covers implementation and time tracking.
-Of the mentioned three parts of my job, design tasks are the least clear-cut.
-{% endcomment %}</p>
+<p></p>
 
 <p>Design is the process of turning the client&rsquo;s requirements into a consistent
 and implementable description in terms of the business domain. Sometimes this
@@ -229,15 +170,7 @@ you&rsquo;re doing something productive.</p>
 for the general direction of the design, a feeling of ownership and pride
 starts to grow. This will make it much easier to keep the focus.</p>
 
-<p>{% comment %}
-combined with a time pressure,</p>
-
-<p>Deadline!</p>
-
-<a name="Outro"></a>
-<h2>Outro</h2>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>All in all, my job helps me keep my procrastination in check, which I&rsquo;m very
 happy about. I hope all you other procrastinators out there can see that your
@@ -246,87 +179,13 @@ code yet.</p>
 
 <p><em>Update 2018-07-28: Fixed typos.</em></p>
 
-<p>{% comment %}
-The only
-disadvantage seems to be that sometimes I now feel better about myself when I&rsquo;m
-working at work than I do when working on hobby projects at home. Either way
-I did manage to finish this post, so I&rsquo;ll be happy about that!</p>
+<p></p>
 
-<p>The good part is that I procrastinate much less now. The perhaps sad part is
-that it&rsquo;s not me who beat procrastination; it&rsquo;s just my environment that
-changed.
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-The separation of design and implementation is paramount</p>
+<p></p>
 
-<p>Apart from the procrastination thing, separating design and implementation also
-makes the product better, especially when more than one person is involved
-(also according to Brooks)
-{% endcomment %}</p>
-
-<p>{% comment %}
-It appears to me now that it seems obvious that you work to implement the
-approved design. But in some tasks (my other job, student projects), the
-approval step is not formalized, at least not for smaller tasks and changes to
-the design. Therefore, I may alternate between implementing</p>
-
-<p>Maybe write this in a new post later:</p>
-
-<p>The comprehensive time tracking is also a dramatic shift from the relaxed
-(though justified) academic relationship with time. It had occurred to me that
-detailed time tracking was synonymous with working under a perpetual deadline,
-and that&rsquo;s why it helps against procrastination. But I don&rsquo;t think it should be
-seen that way.</p>
-
-<p>In academia, periods of thinking interspersed with deadlines meant that the
-thinking of the unstressed periods could crystallize each time a deadline
-loomed near. But <em>constant</em> stress would would not be conducive to knowledge
-work.</p>
-
-<p>In fact, time tracking is not stressful in general. It is only when the time
-available to complete a task is smaller than the perceived time required to
-finish it that stress sets in. And this is not the good kind of stress that
-not-too-frequent calendar deadlines can incur.</p>
-
-<p>At least with normal deadlines, you can work more hours in a day in an effort
-to meet the deadlines. With</p>
-
-<p>In the new and less-procrastinating version of myself, deadline stress does not
-actually feel like it helps me.</p>
-
-<p>Time tracking in general does not stress me.</p>
-
-<p>I only feel stressed when the (remaining) estimate is smaller than the task.
-{% endcomment %}</p>
-
-<p>{% comment %}
-Combination that stops me from procrastinating:</p>
-
-<ul>
-<li>I&rsquo;m good at my job</li>
-<li>Others expect me to do it (my boss)</li>
-<li>Progress? (ariely)</li>
-</ul>
-
-
-<p>Accept, estimate, fixed design, well-defined, time-registration, you don&rsquo;t need
-to wait long for feedback and help. I like it but I don&rsquo;t love it.</p>
-
-<p>Reasons for procrastinating:
-- Too hard/complicated</p>
-
-<p>Have you really beat procrastination if you just have deadlines all the time?
-Well, I don&rsquo;t feel deadline panic; that actually keeps me from concentrating.
-Maybe I just have the appropriate (small) amount of panic?</p>
-
-<p>Or, it&rsquo;s because other people expect me to deliver (more than ever before), and
-I also do myself.</p>
-
-<p>Reading is much harder than writing. It was also a big problem for my phd. RRH
-reading vs writing mode.</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -414,10 +273,7 @@ something I get a few times per <em>hour</em>. Everybody&rsquo;s busy, but we ta
 help each other. In general I liked my colleagues at the university, but I feel
 more like part of a team now than I have ever done as a PhD student.</p>
 
-<p>{% comment %}
-Of course, an answer to a research related question can required much more
-contemplation than a programming technicality
-{% endcomment %}</p>
+<p></p>
 
 <p>To top it off, I also feel much more valued now because my time is treated with
 respect. And of course it is: Every hour I am not doing billable work is missed
@@ -452,39 +308,9 @@ working conditions should provide the day-to-day work satisfaction. And of
 course no matter your motivation to tackle long-term research problems, dealing
 with bureaucracy is no fun.</p>
 
-<p>{% comment %}
-Some of this can be managed on a local level, for example by the principal
-investigators not taking on more projects than they have time to be engaged in,
-and by reining in the university bureaucracy.</p>
+<p></p>
 
-<p>Some of it would require fundamental changes to the way academia works. There
-can be too much competition to have the peace required to think deep thoughts
-for a sustained period of time. The pressure for frequent publication is good when it
-helps you crystallize your thoughts into writing. It&rsquo;s bad when it pushes you</p>
-
-<p>simply must publish but you don&rsquo;t have anything to contribute at the moment.
-And the pressure to secure funding</p>
-
-<p>Finally, research is hard because you try to do your work while
-worrying about funding, or just how much you are behind the overly ambitious
-study plan you were asked to write when you started as a PhD student.
-{% endcomment %}</p>
-
-<p>{% comment %}
-Some thing are inherent.
-Some things are in the acadimic culture (competition) and society in general. These would take a massive effort to change.
-Some things can be influenced much more. Choosing topic, school, advisor.</p>
-
-<p>It&rsquo;s not that everything is perfect in industry, but it&rsquo;s certainly better than
-my experience of academia.</p>
-
-<p>Very few meetings is a blessing in my job (but wasn&rsquo;t at the university)</p>
-
-<p>Judging your own work?</p>
-
-<p>This does of course not mean there&rsquo;s no room for the future principal
-investigators as PhD students. If you are considering doing a PhD
-{% endcomment %}</p>
+<p></p>
 
 <a name="How.to.Succeed"></a>
 <h2>How to Succeed</h2>
@@ -517,137 +343,19 @@ university.</p>
 
 <p><em>Update 2018-07-28: Fixed a typo.</em></p>
 
-<p>{% comment %}
-Academia is about education, research, publishing and securing funding. I think
-few people enjoy spending large amounts of time writing grant applications
-I have been fairly lucky to not have to have to spend much time on it, but
-a career in academia relies on it.</p>
+<p></p>
 
-<p>Much has been said about &ldquo;<a href="https://en.wikipedia.org/wiki/Publish_or_perish">Publish or perish</a>&rdquo;
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-Are you working towards some greater goal? Are you rewarded for your efforts?
-Are people thankful? Do you get paid well? Will you become famous? Do you have
-a vibrant, dynamic work environment?
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-At the university, the work of a PhD student is less easily
-quantified, and unfortunately that results in many parts of the system treating
-you as if your time is not so valuable. When I was a new PhD student, I had to
-go back and forth between offices just to get an access card to the building.
-And I have seen new PhD students waiting several weeks just to get a computer
-to work on. Physical things are only so important, but they serve well to
-illustrate the bureaucratic mentality in the place. Getting replies to emails
-from busy superiors worked at a similar speed, telling you of your
-insignificant status in the world of academia.
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-Integrity, honesty?</p>
-
-<p>Honesty. Academia involves (too big of) an element of knowing the right people.
-And reusing material (introductory material) so you can push the salami method.
-{% endcomment %}</p>
-
-<p>{% comment %}
-How money can demotivate.</p>
-
-<ul>
-<li>Feeling respected</li>
-<li>Not having to deal with unnecessary bureaucracy</li>
-<li>Integrity</li>
-<li>Teamwork</li>
-<li>Getting feedback</li>
-<li>Feeling of purpose</li>
-<li>Progress</li>
-<li>&hellip;</li>
-<li>But at least at uni, you tried to &ldquo;cure cancer&rdquo; or not just make money?</li>
-<li>No, but I guess there was some significance.</li>
-<li>But academia should compensate on the other parameters
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
-<p>{% comment %}
-Dear Boudewijn,</p>
-
-<p>Last time we met, you asked to hear about my new job situation. October 1st
-I started as a Consultant at Netcompany
-(<a href="http://www.netcompany.com/English.aspx">http://www.netcompany.com/English.aspx</a>). I have to say, right now, it feels
-like the best work life decision I have ever made. Not that I have made that
-many. But I wish, I would have done it sooner.</p>
-
-<p>As for the work itself: I build/work with CRM systems. At the moment, I am
-programming a web service to integrate the CRM system of a client with its
-customer facing web page.</p>
-
-<p>On the grand scale of things, this work is fairly insignificant. But I feel
-this is not so different from the university: I never felt my research would
-cure the proverbial cancer anyway.</p>
-
-<p>On a medium scale, my work feels significant: Someone (the client) is actually
-going to use what I am building for them. This is in contrast to academia,
-where I feel that very few people read my work, and even fewer <em>use it</em> for
-anything. This may be a question of patience, but at least if I should be
-patient here, something else should provide the day-to-day work satisfaction:</p>
-
-<p>The small scale: Colleagues see my work, give feedback, and help me improve it,
-and generally care about my progress. As a PhD student, I often had to fight to
-get coauthors to comment on my work. I remember with some fondness my meetings
-with you at Twente; usually it was fairly easy to set up meetings, which was
-better than the typical experience I had as a PhD student. But now, feedback is
-not something I get a few times per week. It is something I get a few times per
-<em>hour</em>. My colleagues are of course busy, and my superiors run several projects
-that I am not part of, yet I feel more like part of a team than I have ever
-done at the university.</p>
-
-<p>I work more now, but I am less tired when I get home from work because I feel
-like I have made <em>progress</em>. Research is by definition hard, which takes away
-a lot of the feeling of progress. But then, to be an attractive workplace (to
-me, at least), I think research should compensate on the small-scale feeling of
-purpose. Lots of frequent meetings, or even just quick replies to emails, would
-give a feeling of being part of a team working towards a common goal. This
-might limit the number of students and activities a professor has. But to me,
-a professor that has sufficient time for me is more valuable than a prestigious
-but very busy one.</p>
-
-<p>I have been describing research as &ldquo;a job&rdquo;. A recent new hire at AAU complained
-that we, the PhD students, treated research as if it was &ldquo;just a job&rdquo;. But to
-put in the dedication he hoped for, you would have to do research within
-a topic that you care deeply about. Mine just wasn&rsquo;t one of those,
-unfortunately. (And with the number of &ldquo;free&rdquo; (non project funded) research
-positions dwindling, I doubt that is going to get better for PhD students in
-general.)</p>
-
-<p>Well, the bottom line is that I feel valued and respected at my new company,
-and I have a great team and a feeling of daily progress!</p>
-
-<p>Regards,
-Erik</p>
-
-<p>2016-03-01</p>
-
-<p>Leaving Academia</p>
-
-<p>Problems:
-Not learning to be productively stupid (not learning to be humble? and confident without daily success)
-Publish and perish (see &ldquo;a resignation&rdquo;), no time to wonder, when you&rsquo;re perpetually worried about being behind schedule</p>
-
-<p>Not well defined tasks?</p>
-
-<p>Ariely motivation:
-            PhD     NC
-Payment     bad     good
-Meaning     ok      ok
-Creation    meh     good
-Challenge   2large  adequate
-Ownership   meh     ok
-Identity    meh     ok
-Pride       meh     ok</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:31+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -18,17 +18,9 @@
     <link href="http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/"/>
     <updated>2018-07-28T12:23:29+02:00</updated>
     <id>http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-Outline:
-- What is Yousician
-- Upload songs
-- MusicXML
-- Being a programmer
-- Error
-- Solution (tempo declaration in at least one/first measure)
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
-<p>{% img right /images/posts/yousician_no_tempo_definitions.png %}</p>
+<p><img class="right" src="/images/posts/yousician_no_tempo_definitions.png"></p>
 
 <p>This summer my girlfriend and I started practicing piano with <a href="https://yousician.com">Yousician</a>,
 which is a kind of gamified music tutor, that listens to your playing and gives
@@ -43,7 +35,7 @@ results at all, so hopefully this post will change that.</p>
 <!-- more -->
 
 
-<p>{% img left /images/posts/musicxml_hello_world.gif %}</p>
+<p><img class="left" src="/images/posts/musicxml_hello_world.gif"></p>
 
 <p>MusicXML is an interchange format with files typically generated or exported
 from <a href="https://en.wikipedia.org/wiki/Scorewriter">scorewriter programs</a>. But us being programmers, we looked
@@ -104,43 +96,9 @@ in January!</p>
     <link href="http://blog.erw.dk/2018/02/25/what-roland-boutique-needs/"/>
     <updated>2018-02-25T16:46:09+01:00</updated>
     <id>http://blog.erw.dk/2018/02/25/what-roland-boutique-needs</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-Title ideas:</p>
+    <content type="html"><![CDATA[<p></p>
 
-<p>What Roland Boutique Needs
-What the Roland Boutique Line Needs
-What&rsquo;s Missing From Roland Boutique
-What I&rsquo;d Like to See in the Roland Boutique
-Roland Boutique’s Next Step
-Next Steps for Roland Boutique
-Next Steps for the Roland Boutique Line
-{% endcomment %}</p>
-
-<p>{% comment %}
-1979    VP-330 Vocoder Plus
-1980    TR-808 Rhythm Composer
-1981    Jupiter-8
-1981    TB-303 Bass Line
-1982    Juno-6
-1982    Juno-60
-1982    SH-101
-1983    JX-3P
-1983    TR-909 Rhythm Composer
-1984    Juno-106
-1987    D-50 Linear Synthesizer</p>
-
-<p>2015-10-01    JX-03
-2015-10-01    JU-06
-2015-10-01    JP-08
-2016-01-19    A-01      -
-2016-09-09    TB-03
-2016-09-09    TR-09
-2016-09-09    VP-03
-2017-06-20    SE-02     -
-2017-08-08    TR-08
-2017-08-08    SH-01A
-2017-09-09    D-05
-{% endcomment %}</p>
+<p></p>
 
 <p>Roland Boutique is a series of small form factor electronic music instruments.
 The line debuted in 2015 with recreations of three iconic Roland 1980s synths.
@@ -152,7 +110,7 @@ Roland&rsquo;s back catalog: Five subtractive synths (JP-08, JU-06, JX-03, TB-03
 SH-01A), the VP-03 vocoder, the TR-08 and TR-09 drum machines, and finally the
 D-05 &ldquo;linear synthesizer&rdquo; mixing sampling and synthesis.</p>
 
-<p>{% img /images/posts/boutique_hero.png %}</p>
+<p><img src="/images/posts/boutique_hero.png"></p>
 
 <!-- more -->
 
@@ -162,31 +120,7 @@ Electronics, they released the Minimoog-inspired analog monosynth SE-02. Having
 started down this path, they might make an FM (frequency modulation) synth.
 Missing from the lineup is also perhaps a sampler/sample player/sample mangler?</p>
 
-<p>{% comment %}</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Roland_Corporation">https://en.wikipedia.org/wiki/Roland_Corporation</a></p>
-
-<p><a href="https://en.wikipedia.org/wiki/List_of_Korg_products">https://en.wikipedia.org/wiki/List_of_Korg_products</a>
-<a href="https://www.soundonsound.com/reviews/korg-volca-beats-bass-keys">https://www.soundonsound.com/reviews/korg-volca-beats-bass-keys</a>
-<a href="https://www.soundonsound.com/reviews/korg-volca-sample">https://www.soundonsound.com/reviews/korg-volca-sample</a>
-<a href="https://www.soundonsound.com/reviews/korg-volca-fm">https://www.soundonsound.com/reviews/korg-volca-fm</a></p>
-
-<p>2013    Korg Volca Beats, Bass, Keys
-2014    Korg Volca Sample
-2016    Korg Volca FM
-2018-02-25 Thomann have them now at €169/£149</p>
-
-<p><a href="https://www.soundonsound.com/reviews/yamaha-reface-series">https://www.soundonsound.com/reviews/yamaha-reface-series</a></p>
-
-<p>2015    Yamaha Reface YC (organ)
-2015    Yamaha Reface DX (FM)
-2015    Yamaha Reface CS (synth)
-2015    Yamaha Reface CP (electric piano)
-2018-02-25 Thomann have them now at €278/£245 (but €299/£264 for the CP)</p>
-
-<p>2017    Digitakt
-2018    Digitone
-{% endcomment %}</p>
+<p></p>
 
 <p>That would at least match miniatures produced by other manufacturers in the
 last few years. The very small and affordable Korg Volca series has the
@@ -205,15 +139,7 @@ I would most like to see in the Roland Boutique series.</p>
 <a name="Give.Me.a.Piano."></a>
 <h2>Give Me a Piano!</h2>
 
-<p>{% comment %}
-<a href="https://www.gear4music.com/Digital_Pianos/Roland_Pianos.html">https://www.gear4music.com/Digital_Pianos/Roland_Pianos.html</a></p>
-
-<p>Stage
-FP (consumer?)
-RD (pro?)</p>
-
-<p>Upright: HP, F, RP, LX
-{% endcomment %}</p>
+<p></p>
 
 <p>When you think of a digital piano, you are more likely to think of 88 weighted
 keys than 25 non-weighted &ldquo;synth action&rdquo; minikeys. But one of the advantages of
@@ -235,24 +161,7 @@ with &ldquo;piano&rdquo; in their name, none of them sound like an acoustic pian
 do electric pianos and organs, but overall I think the D-50/D-05 has a certain
 80s/90s &ldquo;lo-fi&rdquo; sound. It excels at some things, but not acoustic piano.</p>
 
-<p>{% comment %}
-D-05</p>
-
-<p>Piano presets:
-P1 23 48 78
-P2 46
-P4 12 13 14 16
-P6 12 13 15 16 17</p>
-
-<p>Transpose:
-In the main screen, press the [_>] button.
-Press the [F2] (Trns) button, and then use the
-[INCREMENT] [DECREMENT] buttons to edit the
-parameter.
-If you hold down the [SHIFT] button and use the [INCREMENT]
-[DECREMENT] buttons to edit the parameter, the value changes
-in steps of one octave (12 semitones).
-{% endcomment %}</p>
+<p></p>
 
 <a name="The.Panel"></a>
 <h2>The Panel</h2>
@@ -268,13 +177,7 @@ buttons. So what do I want on the Boutique piano panel?</p>
 
 <p>I can think of a lot!</p>
 
-<p>{% comment %}
-For &ldquo;sofa use&rdquo; I&rsquo;d love to see some things that the synth Boutiques would also
-benefit from:</p>
-
-<p>Sustain &ldquo;pedal&rdquo;?
-composition tool/assistant
-{% endcomment %}</p>
+<p></p>
 
 <ul>
 <li>Better speaker(s), perhaps even front facing</li>
@@ -311,7 +214,7 @@ modern synthesizer, which is to say a lot. Luckily, in late 2015 Roland
 released miniature versions of these classics, at relatively affordable prices.
 Jupiter-8 became JP-08, and I got to own a little piece of music history.</p>
 
-<p>{% imgcap /images/posts/boutiques.jpg Three originals (Juno-106, Jupiter-8, JX-3P) above the three new &lsquo;Boutique&rsquo; versions (JU-06, JP-08, JX-03) %}</p>
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/boutiques.jpg' width='' height='' alt='Three originals (Juno-106, Jupiter-8, JX-3P) above the three new &lsquo;Boutique&rsquo; versions (JU-06, JP-08, JX-03)'><span class='caption-text'>Three originals (Juno-106, Jupiter-8, JX-3P) above the three new &lsquo;Boutique&rsquo; versions (JU-06, JP-08, JX-03)</span></span></p>
 
 <p>It&rsquo;s a bit late for a review, one and a half year after the release, but on the
 other hand, the Jupiter-8 came out before I was born, so in comparison, the new
@@ -354,7 +257,7 @@ is, the speaker has no bass and a tendency to make the chassis rattle and
 resonate. So I recommend skipping it altogether because that will sound much
 better and make you appreciate the unit more.</p>
 
-<p>{% img center /images/posts/jp-08.jpg %}</p>
+<p><img class="center" src="/images/posts/jp-08.jpg"></p>
 
 <a name="Too.Small.a.Box"></a>
 <h2>Too Small a Box</h2>
@@ -388,16 +291,7 @@ makes it difficult to do smooth or precise pitch bends.</li>
 </ul>
 
 
-<p>{% comment %}
-Actually, one-to-one mapping works much better for the simpler Juno than it
-does for the Jupiter with its two envelopes, and all the routing options.</p>
-
-<p>(The Korg Minilogue is a good example of a synth/keyboard that is more easily
-octave switched while playing.)</p>
-
-<p>(But the ribbons are ok for
-inputting values such as portamento time and sequencer tempo and gate length.)
-{% endcomment %}</p>
+<p></p>
 
 <a name="Better.With.a.MIDI.Controller"></a>
 <h2>Better With a MIDI Controller</h2>
@@ -426,7 +320,7 @@ side it just means you can switch between portability and better control.</p>
 <p>Also lost in the miniaturization were the little orange signal routing hints
 scattered around the original Jupiter-8 panel:</p>
 
-<p>{% imgcap /images/posts/jupiter-8-panel.jpg Image used with permission from Nikolaus Riehm / Studio Repair %}</p>
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/jupiter-8-panel.jpg' width='' height='' alt='Image used with permission from Nikolaus Riehm / Studio Repair'><span class='caption-text'>Image used with permission from Nikolaus Riehm / Studio Repair</span></span></p>
 
 <p>I didn&rsquo;t know of these when I got my JP-08, so it was somewhat confusing. The
 source mix knob was the first one I figured out: It mixes between the two only
@@ -449,14 +343,12 @@ or both oscillators, and the filter cutoff frequency. ENV-2 controls the VCA
 and the filter frequency. The filter has a switch choosing which envelope
 currently controls the filter.</p>
 
-<p>{% comment %}
-ENV-1 can also invert its polarity.
-{% endcomment %}</p>
+<p></p>
 
 <a name="Docking.Looks.Better"></a>
 <h2>Docking Looks Better</h2>
 
-<p>{% img center /images/posts/jp-08_k-25m.jpg %}</p>
+<p><img class="center" src="/images/posts/jp-08_k-25m.jpg"></p>
 
 <p>The JP-08 itself is a sturdy metal panel on top of a plastic box. In its
 unmounted form it appears somewhat naked. Adding the optional K-25m keyboard
@@ -495,16 +387,12 @@ that cost should be minimal. And you&rsquo;d have happier users. Then perhaps,
 instead of buying another JP-08 and feeling like an idiot, I might have bought
 one of the other Boutiques.</p>
 
-<p>{% comment %}
-One voice is enough to play bass lines or melodies. Any &lsquo;tail&rsquo; still-sounding
-of a released note will be cut off when a new note is played. More voices are
-needed to play chords. Four voices are enough to play
-{% endcomment %}</p>
+<p></p>
 
 <a name="Patch.Selection"></a>
 <h2>Patch Selection</h2>
 
-<p>{% imgcap /images/posts/jp-08-16.jpg The patch selection button rows of the JU-06 and the JP-08 %}</p>
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/jp-08-16.jpg' width='' height='' alt='The patch selection button rows of the JU-06 and the JP-08'><span class='caption-text'>The patch selection button rows of the JU-06 and the JP-08</span></span></p>
 
 <p>The four voices bring another annoyance, which we need to take a step back to
 understand. The Juno-106, JU-06, Jupiter-8, and JP-08 all have 16 buttons used
@@ -560,18 +448,7 @@ also feels like betrayal, after throwing money at a first generation Boutique
 model. We&rsquo;re talking tempo synced LFO, tempo synced delay, sequencer note
 slides, sequencer song mode, and sequencer <em>parameter locks</em>! It hurts, Roland.</p>
 
-<p>{% comment %}
-17% higher: twice the slider throw
-17% wider: full width keys, more buttons, perhaps even an arpeggiator</p>
-
-<p>Meh:
-- Dry sound without reverb (but that&rsquo;s how Jupiter-8 was/is)
-- The basic operation of the sequencer is intuitive but setting ties is weird.
-  And you can&rsquo;t see the note length without toggling the note. (2017-06-11 nah,
-  it&rsquo;s not so bad actually, but easily clearing a pattern would be nice)</p>
-
-<p><a href="https://www.youtube.com/watch?v=owLzqdzoh3Y">https://www.youtube.com/watch?v=owLzqdzoh3Y</a>
-{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -580,16 +457,7 @@ slides, sequencer song mode, and sequencer <em>parameter locks</em>! It hurts, R
     <link href="http://blog.erw.dk/2015/01/29/samba/"/>
     <updated>2015-01-29T10:42:32+01:00</updated>
     <id>http://blog.erw.dk/2015/01/29/samba</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-<a href="https://www.youtube.com/watch?v=1Z1ilwQje6M">https://www.youtube.com/watch?v=1Z1ilwQje6M</a> (4:48, måske?)
-<a href="https://www.youtube.com/watch?v=8xUGUJ7w96g">https://www.youtube.com/watch?v=8xUGUJ7w96g</a></p>
-
-<p><a href="https://www.youtube.com/watch?x-yt-cl=84411374&amp;v=ogQt9G1zEN8&amp;list=PL621FE7470A08D7AE&amp;x-yt-ts=1421828030">https://www.youtube.com/watch?x-yt-cl=84411374&amp;v=ogQt9G1zEN8&amp;list=PL621FE7470A08D7AE&amp;x-yt-ts=1421828030</a>
-@ 6:00</p>
-
-<p><a href="https://code.google.com/p/lilypond/issues/detail?id=687">https://code.google.com/p/lilypond/issues/detail?id=687</a>
-<a href="https://groups.google.com/forum/#!topic/sambistasarchive/_q8xp9f6cys">https://groups.google.com/forum/#!topic/sambistasarchive/_q8xp9f6cys</a>
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
 <p>After spending the fall of 2014 doing research in the Netherlands, I have moved
 home to Aalborg, Denmark and returned to the samba group <a href="https://www.facebook.com/SambaskolenPocoLoco">Poco Loco</a>.
@@ -613,8 +481,8 @@ On the drum kit, you play with both hands and both feet simultaneously, so
 coming from this background, I thought playing a single drum at a time should
 be fairly easy. It turns out it&rsquo;s not!</p>
 
-<p>{% imgcap right <a href="https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG">https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG</a> 320 240 <a href="https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG">Tamborim</a> by <a href="//commons.wikimedia.org/wiki/User:Alno">Alno</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> %}
-{% comment %}I have an offline backup of this picture.{% endcomment %}</p>
+<p><span class='caption-wrapper'><img class='caption' src='https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG">https://upload.wikimedia.org/wikipedia/commons/3/35/Tamborim.JPG</a>&#8217; width=&#8217;320&#8217; height=&#8217;240&#8217; alt=&#8217;<a href="https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG">Tamborim</a> by <a href="//commons.wikimedia.org/wiki/User:Alno">Alno</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>&#8217;><span class='caption-text'><a href="https://commons.wikimedia.org/wiki/File:Tamborim.JPG#mediaviewer/File:Tamborim.JPG">Tamborim</a> by <a href="//commons.wikimedia.org/wiki/User:Alno">Alno</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span>
+</p>
 
 <p>For example, there&rsquo;s the tiny <em>tamborim</em> which, despite its modest size (6&#8221;
 &approx; 15 cm), contributes a lot to the character of the sound of a samba
@@ -629,17 +497,7 @@ energetic feeling. It takes a lot of time readjust when your musical background
 is rock-based. (You can hear the difference <a href="https://www.youtube.com/watch?v=FhiID-40EkY">in this video</a>, where
 he switches between exaggerated, medium, and no swing.)</p>
 
-<p>{% comment %}
-The <em>surdos</em> (bass drums) are simpler to play, but the heavy mallets tend to
-wear the skin off of my soft skin!</p>
-
-<p><a href="http://www.jamespayne.net.au/2014/07/04/adding-responsive-youtube-videos-to-octopress-without-any-plugins/">http://www.jamespayne.net.au/2014/07/04/adding-responsive-youtube-videos-to-octopress-without-any-plugins/</a></p>
-
-<p>straight 16th notes sound more like a robot or military ceremony.</p>
-
-<p>&ndash; the snare drum that often plays the crack on 2 and 4 in pop/rock music &ndash;
-Turns out it&rsquo;s hard in both technique, endurance, and timing!
-{% endcomment %}</p>
+<p></p>
 
 <p>The <em>repinique</em> is a drum that can make different sounds depending on how it&rsquo;s
 struck. Below is a video of a guy showing how it&rsquo;s played. The drum is used

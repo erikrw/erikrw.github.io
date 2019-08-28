@@ -4,7 +4,7 @@
   <title><![CDATA[Category: language | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/language/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:31+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -18,9 +18,7 @@
     <link href="http://blog.erw.dk/2015/04/06/the-sound-of-e/"/>
     <updated>2015-04-06T12:16:44+02:00</updated>
     <id>http://blog.erw.dk/2015/04/06/the-sound-of-e</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-TODO: Picture. Idea: Screenshot of wikipedia page with E highlighted.
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
 <p>E is the most common letter in many European languages. In English it makes up
 12&ndash;13% of all letters written depending on source (see for example
@@ -37,10 +35,7 @@ E always E? And here, the answer is a clear no, at least if we think of writing
 primarily as a representation of the spoken language. I will look at the sound
 of E in the two languages I know the best: Danish and English.</p>
 
-<p>{% comment %}
-Even if E did at some point in history represent a unified sound, it does not
-anymore.
-{% endcomment %}</p>
+<p></p>
 
 <a name="English"></a>
 <h2>English</h2>
@@ -97,9 +92,7 @@ l<strong>a</strong>ne. (Though I always see this diphthong transcribed /eɪ/, I 
 dialects pronounce it [ɛɪ], i.e., with the sound <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a> from b<strong>e</strong>d, and
 f<strong>a</strong>ce (which is, ironically, transcribed /feɪs/ on <a href="http://en.wiktionary.org/wiki/face#Pronunciation">Wiktionary</a>).)</p>
 
-<p>{% comment %}
-<a href="http://en.wikipedia.org/wiki/English_orthography#Sound_to_spelling_correspondences">http://en.wikipedia.org/wiki/English_orthography#Sound_to_spelling_correspondences</a>
-{% endcomment %}</p>
+<p></p>
 
 <p>There are also letter sequences that have special sounds:</p>
 
@@ -130,20 +123,7 @@ The Danish inventory is similarly large:</p>
 <a name="Danish"></a>
 <h2>Danish</h2>
 
-<p>{% comment %}
-Barometer (UK) /bəɹˈɒmətə(ɹ)/</p>
-
-<p>Wire: /waɪə/     &lt;&ndash; should this really be schwa rather than ɐ?
-Wiredancer?</p>
-
-<p>/ʌ/ d<strong>oe</strong>s (/ˈdʌz/ stressed, /dəz/ unstressed)</p>
-
-<p>awe (is only 1/3, plus aw would be pronounced the same way)
-eau (is only 1/3, plus au would be pronounced the same way)</p>
-
-<p>sergeant/ɑr/
-rheumatism [ru..]
-{% endcomment %}</p>
+<p></p>
 
 <ul>
 <li>d<strong>e</strong>n &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a> &mdash; h<strong>e</strong>llo</li>
@@ -161,9 +141,7 @@ both<strong>er</strong>, but distinct from <a href="http://en.wikipedia.org/wiki
 </ul>
 
 
-<p>{% comment %}
-er, deres
-{% endcomment %}</p>
+<p></p>
 
 <p>With the above words being first two genders of <em>it</em>/<em>that</em>/<em>the</em>, then <em>they</em>,
 <em>see</em>, <em>I</em>, 2x <em>eat</em>, <em>eats</em>, and <em>is</em>, these realizations of E are all part of
@@ -185,48 +163,13 @@ change, among other things, the spelling of <em>mayonnaise</em> to the more logi
 French words like <em>liqueur</em>, <em>portrait</em>, and <em>capitaine</em> were already spelled
 <em>likør</em>, <em>portræt</em>, and <em>kaptajn</em> at the time!</p>
 
-<p>{% comment %}
-- <strong>e</strong>uro &mdash; <a href="http://en.wikipedia.org/wiki/Open-mid_front_rounded_vowel">œ</a> eller ε
-- <strong>eau</strong> &mdash; o
-- ass<strong>em</strong>blé &mdash; ɑ͂
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-The whole word is pronounced [<a href="http://en.wikipedia.org/wiki/Near-open_front_unrounded_vowel">æ</a><a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a>], like the vowels in tr<strong>a</strong>p
-and f<strong>a</strong>ther said one after the other.</p>
+<p></p>
 
-<p>I Grønnum s. 19 er &ldquo;lopp<strong>er</strong>&rdquo; <em>ikke</em> <a href="http://en.wikipedia.org/wiki/Open-mid_back_unrounded_vowel">ʌ</a>, og &ldquo;midt&rdquo; er <em>ikke</em> <a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a></p>
+<p></p>
 
-<p>Bonus (modification from R): der [æ/a/A]</p>
-
-<p>The vowels linked to are only approximate. Especially the difference between
-spise and spiser. The &lsquo;er&rsquo; in English gangst<strong>er</strong> is often transcribed as
-schwa.
-{% endcomment %}</p>
-
-<p>{% comment %}
-Including ɐ is maybe cheating because it is a compound (er). But otoh, it is at
-the core of the language, unlike</p>
-
-<p><strong>eu</strong>ro &mdash; ʌj
-<a href="http://ordnet.dk/ddo/ordbog?query=euro">http://ordnet.dk/ddo/ordbog?query=euro</a>
-<a href="http://ordnet.dk/ddo/ordbog?query=reumatisme">http://ordnet.dk/ddo/ordbog?query=reumatisme</a>
-{% endcomment %}</p>
-
-<p>{% comment %}
-Disclaimer</p>
-
-<ul>
-<li>The phonetic notation can only be approximate due to variations in both
-accents and notation. (For example, some would write ʌ instead of ɐ for
-Danish.)</li>
-</ul>
-
-
-<p>RP uses /e/ rather than /ɛ/ largely for convenience and historical tradition; it does not necessarily represent a different sound from the General American phoneme.</p>
-
-<p>Again, this is just the types I can think of, so there could be more.
-{% endcomment %}</p>
+<p></p>
 
 <a name="The.Sound.of.E"></a>
 <h2>The Sound of E</h2>
@@ -241,7 +184,7 @@ example of the first is f<strong>ee</strong>t/d<strong>e</strong> [i], with the 
 and the sound made near the front. The other end is f<strong>a</strong>ther/j<strong>e</strong>g [ɑ] with
 the tongue low in the mouth and the sound made at the back.</p>
 
-<p>{% imgcap right /images/posts/IPA_vowel_chart_2005_erw.png This work, English/Danish Es, <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC&nbsp;BY-SA&nbsp;4.0</a> by Erik R. Wognsen, is derived from <a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a> %}</p>
+<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/IPA_vowel_chart_2005_erw.png' width='' height='' alt='This work, English/Danish Es, <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC&nbsp;BY-SA&nbsp;4.0</a> by Erik R. Wognsen, is derived from <a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a>&#8217;><span class='caption-text'>This work, English/Danish Es, <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC&nbsp;BY-SA&nbsp;4.0</a> by Erik R. Wognsen, is derived from <a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a></span></span></p>
 
 <p>I have illustrated this above. Purple vowels are common to English and Danish,
 blue vowels are English, and red are Danish. The blob sizes represent my rough
@@ -251,48 +194,9 @@ Danish than in English, while i is used more in English. ɛ is used often in
 both, and ə even more. For diphthongs, only the first component is shown to
 keep it simple.</p>
 
-<p>{% comment %}
-English Danish</p>
+<p></p>
 
-<p>[<a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a>] [<a href="http://en.wikipedia.org/wiki/Open-mid_front_unrounded_vowel">ɛ</a>] common, used in both</p>
-
-<p>[<a href="http://en.wikipedia.org/wiki/Close_front_unrounded_vowel">i</a>] <a href="http://en.wikipedia.org/wiki/Close_front_unrounded_vowel">i</a> common, esp. used in En</p>
-
-<p><a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a> <a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel">ɑ</a> common, esp. used in Da</p>
-
-<p>[[<a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a>]] [[<a href="http://en.wikipedia.org/wiki/Mid_central_vowel">ə</a>]] common, very used in both</p>
-
-<p>(<a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a>) [<a href="http://en.wikipedia.org/wiki/Close-mid_front_unrounded_vowel">e</a>] common, esp. used in Da</p>
-
-<p>[<a href="http://en.wikipedia.org/wiki/Near-close_near-front_unrounded_vowel">ɪ</a>] _</p>
-
-<p><a href="http://en.wikipedia.org/wiki/Open_back_rounded_vowel">ɒ</a> _</p>
-
-<p><a href="http://en.wikipedia.org/wiki/Open-mid_central_unrounded_vowel">ɜ</a> _</p>
-
-<p>(<a href="http://en.wikipedia.org/wiki/Open-mid_back_rounded_vowel">ɔ</a>) _</p>
-
-<p>_ [[<a href="http://en.wikipedia.org/wiki/Near-open_central_vowel">ɐ</a>]]</p>
-
-<p>_ <a href="http://en.wikipedia.org/wiki/Near-open_front_unrounded_vowel">æ</a></p>
-
-<p>_ <a href="http://en.wikipedia.org/wiki/Open-mid_front_rounded_vowel">œ</a></p>
-
-<p>_ (<a href="http://en.wikipedia.org/wiki/Close-mid_front_rounded_vowel">ø</a>)</p>
-
-<p>_ (<a href="http://en.wikipedia.org/wiki/Open-mid_back_unrounded_vowel">ʌ</a>)
-{% endcomment %}</p>
-
-<p>{% comment %}
-high+front (tr<strong>a</strong>p/<strong>e</strong>r [æ]) and mid+central (en<strong>e</strong>my/spis<strong>e</strong> [ə]).</p>
-
-<p>met [ɛ] - hand [æ] - now [a] - car [ɑ]</p>
-
-<p><a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
-This image, English/Danish Es, is a derivative of <a href="http://en.wikipedia.org/wiki/File:IPA_vowel_chart_2005.png">IPA vowel chart 2005</a>, used under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, and is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> by Erik Ramsgaard Wognsen.</p>
-
-<p><a href="https://wiki.creativecommons.org/Best_practices_for_attribution#This_is_a_good_attribution_for_material_you_modified_slightly">https://wiki.creativecommons.org/Best_practices_for_attribution#This_is_a_good_attribution_for_material_you_modified_slightly</a>
-{% endcomment %}</p>
+<p></p>
 
 <a name="Does.it.have.to.be.like.this."></a>
 <h2>Does it have to be like this?</h2>
@@ -303,15 +207,7 @@ this? Or, could have a more <a href="http://en.wikipedia.org/wiki/Phonemic_ortho
 could learn to read in <a href="http://www.theatlantic.com/education/archive/2015/02/how-the-english-language-is-holding-kids-back/385291/">months rather than years</a>?
 This will be a future topic!</p>
 
-<p>{% comment %}
-The answer is yes and no.</p>
-
-<p>Spanish, for example, gets away with having only one sound to match the letter
-E. In my limited knowledge of Spanish, it varies from [e] to [ɛ] depending on
-accent, but that is a very small variation compared to that seen in Danish and
-English. But could we use regular spelling in a Germanic language such as
-English or Danish? I will elaborate on that next time.
-{% endcomment %}</p>
+<p></p>
 
 <a name="E.on.the.Keyboard"></a>
 <h2>E on the Keyboard</h2>
@@ -325,66 +221,11 @@ layouts that improve on QWERTY put E on the home row, where you rest your hands
 when <a href="http://en.wikipedia.org/wiki/Touch_typing">touch typing</a>. A good example is the Colemak keyboard
 layout which I <a href="/2015/02/27/4-years-with-colemak/">wrote about recently</a>.</p>
 
-<p>{% comment %}
-The <a href="http://www.minimak.org/">Minimak</a> keyboard layout changes primarily that: Puts E on the
-home row while not changing the familiar QWERTY too much. Another option is
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-Is E the weirdest/most diffuse vowel? I can [ai] and [I]
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-<a href="http://politiken.dk/kultur/medier/ECE2612591/sprognaevn-overvejer-ny-tegnsaetning-i-tal/">http://politiken.dk/kultur/medier/ECE2612591/sprognaevn-overvejer-ny-tegnsaetning-i-tal/</a></p>
-
-<p>46 words, biased toward &ldquo;engelsk&rdquo;:
-Den store påvirkning fra engelsk har skabt et nyt dansk kommaproblem. For hvor
-vi i Danmark sætter punktum, når vi angiver tusinder, bruger man kommaer på
-engelsk. Og de lommeregnere, eksempelvis børn har i deres smartphones, bruger
-ofte det engelske system i stedet for det danske.</p>
-
-<p> ɛ      ɐ                ɛ  ə              e                      e
-                 ɐ                       ɐ        ɐ       ɐ           ɐ
-ɛ  ə         i     ə ɑ  ɐ ɐ  e  ɛ  ə                 æ ɐ           .       ɐ
-   ə  e  ɛ  ə   ə     e      ɛ ə       e       ə</p>
-
-<p>ə ə ə ə ə ə ə ə ə
-ɐ ɐ ɐ ɐ ɐ ɐ ɐ ɐ ɐ ɐ
-e e e e e e
-ɛ ɛ ɛ ɛ ɛ ɛ
-. (silent)
-i
-æ
-ɑ</p>
-
-<p>55 words:
-The blurred footage comes with the sound of screaming passengers and that of
-metallic banging – believed to possibly be that of the pilot attempting to open
-the cockpit door with a heavy object – according to the German newspaper Bild,
-which reported that it had been found by “a source close to the investigation”.</p>
-
-<p>  ə      .        .    .         ə             i          ə? ə
- I                  I  i?.               i           ə          ɛ            ə
-  ə                      ɛ       ɛ                    ə  ɜ      j     ə>
-       I    ə               i>                   .     .      ə    ɛ</p>
-
-<p>ə ə ə ə ə ə ə ə ə ə ə
-&hellip; &hellip;
-ɛ ɛ ɛ ɛ
-i i i i
-I I I
-j
-ɜ</p>
-
-<p>Hej Maria,</p>
-
-<p>Kan du hjælpe mig med en fonetisk gåde? Eller to, faktisk.</p>
-
-<p>Den første er at Grønnum skriver &ldquo;lopper&rdquo; som [&lsquo;lʌbɐ]. Jeg kan bare ikke høre forskel på de to vokallyde, når jeg siger &ldquo;lopper&rdquo;. Kan du, når du siger det? Jeg prøver at mærke efter, om tungen evt. har forskellig højde, selvom de to vokaler for mig lyder ens. Men i IPA-vokaldiagrammet (Rødgrød s. 196) er ʌ højere end ɐ, mens på s. 138 er det omvendt! Hvordan hænger det sammen? Og i dag hørte jeg en reklame i radioen for &ldquo;Barm og købmandsgård&rdquo;, nå nej, &ldquo;Barmer købmandsgård&rdquo;. Er det bare heroppe i Nordjylland at de ʌ og ɐ lyder ens?</p>
-
-<p>Den anden er på engelsk, så jeg ved ikke, hvor meget, du ved om det, men jeg håber, du har en mening alligevel :-) Til den skal vi bruge at &ldquo;loppe&rdquo; (dansk) er [&lsquo;lʌbə]. Skelnen mellem ə og ɐ er jo ret vigtig i dansk grammatik (loppe/lopper, spise/spiser, osv.). Men på engelsk ser jeg altid suffikset -er (fx i player) skrevet som ə (eller əɹ for rotiske dialekter). Jeg vil sige, et &ldquo;rigtigt&rdquo; schwa er som &#8216;e&rsquo; i &ldquo;open&rdquo;. Men jeg kan bare ikke forestille mig at englændere altid udtaler endelsen -er som schwa. Der er mere &ldquo;A&rdquo; i den, ja, dvs. ɐ. Det er vel heller ikke tilfældigt at ord som player og gangster kan ende med at blive skrevet som playa og gangsta. Hvad synes du?</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -400,12 +241,9 @@ Meillet:</p>
 <blockquote><p>Anyone wishing to hear how Indo-Europeans spoke should come and listen to
 a Lithuanian peasant.</p></blockquote>
 
-<p>{% comment %}
-Three things stand out the most for me as a speaker of Danish and English:
-- Lithuanian doesn&rsquo;t use articles
-{% endcomment %}</p>
+<p></p>
 
-<p>{% imgcap right /images/posts/lt-flag.jpg 512 365 <a href="https://www.flickr.com/photos/mr_t_in_dc/3415891618/">Lithuanian Embassy Flag</a> by <a href="https://www.flickr.com/photos/mr_t_in_dc/">Mr.TinDC</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> %}</p>
+<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/lt-flag.jpg' width='512' height='365' alt='<a href="https://www.flickr.com/photos/mr_t_in_dc/3415891618/">Lithuanian Embassy Flag</a> by <a href="https://www.flickr.com/photos/mr_t_in_dc/">Mr.TinDC</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>&#8217;><span class='caption-text'><a href="https://www.flickr.com/photos/mr_t_in_dc/3415891618/">Lithuanian Embassy Flag</a> by <a href="https://www.flickr.com/photos/mr_t_in_dc/">Mr.TinDC</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></span></span></p>
 
 <p>This is in itself very interesting, also because Lithuanian is less well-known,
 and has survived bans and attempts of being eradicated in the past. I also have
@@ -432,16 +270,7 @@ like being a location or an instrument or means of doing something!</p>
 <a name="Writing"></a>
 <h2>Writing</h2>
 
-<p>{% comment %}
-Spanish is a well-known
-language, where it is very easy to pronounce a written word (going the other
-way is also easy, but you need to know when to write <em>b</em> and <em>v</em> because they
-are pronounced the same).
-Spanish and Italian</p>
-
-<ul>
-<li>Now, many languages, including English, pronounce the letter C as either &lsquo;k&rsquo; or &rsquo;s&#8217;.
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
@@ -460,16 +289,7 @@ vi<strong>si</strong>on, or the &lsquo;g&rsquo; in gara<strong>g</strong>e.</li>
 </ul>
 
 
-<p>{% comment %}
-I think it is interesting to have separate letters for the sounds &lsquo;sh&rsquo;/&lsquo;sch&rsquo;,
-&lsquo;mea(s)ure&rsquo;, and &lsquo;ch&rsquo;/&lsquo;tch&rsquo;. They make</p>
-
-<p>In English, with its influences from French, Greek, and many more, &lsquo;ch&rsquo;</p>
-
-<p>Of course, any practical language will work with words from other languages, and</p>
-
-<p>Illogical parts: Softening, stress changes dipthongs, two forms of the same
-{% endcomment %}</p>
+<p></p>
 
 <p>I think it is interesting to have separate letters for these sounds. They are
 compact and more predictable than in English where for example &lsquo;ch&rsquo; can be
@@ -481,13 +301,7 @@ still written Coca-Cola (even though I do enjoy pronouncing it &ldquo;tsotsa-tso
 for fun). But some imported words do change spelling. Can you guess what &ldquo;pica&rdquo;
 is? (I&rsquo;d love to have some.)</p>
 
-<p>{% comment %}
-On the vowel front, the Lithuanian alphabet boasts a large array:
-A Ą E Ę Ė I Į Y O U Ų Ū. The variants are mostly about different vowel lengths.
-The &ldquo;hooky&rdquo; letters (Ą Ę Į Ų) also appear in words in some specific cases,
-which helps keep track of the 14 combinations of number (singular/plural) and
-case that exist&hellip;
-{% endcomment %}</p>
+<p></p>
 
 <p>All in all, the spelling is fairly systematic, but regarding stress/accent,
 it&rsquo;s no better than English or Danish. From my <a href="https://www.amazon.com/Complete-Lithuanian-Teach-Yourself-Language/dp/0071765980">Lithuanian book</a>:</p>
@@ -507,41 +321,12 @@ more time on computers and mobile phones, enough that they are often skipped in
 casual writing, reducing the logic of the written language, in Spanish as well
 as in Lithuanian. But that is all part of the evolution of languages.</p>
 
-<p>{% comment %}</p>
-
-<p>A Ą E Ę Ė I Į Y O U Ų Ū
-  Ą   Ę Ė   Į Y     Ų Ū
-A   E     I     O U</p>
-
-<ul>
-<li>Baltic, indo-european</li>
-<li>diminutives</li>
-</ul>
-
-
-<p><a href="https://en.wikipedia.org/wiki/Lithuanian_language">https://en.wikipedia.org/wiki/Lithuanian_language</a>
-<a href="http://www.lituanus.org/1984_3/84_3_05.htm">http://www.lituanus.org/1984_3/84_3_05.htm</a></p>
-
-<p>2015-02-10 På litauisk er buti en slags lighedstegn, så i &ldquo;x yra y&rdquo; skal både
-x og y være i nominativ. På engelsk siger man &ldquo;it&rsquo;s me&rdquo;, men det er
-en &ldquo;special case&rdquo;-brug af the accusative pronoun. Det er faktisk
-korrekt at sige &ldquo;it is I&rdquo;. På dansk er &ldquo;at være&rdquo; måske bare ikke et
-lighedstegn, og man bruger NOM er ACC?</p>
-
-<p>2015-03-23 Men også &ldquo;tai esame mes&rdquo;, ikke &ldquo;tai yra mes&rdquo;</p>
-
-<p>2015-02-10 Unrelated: &ldquo;Femhæreslaget&rdquo; &ldquo;The five army battle&rdquo; &ldquo;The battle of the
-       five armies&rdquo;
-{% endcomment %}</p>
+<p></p>
 
 <a name="In.Any.Case"></a>
 <h2>In Any Case</h2>
 
-<p>{% comment %}
-compare with the German use of cases (only articles)</p>
-
-<p>Not as many as Finnish or Hungarian, but enough that you have to be careful!
-{% endcomment %}</p>
+<p></p>
 
 <p>In English, words&#8217; roles in sentences (subject, object, etc.) are marked with
 word order and prepositions (to, in, on, etc.). But there is another way of
@@ -558,11 +343,7 @@ marking them, namely cases. Lithuanian has seven:</p>
 </ul>
 
 
-<p>{% comment %}
-Hey vocative, genitive&rsquo;s nominative gave dative the accusative in the locative.</p>
-
-<p>With cases, fewer prepositions are used, and word order can be freer.
-{% endcomment %}</p>
+<p></p>
 
 <p>Each noun has these seven forms, for example
 al<strong>us</strong> (beer),
@@ -599,10 +380,7 @@ representing information. Another example I saw in an electrician&rsquo;s advert
 </ul>
 
 
-<p>{% comment %}
-It&rsquo;s not really more compact than in English; it&rsquo;s just a different way of
-encoding the same information.
-{% endcomment %}</p>
+<p></p>
 
 <p>Last Christmas I got a present with a label with a single word on it: <em>Erikui</em>.
 It is the dative case of my name so it means &ldquo;for Erik&rdquo;. But this does requires
@@ -630,34 +408,7 @@ are prepositions in Lithuanian. In Lithuanian, prepositions can also be
 overloaded. For example <em>po</em> + instrumental means &ldquo;under&rdquo; while <em>po</em> + genitive
 means &ldquo;after&rdquo;.</p>
 
-<p>{% comment %}
-To learn all these forms of words, I created</p>
-
-<p>This also shows another property of Lithuanian (as well as
-<a href="http://en.wikipedia.org/wiki/Article_%28grammar%29#Variation_among_languages">a lot of Eastern Europe</a>): No articles (a/an, the).</p>
-
-<a name="Technological.Support"></a>
-<h3>Technological Support</h3>
-
-<p>My (Lithuanian) colleague Marius observed that text prediction such as on
-smartphones does not very well for Lithuanian because a lot of information is
-stored as suffixes.</p>
-
-<p>Peculiarities of technology are known to affect languages.</p>
-
-<p>It is interesting that each case has a question word as well:</p>
-
-<ul>
-<li>Kas? (what, who?)</li>
-<li>Ko? (of what, whose?)</li>
-<li>Kam? (to/for whom?)</li>
-<li>Ką? (whom, what?)</li>
-<li>Kuo? (with whom, with what?)</li>
-<li>Kur? (where?)</li>
-</ul>
-
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>Finally, a cute example of the locative:</p>
 
@@ -702,10 +453,7 @@ word meaning &ldquo;two&rdquo;, but 14 (7 cases * 2 genders). Then you can add t
 (&ldquo;second&rdquo;), which in Lithuanian has 7 cases * 2 genders * 2 numbers
 (singular/plural) * 2 forms (pronominal/non-pronominal) + a neuter form =
 <a href="http://en.wiktionary.org/wiki/antras#Declension">57 forms</a>.
-{% comment %}
-(minus the collisions that mean that some word forms
-cannot be mapped uniquely back to their case/gender/number).
-{% endcomment %}</p>
+</p>
 
 <p>On top of the two main types of numbers &mdash; cardinal/quantitative (one, two,
 etc.) and ordinal (first, second, etc.) &mdash; Lithuanian has two more. The first
@@ -718,10 +466,7 @@ talk about groups of any size.</p>
 <a name="The.Beauty"></a>
 <h2>The Beauty</h2>
 
-<p>{% comment %}
-(perhaps the <a href="http://en.wikipedia.org/wiki/Lithuanian_grammar#Participles">13 participles</a>, compared to the two
-in English)
-{% endcomment %}</p>
+<p></p>
 
 <p>I am told by my better half that the collective numbers are not common in
 everyday use, and that probably holds for some of the other grammatical
@@ -743,60 +488,11 @@ the nations of Europe.</p></blockquote>
 <p><em>Update 2018-01-01: Fixed attribution of the last quote (thanks, Robertas) and
 another source.</em></p>
 
-<p>{% comment %}</p>
-
-<a name="Stuff"></a>
-<h2>Stuff</h2>
-
-<ul>
-<li><p>Hybrid Danish/Lithuanian</p></li>
-<li><p>ar != are (but &ldquo;ar&rdquo; iš cool, also exists in Lojban). &ldquo;ar&rdquo; true/false iš cool
-(like xu? in Lojban)</p></li>
-<li><p>feminine masculines. It&rsquo;s not feminine or plural/genitive (-as).</p></li>
-<li><p>No articles - makes me lazy in English. No articles/definite form (and it&rsquo;s
-hard for Lithuanians to learn proper use of articles). But it seems easy to
-go the other way. definite adjectives.</p></li>
-<li><p>Danish roots</p></li>
-<li><p>Google Translate sucks for Lithuanian
-{% endcomment %}</p></li>
+<p></p></li>
 </ul>
 
 
-<p>{% comment %}
-<a href="https://books.google.dk/books?id=z80BAAAAYAAJ&amp;dq=Nouvelle+g%C3%A9ographie+universelle+samogitiens+litvines&amp;focus=searchwithinvolume&amp;q=longtemps+opprime">https://books.google.dk/books?id=z80BAAAAYAAJ&amp;dq=Nouvelle+g%C3%A9ographie+universelle+samogitiens+litvines&amp;focus=searchwithinvolume&amp;q=longtemps+opprime</a>
-Robertas Jucaitis</p>
-
-<p>The quote is from „Nouvelle géographie universelle, tome 5: L’Europe Scandinave
-et Russe“ wriiten by Élisée Reclus in 1894 (p. 431):</p>
-
-<p>De toutes les langues d&#8217;Europe, le lithuanien, qui manque d&#8217;augmentatifs, est
-celle qui possède le plus de diminutifs affectueux et câlins; elle en a plus
-que l&#8217;espagnol ou l&#8217;italien, elle en a plus que le russe même et peut les
-multiplier presque à l&#8217;infini en les appliquant aux verbes et aux adverbes
-aussi bien qu&#8217;aux adjectifs et aux noms. (…)</p>
-
-<p>Si la valeur d&#8217;une nation dans l&#8217;ensemble de l&#8217;humanité devait se mesurer à la
-beauté de sa langue, les Samogitiens et les Litvines seraient au premier rang
-parmi les habitants de l&#8217;Europe; mais le peuple longtemps opprimé dos forêts du
-Neman n&#8217;est pas do ceux qui peuvent comparer leur part d&#8217;influence à celle
-qu&#8217;ont exercée les autres peuples civilisés du continent.</p>
-
-<p>universalgeograp05recl.pdf
-The universal geography : earth and its inhabitants
-By Élisée Reclus</p>
-
-<p>Of all European tongues, Lithuanian, while destitute of augmentatives, is
-richest in fond and endearing diminutives, which may be multiplied indefinitely
-by being applied to verbs and adverbs as well as to nouns and adjectives.</p>
-
-<p>1860
-Benjamin W. Dwight
-Modern Philology
-The Lithuanian
-This is a language of very great value to the philologist. It is the most
-antique in its forms, of all the living languages of the world, and most akin
-in its substance and spirit to the primeval Sanskrit.
-{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -805,7 +501,7 @@ in its substance and spirit to the primeval Sanskrit.
     <link href="http://blog.erw.dk/2015/02/21/the-sound-of-r/"/>
     <updated>2015-02-21T13:27:20+01:00</updated>
     <id>http://blog.erw.dk/2015/02/21/the-sound-of-r</id>
-    <content type="html"><![CDATA[<p>{% img right /images/posts/voiced_uvular_fricative.png &lsquo;R&rsquo; &lsquo;R&rsquo; %}</p>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/posts/voiced_uvular_fricative.png" title="&lsquo;R&rsquo; &lsquo;R&rsquo;" ></p>
 
 <p>R is a common letter in many languages, but it represents vastly different
 sounds. Sometimes even within the same language.
@@ -825,12 +521,7 @@ more than one type, even within a single dialect. In this post I will cover the
 three &ldquo;mainstream&rdquo; R families plus a lot of other interesting R-facts,
 including that R is sometimes a vowel!</p>
 
-<p>{% comment %}
-I just group them under well-known languages because they are simpler than the
-phonetic descriptions (such as alveolar trill and voiced uvular fricative).</p>
-
-<p>And learning an R-sound you didn&rsquo;t grow up with is also hard.
-{% endcomment %}</p>
+<p></p>
 
 <p>(R is incidentally also a very nice <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">statistics program</a>, but that is
 not the topic of this post!)</p>
@@ -844,9 +535,7 @@ not the topic of this post!)</p>
 <p>Since you are reading this in English, I think you are familiar with this type
 of R:</p>
 
-<p>{% comment %}
-  , also known as the <a href="https://en.wikipedia.org/wiki/Alveolar_approximant">alveolar approximant</a>.
-{% endcomment %}</p>
+<p></p>
 
 <p><audio controls>
 <source src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Alveolar_approximant.ogg" type='audio/ogg; codecs=vorbis' />
@@ -870,10 +559,7 @@ Dialects with <a href="https://en.wikipedia.org/wiki/Linking_and_intrusive_R#Int
 insert them where they didn&rsquo;t appear originally: &ldquo;I saw a film&rdquo; becomes &ldquo;I sawr
 a film&rdquo; (<a href="https://www.youtube.com/watch?v=P-Q9D4dcYng#t=72">oh boy</a>).</p>
 
-<p>{% comment %}
-(I guess you need to come from a non-rhotic dialect to shorten &ldquo;gangster&rdquo; to
-&ldquo;gangsta&rdquo;)
-{% endcomment %}</p>
+<p></p>
 
 <a name="Spanish"></a>
 <h2>Spanish</h2>
@@ -882,10 +568,7 @@ a film&rdquo; (<a href="https://www.youtube.com/watch?v=P-Q9D4dcYng#t=72">oh boy
 <em>once</em> <a href="https://en.wikipedia.org/wiki/Alveolar_ridge">behind your upper front teeth</a> or roll it multiple
 times:</p>
 
-<p>{% comment %}
-, the <a href="https://en.wikipedia.org/wiki/Alveolar_tap">alveolar tap</a> and the
-<a href="https://en.wikipedia.org/wiki/Alveolar_trill">alveolar trill</a>
-{% endcomment %}</p>
+<p></p>
 
 <p><audio controls>
 <source src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Alveolar_tap.ogg" type='audio/ogg; codecs=vorbis' />
@@ -916,9 +599,7 @@ pronounced with a roll consisting of three taps.)</p>
 a D-like quality to it. For example, the <em>tt</em> in &ldquo;better&rdquo; in English is also
 made by tapping the tongue on the gum ridge behind the front teeth!</p>
 
-<p>{% comment %}
-  Compare for example &ldquo;<a href="http://www.forvo.com/word/parar/#es">parar</a>&rdquo; in Spanish
-{% endcomment %}</p>
+<p></p>
 
 <p><audio controls>
 <source src="https://upload.wikimedia.org/wikipedia/commons/4/45/En-us-better.ogg" type='audio/ogg; codecs=vorbis' />
@@ -965,12 +646,7 @@ sound is almost the same.)</p>
 <p>In the southern parts of Norway and Sweden, close to Denmark, this type of R is
 also used.</p>
 
-<p>{% comment %}
-Typically, the &ldquo;single&rdquo; version (the fricative), is the standard sound, and the
-trill is used for emphasis.</p>
-
-<p>both in the standard language and in most dialects.
-{% endcomment %}</p>
+<p></p>
 
 <a name="Portuguese"></a>
 <h2>Portuguese</h2>
@@ -990,15 +666,7 @@ I learned from my Portuguese teacher (from <a href="https://en.wikipedia.org/wik
 currency), is pronounced <em><a href="http://www.forvo.com/word/real/#pt">heau</a></em>(!) An initial R is a breathy
 H-sound, and a final L is a U-like sound.</p>
 
-<p>{% comment %}
-<a href="https://en.wikipedia.org/wiki/Portuguese_language#Consonants">https://en.wikipedia.org/wiki/Portuguese_language#Consonants</a>
-<a href="https://en.wikipedia.org/wiki/Portuguese_phonology#Consonants">https://en.wikipedia.org/wiki/Portuguese_phonology#Consonants</a>
-<a href="https://en.wikipedia.org/wiki/Voiceless_uvular_fricative">https://en.wikipedia.org/wiki/Voiceless_uvular_fricative</a></p>
-
-<p><a href="http://en.wiktionary.org/wiki/Rhymes:English/%CA%8A%C9%99%28%C9%B9%29">http://en.wiktionary.org/wiki/Rhymes:English/%CA%8A%C9%99%28%C9%B9%29</a>
-<a href="http://en.wiktionary.org/wiki/Rhymes:English/%C9%94%CB%90%28%C9%B9%29">http://en.wiktionary.org/wiki/Rhymes:English/%C9%94%CB%90%28%C9%B9%29</a>
-<a href="https://en.wikipedia.org/wiki/English-language_vowel_changes_before_historic_/r/#Pure.E2.80.93poor_split">https://en.wikipedia.org/wiki/English-language_vowel_changes_before_historic_/r/#Pure.E2.80.93poor_split</a>
-{% endcomment %}</p>
+<p></p>
 
 <a name="R.as.Vowel"></a>
 <h2>R as Vowel</h2>
@@ -1013,24 +681,7 @@ reader [reeda], bother [botha]. Technically, the sound is a
 <em><a href="https://en.wikipedia.org/wiki/Schwa">schwa</a></em>, a &ldquo;lazy&rdquo;, neutral vowel made while relaxing the mouth.
 I guess whoever invented the word &ldquo;gangsta&rdquo; also spoke a non-rhotic dialect.</p>
 
-<p>{% comment %}
-But sticking
-to the standard alphabet, people sometimes use the letter A to represent it:
-player -> playa, gangster -> gangsta.</p>
-
-<p>, pure [pjua], cure [kjua]. Notice in
-these last two examples that even though the R is before a vowel in spelling,
-the final <em>sound</em> is an R. You can verify this in rhotic dialects (typical of
-the US): pure [pjuR] and cure [kjuR], where [R] represents the normal English
-R. (Also, in some dialects, many of the above words are pronounced with an
-<a href="https://en.wikipedia.org/wiki/Open-mid_back_rounded_vowel">O-like</a> sound: your [yoa/yoR], poor [poa/poR].)</p>
-
-<p>It can also happen that an R merges with the preceding vowel to form a single
-vowel-sound, different</p>
-
-<p>TODO: Maybe everything is just modification of the preceeding vowel? No, not in
-bee/beer, you/your.
-{% endcomment %}</p>
+<p></p>
 
 <p>I think this phenomenon is especially interesting because everybody knows that
 R is a consonant, but in practice non-rhotic speakers pronounce something like
@@ -1042,14 +693,7 @@ distinguishes meanings: svar [svaa], svare [svaaa], svarer [svaaaa], svarere
 [svaaaaa]. These four words mean &ldquo;(an) answer&rdquo;, &ldquo;(to) answer&rdquo;, &ldquo;(an) answerer&rdquo;,
 and &ldquo;(some) answerers&rdquo;. Even natives have trouble distinguishing these&hellip;</p>
 
-<p>{% comment %}
- (where we &ldquo;normally&rdquo; use the French R rather than the English R)</p>
-
-<p>styr [stya]
-styre [styaa]
-styrer [styaaa]
-styrere [styaaaa]
-{% endcomment %}</p>
+<p></p>
 
 <a name="Lojban"></a>
 <h2>Lojban</h2>
@@ -1072,16 +716,7 @@ subject-verb-object order: SVO, SOV, OVS, OSV, VSO, VOS. It also has a complete
 <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">BNF</a>! (For those who know what that is.) But I will save that for some
 other time!</p>
 
-<p>{% comment %}
-(Compare this to for example the trouble foreigners have in distinguishing the
-15&ndash;20 Danish vowel qualities</p>
-
-<ul>
-<li><a href="http://english.stackexchange.com/a/8687">Chinese?</a>, (Perryridge)</li>
-</ul>
-
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   

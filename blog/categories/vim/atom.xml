@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:31+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -141,17 +141,7 @@ nmap d &lt;nop&gt;
 <p>Instead, the stuff you want to delete, you can substitute/change into nothing
 until the substitute/change commands comes naturally to you.</p>
 
-<p>{% comment %}
-There&rsquo;s another replacement command I want to mention: <em>gR</em>. While <em>R</em> replaces
-characters, <em>gR</em> replaces spaces on the screen. It makes
-a difference when tabs are involved.</p>
-
-<p>To replace a single character, there&rsquo;s also <em>gr</em> which does the same, compared to <em>r</em>.</p>
-
-<p>TODO</p>
-
-<p>gr gR cc
-{% endcomment %}</p>
+<p></p>
 
 <a name="Learn"></a>
 <h2>Learn</h2>
@@ -162,52 +152,7 @@ learn the more powerful and flexible commands. I have only covered the basics
 of normal mode, but read <code>:help</code>, <code>:help user-manual</code>, and <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">this</a> to
 uncover all the cool stuff you can do.</p>
 
-<p>{% comment %}</p>
-
-<p>(Built-in help doesn&rsquo;t have the best reputation, but it&rsquo;s not bad in Vim.)</p>
-
-<a name="Nudging.yourself.into.learning"></a>
-<h2>Nudging yourself into learning</h2>
-
-<p>In <a href="/2016/05/16/learn-vim-the-harder-way/">part one</a> I showed how you could completely disable commands (such as
-the arrow keys) to</p>
-
-<p>The hard way to do that is to
-disable the motions as I showed in part one. A more reasonable approach is to
-only allow certain motions if they are <a href="https://gist.github.com/jeetsukumaran/96474ebbd00b874f0865">preceded by a count</a>.</p>
-
-<a name="Edit.Without.Selecting"></a>
-<h2>Edit Without Selecting</h2>
-
-<p>Finally we get to editing without selecting. In many editors, this is nonsense.
-How can you copy, cut, or manipulate text without selecting it? In Vim you can
-do it, but you don&rsquo;t have to. And learning to edit without selecting can be
-educational. Try:</p>
-
-<pre><code>nmap v &lt;nop&gt;
-nmap V &lt;nop&gt;
-nmap &lt;c-v&gt; &lt;nop&gt;
-</code></pre>
-
-<p>Instead of selecting first and then choosing the desired action, you first
-choose the action, which then awaits your choice of motion or text object, as
-we have seen examples of in the previous two sections.</p>
-
-<p>Like with the other topics, I&rsquo;m not saying that selecting (visual mode) is bad.
-In fact, it&rsquo;s awesome. But try to learn to use it when it makes sense.</p>
-
-<p>Learn yy</p>
-
-<p>But visual mode is also nice because you can count &ldquo;visually&rdquo; (for example with
-(e)nd) which is easier than counting without visual support and then typing the
-count manually. Both counting and typing is error prone.</p>
-
-<p>Operator <c-v> motion is also pretty awesome</p>
-
-<p>This relates to my first post about Vim. To master Vim, you must learn vi.</p>
-
-<p>TODO: Link to pt II from I.
-{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -222,7 +167,7 @@ the navigation keys <em>h</em>, <em>j</em>, <em>k</em>, <em>l</em>. This is wher
 has this answer: &ldquo;The cursor keys should also work. But using hjkl you will be
 able to move around much faster, once you get used to it. Really!&rdquo;</p>
 
-<p>{% img center /images/posts/vimtutor.png %}</p>
+<p><img class="center" src="/images/posts/vimtutor.png"></p>
 
 <p>From here, I think most people continue using Vim with the arrow keys and
 perhaps mouse because that&rsquo;s what they&rsquo;re used to, and why change something
@@ -248,9 +193,7 @@ vimtutor, you can also try an <a href="http://www.openvim.com/tutorial.html">int
 
 <p>The harder way is to use neither arrow keys <em>nor</em> hjkl.</p>
 
-<p>{% comment %}
-The mouse is of course right out.
-{% endcomment %}</p>
+<p></p>
 
 <p>So what do you do instead? Finding out is exactly the point of this exercise.
 Vim has a very rich set of motion commands (see <code>:help motion.txt</code> in Vim or
@@ -266,7 +209,7 @@ line numbers. Therefore, I do not recommend disabling <em>j</em> and
 <em>k</em> completely. But to nudge you into using them intelligently, I suggest
 disabling the &ldquo;repeat keys&rdquo; feature in your OS keyboard settings:</p>
 
-<p>{% img center /images/posts/repeat_keys.png %}</p>
+<p><img class="center" src="/images/posts/repeat_keys.png"></p>
 
 <p>When this is done, disable the mouse and <em>h</em> and <em>l</em> as well as the arrow keys
 in both normal mode and insert mode:</p>
@@ -313,7 +256,7 @@ set relativenumber
 
 <p>They look like this:</p>
 
-<p>{% img center /images/posts/vim_relativenumber.png %}</p>
+<p><img class="center" src="/images/posts/vim_relativenumber.png"></p>
 
 <p>As shown in the margin, the cursor is on line 124. To go to the line &ldquo;To
 use&hellip;&rdquo;, just look to the left, read the 9, and go nine lines up with <em>9k</em>.
@@ -354,10 +297,7 @@ next search with <code>:nohlsearch</code>, or <code>:noh</code> for short.</p>
 Damian Conway&rsquo;s <a href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/hlnext.vim">hlnext</a> plugin helps you see where you&rsquo;re at by
 blinking the next hit reached with <em>n</em> or <em>N</em>.</p>
 
-<p>{% comment %}
-And remember, besides simple searching, the search commands can also be used in
-combination with operators, e.g. <em>c</em>
-{% endcomment %}</p>
+<p></p>
 
 <a name="Conclusion"></a>
 <h2>Conclusion</h2>
@@ -373,19 +313,7 @@ start to end. This is in fact how I learned Vim.</p>
 
 <p>Update: See also <a href="/2016/08/28/learn-vim-the-harder-way-part-ii/">part II</a>.</p>
 
-<p>{% comment %}</p>
-
-<p>Sometimes, one or two <em>h</em>&lsquo;es or <em>l</em>&rsquo;s <em>are</em> the fastest way to get somewhere,
-but until your muscle memory learns the other commands, it&rsquo;s better to keep
-them disabled, or the temptation to use them all the time will be too great.</p>
-
-<p>Actually, I&rsquo;ve been using it since 2007 and thus too long to completely
-remember what it was like to be the beginner.</p>
-
-<p>(give some actual tips on how to start)
-- understand (my own post essence)
-- examples of awesomeness <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118</a>
-{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -394,10 +322,7 @@ remember what it was like to be the beginner.</p>
     <link href="http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim/"/>
     <updated>2016-04-19T07:55:20+02:00</updated>
     <id>http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-.LOG
-16:41 18-04-2016
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
 <p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
 of a text file, then each time you open it in Notepad, it appends the current
@@ -439,12 +364,7 @@ of this mapping as input to another mapping. If it <em>did</em> remap, the one c
 produced here would be interpreted as the start of one of the mappings starting
 with comma, including itself.</p>
 
-<p>{% comment %}
-The &ldquo;string format time&rdquo; call
-<code>strftime("%H:%M")</code> evaluates to the current time in hours and minutes. From
-<code>noremap!</code>, the bang (!) means the mapping is for insert and command line mode
-&ndash; as opposed to normal mode where you navigate and manipulate the text.
-{% endcomment %}</p>
+<p></p>
 
 <p>I use these functions daily, for example at work, where I keep a log of which
 tasks I start when. I also use it a lot with <a href="http://todotxt.com/">todotxt</a> when writing
@@ -519,19 +439,7 @@ to make you speak more clearly, and <em>meta-verbs</em> to blow your mind!</p>
 <!-- more -->
 
 
-<p>{% comment %}
-  &ldquo;to the matching paren/if-stmt/etc.&rdquo; <code>%</code>, etc.</p>
-
-<p>This time around, we&rsquo;ll add a new word order, meta-verbs, and even slang!</p>
-
-<p>Strap
-yourselves in for another ride of ultra geekery!</p>
-
-<p><a href="http://www.vim.org/about.php">Vim</a>, meaning vi improved, is a newer editor that is what is says on the
-label: vi, but better. It only occurred to me recently however, that some of
-the functionality Vim adds actually extends the language of vi. So here is the
-language of <em>Vim</em>, with a new word order, meta-verbs, and slang!
-{% endcomment %}</p>
+<p></p>
 
 <a name="Speak.Before.You.Think"></a>
 <h2>Speak Before You Think</h2>
@@ -565,40 +473,15 @@ registers, and there&rsquo;s a whole lot more than one of them!) Instead of repe
 we can use <em>visual mode</em>, which gives both pleasant feedback and works with all
 actions.</p>
 
-<p>{% comment %}
-Change <code>c</code> is used when you want to change some text into something else:
-This doesn&rsquo;t mean the repeat command is not useful together with change <code>c</code> or other
-operators, but it doesn&rsquo;t work for this kind of speaking before thinking.
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-Counting lines became easier when Vim version 7.3 introduced the
-&ldquo;<a href="http://vimdoc.sourceforge.net/htmldoc/options.html#%27relativenumber%27">relativenumber</a>&rdquo;
-feature. It changes line numbers in the margin from absolute numbers (counting
-up from 1) to the distance from the current line in either direction, up or
-down.  The current line is labeled 0, the two immediately above and below it
-are labeled 1, above and below those two are labeled 2, etc.  Thus, you can
-look at the line you want to use in a motion, read the relative number in the
-margin, and then use that number as the count for your command (say, <code>y7k</code> or
-<code>&gt;4j</code>).  However, this is interesting mainly for <em>linewise</em> actions.</p>
-
-<p>TODO: illustrate relativenumber</p>
-
-<p>undo is slow for dw&hellip;. :-/</p>
-
-<p>Another way of getting feedback on the size of the text you are about to change
-is to use Vim&rsquo;s <em>visual mode</em>.</p>
-
-<a name="Visual.Basics"></a>
-<h2>Visual Basics</h2>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <a name="L....or.Speak.Like.Yoda"></a>
 <h2>&hellip; or Speak Like Yoda</h2>
 
-<p>{% imgcap right <a href="http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg">http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg</a> 382 346 <a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> %}
-{% comment %}I have an offline backup of this picture.{% endcomment %}</p>
+<p><span class='caption-wrapper'><img class='caption' src='http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg">http://upload.wikimedia.org/wikipedia/commons/4/49/Teletype-Fernschreiber_T100_Siemens.jpg</a>&#8217; width=&#8217;382&#8217; height=&#8217;346&#8217; alt=&#8217;<a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>&#8217;><span class='caption-text'><a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg#mediaviewer/File:Teletype-Fernschreiber_T100_Siemens.jpg">Fernschreiber Modell T100</a> by <a href="http://de.wikipedia.org/wiki/User:Nightflyer">Nightflyer</a> / <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></span>
+</p>
 
 <p>To explain visual mode, we will first pay the 1970s
 a brief visit.  In vi, &ldquo;visual mode&rdquo; was a mode that was &ldquo;more visual&rdquo; than the
@@ -610,12 +493,7 @@ meant simply that you could see the file <em>while you edited it</em>.  However,
 form of visual feedback was soon considered normal.  Case in point, vi&rsquo;s visual
 mode is Vim&rsquo;s normal mode.</p>
 
-<p>{% comment %}
-<a href="http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg">http://commons.wikimedia.org/wiki/File:Teletype-Fernschreiber_T100_Siemens.jpg</a></p>
-
-<p>Ok, maybe it&rsquo;s more like speaking German.</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>The way to be more visual than Vim&rsquo;s normal mode is to highlight the text that
 will be changed before the change is executed. This is similar to selecting
@@ -639,36 +517,9 @@ Compare:</p>
 </ul>
 
 
-<p>{% comment %}
-I&rsquo;m not the first person to link Vim and Star Wars:
-<a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=aHm36-na4-4#t=60">https://www.youtube.com/watch?feature=player_detailpage&amp;v=aHm36-na4-4#t=60</a>
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}
-But actually, I already used <code>v</code> as a verb, in the same way that the other
-sentences in the vi language have the verb first. The translation of <code>vased</code>
-could also be &ldquo;Visualize this sentence. (Extend the highlighted area) to the
-end of the next word. Delete the highlighted text.&rdquo;. This makes much more sense
-with respect to the existing parts of the language. <code>e</code> always means</p>
-
-<p>Inside visual mode, you use a subset of the language: The prep phrases and the
-objects.</p>
-
-<p>Complete sentences and actions are no longer the same.</p>
-
-<p>Yes, they are! There are no verbs inside the verb!</p>
-
-<p>Maybe it&rsquo;s a verb like &ldquo;look at&rdquo;?  It may not be an effect in the editor, but
-it is an effect in your mind?</p>
-
-<p>when I show people stuff, I use <code>VV</code> as &ldquo;Visualize this line&rdquo;.</p>
-
-<p>TODO: Registers make the conversation or perhaps monologue stateful</p>
-
-<ul>
-<li><code>vaseobbd</code>: &ldquo;This sentence and the next word and also the last word before the
-sentence delete.&rdquo;
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
@@ -676,12 +527,7 @@ sentence delete.&rdquo;
 going to operate on before you commit to it and type the operator. But it
 doesn&rsquo;t stop there.</p>
 
-<p>{% comment %}</p>
-
-<a name="Visual.Intermediate"></a>
-<h2>Visual Intermediate</h2>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <a name="Visual.Basics"></a>
 <h2>Visual Basics</h2>
@@ -692,7 +538,7 @@ visual mode?</p>
 <p>First of all, visual mode actually comes in three flavors: Character <code>v</code>, line
 <code>V</code>, and block <code>&lt;c-v&gt;</code>. Here I switch around between them a bit:</p>
 
-<p>{% comment %} 87x8 {% endcomment %}
+<p>
 <video controls>
 <source src='http://blog.erw.dk/videos/posts/vimvisual.webm' type='video/webm; codecs=vp8' />
 </video></p>
@@ -710,10 +556,7 @@ a line. Especially useful in programming, where line is often synonymous with
 operators to blocks is very powerful and enables things that would take a long
 time without block mode.</p>
 
-<p>{% comment %}
-Again, it&rsquo;s very useful for structured text such as
-source code, configuration files, etc.
-{% endcomment %}</p>
+<p></p>
 
 <p><video class='right' controls>
 <source src='http://blog.erw.dk/videos/posts/vimblock.webm' type='video/webm; codecs=vp8' />
@@ -728,34 +571,29 @@ lines. If the lines have different lengths, the result is a jagged block.
 Appending <code>A</code> to this inserts text at the end of each line, wherever the end of
 that line is. In the video I demonstrate both <code>I</code> and <code>A</code>. Here&rsquo;s a breakdown:</p>
 
-<p>{% codeblock lang:html %}
-<c-v>jj$Ifoo(<esc>gvA)<esc></p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;c-v&gt;</span>jj$Ifoo(<span class="nt">&lt;esc&gt;</span>gvA)<span class="nt">&lt;esc&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;c-v&gt;</span>                         Ctrl-v to start visual block mode
+</span><span class='line'>     jj$                      Move cursor two down and to the end of line
+</span><span class='line'>        I                     Start block insert mode
+</span><span class='line'>         foo(                 Write <span class="ni">&amp;ldquo;</span>foo(<span class="ni">&amp;rdquo;</span>
+</span><span class='line'>             <span class="nt">&lt;esc&gt;</span>            Escape to normal mode (completes the other lines)
+</span><span class='line'>                  gv          Start visual mode with previous selection
+</span><span class='line'>                    A         Start appending in block insert mode
+</span><span class='line'>                     )<span class="nt">&lt;esc&gt;</span>   Write <span class="ni">&amp;ldquo;</span>)<span class="ni">&amp;rdquo;</span> and escape to normal mode
+</span></code></pre></td></tr></table></div></figure></p>
 
-<p><c-v>                         Ctrl-v to start visual block mode
-     jj$                      Move cursor two down and to the end of line
-        I                     Start block insert mode
-         foo(                 Write &ldquo;foo(&rdquo;
-             <esc>            Escape to normal mode (completes the other lines)
-                  gv          Start visual mode with previous selection
-                    A         Start appending in block insert mode
-                     )<esc>   Write &ldquo;)&rdquo; and escape to normal mode
-{% endcodeblock %}</p>
-
-<p>{% comment %}
-<code>&lt;c-v&gt;jj$Ifoo(&lt;esc&gt;gvA)&lt;esc&gt;</code>.
-{% video <a href="http://127.0.0.1:4000/videos/posts/vimblock.webm">http://127.0.0.1:4000/videos/posts/vimblock.webm</a> 242 120 %}</p>
-
-<p><video width="242" height="120"><source src="http://blog.erw.dk/videos/posts/vimblock.webm" /></video></p>
-
-
-<p>{% video <a href="http://s3.imathis.com/video/zero-to-fancy-buttons.mp4">http://s3.imathis.com/video/zero-to-fancy-buttons.mp4</a> 640 320 <a href="http://s3.imathis.com/video/zero-to-fancy-buttons.png">http://s3.imathis.com/video/zero-to-fancy-buttons.png</a> %}</p>
-
-<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
-
-
-<p>yo yo
-(Really, once you get used to it, it&rsquo;s second nature.)
-{% endcomment %}</p>
+<p></p>
 
 <p>All this might look scary, but that&rsquo;s of course part of what makes it so cool!</p>
 
@@ -773,39 +611,14 @@ moves the cursor to the other end of the selection, so you can adjust it
 without starting over. As amazing as it is simple! A soft, smiling kitten is
 born every time you use this feature.</p>
 
-<p>{% comment %}
-And after you applied an operator to your carefully selected area, you might
-still want to do more with it. Fear not, a simple <code>gv</code> (&ldquo;go visual&rdquo;) takes you
-back to the same selection.
-{% endcomment %}</p>
+<p></p>
 
 <p>Also, with visual mode, you can crawl up the DOM tree: <code>at</code> extends the
 selection to the enclosing tag-block (Vim-speak for an HTML/XML element).
 Applied repeatedly, a bigger and bigger block of markup is selected,
 corresponding to nodes further up the DOM tree.</p>
 
-<p>{% comment %}</p>
-
-<p>It&rsquo;s strange how people use visual mode too much <code>ggVGy</code> instead of <code>ggyG</code></p>
-
-<p>Detracts from the action model in favor of the modal model.</p>
-
-<p>But actually, some things cannot be done in an &ldquo;eloquent&rdquo; way even if you have
-already thought.  To delete a sentence and the next word, you need to either
-repeat the verb delete, or use visual mode.</p>
-
-<p>&ldquo;Everything I encounter while going from here to &hellip; to &hellip; to &hellip; should be
-deleted&rdquo;</p>
-
-<p>This only holds for expanding movements.</p>
-
-<p>However, to undo the change.</p>
-
-<p>(another example, instead of &lsquo;&rsquo;&lsquo;:s/, /\r/g&rsquo;&lsquo;&rsquo; I use &lsquo;&rsquo;&lsquo;/,
-<cr>cl<cr><esc>;.;.;.&rsquo;&lsquo;&rsquo;). In other cases, don&rsquo;t feel bad about using visual
-mode a lot. It gives feedback which is good!</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>Both visual mode and repeat <code>.</code> can be used in the &ldquo;speak before you think&rdquo;
 manner, but visual mode works with all operators. It also has another advantage
@@ -832,11 +645,7 @@ copy it, and you&rsquo;re ready to continue.  But before you remember that you s
 redo to return to the newest version of the document, you make a new change.
 If you used a simpler editor that version would now be lost forever.</p>
 
-<p>{% comment %}
-If you used a simpler editor, and you hadn&rsquo;t saved the document at its most
-developed stage before the undo sequence, that version would now be lost
-forever.
-{% endcomment %}</p>
+<p></p>
 
 <p>Vim knows that undo/redo is not a linear history, it is a tree. Normal,
 sequential changes extend a single branch of the tree. But when you go back and
@@ -846,9 +655,7 @@ branch. Vim <a href="http://vimdoc.sourceforge.net/htmldoc/usr_32.html">stores t
 <p><video class='right' controls>
 <source src='http://blog.erw.dk/videos/posts/vimundotree.webm' type='video/webm; codecs=vp8' />
 </video>
-{% comment %}
-sone<esc>otwo<esc>othree<esc>ofour<esc>uuA five<esc>a six<esc>uuuu<c-r><c-r><c-r><c-r>g-g-g+g+<c-l>g-g-joseven<esc>oeight<esc>uuuuu<c-r><c-r><c-r><c-r><c-r>
-{% endcomment %}</p>
+</p>
 
 <p>In this video, I demonstrate the undo tree with all changes being adding small
 bits of text, and the layout of the text representing the branches of the tree.
@@ -866,29 +673,13 @@ in a linear history with <code>g-</code> and <code>g+</code>. You can even trave
 <code>:earlier 3m</code> (minutes), <code>:later 2h</code> (hours). But in practice all you might
 need is a few <code>g-</code>es once in a blue moon.</p>
 
-<p>{% comment %}
-Either way, these six history commands can be mixed freely and any change can
-be recovered, so play around to get a feel for it.
-{% endcomment %}</p>
+<p></p>
 
 <p>On top of that we have <a href="http://vimdoc.sourceforge.net/htmldoc/undo.html#undo-persistence">persistent undo</a> between sessions, which
 I think makes Vim&rsquo;s undo the most powerful undo functionality I have seen in
 a program. If you know of any contenders, please leave a comment!</p>
 
-<p>{% comment %}
-Extra undo checkpoints can even be added in insert mode with the sequence
-<code>&lt;c-g&gt;u</code> if you don&rsquo;t return regularly to normal mode (which is really the best
-way to use Vim).</p>
-
-<p>Or at least, you can jump between actions (actions being separated meaning that
-as long as it was part of a completed action (by returning to normal mode).</p>
-
-<p>TODO: Mention <c-g>u ?</p>
-
-<p>Vim itself never actually shows you the tree, even though you can get a list of
-the changes that are scattered across the tree with <code>:undolist</code> (this is the
-list that <code>g-</code> and <code>g+</code> traverse).
-{% endcomment %}</p>
+<p></p>
 
 <p>Vim itself never actually shows you the tree directly, but <a href="http://stevelosh.com/">Steve Losh</a>&rsquo;s
 graphical undo a.k.a. <a href="http://sjl.bitbucket.org/gundo.vim/">Gundo</a> plugin looks nice for that purpose
@@ -900,12 +691,7 @@ and the undo system. Here&rsquo;s one more before we end:</p>
 <a name="Record.and.Replay.Changes"></a>
 <h3>Record and Replay Changes</h3>
 
-<p>{% comment %}</p>
-
-<p>Record macro, play macro <code>@</code> is not meta.
-- recursive macros</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>Another meta-verb is <em>record</em> <code>q</code> &mdash; it doesn&rsquo;t change the text by itself, but
 it records the use of other verbs. The recording can then be played back by
@@ -954,56 +740,11 @@ that emacs is faster in the hands of someone who isn&rsquo;t particularly skille
 
 <p>And that&rsquo;s probably true!</p>
 
-<p>{% comment %}
-For reference, this skirmish in the <a href="http://en.wikipedia.org/wiki/Editor_war">editor war</a> took place less
-than a year after I <strike>joined the cult of</strike> started learning Vim.</p>
+<p></p>
 
-<p>Macros are not orthogonal &ndash; you cannot record a macro while recording a macro.
-But you <em>can</em> make them recursive, even mutually so.
-Well, you can&rsquo;t really nest any verbs.
-{% endcomment %}</p>
+<p></p>
 
-<p>{% comment %}</p>
-
-<a name="Grammar"></a>
-<h2>Grammar</h2>
-
-<p>Sentence ::= PrepPhrasePart
-| ImmediateVerbPart
-| OperatorVerbPart PendingPart
-PendingPart ::= NounPart
-| PrepPhrasePart
-PrepPhrasePart ::= Num? PrepPhrase
-ImmediateVerbPart ::= Num? (ImmediateVerb | ImmediateInsertVerbPart)
-OperatorVerbPart ::= Num? OperatorVerb
-NounPart ::= Num? QualifiedNoun
-PrepPhrase ::= w | e | b | 0 | $ | &hellip;
-ImmediateVerb ::= p | ~ | &hellip;
-ImmediateInsertVerbPart ::= ImmediateInsertVerb InsertPhase
-ImmediateInsertVerb ::= i | s | R | &hellip;
-InsertPhase ::= Printable* escape
-OperatorVerb ::= y | d | c | &lt; | > | &hellip;
-QualifiedNoun ::= Qualifier Noun
-Qualifier ::= a | i
-Noun ::= w | s | p | t | &hellip;</p>
-
-<p>TODO:
-- Split OperatorVerbPart so &ldquo;change&rdquo; is in OperatorInsertVerbPart
-- Add replace mode(s) <a href="http://darkpan.com/files/vim.svg">http://darkpan.com/files/vim.svg</a>
-- Add replace pending
-- Skip all visual and select modes</p>
-
-<p>{% endcomment %}</p>
-
-<p>{% comment %}</p>
-
-<a name="Slang"></a>
-<h2>Slang</h2>
-
-<p>Definition of slang.</p>
-
-<p>mappings are slang in vim (your private language)
-{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -1012,18 +753,7 @@ Noun ::= w | s | p | t | &hellip;</p>
     <link href="http://blog.erw.dk/2014/10/31/the-essence-of-vi/"/>
     <updated>2014-10-31T09:49:46+01:00</updated>
     <id>http://blog.erw.dk/2014/10/31/the-essence-of-vi</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-Revision notes:</p>
-
-<p>2014-11-05  Mention that if people want to try it out, escape, escape, escape!
-2014-11-05  <a href="http://www.wekeroad.com/2010/07/29/vim-is-your-daddy/">http://www.wekeroad.com/2010/07/29/vim-is-your-daddy/</a></p>
-
-<p>(Update 2014-11-23: If you&rsquo;re playing along and it doesn&rsquo;t work, press <code>&lt;esc&gt;</code>
-first to make sure you&rsquo;re in normal mode.)</p>
-
-<p>2014-11-27  <a href="http://glts.github.io/2013/04/28/vim-normal-mode-grammar.html">http://glts.github.io/2013/04/28/vim-normal-mode-grammar.html</a></p>
-
-<p>{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
 <p><a href="http://www.vim.org/about.php">Vim</a> is a popular and widely distributed text editor improving on the
 legendary <a href="http://en.wikipedia.org/wiki/Vi">vi</a> from the late 1970s.  If you are reading this on Mac or
@@ -1032,20 +762,7 @@ with your OS.  If you tried Vim and found it too strange to use, or if you use
 it but still harbor the idea that it was made by (or for!) aliens, you&rsquo;ve come
 to the right place!</p>
 
-<p>{% comment %}</p>
-
-<p>If you tried using Vim but you <em>just don&rsquo;t get
-it</em>, you&rsquo;ve come to the right place!</p>
-
-<p>Many try using Vim.  And many get confused by its strange ways and leave.  Or
-they learn to save and quit, and then use it as another &ldquo;notepad&rdquo;.</p>
-
-<p>If this gets the job done, that is fine.  With any craft it is more important
-to accomplish your goals than to have good tools.  But good tools help you
-accomplish your goals faster.  More importantly, when you are comfortable with
-your tools, you are freed from thinking of nails and boards and you focus on
-the house instead.
-{% endcomment %}</p>
+<p></p>
 
 <p>Vim is a very powerful tool, but often misunderstood.  There are plenty of
 tutorials that go through the basics, but they usually fail to paint the big
@@ -1060,29 +777,7 @@ you use to speak to Vim and vi.  It is my hope that reading it will make your
 time with Vim both more useful and more enjoyable.  I have myself enjoyed Vim
 since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
 
-<p>{% comment %}
-Intro is in future tense</p>
-
-<p>to explain the meaning of it all
-<a href="http://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor">tripping over the doorstep</a>.</p>
-
-<p>(That, and blogging about it!)</p>
-
-<p>TODO: Link vim tutorials</p>
-
-<p>Tutorials are typically bottom-up introductions.  This on the other hand is
-a top-down introduction.  It is my hope that you will be much better motivated
-for learning what more traditional tutorials have to teach.  Or to learn to use
-Vim like vi (that don&rsquo;t reach the top because they have to be brief)</p>
-
-<p>There are also blogs that present impressive <code>.vimrc</code> configuration files.</p>
-
-<p>If you are presented with a long list of unfamiliar things you can do, but you
-don&rsquo;t know why you should use them, why bother?</p>
-
-<p> in a bottom-up fashion</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <!-- more -->
 
@@ -1129,12 +824,7 @@ prime keyboard real estate is not used to its fullest.  50+ easy-to-press
 shortcuts &mdash; upper and lower case letters &mdash; are only used for a single
 purpose.</p>
 
-<p>{% comment %}
-Another way to see it is that they are all bound to the command <em>self insert</em>
-which inserts the latest symbol that was typed.  This is a lot of keys bound to
-a singular purpose.</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>A different approach to text editing is <em>modal editing</em>.  Here the &ldquo;typing
 mode&rdquo; is just one of several modes of using the editor (and thus the keyboard).
@@ -1154,9 +844,7 @@ in your browser: You press <code>ctrl-f</code> which opens a text field.  Here y
 your search string, press <code>&lt;enter&gt;</code> a few times, then <code>&lt;esc&gt;</code> when you&rsquo;re done.
 You just used FIND MODE!  (It was super effective!)</p>
 
-<p>{% comment %}
-So now you might say, &ldquo;Ok, modes are easy, but Vim is not!&rdquo;
-{% endcomment %}</p>
+<p></p>
 
 <p>Modal editing simply gives you more buttons for actions.  As
 <a href="http://www.viemu.com/a-why-vi-vim.html">Jon Beltran de Heredia wrote</a>:</p>
@@ -1183,10 +871,7 @@ it one letter at a time, and pay attention to case.  What does it mean?  The
 line until (and including) <code>G</code>, the last line.  vi is older than the
 standardized cut, copy, and paste, hence the name &ldquo;yank&rdquo;.</p>
 
-<p>{% comment %}
-Or if you want to delete everything, then delete it directly: Substitute <code>d</code>
-for <code>y</code>: <code>ggdG</code>.
-{% endcomment %}</p>
+<p></p>
 
 <p>Now, if you would think <code>ggyG</code> is no faster than <code>&lt;c-a&gt;&lt;c-c&gt;</code> (select all,
 copy) in a regular editor, you&rsquo;d be right.  But say you wanted to copy just
@@ -1279,47 +964,7 @@ includes commands such as</p>
 operator, the editor awaits the object or region that the operator should
 affect.  This role is played by nouns and prepositional phrases.</p>
 
-<p>{% comment %}</p>
-
-<ul>
-<li>filter text through an external program <code>!</code></li>
-</ul>
-
-
-<p>prepositional phrases are the reason they cannot strictly be called transitive
-verbs.</p>
-
-<p>TODO: Hvad kalder man verber, der
-- <em>skal</em> have et objekt?
-- <em>ikke kan</em> tage et objekt?
-- <em>kan</em> tage et objekt?
-- <em>skal</em> have et objekt eller forholdsordsled?</p>
-
-<pre><code>http://en.wikipedia.org/wiki/Intransitive_verb
-In grammar, an intransitive verb does not allow an object
-
-"I sneezed."
-"She ran."
-"He died."
-
-Some verbs allow for objects but do not always require one. In other words,
-a verb may be used as intransitive in one sentence, and as transitive in
-another:
-
-http://en.wikipedia.org/wiki/Transitive_verb
-A clause with a prepositional phrase that expresses a meaning similar to
-that usually expressed by an object may be called "pseudo-transitive".
-
-    What is similar enough
-
-Can we see visual mode as a pseudo-polytransitive (See
-pseudo-ditransitive)?  No, the poly-phase has both prepositional phrases
-AND more objects.
-
-Verbs that do not require an object are called intransitive verbs.
-</code></pre>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>There are many more verbs, and you indeed need more to use vi (and therefore
 Vim) efficiently, but this selection will do fine in explaining the language
@@ -1349,24 +994,7 @@ the operator, the editor will be in <em>operator pending mode</em>, awaiting the
 choice of the text to operate on.  We will see how to choose that text in the
 next two sections.</p>
 
-<p>{% comment %}
-If you wish to have an overview of all modes, they are
-<a href="http://vimdoc.sourceforge.net/htmldoc/intro.html#vim-modes-intro">in the manual</a>,
-but I will introduce the ones we need as we come to them naturally.</p>
-
-<p>TODO: Move the manual link to a &ldquo;modes revisited section&rdquo; which can also be
-combined with visual mode&rsquo;s &ldquo;problem&rdquo;?
-<a href="https://darkpan.com/">https://darkpan.com/</a> <a href="http://darkpan.com/files/vim.svg">http://darkpan.com/files/vim.svg</a></p>
-
-<ul>
-<li><p>join current and next line <code>J</code></p></li>
-<li><p>insert/substitute text <code>i</code> <code>I</code> <code>a</code> <code>A</code> <code>o</code> <code>O</code> <code>s</code> <code>S</code></p></li>
-</ul>
-
-
-<p>The change operator <code>c</code> in fact goes from normal</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <a name="Nouns.Objects"></a>
 <h3>Nouns/Objects</h3>
@@ -1457,42 +1085,7 @@ fact that the cursor is always on the first character of a word.  For example,
 like <code>b</code> and <code>w</code> but for sentences.  The motions <code>{</code> and <code>}</code> go to the
 previous/next paragraph boundary.</p>
 
-<p>{% comment %}</p>
-
-<p>The <code>w</code> motion will always move to another word.  If the cursor is already on
-the beginning of a word, it will move to the next beginning-of-a-word.  If not,
-well, it will do the same.</p>
-
-<p>Alternatively, the verb is an implied &ldquo;go&rdquo;.</p>
-
-<p>TODO: Dual <code>ge</code></p>
-
-<pre><code>                            Fwd Back
-</code></pre>
-
-<p>Moves inside the same word:     e   b
-Always moves to a new word:     w   ge</p>
-
-<p><span style="border-bottom: 1px dashed #999;" title="Because the cursor cannot be *before* the beginning of the current word.">Can you see why?</span></p>
-
-<p>TODO: Why is <em>on</em> char smart?  Why was virtualedit=onemore not already in vi?</p>
-
-<ul>
-<li>&ldquo;(backwards) to the end of the previous word&rdquo; <code>ge</code></li>
-</ul>
-
-
-<p>That is useful to append/prepend to a word: &ldquo;Go to
-the end and append&rdquo; <code>ea</code> and &ldquo;Go to the beginning and insert&rdquo; <code>bi</code>.</p>
-
-<p>TODO: Should I really use &ldquo;append&rdquo; here? Maybe just link to expl. of</p>
-
-<ul>
-<li>&ldquo;to the beginning/end of the current sentence&rdquo; <code>(</code> and <code>)</code></li>
-</ul>
-
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <p>Another powerful type of motion is the &ldquo;till&rdquo;/&ldquo;find&rdquo; motion. Till <code>t</code> moves to
 the next character you specify.  For example, <code>t"</code> moves to right before the
@@ -1541,32 +1134,7 @@ mile on first.</p></blockquote>
 </ul>
 
 
-<p>{% comment %}</p>
-
-<p>TODO: Illustrate where motions can lead (without counts)</p>
-
-<ul>
-<li>&ldquo;to the beginning/end of the line&rdquo; <code>0</code> and <code>$</code></li>
-<li>&ldquo;to the first/first non-whitespace/last character on the line&rdquo; <code>0</code> <code>^</code> <code>$</code></li>
-</ul>
-
-
-<p>The normal arrow keys also work, but their use is discouraged,
-<a href="http://jeetworks.org/vim-making-those-arrow-keys-work-for-you-or-why-the-anti-arrow-key-propoganda-is-wrong/">although for the wrong reasons</a>.</p>
-
-<p>Therefore effective Vim users use them sparingly.</p>
-
-<p>But I think teaching any kind of arrow keys early on actually put off the
-acquisition of vi fluency.</p>
-
-<p>The hjkl keys are definitely necessary, but they are only plumbing in</p>
-
-<p>And the action paradigm is much more important to learn than the arrow keys.</p>
-
-<ul>
-<li>&ldquo;Sort the next ten lines alphabetically&rdquo; <code>10!!sort&lt;enter&gt;</code> (using an
-external sort program such as GNU sort).
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
@@ -1622,15 +1190,7 @@ ordinals.</p>
 <p>All motions and operators in fact take a count, but it usually defaults to 1.
 This is another example of orthogonality in vi.</p>
 
-<p>{% comment %}
-- &ldquo;Replace the next 5 characters by underscores&rdquo; <code>5r_</code></p>
-
-<p>Combinations are even possible: Thrice delete five words <code>3d5w</code>.</p>
-
-<p>TODO: Can be combined <code>3d5w</code>. (But should <code>dd</code> etc. be seen as <code>d_</code>? Also, it&rsquo;s
-actually a motion.  But :sort cannot be seen as being applied to one line at
-a time ten times.  But that&rsquo;s just because it&rsquo;s converted to a :range first.)
-{% endcomment %}</p>
+<p></p>
 
 <a name="Expand.your.Vocabulary"></a>
 <h2>Expand your Vocabulary</h2>
@@ -1669,33 +1229,14 @@ plugin to get three new verbs:
 </ul>
 
 
-<p>{% comment %}
-TODO: Add argtextobj <a href="http://www.vim.org/scripts/script.php?script_id=2699">http://www.vim.org/scripts/script.php?script_id=2699</a></p>
+<p></p>
 
-<p>As a side note to what is considered the default mode of modal editing, evim
-(vim in &ldquo;easy mode&rdquo;) might be a fairly intuitive and powerful editor.  Intuitive
-in the sense that insert mode is the default mode, so typing means typing unless
-you tell it otherwise, and powerful in the sense that it is, well, vim (the
-&ldquo;power&rdquo;, a.k.a. normal mode, is accessed through CTRL-o or CTRL-l).  I know some
-people who use vim primarily in insert mode &ndash; you might enjoy evim.
-{% endcomment %}</p>
-
-<p>{% comment %}</p>
-
-<a name="Vim.vs..vi"></a>
-<h2>Vim vs. vi</h2>
-
-<p>Why do I call it the essence of vi and then talk so much about Vim?  The answer
-is that</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 
 <a name="Real.Keyboard.Shortcuts"></a>
 <h2>Real Keyboard Shortcuts</h2>
 
-<p>{% comment %}
-<a href="http://forums.xkcd.com/viewtopic.php?f=40&amp;t=15855&amp;start=40#p715439">http://forums.xkcd.com/viewtopic.php?f=40&amp;t=15855&amp;start=40#p715439</a>
-{% endcomment %}</p>
+<p></p>
 
 <p>The key <code>y</code> is not a shortcut for yank, it <em>is</em> the yank operator.  But vi
 still has shortcuts (in the traditional sense of the word) for those actions
@@ -1739,11 +1280,7 @@ inserting at the right indentation level, aware of nesting and control
 structures. For example, if the previous line is an &ldquo;if&rdquo; statement or the start
 of a new block, the next line&rsquo;s indentation level should be one higher.</p>
 
-<p>{% comment %}
-They are combinations of verbs and prepositional phrases.</p>
-
-<p>s x X
-{% endcomment %}</p>
+<p></p>
 
 <a name="What.about.Usability."></a>
 <h2>What about Usability?</h2>
@@ -1778,30 +1315,7 @@ plain cursor movement.  Some of the actions involve mode switching, some don&rsq
 The actions drive the editing process while the modes help put a large
 vocabulary right under your fingertips.</p>
 
-<p>{% comment %}</p>
-
-<p>vi is in fact modeless:</p>
-
-<p>You are always in normal mode,</p>
-
-<p>except when you&rsquo;re not.</p>
-
-<p>TODO: What &ldquo;came first&rdquo;, motions or operators?</p>
-
-<p>TODO: Split actions into change actions and move actions (bare prepositional phrases)?</p>
-
-<p>Some actions involve two mode swiches, but not all. Which ones?</p>
-
-<p>Some actions are never meant to be repeated (inserting long blobs of text), and
-some are.</p>
-
-<p>Actions can be nested when you:
-- backspace/<c-g> in insert mode
-- move in visual mode (is movement an action?)</p>
-
-<p>No:
-- actions are not the same as undo blocks
-{% endcomment %}</p>
+<p></p>
 
 <p>I have only covered basic text manipulation, though Vim does much more.  Any
 user would need to know how to open/close/save files, and maybe
@@ -1821,21 +1335,7 @@ Maybe <a href="http://blog.sanctum.geek.nz/vim-koans/">the Vim Koan &ldquo;The s
 <p><em>Update 2016-04-27: Motions <code>]m</code> <code>]M</code> <code>[m</code> <code>[M</code> do unfortunately not work for
 C# out of the box. Also, grammar fixes.</em></p>
 
-<p>{% comment %}</p>
-
-<a name="Afterword"></a>
-<h2>Afterword</h2>
-
-<p>Skriv om min oplevelse med yyp.
-<a href="http://anders.brander.dk/">http://anders.brander.dk/</a></p>
-
-<p>TODO: Google &ldquo;release CC graphics but not text&rdquo;</p>
-
-<p>TODO: Include command-line mode?</p>
-
-<p>TODO: Google octopress disqus setup</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   

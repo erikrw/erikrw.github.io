@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-05-31T11:46:31+02:00</updated>
+  <updated>2019-08-28T07:44:34+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -18,17 +18,9 @@
     <link href="http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/"/>
     <updated>2018-07-28T12:23:29+02:00</updated>
     <id>http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found</id>
-    <content type="html"><![CDATA[<p>{% comment %}
-Outline:
-- What is Yousician
-- Upload songs
-- MusicXML
-- Being a programmer
-- Error
-- Solution (tempo declaration in at least one/first measure)
-{% endcomment %}</p>
+    <content type="html"><![CDATA[<p></p>
 
-<p>{% img right /images/posts/yousician_no_tempo_definitions.png %}</p>
+<p><img class="right" src="/images/posts/yousician_no_tempo_definitions.png"></p>
 
 <p>This summer my girlfriend and I started practicing piano with <a href="https://yousician.com">Yousician</a>,
 which is a kind of gamified music tutor, that listens to your playing and gives
@@ -43,7 +35,7 @@ results at all, so hopefully this post will change that.</p>
 <!-- more -->
 
 
-<p>{% img left /images/posts/musicxml_hello_world.gif %}</p>
+<p><img class="left" src="/images/posts/musicxml_hello_world.gif"></p>
 
 <p>MusicXML is an interchange format with files typically generated or exported
 from <a href="https://en.wikipedia.org/wiki/Scorewriter">scorewriter programs</a>. But us being programmers, we looked
@@ -283,35 +275,7 @@ subtle bugs. While the string/integer comparison returned a boolean just like
 integer/integer comparison, string/integer multiplication returns a string, and
 not the integer a novice might be expecting.</p>
 
-<p>{% comment %}</p>
-
-<pre><code class="Python"># Python 2 original
-instructions = [line.split() for line in input.splitlines()]
-register_names = set(instruction[0] for instruction in instructions)
-registers = {register_name: 0 for register_name in register_names}
-
-# Python 2 explicit
-instructions = list(line.split() for line in input.splitlines())
-register_names = set(instruction[0] for instruction in instructions)
-registers = dict((register_name, 0) for register_name in register_names)
-
-# Python 3 explicit
-instructions = list(line.split() for line in input.splitlines())
-register_names = set(register_name for register_name, *rest in instructions)
-registers = dict((register_name, 0) for register_name in register_names)
-
-# Python 3 non-explicit
-instructions = [line.split() for line in input.splitlines()]
-register_names = {register_name for register_name, *rest in instructions}
-registers = {register_name: 0 for register_name in register_names}
-
-# Python 2 non-explicit
-instructions = [line.split() for line in input.splitlines()]
-register_names = [instruction[0] for instruction in instructions]
-registers = {register_name: 0 for register_name in register_names}
-</code></pre>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -342,16 +306,7 @@ and speed.</p>
 </ul>
 
 
-<p>{% comment %}
-For example:</p>
-
-<ul>
-<li><code>ugknbfddgicrmopn</code> is nice because it has at least three vowels (<code>u...i...o...</code>), a double letter (<code>...dd...</code>), and none of the disallowed substrings.</li>
-<li><code>aaa</code> is nice because it has at least three vowels and a double letter, even though the letters used by different rules overlap.</li>
-<li><code>jchzalrnumimnmhp</code> is naughty because it has no double letter.</li>
-<li><code>haegwjzuvuyypxyu</code> is naughty because it contains the string <code>xy</code>.</li>
-<li><code>dvszwmarrgswjxmb</code> is naughty because it contains only one vowel.
-{% endcomment %}</li>
+<p></li>
 </ul>
 
 
@@ -429,11 +384,7 @@ a single, declarative statement:</p>
 version?
 It depends on how you evaluate it.</p>
 
-<p>{% comment %}
-- Readability
-- Performance
-- Debuggability
-{% endcomment %}</p>
+<p></p>
 
 <a name="Readability"></a>
 <h2>Readability</h2>
@@ -445,9 +396,7 @@ which satisfy &hellip; some criteria&rdquo;. Compared to the imperative version,
 overall purpose is much clearer. But the individual criteria still take time to
 read.</p>
 
-<p>{% comment %}
-And you must know the <a href="https://msdn.microsoft.com/en-us/library/xsa4321w%28v=vs.100%29.aspx"><code>string(char, int)</code></a> constructor.
-{% endcomment %}</p>
+<p></p>
 
 <pre><code class="CSharp">          line.Count(character =&gt; "aeiou".Contains(character)) &gt;= 3 &amp;&amp;
           line.Any(character =&gt; line.Contains(new string(character, 2))) &amp;&amp;
@@ -507,9 +456,7 @@ readability. (This was using Mono, btw.)</p>
 
 <p>1.8 seconds on my quadcore!</p>
 
-<p>{% comment %}
-Core i5-2500K
-{% endcomment %}</p>
+<p></p>
 
 <p>Now, I have not optimized any of these three versions for performance, and it
 could of course be done faster in C# (with or without explicit threads), and
@@ -544,10 +491,7 @@ print sum(1 for line in open("input").readlines()
               not re.search('ab|cd|pq|xy', line)))
 </code></pre>
 
-<p>{% comment %}
-I finally understand why .NET uses UpperCamelCase/PascalCase. It helps reading
-dense code such as my declarative adventures.
-{% endcomment %}</p>
+<p></p>
 
 <p>(This is the whole program, not just the body of some main function!)</p>
 
@@ -565,7 +509,7 @@ C#, considering that Python is interpreted.</p>
     <link href="http://blog.erw.dk/2015/07/11/ode-to-my-casio/"/>
     <updated>2015-07-11T13:57:20+02:00</updated>
     <id>http://blog.erw.dk/2015/07/11/ode-to-my-casio</id>
-    <content type="html"><![CDATA[<p>{% img right /images/posts/casio.jpg 345 %}</p>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/posts/casio.jpg" width="345"></p>
 
 <p>The year was 2002 and I had started gymnasium (≈high school). My parents had
 bought me the graphic calculator required for our maths classes: Casio fx-9750G
@@ -577,23 +521,9 @@ programming.</p>
 <!-- more -->
 
 
-<p>{% comment %}
-Our maths classes didn&rsquo;t focus on programming, but the calculator itself leads
-the curious mind. The &ldquo;main&rdquo; calculator mode is a REPL. That is to say it
-<em>reads</em> your input, <em>evaluates</em> it, <em>prints</em> the result, and it <em>loops</em>, doing
-this indefinitely. For example:</p>
+<p></p>
 
-<pre><code>2+2
-4
-1&amp;#x2192;A
-1
--2&amp;#x2192;B
--2
-</code></pre>
-
-<p>{% endcomment %}</p>
-
-<p>{% comment %} Datid {% endcomment %}</p>
+<p></p>
 
 <p>Compared with a personal computer, this calculator was weak, to say the least.
 The display resolution was 128×64 pixels in black and white. (However, I did
@@ -608,20 +538,7 @@ the sine curve.
 Memory was limited as well: 32K, of which only 28568 bytes were available to
 the user. And of which every list and matrix entry took up 10 bytes! Plus, any
 time something was graphed, 4K was reserved for that.
-{% comment %}
-I have also seen <a href="https://xkcd.com/768/">anecdotal evidence</a> that these specs generally do not
-improve over time.
-2<sup>15</sup> - 4200 =
-<code>
-IN TEXT MODE IT HELD
-7 LINES OF 21 CHARS.
-Even though it could
-write lowercase chars
-YOU WERE NOT GIVEN
-ACCESS TO THEM.
-BECAUSE OF REASONS.
-</code>
-{% endcomment %}</p>
+</p>
 
 <p>Yet for all these complaints, this machine was a fantastic place to start
 programming. Having a fixed set of features challenges you to do what you can
@@ -631,7 +548,7 @@ choice. There was no trouble with installation or incompatible software
 libraries. There was no web browsing or multitasking. No distraction. And zero
 boot time and a year of battery life.</p>
 
-<p>{% img right /images/posts/casio-fact.jpg %}</p>
+<p><img class="right" src="/images/posts/casio-fact.jpg"></p>
 
 <p>The basic calculator part is a REPL: That is to say it <em>reads</em> your input,
 <em>evaluates</em> it, <em>prints</em> the result, and it <em>loops</em>, doing this indefinitely.
@@ -640,32 +557,13 @@ before slowly, step by step, automating small parts of your calculations. You
 could, for example, make a small program that asks the user for input and uses
 a loop to do a calculation.</p>
 
-<p>{% comment %}
-<code>
-?&amp;#x2192;N&amp;#x21b5;
-1&amp;#x2192;A&amp;#x21b5;
-For 1&amp;#x2192;I To N&amp;#x21b5;
-I&amp;times;A&amp;#x2192;A&amp;#x21b5;
-Next
-</code>
-{% endcomment %}</p>
+<p></p>
 
 <p>And there were enough features to do really cool things: Plotting, lists and
 list operations (sorting, summation, product, mean, median, etc.), matrices and
 matrix operations, statistics, regression, etc.</p>
 
-<p>{% comment %}
-There was a simple editor: You could write text at the cursor, choosing between
-overwrite (the default) and insert mode. Keywords (<code>If</code>, <code>Then</code>, <code>While</code>, etc.)
-were inserted from menus. There was even a simple copy/paste feature with six
-buffers (but no selection mode, so copy always copied the whole program!)</p>
-
-<p>Maybe you want to implement your own factorial:</p>
-
-<p>To this day I still love interpreted programming languages with a REPL.</p>
-
-<p>(TODO The hardest thing in CS is naming - quote?)
-{% endcomment %}</p>
+<p></p>
 
 <a name="Programming.on.the.Bus"></a>
 <h2>Programming on the Bus</h2>
@@ -681,7 +579,7 @@ automatically. Or calculate the greatest common divisor. In physics,
 I calculated and visualized refraction. In chemistry, I calculated molar
 masses.</p>
 
-<p>{% img right /images/posts/casio-guitar.jpg %}</p>
+<p><img class="right" src="/images/posts/casio-guitar.jpg"></p>
 
 <p>But it was also fun and games: I made programs that drew nice geometric shapes
 for their beauty. I calculated poker odds. During some boring classes I made
@@ -728,10 +626,7 @@ sucks!</li>
 </ul>
 
 
-<p>{% comment %}
-But on the other hand, it didn&rsquo;t offer any alternatives, so it wasn&rsquo;t until
-university that I actually learned OO.
-{% endcomment %}</p>
+<p></p>
 
 <a name="Interacting.with.the.World"></a>
 <h2>Interacting with the World</h2>
@@ -761,13 +656,7 @@ myself.</p>
 
 <p>My dear Casio, thanks for the ride.</p>
 
-<p>{% comment %}
-Oh, and (TODO sparepærer) have another pattern of than (TODO glødepærer).</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Casio_graphic_calculators">https://en.wikipedia.org/wiki/Casio_graphic_calculators</a>
-/media/erw/WDE1042/from_elements/Documents/Diverse/fx-9750G PLUS</p>
-
-<p>{% endcomment %}</p>
+<p></p>
 ]]></content>
   </entry>
   
@@ -789,9 +678,7 @@ I could think of in one go.</p>
 <!-- more -->
 
 
-<p>{% comment %}
-This is ofc what CI servers are for, but this is cheaper.
-{% endcomment %}</p>
+<p></p>
 
 <p>First up is the unit tests. For this script I only want it to tell me anything
 if there is a problem, as is customary for unix programs. With verbosity 0 and
