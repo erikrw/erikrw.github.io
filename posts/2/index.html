@@ -9,8 +9,9 @@
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="Roland Boutique is a series of small form factor electronic music instruments.
-The line debuted in 2015 with recreations of three iconic Roland 1980s &hellip;">
+  <meta name="description" content="I use a weird computer keyboard: The Kinesis Advantage.
+It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb keys.
+It&rsquo; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +80,45 @@ if (document.location.hostname != "127.0.0.1") {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2018/04/14/my-weird-keyboard/">My Weird Keyboard</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-04-14T16:57:10+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I use a weird computer keyboard: The <a href="https://www.kinesis-ergo.com/shop/advantage2/">Kinesis Advantage</a>.
+It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb keys.
+It&rsquo;s very comfortable and much better than anything Logitech or Microsoft have
+ever labeled ergonomic.</p>
+
+<p><img src="/images/posts/kinesis_advantage2.jpg"></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2018/04/14/my-weird-keyboard/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -498,69 +538,6 @@ having failed.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2016/04/19/entering-dates-and-times-in-vim/">Entering Dates and Times in Vim</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-19T07:55:20+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
-of a text file, then each time you open it in Notepad, it appends the current
-time and date to the file. That was pretty cool. And useful for logging things,
-as <code>.LOG</code> implies. Later I became a <a href="http://www.vim.org/about.php">Vim</a> user and started enjoying all
-the customization I can do to my editor. Or perhaps I became a Vim user because
-I enjoy customizing! Either way, I like my date and time shortcuts in Vim. For
-example:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">t</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M&quot;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This means: Map the key sequence <code>,t</code> (comma followed by &rsquo;t&#8217;) to the result of
-the expression <code>strftime("%H:%M")</code> in the insert and command line modes. So if
-I write &ldquo;The package arrived ,t&rdquo;, what I will see is &ldquo;The package arrived
-13:43&rdquo;, or whatever the time was. I use capital T for further precision
-(seconds), <code>,d</code> to insert the date (of course in ISO 8601 format), and <code>,l</code> to
-insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code>):</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">T</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">d</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">l</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d %H:%M&quot;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2016/04/19/entering-dates-and-times-in-vim/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/3">&larr; Older</a>
@@ -584,6 +561,10 @@ insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2021/05/02/hyundai-ioniq-electric/">Hyundai IONIQ Electric</a>
+      </li>
+    
+      <li class="post">
         <a href="/2019/08/28/rip-mercurial-on-bitbucket/">RIP Mercurial (on Bitbucket)</a>
       </li>
     
@@ -597,10 +578,6 @@ insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code
     
       <li class="post">
         <a href="/2019/01/17/spar-penge-med-rejsekortets-maengderabat/">Spar penge med Rejsekortets mængderabat [Danish]</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2018/11/06/android-9-impressions/">Android 9 Impressions</a>
       </li>
     
   </ul>
@@ -617,7 +594,7 @@ insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code
     </div>
   </div>
   <footer role="contentinfo"><p>
-  &copy; 2019 - Erik Ramsgaard Wognsen -
+  &copy; 2021 - Erik Ramsgaard Wognsen -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

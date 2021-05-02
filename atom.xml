@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2019-08-28T07:44:34+02:00</updated>
+  <updated>2021-05-02T12:25:53+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,337 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hyundai IONIQ Electric]]></title>
+    <link href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/"/>
+    <updated>2021-05-02T09:31:37+02:00</updated>
+    <id>http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020.jpg"></p>
+
+<p>In late 2020 we decided to get a car. After relying on the extensive Danish
+public transport system for many years, it was time for a &ldquo;socially distanced&rdquo;
+means of transportation. My friend Jon had just got a Hyundai Kona Electric &mdash;
+a mini-crossover with good range. This sparked my interest in electric cars,
+and after a month of research and testing, we ordered its sibling, the 2020
+IONIQ Electric. It&rsquo;s a frugal yet fun car with good value but some drawbacks.</p>
+
+<!-- more -->
+
+
+<a name="Range.and.Efficiency"></a>
+<h2>Range and Efficiency</h2>
+
+<p>The Hyundai IONIQ is a fairly normal small family car, except of course that
+it&rsquo;s electric. The first thing people want to know about an electric vehicle
+(EV) is the range. In my opinion, charging speed is at least as important as
+range but we&rsquo;ll get to that in a bit.</p>
+
+<p>The rated range is <strong>311 km (193 mi)</strong> according to the WLTP standard. However,
+the WLTP can be optimistic for the Danish climate, and having a single
+&ldquo;combined driving&rdquo; range number in your head can lead to disappointment when
+you travel by motorway/highway &mdash; which is where range often matters the most.</p>
+
+<p>Driving an EV makes you more aware of the factors that affect efficiency:
+Speed, temperature, weather, tires, weight, aerodynamics, etc. Even though
+these affect regular internal combustion engine (ICE) cars as well, you&rsquo;re just
+more likely to notice them in an EV. Here&rsquo;s how much it matters:</p>
+
+<p>Driving at 130 km/h (~80 mph) on a dry road just below freezing, with the
+heat cranked up, I got:</p>
+
+<ul>
+<li>4.3 km/kWh (2.7 mi/kWh) or 23 kWh/100km (37 kWh/100mi), or</li>
+<li>38 km/L (89 MPG US) or 2.6 L/100km in fuel equivalents, or</li>
+<li><strong>165 km (102 mi) estimated range</strong></li>
+</ul>
+
+
+<p>Driving at 80 km/h (50 mph), and slowing down for the occasional town, in 9°C
+(48°F) gave:</p>
+
+<ul>
+<li>8.8 km/kWh (5.5 mi/kWh) or 11 kWh/100km (18 kWh/100mi), or</li>
+<li>78 km/L (183 MPG US) or 1.3 L/100km in fuel equivalents, or</li>
+<li><strong>337 km (209 mi) estimated range</strong></li>
+</ul>
+
+
+<p>Notice the amazing efficiency. While the Hyundai IONIQ&rsquo;s range is not
+fantastic, its efficiency is. It was in fact the world&rsquo;s most efficient
+production car, before the Tesla Model 3. But even so, range depends heavily on
+speed and weather. I have not yet tried the car in the summer but I expect to
+get <strong>250 km (155 mi) of range</strong> on the Danish motorways at 110&ndash;130 km/h
+(~70&ndash;80 mph).</p>
+
+<p>For short/city trips, the IONIQ is great. It&rsquo;s snappy, quiet, and clean, and I
+never worry about range, only charging it once or twice per month. But for long
+trips, charging speed is at least as important as range, and the 2020 IONIQ&rsquo;s
+fast-charging speed is unfortunately not especially good &mdash; a trait shared
+with most of the least expensive EVs.</p>
+
+<a name="Charging.Basics"></a>
+<h2>Charging Basics</h2>
+
+<p>EV charging is complicated, compared to the ol&#8217; gas/petrol fill-ups. Charging
+speed varies by a great deal, depending on the power that the charging station
+will deliver and the power the car will accept. The power that the charging
+station can deliver can roughly be classified into <strong>home/destination</strong> (AC)
+charging which takes hours and (DC) <strong>fast-charging</strong> which takes minutes. The
+power that the car will accept is governed by the car&rsquo;s battery management
+system, and depends on the exact battery technology used in the car, but also
+on the state of charge of the battery (fullness percentage), and even the
+battery temperature.</p>
+
+<a name="Fast-Charging"></a>
+<h2>Fast-Charging</h2>
+
+<p>For long trips, a big battery with a long range is nice for the first leg of
+the trip if you start off fully charged. But after that, the big battery is not
+of much help if it takes a long time to charge. It would be faster overall to
+have a smaller battery that charges quickly. The best is of course a big
+battery that charges quickly.</p>
+
+<p>Charging speed is generally expressed in kW (kilowatts a.k.a. kilojoules per
+second), but another useful metric is km/h or mph, as in &ldquo;how much range can I
+add in one hour of charging&rdquo;. This makes it easy to compare vehicles with
+different battery sizes and efficiencies, based on some combined driving style.</p>
+
+<p>According to the EV Database, the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">2020 Hyundai IONIQ</a> will
+charge at <strong>210 km/h (130 mph)</strong>, when connected to a 50 kW fast-charger &mdash;
+that is, a charger that will deliver as much power as the car wants, up to 50
+kW. This charging speed is comparable to that of a Chevrolet Bolt, Renault Zoe,
+or Nissan Leaf (small battery). While 210 km/h (130 mph) is fast as a driving
+speed, it&rsquo;s not a crazy charging speed. In case of the IONIQ it means spending
+50 minutes to charge it from 10% to 80% state of charge. (The slow charge from
+80% and up is typically reserved for home/destination charging.) Taking a break
+once in a while is a good thing, and 50 minutes can be a nice food break on a
+roadtrip. But many breaks only need to be short, and with the 2020 IONIQ, up to
+a third of your time will be spent charging on long trips.</p>
+
+<p>More expensive EVs will be able to accept charge at a faster rate. Everything
+over 300 km/h (~185 mph) also requires faster charging stations providing from
+75 kW up to 350 kW, which may be rarer than 50 kW stations. Around <strong>400 km/h
+(~250 mph)</strong> charging speed we find cars such as Ford Mustang Mach-E, the long
+range versions of Nissan Leaf and Hyundai Kona, and, ironically, the older
+2016&ndash;2019 Hyundai IONIQ with a smaller battery. Further up we have the
+Polestar 2 and the top versions of Volkswagen ID.3 and ID.4, and Skoda Enyaq.
+Even further up we have Audi, Porsche, and Tesla. The upcoming
+<a href="https://www.youtube.com/watch?v=c2tHJD6mMbE">IONIQ 5</a> crossover should be able to compete
+at the top, at up to <strong>960 km/h (~600 mph)</strong> charging speed.</p>
+
+<p>At the moment, many EVs are great city cars, but only some are great for long
+distance. Or rather, they have the potential to be great, if paired with good
+charging infrastructure &mdash; this is a topic for another time. I expect to post
+an update when I get more personal experience with longer trips. Also note that
+while the IONIQ&rsquo;s charging speed is not great, the car <em>is</em> fully capable of
+long trips, and has a good range for the price. More city-oriented EVs have
+shorter range or will be pushed to their limit at highway speeds.</p>
+
+<a name="Home.Destination.Charging"></a>
+<h2>Home/Destination Charging</h2>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020_charging.jpg"></p>
+
+<p>Home or destination charging is slower, but just like fast-charging, available
+power vs. receivable power applies. The slowest form of charging is trickle
+charging using an ICCB (In-Cable Control Box) cable. All EVs are slow charging
+with this type because power is limited by supply rather than demand. A
+household outlet might supply at most around 2 kW and should only be used for
+prolonged periods in emergencies or if the outlet has been properly installed
+for it. Slightly faster are the few CEE camping outlets that our municipality
+have installed for public use in the city, where I get 2.6 kW. At this speed, a
+full charge of the Hyundai IONIQ&rsquo;s 38 kWh battery from 0% to 100% takes <strong>17
+hours</strong>. Cars with bigger batteries will take proportionately longer.</p>
+
+<p>Proper home/destination wallboxes, like the one in the picture above, typically
+supply 11 kW using three phases. This is the market standard, and what many EVs
+will accept. For example, the long range versions of Hyundai Kona or Tesla
+Model 3 will take <strong>7&ndash;8 hours</strong> for a full charge, and often less, because you
+don&rsquo;t run the battery down to empty every time (or ever). A few cars, such as
+the Renault Zoe, will slurp up 22 kW if the wallbox can supply it.</p>
+
+<p>The Hyundai IONIQ with its single-phase charger is unfortunately more limited.
+I might explore this in a future post, but in practice I get only 3.5 kW out of
+an 11 or 22 kW wallbox, and a full charge takes <strong>13 hours</strong>. As with
+fast-charging, the 2020 IONIQ is slow. On the other hand, home or destination
+charging doesn&rsquo;t <em>need</em> to be fast, unless you drive a lot. There&rsquo;s more
+interesting stuff about charging such as parking, prices, economy, etiquette,
+reliability, and the availability of chargers for people like us who live in an
+apartment, but for now I want to talk about the car itself.</p>
+
+<a name="Driving.the.Hyundai.IONIQ.Electric"></a>
+<h2>Driving the Hyundai IONIQ Electric</h2>
+
+<p>As with many EVs, the best part about driving the Hyundai IONIQ is the
+acceleration. Known as instant torque, an electric motor supplies high torque
+from low RPMs whereas an internal combustion engine (ICE) needs high RPMs for
+high torque. It also reacts quickly to pedal input, and has no downshifting
+delay or turbo lag. Even though it is a modest car with &ldquo;only&rdquo; 100 kW (134 BHP)
+and a 9.7 second 0&ndash;100 km/h (0&ndash;62 mph) time, it is still pretty fun in the
+city. At medium speeds like 30&ndash;70 km/h (~20&ndash;45 mph), flooring the accelerator
+will push you back in your seat. It&rsquo;s no Tesla, but it makes me smile.</p>
+
+<p>At low speeds the acceleration does not feel quite as strong for some reason,
+but it can still leave regular city drivers behind when the stop light turns
+green, all without making noise. At highway speeds of 110 km/h (~70 mph) and
+up, the acceleration feels fairly average. More powerful EVs will still be
+snappy at high speeds, and of course extremely snappy at low speeds. Compared
+with similarly priced EVs, the IONIQ has a high
+<a href="https://www.youtube.com/watch?v=Sz7giPLTCss">top speed</a> of ~180 km/h (~110 mph),
+probably thanks to its good aerodynamics.
+The car feels very stable on the road, but the suspension feels too firm for a
+family car, and I need to go over speed bumps quite slowly.</p>
+
+<a name="Braking"></a>
+<h2>Braking</h2>
+
+<p>One of the advantages of electric cars, including hybrids, is that braking
+turns the kinetic energy back into usable electrical energy instead of losing
+it as heat. In the IONIQ, like in most EVs, the brake pedal will regenerate
+power using the motor when pressed lightly, and only apply the disc brakes when
+pressed hard. In between the two is a transition that works pretty well.</p>
+
+<p>Power regeneration, and therefore braking, also occurs when letting go of the
+accelerator pedal, with the level of <em>regen</em> being configurable in the IONIQ.
+The default setting feels exactly as how I remember driving an automatic
+transmission ICE car, but it is possible to both lower and increase the regen
+from that. Level 0 is like coasting in Neutral, except pressing the accelerator
+still speeds up the car. Level 1 is the default mild regen. Levels 2 and 3 get
+you into <em>one-pedal driving</em> territory.</p>
+
+<p>In one-pedal driving, the accelerator transitions smoothly between full
+acceleration and medium braking, with the brake pedal and disc brakes only
+required for emergency braking. Unfortunately, the IONIQ, like older Teslas,
+does not brake all the way down to a standstill when you release the
+accelerator, and so I still use the brake pedal at stop lights. The Nissan
+Leaf, and newer Teslas, allow for complete one-pedal driving all the way down
+to zero. (As an aside, Tesla separates itself from other EVs in that the brake
+pedal does <em>not</em> regen, and apparently, the <a href="https://electrek.co/2020/10/27/tesla-removes-regenerative-braking-strenght-option-new-cars/">newest Teslas</a> can
+<em>only</em> do one-pedal driving &mdash; no coasting.)</p>
+
+<a name="Noise.and.Sound"></a>
+<h2>Noise and Sound</h2>
+
+<p>I love the ability of an EV to accelerate quickly without making noise. In
+fact, every time I hear a loud car or motorcycle in the city I realize how
+considerate EVs are to other people. In mean, please have fun in your sports
+(ICE) car, but please do it somewhere else. Even the majority of normal people
+in normal ICE cars produce a background level of noise in the city that is
+detrimental to our health &mdash; like the emissions.</p>
+
+<p>While I like the lack of noise, the IONIQ can be too quiet. It is actually
+equipped with a loudspeaker for its VESS &ldquo;Virtual Engine Sound System&rdquo; which
+makes a sci-fi humming sound to alert pedestrians, but it&rsquo;s just not very loud.
+We live on the Aalborg waterfront where pedestrians often walk in the middle of
+the street and the less observant pedestrians will not hear the car when I
+approach from behind. I patiently wait behind them but it would sure be nice to
+have a volume knob for the VESS.</p>
+
+<p>While reversing, the VESS plays a distinct and louder &ldquo;ding&rdquo; sound. Again, I&rsquo;d
+prefer just having a louder hum but at least the ding is noticeable. In fact so
+much that I usually turn it off when parking at night, as the ding can be heard
+from inside nearby apartments. It&rsquo;s not as loud as an ICE, but different.</p>
+
+<p>The inside of the car is quiet at low speeds, but somewhat noisy on the highway
+due to wind and rolling noise. More expensive cars will have more sound
+insulation, but you can&rsquo;t get everything in an economy car.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020b.jpg"></p>
+
+<a name="Practicality.and.Features"></a>
+<h2>Practicality and Features</h2>
+
+<p>The good efficiency of the IONIQ comes in part from its good aerodynamics &mdash;
+not just a low drag coefficient, but a low cross-sectional area as well. The
+car is 145 cm (4&#8217;9&#8221;) tall and that has a few disadvantages. The sloping
+liftback roofline means that the back seat does not have a lot of headroom.
+Even in the front, with the driver&rsquo;s seat lowered all the way down, my big
+lockdown hair sometimes touched the ceiling until my recent haircut (I&rsquo;m ~188
+cm (6&#8217;2&#8221;)). The rear window does not have great visibility, and there&rsquo;s no rear
+windshield wiper.</p>
+
+<p>The charge port is located on the side of the car like a regular fuel door
+which is a bit annoying since many public chargers in Denmark seem to expect
+you to charge from the front of the car. Actually, it&rsquo;s probably more correct to
+say that the charging stations are annoying.</p>
+
+<p>The IONIQ includes plenty of tech such as automatic lane keeping and emergency
+braking, adaptive cruise control, keyless entry and start, Android Auto and
+Apple CarPlay, heat pump, heated side-view mirrors, heated seats, heated
+steering wheel, parking sensors front + back, backup camera, etc.</p>
+
+<p>Like probably a lot of other new cars it also has a touch screen that doesn&rsquo;t
+work with gloves (presumably a capacitive touch screen). At least the climate
+control &ldquo;buttons&rdquo; below the touch screen work with gloves (presumably resistive
+touch buttons). Thankfully, the steering wheel buttons are old-school push
+buttons (unlike in the Volkswagen ID.3 and ID.4).</p>
+
+<a name="On.and.Off"></a>
+<h2>On and Off</h2>
+
+<p>The IONIQ is built on a platform that includes a hybrid and a plug-in hybrid
+version, and this makes it feel &ldquo;last gen&rdquo; compared to cars built on pure EV
+platforms. Among other things because it uses the old on/off paradigm:</p>
+
+<ul>
+<li>Get in</li>
+<li>Turn car on</li>
+<li>Switch to Drive</li>
+<li>Drive</li>
+<li>Switch to Park</li>
+<li>Engage parking brake</li>
+<li>Turn car off</li>
+<li>Leave car</li>
+</ul>
+
+
+<p>The key is wireless and the parking brake will disengage automatically in
+Drive, but it&rsquo;s still more steps than is necessary. It&rsquo;s especially easy to
+forget to turn the car off after use because there&rsquo;s no motor noise/vibration
+to make you feel that it&rsquo;s on. And if (when) you do forget, the IONIQ lets out
+a prolonged, piercing beep when you close the door from the outside. Instead, a
+simpler and friendlier sequence would be:</p>
+
+<ul>
+<li>Get in</li>
+<li>Switch to Drive</li>
+<li>Drive</li>
+<li>Switch to Park</li>
+<li>Leave car</li>
+</ul>
+
+
+<p>The Volkswagen ID.3 and ID.4 work like this, except even switching to
+<a href="https://youtu.be/0Zzpsn_D9HA?t=208">Park is optional</a> &mdash; it will automatically apply the
+parking brake when you open the door, and turn off when you leave.</p>
+
+<a name="Conclusion"></a>
+<h2>Conclusion</h2>
+
+<p>Overall, the IONIQ Electric is a nice car. It&rsquo;s fantastic for city use, and
+unlike cheaper EVs, it&rsquo;s fully capable of long trips &mdash; as long as you are
+patient when charging. If long trips are only occasional it is still a good EV
+for the price. The best value would be if you have your own home charger and a
+medium long daily commute. But in the end, charging speed is the 2020 IONIQ&rsquo;s
+Achilles&#8217; heel when it comes to using the car as your only or primary car.</p>
+
+<p>A Tesla Model 3 SR+ would be bigger and better in range, acceleration, and
+charging speed, but it would also cost 75% more to purchase in Denmark. In
+between the IONIQ and Model 3 are some good options though: Peugeot e-208,
+Hyundai Kona, Nissan Leaf e+, Volkswagen ID.3, Volkswagen ID.4, and Skoda
+Enyaq. The upcoming <a href="https://www.topgear.com/car-reviews/ioniq-5/first-drive">IONIQ 5</a> and its sister
+<a href="https://www.topgear.com/car-news/electric/new-kia-ev6-and-fast-version-will-do-0-62mph-35s">Kia EV6</a> also look very interesting. In general, the future is
+set to bring a lot of exciting development in EVs.</p>
+
+<p>If you want to know more about EVs I can recommend the YouTube channel of
+<a href="https://www.youtube.com/user/youtube_bjornnyland">Bjørn Nyland</a> for car reviews and tests, and
+<a href="https://www.youtube.com/channel/UCgBPvqu6vqvO3MmTjQZ0lfg">Plug Life Television</a> with more background info on
+charging, economics, society, and the environment, as well as some beautiful EV
+roadtrips. Also check out <a href="https://www.youtube.com/user/fullychargedshow">Fully Charged Show</a>
+including their EV beginner&rsquo;s guides.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RIP Mercurial (on Bitbucket)]]></title>
@@ -367,7 +698,7 @@ on Windows 10 Enterprise, version 1803.</p>
 artikel på engelsk, men nu hvor jeg har skiftet til dansk føler jeg ikke vores
 allesammens <a href="https://www.rejsekort.dk/">Rejsekort</a> behøver nogen introduktion. Det er normalt
 for tech-bloggere at komme ind på it-sikkerhed eller brugervenlighed når det
-gælder til Rejsekortet, men i dag vil jeg snakke om noget lidt andet, nemlig
+gælder Rejsekortet, men i dag vil jeg snakke om noget lidt andet, nemlig
 hvordan man undgår at snyde sig selv i Rejsekortets indviklede rabatsystem.
 Vest for Storebælt kan man nemlig i flere tilfælde spare penge ved at rejse
 <em>mere</em> hver måned.</p>
@@ -546,6 +877,8 @@ investere i et pendlerkort hvis man pendler langt, men det er vildt at
 muligheden er der. Man skal dog huske at det kun hjælper hvis man i forvejen
 rejser færre end 34 rejser pr. måned. Er man først deroppe, er der ikke flere
 rabatniveauer at opnå &mdash; man kan blot kigge på om et pendlerkort er billigere.</p>
+
+<p><em>Opdatering 2019-08-28: Lille sprogfejl rettet.</em></p>
 ]]></content>
   </entry>
   
@@ -1290,7 +1623,7 @@ typing.</p>
 <h2>Downsides</h2>
 
 <p>The Advantage is not great for everything. Split keyboards are not good for the
-occational one-handed use (e.g., while holding a drink, phone, piece of paper).</p>
+occasional one-handed use (e.g., while holding a drink, phone, piece of paper).</p>
 
 <p>The Advantage is not the best for gaming either. The arrow keys are spread on
 both sides of the split which is fine for two-handed office and programming
@@ -1965,8 +2298,8 @@ the first 4, <strong>not</strong> 4<em>n</em>, voices. <a href="https://www.yout
 electronics, giving it eight voices shouldn&rsquo;t be that hard. Maybe you&rsquo;d need
 a better processor, but compared with the costs of development and production,
 that cost should be minimal. And you&rsquo;d have happier users. Then perhaps,
-instead of buying another JP-08 and feeling like an idiot, I might have bought
-one of the other Boutiques.</p>
+instead of buying another JP-08 and feeling like an idiot (which I chose not
+to), I might have bought one of the other Boutiques.</p>
 
 <a name="Patch.Selection"></a>
 <h2>Patch Selection</h2>
@@ -2026,6 +2359,8 @@ or the VP-330.</p>
 also feels like betrayal, after throwing money at a first generation Boutique
 model. We&rsquo;re talking tempo synced LFO, tempo synced delay, sequencer note
 slides, sequencer song mode, and sequencer <em>parameter locks</em>! It hurts, Roland.</p>
+
+<p><em>Update 2019-08-28: Minor clarification.</em></p>
 ]]></content>
   </entry>
   
@@ -2719,129 +3054,6 @@ business software that people use in the &ldquo;real world&rdquo;, as we used to
 university.</p>
 
 <p><em>Update 2018-07-28: Fixed a typo.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Entering Dates and Times in Vim]]></title>
-    <link href="http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim/"/>
-    <updated>2016-04-19T07:55:20+02:00</updated>
-    <id>http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim</id>
-    <content type="html"><![CDATA[<p>As a young Windows user, I learned that if you write <code>.LOG</code> as the first line
-of a text file, then each time you open it in Notepad, it appends the current
-time and date to the file. That was pretty cool. And useful for logging things,
-as <code>.LOG</code> implies. Later I became a <a href="http://www.vim.org/about.php">Vim</a> user and started enjoying all
-the customization I can do to my editor. Or perhaps I became a Vim user because
-I enjoy customizing! Either way, I like my date and time shortcuts in Vim. For
-example:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">t</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M&quot;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This means: Map the key sequence <code>,t</code> (comma followed by &rsquo;t&#8217;) to the result of
-the expression <code>strftime("%H:%M")</code> in the insert and command line modes. So if
-I write &ldquo;The package arrived ,t&rdquo;, what I will see is &ldquo;The package arrived
-13:43&rdquo;, or whatever the time was. I use capital T for further precision
-(seconds), <code>,d</code> to insert the date (of course in ISO 8601 format), and <code>,l</code> to
-insert date and time together (&lsquo;l&rsquo; for log, as with <code>.LOG</code>):</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">T</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">d</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">l</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-%d %H:%M&quot;</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- more -->
-
-
-<p>There are only so many shortcuts you can make with the Control and Alt keys,
-but if you use key sequences, you have many more. I have chosen comma as
-a &ldquo;leader&rdquo; key because I rarely write it without following it by a space. In
-case I do want to write literally &ldquo;,t&rdquo; without a space, I have to type &ldquo;,,t&rdquo;,
-where the double comma is a command to insert a single comma:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="p">,,</span> <span class="p">,</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The &ldquo;nore&rdquo; part of &ldquo;noremap&rdquo; means &ldquo;no remapping&rdquo;, i.e., don&rsquo;t use the output
-of this mapping as input to another mapping. If it <em>did</em> remap, the one comma
-produced here would be interpreted as the start of one of the mappings starting
-with comma, including itself.</p>
-
-<p>I use these functions daily, for example at work, where I keep a log of which
-tasks I start when. I also use it a lot with <a href="http://todotxt.com/">todotxt</a> when writing
-due dates or threshold dates. Finally, I added a mapping to insert the first of
-the next month.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">noremap</span><span class="o">!</span> <span class="o">&lt;</span><span class="n">expr</span><span class="o">&gt;</span> <span class="p">,</span><span class="n">D</span>
-</span><span class='line'>          <span class="err">\</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span> <span class="p">.</span> <span class="s">&quot;-&quot;</span> <span class="p">.</span>
-</span><span class='line'>          <span class="err">\</span> <span class="n">repeat</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="n">len</span><span class="p">((</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">12</span><span class="p">))</span> <span class="p">.</span>
-</span><span class='line'>          <span class="err">\</span> <span class="p">(</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%m&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">12</span> <span class="p">.</span>
-</span><span class='line'>          <span class="err">\</span> <span class="s">&quot;-01&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Typing &ldquo;,D&rdquo; today would yield 2016-05-01, for example.</p>
-
-<p>Entered times and dates can also be manipulated with Vim&rsquo;s Ctrl-A and Ctrl-X
-increment and decrement commands. Want to add two weeks? Type 14 followed by
-Ctrl-X to add 14 days.</p>
-
-<p>My duplicate increment line mappings also come in handy:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">nnoremap</span> <span class="o">&lt;</span><span class="n">silent</span><span class="o">&gt;</span>       <span class="o">&lt;</span><span class="n">F2</span><span class="o">&gt;</span>  <span class="err">@</span><span class="o">=</span><span class="err">&#39;</span><span class="n">yyp</span><span class="o">&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">v</span><span class="o">&gt;&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">a</span><span class="o">&gt;</span><span class="err">&#39;</span><span class="o">&lt;</span><span class="n">cr</span><span class="o">&gt;</span>
-</span><span class='line'><span class="n">nnoremap</span> <span class="o">&lt;</span><span class="n">silent</span><span class="o">&gt;</span>       <span class="o">&lt;</span><span class="n">F3</span><span class="o">&gt;</span>  <span class="err">@</span><span class="o">=</span><span class="err">&#39;</span><span class="n">yypE</span><span class="o">&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">v</span><span class="o">&gt;&lt;</span><span class="n">c</span><span class="o">-</span><span class="n">x</span><span class="o">&gt;</span><span class="err">&#39;</span><span class="o">&lt;</span><span class="n">cr</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If I write &ldquo;2016-04-20 Plan:&rdquo; followed by 10 and then the F3 key, I immediately
-have:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">20</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">21</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">22</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">23</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">24</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">25</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">26</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">27</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">28</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">29</span> <span class="nl">Plan</span><span class="p">:</span>
-</span><span class='line'><span class="mi">2016</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">30</span> <span class="nl">Plan</span><span class="p">:</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Actually, Vim just thinks it&rsquo;s decrementing the integer -19 to -20 and so on,
-but Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-speeddating">speeddating.vim</a> plugin adds date and time
-awareness, so typing Ctrl-A on 2016-04-30 would result in 2016-05-01 and not
-2016-04-31. Happy Vimming!</p>
 ]]></content>
   </entry>
   
