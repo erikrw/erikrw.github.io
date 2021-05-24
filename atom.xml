@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-05-02T12:30:07+02:00</updated>
+  <updated>2021-05-24T15:50:52+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,280 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3000 km for under €100]]></title>
+    <link href="http://blog.erw.dk/2021/05/24/3000-km-for-under-100/"/>
+    <updated>2021-05-24T15:40:00+02:00</updated>
+    <id>http://blog.erw.dk/2021/05/24/3000-km-for-under-100</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020_charging.jpg"></p>
+
+<p>Getting an electric vehicle while living in an apartment was a bit of an
+experiment. Public charging is still a bit rough around the edges, but it
+turned out manageable, and in fact quite cheap, with the help from some free
+charging. Here&rsquo;s my experience with EV charging in the past six months.</p>
+
+<!-- more -->
+
+
+<p>From November to April I drove our <a href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/">Hyundai IONIQ Electric</a>
+<strong>3034 km (1885 mi)</strong> while keeping a charging log. I charged 37 times in
+total, on average from 56% to 92% state of charge. This covered various
+situations such as a small top-up to 100% before a long trip, a motorway
+fast-charge up to at most 80%, a full recharge after a long trip (the biggest
+being 11%->100%), and various city charging in between. Some of the charging
+sessions were tests to try out the various charger types and charging networks
+to get comfortable with the process.</p>
+
+<p>Disregarding the tests, I charged on average every <strong>100 km (62 mi)</strong>. On long
+trips I gradually became more comfortable with going farther between charges,
+with the longest stretch being <strong>263 km (163 mi)</strong> in the spring. But for city
+charging with a limited number of public chargers, it remains practical to
+charge when the opportunity arises, without running down to a low state of
+charge each time.</p>
+
+<a name="Charging.in.the.City"></a>
+<h2>Charging in the City</h2>
+
+<p>Most charging sessions were on slow destination chargers, and most were in
+Aalborg where we live. We rely on public chargers as we live in an apartment
+and don&rsquo;t have our own home charger. It works like this: Drive to a charger,
+find a free socket, plug in, and walk 10&ndash;20 minutes home or to work. Later, I
+walk back to pick up the car when I need it again, or when it&rsquo;s done charging.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020_charging_dash.jpg' width='' height='' alt='Remaining charging time at a slow charger.'><span class='caption-text'>Remaining charging time at a slow charger.</span></span></p>
+
+<p>A home charger would be much easier to use, but for city dwellers with EVs,
+this is how it works at the moment (unless you drive to work and that workplace
+has chargers available). Each city and town will be different in the density,
+availability, and reliability of public chargers, and improving this
+infrastructure will be an undertaking for the next many years.</p>
+
+<p>Going back and forth to the charger takes a bit of time, but the walk is
+healthy. However, driving in vain to find all charger sockets in use is
+annoying. For commercial chargers, you can usually look up their availability
+status online before going, but not all chargers are commercial, as we&rsquo;ll get
+to later. In practice, sharing a limited number of public chargers takes a bit
+of foresight. If I know I&rsquo;m going on a long trip, I start trying to charge up
+to 100% a few days in advance, so there&rsquo;s time to come back later if the
+chargers are all in use the first time around. Another option would be to use
+fast-chargers (more) on the trip, but the IONIQ&rsquo;s fast-charging speed is not as
+good as many other EVs in that regard.</p>
+
+<a name="Parking.Problems"></a>
+<h2>Parking Problems</h2>
+
+<p>You shouldn&rsquo;t block a public charger if you&rsquo;re not using it &mdash; that is
+etiquette and usually also part of parking regulations. But it can also make
+using public destination chargers a hassle. If you plug in to charge late in
+the evening, it might be that the charging will be done in the middle of the
+night. Do you get up to move the car in the middle of the night? Do you skip
+charging altogether? (Probably not.) Do you pick up your car some time the next
+morning, hoping to get there before the parking attendant and other EV drivers
+in need of some juice? (Perhaps.) I try to plan my charging so I don&rsquo;t block
+the charger unnecessarily, but it&rsquo;s not always practical to do so, neither for
+me nor other EV drivers.</p>
+
+<p>For EVs to become mainstream, I think the charging situation needs to become
+easier and require much less planning. As a start, the parking rules could be
+relaxed so the parking-only-while-charging requirement doesn&rsquo;t apply at night.
+Ideally there should be enough parking spaces that you could leave your car
+some extra time after charging finishes while someone else could take over the
+socket you used. Such a grace period would also be helpful when you want to
+charge to 100%, because the car&rsquo;s estimation of when the charging will finish
+can be a bit off.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/ev_parking_signs.jpg' width='' height='' alt='Some EV parking signs in Danish. (Elbil is the Scandinavian word for **el**ectric automo**bil**e.)'><span class='caption-text'>Some EV parking signs in Danish. (Elbil is the Scandinavian word for <strong>el</strong>ectric automo<strong>bil</strong>e.)</span></span></p>
+
+<p>In other situations, the parking time is limited. There is a parking lot in
+Aalborg where the two EV spots have a two hour limit but their charging sockets
+supply at most 11&ndash;12 amps. It&rsquo;s nice to have a few parking spaces that are
+reserved for EVs, but with those sockets the charging itself is almost
+inconsequential since you add at most 15 km (9 mi) of range per hour. That&rsquo;s
+like going to the gas station for only 1 liter of gas!</p>
+
+<p>In another place they had 11 kW outlets and a three hour parking limit. That
+will get you far if your EV has a matching 11 kW on-board charger (OBC) which
+adds range at up to 60 km/h (37 mph). A plug-in hybrid/PHEV can also typically
+fill up its smaller battery completely in three hours. But for cheaper EVs with
+slow OBCs like the IONIQ, you&rsquo;ll get at most 20 km/h (12 mph). I think
+something needs to be done here to improve the situation for social equality in
+EV adoption. The solution at Aalborg Zoo is nice: &ldquo;No time limit while
+charging&rdquo;. That way, all EVs get the opportunity to add meaningful range, while
+still not allowing blocking the parking spot unnecessarily. The last part just
+requires parking attendants to check the charging status and not just the
+parking disc. I&rsquo;m not sure, but I have the impression that many parking
+attendants don&rsquo;t yet understand or care about EV charging.</p>
+
+<p>Another problem is when many of the public chargers are placed in expensive
+parking garages. It might be okay to use them once in a while when out of town,
+but when you live in an apartment and rely on local destination chargers in
+your daily life, you definitely don&rsquo;t want to pay €15 for an eight-hour
+charging session &mdash; on top of the charging cost. Despite these problems, using
+an EV in Aalborg and Denmark works fine, and the charging has in fact been very
+cheap as we&rsquo;ll get to soon.</p>
+
+<a name="Energy.and.Efficiency"></a>
+<h2>Energy and Efficiency</h2>
+
+<p>In total I drove 3034 km (1885 mi) using an estimated 524 kWh of energy, or a
+bit less than 14 full charges of the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">38.3 kWh</a> battery pack.
+That comes out to <strong>5.79 km/kWh (3.60 mi/kWh)</strong>, or 17.3 kWh/100km (27.8
+kWh/100mi). This was for the Danish winter half-year, using Continental
+AllSeasonContact tires, and my driving comprising 40% city, 20% open road, and
+40% motorway. It also gives the average range of 222 km (138 mi) from a full
+charge for these conditions.
+As described in my <a href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/">previous post</a>, efficiency and range
+depend heavily on speed and weather. Also, some of the driving was economical
+but I also did a lot of unnecessary (but fun!) acceleration.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020_info_dash.jpg' width='' height='' alt='Economical driving from Odense to Aalborg, Denmark.'><span class='caption-text'>Economical driving from Odense to Aalborg, Denmark.</span></span></p>
+
+<p>There are two things to add. First, the total energy is not only used while
+driving. The IONIQ, like regular cars, has a 12 V battery that discharges over
+time. The IONIQ, unlike regular cars, can keep the 12 V battery in shape
+automatically, using a bit of juice from the main driving battery. This will
+take around one percentage point of charge from the main battery per week, at
+least when it&rsquo;s freezing. My calculated average efficiency and range includes
+half a year of parking, so during driving alone, the efficiency and range is a
+tiny bit better than the numbers above indicate.</p>
+
+<p>Second, it&rsquo;s not all the energy that comes through the charging cable that
+makes it to the battery. During charging, some electricity is lost as heat,
+plus the car needs some electronics running, and it might even spend energy on
+battery cooling or heating to optimize the charging speed, depending on the car
+model. The loss is around 10&ndash;15%. So getting 524 kWh into the IONIQ will
+actually have required around <strong>600 kWh</strong> in total. Let&rsquo;s see what this means
+for the cost.</p>
+
+<a name="Cost.Complexity"></a>
+<h2>Cost Complexity</h2>
+
+<p>EV charging prices vary a lot, at least in Denmark where legislation is
+complicated. Most EV price calculations I&rsquo;ve read assume you will install a
+home charger, but for many city dwellers that is not an option, so I will
+instead exclude home charging. That removes some of the complexity of EV
+charging prices, including home charger installation, home charger purchase vs.
+rental, combined home and public charger subscription, time dependent
+electricity tariffs, electricity tax refunds, and interaction between tax
+refunds and the use of solar panels and geothermal heat pumps.</p>
+
+<p>Public charging is still complicated, though: Pay per kWh or a fixed price per
+month, or somewhere in between. Use one provider, or multiple, or a meta
+provider, or somewhere in between. For fast-charging, the price can depend on
+the charging speed, or potential partnerships between EV manufacturers and
+charging providers. In some countries you also pay per minute.</p>
+
+<p>You can also be lucky and have access to free charging. Our municipality has a
+few sockets in Aalborg for free (but slow) EV charging, which is a nice
+&ldquo;carrot&rdquo; for EV adoption. Some hotels and supermarkets have free charging. For
+example, Lidl supermarkets have free chargers in some countries and are getting
+it in Denmark. Car manufacturers also sometimes offer some free charging.
+Hyundai started giving away six months of free charging with new leases, less
+than a week after we got our IONIQ. Tesla also sometimes gives away free
+charging.</p>
+
+<a name="Charging.Cost.in.Denmark"></a>
+<h2>Charging Cost in Denmark</h2>
+
+<p>As mentioned in the previous section, there are many possibilities. Here I will
+compare what I do with a few simple alternatives. Blessed with tax-paid
+electricity in Aalborg, I mainly use those free sockets when at &ldquo;home&rdquo; &mdash; a
+15-minute walk from our apartment. When all the free spots are taken, or when
+out of town, I use the <em>Clever</em> charging network, with other networks such as
+<em>E.ON</em>, <em>Spirii</em> and <em>Ionity</em> as possible backups. Because I don&rsquo;t use the
+commercial operators so much, it&rsquo;s cheaper to pay by the kWh instead of using a
+flat rate subscription.</p>
+
+<p>In the last six months I paid only 676 DKK (€91 or $111) for 191 kWh, while
+getting the remaining ~409 kWh for free. However, not everyone has the
+privilege (or patience) to use free charging, so I&rsquo;m going to show some
+alternatives. Electricity prices and taxes vary by country, so I&rsquo;m not going to
+convert the following prices as they are not directly comparable to other
+countries anyway. But here are the current prices in <strong>DKK/kWh</strong> for some
+charging network products and charger speeds (with Aalborg Municipality thrown
+in so you can see that my free charging is also slow charging):</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Charger power</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Aalborg</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Clever Go</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>E.ON Drive Lite</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spirii Go</strong>  </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Ionity (guest)</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">       <strong>2&ndash;3 kW</strong> </td>
+<td style="text-align:right;">                                0.00 </td>
+<td style="text-align:right;">                                     - </td>
+<td style="text-align:right;">                                           - </td>
+<td style="text-align:right;">                                                  - </td>
+<td style="text-align:right;">                                          - </td>
+</tr>
+<tr>
+<td style="text-align:right;">     <strong>11&ndash;43 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                  3.50 </td>
+<td style="text-align:right;">                                        3.50 </td>
+<td style="text-align:right;">                                         2.25&ndash;3.75 </td>
+<td style="text-align:right;">                                          - </td>
+</tr>
+<tr>
+<td style="text-align:right;">     <strong>50&ndash;75 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                  3.50 </td>
+<td style="text-align:right;">                                        4.90 </td>
+<td style="text-align:right;">                                                  - </td>
+<td style="text-align:right;">                                          - </td>
+</tr>
+<tr>
+<td style="text-align:right;">   <strong>100&ndash;350 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                  5.00 </td>
+<td style="text-align:right;">                                        4.90 </td>
+<td style="text-align:right;">                                                  - </td>
+<td style="text-align:right;">                                       6.20 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+By mixing some of the above speeds and networks, you&rsquo;ll end up with an average
+price per kWh. If you only use public chargers, you might end up at 3&ndash;5
+DKK/kWh and if you can mix in free charging, you can get under 3 DKK/kWh. My
+average was just over 1 DKK/kWh for the past six months. I&rsquo;m using these rates
+in the following graph, which also includes a typical 650 DKK/month flat rate
+subscription without a home charger included.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ev_charging_cost_dk.png"></p>
+
+<p>I made the chart based on a consumption of 5 km/kWh including charging loss,
+corresponding to the 5.8 km/kWh vehicle consumption that I got for the Danish
+winter half-year. In comparison, every time the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Hyundai IONIQ</a>
+drives 5 km, the <a href="https://ev-database.org/car/1337/Mercedes-EQC-400-4MATIC">Mercedes EQC</a> will drive 4 km, and the
+<a href="https://ev-database.org/car/1272/Audi-e-tron-S-Sportback-55-quattro">Audi e-tron S Sportback</a> will drive 3 km using the same energy.
+However, the majority of <a href="https://ev-database.org/compare/efficiency-electric-vehicle-most-efficient">EVs</a> fall somewhere between the EQC
+and the IONIQ &mdash; including Audi&rsquo;s upcoming Q4 models, and the very-long-range
+Mercedes EQS.</p>
+
+<p>The chart show that what is cheapest depends heavily on your driving.
+Long-distance drivers will profit greatly from a flat rate subscription, while
+I would pay 5&ndash;6 times as much as I currently do. Before getting the IONIQ, I
+didn&rsquo;t know it would end up like this &mdash; I just knew I wanted to support the
+push toward a greener future (and try out some cool tech while at it). And
+while charging turned out way cheaper than gasoline, the total cost still could
+have been lower by choosing a conventional car with a weaker internal
+combustion engine and a manual transmission. But for comparable cars driving an
+average 20,000 km/year or 16,000 mi/year, EVs already have ample opportunity to
+have a lower total cost of ownership in <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">Denmark</a> as well as
+the <a href="https://www.nytimes.com/interactive/2021/01/15/climate/electric-car-cost.html">USA</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hyundai IONIQ Electric]]></title>
@@ -2904,156 +3178,6 @@ learner, new or experienced, I&rsquo;d recommend reading <code>:help user-manual
 start to end. This is in fact how I learned Vim.</p>
 
 <p>Update: See also <a href="http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii/">part II</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Leaving Academia]]></title>
-    <link href="http://blog.erw.dk/2016/05/09/leaving-academia/"/>
-    <updated>2016-05-09T06:35:59+02:00</updated>
-    <id>http://blog.erw.dk/2016/05/09/leaving-academia</id>
-    <content type="html"><![CDATA[<p>Last fall, I had been at Aalborg University for nine years: One year in
-electronic engineering, five years studying software engineering, and three
-years doing a PhD in computer science. The first six years as a bachelor and
-master&rsquo;s student were relatively straightforward and satisfying. The last three
-years formed my introduction to the academic world.</p>
-
-<p>Being a PhD student in computer science does not mean you are a student of
-computer science at a high level. Well, you are that, but first and foremost,
-you are an apprentice of academia. The distinction is important because, while
-I love computer science, academia is, it turned out for me, not great.</p>
-
-<p>I left the university before having finished my PhD, to work at a private
-company as an IT consultant. I managed to finish my thesis concurrently with my
-new job, and I have now defended it successfully. But the last half year has
-also helped me see more clearly my motivation for switching jobs. It can be
-summed up like this: Now, I go home from work most days feeling a sense of
-accomplishment. Before, I came home from work many days with the feeling of
-having failed.</p>
-
-<!-- more -->
-
-
-<p>Research is hard. It&rsquo;s hard because you are trying to do something that has not
-been done before. There is no recipe that guarantees success, because if
-someone could tell you what to do, you wouldn&rsquo;t be doing research anymore.
-Research is hard because a lot of the time you feel lost and stupid. This is
-normal, I was told. But knowing that it is normal does not magically make it
-feel good.</p>
-
-<a name="Purpose"></a>
-<h2>Purpose</h2>
-
-<p>The question then is if there is something else in the job that makes it
-worthwhile and keeps you motivated. According to behavioral economist Dan
-Ariely, two of the key motivating factors at work are the feelings of
-<a href="http://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work">progress and purpose</a>. Progress is generally slow in research due to
-its nature. You will fail a lot before stumbling upon something important. So
-what about purpose?</p>
-
-<p>Ideally, research should be about the noble goal of adding to the pool of human
-knowledge. Cure the proverbial cancer. But doing something significant in
-research takes decades and even then is not guaranteed to happen. And that
-leaves us back at the slow progress. So how about the feeling of purpose in the
-shorter term?</p>
-
-<p>This is where my new job really became a contrast to research. On the grand
-scale of things, my work as an IT consultant is fairly insignificant. But on
-a smaller scale, it <em>is</em> significant: Someone (the client) is actually going to
-use what I am building for them. This is in contrast to academia, where I feel
-that very few people read my work, let alone <em>use it</em> for anything. Making
-something that others use, want, and care about feels great. Submitting
-a research paper for publication and getting grumpy reviews back months later
-does not.</p>
-
-<p>Of course, the work I do as an IT consultant is not guaranteed to be used. The
-client may change their mind and drop whatever project you are working on. But
-since they ordered it and are paying good money for it, they are likely to want
-it. In academia, conferences and journals are more important and prestigious,
-the more submissions they reject.</p>
-
-<a name="Feedback"></a>
-<h2>Feedback</h2>
-
-<p>So what if you instead look for purpose in the very short short term &ndash; hours
-and days? In presenting a small new idea, or new section in a draft, and having
-your collaborators see it and comment on it? Here, academia also disappointed
-me. Getting feedback on my work was not always easy. Meetings could be fitted
-into busy schedules a few times a month, and you would be lucky to get an email
-reply without sending several reminders.</p>
-
-<p>Unlike the inherent hardness of research, feedback in the short term is
-somewhat within your own control because you can influence who you collaborate
-with. But I still think my experience is fairly common.</p>
-
-<p>In my new job, feedback is not something I get a few times per week &ndash; it is
-something I get a few times per <em>hour</em>. Everybody&rsquo;s busy, but we take time to
-help each other. In general I liked my colleagues at the university, but I feel
-more like part of a team now than I have ever done as a PhD student.</p>
-
-<p>To top it off, I also feel much more valued now because my time is treated with
-respect. And of course it is: Every hour I am not doing billable work is missed
-income for the company. And so, getting equipment, booking travels, getting
-expenses refunded &mdash; everything is laughably easy compared to the university.</p>
-
-<a name="Just.a.Job."></a>
-<h2>Just a Job?</h2>
-
-<p>One might object and say that travel booking and emails are irrelevant; that
-work in academia is about grander things. Indeed, a faculty member who joined
-the research group I was in complained that the PhD students were not dedicated
-enough; that we just treated research as &ldquo;a job&rdquo;.</p>
-
-<p>I think if you work on a topic that you care deeply about, then indeed you can
-push on in spite of the slow progress. The feeling of ownership is a strong
-motivator.</p>
-
-<p>I was not strongly dedicated to my PhD research. When I couldn&rsquo;t get a PhD
-position within my favored topic, I settled for what I could get right here,
-right now, rather than looking for other options. In hindsight this was
-a mistake. But I&rsquo;m not the only one who made the mistake. And perhaps academia
-as an increasingly competitive institution could benefit from having work done
-by &ldquo;research <a href="http://academia.stackexchange.com/a/35003">technicians</a>&rdquo; following the lead of a principal
-investigator. At least, that could solve the current situation where far more
-PhDs are produced than there are permanent positions available for.</p>
-
-<p>But to keep us technicians happy doing what is partially someone elses
-research, we need to be treated exactly as employees doing a regular &ldquo;job&rdquo;. And
-to be motivated to do this job where real successes are occasional at best, the
-working conditions should provide the day-to-day work satisfaction. And of
-course no matter your motivation to tackle long-term research problems, dealing
-with bureaucracy is no fun.</p>
-
-<a name="How.to.Succeed"></a>
-<h2>How to Succeed</h2>
-
-<p>I do hope that the work I have done during my time working in research has made
-a <a href="http://matt.might.net/articles/phd-school-in-pictures/">dent</a>, and I am thankful for the good experiences I have had. But
-I would also like others considering doing a PhD to think about why they want
-to do it. I thought that because I was a good bachelor and master&rsquo;s student,
-I would be a good PhD student. And perhaps I was good for my co-authors, at
-least I have been told that. But being a PhD student wasn&rsquo;t good for <em>me</em>.</p>
-
-<p>I think, for academia to be good for you, three things are crucial:</p>
-
-<ul>
-<li>You should have a clear goal that is enough yours that you feel ownership of
-it and therefore motivation. If your research project is too much somebody
-else&rsquo;s idea, you may lose this important source of motivation.</li>
-<li>When that is said, you should also work with people who agree with your goal,
-and who you enjoy working with. If you collaborate with people you do not
-strongly enjoy working with, you will miss regular morale boosts that help keep
-you going in spite of the many failures you encounter.</li>
-<li>You need to be either highly confident or <a href="http://jcs.biologists.org/content/121/11/1771">productively stupid</a>.</li>
-</ul>
-
-
-<p>Perhaps someday I will get an idea for a research project of my own and find
-the right place to pursue it, but for now I&rsquo;ll happily develop &ldquo;mundane&rdquo;
-business software that people use in the &ldquo;real world&rdquo;, as we used to say at the
-university.</p>
-
-<p><em>Update 2018-07-28: Fixed a typo.</em></p>
 ]]></content>
   </entry>
   
