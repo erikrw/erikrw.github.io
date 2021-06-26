@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-05-24T15:50:52+02:00</updated>
+  <updated>2021-06-26T14:08:27+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -775,7 +775,7 @@ I am pleased to say that the answer doesn&rsquo;t start with <em>h</em>, <em>j</
 introduction, that uncovers the <em>essence of vi</em> and the almost poetic language
 you use to speak to Vim and vi.  It is my hope that reading it will make your
 time with Vim both more useful and more enjoyable.  I have myself enjoyed Vim
-since 2007, and I also <a href="https://code.google.com/p/vim/source/browse/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
+since 2007, and I also <a href="https://github.com/vim/vim/blob/master/runtime/syntax/asm.vim">contribute a tiny bit</a> to it.</p>
 
 <p></p>
 

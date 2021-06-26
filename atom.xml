@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-05-24T15:50:52+02:00</updated>
+  <updated>2021-06-26T14:08:27+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,669 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Motorvejsladning]]></title>
+    <link href="http://blog.erw.dk/2021/06/26/motorvejsladning/"/>
+    <updated>2021-06-26T10:25:52+02:00</updated>
+    <id>http://blog.erw.dk/2021/06/26/motorvejsladning</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/plugshare_map.png' width='' height='' alt='Offentlige ladepunkter for elbiler --- de orange punkter er hurtigladere. Skærmbillede fra [PlugShare][plugshare].'><span class='caption-text'>Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.</span></span></p>
+
+<p>En elbil oplades typisk i et roligt tempo mens den er parkeret hjemme, på
+arbejde eller ved en offentlig destinations&shy;lader. Men når man skal køre
+langt benytter man ladere med høj effekt, så man kan komme hurtigt videre.
+Dette indlæg handler om <em>hurtig&shy;ladere</em> i Danmark, med fokus på motorvejen
+mellem Aalborg og København. På de 416&nbsp;km mellem de to byer er der 64
+CCS-stik langs motor&shy;vejen til hurtig&shy;ladning, og nogle flere i byerne
+omkring motor&shy;vejen. Dette er et rigtig godt udgangs&shy;punkt når man
+kører turen, men for at optimere rejsens tid eller pris kan man med fordel
+benytte nogle ladere frem for andre.</p>
+
+<!-- more -->
+
+
+<p>I øvrigt håber jeg at dette indlæg bliver hurtigt forældet, i form af
+forbedringer af infra&shy;struk&shy;turen. For nylig kom for eksempel nyheden
+at Fyn i 2022 får Danmarks <a href="https://via.ritzau.dk/pressemeddelelse/fyn-far-snart-danmarks-storste-lynladestation-til-elbiler?publisherId=12636953&amp;releaseId=13622978">største lyn&shy;ladestation</a> med plads til 28
+elbiler. Det siges også at de kommercielle lade&shy;netværk arbejder på et
+fælles betalings&shy;system der skal gøre det nemmere at bruge landets ladere
+med færre apps og brikker. Men lad os træde et skridt tilbage og fokusere på
+nutiden.</p>
+
+<p>Først er der elbilens <a href="https://da.wikipedia.org/wiki/Videokrigen">&ldquo;VHS/Betamax-konflikt&rdquo;</a> omkring hvilket stik og
+hvilken teknik man bruger når man hurtig&shy;lader elbiler. Elbilernes Betamax
+hedder <em>CHAdeMO</em> og VHS (vinderen) hedder <em>CCS</em> som står for Combined Charging
+System. Der findes stadig mange CHAdeMO-stik rundt om i landet, men nye elbiler
+i EU sælges nu stort set kun med CCS. Der er også Tesla som har deres eget
+system, samtidig med at de afhængig af model og adapter også kan benytte
+offentlige ladere af både CHAdeMO- og CCS-typerne. Jeg vil dog kun fokusere på
+CCS i det følgende.</p>
+
+<p>En <em>hurtig&shy;lader</em> er en lade&shy;stander som tilbyder bilen mindst
+50&nbsp;kW (kilowatt). Det er forskelligt pr. elbil hvor meget af den
+tilgængelige effekt som den kan tage imod. Nogle elbiler kan ikke udnytte
+50&nbsp;kW fuldt ud, mens andre (dyrere) elbiler kan sluge 250&nbsp;kW eller
+mere når det er tilgængeligt. Begrebet <em>lynladning</em> bruges når ladestanderen
+tilbyder mindst 100&nbsp;kW, typisk 150&ndash;350&nbsp;kW.</p>
+
+<a name="Fra.Aalborg.til.K..benhavn"></a>
+<h2>Fra Aalborg til København</h2>
+
+<p>Der er 64 CCS-stik mellem Aalborg og København inden for 1&nbsp;km fra E45 og
+E20. Hvis man kigger op til 5&nbsp;km fra motorvejen er der 13&nbsp;stik mere,
+og op til 10&nbsp;km yderligere 10&nbsp;stik. Og hvis man inkluderer
+rastepladser på &ldquo;den modsatte side&rdquo; kommer der 10 mere, men dem vil jeg ikke
+tælle med da det at anvende sådan en kan medføre en omvej på 10&ndash;30&nbsp;km, da
+man ikke bare lige kan krydse over motorvejen. Jeg tæller heller ikke selve
+Aalborg og København med i de 64 da det er mere normalt at bruge AC-ladning
+(typisk 11&nbsp;kW) når man parkerer nær sin destination. Alt i alt er der en
+rimelig mængde hurtig&shy;ladere langs motorvejen, og nogle ekstra der kan
+bruges som backup hvis der skulle være trængsel ved en af de primære.</p>
+
+<p>De 64 stik er ikke jævnt fordelt. Nogle findes på en enlig stander der også
+ofte inkluderer en til to andre stiktyper, men altså kun ét CCS-stik. Nogle
+steder står to, fire eller flere standere sammen. Og nogle steder er flere
+forskellige netværk/firmaer repræsenteret på samme lokation inden for nogle
+hundrede meter af hinanden. I alt er der 22 lokationer med 1&ndash;10 stik hver, 3 i
+gennem&shy;snit. Over de 416&nbsp;km fra Limfjordsbroen i Aalborg til Langebro
+i København er der i gennemsnit en lokation hver 19&nbsp;km. Lokationerne er
+dog heller ikke jævnt fordelt og spænder fra 2&nbsp;km mellem Nyborg og
+Knudshoved til 46&nbsp;km mellem Haverslev og Randers. I den følgende tabel
+inkluderer jeg også Horsens og Odense der har hurtig&shy;ladere, selvom de ikke
+ligger ud til motorvejen. Tabellen viser <strong>antallet af CCS-stik</strong> fordelt på
+netværk og ladehastighed:</p>
+
+<div class="next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Sted</strong>              </th>
+<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
+<th style="text-align:right;"> <strong>Clever 50&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>E.ON 50&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Clever/E.ON 175&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Ionity 350&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Hurtige byladere</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Aalborg               </td>
+<td style="text-align:right;">                 28 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    5 </td>
+</tr>
+<tr>
+<td> Himmerland            </td>
+<td style="text-align:right;">                  8 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Haverslev             </td>
+<td style="text-align:right;">                 46 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           2 </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Randers/Gudenåen      </td>
+<td style="text-align:right;">                  6 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Randers/Sdr. Borup    </td>
+<td style="text-align:right;">                 29 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Aarhus/Tilst          </td>
+<td style="text-align:right;">                 14 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    7 </td>
+</tr>
+<tr>
+<td> Skanderborg           </td>
+<td style="text-align:right;">                 13 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Ejer Bavnehøj         </td>
+<td style="text-align:right;">                 12 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Horsens               </td>
+<td style="text-align:right;">                 24 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    3 </td>
+</tr>
+<tr>
+<td> Vejle N               </td>
+<td style="text-align:right;">                  5 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Vejle C               </td>
+<td style="text-align:right;">                  5 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Vejle S/Skærup        </td>
+<td style="text-align:right;">                 17 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Fredericia            </td>
+<td style="text-align:right;">                  4 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Middelfart            </td>
+<td style="text-align:right;">                 30 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Kildebjerg            </td>
+<td style="text-align:right;">                 11 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Odense                </td>
+<td style="text-align:right;">                 33 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    4 </td>
+</tr>
+<tr>
+<td> Nyborg                </td>
+<td style="text-align:right;">                  2 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Knudshoved            </td>
+<td style="text-align:right;">                 19 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Korsør/Halsskov       </td>
+<td style="text-align:right;">                 16 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Slagelse/Antvorskov   </td>
+<td style="text-align:right;">                 18 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    3 </td>
+</tr>
+<tr>
+<td> Sorø/Tuelsø           </td>
+<td style="text-align:right;">                 12 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Ringsted              </td>
+<td style="text-align:right;">                 24 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Køge                  </td>
+<td style="text-align:right;">                 10 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Karlslunde            </td>
+<td style="text-align:right;">                  3 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                           2 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Greve                 </td>
+<td style="text-align:right;">                 28 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                     10 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> København             </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                  30+ </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Afstanden mellem ladestederne måler jeg mellem de relevante
+motorvejs&shy;afkørsler. Laderne står 0&ndash;1&nbsp;km fra motorvejen, bortset fra
+kategorien &ldquo;Hurtige byladere&rdquo; som jeg bruger om hurtig&shy;ladere der står
+2&ndash;10&nbsp;km fra motorvejen. Byladerne står primært ved indkøbscentre, hvilket
+gør at de oftere end motorvejs&shy;ladere er i brug af folk der bor i
+lokal&shy;området. Desuden kan den P-<wbr>plads de står på være aflåst uden for
+indkøbs&shy;centerets åbningstid. Alle disse ting gør at jeg kun betragter dem
+som en reserveløsning ved motorvejs&shy;rejser. Jeg har ikke optalt
+hurtig&shy;laderne i Stor&shy;københavn præcist, men der er mange. Ud over
+Clever og E.ON findes der bl.a. også hurtige byladere fra fx Spirii, Sperto,
+Circle&nbsp;K og Lidl.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/motorvejsladere.png' width='' height='' alt='Kort over hurtigladere i Aalborg og København, samt langs motorvejen imellem.'><span class='caption-text'>Kort over hurtigladere i Aalborg og København, samt langs motorvejen imellem.</span></span></p>
+
+<a name="Hvilke.ladere.skal.man.v..lge."></a>
+<h2>Hvilke ladere skal man vælge?</h2>
+
+<p>Faktisk behøver man slet ikke at vælge da man kan bruge alle ladere vha. apps
+som kan opsættes på få minutter. Men laderene koster ikke det samme at bruge.
+Et abonnement hos Clever giver adgang til Clevers hurtig&shy;ladere
+(50&nbsp;kW) og Clever og E.ONs <a href="https://poweredby.dk/">fælles</a> lynladere (175&nbsp;kW), i
+tillæg til mange af 50&nbsp;kW-byladerne som også drives af Clever. Hvis man
+betaler efter forbrug, i mod&shy;sætning til fastpris&shy;abonnement, koster
+hurtig&shy;laderne 3,50&nbsp;kr/kWh og lynladerne 5,00&nbsp;kr/kWh. (Ud over
+apps kan man også bestille en ladebrik/RFID-tag som gør det lidt hurtigere at
+starte ladningen på et givet netværk uden at skulle fedte med sin telefon og
+afhænge af internet&shy;forbindelse.)</p>
+
+<p>Et abonnement hos E.ON giver adgang til E.ONs hurtig&shy;ladere og
+Clever/E.ON-lynladerne, samt nogle hurtig&shy;ladere i København. Til forskel
+fra Clever tager E.ON samme pris for hurtig&shy;ladning og lynladning:
+4,90&nbsp;kr/kWh. Hvis man har en elbil som ikke kan udnytte lynladernes høj
+hastighed, er det en ulempe at man ikke kan spare penge ved at holde sig til de
+langsommere hurtig&shy;ladere når man betaler efter forbrug, som hos Clever.
+(Prisen man betaler afhænger kun af den effekt laderen tilbyder, og ikke af den
+effekt bilen aftager.) Omvendt tager E.ON en marginalt lavere kWh-pris end
+Clever for præcis de samme lynladere, igen hvis man ikke har
+fastpris&shy;abonnement. (Jeg har ikke inkluderet priser på
+fastpris&shy;abonnementerne, da de afhænger af flere ting, men de kan ses hos
+<a href="https://clever.dk/produkter/abonnementer/">Clever</a> og <a href="https://www.eon.dk/privat/strom-til-din-elbil.html">E.ON</a>.)</p>
+
+<p>Til sidst er der Ionity som har de hurtigste ladere, men også tager den høje
+pris af 6,20&nbsp;kr/kWh. Prisen kan dog reduceres hvis man har et abonnement
+via en af de bil&shy;producenter der ejer <a href="https://ionity.eu/en/about.html">Ionity</a>: BMW, Ford, Hyundai,
+Mercedes, Volkswagen, Audi og Porsche. Herunder opstiller jeg nogle eksempler
+på hvordan man kan udvælge sine favorit&shy;ladere &mdash; og så have alle de andre
+i reserve:</p>
+
+<div class="next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Foretrukne ladere</strong>      </th>
+<th style="text-align:right;"> <strong>Steder</strong> </th>
+<th style="text-align:right;"> <strong>Stik</strong> </th>
+<th> <strong>Hvis man&hellip;</strong>                                       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Ionity                     </td>
+<td style="text-align:right;">          5 </td>
+<td style="text-align:right;">       26 </td>
+<td> kan udnytte og vil betale for den højeste hastighed   </td>
+</tr>
+<tr>
+<td> Clever/E.ON lynladere      </td>
+<td style="text-align:right;">          5 </td>
+<td style="text-align:right;">       16 </td>
+<td> synes 50 kW er for langsomt men 350 kW er for dyrt    </td>
+</tr>
+<tr>
+<td> E.ON inkl. lynladere       </td>
+<td style="text-align:right;">         16 </td>
+<td style="text-align:right;">       28 </td>
+<td> har fastprisabonnement hos E.ON                       </td>
+</tr>
+<tr>
+<td> Clever inkl. lynladere     </td>
+<td style="text-align:right;">         12 </td>
+<td style="text-align:right;">       26 </td>
+<td> har fastprisabonnement hos Clever                     </td>
+</tr>
+<tr>
+<td> Clever ekskl. lynladere    </td>
+<td style="text-align:right;">         10 </td>
+<td style="text-align:right;">       10 </td>
+<td> betaler efter forbrug og ikke kan udnytte lynladning  </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Jeg har lavet et diagram over om hvornår fastpris&shy;abonnement giver
+mening i <a href="http://blog.erw.dk/2021/05/24/3000-km-for-under-100/">dette</a> indlæg. Selv benytter jeg primært Clever ekskl.
+lynladere, da jeg betaler efter forbrug og Hyundai <a href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/">IONIQ 2020</a> kun
+har minimal fordel af lynladere. Men hvis jeg havde en bil der kunne udnytte
+dem ville jeg benytte lyn&shy;laderne. Antallene af steder og stik i tabellen
+medtæller kun motorvejs&shy;laderne, men ikke hurtig&shy;laderne i byerne,
+selvom man også får adgang til de fleste af dem med et Clever-abonnement, samt
+nogle i København med et E.ON-abonnement. Desuden giver både E.ON og Clever
+(men ikke Ionity) adgang til en lang række destinations&shy;ladere/AC-ladere
+over hele landet.</p>
+
+<a name="Hvor.mange.opladninger.har.man.behov.for."></a>
+<h2>Hvor mange opladninger har man behov for?</h2>
+
+<p>Et oplagt spørgsmål er hvor mange ladere der er behov for og hvor tæt de skal
+stå. Derfor vil jeg se på hvor mange <em>opladninger</em> man har behov for. Svaret
+afhænger af bilens rækkevidde, som igen afhænger af køre&shy;hastigheden og
+vejret. Med Hyundai IONIQ 2020 som eksempel på en elbil med mellemlav
+række&shy;vidde (typisk <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">200&ndash;300&nbsp;km</a>) kan
+Aalborg&ndash;København køres på 1&ndash;3 oplad&shy;ninger. Hvis vejret er godt
+(15&ndash;25°C) burde man kunne klare turen med én opladning ved at køre med
+100&ndash;110&nbsp;km/t. Jeg forudsætter man starter med fuldt batteri og slutter på
+10% som en sikkerheds&shy;margin mod uforud&shy;sige&shy;ligheder. Opladningen
+efter ankomst kan som regel foretages mens bilen er parkeret ved en
+destinations&shy;lader, uden at man behøver at vente i bilen, men en hurtig
+bylader kan også bruges hvis man vil flytte bilen igen en halv times tid
+senere.</p>
+
+<p>Hvis man synes det er kedeligt at køre under hastigheds&shy;grænsen, kan man
+bare køre turen med 130&nbsp;km/t med to opladninger om sommeren eller tre om
+vinteren. IONIQ 2020 kommer dog ikke så meget hurtigere frem med 130&nbsp;km/t,
+da de ekstra ladestop spiser meget af den vundne tid. Til gengæld får man
+ekstra pauser til at strække ben, gå på toilettet, arbejde, spise, hygge, eller
+hvad man nu har lyst til. Hvis man synes ovenstående lyder undervældende, så
+kan elbiler med større række&shy;vidde og hurtigere ladning heldigvis klare sig
+med færre og kortere ladepauser:</p>
+
+<div class="next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Bilmodel</strong>             </th>
+<th style="text-align:right;"> <strong>Batterikapacitet</strong> </th>
+<th style="text-align:right;"> <strong>Ladestop</strong> </th>
+<th style="text-align:right;"> <strong>Ladetid</strong> </th>
+<th style="text-align:right;"> <strong>Køretid</strong> </th>
+<th style="text-align:right;"> <strong>Samlet</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Mazda MX-30              </td>
+<td style="text-align:right;">               30 kWh </td>
+<td style="text-align:right;">            4 </td>
+<td style="text-align:right;">        2:22 </td>
+<td style="text-align:right;">        4:12 </td>
+<td style="text-align:right;">       6:35 </td>
+</tr>
+<tr>
+<td> Hyundai IONIQ            </td>
+<td style="text-align:right;">               38 kWh </td>
+<td style="text-align:right;">            2 </td>
+<td style="text-align:right;">        1:08 </td>
+<td style="text-align:right;">        3:52 </td>
+<td style="text-align:right;">       5:00 </td>
+</tr>
+<tr>
+<td> Volkswagen ID.3 Pro      </td>
+<td style="text-align:right;">               58 kWh </td>
+<td style="text-align:right;">            2 </td>
+<td style="text-align:right;">        0:24 </td>
+<td style="text-align:right;">        3:54 </td>
+<td style="text-align:right;">       4:18 </td>
+</tr>
+<tr>
+<td> Volkswagen ID.3 Pro S    </td>
+<td style="text-align:right;">               77 kWh </td>
+<td style="text-align:right;">            1 </td>
+<td style="text-align:right;">        0:08 </td>
+<td style="text-align:right;">        3:45 </td>
+<td style="text-align:right;">       3:54 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Jeg brugte <a href="https://abetterrouteplanner.com/">A Better Routeplanner</a> til at sammenligne turen for
+nogle forskellige bilmodeller, med resultaterne i tabellen herover. De bedste
+elbiler på markedet i dag er allerede der hvor mange mennesker har behov for
+flere pauser end bilen har. Og i øvrigt kan de dyrere elbiler ofte også selv
+medregne den nødvendige opladning i deres navigations&shy;system, så man ikke
+selv behøver planlægge opladningen på turen. Men hvis vi vender tilbage til de
+billigere elbiler der skal lade oftere, så er det specielt vigtigt at der er
+nok ladere med jævne mellemrum.</p>
+
+<a name="Hvor.mange.ladere.er.der.behov.for."></a>
+<h2>Hvor mange ladere er der behov for?</h2>
+
+<p>Jo nemmere det er at lade, jo mere attraktivt er det at køre elbil. For at det
+skal være rigtig nemt skal der bl.a. være nok ladere til at der altid er én
+ledig når man skal bruge den, der hvor man skal bruge den, således at man ikke
+behøver at planlægge turen på forhånd.</p>
+
+<p>Allerede nu er der en god mængde ladestandere i forhold til antallet af elbiler
+på vejene. Men efter&shy;hånden som antallet af ladere og elbiler stiger
+forventer jeg at det bliver lidt mere forud&shy;sige&shy;ligt at
+hurtig&shy;lade. Lige nu er situationen nemlig at mange af ladestanderne er
+enkelt&shy;stående. I min begrænsede erfaring er de enkelt&shy;stående
+ladestanderne på raste&shy;pladserne som regel ledige når jeg ankommer, men
+<em>når</em> en lader er optaget, ved man ikke om det tager 3 eller 30 minutter før
+den bliver ledig. Med mindre man er heldig at kunne snakke med den ladende
+elbilist, og det viser sig at denne næsten er færdig med at lade, så kan det
+være spild af tid at holde og vente. Derfor er det usmart at ankomme til en
+enkelt&shy;stående lader med meget lavt batteri, og derfor er det stadig en
+fordel at planlægge sin tur på forhånd, i hvert fald hvis man har noget man
+skal nå i den anden ende. Nogle synes det er sjovt at nørde med
+planlæg&shy;ningen, men flertallet vil nok foretrække ikke at være afhængige af
+at skulle gøre det.</p>
+
+<p>I øvrigt kan det være en streg i regningen hvis en enkelt&shy;stående lader er
+i stykker &mdash; det kan desværre ske. Clever og E.ON tilbyder
+<a href="https://clever.dk/produkter/abonnementer/clever-unlimited-network/">mobilitets&shy;garanti</a>/<wbr><a href="https://www.eon.dk/privat/strom-til-din-elbil/oplad-i-netvaerk/bestil-drive-free.html#Vej">vejhjælp</a> i
+tilfælde af en defekt lader, men den kræver at man både er abonnent og har
+tjekket inden ankomst at laderen ikke allerede er fejl&shy;meldt (mere
+plan&shy;lægning). Og garanti eller ej, så tilføjer vejhjælp en større
+forsinkelse. Som alter&shy;nativ til de enkelt&shy;stående standere kan man gå
+efter ladesteder med mange stik på samme sted:</p>
+
+<div class="next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Sted</strong>           </th>
+<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
+<th style="text-align:right;"> <strong>Antal stik ved motorvej</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Aalborg            </td>
+<td style="text-align:right;">                 36 km </td>
+<td style="text-align:right;">                             </td>
+</tr>
+<tr>
+<td> Haverslev          </td>
+<td style="text-align:right;">                 95 km </td>
+<td style="text-align:right;">                           7 </td>
+</tr>
+<tr>
+<td> Skanderborg        </td>
+<td style="text-align:right;">                 76 km </td>
+<td style="text-align:right;">                           4 </td>
+</tr>
+<tr>
+<td> Fredericia         </td>
+<td style="text-align:right;">                 79 km </td>
+<td style="text-align:right;">                           8 </td>
+</tr>
+<tr>
+<td> Nyborg+Knudshoved  </td>
+<td style="text-align:right;">                 20 km </td>
+<td style="text-align:right;">                          10 </td>
+</tr>
+<tr>
+<td> Halsskov           </td>
+<td style="text-align:right;">                 82 km </td>
+<td style="text-align:right;">                           5 </td>
+</tr>
+<tr>
+<td> Greve+Karlslunde   </td>
+<td style="text-align:right;">                 30 km </td>
+<td style="text-align:right;">                          13 </td>
+</tr>
+<tr>
+<td> København          </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                             </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Fordelen er at en optaget eller evt. defekt lader er et meget mindre
+problem, og at der nok snart bliver en ledig plads, hvis der ikke allerede er
+det når man ankommer. De fleste af disse mange ladere er også de hurtigste (og
+dyreste), hvilket kan være et plus eller et minus afhængig af ens bil og
+abonnement. Da der er længere imellem stederne med mange stik er det også godt
+at være bevidst om hvor man skal huske at lade (hvis bilen ikke selv guider dig
+via navigations&shy;systemet).</p>
+
+<a name="Fremtiden"></a>
+<h2>Fremtiden</h2>
+
+<p>Efterhånden som der kommer flere elbiler er der også behov for flere ladere, og
+omvendt. Det er en hønen og ægget-situation, men heldigvis står det ikke
+stille. Clever udmeldte i oktober 2020 at de vil etablere
+<a href="https://via.ritzau.dk/pressemeddelelse/clever-vil-etablere-flere-end-10000-offentlige-ladepunkter-til-elbiler-inden-udgangen-af-2025?publisherId=12636953&amp;releaseId=13602758">10.000</a> nye ladepunkter inden udgangen af 2025, hvoraf 500 skal
+være lyn&shy;ladere og 100 skal være normale hurtig&shy;ladere. På kortere sigt
+opsætter Circle&nbsp;K og OK hurtig&shy;ladere ved deres tankstationer.
+Circle&nbsp;K har allerede bygget fire lynlade&shy;stationer (med mindst to
+CCS-stik hver) og har yderligere 14 stationer <a href="https://www.circlek.dk/el">planlagt i år</a>. Man kan
+se nogle af disse, samt nogle fra OK og Lidl, under &ldquo;coming soon&rdquo; på
+<a href="https://www.plugshare.com/">PlugShare</a>. Det var først for nylig at jeg på denne måde opdagede
+Circle&nbsp;K-<wbr>lynladeren i Aalborg. Det viser sig endda at den er gratis
+at benytte i en prøveperiode der ind til videre har varet et halvt år!</p>
+
+<p>Langs motorvejen håber jeg at nogle af de eksisterende enkelt&shy;stående
+ladere får en makker, så der kommer et ekstra CCS-stik på stedet. Der kunne
+også godt bruges enkelte nye lokationer mellem Aalborg og København. De
+46&nbsp;km mellem Haverslev i Nordjylland og Gudenåen-raste&shy;pladserne ved
+Randers kunne halveres ved at placere en ladestation ved motorvejen nær Hobro.
+De 74&nbsp;km over Fyn mellem Middelfart og Nyborg kunne også bruge mere end
+den ene nuværende opladnings&shy;mulighed på Kildebjerg-rastepladserne, men
+heldigvis skulle der jo være <a href="https://via.ritzau.dk/pressemeddelelse/fyn-far-snart-danmarks-storste-lynladestation-til-elbiler?publisherId=12636953&amp;releaseId=13622978">28 nye lynladere</a> på vej ved motorvejen nær
+Odense.</p>
+
+<p>Det er ikke kun gennemrejsende der får glæde af de nye lynladere ved Odense.
+Lokale beboere, ikke mindst dem der ikke kan få egen hjemmelader, kan benytte
+hurtig&shy;ladere i nærheden som alternativ eller supplement til
+destinations&shy;laderne, specielt ind til mængden af destinations&shy;ladere
+<a href="https://www.tv2lorry.dk/koebenhavn/markant-flere-ladestandere-til-elbiler-kan-vaere-paa-vej-til-hovedstaden">forhåbentlig</a> kommer til at stige i fremtiden.</p>
+
+<p>Selvom der er plads til mange forbedringer er det allerede nu forholdsvis nemt
+at køre elbil for mange danskere, specielt de mange der bor i hus. Selv bor vi
+i lejlighed og klarer det også fint. Der er selvfølgelig nogle for hvem det
+stadig vil være upraktisk, men for de mange med et normalt kørselsbehov vil jeg
+foreslå at springe plugin-hybriden over og gå direkte til ren el. For miljøets
+skyld, og for <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">pengenes skyld</a>.</p>
+
+<p>Fordi det hele virkede nyt og ukendt valgte vi Hyundai
+<a href="https://www.hyundai.dk/privatleasing">privatleasing</a> hvor man kun er bundet i ét år, i
+modsætning til de fleste firmaer jeg har fundet som binder én i tre år.
+Volkswagen har også et koncept hvor man kan lease en ID.3 i
+<a href="https://app.volkswagen.dk/app/web/privat/go/konfigurer/?id=2075">seks måneder</a>. Men nu hvor jeg er blevet vant til elbil tænker
+jeg ikke på at slippe af med den igen &mdash; jeg glæder mig bare til næste gang
+jeg skal ud at køre.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3000 km for under €100]]></title>
@@ -78,7 +741,7 @@ good as many other EVs in that regard.</p>
 <p>You shouldn&rsquo;t block a public charger if you&rsquo;re not using it &mdash; that is
 etiquette and usually also part of parking regulations. But it can also make
 using public destination chargers a hassle. If you plug in to charge late in
-the evening, it might be that the charging will be done in the middle of the
+the evening, it might be that the charging will finish in the middle of the
 night. Do you get up to move the car in the middle of the night? Do you skip
 charging altogether? (Probably not.) Do you pick up your car some time the next
 morning, hoping to get there before the parking attendant and other EV drivers
@@ -177,13 +840,12 @@ the charging speed, or potential partnerships between EV manufacturers and
 charging providers. In some countries you also pay per minute.</p>
 
 <p>You can also be lucky and have access to free charging. Our municipality has a
-few sockets in Aalborg for free (but slow) EV charging, which is a nice
-&ldquo;carrot&rdquo; for EV adoption. Some hotels and supermarkets have free charging. For
-example, Lidl supermarkets have free chargers in some countries and are getting
-it in Denmark. Car manufacturers also sometimes offer some free charging.
-Hyundai started giving away six months of free charging with new leases, less
-than a week after we got our IONIQ. Tesla also sometimes gives away free
-charging.</p>
+few sockets in Aalborg for free EV charging, which is a nice &ldquo;carrot&rdquo; for EV
+adoption. Some hotels and supermarkets have free charging. For example, Lidl
+supermarkets have free chargers in some countries and are getting it in
+Denmark. Car manufacturers also sometimes offer some free charging. Hyundai
+started giving away six months of free charging with new leases, less than a
+week after we got our IONIQ. Tesla also sometimes gives away free charging.</p>
 
 <a name="Charging.Cost.in.Denmark"></a>
 <h2>Charging Cost in Denmark</h2>
@@ -273,7 +935,7 @@ However, the majority of <a href="https://ev-database.org/compare/efficiency-ele
 and the IONIQ &mdash; including Audi&rsquo;s upcoming Q4 models, and the very-long-range
 Mercedes EQS.</p>
 
-<p>The chart show that what is cheapest depends heavily on your driving.
+<p>The chart shows that what is cheapest depends heavily on your driving.
 Long-distance drivers will profit greatly from a flat rate subscription, while
 I would pay 5&ndash;6 times as much as I currently do. Before getting the IONIQ, I
 didn&rsquo;t know it would end up like this &mdash; I just knew I wanted to support the
@@ -284,6 +946,8 @@ combustion engine and a manual transmission. But for comparable cars driving an
 average 20,000 km/year or 16,000 mi/year, EVs already have ample opportunity to
 have a lower total cost of ownership in <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">Denmark</a> as well as
 the <a href="https://www.nytimes.com/interactive/2021/01/15/climate/electric-car-cost.html">USA</a>.</p>
+
+<p><em>Update 2021-06-26: Minor fixes.</em></p>
 ]]></content>
   </entry>
   
@@ -3002,182 +3666,6 @@ foreground.</p>
 written. The gameplay needs no explanation because the whole thing is just
 a beautifully crafted progression of elements. The story is very open to
 interpretation. I think you should play the game and see for yourself!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learn Vim the Harder Way]]></title>
-    <link href="http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way/"/>
-    <updated>2016-05-16T14:59:23+02:00</updated>
-    <id>http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way</id>
-    <content type="html"><![CDATA[<p>The first lesson of the official <a href="http://en.wikipedia.org/wiki/Vim_%28text_editor%29">Vim</a> tutorial (&ldquo;vimtutor&rdquo;) introduces
-the navigation keys <em>h</em>, <em>j</em>, <em>k</em>, <em>l</em>. This is where the user might go
-&ldquo;What?&rdquo;, followed perhaps by &ldquo;What&rsquo;s wrong with the arrow keys?&rdquo; The tutorial
-has this answer: &ldquo;The cursor keys should also work. But using hjkl you will be
-able to move around much faster, once you get used to it. Really!&rdquo;</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/vimtutor.png"></p>
-
-<p>From here, I think most people continue using Vim with the arrow keys and
-perhaps mouse because that&rsquo;s what they&rsquo;re used to, and why change something
-that works? Users who actually use hjkl from this point onwards (either by
-sheer willpower or by disabling the mouse and arrow keys) are learning Vim &ldquo;the
-hard way&rdquo;.</p>
-
-<p>Let me say from the beginning that I agree with the tutorial: Using hjkl <em>is</em>
-better. But for most people the hard way is not the right way. Learning Vim
-<a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/">progressively</a> is more fun and will allow you to switch to Vim
-while still <a href="http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/">getting work done</a>. In addition to the official
-vimtutor, you can also try an <a href="http://www.openvim.com/tutorial.html">interactive tutorial</a>, or even an
-<a href="http://vim-adventures.com/">adventure game</a>.</p>
-
-<p>If, however, you are going for the hard way, let me propose learning Vim the
-<em>harder</em> way!</p>
-
-<!-- more -->
-
-
-<a name="Learning.Vim.the.Harder.Way"></a>
-<h2>Learning Vim the Harder Way</h2>
-
-<p>The harder way is to use neither arrow keys <em>nor</em> hjkl.</p>
-
-<p>So what do you do instead? Finding out is exactly the point of this exercise.
-Vim has a very rich set of motion commands (see <code>:help motion.txt</code> in Vim or
-<a href="https://raw.githubusercontent.com/vim/vim/master/runtime/doc/motion.txt">here</a>) that you might never come across if you can get by with hjkl
-&mdash; just like you wouldn&rsquo;t learn hjkl if you kept using the arrow keys.</p>
-
-<p>While writing this article, I experimented with various variations on this.
-After disabling hjkl, it took some time before I noticed that the sideways
-motions <em>h</em> and <em>l</em> were missing (i.e., I use other, more direct motions more).
-On the other hand, the up-down motions <em>j</em> and <em>k</em> in many cases <em>are</em> the most
-efficient motions when combined with counts (see <code>:help count</code>) and relative
-line numbers. Therefore, I do not recommend disabling <em>j</em> and
-<em>k</em> completely. But to nudge you into using them intelligently, I suggest
-disabling the &ldquo;repeat keys&rdquo; feature in your OS keyboard settings:</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/repeat_keys.png"></p>
-
-<p>When this is done, disable the mouse and <em>h</em> and <em>l</em> as well as the arrow keys
-in both normal mode and insert mode:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>set nocompatible
-</span><span class='line'>set mouse=
-</span><span class='line'>map h <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>map l <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>map <span class="nt">&lt;left&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>map <span class="nt">&lt;down&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>map <span class="nt">&lt;up&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>map <span class="nt">&lt;right&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>imap <span class="nt">&lt;left&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>imap <span class="nt">&lt;down&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>imap <span class="nt">&lt;up&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span><span class='line'>imap <span class="nt">&lt;right&gt;</span> <span class="nt">&lt;nop&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The first command, <code>set nocompatible</code>, changes many options from vi compatible
-to sane.</p>
-
-<p>You can try these commands in Vim by typing &lsquo;:&rsquo; to go command line mode, typing
-the command, and then pressing Enter. For example: <code>:map h &lt;nop&gt;</code> followed by
-Enter. This lasts until you close Vim or undo it with <code>:unmap h</code>. To make it
-stick, put the commands in your vimrc configuration file (see <code>:help vimrc</code>),
-and they will be loaded each time you start Vim, until you remove them from
-your vimrc again.</p>
-
-<a name="Start.Learning"></a>
-<h2>Start Learning</h2>
-
-<p>At first, the above settings are a pain in the gluteus maximus.</p>
-
-<p>Fire up <a href="https://raw.githubusercontent.com/vim/vim/master/runtime/doc/motion.txt"><code>:help motion.txt</code></a> and look around. (If you&rsquo;re tired of
-moving down one <em>j</em> at a time, use CTRL-f and CTRL-b to go forward and backward
-one page at a time. Or put the cursor on a <code>|keyword|</code> and press CTRL-] to jump
-to that subject.)</p>
-
-<p>To use <em>j</em> and <em>k</em> efficiently for editing, enable relative line numbers:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>set number
-</span><span class='line'>set relativenumber
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>They look like this:</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/vim_relativenumber.png"></p>
-
-<p>As shown in the margin, the cursor is on line 124. To go to the line &ldquo;To
-use&hellip;&rdquo;, just look to the left, read the 9, and go nine lines up with <em>9k</em>.
-Without relative line numbers (i.e. <code>:set norelativenumber</code>, or <code>:set nornu</code>
-for short), you could also see that this line is line 115 and go to it with
-<em>115G</em>, but that&rsquo;s twice the typing.</p>
-
-<p>While getting by with <em>j</em> and <em>k</em>, missing <em>h</em> and <em>l</em> is probably really bad
-at first. Take a look at <code>:help word-motions</code> and <code>:help left-right-motions</code>
-(which are sections of motion.txt). The six motions <em>f</em>, <em>F</em>, <em>t</em>, <em>T</em>,
-<em>(comma)</em>, and <em>;</em> (where <em>(comma)</em> is the comma key itself), will come in
-especially handy. To give an example, with the cursor at X on this line and an
-&lsquo;x&rsquo; somewhere later, typing <em>fx</em> will go to that x. (Go try it in Vim!) For
-letters more common than x, these find commands are less useful. But uppercase
-letters and punctuation are easy targets, and help you navigate very quickly.</p>
-
-<p>Playing around with <em>f</em> and family, you will notice that while they are very
-fast to type, they only move within the current line, and of course they only
-find one symbol at a time. Read <code>:help search-commands</code> to get into the big
-league search commands.</p>
-
-<p>At this point I&rsquo;ll remark that the search default settings are a bit lame.
-I prefer these settings regarding search:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">set</span> <span class="nb">incsearch</span>   <span class="c">&quot; Search while you type</span>
-</span><span class='line'><span class="k">set</span> <span class="nb">hlsearch</span>    <span class="c">&quot; Highlight all matches</span>
-</span><span class='line'><span class="k">set</span> <span class="nb">ignorecase</span>  <span class="c">&quot; Ignore case while searching...</span>
-</span><span class='line'><span class="k">set</span> <span class="nb">smartcase</span>   <span class="c">&quot; ...unless you use uppercase letters in the search pattern.</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Especially search <span style="background-color: yellow;">highlight</span> can
-be useful, but after finding what you were looking for, you might want to get
-rid of the <span style="background-color: yellow;">highlight</span>ing. Rather
-than disabling it completely (<code>:set nohlsearch</code>), just turn it off until your
-next search with <code>:nohlsearch</code>, or <code>:noh</code> for short.</p>
-
-<p>In addition, when there are many highlighted matches close to each other,
-Damian Conway&rsquo;s <a href="https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/plugin/hlnext.vim">hlnext</a> plugin helps you see where you&rsquo;re at by
-blinking the next hit reached with <em>n</em> or <em>N</em>.</p>
-
-<a name="Conclusion"></a>
-<h2>Conclusion</h2>
-
-<p>As I mentioned in the beginning, learning Vim incrementally is the most useful.
-So the harder way is not the best for most beginners. But I think it is very
-useful for people who use Vim frequently but would like to unlock more of its
-potential.</p>
-
-<p>Also, we have just scratched the surface of what you can do in Vim. For any
-learner, new or experienced, I&rsquo;d recommend reading <code>:help user-manual</code> from
-start to end. This is in fact how I learned Vim.</p>
-
-<p>Update: See also <a href="http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii/">part II</a>.</p>
 ]]></content>
   </entry>
   
