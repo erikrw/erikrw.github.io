@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-06-26T14:29:40+02:00</updated>
+  <updated>2021-06-26T15:10:22+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -84,7 +84,7 @@ inkluderer jeg også Horsens og Odense der har hurtig&shy;ladere, selvom de ikke
 ligger ud til motorvejen. Tabellen viser <strong>antallet af CCS-stik</strong> fordelt på
 netværk og ladehastighed:</p>
 
-<div class="next-table-striped"></div>
+<div class="next-table-sidescroll next-table-striped"></div>
 
 
 <table>
@@ -386,7 +386,7 @@ Mercedes, Volkswagen, Audi og Porsche. Herunder opstiller jeg nogle eksempler
 på hvordan man kan udvælge sine favorit&shy;ladere &mdash; og så have alle de andre
 i reserve:</p>
 
-<div class="next-table-striped"></div>
+<div class="next-table-sidescroll next-table-striped"></div>
 
 
 <table>
@@ -470,7 +470,7 @@ hvad man nu har lyst til. Hvis man synes ovenstående lyder undervældende, så
 kan elbiler med større række&shy;vidde og hurtigere ladning heldigvis klare sig
 med færre og kortere ladepauser:</p>
 
-<div class="next-table-striped"></div>
+<div class="next-table-sidescroll next-table-striped"></div>
 
 
 <table>
@@ -563,7 +563,7 @@ plan&shy;lægning). Og garanti eller ej, så tilføjer vejhjælp en større
 forsinkelse. Som alter&shy;nativ til de enkelt&shy;stående standere kan man gå
 efter ladesteder med mange stik på samme sted:</p>
 
-<div class="next-table-striped"></div>
+<div class="next-table-sidescroll next-table-striped"></div>
 
 
 <table>
@@ -868,49 +868,52 @@ countries anyway. But here are the current prices in <strong>DKK/kWh</strong> fo
 charging network products and charger speeds (with Aalborg Municipality thrown
 in so you can see that my free charging is also slow charging):</p>
 
+<div class="next-table-sidescroll"></div>
+
+
 <table>
 <thead>
 <tr>
-<th style="text-align:right;"> <strong>Charger power</strong> </th>
+<th style="text-align:right;"> <strong>Charger&nbsp;power</strong> </th>
 <th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Aalborg</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Clever Go</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>E.ON Drive Lite</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spirii Go</strong>  </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Ionity (guest)</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Clever&nbsp;Go</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>E.ON&nbsp;Drive&nbsp;Lite</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spirii&nbsp;Go</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Ionity&nbsp;(guest)</strong> </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;">       <strong>2&ndash;3 kW</strong> </td>
+<td style="text-align:right;">            <strong>2&ndash;3 kW</strong> </td>
 <td style="text-align:right;">                                0.00 </td>
-<td style="text-align:right;">                                     - </td>
-<td style="text-align:right;">                                           - </td>
-<td style="text-align:right;">                                                  - </td>
 <td style="text-align:right;">                                          - </td>
+<td style="text-align:right;">                                                     - </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                               - </td>
 </tr>
 <tr>
-<td style="text-align:right;">     <strong>11&ndash;43 kW</strong> </td>
+<td style="text-align:right;">          <strong>11&ndash;43 kW</strong> </td>
 <td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                  3.50 </td>
-<td style="text-align:right;">                                        3.50 </td>
-<td style="text-align:right;">                                         2.25&ndash;3.75 </td>
-<td style="text-align:right;">                                          - </td>
+<td style="text-align:right;">                                       3.50 </td>
+<td style="text-align:right;">                                                  3.50 </td>
+<td style="text-align:right;">                                             2.25&ndash;3.75 </td>
+<td style="text-align:right;">                                               - </td>
 </tr>
 <tr>
-<td style="text-align:right;">     <strong>50&ndash;75 kW</strong> </td>
+<td style="text-align:right;">          <strong>50&ndash;75 kW</strong> </td>
 <td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                  3.50 </td>
-<td style="text-align:right;">                                        4.90 </td>
-<td style="text-align:right;">                                                  - </td>
-<td style="text-align:right;">                                          - </td>
+<td style="text-align:right;">                                       3.50 </td>
+<td style="text-align:right;">                                                  4.90 </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                               - </td>
 </tr>
 <tr>
-<td style="text-align:right;">   <strong>100&ndash;350 kW</strong> </td>
+<td style="text-align:right;">        <strong>100&ndash;350 kW</strong> </td>
 <td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                  5.00 </td>
-<td style="text-align:right;">                                        4.90 </td>
-<td style="text-align:right;">                                                  - </td>
-<td style="text-align:right;">                                       6.20 </td>
+<td style="text-align:right;">                                       5.00 </td>
+<td style="text-align:right;">                                                  4.90 </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                            6.20 </td>
 </tr>
 </tbody>
 </table>
