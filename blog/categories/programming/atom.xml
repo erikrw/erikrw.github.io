@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-10-02T22:37:45+02:00</updated>
+  <updated>2021-10-02T22:55:02+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Visual Studio Sounds]]></title>
+    <link href="http://blog.erw.dk/2021/10/02/visual-studio-sounds/"/>
+    <updated>2021-10-02T22:35:14+02:00</updated>
+    <id>http://blog.erw.dk/2021/10/02/visual-studio-sounds</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/vs_sound1.png"></p>
+
+<!-- more -->
+
+
+<p><img class="right" src="/images/posts/vs_sound2.png"></p>
+
+<p>I have been working with a slightly heavy C# code base that takes around a
+minute to build and start up. This is enough time that I&rsquo;ll switch to another
+program each time I start a debug or test run. But it&rsquo;s also short enough time
+that if I get side&shy;tracked for five minutes, that&rsquo;s four minutes of Visual
+Studio sitting idle.</p>
+
+<p>One day I stumbled upon a setting in Visual Studio named &ldquo;Play a sound when
+tests finish running&rdquo;, and from there a button to open the main Windows Sound
+settings where a number of events in Visual Studio can be configured to trigger
+a sound. This feature is as simple but great. Now I can switch context and
+always hear when I need to come back and work from a breakpoint or a finished
+test run. I can also use different sounds to distinguish positive and negative
+outcomes. Using the built-in Windows sounds, I found that these work great:</p>
+
+<div class="next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Event</strong>          </th>
+<th> <strong>Sound</strong>                  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Breakpoint Hit     </td>
+<td> Windows Pop-up Blocked.wav </td>
+</tr>
+<tr>
+<td> Build Failed       </td>
+<td> Windows Hardware Fail.wav  </td>
+</tr>
+<tr>
+<td> Build Succeeded    </td>
+<td> Windows Print complete.wav </td>
+</tr>
+<tr>
+<td> Test Run Failed    </td>
+<td> Windows Hardware Fail.wav  </td>
+</tr>
+<tr>
+<td> Test Run Succeeded </td>
+<td> tada.wav                   </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Especially the Ta-Daaa! fanfare when the tests pass is a nice way to be
+called back to Visual Studio. Happy coding!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Yousician "No tempo definitions found"]]></title>
@@ -480,9 +546,9 @@ imperative programming. And cut down on the declarative-ness when you want to.</
 <a name="Python.Postscript"></a>
 <h2>Python Postscript</h2>
 
-<p>I did the puzzle in Python just to see how it compared. Rather than reading
-then length of a list made with a list comprehension, I do it in a streaming
-fashion by summing over a generator expression:</p>
+<p>I did the puzzle in Python just to see how it compared. Rather than reading the
+length of a list made with a list comprehension, I do it in a streaming fashion
+by summing over a generator expression:</p>
 
 <pre><code class="Python">import re
 print sum(1 for line in open("input").readlines()
@@ -657,198 +723,6 @@ myself.</p>
 <p>My dear Casio, thanks for the ride.</p>
 
 <p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Checks for Your Django Project]]></title>
-    <link href="http://blog.erw.dk/2015/06/06/checks-for-your-django-project/"/>
-    <updated>2015-06-06T13:42:14+02:00</updated>
-    <id>http://blog.erw.dk/2015/06/06/checks-for-your-django-project</id>
-    <content type="html"><![CDATA[<p>The <a href="https://www.djangoproject.com/">Django web framework</a> has a management
-command to <a href="https://docs.djangoproject.com/en/1.8/ref/checks/">check</a> your code for various problems. For
-example, it checks that your database <code>CharFields</code> define the <code>max_length</code>
-attribute, and that you have not set <code>DEBUG = True</code> in deployment. This is good
-for catching various mistakes in using the framework before the problem shows
-up in production. And for your own business logic, you have unit tests. But
-there are still many things to not mess up, and they are easy to forget if they
-are not incredibly easy to check. So I wrote a script to check every problem
-I could think of in one go.</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<p>First up is the unit tests. For this script I only want it to tell me anything
-if there is a problem, as is customary for unix programs. With verbosity 0 and
-<code>head -n -4</code> cutting off the last four lines with the test summary, only failed
-test cases are shown:</p>
-
-<pre><code class="bash">./manage.py test -v 0 --noinput 2&gt;&amp;1 | head -n -4
-</code></pre>
-
-<p>Alternatively, you can run them with a code coverage check. Here, failed tests
-are shown and the total code coverage is shown if it is below 50%:</p>
-
-<pre><code class="bash">coverage run --branch --source='.' --omit='*/migrations/*,*test*,*settings*' \
-    manage.py test -v 0 2&gt;&amp;1 | head -n -4
-coverage report --fail-under=50 &gt;/dev/null || coverage report | sed -n '1p;$p' &amp;&amp; echo
-</code></pre>
-
-<p>The first of the &ldquo;hidden&rdquo; things that is easy to forget is changes to the data
-model that need to be migrated in the database. Unfortunately, the
-<code>makemigrations</code> management command doesn&rsquo;t have a usable exit status, but
-I work around that to only output text in case of problems:</p>
-
-<pre><code class="bash">[ "$(./manage.py makemigrations --dry-run)" != "No changes detected" ] &amp;&amp; \
-    ./manage.py makemigrations --dry-run &amp;&amp; echo
-</code></pre>
-
-<p>I also run <a href="https://flake8.readthedocs.org/">flake8</a> which wraps the code style checker <a href="http://pep8.readthedocs.org/en/latest/intro.html">pep8</a>,
-the static error checker <a href="https://pypi.python.org/pypi/pyflakes">Pyflakes</a>, and, optionally,
-the <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity">code complexity</a> checker <a href="https://pypi.python.org/pypi/mccabe">mccabe</a>, if
-you give the flag <code>--max-complexity=10</code>.</p>
-
-<pre><code class="bash">flake8 . || echo
-</code></pre>
-
-<a name="Translation"></a>
-<h2>Translation</h2>
-
-<p>For a multilingual project, you must remember to scan for changes to
-translatable strings and also to translate them. The <code>makemessages</code> management
-command goes over the source and finds all strings marked for translation and
-makes or updates the translation &ldquo;portable object&rdquo;/PO file. So ideally, I could
-just run that command and see if there are any changes to the PO file.</p>
-
-<p>However, <code>makemessages</code> includes a timestamp for the generation of the file, so
-it is always different each time the command is run. On top of that, it can
-happen that the command finds the translatable strings in a different order
-even when the content of the strings didn&rsquo;t change (I think this happens
-between different version of Django).</p>
-
-<p>So, I compare the before and after versions of the PO file with the timestamps
-stripped out, and sorted such that ordering doesn&rsquo;t matter. This sorting trick
-will cause false negatives if two strings are swapped in the source code, but
-this seems unlikely and therefore preferable to getting false positives from
-<code>makemessages</code>&#x2019; inability to search the source in a consistent order.</p>
-
-<pre><code class="bash">sed '/POT-Creation-Date/d' locale/da/LC_MESSAGES/django.po &gt; __po1
-mv locale/da/LC_MESSAGES/django.po{,_orig}
-cp locale/da/LC_MESSAGES/django.po{_orig,}
-./manage.py makemessages -v 0 -a --no-location --no-obsolete
-sed '/POT-Creation-Date/d' locale/da/LC_MESSAGES/django.po &gt; __po2
-mv locale/da/LC_MESSAGES/django.po{_orig,}
-diff &lt;(sort __po1) &lt;(sort __po2) &gt;/dev/null || \
-    { echo "=== Translation not up to date:" &amp;&amp; diff __po1 __po2 || echo; }
-rm __po1 __po2
-</code></pre>
-
-<p>Before and after running <code>makemessages</code>, I backup the PO file and restore it,
-respectively. By doing this as <code>mv A B; cp B A; mv B A</code>, rather than just <code>cp
-A B; mv B A</code>, the file retains its inode. Thus, editors will not falsely see
-the file as changed outside the editor.</p>
-
-<p>Even if you had already run <code>makemessages</code>, you also had to translate the newly
-found strings. I check for both untranslated strings and unverified automatic
-translations. The former appear as <code>msgstr ""</code>, but not every <code>msgstr ""</code> means
-you forgot a translation; some of them just mark the beginning of a string
-spanning multiple lines. So I do some <code>sed</code> magic to find the real culprits:</p>
-
-<pre><code class="bash">sed '$a\\' locale/da/LC_MESSAGES/django.po | tac | \
-    sed '/^$/N;/\nmsgstr ""$/,/^msgid/!d' | tac
-</code></pre>
-
-<p>While scanning, if <code>makemessages</code> finds a string that is close to something you
-already translated, it will insert the existing translation and mark it as
-a &ldquo;fuzzy&rdquo; match, so you can check it and remove the fuzzy label when the
-translation is done. I find such unremoved &ldquo;fuzzy&rdquo; labels:</p>
-
-<pre><code class="bash">[ $(grep -c ', fuzzy' locale/da/LC_MESSAGES/django.po) -gt 1 ] &amp;&amp; \
-    echo "=== Fuzzy translation:" &amp;&amp; \
-    grep ', fuzzy' locale/da/LC_MESSAGES/django.po -A2 | tail -n +5 &amp;&amp; echo
-</code></pre>
-
-<a name="The.Full.Script"></a>
-<h2>The Full Script</h2>
-
-<p>With all the components of the script done, the whole script looks like this.
-I call it <code>ok.sh</code>:</p>
-
-<pre><code class="bash">#!/bin/bash
-coverage run --branch --source='.' --omit='*/migrations/*,*test*,*settings*' \
-    manage.py test -v 0 2&gt;&amp;1 | head -n -4
-coverage report --fail-under=50 &gt;/dev/null || coverage report | sed -n '1p;$p' &amp;&amp; echo
-
-[ "$(./manage.py makemigrations --dry-run)" != "No changes detected" ] &amp;&amp; \
-    ./manage.py makemigrations --dry-run &amp;&amp; echo
-
-flake8 . || echo
-
-sed '/POT-Creation-Date/d' locale/da/LC_MESSAGES/django.po &gt; __po1
-mv locale/da/LC_MESSAGES/django.po{,_orig}
-cp locale/da/LC_MESSAGES/django.po{_orig,}
-./manage.py makemessages -v 0 -a --no-location --no-obsolete
-sed '/POT-Creation-Date/d' locale/da/LC_MESSAGES/django.po &gt; __po2
-mv locale/da/LC_MESSAGES/django.po{_orig,}
-diff &lt;(sort __po1) &lt;(sort __po2) &gt;/dev/null || \
-    { echo "=== Translation not up to date:" &amp;&amp; diff __po1 __po2 || echo; }
-rm __po1 __po2
-
-sed '$a\\' locale/da/LC_MESSAGES/django.po | tac | \
-    sed '/^$/N;/\nmsgstr ""$/,/^msgid/!d' | tac
-
-[ $(grep -c ', fuzzy' locale/da/LC_MESSAGES/django.po) -gt 1 ] &amp;&amp; \
-    echo "=== Fuzzy translation:" &amp;&amp; \
-    grep ', fuzzy' locale/da/LC_MESSAGES/django.po -A2 | tail -n +5 &amp;&amp; echo
-</code></pre>
-
-<p>There is no explicit call to <code>./manage.py check</code> because it is called
-implicitly by the other management commands. An ideal run of the script
-produces no output, but if you made a lot of errors, it could look like this:</p>
-
-<pre><code class="plain">$ ./ok.sh 
-======================================================================
-FAIL: test_basic_addition (docs.tests.SimpleTest)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/erw/hstareal/docs/tests.py", line 16, in test_basic_addition
-    self.assertEqual(1 + 1, 3)
-AssertionError: 2 != 3
-
-Migrations for 'requisitions':
-  0002_auto_20150605_1757.py:
-    - Alter field supplier_postcode on requisition
-
-./requisitions/models.py:123:80: E501 line too long (108 &gt; 79 characters)
-./requisitions/admin.py:194:25: F821 undefined name 'messages'
-./requisitions/admin.py:441:25: F821 undefined name 'messages'
-
-=== Translation not up to date:
-1541c1541,1543
-&lt; msgid "postcode"
----
-&gt; #, fuzzy
-&gt; #| msgid "postcode"
-&gt; msgid "postal code"
-
-=== Fuzzy translation:
-#, fuzzy
-msgid "internal account type"
-msgstr "interne kontotyper"
-</code></pre>
-
-<p>Now, all that is required is to run this one script before committing. A CI
-server could of course be nice, but for a small project, this might be fine,
-and cheaper.</p>
-
-<p>One thing that is missing is to make the check in lines 18&ndash;19 of the script
-aware of untranslated strings that you don&rsquo;t need to translate in your own
-project, because they are covered in Django&rsquo;s own translation. For example, my
-404 page says &ldquo;Page not found&rdquo; which Django already knows how to translate into
-70+ languages. The script could also be generalized to process all locales &mdash;
-right now it is hardcoded for Danish.</p>
 ]]></content>
   </entry>
   
