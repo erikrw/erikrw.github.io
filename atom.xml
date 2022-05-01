@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2021-11-11T22:13:21+01:00</updated>
+  <updated>2022-05-01T13:57:21+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,143 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bedre hurtigladning i Aalborg]]></title>
+    <link href="http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg/"/>
+    <updated>2022-05-01T13:37:59+02:00</updated>
+    <id>http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/Q8-skilt.jpg" title="Stort skilt ved Q8 som viser priserne på benzin, diesel og el" ></p>
+
+<p>Foråret har bragt bedre muligheder for offent&shy;lig opladning af elbiler
+Aalborg, til glæde for både gæster og os der bor i lejlighed eller af andre
+årsager ikke har egen ladeboks. Situa&shy;tionen er blevet bedre både når det
+gælder hurtig&shy;ladning og destinations&shy;ladning. Dette indlæg handler om
+det første.</p>
+
+<!-- more -->
+
+
+<p>Hurtigladning er den slags ladning hvor man typisk holder 15&ndash;45 minutter
+afhængig af bilen, lade&shy;standerens hastighed, og hvor langt man skal køre.
+Ofte kan man tilbringe vente&shy;tiden på tank&shy;station, toilet,
+lege&shy;plads, indkøbs&shy;center, fastfood&shy;restaurant eller Netflix.</p>
+
+<a name="Indtil.nu"></a>
+<h2>Indtil nu</h2>
+
+<p>Hurtigladning i Aalborg har ikke fungeret så godt frem til nu. I 2020 var der
+kun tre hurtig&shy;ladere i Stor&shy;aalborg: En ved Stor&shy;centeret, en ved
+føtex Eternitten, og en ved Q8 Scheels&shy;mindevej ved Møllen. Hver af disse
+ladere er af den gammel&shy;dags slags med kun ét CCS-stik, dvs. at der typisk
+kun er plads til hurtig&shy;ladning af én bil ad gangen.</p>
+
+<p>Efterhånden som antallet af elbiler steg i 2021 blev det sværere at få plads
+ved de få ladere der var, specielt ved Storcenteret og Eternitten. Eternittens
+ladestander var (og er) tilmed låst inde uden for føtex&#8217; åbnings&shy;tid,
+hvilket for&shy;værrer problemet. Scheels&shy;mindevej var nem&shy;mest at få
+plads ved, måske fordi det var den dyreste lader til 4,90&nbsp;kr/kWh (drevet
+af E.ON), mens de andre kostede 3,50&nbsp;kr/kWh (drevet af Clever). Alle tre
+havde (og har) en lade&shy;hastighed på 50&nbsp;kW.</p>
+
+<p>I starten af 2021 fik Circle&nbsp;K Hadsundvej en stander med to 150&nbsp;kW
+CCS-stik som tilmed var gratis at benytte som del af en længere&shy;varende
+prøve&shy;periode der endte med at vare over et år. Det var på den ene side
+skønt at lade gratis når man fik plads, men på den anden side gjorde
+popular&shy;iteten at det ofte var svært at få plads uden at holde i kø. Jeg
+mødte endda nogle som havde mulighed for at lade hjemme, men som alligevel
+kørte forbi Circle&nbsp;K for at få gratis strøm. I&nbsp;starten af 2022 fik
+Circle&nbsp;K yder&shy;ligere en stander med to stik på Sønderbro.</p>
+
+<p>Tesla, hvis ladere ikke er offentligt til&shy;gængelige i Danmark, har heller
+ikke en såkaldt Super&shy;charger hurtig&shy;ladestation i Aalborg.</p>
+
+<a name="Godt.nyt.hos.Q8"></a>
+<h2>Godt nyt hos Q8</h2>
+
+<p>I april 2022 har hurtigladning i Aalborg ændret sig betydeligt, med store
+ændringer hos tank&shy;station&shy;erne. Q8 har fået <a href="https://migogaalborg.dk/q8-lynladere/">seks nye stik</a> à
+150&nbsp;kW, hvilket i sig selv er fantastisk, men de har også gjort en masse
+ting rigtigt som gør el nemmere og mere behageligt at bruge:</p>
+
+<ul>
+<li>De viser elprisen på pylonen/standeren man kan se ude fra vejen, på lige fod
+med benzin- og dieselpriserne, som vist på billedet øverst på siden. (Prisen
+er p.t. 4,95 kr/kWh og hvis du er vant til at tænke i liter frem for
+kilowatt&shy;timer, så kan jeg anbefale <a href="https://fdm.dk/alt-om-biler/elbil-hybridbil/opladning/saa-meget-koster-en-liter-stroem-til-en-elbil">denne artikel</a> fra FDM.)</li>
+<li>De har placeret en af ladestanderne (to stik) under tag, så man kan stå i
+tørvejr lige som dem der tanker fossile brænd&shy;stoffer. De resterende
+standere står ikke under tag, men til gengæld er der god plads i bredden på
+deres parkerings&shy;pladser.</li>
+<li>De tager imod Dankort/&#8203;betalingskort, så man ikke er tvunget til at
+bruge (endnu) en mobil&shy;app. Der er dog stadig mulighed for at bruge apps.</li>
+</ul>
+
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/Q8-plads.jpg" title="En ladestander hos Q8 med to stik og rummelige parkeringspladser" ></p>
+
+<p>Desuden har jeg ikke indtryk af at Q8 over&shy;driver den ladehastighed de
+tilbyder. De rekla&shy;merer med 150&nbsp;kW, hvilket virker realist&shy;isk at
+de kan levere, selvom jeg ikke selv kan teste det. Dette er i mod&shy;sætning
+til Circle&nbsp;K som reklamerer med 300&nbsp;kW, men skriver med småt &ldquo;Denne
+lade&shy;stander kan lade én bil med op til 300&nbsp;kW, eller to biler med op
+til 150&nbsp;kW hver&rdquo;. Desuden har jeg snakket med andre elbilister ved
+Circle&nbsp;K og hørt at laderne ikke nød&shy;vendig&shy;vis leverer den lovede
+hastighed til de (dyre) biler der kan tage imod så meget. For&shy;håbentlig er
+det et problem Circle&nbsp;K får udbedret.</p>
+
+<a name="D..rligt.nyt.hos.Circle.K"></a>
+<h2>Dårligt nyt hos Circle K</h2>
+
+<p>Hos Circle&nbsp;K er der også store ændringer her i april. De har længe snakket
+om at sætte betal&shy;ing på deres ladere, og nu har de gjort alvor af det. Man
+kan læse at de har opsat
+<a href="https://www.inputmag.dk/circle-k-har-sat-pris-paa-lynopladning/">betalings&shy;løsninger på alle kædens lade&shy;standere</a>.
+Dette er rimeligt og forventet, og er ikke den dårlige nyhed. Endda er det
+positivt at det kommer til at mindske træng&shy;slen ved laderne.</p>
+
+<p>Den dårlige nyhed er at alle fire Circle&nbsp;K-lade&shy;stik i Aalborg siden
+omkring midt-april har været ude af drift, og ikke har fået monteret
+auto&shy;mat til betal&shy;ings&shy;kort endnu. Jeg formoder de fleste
+Circle&nbsp;K-&#8203;ladere i Danmark fungerer med betal&shy;ings&shy;system
+som medierne siger (og som jeg personligt har set hos Circle&nbsp;K
+Framlev&#8203;/&#8203;Harlev vest for Aarhus). For at gøre det værre i Aalborg
+henviser de endda fra den ene defekte/&#8203;deaktiv&shy;erede ladestander til
+den anden.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/CircleK-ude-af-drift.jpg" title="Den ene Circle K-ladestander i Aalborg er ude af drift og henviser til den anden som også er ude af drift" ></p>
+
+<p>Når de engang i maj forhåbentlig har fået mon&shy;teret betalings&shy;systemet
+og genåbnet laderne bliver det skønt med 13 hurtig&shy;ladestik i
+Stor&shy;aalborg fordelt på Q8, Circle&nbsp;K, Clever og E.ON. Men det må siges
+PR-mæssigt at være en fan&shy;tastisk dårlig afslutning på en ellers fantastisk
+god prøve&shy;periode for Circle&nbsp;K i Aalborg.</p>
+
+<a name="Fremtiden"></a>
+<h2>Fremtiden</h2>
+
+<p>Til sommer planlægger Clever at åbne
+<a href="https://via.ritzau.dk/pressemeddelelse/clever-etablerer-nordjyllands-storste-lynladestation?publisherId=12636953&amp;releaseId=13641390">Nord&shy;jyllands største lade&shy;station</a> med 16 stk.
+300&nbsp;kW-&#8203;ladestik i Nørre&shy;sundby. Det blivere mere end en
+fordobling af antallet af hurtig&shy;lade&shy;stik i Stor&shy;aalborg, så det
+bliver godt.</p>
+
+<p>De stigende elpriser spørger også. Clever har varslet prisstigninger fra juni,
+som vil presse deres lynladere (150+&nbsp;kW) op til være marked&shy;ets
+dyreste i løssalg (6,50&nbsp;kr/kWh uden abonnement), endda dyrere end Ionity.
+Dog vil deres 50&nbsp;kW-ladere med 4,75&nbsp;kr/kWh fortsat være blandt de
+billigste, hvilket er dejligt for os med en &ldquo;gammel&shy;dags&rdquo; elbil der ikke
+lader hurtig&shy;ere på en lynlader end på en &ldquo;gammel&shy;dags&rdquo;
+50&nbsp;kW-hurtiglader.</p>
+
+<p>Folk i den indtil videre lukkede Tesla-klub kan også glæde sig over at der
+skulle komme en <a href="https://www.tesla.com/findus/location/supercharger/aalborgsuperchargerq122">Aalborg Supercharger</a> i tredje kvartal i år.</p>
+
+<p>Ud over hurtigladning er destinations&shy;ladning (mens man holder parkeret i
+flere timer) også blevet bedre i Aalborg i april, og står til at blive endnu
+bedre snart. Det kommer i mit næste indlæg.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Visual Studio Sounds]]></title>
@@ -3520,149 +3657,6 @@ circumstances can help you beat procrastination, if you haven&rsquo;t cracked th
 code yet.</p>
 
 <p><em>Update 2018-07-28: Fixed typos.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learn Vim the Harder Way, Part II]]></title>
-    <link href="http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii/"/>
-    <updated>2016-08-28T13:29:00+02:00</updated>
-    <id>http://blog.erw.dk/2016/08/28/learn-vim-the-harder-way-part-ii</id>
-    <content type="html"><![CDATA[<p>In a <a href="http://blog.erw.dk/2016/05/16/learn-vim-the-harder-way/">previous post</a> I introduced learning <a href="http://en.wikipedia.org/wiki/Vim_%28text_editor%29">Vim</a> the harder way. To summarize:</p>
-
-<ul>
-<li><strong>The easy way</strong>: Use the arrow keys for cursor movement</li>
-<li><strong>The hard way</strong>: Don&rsquo;t use arrow keys; use <em>hjkl</em> in <em>normal mode</em></li>
-<li><strong>The harder way</strong>: Don&rsquo;t use <em>hjkl</em>; learn Vim&rsquo;s multitude of other motion
-commands</li>
-</ul>
-
-
-<p>Now, there&rsquo;s nothing wrong with using the arrow keys per se, but it very often
-leads to staying in <em>insert mode</em> most of the time and thus missing out on all
-the stuff you can do from <em>normal mode</em>. As someone <a href="http://www.viemu.com/a-why-vi-vim.html">wrote</a> about vi/Vim:</p>
-
-<blockquote><p>your keyboard becomes a huge specialized text-editing gamepad with almost
-a hundred buttons.</p></blockquote>
-
-<p>There&rsquo;s nothing wrong with using <em>hjkl</em> either, in fact they&rsquo;re very good
-because they force you to use <em>normal mode</em> as your, well, normal mode.
-However, normal mode only really provides an advantage if you harness its power
-and go beyond the basics. For motions, that involves reducing your use of
-<em>hjkl</em>. In this part we see how to do that for inserting and deleting text.</p>
-
-<!-- more -->
-
-
-<a name="Insert.Without..em.i..em."></a>
-<h2>Insert Without <em>i</em></h2>
-
-<p>One of the first things Vim users learn is that you type <em>i</em> to go to insert
-mode (where you can write text). Just like <em>hjkl</em>, <em>i</em> is a basic command. And
-just like there are many other motions beyond <em>hjkl</em>, there are more commands
-that bring you to insert mode:</p>
-
-<ul>
-<li><em>a</em> appends text after the current character (like <em>i</em> inserts before it).</li>
-<li><em>I</em> and <em>A</em> insert text at the beginning and end of the line, respectively,
-no matter where on the line your cursor is.</li>
-<li><em>o</em> and <em>O</em> &ldquo;open&rdquo; a new blank line for writing immediately after and before
-the current line, respectively (no matter where on the line your cursor is).
-When used for programming (for example with <code>:set autoindent</code>), &ldquo;open&rdquo; also
-does intelligent indentation.</li>
-<li><em>gi</em> inserts text where you last stopped inserting text, no matter where in
-the buffer the cursor now is.</li>
-</ul>
-
-
-<p>Try disabling <em>i</em> with <code>:nmap i &lt;nop&gt;</code>, or perhaps with a reminder of what to
-do instead: <code>:nnoremap i :echoerr "Try a/I/A/o/O/gi instead!"&lt;cr&gt;</code>. It&rsquo;s really
-annoying, but that&rsquo;s the point. Once you have a basic grasp of the other insert
-mode commands, you can remove the mapping again with <code>:nunmap i</code>.</p>
-
-<p>By the way, I lied a bit earlier. The command <em>I</em> doesn&rsquo;t insert at the
-beginning of the line. It inserts immediately before the first non-whitespace
-character of the line, which is often convenient, not least in programming. But
-you can still tell Vim to <em>really</em> insert at the beginning of the line with the
-command <em>gI</em>. Vim is thorough like that.</p>
-
-<a name="Delete.Without.Backspace"></a>
-<h2>Delete Without Backspace</h2>
-
-<p>Now you know a flexible set of commands to go to insert mode. Once you&rsquo;re
-there, there&rsquo;s one thing you should not to too much (beside use the arrow
-keys), and that is: backspace. Like many other commands, it is a basic
-operation good in some cases and inefficient in others. It&rsquo;s good for
-correcting a typo, but deleting words and anything bigger is like digging with
-a teaspoon. So I&rsquo;d recommend removing the temptation to use the teaspoon by
-disallowing backspacing past the position where you started insert mode:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>set backspace-=start</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You can still correct typos while you type. In normal mode you can also delete
-a few chars with the <em>x</em> and <em>X</em> commands which work like delete and backspace
-do in insert mode.</p>
-
-<p>For anything bigger, use the delete command <em>d</em>. It takes a motion or text
-object. For example, <code>dw</code> deletes from the cursor position until the start of
-the next word, <code>dt'</code> deletes until the next apostrophe, and <code>dap</code> deletes
-a paragraph (the one the cursor is currently in). All in one step.</p>
-
-<p>Besides being more efficient, doing it as a single command has the advantage
-that it can be undone as a single command (<em>u</em>), and, perhaps more importantly,
-that you get the whole thing copied so you can insert it later (in Vim, delete
-and cut are the same thing).</p>
-
-<a name="Delete.and.Insert.at.the.Same.Time"></a>
-<h2>Delete and Insert at the Same Time</h2>
-
-<p>In the previous section I suggest staying in normal mode when removing text.
-But what if you want to both delete <em>and</em> insert text? Just like Vim provides
-many commands than combine moving the cursor and inserting text (<em>a</em>, <em>I</em>, <em>A</em>,
-etc.), it also provides commands that combine deleting and inserting:</p>
-
-<ul>
-<li><em>r</em> replaces the character under the cursor with another character of your
-choosing</li>
-<li><em>R</em> drops you into replace mode where you overwrite/replace text until you
-return to normal mode with Esc.</li>
-<li><em>s</em>/<em>S</em> substitute the character/line under the cursor with any text (insert
-mode)</li>
-<li><em>c</em> changes text into other text: It first awaits your choice of motion or
-text object to delete and then drops you into insert mode. For example, <code>c)</code>
-changes from the cursor position until the end of the sentence and <code>ci"</code>
-changes the whole content of the double quote delimited string the cursor is
-in.</li>
-<li><em>C</em> changes from the cursor position to the end of the line (similarly to how
-<em>D</em> deletes from the cursor position to the EOL while <em>d</em> takes a motion or
-text object)</li>
-</ul>
-
-
-<p>If you&rsquo;re comfortable with <em>x</em>/<em>X</em>/<em>d</em>, but not the replace/substitute/change
-commands, I&rsquo;d recommend something crazy: Disable <em>x</em>, <em>X</em>, and <em>d</em>:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>nmap x &lt;nop&gt;
-</span><span class='line'>nmap X &lt;nop&gt;
-</span><span class='line'>nmap d &lt;nop&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Instead, the stuff you want to delete, you can substitute/change into nothing
-until the substitute/change commands comes naturally to you.</p>
-
-<a name="Learn"></a>
-<h2>Learn</h2>
-
-<p>The point of temporarily disabling commands is not to say they&rsquo;re bad, because
-they&rsquo;re not. They are strictly necessary parts of Vim. The point is to <em>also</em>
-learn the more powerful and flexible commands. I have only covered the basics
-of normal mode, but read <code>:help</code>, <code>:help user-manual</code>, and <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">this</a> to
-uncover all the cool stuff you can do.</p>
 ]]></content>
   </entry>
   
