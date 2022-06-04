@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-05-01T14:26:43+02:00</updated>
+  <updated>2022-06-04T22:05:11+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -14,13 +14,49 @@
 
   
   <entry>
+    <title type="html"><![CDATA[AAWireless First Impressions]]></title>
+    <link href="http://blog.erw.dk/2022/06/04/aawireless-first-impressions/"/>
+    <updated>2022-06-04T21:20:37+02:00</updated>
+    <id>http://blog.erw.dk/2022/06/04/aawireless-first-impressions</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://blog.erw.dk/images/posts/aawireless.jpg" width="375" title="Picture shows a car infotainment screen with Google Maps as well as the small AAWireless device plugged in to the car's USB port" ></p>
+
+<p>My <a href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/">car</a> supports Android Auto which lets me connect my smartphone and
+use the phone&rsquo;s apps on the car&rsquo;s infotainment system including touchscreen,
+speakers and microphone. Examples include Google Maps for navigation and
+Spotify for music, as well as Google Assistant voice commands.</p>
+
+<p>It normally requires a wired USB connection between phone and car, but
+<a href="https://www.aawireless.io/">AAWireless</a> is a device that acts as a wireless bridge between
+phone and car while the device stays plugged in to the car, so your phone can
+stay in your pocket or bag. I&rsquo;m happy so say it works well so far.</p>
+
+<!-- more -->
+
+
+<p>With the product being crowdfunded, and just being a consumer electronic
+product in general, I was prepared for some problems. To my pleasant surprise,
+the product Just Works for me. After the initial Bluetooth pairing, the device
+connects quickly when I turn the car on, and the car&rsquo;s touchscreen is
+responsive. I did not use the accompanying <a href="https://play.google.com/store/apps/details?id=app.aawireless">app</a> to configure or update
+the device, as it was not necessary for me, and because I didn&rsquo;t want the app
+to update the device&rsquo;s firmware, as some reviews complained about problems with
+a recent version of the firmware.</p>
+
+<p>The AAWireless device uses less than 1&nbsp;W of power from the wired USB
+connection which is nice. I don&rsquo;t know how the phone&rsquo;s power consumption is
+affected and I have not yet tried longer trips with the AAWireless. But based
+on my limited experience with it, I&rsquo;m happy with the purchase.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Bedre hurtigladning i Aalborg [Danish]]]></title>
     <link href="http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg/"/>
     <updated>2022-05-01T13:37:59+02:00</updated>
     <id>http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg</id>
     <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/Q8-skilt.jpg" title="Stort skilt ved Q8 som viser priserne på benzin, diesel og el" ></p>
 
-<p>Foråret har bragt bedre muligheder for offent&shy;lig opladning af elbiler
+<p>Foråret har bragt bedre muligheder for offent&shy;lig opladning af elbiler i
 Aalborg, til glæde for både gæster og os der bor i lejlighed eller af andre
 årsager ikke har egen ladeboks. Situa&shy;tionen er blevet bedre både når det
 gælder hurtig&shy;ladning og destinations&shy;ladning. Dette indlæg handler om
@@ -2050,7 +2086,7 @@ Digital Wellbeing, as well as my thoughts on the Pixel 2 after a year.</p>
 <p>The two things I initially liked best about the Pixel 2 are still the best: The
 speed and the screen. The speed and responsiveness of the device is still
 amazing one year and OS update later. This is what using a computer &mdash; because
-a smartphone is a computer &mdash; in 2018 should feel like. (Running Windows 10
+a smartphone is a computer &mdash; in 2018 should feel like. (Running Windows 10 on
 a laptop does, incidentally, not feel like 2018.)</p>
 
 <p>The brightness range of the screen is also still great. Not perfect, but
@@ -3505,158 +3541,6 @@ model. We&rsquo;re talking tempo synced LFO, tempo synced delay, sequencer note
 slides, sequencer song mode, and sequencer <em>parameter locks</em>! It hurts, Roland.</p>
 
 <p><em>Update 2019-08-28: Minor clarification.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Work Helps Me Beat Procrastination]]></title>
-    <link href="http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination/"/>
-    <updated>2017-01-22T17:23:59+01:00</updated>
-    <id>http://blog.erw.dk/2017/01/22/work-helps-me-beat-procrastination</id>
-    <content type="html"><![CDATA[<p>Back in school, I put off essay writing until the night before the due date. In
-gymnasium/high school, I put off assignments until the <em>morning</em> of the due
-date. In my first years of university it went so far that a student counsellor
-suggested that maybe university wasn&rsquo;t for me.</p>
-
-<p>Despite&mdash;or perhaps because of&mdash;that, I pulled myself together. After passing
-some courses that especially triggered my procrastination, I did much better,
-and eventually emerged with a master&rsquo;s degree in software engineering and a PhD
-in computer science.</p>
-
-<p>But that does not mean I had completely overcome procrastination, especially
-not during the PhD study. It was not until <a href="http://blog.erw.dk/2016/05/09/leaving-academia/">leaving academia</a> for the
-IT business that I experienced what it is like to get control of my
-procrastination. (It&rsquo;s amazing, by the way.)</p>
-
-<!-- more -->
-
-
-<a name="My.Job"></a>
-<h2>My Job</h2>
-
-<p>It&rsquo;s ironic that procrastination means postponing work, but my job actually
-helps me avoid procrastination. I&rsquo;ll try to figure out why that is. To that
-end, I&rsquo;ll first describe my job. It includes:</p>
-
-<ul>
-<li>Designing software solutions meeting the clients&#8217; requirements.</li>
-<li>Implementing (programming) software solutions according to designs approved
-by the clients.</li>
-<li>Registering the time spent on all tasks in our time tracking system.</li>
-</ul>
-
-
-<a name="Doing.It.for.Others"></a>
-<h2>Doing It for Others</h2>
-
-<p>There are many aspects of the above that contribute to procrastinating less.
-One of them, I think, is that this is the first time in my education and work
-life that people who ask me to do something want me to do it for <em>their</em> sake.</p>
-
-<p>Beating procrastination often requires external deadlines and reasons. In
-education of all levels, teachers ask us to do exercises, homework,
-assignments, semester projects, theses. But while they ask you, and systems may
-be in place to punish those who do not comply, the requests are not truly
-external. The purpose is that <em>you</em> learn, not (necessarily) that <em>they want</em>
-to read your work.</p>
-
-<p>Compulsory education contains more external pressure to learn than higher
-education (which is probably why procrastination gets worse the higher you get
-in the education system). In a job, you get back some external pressure, and
-this time they care more about what they get out of it than what you get out of
-it.</p>
-
-<p>Although external reasons (and payment!) are good reasons to work, they are
-unfortunately not enough to fight procrastination.</p>
-
-<a name="Implementation.Tasks.are.Well-Defined"></a>
-<h2>Implementation Tasks are Well-Defined</h2>
-
-<p>One of the causes for procrastination is perfectionism. Often the desire to
-find the perfect solution to a problem puts so much pressure on you that you do
-not even succeed in finding a good-enough solution. Simply taking a step
-towards finding the perfect solution feels like a futile step towards
-a possibly unachievable goal, so let&rsquo;s just look at cat videos on YouTube
-instead.</p>
-
-<p>Working to implement a preapproved design means that the biggest decisions have
-already been made, whether by yourself or by others, and locked in by the
-client. Now your task is not to solve the original business problem, but simply
-to implement the designed solution in the allotted time.</p>
-
-<p>&ldquo;Simply&rdquo; does not mean to imply that it&rsquo;s easy. A high level of expertise is
-required to write correct, robust, efficient, and maintainable code. But with
-well-defined goals for the programming, the task is constrained enough that
-a skilled procrastinator (skilled at programming, that is) can attack the task
-head-on rather than postpone it.</p>
-
-<p>I do still get ideas to change the design while working to implement it, but
-the bureaucracy involved in changing it is actually a good thing here because
-it keeps me from trying, unless I&rsquo;m convinced it&rsquo;s necessary. It&rsquo;s better to
-have a good solution done on time than a perfect solution that isn&rsquo;t.</p>
-
-<a name="Implementation.Tasks.are.Divisible"></a>
-<h2>Implementation Tasks are Divisible</h2>
-
-<p>It&rsquo;s not just that implementation tasks are easier when the design is fixed.
-It&rsquo;s also that the they can be broken into smaller parts that are even easier
-to do.</p>
-
-<p>The first subtask is to understand the design and hold a mental model of it.
-Depending on the level of detail in the design description, this can itself
-turn into clarifying discussions with the author, but that is also fairly
-well-defined.</p>
-
-<p>Many of the remaining subtasks are taken from a repertoire that includes:</p>
-
-<ul>
-<li>Adding required tables and fields to the database</li>
-<li>Identifying required data and writing queries to retrieve it</li>
-<li>Adding the business logic</li>
-<li>Testing the solution, and adding error handling and logging</li>
-</ul>
-
-
-<a name="Time.Tracking"></a>
-<h2>Time Tracking</h2>
-
-<p>Next up is the time tracking we are required to do. While working a task, any
-task, we register the time spent in an issue tracker. Our issue trackers are
-then connected to the time tracking system, and in the time tracking system
-each week has to sum up to the number of hours our contract states before we
-can &ldquo;close&rdquo; that week. It&rsquo;s cold, mechanical, and unsympathetic, and it works
-wonders in beating procrastination.</p>
-
-<a name="Design.Tasks.Can.Make.You.Proud"></a>
-<h2>Design Tasks Can Make You Proud</h2>
-
-<p>Design is the process of turning the client&rsquo;s requirements into a consistent
-and implementable description in terms of the business domain. Sometimes this
-requires several iterations with client feedback and further changes before the
-design is approved. A design can also be a change to a previously implemented
-module or feature.</p>
-
-<p>If it&rsquo;s a change request, it&rsquo;s fairly simple: read up on documentation and code
-until you hold a good-enough mental model of the existing functionality. From
-there, seeing where changes are required, is often obvious.</p>
-
-<p>If it&rsquo;s a new module or feature, it may be harder to get started. That&rsquo;s where
-one of the risks of procrastination hide. However, two things can mitigate
-this. The first is <em>structured procrastination</em>: While putting off the daunting
-design task, work on something else productive like a straightforward
-implementation task (as opposed to watching cat videos on YouTube). At least
-you&rsquo;re doing something productive.</p>
-
-<p>The second thing is that once you do get it cracked and have your initial idea
-for the general direction of the design, a feeling of ownership and pride
-starts to grow. This will make it much easier to keep the focus.</p>
-
-<p>All in all, my job helps me keep my procrastination in check, which I&rsquo;m very
-happy about. I hope all you other procrastinators out there can see that your
-circumstances can help you beat procrastination, if you haven&rsquo;t cracked the
-code yet.</p>
-
-<p><em>Update 2018-07-28: Fixed typos.</em></p>
 ]]></content>
   </entry>
   
