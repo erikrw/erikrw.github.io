@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-06-04T22:05:11+02:00</updated>
+  <updated>2022-06-11T10:49:41+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bedre elbilsladning i Aalborg]]></title>
+    <link href="http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg/"/>
+    <updated>2022-06-11T10:13:23+02:00</updated>
+    <id>http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/clever_garvergade.jpg" title="Billedet viser elbiler parkeret ved ladestandere ved Garvergade" ></p>
+
+<p>Det er en ny æra for offentlig opladning af elbiler i Aalborg. Efter en meget
+begrænset udvikling i 2021 er der i foråret 2022 åbnet flere nye offentlige
+ladepladser i Aalborg og Nørresundby. Nu er det næsten altid muligt at finde en
+ledig offentlig lader, når man skal bruge den. Dermed er det blevet meget
+nemmere at kombinere elbil med at bo i lejlighed, samt at være
+plug-in-bils-gæst i Aalborg.</p>
+
+<!-- more -->
+
+
+<p>Mulighederne er blevet bedre både for <a href="http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg/">hurtigladning</a>
+(specielt da Circle Ks ladere nu er åbnet igen) og for offentlig
+destinationsladning, hvor bilen holder parkeret i et antal timer imens den
+oplades. Aalborg Kommune og Clever har i løbet af foråret åbnet 24
+destinationsladere fordelt på fire forskellige kommunale P-pladser:</p>
+
+<ul>
+<li>Sømandshjemmet, Aalborg: 6 ladere</li>
+<li>Vejgaard Bymidte, Aalborg: 6 ladere</li>
+<li>Garvergade, Nørresundby: 6 ladere</li>
+<li>Havnegade, Nørresundby: 6 ladere.</li>
+</ul>
+
+
+<p>Sømandshjemmet havde i forvejen to af kommunens 2&nbsp;kW-ladestik, som nu er
+erstattet af seks 11/22&nbsp;kW-ladestik fra Clever. Aalborg Kongres &amp; Kultur
+Center har også længe haft to af kommunens 2&nbsp;kW-ladestik, og disse er også
+planlagt til at blive erstattet af Clevers.</p>
+
+<p>Det er skønt at der nu er plads til opladning af seks biler samtidig, i stedet
+for de typiske to ad gangen som de fleste ældre ladesteder har. Men der er
+flere fordele. For det første har de nye ladere parkeringsregler der er nemme
+at forstå (så nemme som parkeringsregler nu kan blive). Dette er også i
+modsætning til andre, ældre ladesteder som ofte er på private områder med
+uklare regler. Der ikke rart at parkere med frygt for en dyr parkeringsafgift,
+så det er rart at de nye kommunale pladser har klare regler.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/clever_havnegade.jpg" title="Billedet viser parkeringsregler ved ladepladserne på Havnegade: 3 timer 8-19 (8-16)" ></p>
+
+<p>For det andet er det vigtigt at de nye kommunale pladser er gratis at holde på.
+Den pris man betaler for strøm fra offentlige ladere er i forvejen 2&ndash;3 gange
+dyrere pr. kilowatttime end ved hjemmeladning, så det er dejligt at man ikke
+skal betale dyr parkering oveni. Specielt hvis man har en ældre eller billigere
+elbil der lader med en lavere effekt, kan dyre parkeringspladser (fx 16
+kr/time) mere end fordoble den i forvejen halvdyre omkostning for at lade
+offentligt.</p>
+
+<p>Sammen med de nye lademuligheder er æraen for gratis opladning i Aalborg næsten
+slut. Circle&nbsp;K har lukket for gratis ladning og Aalborg Kommunes gratis
+ladestik til elbiler er halvvejs med at blive erstattet af Clever-ladestandere.
+Gratis ladning har været et privilegie som gjorde det muligt at køre elbil
+<a href="http://blog.erw.dk/2021/05/24/3000-km-for-under-100/">ekstremt billigt</a> i Aalborg indtil nu. Nu må det nøjes med &ldquo;bare&rdquo; at
+være <a href="https://fdm.dk/nyheder/bilist/2021-02-undersoegelse-afsloerer-denne-biltype-er-billigst-eje">billigere end benzin og diesel</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AAWireless First Impressions]]></title>
@@ -3294,253 +3357,6 @@ blackness, camera, and battery, all in a thinner, lighter body.</p>
 experience&rdquo; is worth the price. At least I should be getting updates quickly
 for <a href="https://www.androidauthority.com/google-pixel-2-xl-update-804779/">three years</a>, which is better than many OEMs. I just hope the
 Pixel 2 will stay snappy as the updates come.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Roland JP-08 Review]]></title>
-    <link href="http://blog.erw.dk/2017/06/25/roland-jp-08-review/"/>
-    <updated>2017-06-25T17:06:23+02:00</updated>
-    <id>http://blog.erw.dk/2017/06/25/roland-jp-08-review</id>
-    <content type="html"><![CDATA[<p>In the early 1980s Roland produced a number of synthesizers that aged into
-classics. The flagship Jupiter-8 is perhaps the most famous, used by electronic
-artists such as Jean Michel Jarre, Depeche Mode, and Moby, as well as pop
-artists like Michael Jackson, Madonna, and Abba.</p>
-
-<p>Today, a used Jupiter-8 in good condition can cost more than a new top end
-modern synthesizer, which is to say a lot. Luckily, in late 2015 Roland
-released miniature versions of these classics, at relatively affordable prices.
-Jupiter-8 became JP-08, and I got to own a little piece of music history.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/boutiques.jpg' width='' height='' alt='Three originals (Juno-106, Jupiter-8, JX-3P) above the three new 'Boutique' versions (JU-06, JP-08, JX-03)'><span class='caption-text'>Three originals (Juno-106, Jupiter-8, JX-3P) above the three new &lsquo;Boutique&rsquo; versions (JU-06, JP-08, JX-03)</span></span></p>
-
-<p>It&rsquo;s a bit late for a review, one and a half year after the release, but on the
-other hand, the Jupiter-8 came out before I was born, so in comparison, the new
-version is still very recent!</p>
-
-<!-- more -->
-
-
-<a name="Sound.in.a.Box"></a>
-<h2>Sound in a Box</h2>
-
-<p>One might ask why you need a box like this when you can generate the same
-sounds in your computer. But the new Roland releases are in fact just software
-in boxes &mdash; digital emulations of the original electronics. The point is that
-a box with the right buttons, knobs, and sliders makes the experience of sound
-exploration tactile and immediate.</p>
-
-<p>Plus, in this age of multi purpose devices, there is just something fascinating
-about a device that does just one thing, does it well, and doesn&rsquo;t let you
-connect to Facebook.</p>
-
-<div class="video-container">
-<iframe src="//www.youtube.com/embed/C1zdcqoe8qg?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-<a name="A.Small.Box"></a>
-<h2>A Small Box</h2>
-
-<p>Compared with the Jupiter-8, the JP-08 is tiny. It has the footprint of an A4
-sheet of paper (somewhere between letter and legal for you North Americans),
-and that&rsquo;s <em>with</em> the optional mini-keyboard attached. Since it can also be
-powered from batteries, that means it&rsquo;s <em>portable</em>. You can bring it on trips,
-to the park, or just the sofa. (Or bring it to bed, according to
-<a href="https://www.youtube.com/user/junkiexlofficial">JunkieXL</a>!)</p>
-
-<p>As part of the portability, the unit even has a built-in speaker so you can
-play it without attaching a sound system or headphones. As practical as this
-is, the speaker has no bass and a tendency to make the chassis rattle and
-resonate. So I recommend skipping it altogether because that will sound much
-better and make you appreciate the unit more.</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/jp-08.jpg"></p>
-
-<a name="Too.Small.a.Box"></a>
-<h2>Too Small a Box</h2>
-
-<p>The portable coolness however comes at a cost. To fit all of the controls of
-the Jupiter-8 into such a small areal, they have been arranged in two rows.
-Thus the sliders only have a throw of 1 cm, which means they require delicate
-hand movements. This detracts from the overall hand-on experience, even though
-they are usable with patience. The worst part is that it&rsquo;s very hard to sweep
-the filter or pulse width smoothly.</p>
-
-<p>However diminutive they are, controls dedicated to exactly one sound parameter
-provide much of the immediacy of the overall experience. Unfortunately, the
-auxiliary controls are tucked away under button combinations &mdash; a few
-labelled, most not.</p>
-
-<ul>
-<li>The solo/unison/poly mode buttons have moved from dedicated buttons to
-(labelled) combinations. This is acceptable because this is not something
-you&rsquo;re likely to need to switch quickly.</li>
-<li>The portamento settings also glided (pun intended) into a combination, with
-the glide time set by sliding the modulation ribbon with the &lsquo;dual&rsquo; button
-held down. This is a bit sad, since I could imaging tweaking the glide time
-while playing.</li>
-<li>It&rsquo;s worse for features native to the JP-08 such as delay effect parameters,
-transpose, pitch bend range, MIDI channel, and especially keyboard octave
-selection which is not easily done while playing the mini keyboard.</li>
-<li>Also, the pitch bend and modulation features have devolved: The VCO/VCF
-destination sliders and selectors have disappeared, and the crude ribbon
-makes it difficult to do smooth or precise pitch bends.</li>
-</ul>
-
-
-<a name="Better.With.a.MIDI.Controller"></a>
-<h2>Better With a MIDI Controller</h2>
-
-<p>Many of the above problems can be solved by a separate MIDI controller:</p>
-
-<ul>
-<li>More octaves can be played directly, or at least octaves can be selected more
-easily</li>
-<li>Bigger knobs and sliders can be used to obtain smoother sweeps and precise
-parameter input</li>
-<li>The portamento glide time can be adjusted with a single knob or slider</li>
-<li>The Jupiter-8 hold (sustain) feature, missing from the JP-08, can be mapped
-to a button</li>
-<li>The Jupiter-8 arpeggiator, also sadly missing from the JP-08, can be restored
-with an arpeggiating controller such as the Arturia KeyStep</li>
-</ul>
-
-
-<p>Using a separate controller defeats the portability, but seen from the bright
-side it just means you can switch between portability and better control.</p>
-
-<a name="Signal.Routing"></a>
-<h2>Signal Routing</h2>
-
-<p>Also lost in the miniaturization were the little orange signal routing hints
-scattered around the original Jupiter-8 panel:</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/jupiter-8-panel.jpg' width='' height='' alt='Image used with permission from Nikolaus Riehm / Studio Repair'><span class='caption-text'>Image used with permission from Nikolaus Riehm / Studio Repair</span></span></p>
-
-<p>I didn&rsquo;t know of these when I got my JP-08, so it was somewhat confusing. The
-source mix knob was the first one I figured out: It mixes between the two only
-sound sources &mdash; the two oscillators.</p>
-
-<p>Then there&rsquo;s also routing between the two oscillators. VCO-1 has a &lsquo;cross mod&rsquo;
-slider and VCO-2 has a &lsquo;sync&rsquo; switch. What&rsquo;s missing from the panel is the
-direction of the routing (and even that routing is going on, if you don&rsquo;t know
-what &lsquo;cross mod&rsquo; or &lsquo;sync&rsquo; means).</p>
-
-<p>Cross modulation allows the pitch of VCO-1 to be affected by the pitch of
-VCO-2, creating crazy bends or new timbres, depending on the frequency of
-VCO-2. Sync allows VCO-2 to return to the start of its cycle at the frequency
-of VCO-1, creating new timbres out of existing wave forms. After figuring out
-the routing, the JP-08 made a lot more sense.</p>
-
-<p>Perhaps most difficult is keeping track of what the two envelopes control.
-ENV-1 can affect the pulse width of both oscillators, the frequency of either
-or both oscillators, and the filter cutoff frequency. ENV-2 controls the VCA
-and the filter frequency. The filter has a switch choosing which envelope
-currently controls the filter.</p>
-
-<a name="Docking.Looks.Better"></a>
-<h2>Docking Looks Better</h2>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/jp-08_k-25m.jpg"></p>
-
-<p>The JP-08 itself is a sturdy metal panel on top of a plastic box. In its
-unmounted form it appears somewhat naked. Adding the optional K-25m keyboard
-module really helps completing the look of the device.</p>
-
-<p>Before I got the keyboard module, the device looked somehow messy and
-unfinished on my desk. Now, it makes me smile when I look at it. So I&rsquo;m happy
-I got the keyboard module even though it is both expensive and only mediocre as
-a keyboard. For use mainly with an external keyboard, the synth can also dock
-in the keyboard-less, cheaper DK-01 dock.</p>
-
-<p>Also, the metal surfaces have a satisfying ability to not pick up fingerprints.</p>
-
-<a name="More.Like.JP-04"></a>
-<h2>More Like JP-04</h2>
-
-<p>The &lsquo;8&rsquo; in Jupiter-8 meant eight voices. The JP-08 only has four voices,
-meaning only 4 notes can sound at the same time. This has irritated a lot of
-people, including me. I mean, it&rsquo;s not that I play 9th chords all the time, but
-Roland, did you really need to go for the minimum effort here, to try to sell
-more boxes?</p>
-
-<p>Roland happily claims that you can connect more units to increase the polyphony
-by four each time. This is better than nothing, but it&rsquo;s also only partially
-true. Because while you can play 4<em>n</em> notes <em>simultaneously</em>, there&rsquo;s still
-voice stealing when you play notes sequentially (which is called&hellip; music&hellip;
-you might have heard of it, Roland). That means that if you play a sound that
-fades out gradually after lifting your finger from the key, that tail will be
-cut off by the next note that starts, if no unused voice is available within
-the first 4, <strong>not</strong> 4<em>n</em>, voices. <a href="https://www.youtube.com/watch?v=Ejpw7GsyAGg">Here&rsquo;s</a> a demonstration.</p>
-
-<p>Since the JP-08 is a (really good) digital simulation of the original analog
-electronics, giving it eight voices shouldn&rsquo;t be that hard. Maybe you&rsquo;d need
-a better processor, but compared with the costs of development and production,
-that cost should be minimal. And you&rsquo;d have happier users. Then perhaps,
-instead of buying another JP-08 and feeling like an idiot (which I chose not
-to), I might have bought one of the other Boutiques.</p>
-
-<a name="Patch.Selection"></a>
-<h2>Patch Selection</h2>
-
-<p><span class='caption-wrapper'><img class='caption' src='http://blog.erw.dk/images/posts/jp-08-16.jpg' width='' height='' alt='The patch selection button rows of the JU-06 and the JP-08'><span class='caption-text'>The patch selection button rows of the JU-06 and the JP-08</span></span></p>
-
-<p>The four voices bring another annoyance, which we need to take a step back to
-understand. The Juno-106, JU-06, Jupiter-8, and JP-08 all have 16 buttons used
-for patch selection. The JU-06 has eight bank buttons and eight patch buttons,
-leading to a total of 64 patches. (The Juno-106, which I own, additionally has
-a group selector multiplying everything by two for 128 patches in total.) On
-the Juno-106 and JU-06, a single button press can switch the bank number (the
-first digit) and the patch number (the last digit) independently (as well as
-the group, on the Juno-106), which is very nice. (The Juno-106 also has a patch
-increment pedal input, but I digress).</p>
-
-<p>The JP-08 has eight patch number buttons and eight patch preset buttons.
-Choosing one of the 64 patches always requires two consecutive presses of the
-patch number buttons. A patch preset on the JP-08 is a layering of two patches
-sounding simultaneously, and there are only eight of these. This is also how it
-was on the Jupiter-8, except that a Jupiter-8 patch preset could also be
-a left/right split between two patches instead of a layering.</p>
-
-<p>A patch preset cuts the polyphony in half, since each note you play uses two
-voices. Thus, with the JP-08 having only four voices and no split option, patch
-presets are much less useful. You can&rsquo;t even play real chords! You can still
-play leads and power chords with your layered sound. However, this could be
-accomplished with the &lsquo;dual&rsquo; and &lsquo;upper/lower&rsquo; buttons without reserving eight
-buttons for patch presets. Instead, it could have used the faster bank+patch
-system like the Juno. (Or better yet, it could just have had eight voices.)</p>
-
-<p>There is one final snafu with the 16 buttons and the way they relate to the
-delay effect parameters (level, time, and feedback). Because changing the
-parameters is difficult while playing, you are not likely to notice it, but
-changing the delay time also flushes the delay buffer. However, if you control
-the delay parameters with a knob on a MIDI controller, this becomes
-embarrassingly obvious.</p>
-
-<a name="In.Conclusion"></a>
-<h2>In Conclusion</h2>
-
-<p>The JP-08 is fun and sounds really good. But there are so many things that feel
-like they could have been much better with small changes.</p>
-
-<p>Eight voices, obviously. Then the sliders could have been much better with
-a small increase in the height of the box. A small increase in width could have
-allowed space for direct control of many more parameters. And an arpeggiator!
-Not to mention full width keys or more mini keys. A normal pitch bend and mod
-stick would also be great, but this might make the unit deeper.</p>
-
-<p>Dimensions multiply, and the unit would quickly become much bigger and less
-cute. But it would also be much better and less toy-like. The tiny Boutique
-format just seems to go better with machines with fewer controls the Juno-106
-or the VP-330.</p>
-
-<p>Seeing newer Boutique releases having features that the JP-08 should have had
-also feels like betrayal, after throwing money at a first generation Boutique
-model. We&rsquo;re talking tempo synced LFO, tempo synced delay, sequencer note
-slides, sequencer song mode, and sequencer <em>parameter locks</em>! It hurts, Roland.</p>
-
-<p><em>Update 2019-08-28: Minor clarification.</em></p>
 ]]></content>
   </entry>
   
