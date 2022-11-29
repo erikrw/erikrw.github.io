@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ev | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/ev/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2022-11-29T22:59:50+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ioniq Efficiency]]></title>
+    <link href="http://blog.erw.dk/2022/11/29/ioniq-efficiency/"/>
+    <updated>2022-11-29T08:18:04+01:00</updated>
+    <id>http://blog.erw.dk/2022/11/29/ioniq-efficiency</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/hyundai_ioniq_electric_2020_leaves.jpg" title="Picture shows the Hyundai Ioniq Electric&rsquo;s aerodynamic profile in front of some autumn leaves" ></p>
+
+<p>I&rsquo;ve driven the <a href="/2021/05/02/hyundai-ioniq-electric/">Hyundai Ioniq Electric</a> for two years now, and it&rsquo;s
+time for some more stats. While the car model is not for sale anymore, it will
+exist on the used car market for many years to come, and I&rsquo;m going to continue
+documenting my experiences with it here. Despite being discontinued, the car
+remains one of the most energy efficient mass market vehicles on the roads
+today.</p>
+
+<!-- more -->
+
+
+<p>The Ioniq Electric reports energy use per distance (e.g., kWh/100km) or
+distance traveled per energy amount (e.g., km/kWh), depending on your
+preference. The car has three counters: A trip with automatic reset (after four
+hours of parking), a trip with manual reset, and a long-term counter with
+manual reset. I reset the long-term counter a couple of times, so I do not have
+the car&rsquo;s own efficiency value for the past two years. But I do have a log of
+all the times I charged the car, so I know how much energy I put into the
+battery and how far I drove. This gives me an overall vehicle efficiency of
+6.46&nbsp;km/kWh.</p>
+
+<p>This value includes all the energy spent under all of the real-world conditions
+of the shifting Danish weather, HVAC use (heating, ventilation, and air
+conditioning), tires (AllSeasonContact), driving styles and speeds, etc. The
+figure is the vehicle efficiency and so does not include charging losses. It
+does however include the energy used by the car while it is parked, which I
+estimate to be around 50&nbsp;kWh/year. (I didn&rsquo;t get the Bluelink option to
+make the Ioniq internet-connected. An app-enabled online car could use (much)
+more energy while parked.) By correcting for the assumed 50&nbsp;kWh/year
+drain, I get a driving-only efficiency of 6.83&nbsp;km/kWh (still including
+HVAC and everything else while driving). In the table below, I compare my
+performance with the WLTP results and the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Electric Vehicle Database</a>&rsquo;s
+Real Range (also driving only) numbers:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                     </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;efficiency</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;consumption</strong> </th>
+<th style="text-align:right;"> <strong>Average&nbsp;range</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>WLTP</strong>            </td>
+<td style="text-align:right;">                 8.13 km/kWh </td>
+<td style="text-align:right;">               12.3 kWh/100km </td>
+<td style="text-align:right;">                 311 km </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>My&nbsp;driving</strong> </td>
+<td style="text-align:right;">                 6.83 km/kWh </td>
+<td style="text-align:right;">               14.6 kWh/100km </td>
+<td style="text-align:right;">                 262 km </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>EVDB</strong>            </td>
+<td style="text-align:right;">                 6.54 km/kWh </td>
+<td style="text-align:right;">               15.3 kWh/100km </td>
+<td style="text-align:right;">                 250 km </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+The table also shows the range which is calculated as the efficiency multiplied
+by the usable battery size which is 38.3&nbsp;kWh. (If the range seems too low
+for you, Hyundai are on their way to fix it with the upcoming
+<a href="https://ev-database.org/car/1718/Hyundai-IONIQ-6-Long-Range-2WD">Ioniq&nbsp;6</a> sedan which is expected to keep the efficiency of the
+Ioniq Electric while almost doubling its range.) I do not report my car&rsquo;s own
+range estimation as it is not representative of the long-term. It depends only
+on recent driving conditions, as well as HVAC considered either as turned off
+or with its instantaneous power draw, neither of which are long-term
+representative.</p>
+
+<p>The results give me a lot of confidence in EVDB to not overestimate efficiency
+and range, like the WLTP often does. My results being better than EVDB might be
+down to the fact that I drive slightly less on motorways/highways than an
+average driver, or that the Danish weather is slightly warmer than in the EVDB
+model. Speaking of the weather, let&rsquo;s look at how efficiency changes with the
+seasons.</p>
+
+<a name="Efficiency.over.time"></a>
+<h2>Efficiency over time</h2>
+
+<p>The following diagram shows the driving efficiency average for each two-month
+period (Nov-Dec, Jan-Feb, etc.) for the past two years, ranging from 4.7 to
+8.4&nbsp;km/kWh.</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_1.png" title="Graph shows efficiency is lowest in winter and highest in summer" ></p>
+
+<p>In the next diagram I add the daytime air temperature in my region of
+Nordjylland, Denmark. (<a href="https://www.dmi.dk/vejrarkiv/manedens-sasonens-og-arets-vejr/tabeller-maned/">Data source</a>. I calculate/approximate daytime
+temperature as the average between (1) the average daily peak temperature in
+the period and (2) the overall average temperature of the period.)</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_2.png" title="Graph shows efficiency approximately follows daytime air temperature" ></p>
+
+<p>The efficiency correlates fairly well with the temperature within the
+0&ndash;20&deg;C range, but the efficiency actually rises faster than the
+temperature in the spring. This could be caused by the spring sunshine:</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_3.png" title="Graph shows sunshine is high in both spring and summer" ></p>
+
+<p>It might be that the sun dries wet roads faster and slightly increases the road
+and tire temperature compared with the air, improving efficiency. Either way,
+here&rsquo;s the same diagram with the efficiency turned into range, from 179 to
+323&nbsp;km:</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_4.png" title="Graph same as previous, with range instead of efficiency on vertical axis" ></p>
+
+<p>The efficiency at a given time of year is still just an average of different
+driving styles and speeds. Here&rsquo;s how speed affects efficiency.</p>
+
+<p></p>
+
+<a name="Efficiency.and.speed"></a>
+<h2>Efficiency and speed</h2>
+
+<p>I tested the efficiency of my car at different speeds. On a calm and sunny
+Sunday at the end of May, I drove a motorway round trip three times at
+different speeds. I started at 50% state of charge, then drove the 46.6&nbsp;km
+loop and charged back up to 50%, then repeated two more times.</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_E45.jpg" title="Picture shows my motorway round trip route on a satellite image map" ></p>
+
+<p>The Danish Meteorological Institute reported 21°C (in the shade), while my car
+(in the sun) said 24°C. Without using the air conditioning, I drove on the E45
+motorway from the Clever charger at exit 33 Haverslev to exit 36 Onsild and
+back. Of the 46.6&nbsp;km round trip, 43.4&nbsp;km (93%) were motorway, while
+3.2&nbsp;km (7%) were on/off ramps and other roads. On the motorway I set the
+cruise control to 95, 115, and 135&nbsp;km/h which in true speed should be
+around 90, 110, and 130&nbsp;km/h.</p>
+
+<p>This resulted in the following efficiency values reported by the car, for the
+full round trip. From the vehicle efficiency I derive the vehicle consumption
+and the resulting range.</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;efficiency</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;consumption</strong> </th>
+<th style="text-align:right;">   <strong>Range</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">           <strong>90 km/h</strong> </td>
+<td style="text-align:right;">                  9.1 km/kWh </td>
+<td style="text-align:right;">               11.0 kWh/100km </td>
+<td style="text-align:right;"> 349&nbsp;km </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>110 km/h</strong> </td>
+<td style="text-align:right;">                  6.9 km/kWh </td>
+<td style="text-align:right;">               14.5 kWh/100km </td>
+<td style="text-align:right;"> 264&nbsp;km </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>130 km/h</strong> </td>
+<td style="text-align:right;">                  5.6 km/kWh </td>
+<td style="text-align:right;">               17.9 kWh/100km </td>
+<td style="text-align:right;"> 214&nbsp;km </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+If the trip ends at a destination/home charger, driving faster simply means
+you&rsquo;ll get there faster, by spending more energy (and therefore money).
+However, if the journey is longer and requires charging along the route,
+driving faster also means waiting more for charging. Here&rsquo;s the time I spent
+driving and charging:</p>
+
+<p><img class="center" src="/images/posts/ioniq_efficiency_5.png" title="Graph shows total driving + charging time only decreases slightly by driving faster" ></p>
+
+<p>This table shows the resulting average speeds, which are lower than the cruise
+speeds because of the driving off-motorway, and again lower when including the
+time to charge the battery back up:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Driving&nbsp;average&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Average&nbsp;speed&nbsp;incl.&nbsp;charging</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">           <strong>90 km/h</strong> </td>
+<td style="text-align:right;">                             85 km/h </td>
+<td style="text-align:right;">                                         64 km/h </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>110 km/h</strong> </td>
+<td style="text-align:right;">                            100 km/h </td>
+<td style="text-align:right;">                                         68 km/h </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>130 km/h</strong> </td>
+<td style="text-align:right;">                            113 km/h </td>
+<td style="text-align:right;">                                         70 km/h </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+The Ioniq Electric 38&nbsp;kWh, because of its limited charging speed, is not
+too fast on long journeys. In Youtuber <a href="https://www.youtube.com/@bjornnyland">Bjørn Nyland</a>&rsquo;s
+<a href="https://docs.google.com/spreadsheets/d/1V6ucyFGKWuSQzvI8lMzvvWJHrBS82echMVJH37kwgjE/edit#gid=15442336">1000 km challenge</a> series, the Ioniq 38 achieved an average speed around
+<strong>70&nbsp;km/h</strong> in the winter, similar to veteran EVs Nissan Leaf and Renault
+Zoe. If you pay a bit more, there are some EVs with a great trade-off between
+price and long-distance speed around the <strong>90&nbsp;km/h</strong> mark: Hyundai Kona,
+Kia Niro, VW&nbsp;ID.3, Cupra Born, Tesla Model&nbsp;3&nbsp;SR+. Finally, you
+can get around <strong>100&nbsp;km/h</strong> and up with the newer Ioniqs, Kia EV6, and
+many models from Tesla and the German automakers.</p>
+
+<p>But as seen in Bjørn&rsquo;s videos, sustaining a high average speed on a long
+journey means there&rsquo;s almost no time to eat or take breaks on the trip. And
+that&rsquo;s why even a slower-charging, affordable EV such as the Ioniq Electric can
+be good enough.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bedre elbilsladning i Aalborg [Danish]]]></title>
+    <link href="http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg/"/>
+    <updated>2022-06-11T10:13:23+02:00</updated>
+    <id>http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/clever_garvergade.jpg" title="Billedet viser elbiler parkeret ved ladestandere ved Garvergade" ></p>
+
+<p>Det er en ny æra for offentlig opladning af elbiler i Aalborg. Efter en meget
+begrænset udvikling i 2021 er der i foråret 2022 åbnet flere nye offentlige
+ladepladser i Aalborg og Nørresundby. Nu er det næsten altid muligt at finde en
+ledig offentlig lader, når man skal bruge den. Dermed er det blevet meget
+nemmere at kombinere elbil med at bo i lejlighed, samt at være
+plug-in-bils-gæst i Aalborg.</p>
+
+<!-- more -->
+
+
+<p>Mulighederne er blevet bedre både for <a href="/2022/05/01/bedre-hurtigladning-i-aalborg/">hurtigladning</a>
+(specielt da Circle Ks ladere nu er åbnet igen) og for offentlig
+destinationsladning, hvor bilen holder parkeret i et antal timer imens den
+oplades. Aalborg Kommune og Clever har i løbet af foråret åbnet 24
+destinationsladere fordelt på fire forskellige kommunale P-pladser:</p>
+
+<ul>
+<li>Sømandshjemmet, Aalborg: 6 ladere</li>
+<li>Vejgaard Bymidte, Aalborg: 6 ladere</li>
+<li>Garvergade, Nørresundby: 6 ladere</li>
+<li>Havnegade, Nørresundby: 6 ladere.</li>
+</ul>
+
+
+<p>Sømandshjemmet havde i forvejen to af kommunens 2&nbsp;kW-ladestik, som nu er
+erstattet af seks 11/22&nbsp;kW-ladestik fra Clever. Aalborg Kongres &amp; Kultur
+Center har også længe haft to af kommunens 2&nbsp;kW-ladestik, og disse er også
+planlagt til at blive erstattet af Clevers.</p>
+
+<p>Det er skønt at der nu er plads til opladning af seks biler samtidig, i stedet
+for de typiske to ad gangen som de fleste ældre ladesteder har. Men der er
+flere fordele. For det første har de nye ladere parkeringsregler der er nemme
+at forstå (så nemme som parkeringsregler nu kan blive). Dette er også i
+modsætning til andre, ældre ladesteder som ofte er på private områder med
+uklare regler. Der ikke rart at parkere med frygt for en dyr parkeringsafgift,
+så det er rart at de nye kommunale pladser har klare regler.</p>
+
+<p><img class="center" src="/images/posts/clever_havnegade.jpg" title="Billedet viser parkeringsregler ved ladepladserne på Havnegade: 3 timer 8-19 (8-16)" ></p>
+
+<p>For det andet er det vigtigt at de nye kommunale pladser er gratis at holde på.
+Den pris man betaler for strøm fra offentlige ladere er i forvejen 2&ndash;3 gange
+dyrere pr. kilowatttime end ved hjemmeladning, så det er dejligt at man ikke
+skal betale dyr parkering oveni. Specielt hvis man har en ældre eller billigere
+elbil der lader med en lavere effekt, kan dyre parkeringspladser (fx
+16&nbsp;kr/time) mere end fordoble den i forvejen halvdyre omkostning for at
+lade offentligt.</p>
+
+<p>Ud over nye ladere på kommunale P-pladser er der også kommet andre offentlige
+ladere til, fx 4&nbsp;stk. ved Nordelektro på Skibsbyggerivej og 4&nbsp;stk.
+ved Centrica på Skelagervej. (Desuden flere i dyre P-huse, samt flere
+ikke-offentlige ladere ved boligforeninger, arbejdspladser mv.).</p>
+
+<p>Sammen med de nye lademuligheder er æraen for gratis opladning i Aalborg næsten
+slut. Circle&nbsp;K har lukket for gratis ladning og Aalborg Kommunes gratis
+ladestik til elbiler er halvvejs med at blive erstattet af Clever-ladestandere.
+Gratis ladning har været et privilegie som gjorde det muligt at køre elbil
+<a href="/2021/05/24/3000-km-for-under-100/">ekstremt billigt</a> i Aalborg indtil nu. Nu må det nøjes med &ldquo;bare&rdquo; at
+være <a href="https://fdm.dk/nyheder/bilist/2021-02-undersoegelse-afsloerer-denne-biltype-er-billigst-eje">billigere end benzin og diesel</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bedre hurtigladning i Aalborg [Danish]]]></title>
+    <link href="http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg/"/>
+    <updated>2022-05-01T13:37:59+02:00</updated>
+    <id>http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/Q8-skilt.jpg" title="Stort skilt ved Q8 som viser priserne på benzin, diesel og el" ></p>
+
+<p>Foråret har bragt bedre muligheder for offent&shy;lig opladning af elbiler i
+Aalborg, til glæde for både gæster og os der bor i lejlighed eller af andre
+årsager ikke har egen ladeboks. Situa&shy;tionen er blevet bedre både når det
+gælder hurtig&shy;ladning og destinations&shy;ladning. Dette indlæg handler om
+det første.</p>
+
+<!-- more -->
+
+
+<p>Hurtigladning er den slags ladning hvor man typisk holder 15&ndash;45 minutter
+afhængig af bilen, lade&shy;standerens hastighed, og hvor langt man skal køre.
+Ofte kan man tilbringe vente&shy;tiden på tank&shy;station, toilet,
+lege&shy;plads, indkøbs&shy;center, fastfood&shy;restaurant eller Netflix.</p>
+
+<a name="Indtil.nu"></a>
+<h2>Indtil nu</h2>
+
+<p>Hurtigladning i Aalborg har ikke fungeret så godt frem til nu. I 2020 var der
+kun tre hurtig&shy;ladere i Stor&shy;aalborg: En ved Stor&shy;centeret, en ved
+føtex Eternitten, og en ved Q8 Scheels&shy;mindevej ved Møllen. Hver af disse
+ladere er af den gammel&shy;dags slags med kun ét CCS-stik, dvs. at der typisk
+kun er plads til hurtig&shy;ladning af én bil ad gangen.</p>
+
+<p>Efterhånden som antallet af elbiler steg i 2021 blev det sværere at få plads
+ved de få ladere der var, specielt ved Storcenteret og Eternitten. Eternittens
+ladestander var (og er) tilmed låst inde uden for føtex&#8217; åbnings&shy;tid,
+hvilket for&shy;værrer problemet. Scheels&shy;mindevej var nem&shy;mest at få
+plads ved, måske fordi det var den dyreste lader til 4,90&nbsp;kr/kWh (drevet
+af E.ON), mens de andre kostede 3,50&nbsp;kr/kWh (drevet af Clever). Alle tre
+havde (og har) en lade&shy;hastighed på 50&nbsp;kW.</p>
+
+<p>I starten af 2021 fik Circle&nbsp;K Hadsundvej en stander med to 150&nbsp;kW
+CCS-stik som tilmed var gratis at benytte som del af en længere&shy;varende
+prøve&shy;periode der endte med at vare over et år. Det var på den ene side
+skønt at lade gratis når man fik plads, men på den anden side gjorde
+popular&shy;iteten at det ofte var svært at få plads uden at holde i kø. Jeg
+mødte endda nogle som havde mulighed for at lade hjemme, men som alligevel
+kørte forbi Circle&nbsp;K for at få gratis strøm. I&nbsp;starten af 2022 fik
+Circle&nbsp;K yder&shy;ligere en stander med to stik på Sønderbro.</p>
+
+<p>Tesla, hvis ladere ikke er offentligt til&shy;gængelige i Danmark, har heller
+ikke en såkaldt Super&shy;charger hurtig&shy;ladestation i Aalborg.</p>
+
+<a name="Godt.nyt.hos.Q8"></a>
+<h2>Godt nyt hos Q8</h2>
+
+<p>I april 2022 har hurtigladning i Aalborg ændret sig betydeligt, med store
+ændringer hos tank&shy;station&shy;erne. Q8 har fået <a href="https://migogaalborg.dk/q8-lynladere/">seks nye stik</a> à
+150&nbsp;kW, hvilket i sig selv er fantastisk, men de har også gjort en masse
+ting rigtigt som gør el nemmere og mere behageligt at bruge:</p>
+
+<ul>
+<li>De viser elprisen på pylonen/standeren man kan se ude fra vejen, på lige fod
+med benzin- og dieselpriserne, som vist på billedet øverst på siden. (Prisen
+er p.t. 4,95 kr/kWh og hvis du er vant til at tænke i liter frem for
+kilowatt&shy;timer, så kan jeg anbefale <a href="https://fdm.dk/alt-om-biler/elbil-hybridbil/opladning/saa-meget-koster-en-liter-stroem-til-en-elbil">denne artikel</a> fra FDM.)</li>
+<li>De har placeret en af ladestanderne (to stik) under tag, så man kan stå i
+tørvejr lige som dem der tanker fossile brænd&shy;stoffer. De resterende
+standere står ikke under tag, men til gengæld er der god plads i bredden på
+deres parkerings&shy;pladser.</li>
+<li>De tager imod Dankort/&#8203;betalingskort, så man ikke er tvunget til at
+bruge (endnu) en mobil&shy;app. Der er dog stadig mulighed for at bruge apps.</li>
+</ul>
+
+
+<p><img class="center" src="/images/posts/Q8-plads.jpg" title="En ladestander hos Q8 med to stik og rummelige parkeringspladser" ></p>
+
+<p>Desuden har jeg ikke indtryk af at Q8 over&shy;driver den ladehastighed de
+tilbyder. De rekla&shy;merer med 150&nbsp;kW, hvilket virker realist&shy;isk at
+de kan levere, selvom jeg ikke selv kan teste det. Dette er i mod&shy;sætning
+til Circle&nbsp;K som reklamerer med 300&nbsp;kW, men skriver med småt &ldquo;Denne
+lade&shy;stander kan lade én bil med op til 300&nbsp;kW, eller to biler med op
+til 150&nbsp;kW hver&rdquo;. Desuden har jeg snakket med andre elbilister ved
+Circle&nbsp;K og hørt at laderne ikke nød&shy;vendig&shy;vis leverer den lovede
+hastighed til de (dyre) biler der kan tage imod så meget. For&shy;håbentlig er
+det et problem Circle&nbsp;K får udbedret.</p>
+
+<a name="D..rligt.nyt.hos.Circle.K"></a>
+<h2>Dårligt nyt hos Circle K</h2>
+
+<p>Hos Circle&nbsp;K er der også store ændringer her i april. De har længe snakket
+om at sætte betal&shy;ing på deres ladere, og nu har de gjort alvor af det. Man
+kan læse at de har opsat
+<a href="https://www.inputmag.dk/circle-k-har-sat-pris-paa-lynopladning/">betalings&shy;løsninger på alle kædens lade&shy;standere</a>.
+Dette er rimeligt og forventet, og er ikke den dårlige nyhed. Endda er det
+positivt at det kommer til at mindske træng&shy;slen ved laderne.</p>
+
+<p>Den dårlige nyhed er at alle fire Circle&nbsp;K-lade&shy;stik i Aalborg siden
+omkring midt-april har været ude af drift, og ikke har fået monteret
+auto&shy;mat til betal&shy;ings&shy;kort endnu. Jeg formoder de fleste
+Circle&nbsp;K-&#8203;ladere i Danmark fungerer med betal&shy;ings&shy;system
+som medierne siger (og som jeg personligt har set hos Circle&nbsp;K
+Framlev&#8203;/&#8203;Harlev vest for Aarhus). For at gøre det værre i Aalborg
+henviser de endda fra den ene defekte/&#8203;deaktiv&shy;erede ladestander til
+den anden.</p>
+
+<p><img class="center" src="/images/posts/CircleK-ude-af-drift.jpg" title="Den ene Circle K-ladestander i Aalborg er ude af drift og henviser til den anden som også er ude af drift" ></p>
+
+<p>Når de engang i maj forhåbentlig har fået mon&shy;teret betalings&shy;systemet
+og genåbnet laderne bliver det skønt med 13 hurtig&shy;ladestik i
+Stor&shy;aalborg fordelt på Q8, Circle&nbsp;K, Clever og E.ON. Men det må siges
+PR-mæssigt at være en fan&shy;tastisk dårlig afslutning på en ellers fantastisk
+god prøve&shy;periode for Circle&nbsp;K i Aalborg.</p>
+
+<a name="Fremtiden"></a>
+<h2>Fremtiden</h2>
+
+<p>Til sommer planlægger Clever at åbne
+<a href="https://via.ritzau.dk/pressemeddelelse/clever-etablerer-nordjyllands-storste-lynladestation?publisherId=12636953&amp;releaseId=13641390">Nord&shy;jyllands største lade&shy;station</a> med 16 stk.
+300&nbsp;kW-&#8203;ladestik i Nørre&shy;sundby. Det blivere mere end en
+fordobling af antallet af hurtig&shy;lade&shy;stik i Stor&shy;aalborg, så det
+bliver godt.</p>
+
+<p>De stigende elpriser spørger også. Clever har varslet prisstigninger fra juni,
+som vil presse deres lynladere (150+&nbsp;kW) op til være marked&shy;ets
+dyreste i løssalg (6,50&nbsp;kr/kWh uden abonnement), endda dyrere end Ionity.
+Dog vil deres 50&nbsp;kW-ladere med 4,75&nbsp;kr/kWh fortsat være blandt de
+billigste, hvilket er dejligt for os med en &ldquo;gammel&shy;dags&rdquo; elbil der ikke
+lader hurtig&shy;ere på en lynlader end på en &ldquo;gammel&shy;dags&rdquo;
+50&nbsp;kW-hurtiglader.</p>
+
+<p>Folk i den indtil videre lukkede Tesla-klub kan også glæde sig over at der
+skulle komme en <a href="https://www.tesla.com/findus/location/supercharger/aalborgsuperchargerq122">Aalborg Supercharger</a> i tredje kvartal i år.</p>
+
+<p>Ud over hurtigladning er destinations&shy;ladning (mens man holder parkeret i
+flere timer) også blevet bedre i Aalborg i april, og står til at blive endnu
+bedre snart. Det kommer i mit <a href="/2022/06/11/bedre-elbilsladning-i-aalborg/">næste indlæg</a>.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Motorvejsladning [Danish]]]></title>
+    <link href="http://blog.erw.dk/2021/06/26/motorvejsladning/"/>
+    <updated>2021-06-26T10:25:52+02:00</updated>
+    <id>http://blog.erw.dk/2021/06/26/motorvejsladning</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper'><img class='caption' src='/images/posts/plugshare_map.png' width='' height='' alt='Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.&#8217;><span class='caption-text'>Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.</span></span></p>
+
+<p>En elbil oplades typisk i et roligt tempo mens den er parkeret hjemme, på
+arbejde eller ved en offentlig destinations&shy;lader. Men når man skal køre
+langt benytter man ladere med høj effekt, så man kan komme hurtigt videre.
+Dette indlæg handler om <em>hurtig&shy;ladere</em> i Danmark, med fokus på motorvejen
+mellem Aalborg og København. På de 416&nbsp;km mellem de to byer er der 64
+CCS-stik langs motor&shy;vejen til hurtig&shy;ladning, og nogle flere i byerne
+omkring motor&shy;vejen. Dette er et rigtig godt udgangs&shy;punkt når man
+kører turen, men for at optimere rejsens tid eller pris kan man med fordel
+benytte nogle ladere frem for andre.</p>
+
+<!-- more -->
+
+
+<p>I øvrigt håber jeg at dette indlæg bliver hurtigt forældet, i form af
+forbedringer af infra&shy;struk&shy;turen. For nylig kom for eksempel nyheden
+at Fyn i 2022 får Danmarks <a href="https://via.ritzau.dk/pressemeddelelse/fyn-far-snart-danmarks-storste-lynladestation-til-elbiler?publisherId=12636953&amp;releaseId=13622978">største lyn&shy;ladestation</a> med plads til 28
+elbiler. Det siges også at de kommercielle lade&shy;netværk arbejder på et
+fælles betalings&shy;system der skal gøre det nemmere at bruge landets ladere
+med færre apps og brikker. Men lad os træde et skridt tilbage og fokusere på
+nutiden.</p>
+
+<p>Først er der elbilens <a href="https://da.wikipedia.org/wiki/Videokrigen">&ldquo;VHS/Betamax-konflikt&rdquo;</a> omkring hvilket stik og
+hvilken teknik man bruger når man hurtig&shy;lader elbiler. Elbilernes Betamax
+hedder <em>CHAdeMO</em> og VHS (vinderen) hedder <em>CCS</em> som står for Combined Charging
+System. Der findes stadig mange CHAdeMO-stik rundt om i landet, men nye elbiler
+i EU sælges nu stort set kun med CCS. Der er også Tesla som har deres eget
+system, samtidig med at de afhængig af model og adapter også kan benytte
+offentlige ladere af både CHAdeMO- og CCS-typerne. Jeg vil dog kun fokusere på
+CCS i det følgende.</p>
+
+<p>En <em>hurtig&shy;lader</em> er en lade&shy;stander som tilbyder bilen mindst
+50&nbsp;kW (kilowatt). Det er forskelligt pr. elbil hvor meget af den
+tilgængelige effekt som den kan tage imod. Nogle elbiler kan ikke udnytte
+50&nbsp;kW fuldt ud, mens andre (dyrere) elbiler kan sluge 250&nbsp;kW eller
+mere når det er tilgængeligt. Begrebet <em>lynladning</em> bruges når ladestanderen
+tilbyder mindst 100&nbsp;kW, typisk 150&ndash;350&nbsp;kW.</p>
+
+<a name="Fra.Aalborg.til.K..benhavn"></a>
+<h2>Fra Aalborg til København</h2>
+
+<p>Der er 64 CCS-stik mellem Aalborg og København inden for 1&nbsp;km fra E45 og
+E20. Hvis man kigger op til 5&nbsp;km fra motorvejen er der 13&nbsp;stik mere,
+og op til 10&nbsp;km yderligere 10&nbsp;stik. Og hvis man inkluderer
+rastepladser på &ldquo;den modsatte side&rdquo; kommer der 10 mere, men dem vil jeg ikke
+tælle med da det at anvende sådan en kan medføre en omvej på 10&ndash;30&nbsp;km, da
+man ikke bare lige kan krydse over motorvejen. Jeg tæller heller ikke selve
+Aalborg og København med i de 64 da det er mere normalt at bruge AC-ladning
+(typisk 11&nbsp;kW) når man parkerer nær sin destination. Alt i alt er der en
+rimelig mængde hurtig&shy;ladere langs motorvejen, og nogle ekstra der kan
+bruges som backup hvis der skulle være trængsel ved en af de primære.</p>
+
+<p>De 64 stik er ikke jævnt fordelt. Nogle findes på en enlig stander der også
+ofte inkluderer en til to andre stiktyper, men altså kun ét CCS-stik. Nogle
+steder står to, fire eller flere standere sammen. Og nogle steder er flere
+forskellige netværk/firmaer repræsenteret på samme lokation inden for nogle
+hundrede meter af hinanden. I alt er der 22 lokationer med 1&ndash;10 stik hver, 3 i
+gennem&shy;snit. Over de 416&nbsp;km fra Limfjordsbroen i Aalborg til Langebro
+i København er der i gennemsnit en lokation hver 19&nbsp;km. Lokationerne er
+dog heller ikke jævnt fordelt og spænder fra 2&nbsp;km mellem Nyborg og
+Knudshoved til 46&nbsp;km mellem Haverslev og Randers. I den følgende tabel
+inkluderer jeg også Horsens og Odense der har hurtig&shy;ladere, selvom de ikke
+ligger ud til motorvejen. Tabellen viser <strong>antallet af CCS-stik</strong> fordelt på
+netværk og ladehastighed:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Sted</strong>              </th>
+<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
+<th style="text-align:right;"> <strong>Clever 50&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>E.ON 50&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Clever/E.ON 175&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Ionity 350&nbsp;kW</strong> </th>
+<th style="text-align:right;"> <strong>Hurtige byladere</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Aalborg               </td>
+<td style="text-align:right;">                 28 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    5 </td>
+</tr>
+<tr>
+<td> Himmerland            </td>
+<td style="text-align:right;">                  8 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Haverslev             </td>
+<td style="text-align:right;">                 46 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           2 </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Randers/Gudenåen      </td>
+<td style="text-align:right;">                  6 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Randers/Sdr. Borup    </td>
+<td style="text-align:right;">                 29 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Aarhus/Tilst          </td>
+<td style="text-align:right;">                 14 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    7 </td>
+</tr>
+<tr>
+<td> Skanderborg           </td>
+<td style="text-align:right;">                 13 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Ejer Bavnehøj         </td>
+<td style="text-align:right;">                 12 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Horsens               </td>
+<td style="text-align:right;">                 24 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    3 </td>
+</tr>
+<tr>
+<td> Vejle N               </td>
+<td style="text-align:right;">                  5 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Vejle C               </td>
+<td style="text-align:right;">                  5 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Vejle S/Skærup        </td>
+<td style="text-align:right;">                 17 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Fredericia            </td>
+<td style="text-align:right;">                  4 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Middelfart            </td>
+<td style="text-align:right;">                 30 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> Kildebjerg            </td>
+<td style="text-align:right;">                 11 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Odense                </td>
+<td style="text-align:right;">                 33 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    4 </td>
+</tr>
+<tr>
+<td> Nyborg                </td>
+<td style="text-align:right;">                  2 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                      4 </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Knudshoved            </td>
+<td style="text-align:right;">                 19 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Korsør/Halsskov       </td>
+<td style="text-align:right;">                 16 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                           4 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Slagelse/Antvorskov   </td>
+<td style="text-align:right;">                 18 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                    3 </td>
+</tr>
+<tr>
+<td> Sorø/Tuelsø           </td>
+<td style="text-align:right;">                 12 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Ringsted              </td>
+<td style="text-align:right;">                 24 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Køge                  </td>
+<td style="text-align:right;">                 10 km </td>
+<td style="text-align:right;">                     1 </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Karlslunde            </td>
+<td style="text-align:right;">                  3 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                   1 </td>
+<td style="text-align:right;">                           2 </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                      </td>
+</tr>
+<tr>
+<td> Greve                 </td>
+<td style="text-align:right;">                 28 km </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                     10 </td>
+<td style="text-align:right;">                    1 </td>
+</tr>
+<tr>
+<td> København             </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                     </td>
+<td style="text-align:right;">                             </td>
+<td style="text-align:right;">                        </td>
+<td style="text-align:right;">                  30+ </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Afstanden mellem ladestederne måler jeg mellem de relevante
+motorvejs&shy;afkørsler. Laderne står 0&ndash;1&nbsp;km fra motorvejen, bortset fra
+kategorien &ldquo;Hurtige byladere&rdquo; som jeg bruger om hurtig&shy;ladere der står
+2&ndash;10&nbsp;km fra motorvejen. Byladerne står primært ved indkøbscentre, hvilket
+gør at de oftere end motorvejs&shy;ladere er i brug af folk der bor i
+lokal&shy;området. Desuden kan den P-<wbr>plads de står på være aflåst uden for
+indkøbs&shy;centerets åbningstid. Alle disse ting gør at jeg kun betragter dem
+som en reserveløsning ved motorvejs&shy;rejser. Jeg har ikke optalt
+hurtig&shy;laderne i Stor&shy;københavn præcist, men der er mange. Ud over
+Clever og E.ON findes der bl.a. også hurtige byladere fra fx Spirii, Sperto,
+Circle&nbsp;K og Lidl.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/motorvejsladere.png' width='' height='' alt='Kort over hurtigladere i Aalborg og København, samt langs motorvejen imellem.'><span class='caption-text'>Kort over hurtigladere i Aalborg og København, samt langs motorvejen imellem.</span></span></p>
+
+<a name="Hvilke.ladere.skal.man.v..lge."></a>
+<h2>Hvilke ladere skal man vælge?</h2>
+
+<p>Faktisk behøver man slet ikke at vælge da man kan bruge alle ladere vha. apps
+som kan opsættes på få minutter. Men laderene koster ikke det samme at bruge.
+Et abonnement hos Clever giver adgang til Clevers hurtig&shy;ladere
+(50&nbsp;kW) og Clever og E.ONs <a href="https://poweredby.dk/">fælles</a> lynladere (175&nbsp;kW), i
+tillæg til mange af 50&nbsp;kW-byladerne som også drives af Clever. Hvis man
+betaler efter forbrug, i mod&shy;sætning til fastpris&shy;abonnement, koster
+hurtig&shy;laderne 3,50&nbsp;kr/kWh og lynladerne 5,00&nbsp;kr/kWh. (Ud over
+apps kan man også bestille en ladebrik/RFID-tag som gør det lidt hurtigere at
+starte ladningen på et givet netværk uden at skulle fedte med sin telefon og
+afhænge af internet&shy;forbindelse.)</p>
+
+<p>Et abonnement hos E.ON giver adgang til E.ONs hurtig&shy;ladere og
+Clever/E.ON-lynladerne, samt nogle hurtig&shy;ladere i København. Til forskel
+fra Clever tager E.ON samme pris for hurtig&shy;ladning og lynladning:
+4,90&nbsp;kr/kWh. Hvis man har en elbil som ikke kan udnytte lynladernes høj
+hastighed, er det en ulempe at man ikke kan spare penge ved at holde sig til de
+langsommere hurtig&shy;ladere når man betaler efter forbrug, som hos Clever.
+(Prisen man betaler afhænger kun af den effekt laderen tilbyder, og ikke af den
+effekt bilen aftager.) Omvendt tager E.ON en marginalt lavere kWh-pris end
+Clever for præcis de samme lynladere, igen hvis man ikke har
+fastpris&shy;abonnement. (Jeg har ikke inkluderet priser på
+fastpris&shy;abonnementerne, da de afhænger af flere ting, men de kan ses hos
+<a href="https://clever.dk/produkter/abonnementer/">Clever</a> og <a href="https://www.eon.dk/privat/strom-til-din-elbil.html">E.ON</a>.)</p>
+
+<p>Til sidst er der Ionity som har de hurtigste ladere, men også tager den høje
+pris af 6,20&nbsp;kr/kWh. Prisen kan dog reduceres hvis man har et abonnement
+via en af de bil&shy;producenter der ejer <a href="https://ionity.eu/en/about.html">Ionity</a>: BMW, Ford, Hyundai,
+Mercedes, Volkswagen, Audi og Porsche. Herunder opstiller jeg nogle eksempler
+på hvordan man kan udvælge sine favorit&shy;ladere &mdash; og så have alle de andre
+i reserve:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Foretrukne ladere</strong>      </th>
+<th style="text-align:right;"> <strong>Steder</strong> </th>
+<th style="text-align:right;"> <strong>Stik</strong> </th>
+<th> <strong>Hvis man&hellip;</strong>                                       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Ionity                     </td>
+<td style="text-align:right;">          5 </td>
+<td style="text-align:right;">       26 </td>
+<td> kan udnytte og vil betale for den højeste hastighed   </td>
+</tr>
+<tr>
+<td> Clever/E.ON lynladere      </td>
+<td style="text-align:right;">          5 </td>
+<td style="text-align:right;">       16 </td>
+<td> synes 50 kW er for langsomt men 350 kW er for dyrt    </td>
+</tr>
+<tr>
+<td> E.ON inkl. lynladere       </td>
+<td style="text-align:right;">         16 </td>
+<td style="text-align:right;">       28 </td>
+<td> har fastprisabonnement hos E.ON                       </td>
+</tr>
+<tr>
+<td> Clever inkl. lynladere     </td>
+<td style="text-align:right;">         12 </td>
+<td style="text-align:right;">       26 </td>
+<td> har fastprisabonnement hos Clever                     </td>
+</tr>
+<tr>
+<td> Clever ekskl. lynladere    </td>
+<td style="text-align:right;">         10 </td>
+<td style="text-align:right;">       10 </td>
+<td> betaler efter forbrug og ikke kan udnytte lynladning  </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Jeg har lavet et diagram over om hvornår fastpris&shy;abonnement giver
+mening i <a href="/2021/05/24/3000-km-for-under-100/">dette</a> indlæg. Selv benytter jeg primært Clever ekskl.
+lynladere, da jeg betaler efter forbrug og Hyundai <a href="/2021/05/02/hyundai-ioniq-electric/">IONIQ 2020</a> kun
+har minimal fordel af lynladere. Men hvis jeg havde en bil der kunne udnytte
+dem ville jeg benytte lyn&shy;laderne. Antallene af steder og stik i tabellen
+medtæller kun motorvejs&shy;laderne, men ikke hurtig&shy;laderne i byerne,
+selvom man også får adgang til de fleste af dem med et Clever-abonnement, samt
+nogle i København med et E.ON-abonnement. Desuden giver både E.ON og Clever
+(men ikke Ionity) adgang til en lang række destinations&shy;ladere/AC-ladere
+over hele landet.</p>
+
+<a name="Hvor.mange.opladninger.har.man.behov.for."></a>
+<h2>Hvor mange opladninger har man behov for?</h2>
+
+<p>Et oplagt spørgsmål er hvor mange ladere der er behov for og hvor tæt de skal
+stå. Derfor vil jeg se på hvor mange <em>opladninger</em> man har behov for. Svaret
+afhænger af bilens rækkevidde, som igen afhænger af køre&shy;hastigheden og
+vejret. Med Hyundai IONIQ 2020 som eksempel på en elbil med mellemlav
+række&shy;vidde (typisk <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">200&ndash;300&nbsp;km</a>) kan
+Aalborg&ndash;København køres på 1&ndash;3 oplad&shy;ninger. Hvis vejret er godt
+(15&ndash;25°C) burde man kunne klare turen med én opladning ved at køre med
+100&ndash;110&nbsp;km/t. Jeg forudsætter man starter med fuldt batteri og slutter på
+10% som en sikkerheds&shy;margin mod uforud&shy;sige&shy;ligheder. Opladningen
+efter ankomst kan som regel foretages mens bilen er parkeret ved en
+destinations&shy;lader, uden at man behøver at vente i bilen, men en hurtig
+bylader kan også bruges hvis man vil flytte bilen igen en halv times tid
+senere.</p>
+
+<p>Hvis man synes det er kedeligt at køre under hastigheds&shy;grænsen, kan man
+bare køre turen med 130&nbsp;km/t med to opladninger om sommeren eller tre om
+vinteren. IONIQ 2020 kommer dog ikke så meget hurtigere frem med 130&nbsp;km/t,
+da de ekstra ladestop spiser meget af den vundne tid. Til gengæld får man
+ekstra pauser til at strække ben, gå på toilettet, arbejde, spise, hygge, eller
+hvad man nu har lyst til. Hvis man synes ovenstående lyder undervældende, så
+kan elbiler med større række&shy;vidde og hurtigere ladning heldigvis klare sig
+med færre og kortere ladepauser:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Bilmodel</strong>                         </th>
+<th style="text-align:right;"> <strong>Batteri</strong>      </th>
+<th style="text-align:right;"> <strong>Ladestop</strong> </th>
+<th style="text-align:right;"> <strong>Ladetid</strong> </th>
+<th style="text-align:right;"> <strong>Køretid</strong> </th>
+<th style="text-align:right;"> <strong>Samlet</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Mazda&nbsp;MX-30                     </td>
+<td style="text-align:right;">      30&nbsp;kWh </td>
+<td style="text-align:right;">            4 </td>
+<td style="text-align:right;">        2:22 </td>
+<td style="text-align:right;">        4:12 </td>
+<td style="text-align:right;">       6:35 </td>
+</tr>
+<tr>
+<td> Hyundai&nbsp;IONIQ                   </td>
+<td style="text-align:right;">      38&nbsp;kWh </td>
+<td style="text-align:right;">            2 </td>
+<td style="text-align:right;">        1:08 </td>
+<td style="text-align:right;">        3:52 </td>
+<td style="text-align:right;">       5:00 </td>
+</tr>
+<tr>
+<td> Volkswagen&nbsp;ID.3&nbsp;Pro        </td>
+<td style="text-align:right;">      58&nbsp;kWh </td>
+<td style="text-align:right;">            2 </td>
+<td style="text-align:right;">        0:24 </td>
+<td style="text-align:right;">        3:54 </td>
+<td style="text-align:right;">       4:18 </td>
+</tr>
+<tr>
+<td> Volkswagen&nbsp;ID.3&nbsp;Pro&nbsp;S </td>
+<td style="text-align:right;">      77&nbsp;kWh </td>
+<td style="text-align:right;">            1 </td>
+<td style="text-align:right;">        0:08 </td>
+<td style="text-align:right;">        3:45 </td>
+<td style="text-align:right;">       3:54 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Jeg brugte <a href="https://abetterrouteplanner.com/">A Better Routeplanner</a> til at sammenligne turen for
+nogle forskellige bilmodeller, med resultaterne i tabellen herover. De bedste
+elbiler på markedet i dag er allerede der hvor mange mennesker har behov for
+flere pauser end bilen har. Og i øvrigt kan de dyrere elbiler ofte også selv
+medregne den nødvendige opladning i deres navigations&shy;system, så man ikke
+selv behøver planlægge opladningen på turen. Men hvis vi vender tilbage til de
+billigere elbiler der skal lade oftere, så er det specielt vigtigt at der er
+nok ladere med jævne mellemrum.</p>
+
+<a name="Hvor.mange.ladere.er.der.behov.for."></a>
+<h2>Hvor mange ladere er der behov for?</h2>
+
+<p>Jo nemmere det er at lade, jo mere attraktivt er det at køre elbil. For at det
+skal være rigtig nemt skal der bl.a. være nok ladere til at der altid er én
+ledig når man skal bruge den, der hvor man skal bruge den, således at man ikke
+behøver at planlægge turen på forhånd.</p>
+
+<p>Allerede nu er der en god mængde ladestandere i forhold til antallet af elbiler
+på vejene. Men efter&shy;hånden som antallet af ladere og elbiler stiger
+forventer jeg at det bliver lidt mere forud&shy;sige&shy;ligt at
+hurtig&shy;lade. Lige nu er situationen nemlig at mange af ladestanderne er
+enkelt&shy;stående. I min begrænsede erfaring er de enkelt&shy;stående
+ladestanderne på raste&shy;pladserne som regel ledige når jeg ankommer, men
+<em>når</em> en lader er optaget, ved man ikke om det tager 3 eller 30 minutter før
+den bliver ledig. Med mindre man er heldig at kunne snakke med den ladende
+elbilist, og det viser sig at denne næsten er færdig med at lade, så kan det
+være spild af tid at holde og vente. Derfor er det usmart at ankomme til en
+enkelt&shy;stående lader med meget lavt batteri, og derfor er det stadig en
+fordel at planlægge sin tur på forhånd, i hvert fald hvis man har noget man
+skal nå i den anden ende. Nogle synes det er sjovt at nørde med
+planlæg&shy;ningen, men flertallet vil nok foretrække ikke at være afhængige af
+at skulle gøre det.</p>
+
+<p>I øvrigt kan det være en streg i regningen hvis en enkelt&shy;stående lader er
+i stykker &mdash; det kan desværre ske. Clever og E.ON tilbyder
+<a href="https://clever.dk/produkter/abonnementer/clever-unlimited-network/">mobilitets&shy;garanti</a>/<wbr><a href="https://www.eon.dk/privat/strom-til-din-elbil/oplad-i-netvaerk/bestil-drive-free.html#Vej">vejhjælp</a> i
+tilfælde af en defekt lader, men den kræver at man både er abonnent og har
+tjekket inden ankomst at laderen ikke allerede er fejl&shy;meldt (mere
+plan&shy;lægning). Og garanti eller ej, så tilføjer vejhjælp en større
+forsinkelse. Som alter&shy;nativ til de enkelt&shy;stående standere kan man gå
+efter ladesteder med mange stik på samme sted:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th> <strong>Sted</strong>           </th>
+<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
+<th style="text-align:right;"> <strong>Antal stik ved motorvej</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Aalborg            </td>
+<td style="text-align:right;">                 36 km </td>
+<td style="text-align:right;">                             </td>
+</tr>
+<tr>
+<td> Haverslev          </td>
+<td style="text-align:right;">                 95 km </td>
+<td style="text-align:right;">                           7 </td>
+</tr>
+<tr>
+<td> Skanderborg        </td>
+<td style="text-align:right;">                 76 km </td>
+<td style="text-align:right;">                           4 </td>
+</tr>
+<tr>
+<td> Fredericia         </td>
+<td style="text-align:right;">                 79 km </td>
+<td style="text-align:right;">                           8 </td>
+</tr>
+<tr>
+<td> Nyborg+Knudshoved  </td>
+<td style="text-align:right;">                 20 km </td>
+<td style="text-align:right;">                          10 </td>
+</tr>
+<tr>
+<td> Halsskov           </td>
+<td style="text-align:right;">                 82 km </td>
+<td style="text-align:right;">                           5 </td>
+</tr>
+<tr>
+<td> Greve+Karlslunde   </td>
+<td style="text-align:right;">                 30 km </td>
+<td style="text-align:right;">                          13 </td>
+</tr>
+<tr>
+<td> København          </td>
+<td style="text-align:right;">                       </td>
+<td style="text-align:right;">                             </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /> Fordelen er at en optaget eller evt. defekt lader er et meget mindre
+problem, og at der nok snart bliver en ledig plads, hvis der ikke allerede er
+det når man ankommer. De fleste af disse mange ladere er også de hurtigste (og
+dyreste), hvilket kan være et plus eller et minus afhængig af ens bil og
+abonnement. Da der er længere imellem stederne med mange stik er det også godt
+at være bevidst om hvor man skal huske at lade (hvis bilen ikke selv guider dig
+via navigations&shy;systemet).</p>
+
+<a name="Fremtiden"></a>
+<h2>Fremtiden</h2>
+
+<p>Efterhånden som der kommer flere elbiler er der også behov for flere ladere, og
+omvendt. Det er en hønen og ægget-situation, men heldigvis står det ikke
+stille. Clever udmeldte i oktober 2020 at de vil etablere
+<a href="https://via.ritzau.dk/pressemeddelelse/clever-vil-etablere-flere-end-10000-offentlige-ladepunkter-til-elbiler-inden-udgangen-af-2025?publisherId=12636953&amp;releaseId=13602758">10.000</a> nye ladepunkter inden udgangen af 2025, hvoraf 500 skal
+være lyn&shy;ladere og 100 skal være normale hurtig&shy;ladere. På kortere sigt
+opsætter Circle&nbsp;K og OK hurtig&shy;ladere ved deres tankstationer.
+Circle&nbsp;K har allerede bygget fire lynlade&shy;stationer (med mindst to
+CCS-stik hver) og har yderligere 14 stationer <a href="https://www.circlek.dk/el">planlagt i år</a>. Man kan
+se nogle af disse, samt nogle fra OK og Lidl, under &ldquo;coming soon&rdquo; på
+<a href="https://www.plugshare.com/">PlugShare</a>. Det var først for nylig at jeg på denne måde opdagede
+Circle&nbsp;K-<wbr>lynladeren i Aalborg. Det viser sig endda at den er gratis
+at benytte i en prøveperiode der ind til videre har varet et halvt år!</p>
+
+<p>Langs motorvejen håber jeg at nogle af de eksisterende enkelt&shy;stående
+ladere får en makker, så der kommer et ekstra CCS-stik på stedet. Der kunne
+også godt bruges enkelte nye lokationer mellem Aalborg og København. De
+46&nbsp;km mellem Haverslev i Nordjylland og Gudenåen-raste&shy;pladserne ved
+Randers kunne halveres ved at placere en ladestation ved motorvejen nær Hobro.
+De 74&nbsp;km over Fyn mellem Middelfart og Nyborg kunne også bruge mere end
+den ene nuværende opladnings&shy;mulighed på Kildebjerg-rastepladserne, men
+heldigvis skulle der jo være <a href="https://via.ritzau.dk/pressemeddelelse/fyn-far-snart-danmarks-storste-lynladestation-til-elbiler?publisherId=12636953&amp;releaseId=13622978">28 nye lynladere</a> på vej ved motorvejen nær
+Odense.</p>
+
+<p>Det er ikke kun gennemrejsende der får glæde af de nye lynladere ved Odense.
+Lokale beboere, ikke mindst dem der ikke kan få egen hjemmelader, kan benytte
+hurtig&shy;ladere i nærheden som alternativ eller supplement til
+destinations&shy;laderne, specielt ind til mængden af destinations&shy;ladere
+<a href="https://www.tv2lorry.dk/koebenhavn/markant-flere-ladestandere-til-elbiler-kan-vaere-paa-vej-til-hovedstaden">forhåbentlig</a> kommer til at stige i fremtiden.</p>
+
+<p>Selvom der er plads til mange forbedringer er det allerede nu forholdsvis nemt
+at køre elbil for mange danskere, specielt de mange der bor i hus. Selv bor vi
+i lejlighed og klarer det også fint. Der er selvfølgelig nogle for hvem det
+stadig vil være upraktisk, men for de mange med et normalt kørselsbehov vil jeg
+foreslå at springe plugin-hybriden over og gå direkte til ren el. For miljøets
+skyld, og for <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">pengenes skyld</a>.</p>
+
+<p>Fordi det hele virkede nyt og ukendt valgte vi Hyundai
+<a href="https://www.hyundai.dk/privatleasing">privatleasing</a> hvor man kun er bundet i ét år, i
+modsætning til de fleste firmaer jeg har fundet som binder én i tre år.
+Volkswagen har også et koncept hvor man kan lease en ID.3 i
+<a href="https://app.volkswagen.dk/app/web/privat/go/konfigurer/?id=2075">seks måneder</a>. Men nu hvor jeg er blevet vant til elbil tænker
+jeg ikke på at slippe af med den igen &mdash; jeg glæder mig bare til næste gang
+jeg skal ud at køre.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3000 km for under €100]]></title>
+    <link href="http://blog.erw.dk/2021/05/24/3000-km-for-under-100/"/>
+    <updated>2021-05-24T15:40:00+02:00</updated>
+    <id>http://blog.erw.dk/2021/05/24/3000-km-for-under-100</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/hyundai_ioniq_electric_2020_charging.jpg"></p>
+
+<p>Getting an electric vehicle while living in an apartment was a bit of an
+experiment. Public charging is still a bit rough around the edges, but it
+turned out manageable, and in fact quite cheap, with the help from some free
+charging. Here&rsquo;s my experience with EV charging in the past six months.</p>
+
+<!-- more -->
+
+
+<p>From November to April I drove our <a href="/2021/05/02/hyundai-ioniq-electric/">Hyundai IONIQ Electric</a>
+<strong>3034 km (1885 mi)</strong> while keeping a charging log. I charged 37 times in
+total, on average from 56% to 92% state of charge. This covered various
+situations such as a small top-up to 100% before a long trip, a motorway
+fast-charge up to at most 80%, a full recharge after a long trip (the biggest
+being 11%->100%), and various city charging in between. Some of the charging
+sessions were tests to try out the various charger types and charging networks
+to get comfortable with the process.</p>
+
+<p>Disregarding the tests, I charged on average every <strong>100 km (62 mi)</strong>. On long
+trips I gradually became more comfortable with going farther between charges,
+with the longest stretch being <strong>263 km (163 mi)</strong> in the spring. But for city
+charging with a limited number of public chargers, it remains practical to
+charge when the opportunity arises, without running down to a low state of
+charge each time.</p>
+
+<a name="Charging.in.the.City"></a>
+<h2>Charging in the City</h2>
+
+<p>Most charging sessions were on slow destination chargers, and most were in
+Aalborg where we live. We rely on public chargers as we live in an apartment
+and don&rsquo;t have our own home charger. It works like this: Drive to a charger,
+find a free socket, plug in, and walk 10&ndash;20 minutes home or to work. Later, I
+walk back to pick up the car when I need it again, or when it&rsquo;s done charging.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/hyundai_ioniq_electric_2020_charging_dash.jpg' width='' height='' alt='Remaining charging time at a slow charger.'><span class='caption-text'>Remaining charging time at a slow charger.</span></span></p>
+
+<p>A home charger would be much easier to use, but for city dwellers with EVs,
+this is how it works at the moment (unless you drive to work and that workplace
+has chargers available). Each city and town will be different in the density,
+availability, and reliability of public chargers, and improving this
+infrastructure will be an undertaking for the next many years.</p>
+
+<p>Going back and forth to the charger takes a bit of time, but the walk is
+healthy. However, driving in vain to find all charger sockets in use is
+annoying. For commercial chargers, you can usually look up their availability
+status online before going, but not all chargers are commercial, as we&rsquo;ll get
+to later. In practice, sharing a limited number of public chargers takes a bit
+of foresight. If I know I&rsquo;m going on a long trip, I start trying to charge up
+to 100% a few days in advance, so there&rsquo;s time to come back later if the
+chargers are all in use the first time around. Another option would be to use
+fast-chargers (more) on the trip, but the IONIQ&rsquo;s fast-charging speed is not as
+good as many other EVs in that regard.</p>
+
+<a name="Parking.Problems"></a>
+<h2>Parking Problems</h2>
+
+<p>You shouldn&rsquo;t block a public charger if you&rsquo;re not using it &mdash; that is
+etiquette and usually also part of parking regulations. But it can also make
+using public destination chargers a hassle. If you plug in to charge late in
+the evening, it might be that the charging will finish in the middle of the
+night. Do you get up to move the car in the middle of the night? Do you skip
+charging altogether? (Probably not.) Do you pick up your car some time the next
+morning, hoping to get there before the parking attendant and other EV drivers
+in need of some juice? (Perhaps.) I try to plan my charging so I don&rsquo;t block
+the charger unnecessarily, but it&rsquo;s not always practical to do so, neither for
+me nor other EV drivers.</p>
+
+<p>For EVs to become mainstream, I think the charging situation needs to become
+easier and require much less planning. As a start, the parking rules could be
+relaxed so the parking-only-while-charging requirement doesn&rsquo;t apply at night.
+Ideally there should be enough parking spaces that you could leave your car
+some extra time after charging finishes while someone else could take over the
+socket you used. Such a grace period would also be helpful when you want to
+charge to 100%, because the car&rsquo;s estimation of when the charging will finish
+can be a bit off.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/ev_parking_signs.jpg' width='' height='' alt='Some EV parking signs in Danish. (Elbil is the Scandinavian word for <strong>el</strong>ectric automo<strong>bil</strong>e.)&#8217;><span class='caption-text'>Some EV parking signs in Danish. (Elbil is the Scandinavian word for <strong>el</strong>ectric automo<strong>bil</strong>e.)</span></span></p>
+
+<p>In other situations, the parking time is limited. There is a parking lot in
+Aalborg where the two EV spots have a two hour limit but their charging sockets
+supply at most 11&ndash;12 amps. It&rsquo;s nice to have a few parking spaces that are
+reserved for EVs, but with those sockets the charging itself is almost
+inconsequential since you add at most 15 km (9 mi) of range per hour. That&rsquo;s
+like going to the gas station for only 1 liter of gas!</p>
+
+<p>In another place they had 11 kW outlets and a three hour parking limit. That
+will get you far if your EV has a matching 11 kW on-board charger (OBC) which
+adds range at up to 60 km/h (37 mph). A plug-in hybrid/PHEV can also typically
+fill up its smaller battery completely in three hours. But for cheaper EVs with
+slow OBCs like the IONIQ, you&rsquo;ll get at most 20 km/h (12 mph). I think
+something needs to be done here to improve the situation for social equality in
+EV adoption. The solution at Aalborg Zoo is nice: &ldquo;No time limit while
+charging&rdquo;. That way, all EVs get the opportunity to add meaningful range, while
+still not allowing blocking the parking spot unnecessarily. The last part just
+requires parking attendants to check the charging status and not just the
+parking disc. I&rsquo;m not sure, but I have the impression that many parking
+attendants don&rsquo;t yet understand or care about EV charging.</p>
+
+<p>Another problem is when many of the public chargers are placed in expensive
+parking garages. It might be okay to use them once in a while when out of town,
+but when you live in an apartment and rely on local destination chargers in
+your daily life, you definitely don&rsquo;t want to pay €15 for an eight-hour
+charging session &mdash; on top of the charging cost. Despite these problems, using
+an EV in Aalborg and Denmark works fine, and the charging has in fact been very
+cheap as we&rsquo;ll get to soon.</p>
+
+<a name="Energy.and.Efficiency"></a>
+<h2>Energy and Efficiency</h2>
+
+<p>In total I drove 3034 km (1885 mi) using an estimated 524 kWh of energy, or a
+bit less than 14 full charges of the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">38.3 kWh</a> battery pack.
+That comes out to <strong>5.79 km/kWh (3.60 mi/kWh)</strong>, or 17.3 kWh/100km (27.8
+kWh/100mi). This was for the Danish winter half-year, using Continental
+AllSeasonContact tires, and my driving comprising 40% city, 20% open road, and
+40% motorway. It also gives the average range of 222 km (138 mi) from a full
+charge for these conditions.
+As described in my <a href="/2021/05/02/hyundai-ioniq-electric/">previous post</a>, efficiency and range
+depend heavily on speed and weather. Also, some of the driving was economical
+but I also did a lot of unnecessary (but fun!) acceleration.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/hyundai_ioniq_electric_2020_info_dash.jpg' width='' height='' alt='Economical driving from Odense to Aalborg, Denmark.'><span class='caption-text'>Economical driving from Odense to Aalborg, Denmark.</span></span></p>
+
+<p>There are two things to add. First, the total energy is not only used while
+driving. The IONIQ, like regular cars, has a 12 V battery that discharges over
+time. The IONIQ, unlike regular cars, can keep the 12 V battery in shape
+automatically, using a bit of juice from the main driving battery. This will
+take around one percentage point of charge from the main battery per week, at
+least when it&rsquo;s freezing. My calculated average efficiency and range includes
+half a year of parking, so during driving alone, the efficiency and range is a
+tiny bit better than the numbers above indicate.</p>
+
+<p>Second, it&rsquo;s not all the energy that comes through the charging cable that
+makes it to the battery. During charging, some electricity is lost as heat,
+plus the car needs some electronics running, and it might even spend energy on
+battery cooling or heating to optimize the charging speed, depending on the car
+model. The loss is around 10&ndash;15%. So getting 524 kWh into the IONIQ will
+actually have required around <strong>600 kWh</strong> in total. Let&rsquo;s see what this means
+for the cost.</p>
+
+<a name="Cost.Complexity"></a>
+<h2>Cost Complexity</h2>
+
+<p>EV charging prices vary a lot, at least in Denmark where legislation is
+complicated. Most EV price calculations I&rsquo;ve read assume you will install a
+home charger, but for many city dwellers that is not an option, so I will
+instead exclude home charging. That removes some of the complexity of EV
+charging prices, including home charger installation, home charger purchase vs.
+rental, combined home and public charger subscription, time dependent
+electricity tariffs, electricity tax refunds, and interaction between tax
+refunds and the use of solar panels and geothermal heat pumps.</p>
+
+<p>Public charging is still complicated, though: Pay per kWh or a fixed price per
+month, or somewhere in between. Use one provider, or multiple, or a meta
+provider, or somewhere in between. For fast-charging, the price can depend on
+the charging speed, or potential partnerships between EV manufacturers and
+charging providers. In some countries you also pay per minute.</p>
+
+<p>You can also be lucky and have access to free charging. Our municipality has a
+few sockets in Aalborg for free EV charging, which is a nice &ldquo;carrot&rdquo; for EV
+adoption. Some hotels and supermarkets have free charging. For example, Lidl
+supermarkets have free chargers in some countries and are getting it in
+Denmark. Car manufacturers also sometimes offer some free charging. Hyundai
+started giving away six months of free charging with new leases, less than a
+week after we got our IONIQ. Tesla also sometimes gives away free charging.</p>
+
+<a name="Charging.Cost.in.Denmark"></a>
+<h2>Charging Cost in Denmark</h2>
+
+<p>As mentioned in the previous section, there are many possibilities. Here I will
+compare what I do with a few simple alternatives. Blessed with tax-paid
+electricity in Aalborg, I mainly use those free sockets when at &ldquo;home&rdquo; &mdash; a
+15-minute walk from our apartment. When all the free spots are taken, or when
+out of town, I use the <em>Clever</em> charging network, with other networks such as
+<em>E.ON</em>, <em>Spirii</em> and <em>Ionity</em> as possible backups. Because I don&rsquo;t use the
+commercial operators so much, it&rsquo;s cheaper to pay by the kWh instead of using a
+flat rate subscription.</p>
+
+<p>In the last six months I paid only 676 DKK (€91 or $111) for 191 kWh, while
+getting the remaining ~409 kWh for free. However, not everyone has the
+privilege (or patience) to use free charging, so I&rsquo;m going to show some
+alternatives. Electricity prices and taxes vary by country, so I&rsquo;m not going to
+convert the following prices as they are not directly comparable to other
+countries anyway. But here are the current prices in <strong>DKK/kWh</strong> for some
+charging network products and charger speeds (with Aalborg Municipality thrown
+in so you can see that my free charging is also slow charging):</p>
+
+<div class="next-table-sidescroll"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Charger&nbsp;power</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Aalborg</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Clever&nbsp;Go</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>E.ON&nbsp;Drive&nbsp;Lite</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spirii&nbsp;Go</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Ionity&nbsp;(guest)</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">            <strong>2&ndash;3 kW</strong> </td>
+<td style="text-align:right;">                                0.00 </td>
+<td style="text-align:right;">                                          - </td>
+<td style="text-align:right;">                                                     - </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                               - </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>11&ndash;43 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                       3.50 </td>
+<td style="text-align:right;">                                                  3.50 </td>
+<td style="text-align:right;">                                             2.25&ndash;3.75 </td>
+<td style="text-align:right;">                                               - </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>50&ndash;75 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                       3.50 </td>
+<td style="text-align:right;">                                                  4.90 </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                               - </td>
+</tr>
+<tr>
+<td style="text-align:right;">        <strong>100&ndash;350 kW</strong> </td>
+<td style="text-align:right;">                                   - </td>
+<td style="text-align:right;">                                       5.00 </td>
+<td style="text-align:right;">                                                  4.90 </td>
+<td style="text-align:right;">                                                      - </td>
+<td style="text-align:right;">                                            6.20 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+By mixing some of the above speeds and networks, you&rsquo;ll end up with an average
+price per kWh. If you only use public chargers, you might end up at 3&ndash;5
+DKK/kWh and if you can mix in free charging, you can get under 3 DKK/kWh. My
+average was just over 1 DKK/kWh for the past six months. I&rsquo;m using these rates
+in the following graph, which also includes a typical 650 DKK/month flat rate
+subscription without a home charger included.</p>
+
+<p><img class="center" src="/images/posts/ev_charging_cost_dk.png"></p>
+
+<p>I made the chart based on a consumption of 5 km/kWh including charging loss,
+corresponding to the 5.8 km/kWh vehicle consumption that I got for the Danish
+winter half-year. In comparison, every time the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Hyundai IONIQ</a>
+drives 5 km, the <a href="https://ev-database.org/car/1337/Mercedes-EQC-400-4MATIC">Mercedes EQC</a> will drive 4 km, and the
+<a href="https://ev-database.org/car/1272/Audi-e-tron-S-Sportback-55-quattro">Audi e-tron S Sportback</a> will drive 3 km using the same energy.
+However, the majority of <a href="https://ev-database.org/compare/efficiency-electric-vehicle-most-efficient">EVs</a> fall somewhere between the EQC
+and the IONIQ &mdash; including Audi&rsquo;s upcoming Q4 models, and the very-long-range
+Mercedes EQS.</p>
+
+<p>The chart shows that what is cheapest depends heavily on your driving.
+Long-distance drivers will profit greatly from a flat rate subscription, while
+I would pay 5&ndash;6 times as much as I currently do. Before getting the IONIQ, I
+didn&rsquo;t know it would end up like this &mdash; I just knew I wanted to support the
+push toward a greener future (and try out some cool tech while at it). And
+while charging turned out way cheaper than gasoline, the total cost still could
+have been lower by choosing a conventional car with a weaker internal
+combustion engine and a manual transmission. But for comparable cars driving an
+average 20,000 km/year or 16,000 mi/year, EVs already have ample opportunity to
+have a lower total cost of ownership in <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">Denmark</a> as well as
+the <a href="https://www.nytimes.com/interactive/2021/01/15/climate/electric-car-cost.html">USA</a>.</p>
+
+<p><em>Update 2021-06-26: Minor fixes.</em></p>
+]]></content>
+  </entry>
+  
+</feed>

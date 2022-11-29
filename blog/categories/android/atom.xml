@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: android | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2022-11-29T22:59:50+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AAWireless First Impressions]]></title>
+    <link href="http://blog.erw.dk/2022/06/04/aawireless-first-impressions/"/>
+    <updated>2022-06-04T21:20:37+02:00</updated>
+    <id>http://blog.erw.dk/2022/06/04/aawireless-first-impressions</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/aawireless.jpg" width="375" title="Picture shows a car infotainment screen with Google Maps as well as the small AAWireless device plugged in to the car&rsquo;s USB port" ></p>
+
+<p>My <a href="/2021/05/02/hyundai-ioniq-electric/">car</a> supports Android Auto which lets me connect my smartphone and
+use the phone&rsquo;s apps on the car&rsquo;s infotainment system including touchscreen,
+speakers and microphone. Examples include Google Maps for navigation and
+Spotify for music, as well as Google Assistant voice commands.</p>
+
+<p>It normally requires a wired USB connection between phone and car, but
+<a href="https://www.aawireless.io/">AAWireless</a> is a device that acts as a wireless bridge between
+phone and car while the device stays plugged in to the car, so your phone can
+stay in your pocket or bag. I&rsquo;m happy so say it works well so far.</p>
+
+<!-- more -->
+
+
+<p>With the product being crowdfunded, and just being a consumer electronic
+product in general, I was prepared for some problems. To my pleasant surprise,
+the product Just Works for me. After the initial Bluetooth pairing, the device
+connects quickly when I turn the car on, and the car&rsquo;s touchscreen is
+responsive. I did not use the accompanying <a href="https://play.google.com/store/apps/details?id=app.aawireless">app</a> to configure or update
+the device, as it was not necessary for me, and because I didn&rsquo;t want the app
+to update the device&rsquo;s firmware, as some reviews complained about problems with
+a recent version of the firmware.</p>
+
+<p>The AAWireless device uses less than 1&nbsp;W of power from the wired USB
+connection which is nice. I don&rsquo;t know how the phone&rsquo;s power consumption is
+affected and I have not yet tried longer trips with the AAWireless. But based
+on my limited experience with it, I&rsquo;m happy with the purchase.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Assistant Currently Unavailable for This Language]]></title>
+    <link href="http://blog.erw.dk/2019/05/31/google-assistant-currently-unavailable-for-this-language/"/>
+    <updated>2019-05-31T11:28:46+02:00</updated>
+    <id>http://blog.erw.dk/2019/05/31/google-assistant-currently-unavailable-for-this-language</id>
+    <content type="html"><![CDATA[<p>One day I said &ldquo;Hey Google&rdquo; and my <a href="/2017/11/19/google-pixel-2-first-impressions/">Pixel</a> didn&rsquo;t respond. After a few
+more unsuccessful tries I went into the settings and saw that Voice Match &mdash;
+the feature that lets you activate Google Assistant by voice &mdash; &ldquo;is currently
+unavailable for this language&rdquo;. I found this strange since the language was set
+to <strong>English</strong>, and it used to work. Now, neither US nor UK English, nor
+Danish, could make it work.</p>
+
+<p><img class="center" src="/images/posts/google_assistant_voice_match_unavailable.png"></p>
+
+<p>I googled the problem and found lots of tips, but none of them worked. Later
+I found a solution, that I&rsquo;ll post here in the hopes of helping someone else.</p>
+
+<!-- more -->
+
+
+<a name="Toward.The.Solution"></a>
+<h2>Toward The Solution</h2>
+
+<p>Before I found the solution I checked several things after googling the
+problem. I confirmed that the microphone did work in other apps. In fact, it
+even worked in the Google app itself when activated by touch instead of voice.
+I didn&rsquo;t have other voice assistants installed that could somehow conflict with
+Google Assistant. I couldn&rsquo;t retrain the voice model as some recommended since
+the whole Voice Match feature was unavailable. I tried rebooting, uninstalling
+Google app updates, clearing its cache, reinstalling the updates, rebooting
+some more, all to no avail.</p>
+
+<p><img class="right" src="/images/posts/google_assistant_android_language_preferences.png"></p>
+
+<p>Besides the system Voice settings&#8217; language preferences, the Google app&rsquo;s
+Assistant settings also have language preferences. Here, I also had English
+(tried both US and UK), so that couldn&rsquo;t be the unsupported language either.
+Finally I went to the system settings&#8217; main language preferences, which are
+a <em>third</em> language setting in the same Google/Android ecosystem. My main
+language was set to &ldquo;English (Denmark)&rdquo;.</p>
+
+<a name="Solution"></a>
+<h2>Solution</h2>
+
+<p>It&rsquo;s not enough to use a supported language, the regional variant also has to
+be supported and set in the correct one out of three sets of language
+preferences. &ldquo;English (Denmark)&rdquo; doesn&rsquo;t work, but setting the main system
+language preferences&#8217; top or only language to &ldquo;English (United States)&rdquo; does.
+Presumably English from other primarily English-speaking regions works as well.</p>
+
+<p><strong>After changing my <em>main</em> system language to &ldquo;English (United States)&rdquo;
+I could now activate Voice Match a.k.a. &ldquo;OK Google&rdquo;/&ldquo;Hey Google&rdquo;.</strong></p>
+
+<a name="Problems"></a>
+<h2>Problems</h2>
+
+<p>The above is more of a hack than an actual solution, because it prevents me
+from using Danish regional (time, date, number, etc.) formats on Android while
+using Voice Match.</p>
+
+<p>When I got my Pixel 2 I had set it myself to &ldquo;English (United States)&rdquo;. This
+worked fine until I later installed Google Fit and wanted its calendar view to
+use Monday as the first day of the week, rather than Sunday. The app didn&rsquo;t
+have it&rsquo;s own setting for this, but it worked after I changed the main system
+language to &ldquo;English (Denmark)&rdquo;. I don&rsquo;t use Google Assistant every day, so
+when &ldquo;Hey Google&rdquo; later didn&rsquo;t work, I didn&rsquo;t immediately make the connection
+to the region change.</p>
+
+<p>If the original error message had been &ldquo;This feature is currently unavailable
+for <em>English (Denmark)</em>&rdquo;, rather than the generic &ldquo;this language&rdquo;, it would
+have been much easier to fix. Even better, Android should use the Voice
+settings&#8217; language as the voice language. Or the Assistant settings&#8217; language
+as the assistant language. Or stop having so many language settings! Or let
+Voice Match fall back to a supported language variant if the chosen one is
+unsupported.</p>
+
+<a name="More.Problems"></a>
+<h2>More Problems</h2>
+
+<p>Speaking of Google Assistant problems, I just <a href="https://www.theguardian.com/technology/2019/may/28/a-white-collar-sweatshop-google-assistant-contractors-allege-wage-theft">read</a> that many of the
+linguists that helped create Google Assistant were treated with mistrust and
+being paid less than 20% of what permanent staff makes, while also expected to
+do unlogged overtime. I appreciate that not all skills are in equal demand, and
+therefore pay, but that&rsquo;s no excuse to treat people with a lack of respect <em>on
+top of</em> low pay and inferior health insurance. I think Google should choose to
+treat <em>all</em> its workers with dignity. #DontBeEvil</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android 9 Impressions]]></title>
+    <link href="http://blog.erw.dk/2018/11/06/android-9-impressions/"/>
+    <updated>2018-11-06T08:43:18+01:00</updated>
+    <id>http://blog.erw.dk/2018/11/06/android-9-impressions</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/posts/android9_homescreen.png"></p>
+
+<p>Last year I got the <a href="/2017/11/19/google-pixel-2-first-impressions/">Google Pixel 2</a> smartphone to try the pure Android
+experience. It took a bit of time to get used to but I have come to appreciate
+its simplicity and cleanness. But the main purpose was getting OS updates
+directly from Google, without waiting for the OEMs. Besides monthly security
+updates, the new Android 9 came in August. Here are my impressions after two
+months, including Gesture Navigation, the Overview, Adaptive Battery, and
+Digital Wellbeing, as well as my thoughts on the Pixel 2 after a year.</p>
+
+<!-- more -->
+
+
+<a name="Pixel.2.a.Year.Later"></a>
+<h2>Pixel 2 a Year Later</h2>
+
+<p>The two things I initially liked best about the Pixel 2 are still the best: The
+speed and the screen. The speed and responsiveness of the device is still
+amazing one year and OS update later. This is what using a computer &mdash; because
+a smartphone is a computer &mdash; in 2018 should feel like. (Running Windows 10 on
+a laptop does, incidentally, not feel like 2018.)</p>
+
+<p>The brightness range of the screen is also still great. Not perfect, but
+I certainly find myself needing <a href="https://play.google.com/store/apps/details?id=com.haxor">Screen Filter</a> less often than
+before I got an OLED screen. The always-on screen feature that shows the time
+and notifications when the screen is &ldquo;off&rdquo; was also neat at first, but I&rsquo;ve
+since grown so accustomed to it that a device that doesn&rsquo;t have it now feels
+antiquated. Similarly, the fingerprint sensor on the back was ok at first but
+now makes the phone feel like a natural extension of my hand
+(<a href="https://www.theguardian.com/society/shortcuts/2018/oct/30/get-a-grip-are-smartphones-ruining-our-manual-dexterity">for better or worse</a>).
+And unlike the <a href="https://youtu.be/hrHf6XQpmk0?t=94">in-screen fingerprint sensor</a> of the new OnePlus 6T, the
+traditional sensor does not blind you with its bright light at night.</p>
+
+<p>The camera and speakers are still great, and I can still get through the day
+with battery left to spare. To mention a few negatives, the volume rocker is
+still too stiff, and I&rsquo;ve disabled the Active Edge squeeze feature completely
+as it was more likely to be activated accidentally than when I actually needed
+it.</p>
+
+<a name="Android.9"></a>
+<h2>Android 9</h2>
+
+<p>Android 9 was released in August. Installing the update was extremely fast,
+just like booting up the Pixel 2 was when I first turned it on a year ago.
+Again, this feels like 2018. Other improvements made me wonder why they weren&rsquo;t
+made sooner. The sound volume control now defaults to controlling media volume
+instead of ringer volume, also when no media is playing. Now you can lower the
+volume <em>before</em> your embarrassing video starts playing. Simple yet great.</p>
+
+<p><span class='caption-wrapper left'><img class='caption' src='/images/posts/android9_rotate_button.png' width='497' height='138' alt='The rotate button works with and without gesture navigation enabled.'><span class='caption-text'>The rotate button works with and without gesture navigation enabled.</span></span></p>
+
+<p>Another such feature is the screen rotation button. I prefer having screen
+auto-rotate disabled so I can keep reading while lying on my side in bed or in
+the sofa. But for the few times I did want the screen to rotate, it was
+annoying to have to enable the auto-rotate feature and then disable it later
+after use. Now in Android 9, if auto-rotate is disabled but the phone senses
+it&rsquo;s been rotated, a little rotate button appears that let&rsquo;s you rotate the
+screen, once, without messing with the general auto-rotate setting. If you
+ignore it, the button goes away after some seconds. Made me wonder why this
+wasn&rsquo;t built in many years ago.</p>
+
+<a name="App.Switching.and.Overview"></a>
+<h2>App Switching and Overview</h2>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/posts/android9_overview.png' width='' height='' alt='The Overview/app switching screen of Android 9'><span class='caption-text'>The Overview/app switching screen of Android 9</span></span></p>
+
+<p>As seen in the picture with the rotate button above, there are now two
+different ways to navigate around Android 9. The new gesture navigation with
+the &ldquo;pill&rdquo; button, as well as the traditional navigation bar.</p>
+
+<p>In the traditional mode, the &ldquo;Overview button&rdquo; (the square) opens the Overview
+where you can see recently used apps and switch to them. A second press of the
+Overview button switches to the next most recently used app. This can be done
+quickly, i.e., double tapping the Overview button to switch to the next most
+recently used app.</p>
+
+<p>Using gesture navigation, swiping up from the pill (or in fact anywhere on the
+bottom of the screen) opens the Overview, while instead dragging the pill to
+the right scrolls through recently used apps until you release it.</p>
+
+<p>The Overview mode, besides app switching, lets you select and copy text, even
+from apps that don&rsquo;t allow this during normal usage, which is a great feature.
+It&rsquo;s also from the Overview that apps can be sent to split screen mode.</p>
+
+<a name="To.Gesture.or.Not.to.Gesture"></a>
+<h2>To Gesture or Not to Gesture</h2>
+
+<p>Since I got the Pixel 2 last year, I have loved double tapping the Overview
+button, so it was not like I desperately wanted a different way of navigating.
+Happily, upgrading to Android 9 didn&rsquo;t force the switch to the new gesture
+navigation. In fact, I had to enable it myself, by activating the &ldquo;Swipe up on
+Home button&rdquo; gesture.</p>
+
+<p>Swiping up is very smooth, and while you do it, the active app shrinks down to
+the rectangle/preview shown in the Overview. If you continue swiping up, the
+app drawer opens. In the Overview you can scroll sideways between the previews,
+and to select one, you can tap it, or swipe it back down and out to full
+screen. This part works well.</p>
+
+<p>The sideways drag feature is a mixed bag. It&rsquo;s good for switching to the
+previous app with a short, quick sideways swipe &mdash; even simpler than the old
+double tap. If you hold and drag further, the sideways scroll snaps to each app
+with satisfying haptic feedback, which is even better than the regular
+Overview. But. The problem with the sideways drag is that in one-handed
+operation, it invariably leads your thumb into an uncomfortable position.</p>
+
+<p>This is why I prefer the short sideways swipe for the previous app and swiping
+up to the Overview if I want to go further back. But this leads to a mental
+overhead: Now I stop and think before gesturing. The old Overview button didn&rsquo;t
+have this problem: Every switch starts with a press of the button. Gesture
+navigation <em>looks</em> fancy, but I have to say my thumb prefers the old way.</p>
+
+<p></li>
+</ul>
+
+
+<a name="Adaptive.Battery"></a>
+<h2>Adaptive Battery</h2>
+
+<p><img class="left" src="/images/posts/android9_adaptive_battery.png"></p>
+
+<p>According to android.com, &ldquo;Adaptive Battery learns how you like to use your
+phone, so the apps and services you don&rsquo;t use as much aren&rsquo;t a battery drain&rdquo;.
+Unlike gesture navigation, this feature was enabled automatically when
+I upgraded.</p>
+
+<p>When I travel for work, I book a taxi to the airport ahead of time, and in the
+early morning on my travel day, the app notifies me when the taxi is ready to
+pick me up. Except this didn&rsquo;t happen after I had upgraded to Android 9. In the
+same vein, the airline app notifies me when the online check-in opens. Didn&rsquo;t
+happen either. So mine and Android&rsquo;s ideas of &ldquo;using an app&rdquo; are not the same.
+I also use the Dropbox app to upload my photos in the background &mdash; also
+delayed from the &ldquo;optimization&rdquo;. Luckily, you can stop individual apps from
+being optimized. On the other hand, I guess this feature also optimizes tons of
+apps that I don&rsquo;t need to run in the background. So it&rsquo;s probably fine after
+you have set up your exclusions.</p>
+
+<a name="Digital.Wellbeing"></a>
+<h2>Digital Wellbeing</h2>
+
+<p><img class="right" src="/images/posts/android9_digital_wellbeing.png"></p>
+
+<p>Finally, Android 9 brings the <a href="https://wellbeing.google/">Digital Wellbeing</a> feature which shows you
+how much you use your smartphone, and offers you ways to reduce interruptions
+and screen time.</p>
+
+<p>It&rsquo;s interesting to see how much I use my smartphone. The picture to the right
+is from one of the aforementioned travel days, which brings my usage a bit
+higher than usual. But besides the statistics I don&rsquo;t feel that the feature
+brings me much. It helps reduce the number of notifications, but I have already
+disabled the most nagging notifications myself, including all email
+notifications (try it, it&rsquo;s great for your sanity).</p>
+
+<p>It allows you to set time limits for app use, but I have already uninstalled my
+time wasters such as the Facebook app. The &ldquo;Wind Down&rdquo; feature helps you go to
+bed by enabling Do Not Disturb mode and turning the screen grayscale. I already
+have DND and Night Light on a schedule. The grayscale mode is kinda cool, but
+I often end up disabling it to see what I&rsquo;m doing.</p>
+
+<p>I think Digital Wellbeing is a good idea, but I already knew that, it seems.
+But I could see how many people could benefit from easy access to all these
+settings to nudge them into reclaiming a bit of non-phone time.</p>
+
+<p>All in all, Android 9 feels like evolution rather than revolution, but that&rsquo;s
+fair. Smartphones themselves were a revolution that started only around ten
+years ago, even though they have now invaded our lives. But we might start
+seeing some bigger changes to the smartphone market already when next years
+<a href="https://www.phonearena.com/news/LG-foldable-phone-announcement-date_id110590">folds around</a>.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Pixel 2 - First Impressions]]></title>
+    <link href="http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions/"/>
+    <updated>2017-11-19T15:58:03+01:00</updated>
+    <id>http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions</id>
+    <content type="html"><![CDATA[<p>I just bought a new smartphone. After three HTC models (Desire Z, One X, One
+M8) I decided to go for the pure Android experience with a Google Pixel 2 (I
+went with the Clearly White, non-XL version). Here are my thoughts after two
+weeks.</p>
+
+<p><img class="center" src="/images/posts/pixel2.png"></p>
+
+<!-- more -->
+
+
+<p>The first thing I noticed was the <strong>speed</strong>. Booting it up for the first time
+took what I remember as mere seconds. Coming from a 3.5 year old smartphone,
+this was a big improvement. Not so relevant on a daily basis, but a good first
+impression. But the Pixel 2 also feels very snappy in use, especially compared
+with my old smartphone burdened by the newest, hungriest apps.</p>
+
+<p>The second great thing I noticed is the <strong>screen</strong>. It looks fine, but what I&rsquo;m
+really happy about is its ability to reduce the brightness to a fairly low
+level so I don&rsquo;t get blinded in low light conditions. I guess older OLED
+smartphones might have been able to do the same, but it&rsquo;s certainly the first
+smartphone I have owned where I have been satisfied with the low brightness
+level. The automatic brightness adjustment is also excellent. On top of that,
+the Night Light feature is great. As a <a href="http://jonls.dk/redshift/">Redshift</a> (similar to
+<a href="https://justgetflux.com/">f.lux</a>) user I was happy to see it built in to the OS.</p>
+
+<p>Third, the <strong>battery</strong> life is good. As a test, I skipped charging one night,
+and just used it regularly two days in a row. When I went to bed the second
+night, it still had 19% left. And that&rsquo;s even with two battery-eating always-on
+features enabled: Ambient display (showing date, time, and notification icons)
+and Now Playing (which does <em>offline</em> analysis of ambient sound to identify
+playing songs).</p>
+
+<a name="The.Stuff.People.Talk.About"></a>
+<h2>The Stuff People Talk About</h2>
+
+<p><img class="left" src="/images/posts/pixel2front.jpg" width="370"></p>
+
+<p>On-device song identification is pretty cool. Another hypey feature is the
+&ldquo;Active Edge&rdquo; which let&rsquo;s you <strong>squeeze</strong> the sides of the phone to activate
+Google Assistant. It&rsquo;s fun to play with, but not very useful in my opinion.
+I have to shift the phone in my hand to squeeze the right area, and half of the
+time, the &ldquo;meat&rdquo; of the base of my thumb folds up and taps something unwanted
+on the screen. So it&rsquo;s better to just launch Assistant the regular way: by long
+pressing the home button.</p>
+
+<p>In other news, the <strong>bezels</strong> have taken flak for being too large for 2017. And
+I guess they are. On the plus side, I can comfortably reach both top and bottom
+of the screen with my thumb, and they have room for front-facing stereo
+speakers.</p>
+
+<p>They didn&rsquo;t leave room for a <strong>headphone jack</strong>, though. The phone&rsquo;s packaging
+included a (somewhat bulky) converter but no wired USB C headphones &mdash; to get
+more people to look at the <a href="https://www.google.com/search?q=Pixel+Buds">Pixel Buds</a>, I guess.</p>
+
+<p>Finally, the Pixel 2&rsquo;s <strong>camera</strong> is supposedly really, really good. I don&rsquo;t
+disagree so far, but I&rsquo;ll know more when I get around to trying it somewhere
+more picturesque than my desk.</p>
+
+<a name="Small.Annoyances"></a>
+<h2>Small Annoyances</h2>
+
+<p>Overall, I&rsquo;m fairly satisfied with the Pixel 2. But there are a few small
+annoyances:</p>
+
+<ul>
+<li>No support for <a href="https://en.wikipedia.org/wiki/Miracast">Miracast</a> - only Chromecast</li>
+<li>The Pixel 2 is not officially for sale in Denmark, which means that the
+<a href="https://store.google.com/product/pixel_2">Google Store</a> webpage will not even acknowledge that the Pixel 2 or
+its accessories exist, if you access it from Denmark without tricks</li>
+<li>The ambient display, which is white text on a black background, <em>strobes</em>,
+which you can see when you move the phone around</li>
+<li>Dust and debris gets stuck in the speaker grills
+<span class='caption-wrapper right'><img class='caption' src='/images/posts/android8_notification_collapse.png' width='' height='' alt='Areas for expanding/collapsing notifications'><span class='caption-text'>Areas for expanding/collapsing notifications</span></span></li>
+<li>The device/screen vibrates when the speakers are playing, which can be felt
+in the 120&ndash;700 Hz range</li>
+<li>The power button and volume rocker require too much pressure to press</li>
+<li>Most Android 8 notifications can be expanded/collapsed, to which a large
+part of their surface is reserved. This means that unlike older Android
+notifications, I kinda have to aim when I tap them.</li>
+<li>Going for pure Android is not as cool as I had imagined, and the default
+launcher and dialler are disappointing</li>
+<li>Since the bezels are there anyway, a fingerprint reader on the front would be
+nice, for those times I want to use the phone flat on the table</li>
+</ul>
+
+
+<p>Come to think of it, many of these feel like a step down from my HTC One M8.
+But they&rsquo;re not a big problem compared to the improvements in speed, screen
+blackness, camera, and battery, all in a thinner, lighter body.</p>
+
+<p>I&rsquo;ll get to see over the coming months and years if the &ldquo;full Google
+experience&rdquo; is worth the price. At least I should be getting updates quickly
+for <a href="https://www.androidauthority.com/google-pixel-2-xl-update-804779/">three years</a>, which is better than many OEMs. I just hope the
+Pixel 2 will stay snappy as the updates come.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+</feed>

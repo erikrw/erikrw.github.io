@@ -1,103 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Motorvejsladning [Danish] - Erik Ramsgaard Wognsen</title>
-  <meta name="author" content="Erik Ramsgaard Wognsen">
-
-  
-  <meta name="description" content="Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra PlugShare. En elbil oplades typisk i et roligt tempo &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Category: på dansk | Erik Ramsgaard Wognsen]]></title>
+  <link href="http://blog.erw.dk/blog/categories/pa-dansk/atom.xml" rel="self"/>
+  <link href="http://blog.erw.dk/"/>
+  <updated>2022-11-29T22:59:50+01:00</updated>
+  <id>http://blog.erw.dk/</id>
+  <author>
+    <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://blog.erw.dk/2021/06/26/motorvejsladning">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Erik Ramsgaard Wognsen" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <entry>
+    <title type="html"><![CDATA[Bedre elbilsladning i Aalborg [Danish]]]></title>
+    <link href="http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg/"/>
+    <updated>2022-06-11T10:13:23+02:00</updated>
+    <id>http://blog.erw.dk/2022/06/11/bedre-elbilsladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/clever_garvergade.jpg" title="Billedet viser elbiler parkeret ved ladestandere ved Garvergade" ></p>
 
-  
-<script>
-if (document.location.hostname != "127.0.0.1") {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<p>Det er en ny æra for offentlig opladning af elbiler i Aalborg. Efter en meget
+begrænset udvikling i 2021 er der i foråret 2022 åbnet flere nye offentlige
+ladepladser i Aalborg og Nørresundby. Nu er det næsten altid muligt at finde en
+ledig offentlig lader, når man skal bruge den. Dermed er det blevet meget
+nemmere at kombinere elbil med at bo i lejlighed, samt at være
+plug-in-bils-gæst i Aalborg.</p>
 
-  ga('create', 'UA-55985488-1', 'auto');
-  ga('send', 'pageview');
-}
-</script>
+<!-- more -->
 
 
-</head>
+<p>Mulighederne er blevet bedre både for <a href="/2022/05/01/bedre-hurtigladning-i-aalborg/">hurtigladning</a>
+(specielt da Circle Ks ladere nu er åbnet igen) og for offentlig
+destinationsladning, hvor bilen holder parkeret i et antal timer imens den
+oplades. Aalborg Kommune og Clever har i løbet af foråret åbnet 24
+destinationsladere fordelt på fire forskellige kommunale P-pladser:</p>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Erik Ramsgaard Wognsen</a></h1>
-  
-    <h2>Thoughts & technology</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:blog.erw.dk" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/archives">Archives</a></li>
-  <li><a href="/contact">Contact</a></li>
+<ul>
+<li>Sømandshjemmet, Aalborg: 6 ladere</li>
+<li>Vejgaard Bymidte, Aalborg: 6 ladere</li>
+<li>Garvergade, Nørresundby: 6 ladere</li>
+<li>Havnegade, Nørresundby: 6 ladere.</li>
 </ul>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
+
+<p>Sømandshjemmet havde i forvejen to af kommunens 2&nbsp;kW-ladestik, som nu er
+erstattet af seks 11/22&nbsp;kW-ladestik fra Clever. Aalborg Kongres &amp; Kultur
+Center har også længe haft to af kommunens 2&nbsp;kW-ladestik, og disse er også
+planlagt til at blive erstattet af Clevers.</p>
+
+<p>Det er skønt at der nu er plads til opladning af seks biler samtidig, i stedet
+for de typiske to ad gangen som de fleste ældre ladesteder har. Men der er
+flere fordele. For det første har de nye ladere parkeringsregler der er nemme
+at forstå (så nemme som parkeringsregler nu kan blive). Dette er også i
+modsætning til andre, ældre ladesteder som ofte er på private områder med
+uklare regler. Der ikke rart at parkere med frygt for en dyr parkeringsafgift,
+så det er rart at de nye kommunale pladser har klare regler.</p>
+
+<p><img class="center" src="/images/posts/clever_havnegade.jpg" title="Billedet viser parkeringsregler ved ladepladserne på Havnegade: 3 timer 8-19 (8-16)" ></p>
+
+<p>For det andet er det vigtigt at de nye kommunale pladser er gratis at holde på.
+Den pris man betaler for strøm fra offentlige ladere er i forvejen 2&ndash;3 gange
+dyrere pr. kilowatttime end ved hjemmeladning, så det er dejligt at man ikke
+skal betale dyr parkering oveni. Specielt hvis man har en ældre eller billigere
+elbil der lader med en lavere effekt, kan dyre parkeringspladser (fx
+16&nbsp;kr/time) mere end fordoble den i forvejen halvdyre omkostning for at
+lade offentligt.</p>
+
+<p>Ud over nye ladere på kommunale P-pladser er der også kommet andre offentlige
+ladere til, fx 4&nbsp;stk. ved Nordelektro på Skibsbyggerivej og 4&nbsp;stk.
+ved Centrica på Skelagervej. (Desuden flere i dyre P-huse, samt flere
+ikke-offentlige ladere ved boligforeninger, arbejdspladser mv.).</p>
+
+<p>Sammen med de nye lademuligheder er æraen for gratis opladning i Aalborg næsten
+slut. Circle&nbsp;K har lukket for gratis ladning og Aalborg Kommunes gratis
+ladestik til elbiler er halvvejs med at blive erstattet af Clever-ladestandere.
+Gratis ladning har været et privilegie som gjorde det muligt at køre elbil
+<a href="/2021/05/24/3000-km-for-under-100/">ekstremt billigt</a> i Aalborg indtil nu. Nu må det nøjes med &ldquo;bare&rdquo; at
+være <a href="https://fdm.dk/nyheder/bilist/2021-02-undersoegelse-afsloerer-denne-biltype-er-billigst-eje">billigere end benzin og diesel</a>.</p>
+]]></content>
+  </entry>
   
-  <header>
-    
-      <h1 class="entry-title">Motorvejsladning [Danish]</h1>
-    
-    
-      <p class="meta">
-        
+  <entry>
+    <title type="html"><![CDATA[Bedre hurtigladning i Aalborg [Danish]]]></title>
+    <link href="http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg/"/>
+    <updated>2022-05-01T13:37:59+02:00</updated>
+    <id>http://blog.erw.dk/2022/05/01/bedre-hurtigladning-i-aalborg</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/Q8-skilt.jpg" title="Stort skilt ved Q8 som viser priserne på benzin, diesel og el" ></p>
+
+<p>Foråret har bragt bedre muligheder for offent&shy;lig opladning af elbiler i
+Aalborg, til glæde for både gæster og os der bor i lejlighed eller af andre
+årsager ikke har egen ladeboks. Situa&shy;tionen er blevet bedre både når det
+gælder hurtig&shy;ladning og destinations&shy;ladning. Dette indlæg handler om
+det første.</p>
+
+<!-- more -->
 
 
+<p>Hurtigladning er den slags ladning hvor man typisk holder 15&ndash;45 minutter
+afhængig af bilen, lade&shy;standerens hastighed, og hvor langt man skal køre.
+Ofte kan man tilbringe vente&shy;tiden på tank&shy;station, toilet,
+lege&shy;plads, indkøbs&shy;center, fastfood&shy;restaurant eller Netflix.</p>
+
+<a name="Indtil.nu"></a>
+<h2>Indtil nu</h2>
+
+<p>Hurtigladning i Aalborg har ikke fungeret så godt frem til nu. I 2020 var der
+kun tre hurtig&shy;ladere i Stor&shy;aalborg: En ved Stor&shy;centeret, en ved
+føtex Eternitten, og en ved Q8 Scheels&shy;mindevej ved Møllen. Hver af disse
+ladere er af den gammel&shy;dags slags med kun ét CCS-stik, dvs. at der typisk
+kun er plads til hurtig&shy;ladning af én bil ad gangen.</p>
+
+<p>Efterhånden som antallet af elbiler steg i 2021 blev det sværere at få plads
+ved de få ladere der var, specielt ved Storcenteret og Eternitten. Eternittens
+ladestander var (og er) tilmed låst inde uden for føtex&#8217; åbnings&shy;tid,
+hvilket for&shy;værrer problemet. Scheels&shy;mindevej var nem&shy;mest at få
+plads ved, måske fordi det var den dyreste lader til 4,90&nbsp;kr/kWh (drevet
+af E.ON), mens de andre kostede 3,50&nbsp;kr/kWh (drevet af Clever). Alle tre
+havde (og har) en lade&shy;hastighed på 50&nbsp;kW.</p>
+
+<p>I starten af 2021 fik Circle&nbsp;K Hadsundvej en stander med to 150&nbsp;kW
+CCS-stik som tilmed var gratis at benytte som del af en længere&shy;varende
+prøve&shy;periode der endte med at vare over et år. Det var på den ene side
+skønt at lade gratis når man fik plads, men på den anden side gjorde
+popular&shy;iteten at det ofte var svært at få plads uden at holde i kø. Jeg
+mødte endda nogle som havde mulighed for at lade hjemme, men som alligevel
+kørte forbi Circle&nbsp;K for at få gratis strøm. I&nbsp;starten af 2022 fik
+Circle&nbsp;K yder&shy;ligere en stander med to stik på Sønderbro.</p>
+
+<p>Tesla, hvis ladere ikke er offentligt til&shy;gængelige i Danmark, har heller
+ikke en såkaldt Super&shy;charger hurtig&shy;ladestation i Aalborg.</p>
+
+<a name="Godt.nyt.hos.Q8"></a>
+<h2>Godt nyt hos Q8</h2>
+
+<p>I april 2022 har hurtigladning i Aalborg ændret sig betydeligt, med store
+ændringer hos tank&shy;station&shy;erne. Q8 har fået <a href="https://migogaalborg.dk/q8-lynladere/">seks nye stik</a> à
+150&nbsp;kW, hvilket i sig selv er fantastisk, men de har også gjort en masse
+ting rigtigt som gør el nemmere og mere behageligt at bruge:</p>
+
+<ul>
+<li>De viser elprisen på pylonen/standeren man kan se ude fra vejen, på lige fod
+med benzin- og dieselpriserne, som vist på billedet øverst på siden. (Prisen
+er p.t. 4,95 kr/kWh og hvis du er vant til at tænke i liter frem for
+kilowatt&shy;timer, så kan jeg anbefale <a href="https://fdm.dk/alt-om-biler/elbil-hybridbil/opladning/saa-meget-koster-en-liter-stroem-til-en-elbil">denne artikel</a> fra FDM.)</li>
+<li>De har placeret en af ladestanderne (to stik) under tag, så man kan stå i
+tørvejr lige som dem der tanker fossile brænd&shy;stoffer. De resterende
+standere står ikke under tag, men til gengæld er der god plads i bredden på
+deres parkerings&shy;pladser.</li>
+<li>De tager imod Dankort/&#8203;betalingskort, så man ikke er tvunget til at
+bruge (endnu) en mobil&shy;app. Der er dog stadig mulighed for at bruge apps.</li>
+</ul>
 
 
-<time class='entry-date' datetime='2021-06-26T10:25:52+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
+<p><img class="center" src="/images/posts/Q8-plads.jpg" title="En ladestander hos Q8 med to stik og rummelige parkeringspladser" ></p>
 
+<p>Desuden har jeg ikke indtryk af at Q8 over&shy;driver den ladehastighed de
+tilbyder. De rekla&shy;merer med 150&nbsp;kW, hvilket virker realist&shy;isk at
+de kan levere, selvom jeg ikke selv kan teste det. Dette er i mod&shy;sætning
+til Circle&nbsp;K som reklamerer med 300&nbsp;kW, men skriver med småt &ldquo;Denne
+lade&shy;stander kan lade én bil med op til 300&nbsp;kW, eller to biler med op
+til 150&nbsp;kW hver&rdquo;. Desuden har jeg snakket med andre elbilister ved
+Circle&nbsp;K og hørt at laderne ikke nød&shy;vendig&shy;vis leverer den lovede
+hastighed til de (dyre) biler der kan tage imod så meget. For&shy;håbentlig er
+det et problem Circle&nbsp;K får udbedret.</p>
 
-<div class="entry-content"><p><span class='caption-wrapper'><img class='caption' src='/images/posts/plugshare_map.png' width='' height='' alt='Offentlige ladepunkter for elbiler --- de orange punkter er hurtigladere. Skærmbillede fra [PlugShare][plugshare].'><span class='caption-text'>Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.</span></span></p>
+<a name="D..rligt.nyt.hos.Circle.K"></a>
+<h2>Dårligt nyt hos Circle K</h2>
+
+<p>Hos Circle&nbsp;K er der også store ændringer her i april. De har længe snakket
+om at sætte betal&shy;ing på deres ladere, og nu har de gjort alvor af det. Man
+kan læse at de har opsat
+<a href="https://www.inputmag.dk/circle-k-har-sat-pris-paa-lynopladning/">betalings&shy;løsninger på alle kædens lade&shy;standere</a>.
+Dette er rimeligt og forventet, og er ikke den dårlige nyhed. Endda er det
+positivt at det kommer til at mindske træng&shy;slen ved laderne.</p>
+
+<p>Den dårlige nyhed er at alle fire Circle&nbsp;K-lade&shy;stik i Aalborg siden
+omkring midt-april har været ude af drift, og ikke har fået monteret
+auto&shy;mat til betal&shy;ings&shy;kort endnu. Jeg formoder de fleste
+Circle&nbsp;K-&#8203;ladere i Danmark fungerer med betal&shy;ings&shy;system
+som medierne siger (og som jeg personligt har set hos Circle&nbsp;K
+Framlev&#8203;/&#8203;Harlev vest for Aarhus). For at gøre det værre i Aalborg
+henviser de endda fra den ene defekte/&#8203;deaktiv&shy;erede ladestander til
+den anden.</p>
+
+<p><img class="center" src="/images/posts/CircleK-ude-af-drift.jpg" title="Den ene Circle K-ladestander i Aalborg er ude af drift og henviser til den anden som også er ude af drift" ></p>
+
+<p>Når de engang i maj forhåbentlig har fået mon&shy;teret betalings&shy;systemet
+og genåbnet laderne bliver det skønt med 13 hurtig&shy;ladestik i
+Stor&shy;aalborg fordelt på Q8, Circle&nbsp;K, Clever og E.ON. Men det må siges
+PR-mæssigt at være en fan&shy;tastisk dårlig afslutning på en ellers fantastisk
+god prøve&shy;periode for Circle&nbsp;K i Aalborg.</p>
+
+<a name="Fremtiden"></a>
+<h2>Fremtiden</h2>
+
+<p>Til sommer planlægger Clever at åbne
+<a href="https://via.ritzau.dk/pressemeddelelse/clever-etablerer-nordjyllands-storste-lynladestation?publisherId=12636953&amp;releaseId=13641390">Nord&shy;jyllands største lade&shy;station</a> med 16 stk.
+300&nbsp;kW-&#8203;ladestik i Nørre&shy;sundby. Det blivere mere end en
+fordobling af antallet af hurtig&shy;lade&shy;stik i Stor&shy;aalborg, så det
+bliver godt.</p>
+
+<p>De stigende elpriser spørger også. Clever har varslet prisstigninger fra juni,
+som vil presse deres lynladere (150+&nbsp;kW) op til være marked&shy;ets
+dyreste i løssalg (6,50&nbsp;kr/kWh uden abonnement), endda dyrere end Ionity.
+Dog vil deres 50&nbsp;kW-ladere med 4,75&nbsp;kr/kWh fortsat være blandt de
+billigste, hvilket er dejligt for os med en &ldquo;gammel&shy;dags&rdquo; elbil der ikke
+lader hurtig&shy;ere på en lynlader end på en &ldquo;gammel&shy;dags&rdquo;
+50&nbsp;kW-hurtiglader.</p>
+
+<p>Folk i den indtil videre lukkede Tesla-klub kan også glæde sig over at der
+skulle komme en <a href="https://www.tesla.com/findus/location/supercharger/aalborgsuperchargerq122">Aalborg Supercharger</a> i tredje kvartal i år.</p>
+
+<p>Ud over hurtigladning er destinations&shy;ladning (mens man holder parkeret i
+flere timer) også blevet bedre i Aalborg i april, og står til at blive endnu
+bedre snart. Det kommer i mit <a href="/2022/06/11/bedre-elbilsladning-i-aalborg/">næste indlæg</a>.</p>
+
+<p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Motorvejsladning [Danish]]]></title>
+    <link href="http://blog.erw.dk/2021/06/26/motorvejsladning/"/>
+    <updated>2021-06-26T10:25:52+02:00</updated>
+    <id>http://blog.erw.dk/2021/06/26/motorvejsladning</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper'><img class='caption' src='/images/posts/plugshare_map.png' width='' height='' alt='Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.&#8217;><span class='caption-text'>Offentlige ladepunkter for elbiler &mdash; de orange punkter er hurtigladere. Skærmbillede fra <a href="https://www.plugshare.com/">PlugShare</a>.</span></span></p>
 
 <p>En elbil oplades typisk i et roligt tempo mens den er parkeret hjemme, på
 arbejde eller ved en offentlig destinations&shy;lader. Men når man skal køre
@@ -752,138 +880,210 @@ Volkswagen har også et koncept hvor man kan lease en ID.3 i
 <a href="https://app.volkswagen.dk/app/web/privat/go/konfigurer/?id=2075">seks måneder</a>. Men nu hvor jeg er blevet vant til elbil tænker
 jeg ikke på at slippe af med den igen &mdash; jeg glæder mig bare til næste gang
 jeg skal ud at køre.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Spar penge med Rejsekortets mængderabat [Danish]]]></title>
+    <link href="http://blog.erw.dk/2019/01/17/spar-penge-med-rejsekortets-maengderabat/"/>
+    <updated>2019-01-17T07:52:10+01:00</updated>
+    <id>http://blog.erw.dk/2019/01/17/spar-penge-med-rejsekortets-maengderabat</id>
+    <content type="html"><![CDATA[<p></p>
 
-<span class="byline author vcard">Posted by <span class="fn">Erik Ramsgaard Wognsen</span></span>
+<p><img class="left" src="/images/posts/rejsekort.jpg"></p>
 
-      
+<p>Jeg prøver noget nyt og skriver på dansk. Jeg startede med at skrive denne
+artikel på engelsk, men nu hvor jeg har skiftet til dansk føler jeg ikke vores
+allesammens <a href="https://www.rejsekort.dk/">Rejsekort</a> behøver nogen introduktion. Det er normalt
+for tech-bloggere at komme ind på it-sikkerhed eller brugervenlighed når det
+gælder Rejsekortet, men i dag vil jeg snakke om noget lidt andet, nemlig
+hvordan man undgår at snyde sig selv i Rejsekortets indviklede rabatsystem.
+Vest for Storebælt kan man nemlig i flere tilfælde spare penge ved at rejse
+<em>mere</em> hver måned.</p>
+
+<!-- more -->
 
 
+<p>(Men først lige én kommentar om grafisk design: Sort tekst på en blå baggrund,
+som på billedet af mit rejsekort herover, er dårligt design. Min
+billedbehandling overdriver lidt her, men illustrerer faktisk fint hvor svært
+det er at læse sort på blåt under dårlige lysforhold. Nå, tilbage til
+rabatten.)</p>
+
+<p></p>
+
+<a name="Rejsekortets.Rabatter"></a>
+<h2>Rejsekortets Rabatter</h2>
+
+<p>Rejsekortet giver <a href="https://www.rejsekort.dk/brug-rejsekort/priser-for-rejser/">to typer rabat</a> på rejser: tidsrabat og
+mængderabat. Tidsrabat gives når rejsen starter uden for myldretiden, mens
+mængderabat afhænger af hvor mange rejser man har haft i de foregående tre
+måneder. Rabatterne afhænger desuden af typen af rejsekort, transportmidlet,
+samt både udgangspunktet og destinationen.</p>
+
+<p>Tidsrabatten er nem at få &mdash; man skal lægge sin rejse uden for myldretiden
+(som kan være kl. 7&ndash;11 og 13&ndash;18 på hverdage, men det afhænger af region,
+transportmiddel og type af rejsekort, naturligvis) &mdash; men derudover afhænger
+den ikke af noget. Derfor fokuserer jeg på mængderabatten, som på mere
+indviklet vis påvirkes af fortiden. Jeg antager desuden at man benytter et
+personligt rejsekort for voksne &mdash; I modsætning til flex, anonym, barn, ung,
+pensionist, handicappet, hund/cykel, pendler, pendler kombi,
+erhverv/institution, glemte jeg nogen?</p>
+
+<a name="Rejsekortets.m..ngderabat"></a>
+<h2>Rejsekortets mængderabat</h2>
+
+<p>Mængderabatten afhænger af både udgangspunkt og destination, og forudsætter at
+mindst én af disse to ligger vest for Storebælt (sorry, sjællændere). Rejser
+<em>over</em> Storebælt har én rabatskala, mens rejser udelukkende vest for Storebælt
+har en anden, som jeg her vil arbejde videre med. Rejsekortet har teknisk set
+otte forskellige rabattrin, men vest for Storebælt giver flere af dem samme
+rabatsats, så jeg arbejder blot med fire rabattrin.</p>
+
+<p>Mængderabatsatserne i procent er ens mellem regionerne, men rejsens grundpris
+varierer mellem regionerne, og kan også afhænge af transportmidlet. Jeg
+benytter priserne fra Nordjylland gældende fra 20. januar 2019 i det følgende,
+men grundprincippet er det samme uanset gamle og nye priser samt region. Det
+fulde prisblad findes <a href="https://www.rejseplanen.dk/bin/help.exe/mn?L=vs_rkfc&amp;tpl=prisblad">her</a>.</p>
+
+<p></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Rejser/måned</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Rabat</strong> </th>
+<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Pris for 2 zoner</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;"> 0&ndash;3             </td>
+<td style="text-align:right;"> 0%                                </td>
+<td style="text-align:right;"> 16,90 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 4&ndash;15            </td>
+<td style="text-align:right;"> 10%                               </td>
+<td style="text-align:right;"> 15,21 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 16&ndash;33           </td>
+<td style="text-align:right;"> 25%                               </td>
+<td style="text-align:right;"> 12,67 kr.                                    </td>
+</tr>
+<tr>
+<td style="text-align:right;"> 34&ndash;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td style="text-align:right;"> 40%                               </td>
+<td style="text-align:right;"> 10,14 kr.                                    </td>
+</tr>
+</tbody>
+</table>
 
 
-<time class='entry-date' datetime='2021-06-26T10:25:52+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'></span></time>
-      
+<p><br>
+Rabattrinnet i en given måned sættes ud fra den af de tre sidste måneder med
+flest rejser. Måned skal dog ikke nødvendigvis forstås som kalendermåned.
+I stedet har man en <em>rabatskiftedato</em> (fx den 5. i hver måned) som afhænger af
+hvornår ens rejsekort blev taget i brug. For at det ikke skal blive for nemt
+kan man ikke aflæse sin rabatskiftedato på Rejsekortets
+<a href="https://selvbetjening.rejsekort.dk/">selvbetjening</a>, men skal i stedet ringe til kundeservice for at
+få den oplyst.</p>
 
-<span class="categories">
+<a name="Beregning.med.m..ngderabat"></a>
+<h2>Beregning med mængderabat</h2>
+
+<p>Hvis vi forudsætter at man rejser det samme antal ture hver måned, så betaler
+man i alt følgende pr. måned afhængig af antallet af rejser:</p>
+
+<p></p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat1.png"></p>
+
+<p>Rejser man 14, 15 eller 28&ndash;33 rejser pr. måned, betaler man mere pr. måned end
+hvis man rejste lidt mere. Man kan altså spare penge, fra og med næste måned,
+ved at rejse lidt mere. Så hvis man har flere steder, man skal hen, kan man
+blot nyde turen og de 10&ndash;72 kr. man sparer hver måned.</p>
+
+<p>Men har man ikke behov for at rejse mere, er der stadig penge at spare ved at
+foretage nogle få ekstra rejser. Så længe man har opnået et højere rabattrin
+end normalt gælder det nemlig i tre måneder, hvori ens normale antal rejser
+også bliver billigere, og man dermed opnår en besparelse:</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat2.png"></p>
+
+<p>Prisen for at opnå denne besparelse er at rejse nogle ekstra rejser for at nå
+op på det næste rabattrin, dvs. nå op på 4, 16 eller 34 rejser i én måned.
+Dette kan være så lidt som én ekstra rejse eller så meget som 18 rejser for at
+nå fra 16 til 34. Omkostningen ved disse skal lægges i én måned, men fordelen
+gælder i tre, så derfor viser jeg her omkostningen pr. måned, dvs. delt med
+tre:</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat3.png"></p>
+
+<p>Jo færre ekstrarejser der er behov for, jo lavere er den samlede ekstrapris.
+Befinder man sig i de store spænd 11&ndash;15 eller 22&ndash;33 rejser pr. måned, er
+besparelsen større end omkostningen. I den laveste del af disse spænd er den
+samlede besparelse mindst og tidsforbruget ved at rejse de ekstra rejser
+størst, så man må selv vurdere om man synes besparelsen er indsatsen værd. Mest
+får man ud af de ekstra rejser hvis man normalt ligger på 30&ndash;33 rejser, da man
+her kan spare 60&ndash;80 kr. om måneden vha. nogle få ekstra rejser.</p>
+
+<p>Omkostningen kan bringes yderligere ned: De ekstra rejser kan foretages uden
+for myldretiden, dvs. med 20% tidsrabat, hvorved de fordelagtige spænd udvides
+til 3, 10&ndash;15 og 20&ndash;33. Hvis man tre måneder senere vil gentage manøvren,
+gøres det denne gang ud fra det højere rabattrin, man har opnået, og spændene
+er nu, inkl. tidsrabat, 3, 10&ndash;15 og 18&ndash;33. Med andre ord er det kun hvis man
+rejser 0&ndash;2, 4&ndash;9, 16 eller 17 gange om måneden at det <em>ikke</em> kan betale sig at
+opnå et højere rabattrin.</p>
+
+<a name="L..ngere.rejser"></a>
+<h2>Længere rejser</h2>
+
+<p>Jeg vil også nævne muligheden for pendlerkort. I Nordjylland koster 2 zoner
+i 30 dage 380 kr., dvs. ca. 385 kr. for en gennemsnitlig måned, hvilket er
+billigere end 31&ndash;33 rejser pr. måned på næsthøjeste rabattrin og 39+ rejser på
+højeste rabattrin med det almindelige rejsekort:</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat4.png"></p>
+
+<p>Jeg foretrækker dog det almindelige rejsekort over pendlerkortet, herunder
+pendler kombi, da den rabat jeg opsparer på mine daglige, korte rejser også
+gælder på længere rejser vest for Storebælt med det almindelige rejsekort. Med
+40% mængderabat sparer jeg 150 kr. på én tur/retur Aalborg&ndash;Aarhus, og 290 kr.
+for Aalborg&ndash;Odense.</p>
+
+<p>Hvis man dagligt eller ofte rejser længere end 2 zoner kan man også spare penge
+i dagligdagen med metoden med ekstrarejser. Her er fordelen at de ekstra rejser
+er billigere end de normale, da man kan nøjes med at rejse 2 zoner på
+ekstrarejserne, da det udelukkende er antallet af rejser &mdash; ikke længden &mdash;
+der afgør rabattrinnet. Dermed bliver omkostningen mindre i forhold til
+besparelsen. Som eksempel ser vi her på 8 zoner, som er afstanden fra Aalborg
+til Hjørring eller Hobro:</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat5.png"></p>
+
+<p>Allerede fra seks månedlige rejser på 8 zoner er det en fordel at opnå det
+næste rabattrin. Ved 30&ndash;33 rejser er der 250&ndash;300 kr. at hente hver måned
+i gennemsnit (besparelse fraregnet omkostning). Ved 26 zoner sparer man <em>altid</em>
+penge ved at opnå det næste rabattrin, op til 837 kr./måned! Det har jeg
+illustreret i følgende diagram.</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat6.png"></p>
+
+<p>Hvis man lige som før gentager de ekstra rejser efter tre måneder med tidsrabat
+og det opnåede næste rabattrin, er der endda lidt mere at spare:</p>
+
+<p><img class="center" src="/images/posts/rejsekort_rabat7.png"></p>
+
+<p>Det er nok de færreste der kan klemme sig op i højre hjørne, specielt uden at
+investere i et pendlerkort hvis man pendler langt, men det er vildt at
+muligheden er der. Man skal dog huske at det kun hjælper hvis man i forvejen
+rejser færre end 34 rejser pr. måned. Er man først deroppe, er der ikke flere
+rabatniveauer at opnå &mdash; man kan blot kigge på om et pendlerkort er billigere.</p>
+
+<p><em>Opdatering 2019-08-28: Lille sprogfejl rettet.</em></p>
+]]></content>
+  </entry>
   
-    <a class='category' href='/blog/categories/ev/'>ev</a>, <a class='category' href='/blog/categories/pa-dansk/'>på dansk</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/2021/05/24/3000-km-for-under-100/" title="Previous Post: 3000 km for under €100">&laquo; 3000 km for under €100</a>
-      
-      
-        <a class="basic-alignment right" href="/2021/10/02/visual-studio-sounds/" title="Next Post: Visual Studio Sounds">Visual Studio Sounds &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>About Me</h1>
-  <p>
-  Hello! I&#8217;m Erik, a software engineer and IT consultant from Denmark.
-  </p>
-</section>
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/2022/11/29/ioniq-efficiency/">Ioniq Efficiency</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2022/06/11/bedre-elbilsladning-i-aalborg/">Bedre elbilsladning i Aalborg [Danish]</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2022/06/04/aawireless-first-impressions/">AAWireless First Impressions</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2022/05/01/bedre-hurtigladning-i-aalborg/">Bedre hurtigladning i Aalborg [Danish]</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2021/10/02/visual-studio-sounds/">Visual Studio Sounds</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/android/'>android (4)</a></li><li><a href='/blog/categories/ev/'>ev (6)</a></li><li><a href='/blog/categories/gadgets/'>gadgets (5)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (3)</a></li><li><a href='/blog/categories/programming/'>programming (8)</a></li><li><a href='/blog/categories/pa-dansk/'>på dansk (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
-</section>
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  &copy; 2022 - Erik Ramsgaard Wognsen -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'erwdk';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.erw.dk/2021/06/26/motorvejsladning/';
-        var disqus_url = 'http://blog.erw.dk/2021/06/26/motorvejsladning/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+</feed>

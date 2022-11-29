@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-11-29T15:46:36+01:00</updated>
+  <updated>2022-11-29T22:59:50+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -80,80 +80,363 @@ called back to Visual Studio. Happy coding!</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Yousician "No tempo definitions found"]]></title>
-    <link href="http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found/"/>
-    <updated>2018-07-28T12:23:29+02:00</updated>
-    <id>http://blog.erw.dk/2018/07/28/yousician-no-tempo-definitions-found</id>
-    <content type="html"><![CDATA[<p></p>
+    <title type="html"><![CDATA[RIP Mercurial (on Bitbucket)]]></title>
+    <link href="http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket/"/>
+    <updated>2019-08-28T07:39:28+02:00</updated>
+    <id>http://blog.erw.dk/2019/08/28/rip-mercurial-on-bitbucket</id>
+    <content type="html"><![CDATA[<p><a href="https://bitbucket.org/">Bitbucket</a> is going to <a href="https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket">drop support</a> for the
+<a href="https://www.mercurial-scm.org/">Mercurial</a> version control system, due to most people using
+<a href="https://git-scm.com/">Git</a> instead. I use both Mercurial (hg) and Git, and while Git has become
+the de facto standard today, Mercurial was my first love in the world of
+version control systems, and I&rsquo;m sad to see it go.</p>
 
-<p><img class="right" src="/images/posts/yousician_no_tempo_definitions.png"></p>
-
-<p>This summer my girlfriend and I started practicing piano with <a href="https://yousician.com">Yousician</a>,
-which is a kind of gamified music tutor, that listens to your playing and gives
-instant feedback. It contains songs of gradually increasing difficulty, plus
-you can upload your own songs in the <a href="https://www.musicxml.com/">MusicXML</a> format.</p>
-
-<p>&ldquo;Adding songs is very easy&rdquo;, claims <a href="https://yousician.zendesk.com/hc/en-us/articles/207247365-What-is-MusicXML-file-and-how-to-upload-it">the documentation</a>, but at our
-first attempt we were met with this error message: <strong>&ldquo;No tempo definitions
-found. Please specify tempo in the file.&rdquo;</strong> Googling the error message gave no
-results at all, so hopefully this post will change that.</p>
+<p>Of course, Mercurial is not dead, but being removed from Bitbucket is a big
+deal (at least to me). But this news also gave me an occasion to reconsider Git
+vs. Mercurial, and writing this post has actually given me a newfound, if not
+appreciation, then at least understanding of Git.</p>
 
 <!-- more -->
 
 
-<p><img class="left" src="/images/posts/musicxml_hello_world.gif"></p>
+<a name="Init"></a>
+<h2>Init</h2>
 
-<p>MusicXML is an interchange format with files typically generated or exported
-from <a href="https://en.wikipedia.org/wiki/Scorewriter">scorewriter programs</a>. But us being programmers, we looked
-to the XML itself to fix the problem. To find a
-<a href="https://en.wikipedia.org/wiki/Minimal_Working_Example">minimal working example</a>, we tried the
-<a href="https://www.musicxml.com/tutorial/hello-world/">MusicXML &ldquo;Hello World&rdquo;</a> example. Uploaded to Yousician, it gave the
-same error message about the tempo missing.</p>
+<p>When I started university in 2006, <a href="https://en.wikipedia.org/wiki/Apache_Subversion">SVN</a> had recently replaced <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>
+as the cool thing. So for group work we used SVN and it worked fine. Well,
+except for all the file conflicts we got. And the awful tree conflicts. Come to
+think of it, it didn&rsquo;t work that great. Luckily
+<a href="https://en.wikipedia.org/wiki/Distributed_version_control">distributed version control systems</a> had been maturing in the meantime.</p>
 
-<a name="Solution"></a>
-<h2>Solution</h2>
+<p></p>
 
-<p>If you control the scorewriter generating the MusicXML file and it allows
-including tempo when you export, that should be the simple solution. Otherwise,
-in the first <code>&lt;measure&gt;</code> element, add <code>&lt;sound tempo="120"/&gt;</code> with your desired
-tempo in BPM:</p>
+<p>In 2009 we started using Mercurial. It was like SVN, except it was actually
+good for collaboration! Now you could store a safe snapshot of your own work
+before trying to merge other people&rsquo;s changes in. Also merging generally worked
+well. Also it was fast.</p>
 
-<pre><code class="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
-&lt;!DOCTYPE score-partwise PUBLIC
-    "-//Recordare//DTD MusicXML 3.1 Partwise//EN"
-    "http://www.musicxml.org/dtds/partwise.dtd"&gt;
-&lt;score-partwise version="3.1"&gt;
-  &lt;part-list&gt; ... &lt;/part-list&gt;
-  &lt;part id="P1"&gt;
-    &lt;measure number="1"&gt;
-      &lt;sound tempo="120"/&gt;  &lt;!-- ADD THIS ELEMENT --&gt;
-      &lt;attributes&gt; ... &lt;/attributes&gt;
-      &lt;note&gt; ... &lt;/note&gt;
-      ...
-</code></pre>
+<p>All was good, but there was also this Git thing people on the internet were
+talking about. Coming from SVN, Mercurial made sense and Git didn&rsquo;t. (Linus
+Torvalds, being Linus Torvalds, made Git purposely different from the CVS/SVN
+family.) Git did seem to be more flexible at the expense of being less elegant.
+As was written back then:
+<a href="https://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/">Git is MacGyver, Mercurial is James Bond</a>.</p>
 
-<a name="Details"></a>
-<h2>Details</h2>
+<p>My group mates and I kept using Mercurial, but as I started my PhD,
+collaboration with new people, not least my supervisor René, made me spend more
+time with Git. It got better when I began to understand that the differences
+between Mercurial and Git start at fundamental concepts such as branches and
+merges.</p>
 
-<p>I don&rsquo;t think Yousician complies completely with the MusicXML standard.
-Two things from the documentation of the <a href="https://usermanuals.musicxml.com/MusicXML/Content/CT-MusicXML-sound.htm">sound element</a>:</p>
+<a name="Different.Concepts"></a>
+<h2>Different Concepts</h2>
+
+<p></p>
+
+<p>&ldquo;Branch&rdquo; doesn&rsquo;t have the same interpretation in Mercurial and Git. In
+Mercurial, a branch is a sequence of commits all sharing a (permanent) name. In
+Git, a branch is temporary and is represented by a reference to the current
+commit at the tip of the branch. Once gone, you can&rsquo;t tell which branch(es)
+a commit used to be part of.</p>
+
+<p>In Mercurial branches are also shared between clones of the same repository.
+Everybody works on the same branch, and you can <a href="https://www.mercurial-scm.org/repo/hg/help/pull"><code>hg pull</code></a> to get the
+newest version of the branch, and then <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> your working
+copy. In Git nobody works on the same branch &mdash; there&rsquo;s just people working on
+different branches that might or might not have the same name. You can&rsquo;t
+&ldquo;update&rdquo; to the newest version because you already have the newest version of
+your own branch by definition. But you can <em>merge</em> another branch, possibly
+with the same name, into your own.</p>
+
+<p>In Mercurial, merges are used for merging divergent branches or heads. In Git,
+everything is a merge, even if only one branch has changed. But at the same
+time, a Git merge might or might not create a merge commit. By default, a new
+commit will only be created if the two branches had diverged, i.e., work had
+been done on both. Otherwise, the current branch will just be updated to point
+to the same commit as the branch being merged in. It makes a lot of sense once
+you get used to Git, but before that it&rsquo;s just confusing.</p>
+
+<p></p>
+
+<a name="Different.Commands"></a>
+<h2>Different Commands</h2>
+
+<p>Learning Git from an SVN/Mercurial background meant relearning a few words.
+&ldquo;Revert&rdquo; means something new in Git and &ldquo;shelve&rdquo; is called &ldquo;stash&rdquo;, but that&rsquo;s
+not bad. Instead, what is annoying is that many simple Mercurial commands don&rsquo;t
+have simple, memorable equivalents in Git:</p>
+
+<p>Show the hash of the current commit:
+<code>
+hg id
+git rev-parse HEAD
+</code></p>
+
+<p>Show which commits would be pulled or pushed:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg in
+</span><span class='line'>git fetch &amp;&amp; git log ..@{u}&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;hg out
+</span><span class='line'>git fetch &amp;&amp; git log @{u}..</span></code></pre></td></tr></table></div></figure></p>
+
+<p></p>
+
+<p>Mark a file to stop tracking, but don&rsquo;t delete the file. This one is especially
+weird in Git because you don&rsquo;t remove something <em>-&#8203;-cached</em>, you cache
+(stage) the removal of something:
+<code>
+hg forget
+git rm --cached
+</code></p>
+
+<p></p>
+
+<p>Print the root directory of the repository and the URL of the remote repository:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hg root
+</span><span class='line'>hg path&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;git rev-parse &ndash;show-toplevel
+</span><span class='line'>git config &ndash;get remote.origin.url</span></code></pre></td></tr></table></div></figure></p>
+
+<p>List the version controlled files:
+<code>
+hg manifest
+git ls-tree -r --name-only --full-tree HEAD
+</code></p>
+
+<a name="Git.is.Git"></a>
+<h2>Git is Git</h2>
+
+<p>I have been using the above commands as aliases in Git, but I have wondered if
+doing that somehow prevented me from learning the &ldquo;true spirit&rdquo; of Git. I have
+now come to the conclusion that the essence of Git is its architecture and data
+model, and not its incoherent command line interface. Learning the user
+interface is just a chore, and using aliases to smooth it out is fine.</p>
+
+<p>I&rsquo;m not bashing Git because it&rsquo;s different from Mercurial, but because it is
+internally inconsistent and, as another blogger puts it:
+<a href="https://stevebennett.me/2012/02/24/10-things-i-hate-about-git/">Git doesn’t so much have a leaky abstraction as no abstraction.</a>
+Here are some of the inconsistencies and lacking abstractions:</p>
 
 <ul>
-<li>The sound element [&hellip;] can stand alone within a part/measure [&hellip;]</li>
-<li>If [the tempo is] 0, the sound-generating program should prompt the user at
-the time of compiling a sound (MIDI) file.</li>
+<li>Concepts can have multiple names, like the index a.k.a. the cache a.k.a. the
+staging area (which would be okay if Git didn&rsquo;t already have so many
+concepts)</li>
+<li>The branch <code>origin/master</code> is your (local) remote tracking branch, but
+<code>master</code> alone can refer to your local master branch or to the remote&rsquo;s
+master branch depending on context</li>
+<li>The <a href="https://git-scm.com/docs/git-checkout"><code>git checkout</code></a> command famously does too much: It can
+check out a branch (merging in uncommitted changes in the process if you
+want, or creating a new branch manually or automatically if you want), and it
+can restore or overwrites individual files in the working copy
+
+<ul>
+<li>However, the new Git 2.23 released this month has started experimenting
+with the new, more specific, and subject to change
+<a href="https://git-scm.com/docs/git-switch"><code>git switch</code></a> and <a href="https://git-scm.com/docs/git-restore"><code>git restore</code></a> commands
+(similar to <a href="https://www.mercurial-scm.org/repo/hg/help/update"><code>hg update</code></a> and <a href="https://www.mercurial-scm.org/repo/hg/help/revert"><code>hg revert</code></a>!)</li>
+</ul>
+</li>
+<li>The notation <code>A:B</code> sometimes means <code>&lt;src&gt;:&lt;dst&gt;</code> (a refspec) and sometimes
+<code>&lt;rev&gt;:&lt;path&gt;</code> (path in a revision &mdash; to be distinguished from a pathspec
+which is a third concept that can use the colon in a third way)</li>
+<li>The notations <code>A B</code> and <code>A..B</code> mean the same thing to <a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a>
+but not to <a href="https://git-scm.com/docs/git-log"><code>git log</code></a></li>
+<li>The notations <code>A..B</code> and <code>A...B</code> mean somewhat opposite things to
+<a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a> and <a href="https://git-scm.com/docs/git-log"><code>git log</code></a>
+
+<ul>
+<li>To specify branches A and B symmetrically you need <code>git diff A..B</code> but <code>git
+log A...B</code></li>
+<li><code>git diff A...B</code> and <code>git log A..B</code> mean &ldquo;from the common ancestor of A and
+B, to B&rdquo;</li>
+</ul>
+</li>
 </ul>
 
 
-<p>Yousician doesn&rsquo;t recognize a sound element in a part, only in a measure.
-Second, if we see Yousician as a &ldquo;sound-generating program&rdquo; (it can play the
-uploaded piece as a practice help, as well as play accompaniments), then it
-doesn&rsquo;t satisfy the second part either. Tempo 0 will result in the message
-&ldquo;Unfortunately something went wrong with file import.&rdquo; It would be better if it
-prompted the user for a tempo, in case of both 0 and missing tempo.</p>
+<p></p>
 
-<p>However, tempo 1 was blindly accepted, resulting in a song slower than molasses
-in January!</p>
+<p>In the end, I think Git is a good tool despite its command line interface. But
+if you&rsquo;re the type of person who needs to understand something in depth to feel
+comfortable with it, you have a lot of reading to do. If you already know the
+basics, <a href="https://git-scm.com/docs/gitglossary"><code>git help gitglossary</code></a> will get you started on 80+
+underlying concepts that will help you on your way to master the world&rsquo;s
+favored VCS!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubiquitous Language Problems]]></title>
+    <link href="http://blog.erw.dk/2018/06/17/ubiquitous-language-problems/"/>
+    <updated>2018-06-17T12:38:16+02:00</updated>
+    <id>http://blog.erw.dk/2018/06/17/ubiquitous-language-problems</id>
+    <content type="html"><![CDATA[<p></p>
+
+<p>Language is tricky. Take the this post, for instance. It&rsquo;s not about language
+problems that are ubiquitous. It&rsquo;s about problems related to <em>Ubiquitous
+Language</em> &mdash; whether the problems themselves are ubiquitous or not.</p>
+
+<p>Ubiquitous Language is a term from the <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design</a> software
+development practice. It refers to a set of well-defined project terms shared
+by all participants: <a href="https://en.wikipedia.org/wiki/Subject-matter_expert">Domain experts</a>, business analysts, developers,
+users. The term was coined by Eric Evans in his <a href="http://dddcommunity.org/book/evans_2003/">DDD book</a>. I haven&rsquo;t
+actually read it, but the idea seems sensible: If developers live and breathe
+the domain by speaking its language, their output is more likely to fit the
+business needs, and developers and domain experts are more likely to understand
+one another.</p>
+
+<p>As a business analyst and developer, your task is to adopt the language of the
+domain experts, <em>not</em> the other way around. But that doesn&rsquo;t mean that the
+domain experts are home free. Changes are probably required to turn their
+jargon into a well-defined set of terms that will ensure precise and
+unambiguous communication in the project and to the users. Here are some of the
+challenges I&rsquo;ve encountered in this process.</p>
+
+<!-- more -->
+
+
+<a name="Two.Words..One.Concept"></a>
+<h2>Two Words, One Concept</h2>
+
+<p>One problem is that people may use different words for the same concept. It is
+preferable to use one word per concept, because it will simplify design
+discussions and remove confusion arising from the possibility that the words
+<em>could</em> have different meanings. The code and the user interface will also be
+much easier to understand for developers and users, respectively, if a concept
+always has the same name.</p>
+
+<p>As an example, different project participants use the terms User and Employee.
+If the business or system has only employees as users, either word is fine.
+Picking one over the other risks having a winner and a loser in the process.
+Sometimes finding a third term can be a good move, politically or socially.
+Perhaps the term Account can cover the concept and satisfy both parties.</p>
+
+<p>Other times, it turns out that the terms actually have different meanings.
+Maybe not all users are employees or not all employees are users. In this case,
+both terms can stay in the vocabulary, and their exact relationship will have
+to be uncovered.</p>
+
+<p></p>
+
+<a name="One.Word..Two.Concepts"></a>
+<h2>One Word, Two Concepts</h2>
+
+<p>Another problem is that the same word may be used for different concepts.
+Sometimes by different people, sometimes even by the same people. Take the term
+Account from the previous section. There, it was taken to mean a user account.
+But Account could also mean a bank account, or a even a client (one managed by
+an account manager).</p>
+
+<p>If the main business domain (such as banking, accounting, customer relationship
+management) already has a specific interpretation of the term, the other
+meanings should probably find other names (such as Client, User Account, or
+Bank Account). I prefer avoiding partially overlapping terms, so if Account is
+already taken, User is better than User Account &mdash; unless User also has
+a meaning distinct from User Account.</p>
+
+<a name="Types.and.Instances"></a>
+<h2>Types and Instances</h2>
+
+<p>A specific version of the One Word, Two Concepts problem is when the same word
+is used about both instances and types. Perhaps the word Service is used about
+a service provided to a customer on a specific date and time (such as
+a haircut), but also about the type of service the company provides (such as
+a haircut). Or Product can mean both a product from the product catalog and
+a product in the context of a specific Order.</p>
+
+<p></p>
+
+<p>For these examples, possible concept names could be Service and Service Type as
+well as Product and Order Product. It&rsquo;s a first step, but as easy as it is to
+add a prefix or suffix, as easy it drop it again in conversation. A better
+option is to choose names that don&rsquo;t have anything in common. An Order Product
+could be an Order Line (which is actually a well-known concept). A Service
+could be an Appointment, while the term Service refers to the type. Or perhaps
+Service stays in the appointment interpretation, and Service Type could be
+named Function.</p>
+
+<a name="Software.Development.as.Domain"></a>
+<h2>Software Development as Domain</h2>
+
+<p>Service and Function are not to be confused with what a software developer
+might understand by these terms. Software is a business domain on its own
+right, but unless the <em>project&rsquo;s</em> domain is software, developers should let the
+business domain take precedence.</p>
+
+<p>It might be necessary for developers to discuss technical design involving
+software terms that clash with the domain model (such as Class, Strategy,
+Factory, Visitor). It doesn&rsquo;t make sense to rename well-known concepts from the
+software domain, but unless the domain experts need to know about them, they
+shouldn&rsquo;t be part of the domain model, and so they should only be used
+internally between technical designers and developers.</p>
+
+<p>But even inside the software domain, I have observed the One Word, Two Concepts
+problem at work. The term Entity, itself used in DDD, can refer to both a type
+and an instance. Peter Chen, who introduced the
+<a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship Model</a>, used the term Entity to mean an instance of
+some <em>Entity Type</em>. What I mentioned earlier about dropping suffixes also
+applies here, and many people, myself included, use Entity in the type meaning.
+Ideally, the instance meaning is then referred to by a different word, such as
+Object.</p>
+
+<a name="Microsoft.Dynamics.CRM"></a>
+<h2>Microsoft Dynamics CRM</h2>
+
+<p>The Microsoft Dynamics Customer Relationship Management (CRM) software
+interests me in two ways in relation to DDD and ubiquitous language.
+Superficially, Microsoft CRM uses the terms Entity and Record in the above
+mentioned type and instance meanings, respectively. But then in the Danish
+translation of the software, they use the Danish word <em>objekt</em> &mdash; not
+<em>entitet</em> &mdash; as the translation of Entity. (In fact my colleague recently
+found out the whole system is translated by Bing!)</p>
+
+<p>Second, Microsoft CRM is somewhat anti-DDD in the sense that the built-in
+customer relationship management domain model can conflict with that of the
+user organization. It&rsquo;s possible to adapt the built-in data model with new
+entities, attributes, and relationships, and by renaming existing items. But
+the renaming only applies to the user interface, not the code and database.
+This forces developers to think in terms of the built-in model and to translate
+back and forth between that and the organization&rsquo;s domain, which is exactly the
+thing ubiquitous language tells you to avoid.</p>
+
+<p></p>
+
+<a name="Multiple.Contexts"></a>
+<h2>Multiple Contexts</h2>
+
+<p>In this post I have been touching on the matching of words and concepts, both
+in general and in software development. In this, I have been simplifying by
+focusing on building a single ubiquitous language and domain model for
+a project. Part of DDD is acknowledging that a project can be too large for
+a single unified model, and instead of trying to make such a model, you should
+allow for multiple <a href="https://martinfowler.com/bliki/BoundedContext.html">bounded contexts</a> and instead make sure to define
+their boundaries and relationships. But inside each single context, make sure
+to use one word per concept.</p>
+
+<p>The more I think about it, the more I see that software development is itself
+far too large to be a single context. Words such as <em>prototype</em> or
+<em>implementation</em> have multiple meanings. A prototype can be a
+<a href="https://en.wikipedia.org/wiki/Software_prototyping">software product</a>, <a href="https://en.wikipedia.org/wiki/Function_prototype">function declaration</a>, or
+<a href="https://en.wikipedia.org/wiki/Prototype_pattern">cloneable object</a>. Programmers will understand <em>implementation</em> as the
+process of and result of turning the human readable design description into
+executable computer code. But implementation can also mean taking that same
+executable computer code &mdash; the software product &mdash; and embedding it
+successfully in the organization that is going to use it.</p>
+
+<p>So two things are important in achieving clear communication. First, make each
+context internally sound, and second, be aware of the existence of multiple
+contexts, especially when you are speaking with someone who normally thinks and
+works in another context from you.</p>
 ]]></content>
   </entry>
   
@@ -567,162 +850,6 @@ C#, considering that Python is interpreted.</p>
 <p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
 
 <p><em>Update 2017-12-09: Changed the post title.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ode to my Casio]]></title>
-    <link href="http://blog.erw.dk/2015/07/11/ode-to-my-casio/"/>
-    <updated>2015-07-11T13:57:20+02:00</updated>
-    <id>http://blog.erw.dk/2015/07/11/ode-to-my-casio</id>
-    <content type="html"><![CDATA[<p><img class="right" src="/images/posts/casio.jpg" width="345"></p>
-
-<p>The year was 2002 and I had started gymnasium (≈high school). My parents had
-bought me the graphic calculator required for our maths classes: Casio fx-9750G
-PLUS. It was white and green and curvy and Casio &mdash; not dark and rectangular
-and from Texas Instruments, as a calculator was expected to be. Soon, however,
-this happy-looking thing became my companion on my journey into the world of
-programming.</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<p></p>
-
-<p>Compared with a personal computer, this calculator was weak, to say the least.
-The display resolution was 128×64 pixels in black and white. (However, I did
-for a long time dream of the color LCD version CFX-9850GC PLUS, which could
-show <em>three</em> colors:
-<span style="color:orange">orange</span>,
-<span style="color:green">green</span>, and
-<span style="color:blue">blue</span>.)
-The processor was slow. Graphing <em>y = x<sup>2</sup></em> took a good five seconds. Sinusoidal
-regression on 150 data points took 75 seconds, plus another 8 seconds to draw
-the sine curve.
-Memory was limited as well: 32K, of which only 28568 bytes were available to
-the user. And of which every list and matrix entry took up 10 bytes! Plus, any
-time something was graphed, 4K was reserved for that.
-</p>
-
-<p>Yet for all these complaints, this machine was a fantastic place to start
-programming. Having a fixed set of features challenges you to do what you can
-with what you have. On this fixed platform, there was no getting lost in
-debates about which programming language to use, because there was only one
-choice. There was no trouble with installation or incompatible software
-libraries. There was no web browsing or multitasking. No distraction. And zero
-boot time and a year of battery life.</p>
-
-<p><img class="right" src="/images/posts/casio-fact.jpg"></p>
-
-<p>The basic calculator part is a REPL: That is to say it <em>reads</em> your input,
-<em>evaluates</em> it, <em>prints</em> the result, and it <em>loops</em>, doing this indefinitely.
-In this interactive environment, you can familiarize yourself with expressions
-before slowly, step by step, automating small parts of your calculations. You
-could, for example, make a small program that asks the user for input and uses
-a loop to do a calculation.</p>
-
-<p></p>
-
-<p>And there were enough features to do really cool things: Plotting, lists and
-list operations (sorting, summation, product, mean, median, etc.), matrices and
-matrix operations, statistics, regression, etc.</p>
-
-<p></p>
-
-<a name="Programming.on.the.Bus"></a>
-<h2>Programming on the Bus</h2>
-
-<p>During the bus trips to school I spent as much time with my Casio as people
-today spend with their smartphones. And I suppose this puzzled the other
-students: How much time can you really spend calculating?</p>
-
-<p>I made programs for all sorts of tasks. One type was the programs that helped
-my maths and science classes. In maths it was nice to be able to enter the
-information you had about a triangle, and then calculate the rest
-automatically. Or calculate the greatest common divisor. In physics,
-I calculated and visualized refraction. In chemistry, I calculated molar
-masses.</p>
-
-<p><img class="right" src="/images/posts/casio-guitar.jpg"></p>
-
-<p>But it was also fun and games: I made programs that drew nice geometric shapes
-for their beauty. I calculated poker odds. During some boring classes I made
-a program in which you entered the time of day (the calculator didn&rsquo;t have
-a clock), and it drew a 3d pie chart showing how close the current lecture was
-to completion. And I factored out the pie chart so other programs could use it
-as a subroutine.</p>
-
-<p>I made programs for sound and music. I translated between notes (such as A) and
-frequencies (such as 440 Hz). I visualized harmonics. I made a program that
-showed all the ways a chosen note could be played on a guitar. (And
-I didn&rsquo;t even play the guitar!)</p>
-
-<p>And I made games. Guess which number I&rsquo;m thinking of, where the program tells
-you whether your guess was too high or too low. I made a game in which you had
-to remember random numbers that were shown in progressively shorter glimpses.
-Each level made the number one digit longer. I made Snake. It grew linearly
-slower with the length of the snake, and the game was too slow to be fun to
-play. But that didn&rsquo;t affect my pride in making it. Near the end of gymnasium,
-I was planning a strategy game inspired by Command &amp; Conquer Tiberian Sun,
-which I loved. I had a cool animation for the cyborgs&#8217; machine guns, but other
-than that, I never got very far. But to be fair, it is a rather big step from
-Snake to that.</p>
-
-<a name="Much.Learnage"></a>
-<h2>Much Learnage</h2>
-
-<p>This primitive programming taught me some lessons about &ldquo;real&rdquo; programming:</p>
-
-<ul>
-<li>Understanding a program you wrote months ago is tricky, when all variable
-names are a single character. I learned the value of descriptive variable
-names.</li>
-<li>The slow processor gave me a tangible sense of execution time and complexity.</li>
-<li>With an editor window of 6x21 chars, I soon learned that sketching your
-algorithm or architecture before implementing is useful for big programs.
-That would probably take more time to learn on a big screen.</li>
-<li>I learned to prioritize what to do with the limited memory.</li>
-<li>I learned debugging the hard way: There were almost no meaningful error
-messages (but at least you could be taken to the location in the code that
-caused the error).</li>
-<li>I learned that all programs and subroutines sharing a global address space
-sucks!</li>
-</ul>
-
-
-<p></p>
-
-<a name="Interacting.with.the.World"></a>
-<h2>Interacting with the World</h2>
-
-<p>After some time, interacting with a program through a (tiny) screen and (tiny)
-keyboard was not enough. I wanted to interact with the world. Thankfully, my
-parents got me the Casio EA-200 data logger. This device was even clunkier than
-the calculator, but it was a window to the physical world: Now I could measure
-voltage, light, temperature, and sound.</p>
-
-<p>I measured the fluctuation of the temperature in the fridge. Since I could hear
-the compressor swiching on and off I knew the temperature couldn&rsquo;t be constant,
-so I wanted to know the extent of the lie that &ldquo;a fridge is 5&#x00b0;C&rdquo;. (As
-I recall, it went between 4 and 8&#x00b0;C). Knowledge is power, even in the
-small.</p>
-
-<p>With the microphone and speaker, I made a dictaphone. As with Snake, the idea
-of making it was more important than its usefulness. It did work, but the
-memory was somewhat limited.</p>
-
-<p>I also measured the fluctuation of the intensity of light from lightbulbs. Even
-when they appear constantly on, they heat and cool with the alternating current
-of the electric grid. And I learned about another &ldquo;truth&rdquo;: Our electric grid
-runs at 50 Hz. Yes, when it&rsquo;s not 49 and 52 and 50.2 Hz. This is also where
-I got to appreciate the Fourier transform that I recently <a href="/2015/03/20/debugging-complex-numbers/">implemented</a>
-myself.</p>
-
-<p>My dear Casio, thanks for the ride.</p>
-
-<p></p>
 ]]></content>
   </entry>
   
