@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-06-11T11:07:44+02:00</updated>
+  <updated>2022-11-29T08:26:03+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,250 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ioniq Efficiency]]></title>
+    <link href="http://blog.erw.dk/2022/11/29/ioniq-efficiency/"/>
+    <updated>2022-11-29T08:18:04+01:00</updated>
+    <id>http://blog.erw.dk/2022/11/29/ioniq-efficiency</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/hyundai_ioniq_electric_2020_leaves.jpg" title="Picture shows the Hyundai Ioniq Electric's aerodynamic profile in front of some autumn leaves" ></p>
+
+<p>I&rsquo;ve driven the <a href="http://blog.erw.dk/2021/05/02/hyundai-ioniq-electric/">Hyundai Ioniq Electric</a> for two years now, and it&rsquo;s
+time for some more stats. While the car model is not for sale anymore, it will
+exist on the used car market for many years to come, and I&rsquo;m going to continue
+documenting my experiences with it here. Despite being discontinued, the car
+remains one of the most energy efficient mass market vehicles on the roads
+today.</p>
+
+<!-- more -->
+
+
+<p>The Ioniq Electric reports energy use per distance (e.g., kWh/100km) or
+distance traveled per energy amount (e.g., km/kWh), depending on your
+preference. The car has three counters: A trip with automatic reset (after four
+hours of parking), a trip with manual reset, and a long-term counter with
+manual reset. I reset the long-term counter a couple of times, so I do not have
+the car&rsquo;s own efficiency value for the past two years. But I do have a log of
+all the times I charged the car, so I know how much energy I put into the
+battery and how far I drove. This gives me an overall vehicle efficiency of
+6.46&nbsp;km/kWh.</p>
+
+<p>This value includes all the energy spent under all of the real-world conditions
+of the shifting Danish weather, HVAC use (heating, ventilation, and air
+conditioning), tires (AllSeasonContact), driving styles and speeds, etc. The
+figure is the vehicle efficiency and so does not include charging losses. It
+does however include the energy used by the car while it is parked, which I
+estimate to be around 50&nbsp;kWh/year. (I didn&rsquo;t get the Bluelink option to
+make the Ioniq internet-connected. An app-enabled online car could use (much)
+more energy while parked.) By correcting for the assumed 50&nbsp;kWh/year
+drain, I get a driving-only efficiency of 6.83&nbsp;km/kWh (still including
+HVAC and everything else while driving). In the table below, I compare my
+performance with the WLTP results and the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Electric Vehicle Database</a>&rsquo;s
+Real Range (also driving only) numbers:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;efficiency</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle&nbsp;consumption</strong> </th>
+<th style="text-align:right;"> <strong>Average&nbsp;range</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>WLTP</strong>       </td>
+<td style="text-align:right;">                 8.13 km/kWh </td>
+<td style="text-align:right;">               12.3 kWh/100km </td>
+<td style="text-align:right;">                 311 km </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>My driving</strong> </td>
+<td style="text-align:right;">                 6.83 km/kWh </td>
+<td style="text-align:right;">               14.6 kWh/100km </td>
+<td style="text-align:right;">                 262 km </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>EVDB</strong>       </td>
+<td style="text-align:right;">                 6.54 km/kWh </td>
+<td style="text-align:right;">               15.3 kWh/100km </td>
+<td style="text-align:right;">                 250 km </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+The table also shows the range which is calculated as the efficiency multiplied
+by the usable battery size which is 38.3&nbsp;kWh. (If the range seems too low
+for you, Hyundai are on their way to fix it with the upcoming
+<a href="https://ev-database.org/car/1718/Hyundai-IONIQ-6-Long-Range-2WD">Ioniq&nbsp;6</a> sedan which is expected to keep the efficiency of the
+Ioniq Electric while almost doubling its range.) I do not report my car&rsquo;s own
+range estimation as it is not representative of the long-term. It depends only
+on recent driving conditions, as well as HVAC considered either as turned off
+or with its instantaneous power draw, neither of which are long-term
+representative.</p>
+
+<p>The results give me a lot of confidence in EVDB to not overestimate efficiency
+and range, like the WLTP often does. My results being better than EVDB might be
+down to the fact that I drive slightly less on motorways/highways than an
+average driver, or that the Danish weather is slightly warmer than in the EVDB
+model. Speaking of the weather, let&rsquo;s look at how efficiency changes with the
+seasons.</p>
+
+<a name="Efficiency.over.time"></a>
+<h2>Efficiency over time</h2>
+
+<p>The following diagram shows the driving efficiency average for each two-month
+period (Nov-Dec, Jan-Feb, etc.) for the past two years, ranging from 4.7 to
+8.4&nbsp;km/kWh.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_1.png" title="Graph shows efficiency is lowest in winter and highest in summer" ></p>
+
+<p>In the next diagram I add the daytime air temperature in my region of
+Nordjylland, Denmark. (<a href="https://www.dmi.dk/vejrarkiv/manedens-sasonens-og-arets-vejr/tabeller-maned/">Data source</a>. I calculate/approximate daytime
+temperature as the average between (1) the average daily peak temperature in
+the period and (2) the overall average temperature of the period.)</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_2.png" title="Graph shows efficiency approximately follows daytime air temperature" ></p>
+
+<p>The efficiency correlates fairly well with the temperature, but the efficiency
+actually rises faster than the temperature in the spring. This could be caused
+by the spring sunshine:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_3.png" title="Graph shows sunshine is high in both spring and summer" ></p>
+
+<p>It might be that the sun dries wet roads faster and slightly increases the road
+and tire temperature compared with the air, improving efficiency. Either way,
+here&rsquo;s the same diagram with the efficiency turned into range, from 179 to
+323&nbsp;km:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_4.png" title="Graph same as previous, with range instead of efficiency on vertical axis" ></p>
+
+<p>The efficiency at a given time of year is still just an average of different
+driving styles and speeds. Here&rsquo;s how speed affects efficiency.</p>
+
+<a name="Efficiency.and.speed"></a>
+<h2>Efficiency and speed</h2>
+
+<p>I tested the efficiency of my car at different speeds. On a calm and sunny
+Sunday at the end of May, I drove a motorway round trip three times at
+different speeds. I started at 50% state of charge, then drove the 46.6&nbsp;km
+loop and charged back up to 50%, then repeated two more times.</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_E45.jpg" title="Picture shows my motorway round trip route on a satellite image map" ></p>
+
+<p>The Danish Meteorological Institute reported 21°C (in the shade), while my car
+(in the sun) said 24°C. Without using the air conditioning, I drove on the E45
+motorway from the Clever charger at exit 33 Haverslev to exit 36 Onsild and
+back. Of the 46.6&nbsp;km round trip, 43.4&nbsp;km (93%) were motorway, while
+3.2&nbsp;km (7%) were on/off ramps and other roads. On the motorway I set the
+cruise control to 95, 115, and 135&nbsp;km/h which in true speed should be
+around 90, 110, and 130&nbsp;km/h.</p>
+
+<p>This resulted in the following efficiency values reported by the car, for the
+full round trip. From the vehicle efficiency I derive the vehicle consumption
+and the resulting range.</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle efficiency</strong> </th>
+<th style="text-align:right;"> <strong>Vehicle consumption</strong> </th>
+<th style="text-align:right;"> <strong>Range</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">           <strong>90 km/h</strong> </td>
+<td style="text-align:right;">             9.1 km/kWh </td>
+<td style="text-align:right;">          11.0 kWh/100km </td>
+<td style="text-align:right;">    349 km </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>110 km/h</strong> </td>
+<td style="text-align:right;">             6.9 km/kWh </td>
+<td style="text-align:right;">          14.5 kWh/100km </td>
+<td style="text-align:right;">    264 km </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>130 km/h</strong> </td>
+<td style="text-align:right;">             5.6 km/kWh </td>
+<td style="text-align:right;">          17.9 kWh/100km </td>
+<td style="text-align:right;">    214 km </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+If the trip ends at a destination/home charger, driving faster simply means
+you&rsquo;ll get there faster, by spending more energy (and therefore money).
+However, if the journey is longer and requires charging along the route,
+driving faster also means waiting more for charging. Here&rsquo;s the time I spent
+driving and charging:</p>
+
+<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_efficiency_5.png" title="Graph shows total driving + charging time only decreases slightly by driving faster" ></p>
+
+<p>This table shows the resulting average speeds, which are lower than the cruise
+speeds because of the driving off-motorway, and again lower when including the
+time to charge the battery back up:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Driving&nbsp;average&nbsp;speed</strong> </th>
+<th style="text-align:right;"> <strong>Average&nbsp;speed&nbsp;incl.&nbsp;charging</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">           <strong>90 km/h</strong> </td>
+<td style="text-align:right;">                             85 km/h </td>
+<td style="text-align:right;">                                         64 km/h </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>110 km/h</strong> </td>
+<td style="text-align:right;">                            100 km/h </td>
+<td style="text-align:right;">                                         68 km/h </td>
+</tr>
+<tr>
+<td style="text-align:right;">          <strong>130 km/h</strong> </td>
+<td style="text-align:right;">                            113 km/h </td>
+<td style="text-align:right;">                                         70 km/h </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br />
+The Ioniq Electric 38&nbsp;kWh, because of its limited charging speed, is not
+too fast on long journeys. In Youtuber <a href="https://www.youtube.com/@bjornnyland">Bjørn Nyland</a>&rsquo;s
+<a href="https://docs.google.com/spreadsheets/d/1V6ucyFGKWuSQzvI8lMzvvWJHrBS82echMVJH37kwgjE/edit#gid=15442336">1000 km challenge</a> series, the Ioniq 38 achieved an average speed around
+<strong>70&nbsp;km/h</strong> in the winter, similar to veteran EVs Nissan Leaf and Renault
+Zoe. If you pay a bit more, there are some EVs with a great trade-off between
+price and long-distance speed around the <strong>90&nbsp;km/h</strong> mark: Hyundai Kona,
+Kia Niro, VW&nbsp;ID.3, Cupra Born, Tesla Model&nbsp;3&nbsp;SR+. Finally, you
+can get around <strong>100&nbsp;km/h</strong> and up with the newer Ioniqs, Kia EV6, and
+many models from Tesla and the German automakers.</p>
+
+<p>But as seen in Bjørn&rsquo;s videos, sustaining a high average speed on a long
+journey means there&rsquo;s almost no time to eat or take breaks on the trip. And
+that&rsquo;s why even a slower-charging, affordable EV such as the Ioniq Electric can
+be good enough.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bedre elbilsladning i Aalborg [Danish]]]></title>
@@ -3260,108 +3504,6 @@ risk being confusing to newcomers.</p>
 subtle bugs. While the string/integer comparison returned a boolean just like
 integer/integer comparison, string/integer multiplication returns a string, and
 not the integer a novice might be expecting.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Google Pixel 2 - First Impressions]]></title>
-    <link href="http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions/"/>
-    <updated>2017-11-19T15:58:03+01:00</updated>
-    <id>http://blog.erw.dk/2017/11/19/google-pixel-2-first-impressions</id>
-    <content type="html"><![CDATA[<p>I just bought a new smartphone. After three HTC models (Desire Z, One X, One
-M8) I decided to go for the pure Android experience with a Google Pixel 2 (I
-went with the Clearly White, non-XL version). Here are my thoughts after two
-weeks.</p>
-
-<p><img class="center" src="http://blog.erw.dk/images/posts/pixel2.png"></p>
-
-<!-- more -->
-
-
-<p>The first thing I noticed was the <strong>speed</strong>. Booting it up for the first time
-took what I remember as mere seconds. Coming from a 3.5 year old smartphone,
-this was a big improvement. Not so relevant on a daily basis, but a good first
-impression. But the Pixel 2 also feels very snappy in use, especially compared
-with my old smartphone burdened by the newest, hungriest apps.</p>
-
-<p>The second great thing I noticed is the <strong>screen</strong>. It looks fine, but what I&rsquo;m
-really happy about is its ability to reduce the brightness to a fairly low
-level so I don&rsquo;t get blinded in low light conditions. I guess older OLED
-smartphones might have been able to do the same, but it&rsquo;s certainly the first
-smartphone I have owned where I have been satisfied with the low brightness
-level. The automatic brightness adjustment is also excellent. On top of that,
-the Night Light feature is great. As a <a href="http://jonls.dk/redshift/">Redshift</a> (similar to
-<a href="https://justgetflux.com/">f.lux</a>) user I was happy to see it built in to the OS.</p>
-
-<p>Third, the <strong>battery</strong> life is good. As a test, I skipped charging one night,
-and just used it regularly two days in a row. When I went to bed the second
-night, it still had 19% left. And that&rsquo;s even with two battery-eating always-on
-features enabled: Ambient display (showing date, time, and notification icons)
-and Now Playing (which does <em>offline</em> analysis of ambient sound to identify
-playing songs).</p>
-
-<a name="The.Stuff.People.Talk.About"></a>
-<h2>The Stuff People Talk About</h2>
-
-<p><img class="left" src="http://blog.erw.dk/images/posts/pixel2front.jpg" width="370"></p>
-
-<p>On-device song identification is pretty cool. Another hypey feature is the
-&ldquo;Active Edge&rdquo; which let&rsquo;s you <strong>squeeze</strong> the sides of the phone to activate
-Google Assistant. It&rsquo;s fun to play with, but not very useful in my opinion.
-I have to shift the phone in my hand to squeeze the right area, and half of the
-time, the &ldquo;meat&rdquo; of the base of my thumb folds up and taps something unwanted
-on the screen. So it&rsquo;s better to just launch Assistant the regular way: by long
-pressing the home button.</p>
-
-<p>In other news, the <strong>bezels</strong> have taken flak for being too large for 2017. And
-I guess they are. On the plus side, I can comfortably reach both top and bottom
-of the screen with my thumb, and they have room for front-facing stereo
-speakers.</p>
-
-<p>They didn&rsquo;t leave room for a <strong>headphone jack</strong>, though. The phone&rsquo;s packaging
-included a (somewhat bulky) converter but no wired USB C headphones &mdash; to get
-more people to look at the <a href="https://www.google.com/search?q=Pixel+Buds">Pixel Buds</a>, I guess.</p>
-
-<p>Finally, the Pixel 2&rsquo;s <strong>camera</strong> is supposedly really, really good. I don&rsquo;t
-disagree so far, but I&rsquo;ll know more when I get around to trying it somewhere
-more picturesque than my desk.</p>
-
-<a name="Small.Annoyances"></a>
-<h2>Small Annoyances</h2>
-
-<p>Overall, I&rsquo;m fairly satisfied with the Pixel 2. But there are a few small
-annoyances:</p>
-
-<ul>
-<li>No support for <a href="https://en.wikipedia.org/wiki/Miracast">Miracast</a> - only Chromecast</li>
-<li>The Pixel 2 is not officially for sale in Denmark, which means that the
-<a href="https://store.google.com/product/pixel_2">Google Store</a> webpage will not even acknowledge that the Pixel 2 or
-its accessories exist, if you access it from Denmark without tricks</li>
-<li>The ambient display, which is white text on a black background, <em>strobes</em>,
-which you can see when you move the phone around</li>
-<li>Dust and debris gets stuck in the speaker grills
-<span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/android8_notification_collapse.png' width='' height='' alt='Areas for expanding/collapsing notifications'><span class='caption-text'>Areas for expanding/collapsing notifications</span></span></li>
-<li>The device/screen vibrates when the speakers are playing, which can be felt
-in the 120&ndash;700 Hz range</li>
-<li>The power button and volume rocker require too much pressure to press</li>
-<li>Most Android 8 notifications can be expanded/collapsed, to which a large
-part of their surface is reserved. This means that unlike older Android
-notifications, I kinda have to aim when I tap them.</li>
-<li>Going for pure Android is not as cool as I had imagined, and the default
-launcher and dialler are disappointing</li>
-<li>Since the bezels are there anyway, a fingerprint reader on the front would be
-nice, for those times I want to use the phone flat on the table</li>
-</ul>
-
-
-<p>Come to think of it, many of these feel like a step down from my HTC One M8.
-But they&rsquo;re not a big problem compared to the improvements in speed, screen
-blackness, camera, and battery, all in a thinner, lighter body.</p>
-
-<p>I&rsquo;ll get to see over the coming months and years if the &ldquo;full Google
-experience&rdquo; is worth the price. At least I should be getting updates quickly
-for <a href="https://www.androidauthority.com/google-pixel-2-xl-update-804779/">three years</a>, which is better than many OEMs. I just hope the
-Pixel 2 will stay snappy as the updates come.</p>
 ]]></content>
   </entry>
   
