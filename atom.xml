@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-12-15T21:30:13+01:00</updated>
+  <updated>2022-12-21T23:26:01+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,319 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bose QuietComfort Earbuds II vs. Jabra Elite 85t]]></title>
+    <link href="http://blog.erw.dk/2022/12/21/bose-quietcomfort-earbuds-ii-vs-jabra-elite-85t/"/>
+    <updated>2022-12-21T23:16:51+01:00</updated>
+    <id>http://blog.erw.dk/2022/12/21/bose-quietcomfort-earbuds-ii-vs-jabra-elite-85t</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/bose_qce_ii_vs_jabra_elite_85t.jpg" title="Picture shows the charging cases and one earbud of each of the Bose QuietComfort Earbuds II and the Jabra Elite 85t earbuds" ></p>
+
+<p>I&rsquo;ve used the Bose QuietComfort Earbuds II for almost a month and the Jabra
+Elite 85t earbuds for 4&ndash;5 months. Both are flagship products, with the Boses
+being released a few months ago, and the Jabras two years ago. This means that
+by now, the Jabras only cost around half as much as the Boses. That doesn&rsquo;t
+make the Boses better at everything, however. Depending on what qualities you
+value, one or the other could be the better pair.</p>
+
+<!-- more -->
+
+
+<a name="Noise.reduction"></a>
+<h2>Noise reduction</h2>
+
+<p>I am easily distracted by noise and sound which is why I wanted great noise
+reduction, and Bose did not disappoint. The noise reduction of the QuietComfort
+Earbuds II is fantastic. I think they&rsquo;re almost as good as the over-ear Bose
+Noise Cancelling Headphones 700, which is an amazing feat.</p>
+
+<p>I use the term noise reduction instead of noise cancellation, because noise
+cancellation is only one component of the total noise reduction. There&rsquo;s
+passive isolation (think earplugs) which the Boses do better than the Jabras,
+because the Boses get a better seal in my ears. Jabra describes Elite 85t with
+their oval ear tips as a semi-open design, so it&rsquo;s not so strange they have
+less isolation. (Most Jabra true wireless earbuds except for the 85t&rsquo;s have
+round ear tips and are described as a closed design.) It&rsquo;s a bit strange though
+that the Boses get a better seal while also having an oblong shape (though more
+<a href="https://en.wikipedia.org/wiki/Stadium_(geometry)">stadium</a> than oval).</p>
+
+<p>The next part of noise reduction is active noise cancellation (ANC). The Jabras
+have good ANC, but the Boses have possibly the world&rsquo;s best. Third and finally,
+I count noise masking as part of noise reduction: The use of regular wide-band
+noise to drown out irregular noises. Bose does not list noise masking as a
+feature of the QCE II but I do think they use it a little bit. More than other
+ANC products I&rsquo;ve tried, the QCE II has a white noise-y hiss in the background
+(even with occasional hints of static). I&rsquo;ve seen some people on Reddit be very
+unhappy about this, but to me it&rsquo;s acceptable since the QCE IIs are so good at
+reducing external distractions which is what I use them for. I don&rsquo;t know if
+Bose used masking on purpose or it&rsquo;s just a consequence of their beefy ANC.
+Either way, it works.</p>
+
+<p>Winner: Bose</p>
+
+<a name="Connectivity"></a>
+<h2>Connectivity</h2>
+
+<p>Both the Boses and the Jabras can be paired with (remember) multiple Bluetooth
+sound sources, but the Boses can only be <em>connected</em> to one source at a time,
+while the Jabras can be connected to two at the same time, known as multipoint.
+From what I read, the first-generation QCEs could easily be switched to another
+sound source by pressing the button in the charging case, but the QCE II case
+button is only for pairing, not for switching between paired devices.</p>
+
+<p>Bose has other products with multipoint such as the Noise Cancelling Headphones
+700, it just seems they didn&rsquo;t find room for it in the earbuds. To switch
+sources, Bose suggests using the Bose Music smartphone app, but I find it too
+slow to use. Instead I use the target device&rsquo;s Bluetooth menu to &ldquo;steal&rdquo; the
+connection. For example if the Boses are connected to my Android phone and I
+want to use them with my work computer, I press Win+K to open the connections
+menu, and select the Boses which then disconnect from my phone and connect to
+the computer. But then when I walk out of the office and the Boses lose the
+computer connection, they don&rsquo;t automatically connect to my phone in my pocket.</p>
+
+<p>Both products have stable Bluetooth connections, but the Jabras just
+automatically connect to the two most recent devices within range, and it Just
+Works.</p>
+
+<p>Winner: Jabra</p>
+
+<a name="Sound.quality"></a>
+<h2>Sound quality</h2>
+
+<p>The Jabras sound good, but the Boses sound very good, with much deeper bass,
+probably helped by the better seal in my ears. In fact, I&rsquo;ve had to reduce the
+low end a bit in the equalizer, so now it&rsquo;s perfect.</p>
+
+<p>Another kind of sound quality is how good phone/voice calls sound to the people
+in the other end, listening to you. I have not tried being on the receiving end
+of these earbuds, but my impression, based on other people&rsquo;s reviews and tests
+online, is that both products are acceptable but not great for call quality.
+However, from the music listening experience alone I will definitely say:</p>
+
+<p>Winner: Bose</p>
+
+<a name="Charging.case"></a>
+<h2>Charging case</h2>
+
+<p>Both cases feel smooth and sturdy, even though closing their lids sounds a bit
+clacky. If they could have fit a soft-close feature for the lids, that would be
+really nice. Either way, the Bose case is pretty large while the Jabra case is
+smaller, though not small.</p>
+
+<p>Each case has a battery status LED. Jabra indicates high, medium, and low
+battery state of charge by green, (greenish) yellow, and red. Bose lumps high
+and medium into one with a white light, and low battery is amber. The Jabra one
+seemed more intuitive to me, though I think the Bose colors might be more
+inclusive to color blind people, which is nice.</p>
+
+<p>It&rsquo;s very easy to get the buds out of the Jabra case, while it&rsquo;s easiest to use
+two hands to get one bud out of the Bose case. Combined with a bit slow
+connection and auto-calibration, it takes around 15 seconds from I open the
+case until I can start using the Boses. With the Jabras, it takes 5 seconds as
+I can take one bud in each hand, and they connect quickly. The Jabra buds snap
+very satisfyingly back into the case after use, while the Boses require more
+precise handling to get back in, and have a less satisfying snap. Small things,
+but the Jabra case is just a joy to use.</p>
+
+<p>Winner: Jabra</p>
+
+<a name="Comfort"></a>
+<h2>Comfort</h2>
+
+<p>After using the Jabras for months, I was amazed the first time I put the Boses
+in my ears. They felt much better than the Jabras, and the fit was more secure.
+After the initial impression, and after wearing the Boses for some hours, the
+difference did not feel as large, but the Boses are still a bit more
+comfortable. The Boses are also more customizable in terms of fit and
+stability, while the Jabras fit less securely in my ears.</p>
+
+<p>Winner: Bose</p>
+
+<a name="Controls"></a>
+<h2>Controls</h2>
+
+<p>The two products take different approaches: Jabra uses physical buttons while
+Bose uses a touch sensitive surface that you both tap and swipe. The Jabras
+don&rsquo;t have the swiping actions so you control volume by holding down the
+buttons &mdash; hold right bud to increase volume and left to decrease. With Bose,
+each bud has full control of volume by swiping up/down, plus more actions you
+can do on either side such as one tap to ⏯, two taps to ⏭, and three taps to ⏮.</p>
+
+<p>The Bose controls look better on paper, but the Jabras feel way better in real
+life. You can use the physical buttons quickly and effortlessly and always know
+if you pressed the correct number of times. All control actions have around one
+second of delay before they happen which is why the physical feedback is even
+more important. The touch surfaces are slower to use, require more precision
+and don&rsquo;t give haptic feedback so you&rsquo;re not sure if a tap registered and
+consequently if you tapped the correct number of times. And the touch surface
+doesn&rsquo;t work with gloves or headgear that covers the ears. I love that I can
+use the Jabras through clothing.</p>
+
+<p>Winner: Jabra</p>
+
+<a name="Transparency.mode"></a>
+<h2>Transparency mode</h2>
+
+<p>Transparency mode uses the earbuds&#8217; microphones to let you hear what&rsquo;s going on
+around you without taking out the earbuds. Bose calls it <em>Aware</em> while Jabra
+calls it <em>HearThrough</em>. Bose Aware mode provides great transparency once the
+feature is turned on, but it&rsquo;s annoyingly slow to turn on because it requires a
+long press, and then you have to wait for the voice prompt to tell you you&rsquo;re
+in Aware mode. It&rsquo;s faster to take a bud out than to wait for the Aware mode to
+turn on, so I usually just take one bud out if I need to briefly talk to
+someone. Jabra HearThrough is easy and quick to turn on, with or without
+gloves, with a single press of the left earbud, but the sound quality is not
+especially good.</p>
+
+<p>The Jabras have the advantage that they can work in &ldquo;old school&rdquo; mode with
+neither of the newfangled ANC and HearThrough features turned on, whereas Bose
+only lets you fade in a straight line between Aware (max transparency) and
+Quiet (max ANC) &mdash; you can&rsquo;t turn off the smart features. Bose on the other
+hand has a potential advantage with its ActiveSense feature which tries to be
+transparent while also cancelling/reducing loud noises in your surroundings.</p>
+
+<p>It&rsquo;s a draw.</p>
+
+<a name="Mono.mode"></a>
+<h2>Mono mode</h2>
+
+<p>Mono mode means using one earbud alone. Both products have the right earbud as
+the primary one, meaning that the left one is not designed to be used alone. An
+advantage of the Bose touch surface controls is that using only one bud gives
+you almost all controls on that one bud. The only choice you have to make is
+whether long press triggers mode switch or voice assistant, as you cannot have
+both on the same bud. The left Bose bud can actually be used alone for playing
+audio (no calls) as long as the right bud is turned on, i.e., not in the case,
+to relay the audio data from your phone/computer.</p>
+
+<p>For Jabra, the single/double/triple press of each bud can be assigned to
+different actions except for volume control. Even though long pressing the
+right bud normally increases volume, this is disabled in mono mode, probably so
+you don&rsquo;t set the volume too high using the right bud and then can&rsquo;t get it
+back down because you&rsquo;re not wearing the left bud which has the volume down
+button. You can however use the right bud to activate your device&rsquo;s voice
+assistant and ask them to change the volume. The physical button with its
+limits again has the upside that it works through fabric. Finally, the right
+Jabra bud actually fits pretty well in the left ear, and I do use it like that
+occasionally.</p>
+
+<p>It&rsquo;s a draw.</p>
+
+<a name="Battery.life..Water.resistance"></a>
+<h2>Battery life, Water resistance</h2>
+
+<p>Bose claims &ldquo;up to&rdquo; 6 hours on a single charge and 24 hours in total including
+the charging case. Jabra claims &ldquo;up to&rdquo; 5.5 hours on a single charge and 25
+hours including the case. I have not tried to confirm the numbers, but both
+products are totally adequate. In practice I charge the Jabra case more often,
+but I think that&rsquo;s because its battery indicator shows a non-full battery after
+using only (my guess) one third of the charge whereas the Bose case shows
+normal status until you have used two thirds of the charge.</p>
+
+<p>As for water resistance, both products are rated IPX4 (splash proof), but I&rsquo;m
+not going to test the limits of that!</p>
+
+<p>It&rsquo;s a draw.</p>
+
+<a name="App.support..Wireless.charging"></a>
+<h2>App support, Wireless charging</h2>
+
+<p>Both products have supporting smartphone apps. When the Jabra Sound+ app
+starts, it connects very quickly to the earbuds and you can use the app almost
+immediately. The Bose Music app, even though my phone is already connected to
+the earbuds and playing music, sometimes needs to &ldquo;find&rdquo; the earbuds when I
+start the app which is frustrating to wait for.</p>
+
+<p>Both apps contain settings, mode setup, equalizer, help/tips, etc. The Jabra
+app has some extra features: It shows the case battery state, which is really
+nice, and it can play soundscapes like White noise, Pink noise, Waterfall,
+Ocean waves, etc.</p>
+
+<p>The Jabra case can be charged wirelessly on a Qi charger. So could the original
+QCE case, but not the QCE II case. Not important to me, though it definitely is
+to some people.</p>
+
+<p>Winner: Jabra</p>
+
+<a name="Conclusion"></a>
+<h2>Conclusion</h2>
+
+<p>Here&rsquo;s a summary of each category winner:</p>
+
+<div class="next-table-sidescroll next-table-striped"></div>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;"><strong>Category</strong></th>
+<th style="text-align:center; width: 40%"><strong>Winner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">Noise&nbsp;reduction</td>
+<td style="text-align:left;">Bose</td>
+</tr>
+<tr>
+<td style="text-align:left;">Connectivity</td>
+<td style="text-align:right;">Jabra</td>
+</tr>
+<tr>
+<td style="text-align:left;">Sound&nbsp;quality</td>
+<td style="text-align:left;">Bose</td>
+</tr>
+<tr>
+<td style="text-align:left;">Charging&nbsp;case</td>
+<td style="text-align:right;">Jabra</td>
+</tr>
+<tr>
+<td style="text-align:left;">Comfort</td>
+<td style="text-align:left;">Bose</td>
+</tr>
+<tr>
+<td style="text-align:left;">Controls</td>
+<td style="text-align:right;">Jabra</td>
+</tr>
+<tr>
+<td style="text-align:left;">Transparency&nbsp;mode</td>
+<td style="text-align:center;">Draw</td>
+</tr>
+<tr>
+<td style="text-align:left;">Mono&nbsp;mode</td>
+<td style="text-align:center;">Draw</td>
+</tr>
+<tr>
+<td style="text-align:left;">Battery&nbsp;life, Water&nbsp;resistance </td>
+<td style="text-align:center;">Draw</td>
+</tr>
+<tr>
+<td style="text-align:left;">App&nbsp;support, Wireless&nbsp;charging </td>
+<td style="text-align:right;">Jabra</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br> The two products win approximately the same number of categories, but some
+categories are more important than others. To me, noise reduction is paramount,
+which is why I prefer Bose overall, but it&rsquo;s no landslide victory. While I
+enjoy the ANC when working at the office, I also dislike having to switch
+Bluetooth sound sources manually, often multiple times per day.</p>
+
+<p>Going outside in the winter, I definitely prefer the Jabras, with their
+physical buttons that I can use unhindered by winter getup. In hindsight, I
+should not have bought the Jabra Elite 85t&rsquo;s with their semi-open design, as
+they let in too much external sound for my taste. I might have preferred their
+newer Elite 5 or 7 models.</p>
+
+<p>The best product would be a lovechild of Bose and Jabra with the fit, ANC, and
+sound quality from Bose and everything else from Jabra. That would be hard to
+beat (except perhaps on call quality).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Avatar: The Way of Water]]></title>
@@ -3198,102 +3511,6 @@ freaks control.</li>
 
 
 <p><em>Update 2018-11-06: Minor clarifications.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What Roland Boutique Needs]]></title>
-    <link href="http://blog.erw.dk/2018/02/25/what-roland-boutique-needs/"/>
-    <updated>2018-02-25T16:46:09+01:00</updated>
-    <id>http://blog.erw.dk/2018/02/25/what-roland-boutique-needs</id>
-    <content type="html"><![CDATA[<p>Roland Boutique is a series of small form factor electronic music instruments.
-The line debuted in 2015 with recreations of three iconic Roland 1980s synths.
-I got the JP-08 which I wrote about <a href="http://blog.erw.dk/2017/06/25/roland-jp-08-review/">here</a>. Since then I&rsquo;ve been
-watching the series grow with interest.</p>
-
-<p>By now, the <a href="https://www.roland.com/us/promos/roland_boutique/">Boutique line</a> includes nine products recreating
-Roland&rsquo;s back catalog: Five subtractive synths (JP-08, JU-06, JX-03, TB-03,
-SH-01A), the VP-03 vocoder, the TR-08 and TR-09 drum machines, and finally the
-D-05 &ldquo;linear synthesizer&rdquo; mixing sampling and synthesis.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/boutique_hero.png"></p>
-
-<!-- more -->
-
-
-<p>In 2017, Roland ventured outside their own history. Teaming up with Studio
-Electronics, they released the Minimoog-inspired analog monosynth SE-02. Having
-started down this path, they might make an FM (frequency modulation) synth.
-Missing from the lineup is also perhaps a sampler/sample player/sample mangler?</p>
-
-<p>That would at least match miniatures produced by other manufacturers in the
-last few years. The very small and affordable Korg Volca series has the
-straightforwardly named Beats, Bass, Keys, Sample, and FM. The first four
-predated the original Boutique trio by 1-2 years, while the FM was released in
-2016.</p>
-
-<p>Swedish manufacturer Elektron also recently went small with the less toylike
-&mdash; and less affordable &mdash; Digitakt sampler and Digitone FM-synth, with the
-latter being announced just one month ago.</p>
-
-<p>The 2015 Yamaha Reface series also has CS, DX, YC, and CP, doing synth, FM,
-electric organ, and electric piano, respectively. And this leads me toward what
-I would most like to see in the Roland Boutique series.</p>
-
-<a name="Give.Me.a.Piano."></a>
-<h2>Give Me a Piano!</h2>
-
-<p>When you think of a digital piano, you are more likely to think of 88 weighted
-keys than 25 non-weighted &ldquo;synth action&rdquo; minikeys. But one of the advantages of
-the Boutiques is that they can both slot into the K-25m keyboard module and
-perform as a sound module/desktop synth.</p>
-
-<p>I would love to have a Roland Boutique piano with high-quality, natural,
-acoustic piano sounds as well as high-quality electric pianos, organs, strings,
-etc. I guess the model number would be in the form of FP-0x or RD-0x. I would
-use such a Boutique piano module both as a sound module plugged into a MIDI
-keyboard, and in the sofa as a plaything and/or compositional tool with the
-K-25m keyboard attached.</p>
-
-<p>The D-05 unfortunately does not fill this role. When the D-50 was launched in
-1987 it certainly came closer than any analog synth to sounding like acoustic
-instruments, but that doesn&rsquo;t mean it could actually pass for one. I went to my
-local music store to try out the D-05, and while it does have a dozen patches
-with &ldquo;piano&rdquo; in their name, none of them sound like an acoustic piano. It can
-do electric pianos and organs, but overall I think the D-50/D-05 has a certain
-80s/90s &ldquo;lo-fi&rdquo; sound. It excels at some things, but not acoustic piano.</p>
-
-<a name="The.Panel"></a>
-<h2>The Panel</h2>
-
-<p>Some of the Boutiques have too many buttons crammed into the limited space on
-the panel. This includes the <a href="http://blog.erw.dk/2017/06/25/roland-jp-08-review/">JP-08</a>, and judging from pictures, also
-the TR-08, TR-09 and SE-02. Some have a more reasonable amount, such as the
-JU-06, SH-01A, and VP-03. The D-05 doesn&rsquo;t have too many buttons per se, but it
-faithfully recreates the dreary menu diving experience of the &ldquo;digital age&rdquo; (to
-achieve more hands-on programming of the D-50/D-550/D-05, you need the enormous
-PG-1000 programmer). But, digital pianos typically do not have a lot of
-buttons. So what do I want on the Boutique piano panel?</p>
-
-<p>I can think of a lot!</p>
-
-<ul>
-<li>Better speaker(s), perhaps even front facing</li>
-<li>Dedicated octave up/down buttons</li>
-<li>A good pitch/modulation stick (yes, electric organs can <a href="http://www.organforum.com/forums/showthread.php?22171-Pitch-bending-on-a-Hammond-A-mystery">pitch bend</a>)</li>
-<li>Effects! Reverb, Leslie, Overdrive, Chorus, you name it.</li>
-<li>Loop machine</li>
-<li>Tape recorder</li>
-<li>Sequencer</li>
-<li>Arpeggiator</li>
-<li>Chord memory</li>
-<li>Scale/chord library (like a <a href="https://www.islainstruments.com/product/kordbot/">KordBot</a>?)</li>
-</ul>
-
-
-<p>Finally, such a module shouldn&rsquo;t be expensive. Unless it would have several of
-the above features, it should be closer to 150 €/$ than to 400 €/$. It&rsquo;s
-a ripoff that the K-25m keyboard is already 100 €/$.</p>
 ]]></content>
   </entry>
   
