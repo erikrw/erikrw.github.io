@@ -9,8 +9,9 @@
   <meta name="author" content="Erik Ramsgaard Wognsen">
 
   
-  <meta name="description" content="I&rsquo;ve used the Bose QuietComfort Earbuds II for almost a month and the Jabra
-Elite 85t earbuds for 4&ndash;5 months. Both are flagship products &hellip;">
+  <meta name="description" content="The Stack Overflow blog recently published the article
+Minimizing the downsides of dynamic programming languages
+(such as JavaScript, Python, Ruby, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +82,58 @@ if (document.location.hostname != "127.0.0.1") {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2023/02/18/taming-python-with-dataclasses/">Taming Python with Dataclasses</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2023-02-18T20:28:53+01:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2023</span></span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The Stack Overflow blog recently published the article
+<a href="https://stackoverflow.blog/2023/01/19/adding-structure-to-dynamic-languages/">Minimizing the downsides of dynamic programming languages</a>
+(such as JavaScript, Python, Ruby, PHP) from which I&rsquo;ll point out:</p>
+
+<ul>
+<li><p>&ldquo;Type hints are the most obvious way to make a dynamic language more static.
+In effect, you get the best of both worlds: you can write dynamic code but
+are required to be more careful about what types you expect to get and use at
+any point.&rdquo;</p></li>
+<li><p>&ldquo;Dictionaries are for unknown data.&rdquo; In other words, if you know while
+writing the code which keys are going to be in your dictionary at runtime,
+you should use an interface (TypeScript), struct (Ruby), or dataclass
+(Python), instead of a plain dictionary/object.</p></li>
+</ul>
+
+
+<p>This reminded me that if you&rsquo;re a Python programmer, you should definitely know
+about <a href="https://docs.python.org/library/dataclasses.html">dataclasses</a> (since Python 3.7, 2018) because they do both of the
+above, as fields of the dataclass are specified using type annotation syntax.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2023/02/18/taming-python-with-dataclasses/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -449,47 +502,6 @@ charging. Here&rsquo;s my experience with EV charging in the past six months.</p
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2021/05/02/hyundai-ioniq-electric/">Hyundai IONIQ Electric</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-05-02T09:31:37+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2021</span></span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="center" src="/images/posts/hyundai_ioniq_electric_2020.jpg"></p>
-
-<p>In late 2020 we decided to get a car. After relying on the extensive Danish
-public transport system for many years, it was time for a &ldquo;socially distanced&rdquo;
-means of transportation. My friend Jon had just got a Hyundai Kona Electric &mdash;
-a mini-crossover with good range. This sparked my interest in electric cars,
-and after a month of research and testing, we ordered its sibling, the 2020
-IONIQ Electric. It&rsquo;s a frugal yet fun car with good value but some drawbacks.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2021/05/02/hyundai-ioniq-electric/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -511,6 +523,10 @@ IONIQ Electric. It&rsquo;s a frugal yet fun car with good value but some drawbac
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2023/02/18/taming-python-with-dataclasses/">Taming Python with Dataclasses</a>
+      </li>
+    
+      <li class="post">
         <a href="/2022/12/21/bose-quietcomfort-earbuds-ii-vs-jabra-elite-85t/">Bose QuietComfort Earbuds II vs. Jabra Elite 85t</a>
       </li>
     
@@ -526,16 +542,12 @@ IONIQ Electric. It&rsquo;s a frugal yet fun car with good value but some drawbac
         <a href="/2022/06/11/bedre-elbilsladning-i-aalborg/">Bedre elbilsladning i Aalborg [Danish]</a>
       </li>
     
-      <li class="post">
-        <a href="/2022/06/04/aawireless-first-impressions/">AAWireless First Impressions</a>
-      </li>
-    
   </ul>
 </section>
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/android/'>android (4)</a></li><li><a href='/blog/categories/ev/'>ev (6)</a></li><li><a href='/blog/categories/gadgets/'>gadgets (6)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (3)</a></li><li><a href='/blog/categories/programming/'>programming (8)</a></li><li><a href='/blog/categories/pa-dansk/'>på dansk (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/android/'>android (4)</a></li><li><a href='/blog/categories/ev/'>ev (6)</a></li><li><a href='/blog/categories/gadgets/'>gadgets (6)</a></li><li><a href='/blog/categories/keyboards/'>keyboards (2)</a></li><li><a href='/blog/categories/language/'>language (3)</a></li><li><a href='/blog/categories/productivity/'>productivity (3)</a></li><li><a href='/blog/categories/programming/'>programming (9)</a></li><li><a href='/blog/categories/pa-dansk/'>på dansk (4)</a></li><li><a href='/blog/categories/usability/'>usability (2)</a></li><li><a href='/blog/categories/vim/'>vim (5)</a></li><li><a href='/blog/categories/work-life/'>work life (2)</a></li></ul>
 </section>
 
   
@@ -544,7 +556,7 @@ IONIQ Electric. It&rsquo;s a frugal yet fun car with good value but some drawbac
     </div>
   </div>
   <footer role="contentinfo"><p>
-  &copy; 2022 - Erik Ramsgaard Wognsen -
+  &copy; 2023 - Erik Ramsgaard Wognsen -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

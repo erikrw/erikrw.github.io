@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-12-21T23:26:01+01:00</updated>
+  <updated>2023-02-18T20:34:48+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,183 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Taming Python with Dataclasses]]></title>
+    <link href="http://blog.erw.dk/2023/02/18/taming-python-with-dataclasses/"/>
+    <updated>2023-02-18T20:28:53+01:00</updated>
+    <id>http://blog.erw.dk/2023/02/18/taming-python-with-dataclasses</id>
+    <content type="html"><![CDATA[<p>The Stack Overflow blog recently published the article
+<a href="https://stackoverflow.blog/2023/01/19/adding-structure-to-dynamic-languages/">Minimizing the downsides of dynamic programming languages</a>
+(such as JavaScript, Python, Ruby, PHP) from which I&rsquo;ll point out:</p>
+
+<ul>
+<li><p>&ldquo;Type hints are the most obvious way to make a dynamic language more static.
+In effect, you get the best of both worlds: you can write dynamic code but
+are required to be more careful about what types you expect to get and use at
+any point.&rdquo;</p></li>
+<li><p>&ldquo;Dictionaries are for unknown data.&rdquo; In other words, if you know while
+writing the code which keys are going to be in your dictionary at runtime,
+you should use an interface (TypeScript), struct (Ruby), or dataclass
+(Python), instead of a plain dictionary/object.</p></li>
+</ul>
+
+
+<p>This reminded me that if you&rsquo;re a Python programmer, you should definitely know
+about <a href="https://docs.python.org/library/dataclasses.html">dataclasses</a> (since Python 3.7, 2018) because they do both of the
+above, as fields of the dataclass are specified using type annotation syntax.</p>
+
+<!-- more -->
+
+
+<p>For example, if you write:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+</span><span class='line'>
+</span><span class='line'><span class="nd">@dataclass</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">InventoryItem</span><span class="p">:</span>
+</span><span class='line'>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+</span><span class='line'>    <span class="n">unit_price</span><span class="p">:</span> <span class="nb">float</span>
+</span><span class='line'>    <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then the <code>@dataclass</code> decorator adds something like the following to your class
+at runtime.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">unit_price</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span> <span class="o">=</span> <span class="n">unit_price</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">quantity</span> <span class="o">=</span> <span class="n">quantity</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">(</span><span class="n">f</span><span class="s">&#39;InventoryItem(name={repr(self.name)}, &#39;</span>
+</span><span class='line'>            <span class="n">f</span><span class="s">&#39;unit_price={repr(self.unit_price)}, &#39;</span>
+</span><span class='line'>            <span class="n">f</span><span class="s">&#39;quantity={repr(self.quantity)})&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">quantity</span><span class="p">)</span> <span class="o">==</span>
+</span><span class='line'>            <span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">unit_price</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">quantity</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Dataclasses can do more than that, but those are the basics. Typically, the
+dataclass decorator itself doesn&rsquo;t actually care about the types (str, float,
+int) &mdash; it mainly uses the type annotations as a concise syntax to specify the
+<em>names</em> of the fields. But since dataclasses are pretty useful, they become
+like a &ldquo;gateway drug&rdquo; to using and learning more about Python type annotations.</p>
+
+<a name="Magic"></a>
+<h2>Magic</h2>
+
+<p>The Stack Overflow blog post then seems to backpedal with the recommendation
+&ldquo;Be more explicit than you need to be&rdquo;. After all, having the dunder methods
+(<code>__init__</code> etc.) generated automatically is less explicit than writing them
+out yourself. But the blog post clarifies that &ldquo;The only real things that
+should ever be doing metaprogramming or reflection are frameworks themselves&rdquo;
+which makes it ok again to use dataclasses since they are part of the standard
+library.</p>
+
+<p>I agree; &ldquo;magic&rdquo; stuff should mainly be done by frameworks, and only when the
+benefits are tangible. And I think dataclasses are so useful (and again, part
+of the standard library) that it&rsquo;s ok to expect readers of your code to know or
+be willing to learn about them.</p>
+
+<p>However, in combination with other slightly magical things, I was recently
+wondering if the code I was writing was a bit &ldquo;too magic&rdquo;:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">rest_framework</span> <span class="kn">import</span> <span class="n">serializers</span>
+</span><span class='line'>
+</span><span class='line'><span class="nd">@dataclass</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Thing</span><span class="p">:</span>
+</span><span class='line'>    <span class="n">my_foo</span><span class="p">:</span> <span class="nb">int</span>
+</span><span class='line'>
+</span><span class='line'><span class="nd">@dataclass</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">SpecialThing</span><span class="p">(</span><span class="n">Thing</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">my_bar</span><span class="p">:</span> <span class="nb">int</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">SpecialThingSerializer</span><span class="p">(</span><span class="n">serializers</span><span class="o">.</span><span class="n">Serializer</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">MyFoo</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="s">&#39;my_foo&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">MyBar</span> <span class="o">=</span> <span class="n">serializers</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="s">&#39;my_bar)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">validated_data</span><span class="p">):</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">SpecialThing</span><span class="p">(</span><span class="o">**</span><span class="n">validated_data</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This code can deserialize a JSON object such as <code>{"MyFoo": 1, "MyBar": 2}</code> into
+my (pep8 compliant) dataclass as an object with the representation
+<code>SpecialThing(my_foo=1, my_bar=2)</code>. This overall journey should not be too
+surprising, but the individual steps to get there are not very explicit:</p>
+
+<ul>
+<li>The <a href="https://www.django-rest-framework.org/">Django REST framework</a> serializer will produce the <code>validated_data</code>
+dict <code>{'my_foo': 1, 'my_bar': 2}</code> because when working in reverse
+(deserializing), the <code>source</code> field name becomes the target, so <code>MyFoo</code>
+becomes <code>my_foo</code>, etc.</li>
+<li>This dict is <code>**</code>unpacked as keyword arguments to instantiate <code>SpecialThing</code></li>
+<li>The auto-generated <code>SpecialThing.__init__</code> correctly handles both of these
+keyword arguments because one is inherited from the <code>Thing</code> dataclass.</li>
+</ul>
+
+
+<p>I love how compact the code is, but I also have to acknowledge that it might
+not be clear to Python novices without the above explanation. But in the
+bigger picture I think this example is still within the limits of what is
+reasonable because:</p>
+
+<ul>
+<li>The overall purpose of the code (deserialization) is fairly straightforward
+once you are in the context of Django REST framework</li>
+<li>The code doesn&rsquo;t use programmatically constructed variable names, so it
+passes the grep test, as mentioned in the Stack Overflow blogpost</li>
+<li>The magic is done with the standard library and DRF, the main framework of
+the codebase.</li>
+</ul>
+
+
+<p>In the end, you should write so it makes sense to the people who are going to
+read it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bose QuietComfort Earbuds II vs. Jabra Elite 85t]]></title>
@@ -3350,167 +3527,6 @@ legroom seats are exactly the ones I&rsquo;d like to avoid. The emergency exit r
 have some of the same problems as the front row, but with more overhead bin
 space and less toilet queue. But I&rsquo;d take a standard economy seat over that as
 well.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Weird Keyboard]]></title>
-    <link href="http://blog.erw.dk/2018/04/14/my-weird-keyboard/"/>
-    <updated>2018-04-14T16:57:10+02:00</updated>
-    <id>http://blog.erw.dk/2018/04/14/my-weird-keyboard</id>
-    <content type="html"><![CDATA[<p>I use a weird computer keyboard: The <a href="https://www.kinesis-ergo.com/shop/advantage2/">Kinesis Advantage</a>.
-It&rsquo;s a concave, columnar, split, tented, mechanical keyboard with thumb keys.
-It&rsquo;s very comfortable and much better than anything Logitech or Microsoft have
-ever labeled ergonomic.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage2.jpg"></p>
-
-<!-- more -->
-
-
-<a name="Ergonomic.Features"></a>
-<h2>Ergonomic Features</h2>
-
-<p><strong>Columnar</strong> means that the keys are laid out in straight columns, so you don&rsquo;t
-have to bend your fingers sideways as you curl and extend them &mdash; unlike on
-a standard, staggered keyboard, where especially the left hand fingers need to
-move unnaturally. The <strong>split</strong> also helps avoiding sideways bends for the
-wrists. For more details, see the illustration of the <a href="https://www.trulyergonomic.com/store/unique-symmetric-columnar-key-arrangement--truly-ergonomic-mechanical-keyboard--orthogonal-matrix-non-staggered">Truly Ergonomic
-keyboard</a> (which I haven&rsquo;t tried (yet)).</p>
-
-<p><strong>Tented</strong> means that the thumb side of each hand sits higher than the pinky
-side. This gives the wrists a more natural rotation. The Advantage only tilts
-20 degrees &mdash; other keyboards such as the
-<a href="https://www.kinesis-ergo.com/shop/freestyle2-for-pc-us/">Kinesis Freestyle</a> and the <a href="http://safetype.com">SafeType</a> can tent
-(up to) 90 degrees (while <a href="https://www.kinesis-ergo.com/wp-content/uploads/2013/08/frreestyle2-ascent-90-1.jpg">looking</a> even less
-conventional than the Advantage).</p>
-
-<p>The <strong>thumb key</strong> clusters make more keys reachable without moving the hand
-away from its home position, and it offloads Backspace and Enter from the
-overworked right pinky and onto the stronger thumbs.</p>
-
-<p>The <strong>mechanical</strong> keyswitches (Cherry MX brown or red) register the keypress
-when the key is halfway depressed (2 out of 4 millimeters). This is opposed to
-standard rubber dome keyboards that require you to bottom out &mdash; fully depress
-the key until the finger is jolted to a stop.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage2_side.jpg"></p>
-
-<p>The best feature of the Advantage is the <strong>concave</strong> keywells: The scooped-out
-parts of the keyboard where the alphanumeric keys reside. They serve several
-purposes:</p>
-
-<ul>
-<li>As you curl and extend your fingers, the keys remain at the same distance
-from your fingertips, so you don&rsquo;t need to stretch your fingers much to
-reach. This also makes it easy to access all five (!) rows of keys.</li>
-<li>The same happens when you move your index finger to the side (like T, G, B),
-reducing sideways-twisting finger motions.</li>
-<li>The depths of the columns are matched with the corresponding fingers, so they
-all rest naturally in the home position.</li>
-</ul>
-
-
-<a name="Switching"></a>
-<h2>Switching</h2>
-
-<p>I got my first Kinesis Advantage in 2011. As I recall, it only took a few days
-to adapt to this weird keyboard. The best part is that I can still switch
-effortlessly between the Advantage and standard, flat, staggered keyboards. Not
-that I particularly enjoy it, but I can do it, which is very practical for
-traveling. The Advantage is actually narrower than a standard 104/105-key
-keyboard, but it&rsquo;s bigger in the two other dimensions and therefore not easy to
-transport.</p>
-
-<p>However, the physical shape of my keyboard is not the only weird thing about my
-typing. The <em>logical</em> layout I use &mdash; <a href="http://blog.erw.dk/2015/02/27/4-years-with-colemak/">Colemak</a> &mdash; is weird too.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage_custom_keycaps_right.jpg"></p>
-
-<p>Switching logical layout is much harder for me than switching physical layout.
-Even though the Advantage is firmware remappable, I set my logical layout in
-the computer OS, so I will keep the logical layout for all keyboards, including
-the laptop keyboard.</p>
-
-<p>Some people retain their QWERTY touch typing skills while learning an
-alternative layout by associating logical layout with physical keyboard, e.g.,
-typing Colemak on the Advantage and QWERTY on standard keyboards. And I did
-actually get the Advantage the same year I switched to Colemak, but I much
-prefer typing Colemak on my laptop while traveling over maintaining my QWERTY
-skills.</p>
-
-<a name="Legends"></a>
-<h2>Legends</h2>
-
-<p>It&rsquo;s not really necessary have Colemak legends on the keys, but I did get a set
-of custom keycaps made by <a href="http://www.wasdkeyboards.com/">WASD keyboards</a> for one of my two Advantages
-&mdash; complete with my Danish variation of Colemak &mdash; as shown in the images
-above and below. It&rsquo;s mostly for show, because the legends are not necessary
-for touch typing, and the Advantage is not so good anyway for one-handed use
-where the legends might be relevant.</p>
-
-<p>In fact, hunt-and-peck typing is for some reason easier for me with QWERTY
-legends, even while I type Colemak. My eyes are more used to the common QWERTY
-layout, I guess. I just know that pressing the QWERTY &rsquo;T&#8217; key produces a &lsquo;G&rsquo; in
-Colemak. If I look down and the key shows a &lsquo;G&rsquo;, my eyes get confused, even
-though my fingers knows exactly where to press to get the &lsquo;G&rsquo; while touch
-typing.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/kinesis_advantage_custom_keycaps_left.jpg"></p>
-
-<a name="Downsides"></a>
-<h2>Downsides</h2>
-
-<p>The Advantage is not great for everything. Split keyboards are not good for the
-occasional one-handed use (e.g., while holding a drink, phone, piece of paper).</p>
-
-<p>The Advantage is not the best for gaming either. The arrow keys are spread on
-both sides of the split which is fine for two-handed office and programming
-use, but not ideal for gaming. The key positions are matched to finger lengths,
-so the WASD keys will not work well with the normal WASD-fingers. ESDF should
-be perfect, though.</p>
-
-<p>For a long time, the typical complaint of the Advantage was the low quality of
-the rubber F-keys. In 2016, the Advantage2 was launched, with Cherry ML
-switches instead of rubber dome F-keys, and more programming options. This is
-the product I link to in the top of the post because the product page for the
-old version seems to be gone. I haven&rsquo;t tried it, but I can only imagine it&rsquo;s
-an improvement.</p>
-
-<p>Another problem partially solved by time is the built-in combined USB hub and
-PS/2-to-USB converter. It &mdash; and the whole keyboard with it &mdash; didn&rsquo;t work
-with Windows 7. Kinesis did sell a cable conversion kit to work around this,
-but I went DIY and installed a PS/2-to-USB adapter myself, bypassing the
-problematic USB hub, on my &ldquo;work&rdquo; board.</p>
-
-<p>My &ldquo;home&rdquo; board always worked fine with Linux (and Windows 10), but it&rsquo;s also
-not recognized by the BIOS of my desktop computer&rsquo;s motherboard. A smaller
-problem but I&rsquo;m considering giving this board a USB hubectomy as well. The
-Advantage2 has supposedly also solved this problem.</p>
-
-<p>There are a few problems with the Advantage, but they are minor compared to the
-Advantage (heh) of using an extremely comfortable keyboard for my 10+ daily
-hours of computer usage.</p>
-
-<a name="Key.Remapping"></a>
-<h2>Key Remapping</h2>
-
-<p>My remaining complaints were solved with easy firmware remapping, which is in
-fact just a testament to the Advantage&rsquo;s flexibility:</p>
-
-<ul>
-<li>I swapped Space and Backspace because I have for some reason always used my
-left hand&rsquo;s thumb for Space.</li>
-<li>I use the Alt+Tab shortcut all the time, so I moved the Alt key closer to my
-thumb in the left thumb cluster.</li>
-<li>I made the key above Tab work as an Escape key.</li>
-<li>I made the key below Tab work as a Control key because that&rsquo;s how control
-freaks control.</li>
-<li>I put Down to the left of Up because that&rsquo;s how Vim users roll.</li>
-</ul>
-
-
-<p><em>Update 2018-11-06: Minor clarifications.</em></p>
 ]]></content>
   </entry>
   

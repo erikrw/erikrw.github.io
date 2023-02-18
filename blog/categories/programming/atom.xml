@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2022-12-21T23:26:01+01:00</updated>
+  <updated>2023-02-18T20:34:48+01:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,145 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Taming Python with Dataclasses]]></title>
+    <link href="http://blog.erw.dk/2023/02/18/taming-python-with-dataclasses/"/>
+    <updated>2023-02-18T20:28:53+01:00</updated>
+    <id>http://blog.erw.dk/2023/02/18/taming-python-with-dataclasses</id>
+    <content type="html"><![CDATA[<p>The Stack Overflow blog recently published the article
+<a href="https://stackoverflow.blog/2023/01/19/adding-structure-to-dynamic-languages/">Minimizing the downsides of dynamic programming languages</a>
+(such as JavaScript, Python, Ruby, PHP) from which I&rsquo;ll point out:</p>
+
+<ul>
+<li><p>&ldquo;Type hints are the most obvious way to make a dynamic language more static.
+In effect, you get the best of both worlds: you can write dynamic code but
+are required to be more careful about what types you expect to get and use at
+any point.&rdquo;</p></li>
+<li><p>&ldquo;Dictionaries are for unknown data.&rdquo; In other words, if you know while
+writing the code which keys are going to be in your dictionary at runtime,
+you should use an interface (TypeScript), struct (Ruby), or dataclass
+(Python), instead of a plain dictionary/object.</p></li>
+</ul>
+
+
+<p>This reminded me that if you&rsquo;re a Python programmer, you should definitely know
+about <a href="https://docs.python.org/library/dataclasses.html">dataclasses</a> (since Python 3.7, 2018) because they do both of the
+above, as fields of the dataclass are specified using type annotation syntax.</p>
+
+<!-- more -->
+
+
+<p>For example, if you write:</p>
+
+<pre><code class="python">from dataclasses import dataclass
+
+@dataclass
+class InventoryItem:
+    name: str
+    unit_price: float
+    quantity: int = 0
+</code></pre>
+
+<p>Then the <code>@dataclass</code> decorator adds something like the following to your class
+at runtime.</p>
+
+<pre><code class="python">def __init__(self, name: str, unit_price: float, quantity: int = 0):
+    self.name = name
+    self.unit_price = unit_price
+    self.quantity = quantity
+
+def __repr__(self):
+    return (f'InventoryItem(name={repr(self.name)}, '
+            f'unit_price={repr(self.unit_price)}, '
+            f'quantity={repr(self.quantity)})')
+
+def __eq__(self, other):
+    return ((self.name, self.unit_price, self.quantity) ==
+            (other.name, other.unit_price, other.quantity))
+</code></pre>
+
+<p>Dataclasses can do more than that, but those are the basics. Typically, the
+dataclass decorator itself doesn&rsquo;t actually care about the types (str, float,
+int) &mdash; it mainly uses the type annotations as a concise syntax to specify the
+<em>names</em> of the fields. But since dataclasses are pretty useful, they become
+like a &ldquo;gateway drug&rdquo; to using and learning more about Python type annotations.</p>
+
+<a name="Magic"></a>
+<h2>Magic</h2>
+
+<p>The Stack Overflow blog post then seems to backpedal with the recommendation
+&ldquo;Be more explicit than you need to be&rdquo;. After all, having the dunder methods
+(<code>__init__</code> etc.) generated automatically is less explicit than writing them
+out yourself. But the blog post clarifies that &ldquo;The only real things that
+should ever be doing metaprogramming or reflection are frameworks themselves&rdquo;
+which makes it ok again to use dataclasses since they are part of the standard
+library.</p>
+
+<p>I agree; &ldquo;magic&rdquo; stuff should mainly be done by frameworks, and only when the
+benefits are tangible. And I think dataclasses are so useful (and again, part
+of the standard library) that it&rsquo;s ok to expect readers of your code to know or
+be willing to learn about them.</p>
+
+<p>However, in combination with other slightly magical things, I was recently
+wondering if the code I was writing was a bit &ldquo;too magic&rdquo;:</p>
+
+<p></p>
+
+<pre><code class="python">from dataclasses import dataclass
+from rest_framework import serializers
+
+@dataclass
+class Thing:
+    my_foo: int
+
+@dataclass
+class SpecialThing(Thing):
+    my_bar: int
+
+class SpecialThingSerializer(serializers.Serializer):
+    MyFoo = serializers.IntegerField(source='my_foo')
+    MyBar = serializers.IntegerField(source='my_bar)
+
+    def create(self, validated_data):
+        return SpecialThing(**validated_data)
+</code></pre>
+
+<p>This code can deserialize a JSON object such as <code>{"MyFoo": 1, "MyBar": 2}</code> into
+my (pep8 compliant) dataclass as an object with the representation
+<code>SpecialThing(my_foo=1, my_bar=2)</code>. This overall journey should not be too
+surprising, but the individual steps to get there are not very explicit:</p>
+
+<ul>
+<li>The <a href="https://www.django-rest-framework.org/">Django REST framework</a> serializer will produce the <code>validated_data</code>
+dict <code>{'my_foo': 1, 'my_bar': 2}</code> because when working in reverse
+(deserializing), the <code>source</code> field name becomes the target, so <code>MyFoo</code>
+becomes <code>my_foo</code>, etc.</li>
+<li>This dict is <code>**</code>unpacked as keyword arguments to instantiate <code>SpecialThing</code></li>
+<li>The auto-generated <code>SpecialThing.__init__</code> correctly handles both of these
+keyword arguments because one is inherited from the <code>Thing</code> dataclass.</li>
+</ul>
+
+
+<p>I love how compact the code is, but I also have to acknowledge that it might
+not be clear to Python novices without the above explanation. But in the
+bigger picture I think this example is still within the limits of what is
+reasonable because:</p>
+
+<ul>
+<li>The overall purpose of the code (deserialization) is fairly straightforward
+once you are in the context of Django REST framework</li>
+<li>The code doesn&rsquo;t use programmatically constructed variable names, so it
+passes the grep test, as mentioned in the Stack Overflow blogpost</li>
+<li>The magic is done with the standard library and DRF, the main framework of
+the codebase.</li>
+</ul>
+
+
+<p>In the end, you should write so it makes sense to the people who are going to
+read it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Visual Studio Sounds]]></title>
@@ -625,231 +764,6 @@ integer/integer comparison, string/integer multiplication returns a string, and
 not the integer a novice might be expecting.</p>
 
 <p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[AoC 2015 Day 5: Fun with Declarative Programming]]></title>
-    <link href="http://blog.erw.dk/2015/12/06/fun-with-declarative-programming/"/>
-    <updated>2015-12-06T19:36:41+01:00</updated>
-    <id>http://blog.erw.dk/2015/12/06/fun-with-declarative-programming</id>
-    <content type="html"><![CDATA[<p>My <a href="http://www.bachata-geek.me">girlfriend</a> introduced me to Eric Wastl&rsquo;s <a href="http://adventofcode.com">Advent of Code</a>,
-a programming puzzle Advent calendar. The best advent calendar I&rsquo;ve had in my
-adult life! (If you&rsquo;re planning on playing it, this article is one big spoiler
-for Day 5.) I compare declarative programming puzzle solutions on readability
-and speed.</p>
-
-<!-- more -->
-
-
-<p>The puzzle for Day 5 is:</p>
-
-<blockquote><p>Santa needs help figuring out which strings in his text file are naughty or nice.</p>
-
-<p>A nice string is one with all of the following properties:</p>
-
-<ul>
-<li>It contains at least three vowels (<code>aeiou</code> only), like <code>aei</code>, <code>xazegov</code>, or <code>aeiouaeiouaeiou</code>.</li>
-<li>It contains at least one letter that appears twice in a row, like <code>xx</code>, <code>abcdde</code> (<code>dd</code>), or <code>aabbccdd</code> (<code>aa</code>, <code>bb</code>, <code>cc</code>, or <code>dd</code>).</li>
-<li>It does not contain the strings <code>ab</code>, <code>cd</code>, <code>pq</code>, or <code>xy</code>, even if they are part of one of the other requirements.</li>
-</ul>
-
-
-<p></li>
-</ul>
-
-
-<p>How many strings are nice?</p></blockquote>
-
-<p>On the <a href="http://adventofcode.com">page</a> you get more explanation and an input to use for your
-code, but this is the basic challenge.</p>
-
-<p>I&rsquo;d normally do this in Python, but I&rsquo;m brushing up on my C#-fu, so that&rsquo;s what
-I went with. I first wrote it in classic, imperative style:</p>
-
-<pre><code class="CSharp">using System;
-using System.IO;
-
-namespace Day5
-{
-  class MainClass
-  {
-    public static void Main()
-    {
-      var nNice = 0;
-
-      foreach (var line in File.ReadLines("../../input"))
-      {
-        if (line.Contains("ab") ||
-            line.Contains("cd") ||
-            line.Contains("pq") ||
-            line.Contains("xy"))
-        {
-          continue;
-        }
-
-        var vowels = 0;
-        foreach (var character in line)
-        {
-          if ("aeiou".Contains(character))
-          {
-            vowels++;
-          }
-        }
-        if (vowels &lt; 3)
-        {
-          continue;
-        }
-
-        foreach (var character in line)
-        {
-          if (line.Contains(new string(character, 2)))
-          {
-            nNice++;
-            break;
-          }
-        }
-      }
-      Console.WriteLine(nNice);
-    }
-  }
-}
-</code></pre>
-
-<p>One of the reasons I love Python is <a href="https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions">comprehensions</a>. But
-.NET has <a href="https://msdn.microsoft.com/en-us/library/bb397926.aspx">LINQ</a> (Language Integrated Query), which I one of the reasons
-I love C# too. By <code>using System.Linq</code> I can turn the <code>Main()</code> body into
-a single, declarative statement:</p>
-
-<pre><code class="CSharp">      Console.WriteLine(
-        File.ReadLines("../../input")
-        .Count(line =&gt;
-          line.Count(character =&gt; "aeiou".Contains(character)) &gt;= 3 &amp;&amp;
-          line.Any(character =&gt; line.Contains(new string(character, 2))) &amp;&amp;
-          !(new[] { "ab", "cd", "pq", "xy" }.Any(naughty =&gt; line.Contains(naughty)))));
-</code></pre>
-
-<p>It sure feels good to write compact code, but is it better than the imperative
-version?
-It depends on how you evaluate it.</p>
-
-<p></p>
-
-<a name="Readability"></a>
-<h2>Readability</h2>
-
-<p>Imperative code always requires detailed inspection and/or non-outdated
-comments to understand. On the other hand, I think the gist of the declarative
-version is very quick to read: &ldquo;Count the number of lines in the input file
-which satisfy &hellip; some criteria&rdquo;. Compared to the imperative version, the
-overall purpose is much clearer. But the individual criteria still take time to
-read.</p>
-
-<p></p>
-
-<pre><code class="CSharp">          line.Count(character =&gt; "aeiou".Contains(character)) &gt;= 3 &amp;&amp;
-          line.Any(character =&gt; line.Contains(new string(character, 2))) &amp;&amp;
-          !(new[] { "ab", "cd", "pq", "xy" }.Any(naughty =&gt; line.Contains(naughty)))
-</code></pre>
-
-<p>At least three vowels, a repeated character, and no naughty substrings.</p>
-
-<p>The keen reader may have noticed that the first criterion could be written more
-compactly as <code>line.Count("aeiou".Contains) &gt;= 3</code> (similarly with the third).
-I think this is less readable, and compactness is not a goal in itself, unless
-you are playing code golf. Incidentally, the method group (compact) version
-also performs slightly slower.</p>
-
-<p>Variable names are a form of built-in documentation. Along the same lines, it
-might help to introduce variables:</p>
-
-<pre><code class="CSharp">      var vowels = "aeiou";
-      var naughtySubstrings = new[] { "ab", "cd", "pq", "xy" };
-</code></pre>
-
-<p>But readability also depends on what you know.
-For the uninitiated, <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> are complete gibberish. But
-for the experienced, <code>using System.Text.RegularExpressions</code> can actually state
-the criteria more clearly. Instead of fussing over the individual characters of
-the line and naughty patterns, it is easier to compare the whole, undivided
-line to a pattern:</p>
-
-<pre><code class="CSharp">          Regex.Matches(line, "[aeiou]").Count &gt;= 3 &amp;&amp;
-          Regex.IsMatch(line, @"(.)\1") &amp;&amp;
-          !Regex.IsMatch(line, "ab|cd|pq|xy")
-</code></pre>
-
-<p>Regular expressions are declarative on an even higher level.</p>
-
-<p>But they might not perform that well, especially when using uncompiled regular
-expressions. And that leads us to another criterion.</p>
-
-<a name="Performance"></a>
-<h2>Performance</h2>
-
-<p>Doing a quick benchmark on an input with two million strings and warmed-up
-caches, the uncompiled Regex version completes in 6.6 seconds, the LINQ version
-in 4.4 seconds, and my naive imperative version in 2.4 seconds. So much for
-readability. (This was using Mono, btw.)</p>
-
-<p>But, the declarative style has a trick up its sleeve: Parallelism for free!</p>
-
-<pre><code class="CSharp">      Console.WriteLine(
-        File.ReadLines("../../input")
-        .AsParallel()  ///////////////////////////////// Parallelism for free!
-        .Count(line =&gt;
-          line.Count(character =&gt; "aeiou".Contains(character)) &gt;= 3 &amp;&amp;
-          line.Any(character =&gt; line.Contains(new string(character, 2))) &amp;&amp;
-          !(new[] { "ab", "cd", "pq", "xy" }.Any(naughty =&gt; line.Contains(naughty)))));
-</code></pre>
-
-<p>1.8 seconds on my quadcore!</p>
-
-<p></p>
-
-<p>Now, I have not optimized any of these three versions for performance, and it
-could of course be done faster in C# (with or without explicit threads), and
-most likely even faster in C or C++.</p>
-
-<p>So I think the conclusion so far is what it is nothing new:
-Readability and performance are conflicting goals.</p>
-
-<a name="Debuggability"></a>
-<h2>Debuggability</h2>
-
-<p>One final criterion is debuggability. I have loved declarative style for a long
-time, but always found it harder to debug than imperative style. However, an
-advantage of Python and C# compared to, say, Haskell, is that they are
-basically imperative languages with other paradigms on top. Thus, you can
-gradually learn declarative and functional style in the safe context of
-imperative programming. And cut down on the declarative-ness when you want to.</p>
-
-<p>However, next up on my reading list is <a href="https://www.simple-talk.com/dotnet/.net-framework/linq-secrets-revealed-chaining-and-debugging/">LINQ Secrets Revealed: Chaining and Debugging</a>.</p>
-
-<a name="Python.Postscript"></a>
-<h2>Python Postscript</h2>
-
-<p>I did the puzzle in Python just to see how it compared. Rather than reading the
-length of a list made with a list comprehension, I do it in a streaming fashion
-by summing over a generator expression:</p>
-
-<pre><code class="Python">import re
-print sum(1 for line in open("input").readlines()
-          if (len(re.findall('[aeiou]', line)) &gt;= 3 and
-              re.search(r'(.)\1', line) and
-              not re.search('ab|cd|pq|xy', line)))
-</code></pre>
-
-<p></p>
-
-<p>(This is the whole program, not just the body of some main function!)</p>
-
-<p>At 5.3 seconds for the two million strings, this stacks up pretty well against
-C#, considering that Python is interpreted.</p>
-
-<p><em>Update 2016-03-12: I added in the performance section that I used Mono.</em></p>
-
-<p><em>Update 2017-12-09: Changed the post title.</em></p>
 ]]></content>
   </entry>
   
