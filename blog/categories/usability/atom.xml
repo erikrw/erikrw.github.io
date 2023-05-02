@@ -4,7 +4,7 @@
   <title><![CDATA[Category: usability | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/usability/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-02-18T20:34:48+01:00</updated>
+  <updated>2023-05-02T21:46:52+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Beware the Tesla Account Region]]></title>
+    <link href="http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region/"/>
+    <updated>2023-05-02T21:40:31+02:00</updated>
+    <id>http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/tesla_account.png" title="Picture shows the Tesla &ldquo;Create Account&rdquo; webpage and how its language setting affects the Tesla App &ldquo;Edit Billing Address&rdquo; page" ></p>
+
+<p>I created a Tesla account to be able to charge my (non-Tesla) car at Tesla
+charging stations. When I tried to charge at a Supercharger, I had to add my
+credit card info, but then the Tesla app also wanted a billing address. The
+only problem was that the country selector was locked to the United States,
+where I don&rsquo;t live.</p>
+
+<!-- more -->
+
+
+<p>I was not going to give a fake address, and I&rsquo;m not even sure it would have
+worked anyway due to validation between billing address and credit card info.
+After some googling I found out that a Tesla account is bound to a country, and
+that you have to get in contact with Tesla to get it changed. There was no
+telling how long that would take, so I left the Tesla charging station and
+found another place to get some juice.</p>
+
+<p>Later, I learned that the language selector of the Tesla website is a combined
+language and country selector, and that the active language/country at the time
+of the account creation determines the semi-permanent account country.</p>
+
+<p>This is pretty bad usability. The user is not made aware that they are choosing
+a country, and on top of that, the choice is cumbersome to change later. Good
+usability involves the user understanding the consequences of their actions as
+well as an easy way to undo an undesired action.</p>
+
+<p>The first problem would be easy to fix: By simply adding an explicit country
+selector to the main part of the sign-up form, the user is aware that they are
+choosing a country. I don&rsquo;t know why we&rsquo;re are not allowed to change our own
+account country, but I did find a quick workaround: I deleted my Tesla account
+and recreated it in Danish, and then I was allowed to add my Danish address.
+After confirming the next day on my trip home that I can now charge at
+Superchargers, I&rsquo;m happy that I now have access to even more places to charge
+my car.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[User Experiences on a Train Trip]]></title>

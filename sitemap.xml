@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region/</loc>
+    <lastmod>2023-05-02T21:40:31+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://blog.erw.dk/2023/02/18/taming-python-with-dataclasses/</loc>
     <lastmod>2023-02-18T20:28:53+01:00</lastmod>
     <priority>0.8</priority>
@@ -232,31 +237,31 @@
   </url>
   <url>
     <loc>http://blog.erw.dk/404.html</loc>
-    <lastmod>2023-02-18T20:34:48+01:00</lastmod>
+    <lastmod>2023-05-02T21:46:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/archives/</loc>
-    <lastmod>2023-02-18T20:34:48+01:00</lastmod>
+    <lastmod>2023-05-02T21:46:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/</loc>
-    <lastmod>2023-02-18T20:34:48+01:00</lastmod>
+    <lastmod>2023-05-02T21:46:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/colemakdk/</loc>
-    <lastmod>2023-02-18T20:34:48+01:00</lastmod>
+    <lastmod>2023-05-02T21:46:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/contact/</loc>
-    <lastmod>2023-02-18T20:34:48+01:00</lastmod>
+    <lastmod>2023-05-02T21:46:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

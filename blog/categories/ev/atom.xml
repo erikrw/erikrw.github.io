@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ev | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/ev/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-02-18T20:34:48+01:00</updated>
+  <updated>2023-05-02T21:46:52+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Beware the Tesla Account Region]]></title>
+    <link href="http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region/"/>
+    <updated>2023-05-02T21:40:31+02:00</updated>
+    <id>http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/tesla_account.png" title="Picture shows the Tesla &ldquo;Create Account&rdquo; webpage and how its language setting affects the Tesla App &ldquo;Edit Billing Address&rdquo; page" ></p>
+
+<p>I created a Tesla account to be able to charge my (non-Tesla) car at Tesla
+charging stations. When I tried to charge at a Supercharger, I had to add my
+credit card info, but then the Tesla app also wanted a billing address. The
+only problem was that the country selector was locked to the United States,
+where I don&rsquo;t live.</p>
+
+<!-- more -->
+
+
+<p>I was not going to give a fake address, and I&rsquo;m not even sure it would have
+worked anyway due to validation between billing address and credit card info.
+After some googling I found out that a Tesla account is bound to a country, and
+that you have to get in contact with Tesla to get it changed. There was no
+telling how long that would take, so I left the Tesla charging station and
+found another place to get some juice.</p>
+
+<p>Later, I learned that the language selector of the Tesla website is a combined
+language and country selector, and that the active language/country at the time
+of the account creation determines the semi-permanent account country.</p>
+
+<p>This is pretty bad usability. The user is not made aware that they are choosing
+a country, and on top of that, the choice is cumbersome to change later. Good
+usability involves the user understanding the consequences of their actions as
+well as an easy way to undo an undesired action.</p>
+
+<p>The first problem would be easy to fix: By simply adding an explicit country
+selector to the main part of the sign-up form, the user is aware that they are
+choosing a country. I don&rsquo;t know why we&rsquo;re are not allowed to change our own
+account country, but I did find a quick workaround: I deleted my Tesla account
+and recreated it in Danish, and then I was allowed to add my Danish address.
+After confirming the next day on my trip home that I can now charge at
+Superchargers, I&rsquo;m happy that I now have access to even more places to charge
+my car.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ioniq Efficiency]]></title>
@@ -1128,284 +1171,6 @@ Volkswagen har også et koncept hvor man kan lease en ID.3 i
 <a href="https://app.volkswagen.dk/app/web/privat/go/konfigurer/?id=2075">seks måneder</a>. Men nu hvor jeg er blevet vant til elbil tænker
 jeg ikke på at slippe af med den igen &mdash; jeg glæder mig bare til næste gang
 jeg skal ud at køre.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[3000 km for under €100]]></title>
-    <link href="http://blog.erw.dk/2021/05/24/3000-km-for-under-100/"/>
-    <updated>2021-05-24T15:40:00+02:00</updated>
-    <id>http://blog.erw.dk/2021/05/24/3000-km-for-under-100</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/hyundai_ioniq_electric_2020_charging.jpg"></p>
-
-<p>Getting an electric vehicle while living in an apartment was a bit of an
-experiment. Public charging is still a bit rough around the edges, but it
-turned out manageable, and in fact quite cheap, with the help from some free
-charging. Here&rsquo;s my experience with EV charging in the past six months.</p>
-
-<!-- more -->
-
-
-<p>From November to April I drove our <a href="/2021/05/02/hyundai-ioniq-electric/">Hyundai IONIQ Electric</a>
-<strong>3034 km (1885 mi)</strong> while keeping a charging log. I charged 37 times in
-total, on average from 56% to 92% state of charge. This covered various
-situations such as a small top-up to 100% before a long trip, a motorway
-fast-charge up to at most 80%, a full recharge after a long trip (the biggest
-being 11%->100%), and various city charging in between. Some of the charging
-sessions were tests to try out the various charger types and charging networks
-to get comfortable with the process.</p>
-
-<p>Disregarding the tests, I charged on average every <strong>100 km (62 mi)</strong>. On long
-trips I gradually became more comfortable with going farther between charges,
-with the longest stretch being <strong>263 km (163 mi)</strong> in the spring. But for city
-charging with a limited number of public chargers, it remains practical to
-charge when the opportunity arises, without running down to a low state of
-charge each time.</p>
-
-<a name="Charging.in.the.City"></a>
-<h2>Charging in the City</h2>
-
-<p>Most charging sessions were on slow destination chargers, and most were in
-Aalborg where we live. We rely on public chargers as we live in an apartment
-and don&rsquo;t have our own home charger. It works like this: Drive to a charger,
-find a free socket, plug in, and walk 10&ndash;20 minutes home or to work. Later, I
-walk back to pick up the car when I need it again, or when it&rsquo;s done charging.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/posts/hyundai_ioniq_electric_2020_charging_dash.jpg' width='' height='' alt='Remaining charging time at a slow charger.'><span class='caption-text'>Remaining charging time at a slow charger.</span></span></p>
-
-<p>A home charger would be much easier to use, but for city dwellers with EVs,
-this is how it works at the moment (unless you drive to work and that workplace
-has chargers available). Each city and town will be different in the density,
-availability, and reliability of public chargers, and improving this
-infrastructure will be an undertaking for the next many years.</p>
-
-<p>Going back and forth to the charger takes a bit of time, but the walk is
-healthy. However, driving in vain to find all charger sockets in use is
-annoying. For commercial chargers, you can usually look up their availability
-status online before going, but not all chargers are commercial, as we&rsquo;ll get
-to later. In practice, sharing a limited number of public chargers takes a bit
-of foresight. If I know I&rsquo;m going on a long trip, I start trying to charge up
-to 100% a few days in advance, so there&rsquo;s time to come back later if the
-chargers are all in use the first time around. Another option would be to use
-fast-chargers (more) on the trip, but the IONIQ&rsquo;s fast-charging speed is not as
-good as many other EVs in that regard.</p>
-
-<a name="Parking.Problems"></a>
-<h2>Parking Problems</h2>
-
-<p>You shouldn&rsquo;t block a public charger if you&rsquo;re not using it &mdash; that is
-etiquette and usually also part of parking regulations. But it can also make
-using public destination chargers a hassle. If you plug in to charge late in
-the evening, it might be that the charging will finish in the middle of the
-night. Do you get up to move the car in the middle of the night? Do you skip
-charging altogether? (Probably not.) Do you pick up your car some time the next
-morning, hoping to get there before the parking attendant and other EV drivers
-in need of some juice? (Perhaps.) I try to plan my charging so I don&rsquo;t block
-the charger unnecessarily, but it&rsquo;s not always practical to do so, neither for
-me nor other EV drivers.</p>
-
-<p>For EVs to become mainstream, I think the charging situation needs to become
-easier and require much less planning. As a start, the parking rules could be
-relaxed so the parking-only-while-charging requirement doesn&rsquo;t apply at night.
-Ideally there should be enough parking spaces that you could leave your car
-some extra time after charging finishes while someone else could take over the
-socket you used. Such a grace period would also be helpful when you want to
-charge to 100%, because the car&rsquo;s estimation of when the charging will finish
-can be a bit off.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/posts/ev_parking_signs.jpg' width='' height='' alt='Some EV parking signs in Danish. (Elbil is the Scandinavian word for <strong>el</strong>ectric automo<strong>bil</strong>e.)&#8217;><span class='caption-text'>Some EV parking signs in Danish. (Elbil is the Scandinavian word for <strong>el</strong>ectric automo<strong>bil</strong>e.)</span></span></p>
-
-<p>In other situations, the parking time is limited. There is a parking lot in
-Aalborg where the two EV spots have a two hour limit but their charging sockets
-supply at most 11&ndash;12 amps. It&rsquo;s nice to have a few parking spaces that are
-reserved for EVs, but with those sockets the charging itself is almost
-inconsequential since you add at most 15 km (9 mi) of range per hour. That&rsquo;s
-like going to the gas station for only 1 liter of gas!</p>
-
-<p>In another place they had 11 kW outlets and a three hour parking limit. That
-will get you far if your EV has a matching 11 kW on-board charger (OBC) which
-adds range at up to 60 km/h (37 mph). A plug-in hybrid/PHEV can also typically
-fill up its smaller battery completely in three hours. But for cheaper EVs with
-slow OBCs like the IONIQ, you&rsquo;ll get at most 20 km/h (12 mph). I think
-something needs to be done here to improve the situation for social equality in
-EV adoption. The solution at Aalborg Zoo is nice: &ldquo;No time limit while
-charging&rdquo;. That way, all EVs get the opportunity to add meaningful range, while
-still not allowing blocking the parking spot unnecessarily. The last part just
-requires parking attendants to check the charging status and not just the
-parking disc. I&rsquo;m not sure, but I have the impression that many parking
-attendants don&rsquo;t yet understand or care about EV charging.</p>
-
-<p>Another problem is when many of the public chargers are placed in expensive
-parking garages. It might be okay to use them once in a while when out of town,
-but when you live in an apartment and rely on local destination chargers in
-your daily life, you definitely don&rsquo;t want to pay €15 for an eight-hour
-charging session &mdash; on top of the charging cost. Despite these problems, using
-an EV in Aalborg and Denmark works fine, and the charging has in fact been very
-cheap as we&rsquo;ll get to soon.</p>
-
-<a name="Energy.and.Efficiency"></a>
-<h2>Energy and Efficiency</h2>
-
-<p>In total I drove 3034 km (1885 mi) using an estimated 524 kWh of energy, or a
-bit less than 14 full charges of the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">38.3 kWh</a> battery pack.
-That comes out to <strong>5.79 km/kWh (3.60 mi/kWh)</strong>, or 17.3 kWh/100km (27.8
-kWh/100mi). This was for the Danish winter half-year, using Continental
-AllSeasonContact tires, and my driving comprising 40% city, 20% open road, and
-40% motorway. It also gives the average range of 222 km (138 mi) from a full
-charge for these conditions.
-As described in my <a href="/2021/05/02/hyundai-ioniq-electric/">previous post</a>, efficiency and range
-depend heavily on speed and weather. Also, some of the driving was economical
-but I also did a lot of unnecessary (but fun!) acceleration.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/posts/hyundai_ioniq_electric_2020_info_dash.jpg' width='' height='' alt='Economical driving from Odense to Aalborg, Denmark.'><span class='caption-text'>Economical driving from Odense to Aalborg, Denmark.</span></span></p>
-
-<p>There are two things to add. First, the total energy is not only used while
-driving. The IONIQ, like regular cars, has a 12 V battery that discharges over
-time. The IONIQ, unlike regular cars, can keep the 12 V battery in shape
-automatically, using a bit of juice from the main driving battery. This will
-take around one percentage point of charge from the main battery per week, at
-least when it&rsquo;s freezing. My calculated average efficiency and range includes
-half a year of parking, so during driving alone, the efficiency and range is a
-tiny bit better than the numbers above indicate.</p>
-
-<p>Second, it&rsquo;s not all the energy that comes through the charging cable that
-makes it to the battery. During charging, some electricity is lost as heat,
-plus the car needs some electronics running, and it might even spend energy on
-battery cooling or heating to optimize the charging speed, depending on the car
-model. The loss is around 10&ndash;15%. So getting 524 kWh into the IONIQ will
-actually have required around <strong>600 kWh</strong> in total. Let&rsquo;s see what this means
-for the cost.</p>
-
-<a name="Cost.Complexity"></a>
-<h2>Cost Complexity</h2>
-
-<p>EV charging prices vary a lot, at least in Denmark where legislation is
-complicated. Most EV price calculations I&rsquo;ve read assume you will install a
-home charger, but for many city dwellers that is not an option, so I will
-instead exclude home charging. That removes some of the complexity of EV
-charging prices, including home charger installation, home charger purchase vs.
-rental, combined home and public charger subscription, time dependent
-electricity tariffs, electricity tax refunds, and interaction between tax
-refunds and the use of solar panels and geothermal heat pumps.</p>
-
-<p>Public charging is still complicated, though: Pay per kWh or a fixed price per
-month, or somewhere in between. Use one provider, or multiple, or a meta
-provider, or somewhere in between. For fast-charging, the price can depend on
-the charging speed, or potential partnerships between EV manufacturers and
-charging providers. In some countries you also pay per minute.</p>
-
-<p>You can also be lucky and have access to free charging. Our municipality has a
-few sockets in Aalborg for free EV charging, which is a nice &ldquo;carrot&rdquo; for EV
-adoption. Some hotels and supermarkets have free charging. For example, Lidl
-supermarkets have free chargers in some countries and are getting it in
-Denmark. Car manufacturers also sometimes offer some free charging. Hyundai
-started giving away six months of free charging with new leases, less than a
-week after we got our IONIQ. Tesla also sometimes gives away free charging.</p>
-
-<a name="Charging.Cost.in.Denmark"></a>
-<h2>Charging Cost in Denmark</h2>
-
-<p>As mentioned in the previous section, there are many possibilities. Here I will
-compare what I do with a few simple alternatives. Blessed with tax-paid
-electricity in Aalborg, I mainly use those free sockets when at &ldquo;home&rdquo; &mdash; a
-15-minute walk from our apartment. When all the free spots are taken, or when
-out of town, I use the <em>Clever</em> charging network, with other networks such as
-<em>E.ON</em>, <em>Spirii</em> and <em>Ionity</em> as possible backups. Because I don&rsquo;t use the
-commercial operators so much, it&rsquo;s cheaper to pay by the kWh instead of using a
-flat rate subscription.</p>
-
-<p>In the last six months I paid only 676 DKK (€91 or $111) for 191 kWh, while
-getting the remaining ~409 kWh for free. However, not everyone has the
-privilege (or patience) to use free charging, so I&rsquo;m going to show some
-alternatives. Electricity prices and taxes vary by country, so I&rsquo;m not going to
-convert the following prices as they are not directly comparable to other
-countries anyway. But here are the current prices in <strong>DKK/kWh</strong> for some
-charging network products and charger speeds (with Aalborg Municipality thrown
-in so you can see that my free charging is also slow charging):</p>
-
-<div class="next-table-sidescroll"></div>
-
-
-<table>
-<thead>
-<tr>
-<th style="text-align:right;"> <strong>Charger&nbsp;power</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Aalborg</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Clever&nbsp;Go</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>E.ON&nbsp;Drive&nbsp;Lite</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spirii&nbsp;Go</strong> </th>
-<th style="text-align:right;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Ionity&nbsp;(guest)</strong> </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right;">            <strong>2&ndash;3 kW</strong> </td>
-<td style="text-align:right;">                                0.00 </td>
-<td style="text-align:right;">                                          - </td>
-<td style="text-align:right;">                                                     - </td>
-<td style="text-align:right;">                                                      - </td>
-<td style="text-align:right;">                                               - </td>
-</tr>
-<tr>
-<td style="text-align:right;">          <strong>11&ndash;43 kW</strong> </td>
-<td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                       3.50 </td>
-<td style="text-align:right;">                                                  3.50 </td>
-<td style="text-align:right;">                                             2.25&ndash;3.75 </td>
-<td style="text-align:right;">                                               - </td>
-</tr>
-<tr>
-<td style="text-align:right;">          <strong>50&ndash;75 kW</strong> </td>
-<td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                       3.50 </td>
-<td style="text-align:right;">                                                  4.90 </td>
-<td style="text-align:right;">                                                      - </td>
-<td style="text-align:right;">                                               - </td>
-</tr>
-<tr>
-<td style="text-align:right;">        <strong>100&ndash;350 kW</strong> </td>
-<td style="text-align:right;">                                   - </td>
-<td style="text-align:right;">                                       5.00 </td>
-<td style="text-align:right;">                                                  4.90 </td>
-<td style="text-align:right;">                                                      - </td>
-<td style="text-align:right;">                                            6.20 </td>
-</tr>
-</tbody>
-</table>
-
-
-<p><br />
-By mixing some of the above speeds and networks, you&rsquo;ll end up with an average
-price per kWh. If you only use public chargers, you might end up at 3&ndash;5
-DKK/kWh and if you can mix in free charging, you can get under 3 DKK/kWh. My
-average was just over 1 DKK/kWh for the past six months. I&rsquo;m using these rates
-in the following graph, which also includes a typical 650 DKK/month flat rate
-subscription without a home charger included.</p>
-
-<p><img class="center" src="/images/posts/ev_charging_cost_dk.png"></p>
-
-<p>I made the chart based on a consumption of 5 km/kWh including charging loss,
-corresponding to the 5.8 km/kWh vehicle consumption that I got for the Danish
-winter half-year. In comparison, every time the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Hyundai IONIQ</a>
-drives 5 km, the <a href="https://ev-database.org/car/1337/Mercedes-EQC-400-4MATIC">Mercedes EQC</a> will drive 4 km, and the
-<a href="https://ev-database.org/car/1272/Audi-e-tron-S-Sportback-55-quattro">Audi e-tron S Sportback</a> will drive 3 km using the same energy.
-However, the majority of <a href="https://ev-database.org/compare/efficiency-electric-vehicle-most-efficient">EVs</a> fall somewhere between the EQC
-and the IONIQ &mdash; including Audi&rsquo;s upcoming Q4 models, and the very-long-range
-Mercedes EQS.</p>
-
-<p>The chart shows that what is cheapest depends heavily on your driving.
-Long-distance drivers will profit greatly from a flat rate subscription, while
-I would pay 5&ndash;6 times as much as I currently do. Before getting the IONIQ, I
-didn&rsquo;t know it would end up like this &mdash; I just knew I wanted to support the
-push toward a greener future (and try out some cool tech while at it). And
-while charging turned out way cheaper than gasoline, the total cost still could
-have been lower by choosing a conventional car with a weaker internal
-combustion engine and a manual transmission. But for comparable cars driving an
-average 20,000 km/year or 16,000 mi/year, EVs already have ample opportunity to
-have a lower total cost of ownership in <a href="https://fdm.dk/alt-om-biler/bilen-hverdagen/braendstof-oekonomi/undersoegelse-afsloerer-denne-biltype-er-billigst">Denmark</a> as well as
-the <a href="https://www.nytimes.com/interactive/2021/01/15/climate/electric-car-cost.html">USA</a>.</p>
-
-<p><em>Update 2021-06-26: Minor fixes.</em></p>
 ]]></content>
   </entry>
   

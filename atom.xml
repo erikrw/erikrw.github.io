@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-02-18T20:34:48+01:00</updated>
+  <updated>2023-05-02T21:46:52+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Beware the Tesla Account Region]]></title>
+    <link href="http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region/"/>
+    <updated>2023-05-02T21:40:31+02:00</updated>
+    <id>http://blog.erw.dk/2023/05/02/beware-the-tesla-account-region</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/tesla_account.png" title="Picture shows the Tesla &#34;Create Account&#34; webpage and how its language setting affects the Tesla App &#34;Edit Billing Address&#34; page" alt="Picture shows the Tesla &#34;Create Account&#34; webpage and how its language setting affects the Tesla App &#34;Edit Billing Address&#34; page"></p>
+
+<p>I created a Tesla account to be able to charge my (non-Tesla) car at Tesla
+charging stations. When I tried to charge at a Supercharger, I had to add my
+credit card info, but then the Tesla app also wanted a billing address. The
+only problem was that the country selector was locked to the United States,
+where I don&rsquo;t live.</p>
+
+<!-- more -->
+
+
+<p>I was not going to give a fake address, and I&rsquo;m not even sure it would have
+worked anyway due to validation between billing address and credit card info.
+After some googling I found out that a Tesla account is bound to a country, and
+that you have to get in contact with Tesla to get it changed. There was no
+telling how long that would take, so I left the Tesla charging station and
+found another place to get some juice.</p>
+
+<p>Later, I learned that the language selector of the Tesla website is a combined
+language and country selector, and that the active language/country at the time
+of the account creation determines the semi-permanent account country.</p>
+
+<p>This is pretty bad usability. The user is not made aware that they are choosing
+a country, and on top of that, the choice is cumbersome to change later. Good
+usability involves the user understanding the consequences of their actions as
+well as an easy way to undo an undesired action.</p>
+
+<p>The first problem would be easy to fix: By simply adding an explicit country
+selector to the main part of the sign-up form, the user is aware that they are
+choosing a country. I don&rsquo;t know why we&rsquo;re are not allowed to change our own
+account country, but I did find a quick workaround: I deleted my Tesla account
+and recreated it in Danish, and then I was allowed to add my Danish address.
+After confirming the next day on my trip home that I can now charge at
+Superchargers, I&rsquo;m happy that I now have access to even more places to charge
+my car.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Taming Python with Dataclasses]]></title>
@@ -3447,86 +3490,6 @@ successfully in the organization that is going to use it.</p>
 context internally sound, and second, be aware of the existence of multiple
 contexts, especially when you are speaking with someone who normally thinks and
 works in another context from you.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Flying in the Front Row]]></title>
-    <link href="http://blog.erw.dk/2018/05/10/flying-in-the-front-row/"/>
-    <updated>2018-05-10T15:50:10+02:00</updated>
-    <id>http://blog.erw.dk/2018/05/10/flying-in-the-front-row</id>
-    <content type="html"><![CDATA[<p>I regularly fly to Copenhagen for work, and once in a while I&rsquo;m assigned
-a front row seat &mdash; an ostensible upgrade. This must happen randomly as I have
-not requested or paid for it. But after experiencing it few times, I&rsquo;d be
-inclined to pay to <em>not</em> sit there again.</p>
-
-<p><img src="http://blog.erw.dk/images/posts/wing_sunset.jpg"></p>
-
-<!-- more -->
-
-
-<p>One of the joys of business trips is traveling light. For a one or two day
-trip, I can fit all I need in my briefcase, and there&rsquo;s no need to queue early
-to be sure to get a space for my carry-on suitcase in the overhead bins. (I
-entirely avoid checking bags when I can.)</p>
-
-<p>After boarding I work until it&rsquo;s time to take off, and then I slide my laptop
-in my briefcase and the briefcase under the seat in front of me. Once we&rsquo;re in
-the air, I slide it back out and get some more work done, without asking my
-fellow passengers to get up while I get my bag. Easy peasy.</p>
-
-<a name="Bags.Must.Be.Stowed"></a>
-<h2>Bags Must Be Stowed</h2>
-
-<p>The first problem of the front row stems from the rule that bags must be stowed
-in the overhead bins during takeoff and landing.</p>
-
-<p>If I board early, I can put my bag in the overhead bin and sit down without
-access to my stuff while everyone else is boarding, with the added bonus that
-if I sit in the 1C aisle seat, every third backpack-wearing passenger will bump
-their backpack into me as they pass.</p>
-
-<p>If I board late, I get to the second problem: There&rsquo;s very little overhead
-space for the first row passengers because a lot of the bin space is reserved
-for kit needed by the cabin crew. The little space gets filled quickly and I&rsquo;ll
-have to go further down the rows until I find an empty slot. This is not
-a problem at first, but after landing, once the disembarkation stampede begins,
-getting from row 1 to 4 to get my bag while a hundred people are impatiently
-going the opposite direction is not great.</p>
-
-<p>I think one of the supposed advantages of the front row is to be one of the
-first people to get off the plane. But that&rsquo;s not likely to happen if you have
-baggage. Row 2 and 3 are better. Therefore I was happy when I was recently
-assigned seat 2E. That lasted until I got on the plane and it turned out that,
-on the right side (D-E-F), row 2 <em>was</em> the front row on that plane &mdash; no row
-1.</p>
-
-<a name="Longer.Flights"></a>
-<h2>Longer Flights</h2>
-
-<p>The above is just my annoyances with a process I&rsquo;d like to run smoothly as part
-of a routine. On the short flight from Aalborg to Copenhagen, more time is
-spent boarding, preparing, taxiing, and disembarking, than the actual 30
-minutes in the air. On rarer, longer trips the efficiency of getting on and off
-the plane seems less important, and the leg room perhaps more important.</p>
-
-<p>Leg room depends on how the airline configures the seats. I often fly with
-<em>Norwegian</em> and despite their label as a low-cost airline, they have enough
-room in standard economy to fit my long legs &mdash; perhaps because they&rsquo;re
-Scandinavian. Either way, the value of a front row seat in this regard will
-depend on your legs compared with the leg room of your chosen airline.</p>
-
-<p>But the extra room can be useful to others as well. What I&rsquo;ve found is that the
-(not <em>that</em> large, by the way) space in front of the front row seats is where
-the front toilet queue goes to stand every time the crew needs to pass with
-a trolley.</p>
-
-<p>All this is by the way as it relates to short-haul single-aisle aircraft with
-no business class seats &mdash; only &ldquo;economy with extra legroom&rdquo;. These extra
-legroom seats are exactly the ones I&rsquo;d like to avoid. The emergency exit rows
-have some of the same problems as the front row, but with more overhead bin
-space and less toilet queue. But I&rsquo;d take a standard economy seat over that as
-well.</p>
 ]]></content>
   </entry>
   
