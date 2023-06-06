@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-05-02T21:46:52+02:00</updated>
+  <updated>2023-06-06T20:09:04+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Star Wars: Andor]]></title>
+    <link href="http://blog.erw.dk/2023/06/06/star-wars-andor/"/>
+    <updated>2023-06-06T10:11:00+02:00</updated>
+    <id>http://blog.erw.dk/2023/06/06/star-wars-andor</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/star_wars_andor.jpg" title="Picture shows Cassian Andor from the &#34;Star Wars: Andor&#34; TV series" alt="Picture shows Cassian Andor from the &#34;Star Wars: Andor&#34; TV series"></p>
+
+<p>As a kid back in the 1990&rsquo;s I was spellbound by the Star Wars movies. I didn&rsquo;t
+fully grasp the story, but everything was so cool: Spaceships, droids, aliens,
+and lasers! <em>So cool!</em> I had Star Wars toys, and I recorded the movies from TV,
+to watch again and again in all their blurry VHS glory. Now we have
+high-definition streaming, from which I&rsquo;ve spent the past week watching the
+&ldquo;Star Wars: Andor&rdquo; series&#8217; first season, and it has blown my now grown-up mind.</p>
+
+<!-- more -->
+
+
+<p>For having &ldquo;war&rdquo; in its name, the Star Wars franchise is generally
+family-friendly. Good and evil are clearly laid out and color coded. The enemy
+soldiers have face-covering masks, or are droids, so it doesn&rsquo;t feel as serious
+when they&rsquo;re shot in large numbers. Plus there are attempts at comedy, some
+better than others.</p>
+
+<p>&ldquo;Andor&rdquo; is something else entirely. Andor is Star Wars for adults. It shows the
+oppression of the Empire and enraging unfairness of its bureaucracy. It shows
+how oppression leads to rebellion, and all of the treachery, fear, mistrust,
+solitude, and courage being a rebel involves.</p>
+
+<p>There&rsquo;s no good or evil, just people. Some work in factories and shops. Some
+work for the Empire. Everyone can become a victim of imperial authoritarianism,
+whether they&rsquo;re rich or poor, guilty or innocent, or loyal to the Empire or
+not. We feel for people on both sides. People on both sides make hard choices
+and do unheroic things.</p>
+
+<p>Star Wars has never felt more real to me. At the same time it&rsquo;s the most
+gripping Star Wars show I&rsquo;ve seen (as a grown-up), but also the one that makes
+me think the most about suffering and injustice in the real world, here on
+Earth.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Beware the Tesla Account Region]]></title>
@@ -3333,163 +3374,6 @@ prompted the user for a tempo, in case of both 0 and missing tempo.</p>
 
 <p>However, tempo 1 was blindly accepted, resulting in a song slower than molasses
 in January!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubiquitous Language Problems]]></title>
-    <link href="http://blog.erw.dk/2018/06/17/ubiquitous-language-problems/"/>
-    <updated>2018-06-17T12:38:16+02:00</updated>
-    <id>http://blog.erw.dk/2018/06/17/ubiquitous-language-problems</id>
-    <content type="html"><![CDATA[<p>Language is tricky. Take the this post, for instance. It&rsquo;s not about language
-problems that are ubiquitous. It&rsquo;s about problems related to <em>Ubiquitous
-Language</em> &mdash; whether the problems themselves are ubiquitous or not.</p>
-
-<p>Ubiquitous Language is a term from the <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design</a> software
-development practice. It refers to a set of well-defined project terms shared
-by all participants: <a href="https://en.wikipedia.org/wiki/Subject-matter_expert">Domain experts</a>, business analysts, developers,
-users. The term was coined by Eric Evans in his <a href="http://dddcommunity.org/book/evans_2003/">DDD book</a>. I haven&rsquo;t
-actually read it, but the idea seems sensible: If developers live and breathe
-the domain by speaking its language, their output is more likely to fit the
-business needs, and developers and domain experts are more likely to understand
-one another.</p>
-
-<p>As a business analyst and developer, your task is to adopt the language of the
-domain experts, <em>not</em> the other way around. But that doesn&rsquo;t mean that the
-domain experts are home free. Changes are probably required to turn their
-jargon into a well-defined set of terms that will ensure precise and
-unambiguous communication in the project and to the users. Here are some of the
-challenges I&rsquo;ve encountered in this process.</p>
-
-<!-- more -->
-
-
-<a name="Two.Words..One.Concept"></a>
-<h2>Two Words, One Concept</h2>
-
-<p>One problem is that people may use different words for the same concept. It is
-preferable to use one word per concept, because it will simplify design
-discussions and remove confusion arising from the possibility that the words
-<em>could</em> have different meanings. The code and the user interface will also be
-much easier to understand for developers and users, respectively, if a concept
-always has the same name.</p>
-
-<p>As an example, different project participants use the terms User and Employee.
-If the business or system has only employees as users, either word is fine.
-Picking one over the other risks having a winner and a loser in the process.
-Sometimes finding a third term can be a good move, politically or socially.
-Perhaps the term Account can cover the concept and satisfy both parties.</p>
-
-<p>Other times, it turns out that the terms actually have different meanings.
-Maybe not all users are employees or not all employees are users. In this case,
-both terms can stay in the vocabulary, and their exact relationship will have
-to be uncovered.</p>
-
-<a name="One.Word..Two.Concepts"></a>
-<h2>One Word, Two Concepts</h2>
-
-<p>Another problem is that the same word may be used for different concepts.
-Sometimes by different people, sometimes even by the same people. Take the term
-Account from the previous section. There, it was taken to mean a user account.
-But Account could also mean a bank account, or a even a client (one managed by
-an account manager).</p>
-
-<p>If the main business domain (such as banking, accounting, customer relationship
-management) already has a specific interpretation of the term, the other
-meanings should probably find other names (such as Client, User Account, or
-Bank Account). I prefer avoiding partially overlapping terms, so if Account is
-already taken, User is better than User Account &mdash; unless User also has
-a meaning distinct from User Account.</p>
-
-<a name="Types.and.Instances"></a>
-<h2>Types and Instances</h2>
-
-<p>A specific version of the One Word, Two Concepts problem is when the same word
-is used about both instances and types. Perhaps the word Service is used about
-a service provided to a customer on a specific date and time (such as
-a haircut), but also about the type of service the company provides (such as
-a haircut). Or Product can mean both a product from the product catalog and
-a product in the context of a specific Order.</p>
-
-<p>For these examples, possible concept names could be Service and Service Type as
-well as Product and Order Product. It&rsquo;s a first step, but as easy as it is to
-add a prefix or suffix, as easy it drop it again in conversation. A better
-option is to choose names that don&rsquo;t have anything in common. An Order Product
-could be an Order Line (which is actually a well-known concept). A Service
-could be an Appointment, while the term Service refers to the type. Or perhaps
-Service stays in the appointment interpretation, and Service Type could be
-named Function.</p>
-
-<a name="Software.Development.as.Domain"></a>
-<h2>Software Development as Domain</h2>
-
-<p>Service and Function are not to be confused with what a software developer
-might understand by these terms. Software is a business domain on its own
-right, but unless the <em>project&rsquo;s</em> domain is software, developers should let the
-business domain take precedence.</p>
-
-<p>It might be necessary for developers to discuss technical design involving
-software terms that clash with the domain model (such as Class, Strategy,
-Factory, Visitor). It doesn&rsquo;t make sense to rename well-known concepts from the
-software domain, but unless the domain experts need to know about them, they
-shouldn&rsquo;t be part of the domain model, and so they should only be used
-internally between technical designers and developers.</p>
-
-<p>But even inside the software domain, I have observed the One Word, Two Concepts
-problem at work. The term Entity, itself used in DDD, can refer to both a type
-and an instance. Peter Chen, who introduced the
-<a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship Model</a>, used the term Entity to mean an instance of
-some <em>Entity Type</em>. What I mentioned earlier about dropping suffixes also
-applies here, and many people, myself included, use Entity in the type meaning.
-Ideally, the instance meaning is then referred to by a different word, such as
-Object.</p>
-
-<a name="Microsoft.Dynamics.CRM"></a>
-<h2>Microsoft Dynamics CRM</h2>
-
-<p>The Microsoft Dynamics Customer Relationship Management (CRM) software
-interests me in two ways in relation to DDD and ubiquitous language.
-Superficially, Microsoft CRM uses the terms Entity and Record in the above
-mentioned type and instance meanings, respectively. But then in the Danish
-translation of the software, they use the Danish word <em>objekt</em> &mdash; not
-<em>entitet</em> &mdash; as the translation of Entity. (In fact my colleague recently
-found out the whole system is translated by Bing!)</p>
-
-<p>Second, Microsoft CRM is somewhat anti-DDD in the sense that the built-in
-customer relationship management domain model can conflict with that of the
-user organization. It&rsquo;s possible to adapt the built-in data model with new
-entities, attributes, and relationships, and by renaming existing items. But
-the renaming only applies to the user interface, not the code and database.
-This forces developers to think in terms of the built-in model and to translate
-back and forth between that and the organization&rsquo;s domain, which is exactly the
-thing ubiquitous language tells you to avoid.</p>
-
-<a name="Multiple.Contexts"></a>
-<h2>Multiple Contexts</h2>
-
-<p>In this post I have been touching on the matching of words and concepts, both
-in general and in software development. In this, I have been simplifying by
-focusing on building a single ubiquitous language and domain model for
-a project. Part of DDD is acknowledging that a project can be too large for
-a single unified model, and instead of trying to make such a model, you should
-allow for multiple <a href="https://martinfowler.com/bliki/BoundedContext.html">bounded contexts</a> and instead make sure to define
-their boundaries and relationships. But inside each single context, make sure
-to use one word per concept.</p>
-
-<p>The more I think about it, the more I see that software development is itself
-far too large to be a single context. Words such as <em>prototype</em> or
-<em>implementation</em> have multiple meanings. A prototype can be a
-<a href="https://en.wikipedia.org/wiki/Software_prototyping">software product</a>, <a href="https://en.wikipedia.org/wiki/Function_prototype">function declaration</a>, or
-<a href="https://en.wikipedia.org/wiki/Prototype_pattern">cloneable object</a>. Programmers will understand <em>implementation</em> as the
-process of and result of turning the human readable design description into
-executable computer code. But implementation can also mean taking that same
-executable computer code &mdash; the software product &mdash; and embedding it
-successfully in the organization that is going to use it.</p>
-
-<p>So two things are important in achieving clear communication. First, make each
-context internally sound, and second, be aware of the existence of multiple
-contexts, especially when you are speaking with someone who normally thinks and
-works in another context from you.</p>
 ]]></content>
   </entry>
   
