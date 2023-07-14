@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-06-07T21:42:50+02:00</updated>
+  <updated>2023-07-14T12:02:20+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -178,14 +178,14 @@ hear when I need to come back and work from a breakpoint or a finished test
 run. I can also use different sounds to distinguish positive and negative
 outcomes. Using the built-in Windows sounds, I found that these work great:</p>
 
-<div class="next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th> <strong>Event</strong>          </th>
-<th> <strong>Sound</strong>                  </th>
+<th> Event              </th>
+<th> Sound                      </th>
 </tr>
 </thead>
 <tbody>
@@ -213,8 +213,8 @@ outcomes. Using the built-in Windows sounds, I found that these work great:</p>
 </table>
 
 
-<p><br /> Especially the Ta-Daaa! fanfare when the tests pass is a nice way to be
-called back to Visual Studio. Happy coding!</p>
+<p>Especially the Ta-Daaa! fanfare when the tests pass is a nice way to be called
+back to Visual Studio. Happy coding!</p>
 ]]></content>
   </entry>
   

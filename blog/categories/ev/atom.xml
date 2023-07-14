@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ev | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/ev/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-06-07T21:42:50+02:00</updated>
+  <updated>2023-07-14T12:02:20+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -96,43 +96,42 @@ HVAC and everything else while driving). In the table below, I compare my
 performance with the WLTP results and the <a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Electric Vehicle Database</a>&rsquo;s
 Real Range (also driving only) numbers:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
 <th style="text-align:left;">                     </th>
-<th style="text-align:right;"> <strong>Vehicle&nbsp;efficiency</strong> </th>
-<th style="text-align:right;"> <strong>Vehicle&nbsp;consumption</strong> </th>
-<th style="text-align:right;"> <strong>Average&nbsp;range</strong> </th>
+<th style="text-align:right;"> Vehicle&nbsp;efficiency </th>
+<th style="text-align:right;"> Vehicle&nbsp;consumption </th>
+<th style="text-align:right;"> Average&nbsp;range </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;"> <strong>WLTP</strong>            </td>
-<td style="text-align:right;">                 8.13 km/kWh </td>
-<td style="text-align:right;">               12.3 kWh/100km </td>
-<td style="text-align:right;">                 311 km </td>
+<td style="text-align:right;">             8.13 km/kWh </td>
+<td style="text-align:right;">           12.3 kWh/100km </td>
+<td style="text-align:right;">             311 km </td>
 </tr>
 <tr>
 <td style="text-align:left;"> <strong>My&nbsp;driving</strong> </td>
-<td style="text-align:right;">                 6.83 km/kWh </td>
-<td style="text-align:right;">               14.6 kWh/100km </td>
-<td style="text-align:right;">                 262 km </td>
+<td style="text-align:right;">             6.83 km/kWh </td>
+<td style="text-align:right;">           14.6 kWh/100km </td>
+<td style="text-align:right;">             262 km </td>
 </tr>
 <tr>
 <td style="text-align:left;"> <strong>EVDB</strong>            </td>
-<td style="text-align:right;">                 6.54 km/kWh </td>
-<td style="text-align:right;">               15.3 kWh/100km </td>
-<td style="text-align:right;">                 250 km </td>
+<td style="text-align:right;">             6.54 km/kWh </td>
+<td style="text-align:right;">           15.3 kWh/100km </td>
+<td style="text-align:right;">             250 km </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br />
-The table also shows the range which is calculated as the efficiency multiplied
+<p>The table also shows the range which is calculated as the efficiency multiplied
 by the usable battery size which is 38.3&nbsp;kWh. (If the range seems too low
 for you, Hyundai are on their way to fix it with the upcoming
 <a href="https://ev-database.org/car/1718/Hyundai-IONIQ-6-Long-Range-2WD">Ioniq&nbsp;6</a> sedan which is expected to keep the efficiency of the
@@ -205,43 +204,42 @@ around 90, 110, and 130&nbsp;km/h.</p>
 full round trip. From the vehicle efficiency I derive the vehicle consumption
 and the resulting range.</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
-<th style="text-align:right;"> <strong>Vehicle&nbsp;efficiency</strong> </th>
-<th style="text-align:right;"> <strong>Vehicle&nbsp;consumption</strong> </th>
-<th style="text-align:right;">   <strong>Range</strong> </th>
+<th style="text-align:right;"> Cruise&nbsp;speed </th>
+<th style="text-align:right;"> Vehicle&nbsp;efficiency </th>
+<th style="text-align:right;"> Vehicle&nbsp;consumption </th>
+<th style="text-align:right;">       Range </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;">           <strong>90 km/h</strong> </td>
-<td style="text-align:right;">                  9.1 km/kWh </td>
-<td style="text-align:right;">               11.0 kWh/100km </td>
+<td style="text-align:right;">       <strong>90 km/h</strong> </td>
+<td style="text-align:right;">              9.1 km/kWh </td>
+<td style="text-align:right;">           11.0 kWh/100km </td>
 <td style="text-align:right;"> 349&nbsp;km </td>
 </tr>
 <tr>
-<td style="text-align:right;">          <strong>110 km/h</strong> </td>
-<td style="text-align:right;">                  6.9 km/kWh </td>
-<td style="text-align:right;">               14.5 kWh/100km </td>
+<td style="text-align:right;">      <strong>110 km/h</strong> </td>
+<td style="text-align:right;">              6.9 km/kWh </td>
+<td style="text-align:right;">           14.5 kWh/100km </td>
 <td style="text-align:right;"> 264&nbsp;km </td>
 </tr>
 <tr>
-<td style="text-align:right;">          <strong>130 km/h</strong> </td>
-<td style="text-align:right;">                  5.6 km/kWh </td>
-<td style="text-align:right;">               17.9 kWh/100km </td>
+<td style="text-align:right;">      <strong>130 km/h</strong> </td>
+<td style="text-align:right;">              5.6 km/kWh </td>
+<td style="text-align:right;">           17.9 kWh/100km </td>
 <td style="text-align:right;"> 214&nbsp;km </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br />
-If the trip ends at a destination/home charger, driving faster simply means
+<p>If the trip ends at a destination/home charger, driving faster simply means
 you&rsquo;ll get there faster, by spending more energy (and therefore money).
 However, if the journey is longer and requires charging along the route,
 driving faster also means waiting more for charging. Here&rsquo;s the time I spent
@@ -253,39 +251,38 @@ driving and charging:</p>
 speeds because of the driving off-motorway, and again lower when including the
 time to charge the battery back up:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th style="text-align:right;"> <strong>Cruise&nbsp;speed</strong> </th>
-<th style="text-align:right;"> <strong>Driving&nbsp;average&nbsp;speed</strong> </th>
-<th style="text-align:right;"> <strong>Average&nbsp;speed&nbsp;incl.&nbsp;charging</strong> </th>
+<th style="text-align:right;"> Cruise&nbsp;speed </th>
+<th style="text-align:right;"> Driving&nbsp;average&nbsp;speed </th>
+<th style="text-align:right;"> Average&nbsp;speed&nbsp;incl.&nbsp;charging </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;">           <strong>90 km/h</strong> </td>
-<td style="text-align:right;">                             85 km/h </td>
-<td style="text-align:right;">                                         64 km/h </td>
+<td style="text-align:right;">       <strong>90 km/h</strong> </td>
+<td style="text-align:right;">                         85 km/h </td>
+<td style="text-align:right;">                                     64 km/h </td>
 </tr>
 <tr>
-<td style="text-align:right;">          <strong>110 km/h</strong> </td>
-<td style="text-align:right;">                            100 km/h </td>
-<td style="text-align:right;">                                         68 km/h </td>
+<td style="text-align:right;">      <strong>110 km/h</strong> </td>
+<td style="text-align:right;">                        100 km/h </td>
+<td style="text-align:right;">                                     68 km/h </td>
 </tr>
 <tr>
-<td style="text-align:right;">          <strong>130 km/h</strong> </td>
-<td style="text-align:right;">                            113 km/h </td>
-<td style="text-align:right;">                                         70 km/h </td>
+<td style="text-align:right;">      <strong>130 km/h</strong> </td>
+<td style="text-align:right;">                        113 km/h </td>
+<td style="text-align:right;">                                     70 km/h </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br />
-The Ioniq Electric 38&nbsp;kWh, because of its limited charging speed, is not
+<p>The Ioniq Electric 38&nbsp;kWh, because of its limited charging speed, is not
 too fast on long journeys. In Youtuber <a href="https://www.youtube.com/@bjornnyland">Bjørn Nyland</a>&rsquo;s
 <a href="https://docs.google.com/spreadsheets/d/1V6ucyFGKWuSQzvI8lMzvvWJHrBS82echMVJH37kwgjE/edit#gid=15442336">1000 km challenge</a> series, the Ioniq 38 achieved an average speed around
 <strong>70&nbsp;km/h</strong> in the winter, similar to veteran EVs Nissan Leaf and Renault
@@ -582,261 +579,261 @@ inkluderer jeg også Horsens og Odense der har hurtig&shy;ladere, selvom de ikke
 ligger ud til motorvejen. Tabellen viser <strong>antallet af CCS-stik</strong> fordelt på
 netværk og ladehastighed:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th> <strong>Sted</strong>              </th>
-<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
-<th style="text-align:right;"> <strong>Clever 50&nbsp;kW</strong> </th>
-<th style="text-align:right;"> <strong>E.ON 50&nbsp;kW</strong> </th>
-<th style="text-align:right;"> <strong>Clever/E.ON 175&nbsp;kW</strong> </th>
-<th style="text-align:right;"> <strong>Ionity 350&nbsp;kW</strong> </th>
-<th style="text-align:right;"> <strong>Hurtige byladere</strong> </th>
+<th> Sted                </th>
+<th style="text-align:right;"> Afstand til næste </th>
+<th style="text-align:right;"> Clever 50&nbsp;kW </th>
+<th style="text-align:right;"> E.ON 50&nbsp;kW </th>
+<th style="text-align:right;"> Clever/E.ON 175&nbsp;kW </th>
+<th style="text-align:right;"> Ionity 350&nbsp;kW </th>
+<th style="text-align:right;"> Hurtige byladere </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td> Aalborg               </td>
-<td style="text-align:right;">                 28 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    5 </td>
+<td> Aalborg             </td>
+<td style="text-align:right;">             28 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                5 </td>
 </tr>
 <tr>
-<td> Himmerland            </td>
-<td style="text-align:right;">                  8 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Himmerland          </td>
+<td style="text-align:right;">              8 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Haverslev             </td>
-<td style="text-align:right;">                 46 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                           2 </td>
-<td style="text-align:right;">                      4 </td>
-<td style="text-align:right;">                      </td>
+<td> Haverslev           </td>
+<td style="text-align:right;">             46 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                       2 </td>
+<td style="text-align:right;">                  4 </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Randers/Gudenåen      </td>
-<td style="text-align:right;">                  6 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    1 </td>
+<td> Randers/Gudenåen    </td>
+<td style="text-align:right;">              6 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> Randers/Sdr. Borup    </td>
-<td style="text-align:right;">                 29 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Randers/Sdr. Borup  </td>
+<td style="text-align:right;">             29 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Aarhus/Tilst          </td>
-<td style="text-align:right;">                 14 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    7 </td>
+<td> Aarhus/Tilst        </td>
+<td style="text-align:right;">             14 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                7 </td>
 </tr>
 <tr>
-<td> Skanderborg           </td>
-<td style="text-align:right;">                 13 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                      4 </td>
-<td style="text-align:right;">                    1 </td>
+<td> Skanderborg         </td>
+<td style="text-align:right;">             13 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                  4 </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> Ejer Bavnehøj         </td>
-<td style="text-align:right;">                 12 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Ejer Bavnehøj       </td>
+<td style="text-align:right;">             12 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Horsens               </td>
-<td style="text-align:right;">                 24 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    3 </td>
+<td> Horsens             </td>
+<td style="text-align:right;">             24 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                3 </td>
 </tr>
 <tr>
-<td> Vejle N               </td>
-<td style="text-align:right;">                  5 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Vejle N             </td>
+<td style="text-align:right;">              5 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Vejle C               </td>
-<td style="text-align:right;">                  5 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    1 </td>
+<td> Vejle C             </td>
+<td style="text-align:right;">              5 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> Vejle S/Skærup        </td>
-<td style="text-align:right;">                 17 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Vejle S/Skærup      </td>
+<td style="text-align:right;">             17 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Fredericia            </td>
-<td style="text-align:right;">                  4 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                           4 </td>
-<td style="text-align:right;">                      4 </td>
-<td style="text-align:right;">                    1 </td>
+<td> Fredericia          </td>
+<td style="text-align:right;">              4 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                       4 </td>
+<td style="text-align:right;">                  4 </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> Middelfart            </td>
-<td style="text-align:right;">                 30 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    1 </td>
+<td> Middelfart          </td>
+<td style="text-align:right;">             30 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> Kildebjerg            </td>
-<td style="text-align:right;">                 11 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Kildebjerg          </td>
+<td style="text-align:right;">             11 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Odense                </td>
-<td style="text-align:right;">                 33 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    4 </td>
+<td> Odense              </td>
+<td style="text-align:right;">             33 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                4 </td>
 </tr>
 <tr>
-<td> Nyborg                </td>
-<td style="text-align:right;">                  2 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                      4 </td>
-<td style="text-align:right;">                      </td>
+<td> Nyborg              </td>
+<td style="text-align:right;">              2 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                  4 </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Knudshoved            </td>
-<td style="text-align:right;">                 19 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                           4 </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Knudshoved          </td>
+<td style="text-align:right;">             19 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                       4 </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Korsør/Halsskov       </td>
-<td style="text-align:right;">                 16 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                           4 </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Korsør/Halsskov     </td>
+<td style="text-align:right;">             16 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                       4 </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Slagelse/Antvorskov   </td>
-<td style="text-align:right;">                 18 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                    3 </td>
+<td> Slagelse/Antvorskov </td>
+<td style="text-align:right;">             18 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                3 </td>
 </tr>
 <tr>
-<td> Sorø/Tuelsø           </td>
-<td style="text-align:right;">                 12 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Sorø/Tuelsø         </td>
+<td style="text-align:right;">             12 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Ringsted              </td>
-<td style="text-align:right;">                 24 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Ringsted            </td>
+<td style="text-align:right;">             24 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Køge                  </td>
-<td style="text-align:right;">                 10 km </td>
-<td style="text-align:right;">                     1 </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Køge                </td>
+<td style="text-align:right;">             10 km </td>
+<td style="text-align:right;">                 1 </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Karlslunde            </td>
-<td style="text-align:right;">                  3 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                   1 </td>
-<td style="text-align:right;">                           2 </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                      </td>
+<td> Karlslunde          </td>
+<td style="text-align:right;">              3 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">               1 </td>
+<td style="text-align:right;">                       2 </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">                  </td>
 </tr>
 <tr>
-<td> Greve                 </td>
-<td style="text-align:right;">                 28 km </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                     10 </td>
-<td style="text-align:right;">                    1 </td>
+<td> Greve               </td>
+<td style="text-align:right;">             28 km </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                 10 </td>
+<td style="text-align:right;">                1 </td>
 </tr>
 <tr>
-<td> København             </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                     </td>
-<td style="text-align:right;">                             </td>
-<td style="text-align:right;">                        </td>
-<td style="text-align:right;">                  30+ </td>
+<td> København           </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                 </td>
+<td style="text-align:right;">                         </td>
+<td style="text-align:right;">                    </td>
+<td style="text-align:right;">              30+ </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br /> Afstanden mellem ladestederne måler jeg mellem de relevante
+<p>Afstanden mellem ladestederne måler jeg mellem de relevante
 motorvejs&shy;afkørsler. Laderne står 0&ndash;1&nbsp;km fra motorvejen, bortset fra
 kategorien &ldquo;Hurtige byladere&rdquo; som jeg bruger om hurtig&shy;ladere der står
 2&ndash;10&nbsp;km fra motorvejen. Byladerne står primært ved indkøbscentre, hvilket
@@ -884,63 +881,63 @@ Mercedes, Volkswagen, Audi og Porsche. Herunder opstiller jeg nogle eksempler
 på hvordan man kan udvælge sine favorit&shy;ladere &mdash; og så have alle de andre
 i reserve:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th> <strong>Foretrukne ladere</strong>      </th>
-<th style="text-align:right;"> <strong>Steder</strong> </th>
-<th style="text-align:right;"> <strong>Stik</strong> </th>
-<th> <strong>Hvis man&hellip;</strong>                                       </th>
+<th> Foretrukne ladere       </th>
+<th style="text-align:right;"> Steder </th>
+<th style="text-align:right;"> Stik </th>
+<th> Hvis man&hellip;                                          </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td> Ionity                     </td>
-<td style="text-align:right;">          5 </td>
-<td style="text-align:right;">       26 </td>
-<td> kan udnytte og vil betale for den højeste hastighed   </td>
+<td> Ionity                  </td>
+<td style="text-align:right;">      5 </td>
+<td style="text-align:right;">   26 </td>
+<td> kan udnytte og vil betale for den højeste hastighed  </td>
 </tr>
 <tr>
-<td> Clever/E.ON lynladere      </td>
-<td style="text-align:right;">          5 </td>
-<td style="text-align:right;">       16 </td>
-<td> synes 50 kW er for langsomt men 350 kW er for dyrt    </td>
+<td> Clever/E.ON lynladere   </td>
+<td style="text-align:right;">      5 </td>
+<td style="text-align:right;">   16 </td>
+<td> synes 50 kW er for langsomt men 350 kW er for dyrt   </td>
 </tr>
 <tr>
-<td> E.ON inkl. lynladere       </td>
-<td style="text-align:right;">         16 </td>
-<td style="text-align:right;">       28 </td>
-<td> har fastprisabonnement hos E.ON                       </td>
+<td> E.ON inkl. lynladere    </td>
+<td style="text-align:right;">     16 </td>
+<td style="text-align:right;">   28 </td>
+<td> har fastprisabonnement hos E.ON                      </td>
 </tr>
 <tr>
-<td> Clever inkl. lynladere     </td>
-<td style="text-align:right;">         12 </td>
-<td style="text-align:right;">       26 </td>
-<td> har fastprisabonnement hos Clever                     </td>
+<td> Clever inkl. lynladere  </td>
+<td style="text-align:right;">     12 </td>
+<td style="text-align:right;">   26 </td>
+<td> har fastprisabonnement hos Clever                    </td>
 </tr>
 <tr>
-<td> Clever ekskl. lynladere    </td>
-<td style="text-align:right;">         10 </td>
-<td style="text-align:right;">       10 </td>
-<td> betaler efter forbrug og ikke kan udnytte lynladning  </td>
+<td> Clever ekskl. lynladere </td>
+<td style="text-align:right;">     10 </td>
+<td style="text-align:right;">   10 </td>
+<td> betaler efter forbrug og ikke kan udnytte lynladning </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br /> Jeg har lavet et diagram over om hvornår fastpris&shy;abonnement giver
-mening i <a href="/2021/05/24/3000-km-for-under-100/">dette</a> indlæg. Selv benytter jeg primært Clever ekskl.
-lynladere, da jeg betaler efter forbrug og Hyundai <a href="/2021/05/02/hyundai-ioniq-electric/">IONIQ 2020</a> kun
-har minimal fordel af lynladere. Men hvis jeg havde en bil der kunne udnytte
-dem ville jeg benytte lyn&shy;laderne. Antallene af steder og stik i tabellen
-medtæller kun motorvejs&shy;laderne, men ikke hurtig&shy;laderne i byerne,
-selvom man også får adgang til de fleste af dem med et Clever-abonnement, samt
-nogle i København med et E.ON-abonnement. Desuden giver både E.ON og Clever
-(men ikke Ionity) adgang til en lang række destinations&shy;ladere/AC-ladere
-over hele landet.</p>
+<p>Jeg har lavet et diagram over om hvornår fastpris&shy;abonnement giver mening i
+<a href="/2021/05/24/3000-km-for-under-100/">dette</a> indlæg. Selv benytter jeg primært Clever ekskl. lynladere, da
+jeg betaler efter forbrug og Hyundai <a href="/2021/05/02/hyundai-ioniq-electric/">IONIQ 2020</a> kun har minimal
+fordel af lynladere. Men hvis jeg havde en bil der kunne udnytte dem ville jeg
+benytte lyn&shy;laderne. Antallene af steder og stik i tabellen medtæller kun
+motorvejs&shy;laderne, men ikke hurtig&shy;laderne i byerne, selvom man også
+får adgang til de fleste af dem med et Clever-abonnement, samt nogle i
+København med et E.ON-abonnement. Desuden giver både E.ON og Clever (men ikke
+Ionity) adgang til en lang række destinations&shy;ladere/AC-ladere over hele
+landet.</p>
 
 <a name="Hvor.mange.opladninger.har.man.behov.for."></a>
 <h2>Hvor mange opladninger har man behov for?</h2>
@@ -968,63 +965,63 @@ hvad man nu har lyst til. Hvis man synes ovenstående lyder undervældende, så
 kan elbiler med større række&shy;vidde og hurtigere ladning heldigvis klare sig
 med færre og kortere ladepauser:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th> <strong>Bilmodel</strong>                         </th>
-<th style="text-align:right;"> <strong>Batteri</strong>      </th>
-<th style="text-align:right;"> <strong>Ladestop</strong> </th>
-<th style="text-align:right;"> <strong>Ladetid</strong> </th>
-<th style="text-align:right;"> <strong>Køretid</strong> </th>
-<th style="text-align:right;"> <strong>Samlet</strong> </th>
+<th> Bilmodel                             </th>
+<th style="text-align:right;"> Batteri      </th>
+<th style="text-align:right;"> Ladestop </th>
+<th style="text-align:right;"> Ladetid </th>
+<th style="text-align:right;"> Køretid </th>
+<th style="text-align:right;"> Samlet </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td> Mazda&nbsp;MX-30                     </td>
-<td style="text-align:right;">      30&nbsp;kWh </td>
-<td style="text-align:right;">            4 </td>
-<td style="text-align:right;">        2:22 </td>
-<td style="text-align:right;">        4:12 </td>
-<td style="text-align:right;">       6:35 </td>
+<td style="text-align:right;">  30&nbsp;kWh </td>
+<td style="text-align:right;">        4 </td>
+<td style="text-align:right;">    2:22 </td>
+<td style="text-align:right;">    4:12 </td>
+<td style="text-align:right;">   6:35 </td>
 </tr>
 <tr>
 <td> Hyundai&nbsp;IONIQ                   </td>
-<td style="text-align:right;">      38&nbsp;kWh </td>
-<td style="text-align:right;">            2 </td>
-<td style="text-align:right;">        1:08 </td>
-<td style="text-align:right;">        3:52 </td>
-<td style="text-align:right;">       5:00 </td>
+<td style="text-align:right;">  38&nbsp;kWh </td>
+<td style="text-align:right;">        2 </td>
+<td style="text-align:right;">    1:08 </td>
+<td style="text-align:right;">    3:52 </td>
+<td style="text-align:right;">   5:00 </td>
 </tr>
 <tr>
 <td> Volkswagen&nbsp;ID.3&nbsp;Pro        </td>
-<td style="text-align:right;">      58&nbsp;kWh </td>
-<td style="text-align:right;">            2 </td>
-<td style="text-align:right;">        0:24 </td>
-<td style="text-align:right;">        3:54 </td>
-<td style="text-align:right;">       4:18 </td>
+<td style="text-align:right;">  58&nbsp;kWh </td>
+<td style="text-align:right;">        2 </td>
+<td style="text-align:right;">    0:24 </td>
+<td style="text-align:right;">    3:54 </td>
+<td style="text-align:right;">   4:18 </td>
 </tr>
 <tr>
 <td> Volkswagen&nbsp;ID.3&nbsp;Pro&nbsp;S </td>
-<td style="text-align:right;">      77&nbsp;kWh </td>
-<td style="text-align:right;">            1 </td>
-<td style="text-align:right;">        0:08 </td>
-<td style="text-align:right;">        3:45 </td>
-<td style="text-align:right;">       3:54 </td>
+<td style="text-align:right;">  77&nbsp;kWh </td>
+<td style="text-align:right;">        1 </td>
+<td style="text-align:right;">    0:08 </td>
+<td style="text-align:right;">    3:45 </td>
+<td style="text-align:right;">   3:54 </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br /> Jeg brugte <a href="https://abetterrouteplanner.com/">A Better Routeplanner</a> til at sammenligne turen for
-nogle forskellige bilmodeller, med resultaterne i tabellen herover. De bedste
-elbiler på markedet i dag er allerede der hvor mange mennesker har behov for
-flere pauser end bilen har. Og i øvrigt kan de dyrere elbiler ofte også selv
-medregne den nødvendige opladning i deres navigations&shy;system, så man ikke
-selv behøver planlægge opladningen på turen. Men hvis vi vender tilbage til de
+<p>Jeg brugte <a href="https://abetterrouteplanner.com/">A Better Routeplanner</a> til at sammenligne turen for nogle
+forskellige bilmodeller, med resultaterne i tabellen herover. De bedste elbiler
+på markedet i dag er allerede der hvor mange mennesker har behov for flere
+pauser end bilen har. Og i øvrigt kan de dyrere elbiler ofte også selv medregne
+den nødvendige opladning i deres navigations&shy;system, så man ikke selv
+behøver planlægge opladningen på turen. Men hvis vi vender tilbage til de
 billigere elbiler der skal lade oftere, så er det specielt vigtigt at der er
 nok ladere med jævne mellemrum.</p>
 
@@ -1061,65 +1058,65 @@ plan&shy;lægning). Og garanti eller ej, så tilføjer vejhjælp en større
 forsinkelse. Som alter&shy;nativ til de enkelt&shy;stående standere kan man gå
 efter ladesteder med mange stik på samme sted:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <table>
 <thead>
 <tr>
-<th> <strong>Sted</strong>           </th>
-<th style="text-align:right;"> <strong>Afstand til næste</strong> </th>
-<th style="text-align:right;"> <strong>Antal stik ved motorvej</strong> </th>
+<th> Sted              </th>
+<th style="text-align:right;"> Afstand til næste </th>
+<th style="text-align:right;"> Antal stik ved motorvej </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td> Aalborg            </td>
-<td style="text-align:right;">                 36 km </td>
-<td style="text-align:right;">                             </td>
+<td> Aalborg           </td>
+<td style="text-align:right;">             36 km </td>
+<td style="text-align:right;">                         </td>
 </tr>
 <tr>
-<td> Haverslev          </td>
-<td style="text-align:right;">                 95 km </td>
-<td style="text-align:right;">                           7 </td>
+<td> Haverslev         </td>
+<td style="text-align:right;">             95 km </td>
+<td style="text-align:right;">                       7 </td>
 </tr>
 <tr>
-<td> Skanderborg        </td>
-<td style="text-align:right;">                 76 km </td>
-<td style="text-align:right;">                           4 </td>
+<td> Skanderborg       </td>
+<td style="text-align:right;">             76 km </td>
+<td style="text-align:right;">                       4 </td>
 </tr>
 <tr>
-<td> Fredericia         </td>
-<td style="text-align:right;">                 79 km </td>
-<td style="text-align:right;">                           8 </td>
+<td> Fredericia        </td>
+<td style="text-align:right;">             79 km </td>
+<td style="text-align:right;">                       8 </td>
 </tr>
 <tr>
-<td> Nyborg+Knudshoved  </td>
-<td style="text-align:right;">                 20 km </td>
-<td style="text-align:right;">                          10 </td>
+<td> Nyborg+Knudshoved </td>
+<td style="text-align:right;">             20 km </td>
+<td style="text-align:right;">                      10 </td>
 </tr>
 <tr>
-<td> Halsskov           </td>
-<td style="text-align:right;">                 82 km </td>
-<td style="text-align:right;">                           5 </td>
+<td> Halsskov          </td>
+<td style="text-align:right;">             82 km </td>
+<td style="text-align:right;">                       5 </td>
 </tr>
 <tr>
-<td> Greve+Karlslunde   </td>
-<td style="text-align:right;">                 30 km </td>
-<td style="text-align:right;">                          13 </td>
+<td> Greve+Karlslunde  </td>
+<td style="text-align:right;">             30 km </td>
+<td style="text-align:right;">                      13 </td>
 </tr>
 <tr>
-<td> København          </td>
-<td style="text-align:right;">                       </td>
-<td style="text-align:right;">                             </td>
+<td> København         </td>
+<td style="text-align:right;">                   </td>
+<td style="text-align:right;">                         </td>
 </tr>
 </tbody>
 </table>
 
 
-<p><br /> Fordelen er at en optaget eller evt. defekt lader er et meget mindre
-problem, og at der nok snart bliver en ledig plads, hvis der ikke allerede er
-det når man ankommer. De fleste af disse mange ladere er også de hurtigste (og
+<p>Fordelen er at en optaget eller evt. defekt lader er et meget mindre problem,
+og at der nok snart bliver en ledig plads, hvis der ikke allerede er det når
+man ankommer. De fleste af disse mange ladere er også de hurtigste (og
 dyreste), hvilket kan være et plus eller et minus afhængig af ens bil og
 abonnement. Da der er længere imellem stederne med mange stik er det også godt
 at være bevidst om hvor man skal huske at lade (hvis bilen ikke selv guider dig

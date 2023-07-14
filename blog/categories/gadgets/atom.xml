@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gadgets | Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/blog/categories/gadgets/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-06-07T21:42:50+02:00</updated>
+  <updated>2023-07-14T12:02:20+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -251,7 +251,7 @@ to some people.</p>
 
 <p>Here&rsquo;s a summary of each category winner:</p>
 
-<div class="next-table-sidescroll next-table-striped"></div>
+<div class="next-table"></div>
 
 
 <p></p>
@@ -259,8 +259,8 @@ to some people.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left;"><strong>Category</strong></th>
-<th style="text-align:center; width: 40%"><strong>Winner</strong></th>
+<th style="text-align:left;">Category</th>
+<th style="text-align:center; width: 40%">Winner</th>
 </tr>
 </thead>
 <tbody>
@@ -308,7 +308,7 @@ to some people.</p>
 </table>
 
 
-<p><br> The two products win approximately the same number of categories, but some
+<p>The two products win approximately the same number of categories, but some
 categories are more important than others. To me, noise reduction is paramount,
 which is why I prefer Bose overall, but it&rsquo;s no landslide victory. While I
 enjoy the ANC when working at the office, I also dislike having to switch
