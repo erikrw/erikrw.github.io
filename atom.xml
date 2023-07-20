@@ -4,7 +4,7 @@
   <title><![CDATA[Erik Ramsgaard Wognsen]]></title>
   <link href="http://blog.erw.dk/atom.xml" rel="self"/>
   <link href="http://blog.erw.dk/"/>
-  <updated>2023-07-18T11:54:09+02:00</updated>
+  <updated>2023-07-20T18:18:58+02:00</updated>
   <id>http://blog.erw.dk/</id>
   <author>
     <name><![CDATA[Erik Ramsgaard Wognsen]]></name>
@@ -12,6 +12,431 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ioniq Electric vs. Ioniq 6]]></title>
+    <link href="http://blog.erw.dk/2023/07/20/ioniq-electric-vs-ioniq-6/"/>
+    <updated>2023-07-20T18:14:31+02:00</updated>
+    <id>http://blog.erw.dk/2023/07/20/ioniq-electric-vs-ioniq-6</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://blog.erw.dk/images/posts/ioniq_and_ioniq_6.jpg" title="Picture shows profile views of the Ioniq Electric (above) and Ioniq 6 (below) in front of scenic backgrounds" ></p>
+
+<p>The Hyundai Ioniq is not being produced anymore, but its spirit lives on in the
+new Ioniq&nbsp;6. In this post I compare the specifications of the Hyundai
+Ioniq Electric and the Hyundai Ioniq&nbsp;6. Specifically, the 2020
+<a href="https://ev-database.org/car/1165/Hyundai-IONIQ-Electric">Ioniq&#32;Electric</a> and the 2023
+<a href="https://ev-database.org/car/1718/Hyundai-IONIQ-6-Long-Range-2WD">Ioniq&nbsp;6&#32;Long&#32;Range&#32;2WD</a>. The data for each
+vehicle comes mostly from <a href="https://ev-database.org">evdb</a>. This post is basically just me
+discussing with myself how badly I want an Ioniq&nbsp;6 over my current Ioniq
+Electric, but I figured I might as well share my findings.</p>
+
+<!-- more -->
+
+
+<a name="Physical.dimensions"></a>
+<h2>Physical dimensions</h2>
+
+<p>First off, the 6 is bigger and heavier, which is a disadvantage. It will be
+harder to maneuver and park in small spaces, and heavier cars take more
+resources to build, and are potentially more dangerous to others.</p>
+
+<div class="next-table"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                                     </th>
+<th style="text-align:right;"> Ioniq </th>
+<th style="text-align:right;"> Ioniq&nbsp;6 </th>
+<th style="text-align:right;"> Change </th>
+<th style="text-align:left;"> Unit </th>
+<th style="text-align:right;">                              Change </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>Length</strong>                          </td>
+<td style="text-align:right;">   447 </td>
+<td style="text-align:right;">          486 </td>
+<td style="text-align:right;">    +39 </td>
+<td style="text-align:left;"> cm   </td>
+<td style="text-align:right;"> <span style="color:red"> +9%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Width&nbsp;(excl.&nbsp;mirrors)</strong> </td>
+<td style="text-align:right;">   182 </td>
+<td style="text-align:right;">          188 </td>
+<td style="text-align:right;">     +6 </td>
+<td style="text-align:left;"> cm   </td>
+<td style="text-align:right;"> <span style="color:red"> +3%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Height</strong>                          </td>
+<td style="text-align:right;">   145 </td>
+<td style="text-align:right;">          150 </td>
+<td style="text-align:right;">     +5 </td>
+<td style="text-align:left;"> cm   </td>
+<td style="text-align:right;"> <span style="color:red"> +3%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Weight&nbsp;(unladen,&nbsp;EU)</strong>  </td>
+<td style="text-align:right;">  1602 </td>
+<td style="text-align:right;">         1985 </td>
+<td style="text-align:right;">   +383 </td>
+<td style="text-align:left;"> kg   </td>
+<td style="text-align:right;"> <span style="color:red">+24%</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>On the other hand, and as the following sections show, the extra size and
+weight enable several advantages, and at least the Ioniq&nbsp;6 has world-class
+efficiency despite its weight. Plus it has a pedestrian-friendly shape and
+modern collision avoidance safety features. So with that out of the way, let&rsquo;s
+continue.</p>
+
+<a name="Cargo.capacity"></a>
+<h2>Cargo capacity</h2>
+
+<p>The 6 has more cargo space, a (small) frunk, and a tow hook. The only
+disadvantage is that the 6 is a sedan, which means its trunk opening is smaller
+than on the liftback Ioniq Electric.</p>
+
+<div class="next-table"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                            </th>
+<th style="text-align:right;"> Ioniq </th>
+<th style="text-align:right;"> Ioniq&nbsp;6 </th>
+<th style="text-align:right;"> Change </th>
+<th style="text-align:left;"> Unit </th>
+<th style="text-align:right;">                                     Change </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>Cargo volume trunk</strong>     </td>
+<td style="text-align:right;">   357 </td>
+<td style="text-align:right;">          401 </td>
+<td style="text-align:right;">    +44 </td>
+<td style="text-align:left;"> L    </td>
+<td style="text-align:right;"> <span style="color:green">      +9%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Cargo volume frunk</strong>     </td>
+<td style="text-align:right;">     0 </td>
+<td style="text-align:right;">           45 </td>
+<td style="text-align:right;">    +45 </td>
+<td style="text-align:left;"> L    </td>
+<td style="text-align:right;"> <span style="color:green">+&infin;%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Max. payload</strong>           </td>
+<td style="text-align:right;">   443 </td>
+<td style="text-align:right;">          500 </td>
+<td style="text-align:right;">    +57 </td>
+<td style="text-align:left;"> kg   </td>
+<td style="text-align:right;"> <span style="color:green">     +24%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Towing weight (braked)</strong> </td>
+<td style="text-align:right;">     0 </td>
+<td style="text-align:right;">         1500 </td>
+<td style="text-align:right;">  +1500 </td>
+<td style="text-align:left;"> kg   </td>
+<td style="text-align:right;"> <span style="color:green">+&infin;%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Is hatchback/liftback</strong>  </td>
+<td style="text-align:right;">     1 </td>
+<td style="text-align:right;">            0 </td>
+<td style="text-align:right;">     -1 </td>
+<td style="text-align:left;">      </td>
+<td style="text-align:right;"> <span style="color:red">      -100%</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>The 6 also has more legroom for passengers.</p>
+
+<a name="Driving"></a>
+<h2>Driving</h2>
+
+<p>The bigger 6 unfortunately has a similarly bigger turning radius. But the 6&rsquo;s
+higher mass is compensated by more torque, and it accelerates faster from 0 to
+100&nbsp;km/h. The Ioniq Electric, like most EVs, is already pretty snappy in
+city driving, and the faster 0&ndash;100 time of the 6 is not really necessary for
+normal driving. The biggest advantage of the 6 might be comparably more torque
+at higher speeds for more responsive overtaking on the motorway. The website
+automobile-catalog.com has approximate torque curves for
+<a href="https://www.automobile-catalog.com/curve/2020/2961965/hyundai_ioniq_electric.html">each</a> <a href="https://www.automobile-catalog.com/curve/2023/3171545/hyundai_ioniq_6_168_kw_rwd.html">model</a>.</p>
+
+<div class="next-table"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                              </th>
+<th style="text-align:right;"> Ioniq </th>
+<th style="text-align:right;"> Ioniq&nbsp;6 </th>
+<th style="text-align:right;"> Change </th>
+<th style="text-align:left;"> Unit </th>
+<th style="text-align:right;">                                Change </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>Turning radius</strong>           </td>
+<td style="text-align:right;">  10.6 </td>
+<td style="text-align:right;">         11.8 </td>
+<td style="text-align:right;">   +1.2 </td>
+<td style="text-align:left;"> m    </td>
+<td style="text-align:right;"> <span style="color:red">  +11%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Total power</strong>              </td>
+<td style="text-align:right;">   100 </td>
+<td style="text-align:right;">          168 </td>
+<td style="text-align:right;">    +68 </td>
+<td style="text-align:left;"> kW   </td>
+<td style="text-align:right;"> <span style="color:green">+68%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Total torque</strong>             </td>
+<td style="text-align:right;">   295 </td>
+<td style="text-align:right;">          350 </td>
+<td style="text-align:right;">    +55 </td>
+<td style="text-align:left;"> Nm   </td>
+<td style="text-align:right;"> <span style="color:green">+19%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Acceleration 0&ndash;100 km/h</strong> </td>
+<td style="text-align:right;">   9.7 </td>
+<td style="text-align:right;">          7.4 </td>
+<td style="text-align:right;">   -2.3 </td>
+<td style="text-align:left;"> s    </td>
+<td style="text-align:right;"> <span style="color:green">-24%</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>The Electric is front-wheel drive, while the 6 is rear-wheel drive for better
+traction, handling, and interior layout, as is the
+<a href="https://www.youtube.com/watch?v=Ho9dRNeqOyw">future</a> of 2WD EVs. (The 6 also comes in an all-wheel
+drive version not otherwise described in this blog post. Unfortunately the
+Hyundai developers did not use the opportunity for the RWD to have a smaller
+turning radius than the AWD version, unlike for example the VW ID.4 where the
+RWD version has an amazing 10.2&nbsp;m turning radius instead of 11.6&nbsp;m
+for the ID.4 AWD.)</p>
+
+<a name="Range"></a>
+<h2>Range</h2>
+
+<p>The 6&rsquo;s improved aerodynamics, among other things, make up for the increased
+weight, to bring a slight improvement in efficiency. Combined with a bigger
+battery, the 6 drives around twice as far on a full charge. Especially nice is
+that the range is slightly <em>more</em> than doubled on the highway which is really
+where range matters the most. A huge improvement.</p>
+
+<div class="next-table"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                            </th>
+<th style="text-align:right;"> Ioniq </th>
+<th style="text-align:right;"> Ioniq&nbsp;6 </th>
+<th style="text-align:right;"> Change </th>
+<th style="text-align:left;"> Unit      </th>
+<th style="text-align:right;">                                 Change </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>Overall consumption</strong>    </td>
+<td style="text-align:right;">  15.3 </td>
+<td style="text-align:right;">         14.9 </td>
+<td style="text-align:right;">   -0.4 </td>
+<td style="text-align:left;"> kWh/100km </td>
+<td style="text-align:right;"> <span style="color:green">  -3%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Overall efficiency</strong>     </td>
+<td style="text-align:right;">  6.54 </td>
+<td style="text-align:right;">         6.71 </td>
+<td style="text-align:right;">  +0.18 </td>
+<td style="text-align:left;"> km/kWh    </td>
+<td style="text-align:right;"> <span style="color:green">  +3%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Overall range</strong>          </td>
+<td style="text-align:right;">   250 </td>
+<td style="text-align:right;">          495 </td>
+<td style="text-align:right;">   +245 </td>
+<td style="text-align:left;"> km        </td>
+<td style="text-align:right;"> <span style="color:green"> +98%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Cold weather - highway</strong> </td>
+<td style="text-align:right;">   175 </td>
+<td style="text-align:right;">          355 </td>
+<td style="text-align:right;">   +180 </td>
+<td style="text-align:left;"> km        </td>
+<td style="text-align:right;"> <span style="color:green">+103%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Cold weather - city</strong>    </td>
+<td style="text-align:right;">   235 </td>
+<td style="text-align:right;">          460 </td>
+<td style="text-align:right;">   +225 </td>
+<td style="text-align:left;"> km        </td>
+<td style="text-align:right;"> <span style="color:green"> +96%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Mild weather - highway</strong> </td>
+<td style="text-align:right;">   230 </td>
+<td style="text-align:right;">          470 </td>
+<td style="text-align:right;">   +240 </td>
+<td style="text-align:left;"> km        </td>
+<td style="text-align:right;"> <span style="color:green">+104%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>Mild weather - city</strong>    </td>
+<td style="text-align:right;">   365 </td>
+<td style="text-align:right;">          715 </td>
+<td style="text-align:right;">   +350 </td>
+<td style="text-align:left;"> km        </td>
+<td style="text-align:right;"> <span style="color:green"> +96%</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>These range numbers are evdb Real Range numbers, which are much more realistic
+than WLTP numbers, in my experience. The consumption/<wbr>efficiency numbers
+are evdb Real Range Vehicle Consumption numbers, where I have converted the
+units.</p>
+
+<a name="Charging"></a>
+<h2>Charging</h2>
+
+<p>As important as the capacity for range is the capacity for adding range, so to
+speak. Here, the 6 is not just twice as good as the Electric. On three-phase
+16&nbsp;A, the 6 adds range <em>three</em> times faster. This big difference is
+because the 6 charges especially quickly on 16 amps, while the Electric is
+especially slow due to its single-phase on-board charger.</p>
+
+<p>On a powerful DC charger, the 6 is almost <strong><em>six</em></strong> times faster, when the
+conditions are right. This is again by going from the Electric&rsquo;s slow DC
+charging to the 6&rsquo;s world-leading DC charging. The Electric has the dubious
+advantage of taking almost no hit in charge speed when only 50 kW DC chargers
+are available. The 6 also supports reverse charging (V2L), where the car can
+power your household electronics or even charge another EV.</p>
+
+<div class="next-table"></div>
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">                               </th>
+<th style="text-align:right;"> Ioniq </th>
+<th style="text-align:right;"> Ioniq&nbsp;6 </th>
+<th style="text-align:right;"> Change </th>
+<th style="text-align:left;"> Unit </th>
+<th style="text-align:right;">                                     Change </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <strong>AC charge speed @ 16 A</strong>    </td>
+<td style="text-align:right;">    20 </td>
+<td style="text-align:right;">           63 </td>
+<td style="text-align:right;">    +43 </td>
+<td style="text-align:left;"> km/h </td>
+<td style="text-align:right;"> <span style="color:green">    +215%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>AC charge speed @ 32 A</strong>    </td>
+<td style="text-align:right;">    40 </td>
+<td style="text-align:right;">           63 </td>
+<td style="text-align:right;">    +23 </td>
+<td style="text-align:left;"> km/h </td>
+<td style="text-align:right;"> <span style="color:green">     +58%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>DC charge speed @ 50 kW</strong>   </td>
+<td style="text-align:right;">   210 </td>
+<td style="text-align:right;">          320 </td>
+<td style="text-align:right;">   +110 </td>
+<td style="text-align:left;"> km/h </td>
+<td style="text-align:right;"> <span style="color:green">     +52%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>DC charge speed @ 350 kW</strong>  </td>
+<td style="text-align:right;">   220 </td>
+<td style="text-align:right;">         1290 </td>
+<td style="text-align:right;">  +1070 </td>
+<td style="text-align:left;"> km/h </td>
+<td style="text-align:right;"> <span style="color:green">    +486%</span> </td>
+</tr>
+<tr>
+<td style="text-align:left;"> <strong>AC reverse charging (V2L)</strong> </td>
+<td style="text-align:right;">     0 </td>
+<td style="text-align:right;">          3.6 </td>
+<td style="text-align:right;">   +3.6 </td>
+<td style="text-align:left;"> kW   </td>
+<td style="text-align:right;"> <span style="color:green">+&infin;%</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="Supercharger.compatibility"></a>
+<h2>Supercharger compatibility</h2>
+
+<p>Tesla opening up their Supercharger network to non-Tesla cars is a big deal.
+Tesla Superchargers have become my preferred fast-charging stations in Denmark,
+as they are cheaper <em>and</em> better than the competition &mdash; at least for
+compatible cars. The Electric has its charge port on the rear left side like
+Teslas, whereas the 6 has it on the rear right side. Thus, the Electric works
+perfectly with the Superchargers&#8217; typically short cables.</p>
+
+<p>More importantly, there are reports of the E-GMP cars (Ioniq&nbsp;5,
+Ioniq&nbsp;6, Kia EV6) not working properly with Tesla V3 Superchargers. One
+<a href="https://www.motortrend.com/features/tesla-supercharger-magic-dock-hands-on-review-charging-other-evs/">article</a> from Motortrend from march 2023 describes
+the problem, as tested in the US, while the Federation of Danish Motorists here
+in Europe briefly mentions the problem in an <a href="https://fdm.dk/nyheder/bilist/2023-06-saadan-bliver-langturen-elbil-billigst-sommeren-2023">article</a> (in
+Danish) from three weeks ago. If and when this will be fixed I don&rsquo;t know, but
+I really hope it will get fixed as more V3 Superchargers are built. Or perhaps
+the fix is just to wait for V4 Superchargers with their higher voltage and
+longer cables.</p>
+
+<a name="Discussion"></a>
+<h2>Discussion</h2>
+
+<p>Overall, the Ioniq&nbsp;6 as a dedicated EV is a massive improvement over the
+Ioniq Electric which was built on a platform that also supported gasoline
+hybrid versions (with and without plug-in). The 6 also costs more than the
+Electric did by something like 50%. But then again, some essential specs have
+improved by more than 50%.</p>
+
+<p>I would like a cheaper and slightly smaller EV with Hyundai&rsquo;s newest
+technology. Something like the Ioniq&nbsp;6 Standard Range (365&nbsp;km evdb
+Real Range), but in the size of the Ioniq Electric. Or even in the liftback
+body of the Ioniq Electric. Basically, I just want the Ioniq Electric with more
+range and faster charging. Barring that, the Ioniq&nbsp;6 seems to be pretty
+amazing.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Test af Coops personlige tilbud [Danish]]]></title>
@@ -3265,140 +3690,6 @@ fair. Smartphones themselves were a revolution that started only around ten
 years ago, even though they have now invaded our lives. But we might start
 seeing some bigger changes to the smartphone market already when next years
 <a href="https://www.gsmarena.com/samsung_teases_galaxy_f_foldable_phone_days_before_its_developers_conference-news-34061.php">folds around</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using a Calendar as a To-Do List]]></title>
-    <link href="http://blog.erw.dk/2018/07/29/using-a-calendar-as-a-to-do-list/"/>
-    <updated>2018-07-29T11:45:42+02:00</updated>
-    <id>http://blog.erw.dk/2018/07/29/using-a-calendar-as-a-to-do-list</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='https://c1.staticflickr.com/9/8679/16294164331_ea66ce297d_b.jpg' width='450' height='0' alt='[Improved LEGO Calendar Front](https://www.flickr.com/photos/billward/16294164331) by [Bill Ward](https://www.flickr.com/photos/billward/) / [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/)'><span class='caption-text'><a href="https://www.flickr.com/photos/billward/16294164331">Improved LEGO Calendar Front</a> by <a href="https://www.flickr.com/photos/billward/">Bill Ward</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY 2.0</a></span></span></p>
-
-<p>Writing a to-do list is a useful way to create an overview of your tasks at
-work, school, or home. But to-do lists sometimes grow faster than you check the
-items off, and a long to-do list can drain your motivation rather than focus
-it. I found a practical way to keep my to-do list short and useful: Use
-a calendar.</p>
-
-<!-- more -->
-
-
-<a name="The.Problem.With.To-Do.Lists"></a>
-<h2>The Problem With To-Do Lists</h2>
-
-<p>Often, there&rsquo;s simply not enough time to do all the stuff we want to do. If you
-keep a list of your tasks, checking off and adding items over time, then you
-will probably have seen your list grow longer and longer, unless you are very
-realistic about the kinds of tasks you plan to do.</p>
-
-<p>As the list grows longer, it becomes less useful. The many items distract you
-from what is actually important, and checking off items feels like emptying the
-ocean with a spoon. After some time you are more likely to start a new list
-than to keep using the old one. And this is okay if it helps you get things
-done that you care about. But it won&rsquo;t be long before the new list is also long
-and &ldquo;icky&rdquo;.</p>
-
-<p>I think it&rsquo;s normal to wish to get more stuff done than what you have time for,
-but the cycle of starting and discarding to-do lists is not very productive.
-It&rsquo;s mainly useful at the start of each cycle when the list is short. I found
-that a practical way to <em>keep</em> my to-do list short (apart from having more
-hours in a day) is to put it in my calendar.</p>
-
-<a name="Using.a.Calendar"></a>
-<h2>Using a Calendar</h2>
-
-<p>By using a calendar, I mean that each task you write down should have
-a specific date, time, and duration, and live among your &ldquo;normal&rdquo; appointments
-and events. This helps you move from the abstract to-do list world where you
-have all the time you need, to the real world where you have to be at least
-a bit realistic about when you can start a task, and how much time you can
-allot to it.</p>
-
-<p>Considering the time something takes also forces you to be more specific about
-what you are actually planning to do &mdash; which is the part you should write
-down in the calendar! A concrete task description is much more likely to spur
-you into action later. Vague, abstract goals are a major cause of
-procrastination &mdash; whether you use a calendar or not.</p>
-
-<p>Interruptions and a base level of unscheduled activities are likely both at
-work and at home, so I leave time for these when I set the event duration.
-I especially use the system at home where I also want to relax after work in
-the evenings and weekends, so there my time estimation is very loose. I might
-fill a small ten minute task into a one- or two-hour slot. My goal is not to do
-focused work in all of the calendar event&rsquo;s duration. Instead, the goal is to
-fill my calendar with no more tasks than I will realistically do in a day or
-evening. Each day thus contains a <em>short to-do list</em>.</p>
-
-<a name="The.Passage.of.Time"></a>
-<h2>The Passage of Time</h2>
-
-<p>If you overestimate your own capacity to perform tasks stuffing too much into
-a single day, there will be undone tasks. This is another critical point where
-a calendar separates itself from a regular old to-do list. An undone item in
-a to-do list stays there, as a future activity. An undone item in a calendar
-lies in the past where you will probably forget about it. This is a feature,
-not a bug!</p>
-
-<p>If you did not have time to perform a task, you can reschedule it to a less
-burdened day. If the task is important to you, you are also likely to remember
-to reschedule it immediately.</p>
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://blog.erw.dk/images/posts/google_calendar_todo.png' width='' height='' alt='Google Calendar trying to be helpful.'><span class='caption-text'>Google Calendar trying to be helpful.</span></span></p>
-
-<p>But often, &ldquo;not having time&rdquo; simply means not caring enough, and in that case,
-it&rsquo;s also likely that you will even forget to reschedule the task, which is
-good because it prevents that unimportant task from clogging up your future
-to-do lists/days.</p>
-
-<p>While tasks may be unimportant from their inception, others become obsolete
-because an alternate solution to the problem was found or because of changing
-priorities. Sometimes you will reschedule a task multiple times before
-realizing that it is not important enough to keep. Or perhaps you will finally
-do the task after seven reschedulings, because you eventually had more time or
-willpower. The system adapts to your capacity over time.</p>
-
-<p>The way that a regular to-do list keeps all undone tasks is the cause of long,
-icky lists. Requiring a manual action to keep an undone task highlights the
-absurdity of indefinite postponement. (Indefinitely rescheduling a few tasks is
-certainly possible, but as you try to do it with more and more tasks, the extra
-work of rescheduling should remind you that this is not a sustainable
-solution.)</p>
-
-<p>Any calendar should do the trick; I use Google Calendar. But sometimes when
-I add a new event that sounds like a to-do, it suggests converting it to one
-instead of creating an event. This is a disservice. I <em>do</em> want the passage of
-time to clean up the stuff I&rsquo;m never going to get done anyway.</p>
-
-<a name="What.is.Important."></a>
-<h2>What is Important?</h2>
-
-<p>In the previous section I say that importance influences what you get done and
-what you should reschedule. What is important is of course up to you. But why
-do we even have unimportant tasks? I don&rsquo;t think it should be seen as an
-either-or. Instead, it depends on how much time and energy we have available.</p>
-
-<p>In my case, I have many ideas for small home improvements and hobby projects
-that the dreaming part of me wants to do but the actual me doesn&rsquo;t feel like
-doing. It&rsquo;s not that I strictly don&rsquo;t have time, it&rsquo;s just that I would rather
-be doing something else. So they are not actually important. Buying someone
-a birthday present or doing my taxes would be important.</p>
-
-<p>Some tasks are given to you by other people, perhaps especially at work. Does
-that mean that they are important? Some of them of course, but not necessarily
-all of them. Just like the tasks you set for yourself, tasks given by someone
-else can also fall in the nice-to-have category. Or they are &ldquo;important&rdquo; to
-your boss, but there are fifty things that are even more important. Other
-times, the important thing is the goal, and reaching the goal through steps
-X-Y-Z can make steps A-B-C obsolete. (Remember, a to-do list should contain
-<em>doable</em> tasks, not goals.)</p>
-
-<p>A classic distinction in time management and productivity is between
-<a href="http://observer.com/2017/03/urgent-vs-important-the-simplest-way-to-stay-productive-and-do-the-right-work/">urgent and important</a> tasks. By using the calendar I do not mean
-you should focus on time and urgency over importance. The only goal is to keep
-your daily to-do list short enough as to boost motivation rather than drain it.
-As with a regular to-do list, it&rsquo;s up to you to figure out what is important in
-your life.</p>
 ]]></content>
   </entry>
   

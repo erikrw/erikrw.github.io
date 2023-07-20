@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.erw.dk/2023/07/20/ioniq-electric-vs-ioniq-6/</loc>
+    <lastmod>2023-07-20T18:14:31+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://blog.erw.dk/2023/07/13/test-af-coops-personlige-tilbud/</loc>
     <lastmod>2023-07-13T21:12:09+02:00</lastmod>
     <priority>0.8</priority>
@@ -247,31 +252,31 @@
   </url>
   <url>
     <loc>http://blog.erw.dk/404.html</loc>
-    <lastmod>2023-07-18T11:54:09+02:00</lastmod>
+    <lastmod>2023-07-20T18:18:58+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/archives/</loc>
-    <lastmod>2023-07-18T11:54:09+02:00</lastmod>
+    <lastmod>2023-07-20T18:18:58+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/</loc>
-    <lastmod>2023-07-18T11:54:09+02:00</lastmod>
+    <lastmod>2023-07-20T18:18:58+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/colemakdk/</loc>
-    <lastmod>2023-07-18T11:54:09+02:00</lastmod>
+    <lastmod>2023-07-20T18:18:58+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blog.erw.dk/contact/</loc>
-    <lastmod>2023-07-18T11:54:09+02:00</lastmod>
+    <lastmod>2023-07-20T18:18:58+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
